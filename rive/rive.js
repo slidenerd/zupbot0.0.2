@@ -13,10 +13,10 @@ let brain = {
 }
 
 brain.initSubroutines = function () {
-    riveScript.setSubroutine(all.flipkart.name, all.flipkart.subroutine)
-    riveScript.setSubroutine(all.ola.name, all.ola.subroutine)
-    riveScript.setSubroutine(all.uber.name, all.uber.subroutine)
-    riveScript.setSubroutine(all.weather.name, all.weather.subroutine)
+    brain.riveScript.setSubroutine(all.flipkart.name, all.flipkart.subroutine)
+    brain.riveScript.setSubroutine(all.ola.name, all.ola.subroutine)
+    brain.riveScript.setSubroutine(all.uber.name, all.uber.subroutine)
+    brain.riveScript.setSubroutine(all.weather.name, all.weather.subroutine)
 }
 
 brain.isLoaded = function () {
@@ -41,6 +41,7 @@ brain.onFailure = function (count, errorCallback) {
 }
 
 brain.onSuccess = function (count, successCallback) {
+    brain.initSubroutines()
     brain.setLoaded(true);
     brain.riveScript.sortReplies();
     successCallback()

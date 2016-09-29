@@ -284,7 +284,8 @@ function firstRun(session) {
     brain.load(() => {
       reply(session)
     }, () => {
-      session.send('I am sorry, it seems something went wrong while putting my brains inside my head. Feel free to inform about this to my creator admin@zup.chat')
+      const error = 'I am sorry, it seems something went wrong while putting my brains inside my head. Feel free to inform about this to my creator admin@zup.chat';
+      session.send(error)
     })
   }
   else {
@@ -292,6 +293,9 @@ function firstRun(session) {
   }
 }
 
+/**
+ * Generate a reply from the brain
+ */
 function reply(session) {
   brain.reply(session.message.user.id, session.message.text)
     .then((reply) => {
