@@ -49,7 +49,12 @@ const app = express();
 /**
  * Connect to MongoDB.
  */
-mongoose.connect(process.env.MONGODB_URI || process.env.MONGOLAB_URI);
+
+const options = {
+  server: { socketOptions: { keepAlive: 300000, connectTimeoutMS: 30000 } },
+  replset: { socketOptions: { keepAlive: 300000, connectTimeoutMS: 30000 } }
+};
+mongoose.connect(process.env.MONGODB_URI || process.env.MONGOLAB_URI, options);
 mongoose.connection.on('connected', () => {
   console.log('%s MongoDB connection established!', chalk.green('✓'));
 });
@@ -57,6 +62,16 @@ mongoose.connection.on('error', (error) => {
   console.log('%s MongoDB connection error. Please make sure MongoDB is running.', chalk.red('✗'), error);
   process.exit();
 });
+
+// If the Node process ends, close the Mongoose connection
+process.on('SIGINT', exitDatabase).on('SIGTERM', exitDatabase);
+function exitDatabase() {
+  mongoose.connection.close(function () {
+    console.log('mongoose disconnected because of SIGINT or SIGTERM');
+    process.exit(0);
+  });
+}
+
 
 /**
  * Express configuration.
@@ -262,14 +277,29 @@ bot.dialog('/', onMessage);
 var count = 1;
 function firstRun(session) {
 
+  //When the brains are loading, the reply is sent first and then the brain is loaded
+  //session.send has a delay option of 250ms after which all messages are queued and sent
+  //Refer https://github.com/Microsoft/BotBuilder/blob/master/Node/core/src/Session.ts for delay values
   if (!brain.isLoaded()) {
-    console.log('whats this ' + (count++) );
-    session.send('putting my brains inside my head, please wait...')
-    brain.load()
+    brain.load(() => {
+      reply(session)
+    }, () => {
+      session.send('I am sorry, it seems something went wrong while putting my brains inside my head. Feel free to inform about this to my creator admin@zup.chat')
+    })
   }
   else {
-    session.send(session.message.text)
+    reply(session)
   }
+}
+
+function reply(session) {
+  brain.reply(session.message.user.id, session.message.text)
+    .then((reply) => {
+      session.send(reply);
+    })
+    .catch((error) => {
+      session.send(error);
+    })
 }
 
 

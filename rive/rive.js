@@ -4,43 +4,54 @@ const cache = require('memory-cache');
 const RiveScript = require('rivescript');
 const events = require('events');
 
+const all = require('../features/all');
+
 let brain = {
-    path: __dirname,
     loaded: false,
-    object: new RiveScript({ debug: false, utf8: true, onDebug: this.onDebug })
+    path: __dirname,
+    riveScript: new RiveScript({ debug: false, utf8: true, onDebug: this.onDebug })
+}
+
+brain.initSubroutines = function () {
+    riveScript.setSubroutine(all.flipkart.name, all.flipkart.subroutine)
+    riveScript.setSubroutine(all.ola.name, all.ola.subroutine)
+    riveScript.setSubroutine(all.uber.name, all.uber.subroutine)
+    riveScript.setSubroutine(all.weather.name, all.weather.subroutine)
 }
 
 brain.isLoaded = function () {
     return brain.loaded;
 }
-brain.setLoaded = function (loaded) {
-    brain.loaded = loaded;
-}
 
-brain.load = function () {
-    console.log('load called again')
-    brain.object.loadDirectory(brain.path, (count) => {
-        brain.onSuccess(count)
+brain.load = function (successCallback, errorCallback) {
+    brain.riveScript.loadDirectory(brain.path, (count) => {
+        brain.onSuccess(count, successCallback)
     }, (error, count) => {
-        brain.onFailure(error)
+        brain.onFailure(error, errorCallback)
     });
-}
-
-brain.onSuccess = function (count) {
-    brain.setLoaded(true);
-    brain.object.sortReplies();
-}
-
-brain.onFailure = function (count) {
-    brain.setLoaded(false);
 }
 
 brain.onDebug = function (message) {
     //print all the triggers on the console
 }
 
-brain.reply = function () {
+brain.onFailure = function (count, errorCallback) {
+    brain.setLoaded(false);
+    errorCallback();
+}
 
+brain.onSuccess = function (count, successCallback) {
+    brain.setLoaded(true);
+    brain.riveScript.sortReplies();
+    successCallback()
+}
+
+brain.reply = function (userId, text) {
+    return brain.riveScript.replyAsync(userId, text, brain.this);
+}
+
+brain.setLoaded = function (loaded) {
+    brain.loaded = loaded;
 }
 
 module.exports = brain;
