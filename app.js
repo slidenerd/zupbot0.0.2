@@ -29,10 +29,12 @@ dotenv.load({ path: '.env.example' });
 /**
  * Controllers (route handlers).
  */
+const builder = require('./core/');
 const homeController = require('./controllers/home');
 const userController = require('./controllers/user');
 const apiController = require('./controllers/api');
 const contactController = require('./controllers/contact');
+const brain = require('./rive/rive');
 
 /**
  * API keys and Passport configuration.
@@ -51,8 +53,8 @@ mongoose.connect(process.env.MONGODB_URI || process.env.MONGOLAB_URI);
 mongoose.connection.on('connected', () => {
   console.log('%s MongoDB connection established!', chalk.green('✓'));
 });
-mongoose.connection.on('error', () => {
-  console.log('%s MongoDB connection error. Please make sure MongoDB is running.', chalk.red('✗'));
+mongoose.connection.on('error', (error) => {
+  console.log('%s MongoDB connection error. Please make sure MongoDB is running.', chalk.red('✗'), error);
   process.exit();
 });
 
@@ -85,7 +87,7 @@ app.use(passport.initialize());
 app.use(passport.session());
 app.use(flash());
 app.use((req, res, next) => {
-  if (req.path === '/api/upload') {
+  if (req.path === '/api/upload' || req.path === '/api/messages') {
     next();
   } else {
     lusca.csrf()(req, res, next);
@@ -97,13 +99,13 @@ app.use((req, res, next) => {
   res.locals.user = req.user;
   next();
 });
-app.use(function(req, res, next) {
+app.use(function (req, res, next) {
   // After successful login, redirect back to the intended page
   if (!req.user &&
-      req.path !== '/login' &&
-      req.path !== '/signup' &&
-      !req.path.match(/^\/auth/) &&
-      !req.path.match(/\./)) {
+    req.path !== '/login' &&
+    req.path !== '/signup' &&
+    !req.path.match(/^\/auth/) &&
+    !req.path.match(/\./)) {
     req.session.returnTo = req.path;
   }
   next();
@@ -223,5 +225,56 @@ app.use(errorHandler());
 app.listen(app.get('port'), () => {
   console.log('%s Express server listening on port %d in %s mode.', chalk.green('✓'), app.get('port'), app.get('env'));
 });
+
+// Create chat bot
+const connector = new builder.ChatConnector({
+  appId: process.env.APP_ID,
+  appPassword: process.env.APP_PASSWORD
+});
+const bot = new builder.UniversalBot(connector);
+app.post('/api/messages', connector.listen());
+
+//=========================================================
+// Bots Middleware
+//=========================================================
+
+// Anytime the major version is incremented any existing conversations will be restarted.
+
+var dialogVersionOptions = {
+  version: 1.0,
+  resetCommand: /^reset/i
+};
+bot.use(builder.Middleware.dialogVersion(dialogVersionOptions));
+
+//=========================================================
+// Bots Dialogs
+//=========================================================
+
+//Run this dialog the very first time for a particular user
+bot.use(builder.Middleware.firstRun({
+  version: 1.0,
+  dialogId: '/firstRun'
+}));
+
+bot.dialog('/firstRun', firstRun);
+bot.dialog('/', onMessage);
+
+var count = 1;
+function firstRun(session) {
+
+  if (!brain.isLoaded()) {
+    console.log('whats this ' + (count++) );
+    session.send('putting my brains inside my head, please wait...')
+    brain.load()
+  }
+  else {
+    session.send(session.message.text)
+  }
+}
+
+
+function onMessage(session) {
+  session.send('hi');
+}
 
 module.exports = app;
