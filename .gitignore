@@ -30,3 +30,6 @@ bower_components
 # OS metadata
 .DS_Store
 Thumbs.db
+
+# Exclude project related documents and files from the extras folder
+extras

@@ -14,8 +14,13 @@ const all = {
 all.weather.name = 'weather';
 all.weather.subroutine = function (rs, args) {
     return new rs.Promise((resolve, reject) => {
-        weather.execute((report)=>{
+        var lat = 19, lon = 72;
+        weather.execute(lat, lon)
+        .then((report)=>{
             resolve(report)
+        })
+        .catch((error)=>{
+            reject(error);
         })
     })
 }
