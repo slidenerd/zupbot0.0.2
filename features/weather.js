@@ -46,8 +46,6 @@ weather.execute = function (lat, lon) {
     }
     return new Promise((resolve, reject)=>{
         request(options, (error, response, body) => {
-            const result = isValid(body);
-            console.log(result);
             if (!error && response.statusCode == 200 && isValid(body)) {
                 var report = parse(body);
                 //TODO build a string from the weather report
