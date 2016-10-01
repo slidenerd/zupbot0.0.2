@@ -281,7 +281,7 @@ function firstRun(session) {
   //session.send has a delay option of 250ms after which all messages are queued and sent
   //Refer https://github.com/Microsoft/BotBuilder/blob/master/Node/core/src/Session.ts for delay values
   if (!brain.isLoaded()) {
-    brain.load(() => {
+    brain.load(session.message.user.id, () => {
       reply(session)
     }, () => {
       const error = 'I am sorry, it seems something went wrong while putting my brains inside my head. Feel free to inform about this to my creator admin@zup.chat';
@@ -298,8 +298,8 @@ function firstRun(session) {
  */
 function reply(session) {
   brain.reply(session.message.user.id, session.message.text)
-    .then((reply) => {
-      session.send(reply);
+    .then((response) => {
+      session.send(response);
     })
     .catch((error) => {
       session.send(error);

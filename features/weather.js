@@ -44,17 +44,20 @@ weather.execute = function (lat, lon) {
         headers: { 'Accept': 'application/json' },
         json: true
     }
-    return new Promise((resolve, reject) => {
+    return new Promise((resolve, reject)=>{
         request(options, (error, response, body) => {
+            const result = isValid(body);
+            console.log(result);
             if (!error && response.statusCode == 200 && isValid(body)) {
                 var report = parse(body);
                 //TODO build a string from the weather report
-                resolve(report.description)
+                resolve(report)
             } else {
                 reject(error)
             }
         });
     })
+    
 }
 
 module.exports = weather

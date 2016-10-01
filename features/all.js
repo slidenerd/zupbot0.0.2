@@ -12,16 +12,21 @@ const all = {
 }
 
 all.weather.name = 'weather';
-all.weather.subroutine = function (rs, args) {
+all.weather.subroutine = function (userId, rs, args) {
     return new rs.Promise((resolve, reject) => {
         var lat = 19, lon = 72;
         weather.execute(lat, lon)
-        .then((report)=>{
-            resolve(report)
-        })
-        .catch((error)=>{
-            reject(error);
-        })
+            .then((report) => {
+                rs.setUservar(userId, 'location', 'your place')
+                rs.setUservars(userId, report)
+                return rs.replyAsync(userId, 'jsweather', all.this)
+            })
+            .then((reply) => {
+                resolve(reply)
+            })
+            .catch((error) => {
+                reject(error);
+            })
     })
 }
 
