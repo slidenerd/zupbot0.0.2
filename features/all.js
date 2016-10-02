@@ -5,21 +5,19 @@ const uber = require('./uber')
 const weather = require('./weather')
 const cache = require('memory-cache');
 
-const CACHE_VALIDITY_PERIOD = 3600000
+const CACHE_VALIDITY_PERIOD = 1000 * 60 * 15
 
 const all = {
-    flipkart: {
-        alloffers: {},
-        filtered: {}
-    },
+    flipkart: {},
     ola: {},
     uber: {},
     weather: {},
 }
 
-all.flipkart.alloffers.name = 'flipkart';
-all.flipkart.alloffers.subroutine = function (userId, rs, args) {
+all.flipkart.name = 'flipkart';
+all.flipkart.subroutine = function (userId, rs, args) {
     return new rs.Promise((resolve, reject) => {
+        console.log(args)
         //Load from cache
         const KEY_FRESH_DATA = 'fresh'
         const KEY_OFFERS = 'offers'
@@ -33,7 +31,7 @@ all.flipkart.alloffers.subroutine = function (userId, rs, args) {
             reject({ type: 'carousel', data: cachedOffers })
         }
         else {
-            flipkart.execute()
+            flipkart.execute(args[0])
                 .then((offers) => {
                     if (offers && offers.length) {
                         cache.put(KEY_FRESH_DATA, true, CACHE_VALIDITY_PERIOD, (key, value) => {
@@ -43,41 +41,11 @@ all.flipkart.alloffers.subroutine = function (userId, rs, args) {
                             console.log(offers.length + 'offers was stored in the cache')
                         })
                     }
-                    //Reject this message as it is a carousel, we ll handle it differently from server
-                    reject({ type: 'carousel', data: offers })
-                })
-                .catch((error) => {
-                    reject({ type: 'error', data: error });
-                })
-        }
-    })
-}
 
-all.flipkart.filtered.name = 'flipkartFilter';
-all.flipkart.filtered.subroutine = function (userId, rs, args) {
-    return new rs.Promise((resolve, reject) => {
-        //Load from cache
-        const KEY_FRESH_DATA = 'fresh'
-        const KEY_OFFERS = 'filtered'
-        const cachedOffers = cache.get(KEY_OFFERS)
-        if (cachedOffers) {
-            cache.put(KEY_FRESH_DATA, false, CACHE_VALIDITY_PERIOD, (key, value) => {
-                console.log('fresh was stored in the cache');
-            });
-            //Reject this message as it is a carousel, we ll handle it differently from server
-            reject({ type: 'carousel', data: cachedOffers })
-        }
-        else {
-            flipkart.executeFilter()
-                .then((offers) => {
-                    if (offers && offers.length) {
-                        cache.put(KEY_FRESH_DATA, true, CACHE_VALIDITY_PERIOD, (key, value) => {
-                            console.log('fresh was stored in the cache');
-                        });
-                        cache.put(KEY_OFFERS, offers, CACHE_VALIDITY_PERIOD, (key, value) => {
-                            console.log(offers.length + 'offers was stored in the cache')
-                        })
+                    if(args && args[0] === 'mobiles_and_accessories'){
+                        
                     }
+
                     //Reject this message as it is a carousel, we ll handle it differently from server
                     reject({ type: 'carousel', data: offers })
                 })

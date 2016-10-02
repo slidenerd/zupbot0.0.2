@@ -28,13 +28,13 @@
 - I am sorry but I am not capable of doing stuff with <star> yet but lets ask my lazy creator to start slogging so that we can have this feature ready for you.
 
 + [*] (flipkart|flip kart) [*]{weight=999}
-- <call>flipkart</call>{topic=deals}
+- <call>flipkart nocategory</call>{topic=deals}
 
 + [*] (@offersynonyms) [*]{weight=999}
-- <call>flipkart</call>{topic=deals}
+- <call>flipkart nocategory</call>{topic=deals}
 
-+ [+] (@categorymobiles) [*] (@dealsynonyms){weight=999}
-- <call>flipkartFilter mobiles</call>
++ [*] (@categorymobiles) [*] (@dealsynonyms){weight=999}
+- <call>flipkart mobiles_and_accessories</call>
 
 //The name of this topic is being referred to from JS code
 > topic deals

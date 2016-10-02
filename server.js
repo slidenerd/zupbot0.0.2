@@ -73,7 +73,6 @@ function exitDatabase() {
   });
 }
 
-
 /**
  * Express configuration.
  */
