@@ -67,7 +67,7 @@ flipkart.execute = function () {
     });
 }
 
-flipkart.executeFilter = function () {
+flipkart.executeFilterByCategory = function (category) {
     return new Promise((resolve, reject) => {
         var headers = {
             'Fk-Affiliate-Id': endpoints.FLIPKART_AFFILIATE_ID,
@@ -83,10 +83,13 @@ flipkart.executeFilter = function () {
             if (!error && response.statusCode == 200) {
                 let data = body;
                 let offers = parse(data);
-                // jsonfile.writeFile(__dirname + '/data.json', offers, function (err) {
-                //     console.log(err)
-                // })
-                resolve(offers);
+                let filtered = []
+                for(let offer of offers){
+                    if(offer.category.includes(category)){
+                        filtered.add(offer);
+                    }
+                }
+                resolve(filtered);
             }
             else {
                 reject(error);

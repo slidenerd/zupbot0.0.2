@@ -58,7 +58,7 @@ all.flipkart.filtered.subroutine = function (userId, rs, args) {
     return new rs.Promise((resolve, reject) => {
         //Load from cache
         const KEY_FRESH_DATA = 'fresh'
-        const KEY_OFFERS = 'offers'
+        const KEY_OFFERS = 'filtered'
         const cachedOffers = cache.get(KEY_OFFERS)
         if (cachedOffers) {
             cache.put(KEY_FRESH_DATA, false, CACHE_VALIDITY_PERIOD, (key, value) => {

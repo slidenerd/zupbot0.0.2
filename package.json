@@ -1,9 +1,9 @@
 {
-  "name": "hackathon-starter",
-  "version": "4.2.1",
+  "name": "zup",
+  "version": "0.0.2",
   "repository": {
     "type": "git",
-    "url": "https://github.com/sahat/hackathon-starter.git"
+    "url": "https://github.com/slidenerd/zupbot0.0.2"
   },
   "scripts": {
     "start": "node server.js",
@@ -76,7 +76,7 @@
     "supertest": "^2.0.0"
   },
   "engines": {
-    "node": "6.1.0"
+    "node": "6.7.0"
   },
   "license": "MIT"
 }
