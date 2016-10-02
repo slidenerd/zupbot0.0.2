@@ -5,10 +5,37 @@ const uber = require('./uber')
 const weather = require('./weather')
 
 const all = {
-    weather: {},
     flipkart: {},
     ola: {},
-    uber: {}
+    uber: {},
+    weather: {},
+}
+
+all.flipkart.name = 'flipkart';
+all.flipkart.subroutine = function (userId, rs, args) {
+    return new rs.Promise((resolve, reject) => {
+        flipkart.execute()
+            .then((offers) => {
+                reject({ type: 'carousel', data: offers })
+            })
+            .catch((error) => {
+                reject({type: 'error', data: error});
+            })
+    })
+}
+
+all.ola.name = 'ola';
+all.ola.subroutine = function (rs, args) {
+    return new rs.Promise((resolve, reject) => {
+        resolve('booking a cab for you from mumbai to thane')
+    })
+}
+
+all.uber.name = 'uber'
+all.uber.subroutine = function (rs, args) {
+    return new rs.Promise((resolve, reject) => {
+        resolve('booking a cab for you from tirupur to coimbatore')
+    })
 }
 
 all.weather.name = 'weather';
@@ -27,27 +54,6 @@ all.weather.subroutine = function (userId, rs, args) {
             .catch((error) => {
                 reject(error);
             })
-    })
-}
-
-all.flipkart.name = 'flipkart';
-all.flipkart.subroutine = function (rs, args) {
-    return new rs.Promise((resolve, reject) => {
-        resolve('found 24 offers for you from flipkart today')
-    })
-}
-
-all.ola.name = 'ola';
-all.ola.subroutine = function (rs, args) {
-    return new rs.Promise((resolve, reject) => {
-        resolve('booking a cab for you from mumbai to thane')
-    })
-}
-
-all.uber.name = 'uber'
-all.uber.subroutine = function (rs, args) {
-    return new rs.Promise((resolve, reject) => {
-        resolve('booking a cab for you from tirupur to coimbatore')
     })
 }
 

@@ -29,12 +29,14 @@ dotenv.load({ path: '.env.example' });
 /**
  * Controllers (route handlers).
  */
-const builder = require('./core/');
 const homeController = require('./controllers/home');
 const userController = require('./controllers/user');
 const apiController = require('./controllers/api');
 const contactController = require('./controllers/contact');
+
+const builder = require('./core/');
 const brain = require('./rive/rive');
+const messageutils = require('./utils/messageutils')
 
 /**
  * API keys and Passport configuration.
@@ -274,21 +276,29 @@ bot.use(builder.Middleware.firstRun({
 bot.dialog('/firstRun', firstRun);
 bot.dialog('/', onMessage);
 
-var count = 1;
+/**
+ * When the brains are loading, ideally the reply should be sent first and 
+ * then the brain should be loaded. This can be achieved with a setTimeout method 
+ * session.send has a delay option of 250ms after which all messages are queued and sent
+ * Refer https://github.com/Microsoft/BotBuilder/blob/master/Node/core/src/Session.ts for delay
+ */
 function firstRun(session) {
 
-  //When the brains are loading, the reply is sent first and then the brain is loaded
-  //session.send has a delay option of 250ms after which all messages are queued and sent
-  //Refer https://github.com/Microsoft/BotBuilder/blob/master/Node/core/src/Session.ts for delay values
   if (!brain.isLoaded()) {
+    //Send the user ID to track variables for each user
     brain.load(session.message.user.id, () => {
+      //Reply once the brain has been loaded
       reply(session)
     }, () => {
+
+      //Notify the user of any errors that may occur if the brain loading fails
       const error = 'I am sorry, it seems something went wrong while putting my brains inside my head. Feel free to inform about this to my creator admin@zup.chat';
       session.send(error)
     })
   }
   else {
+
+    //Reply if the brains were loaded previously
     reply(session)
   }
 }
@@ -297,15 +307,21 @@ function firstRun(session) {
  * Generate a reply from the brain
  */
 function reply(session) {
+
   brain.reply(session.message.user.id, session.message.text)
     .then((response) => {
       session.send(response);
     })
-    .catch((error) => {
-      session.send(error);
+    .catch((response) => {
+      if (response && response.type === 'carousel') {
+        //handle carousel
+        messageutils.sendFlipkartCarousel(session, response.data)
+      }
+      else {
+        session.send(response);
+      }
     })
 }
-
 
 function onMessage(session) {
   session.send('hi');

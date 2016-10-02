@@ -34,7 +34,7 @@ function parse(json) {
 
 weather.execute = function (lat, lon) {
     const options = {
-        url: endpoints.OPEN_WEATHER_MAP_ENDPOINT, //URL to hit
+        url: endpoints.OPEN_WEATHER_MAP, //URL to hit
         qs: {
             lat: lat,
             lon: lon,
@@ -55,7 +55,6 @@ weather.execute = function (lat, lon) {
             }
         });
     })
-    
 }
 
 module.exports = weather

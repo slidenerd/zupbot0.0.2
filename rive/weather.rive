@@ -3,3 +3,9 @@
 
 + jsweather
 - The temperature at <get location> is <get temperature>
+
++ flipkart
+- <call>flipkart</call>
+
++ jsflipkart
+- I found <get count> offers for you today on Flipkart
