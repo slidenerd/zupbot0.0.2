@@ -1,6 +1,8 @@
 ! version = 2.0
 ! array weathersynonyms = weather|temperature|forecast|climate|forcast
 ! array dealsynonyms = coupon|coupons|discount|discounts|offers|deals
+//Categories
+! array mobiles = mobile|mobiles|phone|phones|mobile phone|mobile phones
 
 + [*] (cab|taxi) [*] {weight=996}
 - I am assuming that you want me to book a <star> for you. My slow coach boss is still working on that feature.
@@ -35,7 +37,7 @@
 > topic deals
 
 	// The rules whose names start with js... are triggered from code
-	+ jsdeals
+	+ jsflipkart
 	- Sure, I found <get count> deals for you on flipkart
 	- Ahan! we got <get count> deals on Flipkart today
 	- This must be my lucky day, I found <get count> deals for you on Flipkart
