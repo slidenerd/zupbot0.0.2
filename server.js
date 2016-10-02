@@ -33,16 +33,17 @@ const homeController = require('./controllers/home');
 const userController = require('./controllers/user');
 const apiController = require('./controllers/api');
 const contactController = require('./controllers/contact');
+const platforms = require('./controllers/platforms');
 
 const builder = require('./core/');
 const brain = require('./rive/rive');
 const messageutils = require('./utils/messageutils')
+const replies = require('./utils/replies')
 
 /**
  * API keys and Passport configuration.
  */
 const passportConfig = require('./config/passport');
-
 /**
  * Create Express server.
  */
@@ -62,7 +63,6 @@ mongoose.connection.on('connected', () => {
 });
 mongoose.connection.on('error', (error) => {
   console.log('%s MongoDB connection error. Please make sure MongoDB is running.', chalk.red('✗'), error);
-  process.exit();
 });
 
 // If the Node process ends, close the Mongoose connection
@@ -273,9 +273,8 @@ bot.use(builder.Middleware.firstRun({
   dialogId: '/firstRun'
 }));
 
-bot.dialog('/firstRun', firstRun);
+bot.dialog('/firstRun', [firstRun]);
 bot.dialog('/', onMessage);
-
 /**
  * When the brains are loading, ideally the reply should be sent first and 
  * then the brain should be loaded. This can be achieved with a setTimeout method 
@@ -283,7 +282,20 @@ bot.dialog('/', onMessage);
  * Refer https://github.com/Microsoft/BotBuilder/blob/master/Node/core/src/Session.ts for delay
  */
 function firstRun(session) {
+  handleWithBrains(session)
+  platforms.greet(session);
+  //If the user wasnt added before, add the user
+  userController.addBotUser(session);
+  session.endDialog()
+}
 
+function onMessage(session) {
+  //If the user wasnt added before, add the user
+  userController.addBotUser(session);
+  handleWithBrains(session)
+}
+
+function handleWithBrains(session) {
   if (!brain.isLoaded()) {
     //Send the user ID to track variables for each user
     brain.load(session.message.user.id, () => {
@@ -292,12 +304,11 @@ function firstRun(session) {
     }, () => {
 
       //Notify the user of any errors that may occur if the brain loading fails
-      const error = 'I am sorry, it seems something went wrong while putting my brains inside my head. Feel free to inform about this to my creator admin@zup.chat';
+      const error = replies.getBrainLoadingFailed()
       session.send(error)
     })
   }
   else {
-
     //Reply if the brains were loaded previously
     reply(session)
   }
@@ -307,15 +318,15 @@ function firstRun(session) {
  * Generate a reply from the brain
  */
 function reply(session) {
-
   brain.reply(session.message.user.id, session.message.text)
     .then((response) => {
       session.send(response);
     })
     .catch((response) => {
+
+      //Handle special cases here such as carousel, we rejected them from all.js as rive doesnt handle custom objects resolved through its Promise
       if (response && response.type === 'carousel') {
-        //handle carousel
-        messageutils.sendFlipkartCarousel(session, response.data)
+        session.beginDialog('/carousel', response.data);
       }
       else {
         session.send(response);
@@ -323,8 +334,12 @@ function reply(session) {
     })
 }
 
-function onMessage(session) {
-  session.send('hi');
-}
+/**
+ * Dialog that handles displaying a carousel on Flipkart
+ */
+bot.dialog('/carousel', (session, args) => {
+  messageutils.sendFlipkartCarousel(session, args)
+  session.endDialog();
+})
 
 module.exports = app;

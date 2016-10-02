@@ -1,7 +1,10 @@
 const endpoints = {}
 
+//facebook
+endpoints.FACEBOOK_PAGE_ACCESS_TOKEN = 'EAAZAJiqhoMfYBAFEM3IxmIV5X0zdr5GlFfD86SoD7kA0ir5ngpSWd4YGEttflmPzu4ypZBxuJreOXbkRWJ6sTHbQN6gnkpYdfTkZAAEhvVwaZCuZAYxBBVHhIecTBCCBmhU65mbLL6XKQUgNg1AqXR4CbgrET2ZAQMwqIZA8jeouAZDZD'
+
 //flipkart
-endpoints.FLIPKART = 'https://affiliate-api.flipkart.net/affiliate/offers/v1/dotd/json'
+endpoints.FLIPKART = 'https://affiliate-api.flipkart.net/affiliate/offers/v1/all/json'
 endpoints.FLIPKART_AFFILIATE_ID = 'slidenerd'
 endpoints.FLIPKART_AFFILIATE_TOKEN = 'cb49349872094f7494d802c1efc6b67b'
 

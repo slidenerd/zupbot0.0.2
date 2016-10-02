@@ -1,0 +1,108 @@
+! version = 2.0
+! array weathersynonyms = weather|temperature|forecast|climate|forcast
+! array dealsynonyms = coupon|coupons|discount|discounts|offers|deals
+
++ [*] (cab|taxi) [*] {weight=996}
+- I am assuming that you want me to book a <star> for you. My slow coach boss is still working on that feature.
+- I take it that you want me to get a <star> for you. Oops, work in progress, will keep you posted.
+- I think you are asking me to find a <star> for you. I will ask my dear boss to work faster on this.
+
++ [*] (ola|uber) [*] {weight=996}
+- I am assuming that you want me to book an <star> cab for you. My slow coach boss is still working on that feature.
+- I take it that you want me to get an <star> cab for you. Oops, work in progress, will keep you posted.
+- I think you are asking me to find an <star> cab for you. I will ask my dear boss to work faster on this.
+
++ [*] (hotel|restaurant) [*] {weight=996}
+- I guess you want me to book a <star>. Its still work in progress.
+- I assume you want me to get a <star> for you. My lazy boss is working on it.
+- I think you want me to find you a nice <star>. 
+
++ [*] (flight|plane|train|bus|ticket|movie|concert) [*] {weight=996}
+- I think you want me to book a <star> for you. I will ask my boss to hurry up and get this feature live.
+- I guess you want me to get you a <star>. I will ping my lazy boss to get this up as fast as possible.
+
++ [*] (amazon|justdial|groupon|nearbuy) [*]
+- I guess you are asking me to find stuff on <star>. Oops, currently I am not capable of doing so but I will ask my creator to start slogging on this.
+- I am sorry but I am not capable of doing stuff with <star> yet but lets ask my lazy creator to start slogging so that we can have this feature ready for you.
+
++ [*] (flipkart|flip kart) [*]{weight=999}
+- <call>flipkart</call>{topic=deals}
+
++ [*] (@dealsynonyms) [*]{weight=999}
+- <call>flipkart</call>{topic=deals}
+
+//The name of this topic is being referred to from JS code
+> topic deals
+
+	// The rules whose names start with js... are triggered from code
+	+ jsdeals
+	- Sure, I found <get count> deals for you on flipkart
+	- Ahan! we got <get count> deals on Flipkart today
+	- This must be my lucky day, I found <get count> deals for you on Flipkart
+	- Of course! Flipkart is offering <get count> deals today. Here are some details
+
+	//Default messages by user will be handled by the random topic outside
+	+ *
+	- <@>{topic=random}
+< topic
+
++ [*] recharge [*] # [*]{weight=998}
+- Ofc, I take it you wanna recharge this number <star> <call>findOperatorInfo <star></call>
+
++ [*] recharge [*]{weight=998}
+- I think you want me to recharge stuff. I am currently not capable of doing this but let me ping my lazy boss and get him to work on it
+- I guess you want me to do a recharge. Currently, I cant do it but I will ask my lazy creator to get to work on this.
+- I believe you are asking me to recharge stuff. My bonehead boss still hasnt trained me on this. I will ping my boss and ask him to get to work
+
+//The name of this topic is being referred to from JS code
+> topic recharge
+	// The rules whose names start with js... are triggered from code
+	+ jsoperatorinfo
+	* <get operatorName> == undefined => Oops, I wasn't able to find your operator name. Would you like me to search again?
+	* <get circleName> == undefined => Oops, I wasn't able to find the state where your number is locatd. Would you like me to search again?
+	- Your phone belongs to <get operatorName> and you are based in <get circleName> However my boss is still working on the recharge part.
+
+	//Default messages by user will be handled by the random topic outside
+	+ *
+	- <@>{topic=random}
+< topic
+
++ [*] (what|how) [*] (@weathersynonyms) [*] (at|in|of|for) my *{weight=997}
+- <call>askLocation</call>{topic=weather}
+
++ [*] (what|how) [*] (@weathersynonyms) [*] (at|in|of|for) *{weight=997}
+- <call>weather {formal}<star4>{/formal}</call> {topic=weather}
+
++ [*] (@weathersynonyms) [*] (at|in|of|for) my *{weight=997}
+- <call>askLocation</call>{topic=weather}
+
++ [*] (@weathersynonyms) [*] (at|in|of|for) *{weight=997}
+- <call>weather {formal}<star3>{/formal}</call> {topic=weather} 
+
+//The name of this topic is being referred to from JS code
+> topic weather
+
+	// The rules whose names start with js... are triggered from code
+	+ jsweather
+	* <get temperature> == undefined => Ooops, I couldn't get any weather report that clearly mentions the temperature.
+	* <get location> == undefined => I couldn't get any weather report for this place.
+	- The weather gods told me that the temperature at <get location> is <get temperature> degrees C and the humidity is <get humidity>% 
+	- I sent an email to the weather gods and this was their reply. The temperature is <get temperature> degrees C at <get location> and the humidity is <get humidity>% 
+	- I said 'ping ping' to the weather gods and they replied back with a 'ding ding'. The temperature at <get location> seems to be <get temperature> degrees C and it is <get humidity>% humid 
+
+	+ [*] humidity [*]
+	- It is <get humidity>% humid at <get location>
+	- The humidity is <get humidity>% at <get location>
+
+	+ [*] pressure [*]
+	- The pressure seems to be <get pressure> at <get location>
+
+	//Default messages by user will be handled by the random topic outside
+	+ *
+	- <@>{topic=random}
+
+< topic
+
+
+
+
