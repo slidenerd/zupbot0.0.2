@@ -391,6 +391,9 @@ exports.addBotUser = function (session) {
         id: session.message.address.conversation.id,
         name: session.message.address.conversation.name,
         isGroup: session.message.address.conversation.isGroup
+      },
+      profile: {
+        name: session.message.user.name
       }
     }
     User.findOneAndUpdate({ _id: session.userData.user._id }, session.userData.user, { upsert: true, new: true }, (err, newUser) => {
