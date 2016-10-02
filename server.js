@@ -32,7 +32,7 @@ const homeController = require('./controllers/home');
 const userController = require('./controllers/user');
 const apiController = require('./controllers/api');
 const contactController = require('./controllers/contact');
-const platforms = require('./controllers/platforms');
+const platforms = require('./utils/platforms');
 
 const builder = require('./core/');
 const brain = require('./rive/rive');
@@ -78,7 +78,7 @@ function exitDatabase() {
  */
 app.set('port', process.env.PORT || 3000);
 app.set('views', path.join(__dirname, 'views'));
-app.set('view engine', 'pug');
+// app.set('view engine', 'pug');
 app.use(compression());
 app.use(sass({
   src: path.join(__dirname, 'public'),
