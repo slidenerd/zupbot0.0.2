@@ -283,12 +283,14 @@ function firstRun(session) {
   platforms.greet(session);
   //If the user wasnt added before, add the user
   userController.addBotUser(session);
+  console.log('first run finished')
   session.endDialog()
 }
 
 function onMessage(session) {
   //If the user wasnt added before, add the user
   userController.addBotUser(session);
+  console.log('subsequent run')
   handleWithBrains(session)
 }
 

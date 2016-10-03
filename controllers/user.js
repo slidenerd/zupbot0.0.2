@@ -377,6 +377,7 @@ exports.postForgot = (req, res, next) => {
 
 exports.addBotUser = function (session) {
   if (!session.userData.user) {
+    console.log('adding user for the first time')
     //Add a dummy email address since we dont have one for bot users
     session.userData.user = {
       _id: session.message.user.id,
@@ -405,6 +406,4 @@ exports.addBotUser = function (session) {
       }
     });
   }
-
-
 }
