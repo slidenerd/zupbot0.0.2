@@ -3,7 +3,20 @@ const crypto = require('crypto');
 const mongoose = require('mongoose');
 
 const userSchema = new mongoose.Schema({
+  _id: { type: String, required: true, unique: true },
   email: { type: String, unique: true },
+
+  bot: {
+    id: { type: String },
+    name: { type: String }
+  },
+
+  channelId: { type: String },
+  conv: {
+    id: { type: String },
+    name: { type: String },
+    isGroup: { type: String }
+  },
   password: String,
   passwordResetToken: String,
   passwordResetExpires: Date,
@@ -20,7 +33,9 @@ const userSchema = new mongoose.Schema({
   profile: {
     name: String,
     gender: String,
-    location: String,
+    location: {type: String},
+    lat: { type: Number },
+    lon: { type: Number },
     website: String,
     picture: String
   }

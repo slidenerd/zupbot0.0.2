@@ -1,0 +1,44 @@
+{  
+   "coord":{  
+      "lon":72.85,
+      "lat":19.01
+   },
+   "weather":[  
+      {  
+         "id":500,
+         "main":"Rain",
+         "description":"light rain",
+         "icon":"10d"
+      }
+   ],
+   "base":"stations",
+   "main":{  
+      "temp":299.46,
+      "pressure":1019.87,
+      "humidity":100,
+      "temp_min":299.46,
+      "temp_max":299.46,
+      "sea_level":1020.58,
+      "grnd_level":1019.87
+   },
+   "wind":{  
+      "speed":8.46,
+      "deg":237.506
+   },
+   "rain":{  
+      "3h":0.255
+   },
+   "clouds":{  
+      "all":92
+   },
+   "dt":1470907533,
+   "sys":{  
+      "message":0.0112,
+      "country":"IN",
+      "sunrise":1470876527,
+      "sunset":1470922702
+   },
+   "id":1275339,
+   "name":"Mumbai",
+   "cod":200
+}

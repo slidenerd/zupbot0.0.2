@@ -2,8 +2,8 @@ const async = require('async');
 const crypto = require('crypto');
 const nodemailer = require('nodemailer');
 const passport = require('passport');
+const uuid = require('uuid');
 const User = require('../models/User');
-
 /**
  * GET /login
  * Login page.
@@ -87,6 +87,7 @@ exports.postSignup = (req, res, next) => {
   }
 
   const user = new User({
+    _id: 'web#' + uuid.v1(),
     email: req.body.email,
     password: req.body.password
   });
@@ -282,7 +283,7 @@ exports.postReset = (req, res, next) => {
       });
       const mailOptions = {
         to: user.email,
-        from: 'hackathon@starter.com',
+        from: 'admin@zup.chat',
         subject: 'Your Hackathon Starter password has been changed',
         text: `Hello,\n\nThis is a confirmation that the password for your account ${user.email} has just been changed.\n`
       };
@@ -356,7 +357,7 @@ exports.postForgot = (req, res, next) => {
       });
       const mailOptions = {
         to: user.email,
-        from: 'hackathon@starter.com',
+        from: 'admin@zup.chat',
         subject: 'Reset your password on Hackathon Starter',
         text: `You are receiving this email because you (or someone else) have requested the reset of the password for your account.\n\n
           Please click on the following link, or paste this into your browser to complete the process:\n\n
@@ -373,3 +374,36 @@ exports.postForgot = (req, res, next) => {
     res.redirect('/forgot');
   });
 };
+
+exports.addBotUser = function (session) {
+  if (!session.userData.user) {
+    console.log('adding user for the first time')
+    //Add a dummy email address since we dont have one for bot users
+    session.userData.user = {
+      _id: session.message.user.id,
+      //Replace all the - symbols in UUID to generate a plain string
+      email: 'dummy' + uuid.v1().replace(/-/g, '') + '@zup.chat',
+      bot: {
+        id: session.message.address.bot.id,
+        name: session.message.address.bot.userName
+      },
+      channelId: session.message.address.channelId,
+      conv: {
+        id: session.message.address.conversation.id,
+        name: session.message.address.conversation.name,
+        isGroup: session.message.address.conversation.isGroup
+      },
+      profile: {
+        name: session.message.user.name
+      }
+    }
+    User.findOneAndUpdate({ _id: session.userData.user._id }, session.userData.user, { upsert: true, new: true }, (err, newUser) => {
+      if (err) {
+        console.log('there was an error adding this person' + err)
+      }
+      if (newUser) {
+        console.log('the person was added successfully')
+      }
+    });
+  }
+}
