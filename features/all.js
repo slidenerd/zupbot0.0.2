@@ -11,6 +11,7 @@ const all = {
     uber: {}
 }
 
+all.geocoder = require('./geocoder')
 all.weather.name = 'weather';
 all.weather.subroutine = function (rs, args) {
     return new rs.Promise((resolve, reject) => {
