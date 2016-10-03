@@ -15,14 +15,6 @@ const all = {
 }
 
 all.geocoder = require('./geocoder')
-all.weather.name = 'weather';
-all.weather.subroutine = function (rs, args) {
-    return new rs.Promise((resolve, reject) => {
-        weather.execute((report)=>{
-            resolve(report)
-        })
-    })
-}
 
 all.flipkart.name = 'flipkart';
 all.flipkart.subroutine = function (userId, rs, args) {
