@@ -67,7 +67,8 @@
     "twilio": "^3.3.1-edge",
     "twit": "^2.2.4",
     "uuid": "^2.0.3",
-    "validator": "^6.0.0"
+    "validator": "^6.0.0",
+    "node-geocoder": "^3.15.0"
   },
   "devDependencies": {
     "chai": "^3.5.0",

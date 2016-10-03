@@ -3,7 +3,8 @@ const flipkart = require('./flipkart')
 const ola = require('./ola')
 const uber = require('./uber')
 const weather = require('./weather')
-const cache = require('memory-cache');
+const cache = require('memory-cache')
+const geocoder = require('./geocoder');
 
 //Cache the results for 30 mins
 const CACHE_VALIDITY_PERIOD = 1000 * 60 * 30
@@ -18,7 +19,8 @@ const all = {
     flipkart: {},
     ola: {},
     uber: {},
-    weather: {},
+    skyscanner: {},
+    weather: {}
 }
 
 all.flipkart.name = 'flipkart';
@@ -69,6 +71,25 @@ all.uber.name = 'uber'
 all.uber.subroutine = function (rs, args) {
     return new rs.Promise((resolve, reject) => {
         resolve('booking a cab for you from tirupur to coimbatore')
+    })
+}
+
+all.skyscanner.name = 'skyscanner'
+all.skyscanner.subroutine = function() {
+    return new rs.Promise((resolve, reject) => {
+        var lat = 19, lon = 72;
+        skyscanner.execute(lat, lon)
+            .then((report) => {
+                rs.setUservar(userId, 'location', 'your place')
+                rs.setUservars(userId, report)
+                return rs.replyAsync(userId, 'jsweather', all.this)
+            })
+            .then((reply) => {
+                resolve(reply)
+            })
+            .catch((error) => {
+                reject(error);
+            })
     })
 }
 
