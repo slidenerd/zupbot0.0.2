@@ -399,7 +399,7 @@ exports.addBotUser = function (session) {
     }
 
     //Dont add users to the database while running on the emulator
-    if (session.message.address.channelId.toLowerCase() === 'emulator') {
+    if (session.message.address.channelId.toLowerCase() != 'emulator') {
       User.findOneAndUpdate({ _id: session.userData.user._id }, session.userData.user, { upsert: true, new: true }, (err, newUser) => {
         if (err) {
           console.log('there was an error adding this person' + err)

@@ -36,7 +36,7 @@ all.flipkart.subroutine = function (userId, rs, args) {
                 console.log('fresh was stored in the cache');
             });
             //Reject this message as it is a carousel, we ll handle it differently from server
-            reject({ type: 'carousel', data: cachedOffers})
+            reject({ type: 'carousel', data: cachedOffers, filters: args})
         }
         else {
             flipkart.execute()

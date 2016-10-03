@@ -42,6 +42,8 @@ messageutils.sendFlipkartCarousel = function (session, offers, filters) {
     }
 
     if (filters) {
+        console.log('old ' + session.userData.flipkartFilters);
+        console.log('new ' + filters);
         session.userData.flipkartFilters = filters;
     }
 
@@ -102,6 +104,9 @@ messageutils.sendFlipkartCarousel = function (session, offers, filters) {
             msg = replies.getFlipkartNoMoreOffers()
             //We have reached the limit of browsing every single offer, lets reset things back to 0
             session.userData.from = 0
+
+            //Reset filters set by the user
+            session.userData.filters = null;
         }
 
     }

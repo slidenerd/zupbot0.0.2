@@ -69,16 +69,18 @@ flipkart.execute = function () {
 
 flipkart.applyFilters = function (offers, filters) {
     if (filters) {
-        for (var i = 0; i < filters.length; i++) {
-            if(i === 0){
-                //filters for category level
-                offers = offers.filter((offer)=>{
+        //filters for category level
+        if (filters.length == 1) {
+            var category = filters[0].toLowerCase();
+            if (category != 'nocategory') {
+                offers = offers.filter((offer) => {
                     var category = offer.category;
                     var filter = filters[0];
                     return category.toLowerCase() === filter;
                 });
             }
         }
+
     }
     return offers;
 }
