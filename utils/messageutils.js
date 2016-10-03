@@ -5,7 +5,7 @@ const flipkart = require('../features/flipkart');
 
 
 const messageutils = {}
-const MESSENGER_CAROUSEL_LIMIT = 15;
+const MESSENGER_CAROUSEL_LIMIT = 10;
 const SKYPE_CAROUSEL_LIMIT = 5;
 const EMULATOR_CAROUSEL_LIMIT = 10;
 
