@@ -1,6 +1,6 @@
 ! version = 2.0
-! array weathersynonyms = weather|temperature|forecast|climate|forcast
-! array offersynonyms = coupon|coupons|discount|discounts|offers|deals
+! array weatherwords = weather|temperature|forecast|climate|forcast
+! array offerwords = coupon|coupons|discount|discounts|offers|deals
 //Categories
 ! array categorymobiles = mobile|mobiles|phone|phones|mobile phone|mobile phones
 
@@ -30,13 +30,13 @@
 + [*] (flipkart|flip kart) [*]{weight=999}
 - <call>flipkart nocategory</call>{topic=offers}
 
-+ [*] (@offersynonyms) [*]{weight=998}
++ [*] (@offerwords) [*]{weight=998}
 - <call>flipkart nocategory</call>{topic=offers}
 
-+ [*] (@categorymobiles) [*] (@offersynonyms) [*]{weight=999}
++ [*] (@categorymobiles) [*] (@offerwords) [*]{weight=999}
 - <call>flipkart mobiles_and_accessories</call>
 
-+ [*] (@offersynonyms) [*] (@categorymobiles) [*]{weight=999}
++ [*] (@offerwords) [*] (@categorymobiles) [*]{weight=999}
 - <call>flipkart mobiles_and_accessories</call>
 
 //The name of this topic is being referred to from JS code
@@ -75,16 +75,16 @@
 	- <@>{topic=random}
 < topic
 
-+ [*] (what|how) [*] (@weathersynonyms) [*] (at|in|of|for) my *{weight=997}
++ [*] (what|how) [*] (@weatherwords) [*] (at|in|of|for) my *{weight=997}
 - <call>askLocation</call>{topic=weather}
 
-+ [*] (what|how) [*] (@weathersynonyms) [*] (at|in|of|for) *{weight=997}
++ [*] (what|how) [*] (@weatherwords) [*] (at|in|of|for) *{weight=997}
 - <call>weather {formal}<star4>{/formal}</call> {topic=weather}
 
-+ [*] (@weathersynonyms) [*] (at|in|of|for) my *{weight=997}
++ [*] (@weatherwords) [*] (at|in|of|for) my *{weight=997}
 - <call>askLocation</call>{topic=weather}
 
-+ [*] (@weathersynonyms) [*] (at|in|of|for) *{weight=997}
++ [*] (@weatherwords) [*] (at|in|of|for) *{weight=997}
 - <call>weather {formal}<star3>{/formal}</call> {topic=weather} 
 
 //The name of this topic is being referred to from JS code

@@ -25,10 +25,11 @@ const all = {
 }
 
 all.flipkart.name = 'flipkart';
-all.flipkart.subroutine = function (rs, args) {
+all.flipkart.subroutine = function (userId, rs, args) {
     return new rs.Promise((resolve, reject) => {
-        console.log('here we go '+args)
+        console.log(args)
         //Load from cache
+        
         const cachedOffers = cache.get(KEY_OFFERS)
         if (cachedOffers) {
             console.log('get offers from cache')
@@ -36,12 +37,7 @@ all.flipkart.subroutine = function (rs, args) {
                 console.log('fresh was stored in the cache');
             });
             //Reject this message as it is a carousel, we ll handle it differently from server
-            var response = {
-                type: 'carousel', 
-                data: cachedOffers, 
-                filters: args
-            }
-            resolve(JSON.stringify(response))
+            reject({ type: 'carousel', data: cachedOffers, filters: args})
         }
         else {
             flipkart.execute()
@@ -56,13 +52,7 @@ all.flipkart.subroutine = function (rs, args) {
                     }
 
                     //Reject this message as it is a carousel, we ll handle it differently from server
-                    var response = {
-                        type: 'carousel', 
-                        data: offers, 
-                        filters: args
-                    }
-                    
-                    resolve(JSON.stringify(response))
+                    reject({ type: 'carousel', data: offers, filters: args})
                 })
                 .catch((error) => {
                     reject({ type: 'error', data: error });

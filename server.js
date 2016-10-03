@@ -279,11 +279,11 @@ bot.dialog('/', onMessage);
  * Refer https://github.com/Microsoft/BotBuilder/blob/master/Node/core/src/Session.ts for delay
  */
 function firstRun(session) {
-  handleWithBrains(session)
   platforms.greet(session);
   //If the user wasnt added before, add the user
   userController.addBotUser(session);
-  console.log('first run finished')
+  handleWithBrains(session)
+  console.log('first run')
   session.endDialog()
 }
 
@@ -297,6 +297,7 @@ function onMessage(session) {
 function handleWithBrains(session) {
   if (!brain.isLoaded()) {
     //Send the user ID to track variables for each user
+    
     brain.load(session.message.user.id, () => {
       //Reply once the brain has been loaded
       reply(session)
@@ -325,20 +326,12 @@ function reply(session) {
 
       //Handle special cases here such as carousel, we rejected them from all.js as rive doesnt handle custom objects resolved through its Promise
       if (response && response.type === 'carousel') {
-        session.beginDialog('/carousel', response);
+        messageutils.sendFlipkartCarousel(session, response.data, response.filters)      
       }
       else {
         session.send(response);
       }
     })
 }
-
-/**
- * Dialog that handles displaying a carousel on Flipkart
- */
-bot.dialog('/carousel', (session, args) => {
-  messageutils.sendFlipkartCarousel(session, args.data, args.filters)
-  session.endDialog();
-})
 
 module.exports = app;

@@ -21,6 +21,7 @@ let brain = {
  * All subroutines must return values
  */
 brain.initSubroutines = function (userId) {
+    all.userId = userId;
     brain.riveScript.setSubroutine(all.flipkart.name, (rs, args) => {
         return all.flipkart.subroutine(userId, rs, args)
     })
