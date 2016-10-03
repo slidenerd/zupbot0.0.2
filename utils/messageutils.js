@@ -1,6 +1,7 @@
 const builder = require('../core/');
 const cache = require('memory-cache');
-const replies = require('./replies')
+const replies = require('./replies');
+const flipkart = require('../features/flipkart');
 
 
 const messageutils = {}
@@ -9,7 +10,9 @@ const SKYPE_CAROUSEL_LIMIT = 5;
 const EMULATOR_CAROUSEL_LIMIT = 10;
 
 
-messageutils.sendFlipkartCarousel = function (session, offers) {
+messageutils.sendFlipkartCarousel = function (session, offers, filters) {
+
+    console.log(filters)
     // Ask the user to select an item from a carousel.
     var attachments = []
     //handle upper limits on how many items can be displayed in the carousel for each platform
@@ -38,17 +41,25 @@ messageutils.sendFlipkartCarousel = function (session, offers) {
         session.userData.from = 0;
     }
 
+    if (filters) {
+        session.userData.flipkartFilters = filters;
+    }
+
     //Begin displaying items either from 0 or from a previous number
     var from = session.userData.from || 0
 
     //Display exactly limit number of items
     var to = from + limit
 
+    offers = flipkart.applyFilters(offers, session.userData.flipkartFilters);
+
+
     for (var i = from; i < to && i < offers.length; i++) {
         var offer = offers[i];
+
         attachments.push(new builder.HeroCard(session)
             .title(offer.title)
-            .subtitle(offer.description + ' in ' + offer.category) 
+            .subtitle(offer.description + ' in ' + offer.category)
             .images([
                 builder.CardImage.create(session, offer.imageUrl)
                     .tap(builder.CardAction.showImage(session, offer.url)),

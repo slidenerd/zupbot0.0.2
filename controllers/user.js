@@ -377,7 +377,7 @@ exports.postForgot = (req, res, next) => {
 
 exports.addBotUser = function (session) {
   if (!session.userData.user) {
-    console.log('adding user for the first time')
+    console.log('adding user for the first time if its not an emulator')
     //Add a dummy email address since we dont have one for bot users
     session.userData.user = {
       _id: session.message.user.id,
@@ -397,13 +397,17 @@ exports.addBotUser = function (session) {
         name: session.message.user.name
       }
     }
-    User.findOneAndUpdate({ _id: session.userData.user._id }, session.userData.user, { upsert: true, new: true }, (err, newUser) => {
-      if (err) {
-        console.log('there was an error adding this person' + err)
-      }
-      if (newUser) {
-        console.log('the person was added successfully')
-      }
-    });
+
+    //Dont add users to the database while running on the emulator
+    if (session.message.address.channelId.toLowerCase() === 'emulator') {
+      User.findOneAndUpdate({ _id: session.userData.user._id }, session.userData.user, { upsert: true, new: true }, (err, newUser) => {
+        if (err) {
+          console.log('there was an error adding this person' + err)
+        }
+        if (newUser) {
+          console.log('the person was added successfully')
+        }
+      });
+    }
   }
 }

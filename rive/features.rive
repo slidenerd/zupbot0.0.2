@@ -33,7 +33,10 @@
 + [*] (@offersynonyms) [*]{weight=999}
 - <call>flipkart nocategory</call>{topic=deals}
 
-+ [*] (@categorymobiles) [*] (@dealsynonyms){weight=999}
++ [*] (@categorymobiles) [*] (@offersynonyms) [*]{weight=999}
+- <call>flipkart mobiles_and_accessories</call>
+
++ [*] (@offersynonyms) [*] (@categorymobiles) [*]{weight=999}
 - <call>flipkart mobiles_and_accessories</call>
 
 //The name of this topic is being referred to from JS code

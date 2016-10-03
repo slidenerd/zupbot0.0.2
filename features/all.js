@@ -5,7 +5,14 @@ const uber = require('./uber')
 const weather = require('./weather')
 const cache = require('memory-cache');
 
-const CACHE_VALIDITY_PERIOD = 1000 * 60 * 15
+//Cache the results for 30 mins
+const CACHE_VALIDITY_PERIOD = 1000 * 60 * 30
+
+//key used to determine if flipkart results are fresh or came from the cache
+const KEY_FRESH_DATA = 'fresh'
+
+//Key used to store the offers retrieved from Flipkart
+const KEY_OFFERS = 'offers'
 
 const all = {
     flipkart: {},
@@ -19,8 +26,7 @@ all.flipkart.subroutine = function (userId, rs, args) {
     return new rs.Promise((resolve, reject) => {
         console.log(args)
         //Load from cache
-        const KEY_FRESH_DATA = 'fresh'
-        const KEY_OFFERS = 'offers'
+        
         const cachedOffers = cache.get(KEY_OFFERS)
         if (cachedOffers) {
             console.log('get offers from cache')
@@ -28,7 +34,7 @@ all.flipkart.subroutine = function (userId, rs, args) {
                 console.log('fresh was stored in the cache');
             });
             //Reject this message as it is a carousel, we ll handle it differently from server
-            reject({ type: 'carousel', data: cachedOffers })
+            reject({ type: 'carousel', data: cachedOffers})
         }
         else {
             flipkart.execute(args[0])
@@ -42,12 +48,8 @@ all.flipkart.subroutine = function (userId, rs, args) {
                         })
                     }
 
-                    if(args && args[0] === 'mobiles_and_accessories'){
-                        
-                    }
-
                     //Reject this message as it is a carousel, we ll handle it differently from server
-                    reject({ type: 'carousel', data: offers })
+                    reject({ type: 'carousel', data: offers, filters: args})
                 })
                 .catch((error) => {
                     reject({ type: 'error', data: error });

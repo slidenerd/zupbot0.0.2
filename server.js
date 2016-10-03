@@ -325,7 +325,7 @@ function reply(session) {
 
       //Handle special cases here such as carousel, we rejected them from all.js as rive doesnt handle custom objects resolved through its Promise
       if (response && response.type === 'carousel') {
-        session.beginDialog('/carousel', response.data);
+        session.beginDialog('/carousel', response);
       }
       else {
         session.send(response);
@@ -337,7 +337,7 @@ function reply(session) {
  * Dialog that handles displaying a carousel on Flipkart
  */
 bot.dialog('/carousel', (session, args) => {
-  messageutils.sendFlipkartCarousel(session, args)
+  messageutils.sendFlipkartCarousel(session, args.data, args.filters)
   session.endDialog();
 })
 

@@ -55,9 +55,9 @@ flipkart.execute = function () {
             if (!error && response.statusCode == 200) {
                 let data = body;
                 let offers = parse(data);
-                // jsonfile.writeFile(__dirname + '/data.json', offers, function (err) {
-                //     console.log(err)
-                // })
+                jsonfile.writeFile(__dirname + '/data.json', offers, { spaces: 4 }, function (err) {
+                    console.log(err)
+                })
                 resolve(offers);
             }
             else {
@@ -66,4 +66,21 @@ flipkart.execute = function () {
         });
     });
 }
+
+flipkart.applyFilters = function (offers, filters) {
+    if (filters) {
+        for (var i = 0; i < filters.length; i++) {
+            if(i === 0){
+                //filters for category level
+                offers = offers.filter((offer)=>{
+                    var category = offer.category;
+                    var filter = filters[0];
+                    return category.toLowerCase() === filter;
+                });
+            }
+        }
+    }
+    return offers;
+}
+
 module.exports = flipkart
