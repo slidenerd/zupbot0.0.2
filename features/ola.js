@@ -7,8 +7,6 @@ const ola = {
     endPoint: 'http://sandbox-t.olacabs.com/v1/products'
 }
 
-test();
-
 function test() {
     var args = new Object();
     args.lat = "12.9491416";
@@ -38,7 +36,6 @@ function getAvailability(category, location, callback) {
         }
     });
 }
-
 
 function getRideEstimate(category, from, to, callback) {
     var option = 0;

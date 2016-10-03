@@ -39,7 +39,7 @@ all.flipkart.subroutine = function (userId, rs, args) {
             reject({ type: 'carousel', data: cachedOffers})
         }
         else {
-            flipkart.execute(args[0])
+            flipkart.execute()
                 .then((offers) => {
                     if (offers && offers.length) {
                         cache.put(KEY_FRESH_DATA, true, CACHE_VALIDITY_PERIOD, (key, value) => {
