@@ -1,7 +1,6 @@
 'use strict';
 const request = require('request')
-var all = require("./all.js");
-
+const geocoder = require('./geocoder');
 
 const ola = {
     apiToken: '3882a2d3f13248b78bc31186dfeab249',
@@ -24,8 +23,9 @@ function test() {
     // getRideEstimateCoordinates(args);
 }
 
+
 function getAvailability(category, location, callback) {
-    all.geocoder.geocode(location, function(err, res) {
+    geocoder.geocode(location, function(err, res) {
         if(err) {
             //TODO:
             console.log("Error : " + err);
@@ -44,7 +44,7 @@ function getRideEstimate(category, from, to, callback) {
     var option = 0;
     var args = new Object();
     args.category = category;
-    all.geocoder.geocode(from, function(err, res) {
+    geocoder.geocode(from, function(err, res) {
         if(err) {
             //TODO:
             console.log("Error : " + err);
@@ -54,7 +54,7 @@ function getRideEstimate(category, from, to, callback) {
                     args.lat = res[0].latitude;
                     args.long = res[0].longitude;
                     option++;
-                    all.geocoder.geocode(t0, this);
+                    geocoder.geocode(t0, this);
                 break;
                 case 1:
                     args.droplat = res[0].latitude;
