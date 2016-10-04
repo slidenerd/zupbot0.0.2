@@ -20,16 +20,11 @@ let brain = {
  * Initialize all the methods that will called from rive files.
  * All subroutines must return values
  */
-brain.initSubroutines = function (userId) {
-    all.userId = userId;
-    brain.riveScript.setSubroutine(all.flipkart.name, (rs, args) => {
-        return all.flipkart.subroutine(userId, rs, args)
-    })
+brain.initSubroutines = function () {
+    brain.riveScript.setSubroutine(all.flipkart.name, all.flipkart.subroutine)
     brain.riveScript.setSubroutine(all.ola.name, all.ola.subroutine)
     brain.riveScript.setSubroutine(all.uber.name, all.uber.subroutine)
-    brain.riveScript.setSubroutine(all.weather.name, (rs, args) => {
-        return all.weather.subroutine(userId, rs, args)
-    })
+    brain.riveScript.setSubroutine(all.weather.name, all.weather.subroutine)
 }
 
 /**
@@ -48,10 +43,10 @@ brain.isLoaded = function () {
  * If not loaded, reset state of the brain to not loaded
  * Trigger the callback for error
  */
-brain.load = function (userId, onSuccess, onError) {
+brain.load = function (onSuccess, onError) {
     brain.riveScript.loadDirectory(brain.path, (count) => {
-        brain.initSubroutines(userId)
         brain.setLoaded(true);
+        brain.initSubroutines()
         brain.riveScript.sortReplies();
         onSuccess()
     }, (error, count) => {

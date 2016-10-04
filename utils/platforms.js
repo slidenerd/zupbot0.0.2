@@ -1,12 +1,27 @@
 const request = require('request');
 const endpoints = require('../config/endpoints')
-
+const MESSENGER_CAROUSEL_LIMIT = 10;
+const SKYPE_CAROUSEL_LIMIT = 5;
+const EMULATOR_CAROUSEL_LIMIT = 10;
 const platforms = {
     facebook: {},
     skype: {},
     slack: {},
     telegram: {},
     kik: {}
+}
+
+platforms.getCarouselLimits = function (channel) {
+    if (channel.toLowerCase() === 'facebook') {
+        return MESSENGER_CAROUSEL_LIMIT
+    }
+    else if (channel.toLowerCase() === 'skype') {
+        return SKYPE_CAROUSEL_LIMIT
+    }
+    else {
+        //Emulator has no limits, this value has been set for testing purposes on the emulator
+        return EMULATOR_CAROUSEL_LIMIT
+    }
 }
 
 platforms.greet = function (session) {

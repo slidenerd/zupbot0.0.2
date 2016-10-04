@@ -16,7 +16,6 @@ const KEY_FRESH_DATA = 'fresh'
 const KEY_OFFERS = 'offers'
 
 const all = {
-    userId: null,
     flipkart: {},
     ola: {},
     uber: {},
@@ -25,11 +24,9 @@ const all = {
 }
 
 all.flipkart.name = 'flipkart';
-all.flipkart.subroutine = function (userId, rs, args) {
+all.flipkart.subroutine = function (rs, args) {
     return new rs.Promise((resolve, reject) => {
-        console.log(args)
         //Load from cache
-        
         const cachedOffers = cache.get(KEY_OFFERS)
         if (cachedOffers) {
             console.log('get offers from cache')
@@ -37,7 +34,7 @@ all.flipkart.subroutine = function (userId, rs, args) {
                 console.log('fresh was stored in the cache');
             });
             //Reject this message as it is a carousel, we ll handle it differently from server
-            reject({ type: 'carousel', data: cachedOffers, filters: args})
+            reject({ type: 'carousel', data: cachedOffers, filters: args })
         }
         else {
             flipkart.execute()
@@ -50,9 +47,8 @@ all.flipkart.subroutine = function (userId, rs, args) {
                             console.log(offers.length + 'offers was stored in the cache')
                         })
                     }
-
                     //Reject this message as it is a carousel, we ll handle it differently from server
-                    reject({ type: 'carousel', data: offers, filters: args})
+                    reject({ type: 'carousel', data: offers, filters: args })
                 })
                 .catch((error) => {
                     reject({ type: 'error', data: error });
@@ -76,14 +72,14 @@ all.uber.subroutine = function (rs, args) {
 }
 
 all.skyscanner.name = 'skyscanner'
-all.skyscanner.subroutine = function() {
+all.skyscanner.subroutine = function () {
     return new rs.Promise((resolve, reject) => {
         var lat = 19, lon = 72;
         skyscanner.execute(lat, lon)
             .then((report) => {
-                rs.setUservar(userId, 'location', 'your place')
-                rs.setUservars(userId, report)
-                return rs.replyAsync(userId, 'jsweather', all.this)
+                rs.setUservar(rs.currentUser(), 'location', 'your place')
+                rs.setUservars(rs.currentUser(), report)
+                return rs.replyAsync(rs.currentUser(), 'jsweather', all.this)
             })
             .then((reply) => {
                 resolve(reply)
@@ -95,14 +91,14 @@ all.skyscanner.subroutine = function() {
 }
 
 all.weather.name = 'weather';
-all.weather.subroutine = function (userId, rs, args) {
+all.weather.subroutine = function (rs, args) {
     return new rs.Promise((resolve, reject) => {
         var lat = 19, lon = 72;
         weather.execute(lat, lon)
             .then((report) => {
-                rs.setUservar(userId, 'location', 'your place')
-                rs.setUservars(userId, report)
-                return rs.replyAsync(userId, 'jsweather', all.this)
+                rs.setUservar(rs.currentUser(), 'location', 'your place')
+                rs.setUservars(rs.currentUser(), report)
+                return rs.replyAsync(rs.currentUser(), 'jsweather', all.this)
             })
             .then((reply) => {
                 resolve(reply)
