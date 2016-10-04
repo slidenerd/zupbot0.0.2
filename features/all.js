@@ -24,7 +24,7 @@ const all = {
 }
 
 all.flipkart.name = 'flipkart';
-all.flipkart.subroutine = function (userId, rs, args) {
+all.flipkart.subroutine = function (rs, args) {
     return new rs.Promise((resolve, reject) => {
         console.log(args)
         //Load from cache
@@ -94,9 +94,10 @@ all.skyscanner.subroutine = function() {
 }
 
 all.weather.name = 'weather';
-all.weather.subroutine = function (userId, rs, args) {
+all.weather.subroutine = function (rs, args) {
     return new rs.Promise((resolve, reject) => {
         var lat = 19, lon = 72;
+        var userId = rs.session.userId;
         weather.execute(lat, lon)
             .then((report) => {
                 rs.setUservar(userId, 'location', 'your place')

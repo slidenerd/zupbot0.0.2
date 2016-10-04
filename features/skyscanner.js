@@ -9,7 +9,6 @@ const
     request = require('request')
 
 
-
 getFlightDetailsFromSkyScanner('coimb', 'chennai', '2016-10-12', '2016-10-22');
 
 /**
