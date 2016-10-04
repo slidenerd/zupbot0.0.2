@@ -20,6 +20,7 @@ let brain = {
  * Initialize all the methods that will called from rive files.
  * All subroutines must return values
  */
+
 brain.initSubroutines = function () {
     brain.riveScript.setSubroutine(all.flipkart.name, (rs, args) => {
         return all.flipkart.subroutine(rs, args)

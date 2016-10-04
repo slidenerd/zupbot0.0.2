@@ -12,7 +12,6 @@ const EMULATOR_CAROUSEL_LIMIT = 10;
 
 messageutils.sendFlipkartCarousel = function (session, offers, filters) {
 
-    console.log(filters)
     // Ask the user to select an item from a carousel.
     var attachments = []
     //handle upper limits on how many items can be displayed in the carousel for each platform
@@ -43,7 +42,7 @@ messageutils.sendFlipkartCarousel = function (session, offers, filters) {
 
     if (filters) {
         console.log('old ' + session.userData.flipkartFilters);
-        console.log('new ' + filters);
+        console.log('new ' + filters[0]);
         session.userData.flipkartFilters = filters;
     }
 

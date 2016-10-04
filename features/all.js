@@ -16,6 +16,7 @@ const KEY_FRESH_DATA = 'fresh'
 const KEY_OFFERS = 'offers'
 
 const all = {
+    userId: null,
     flipkart: {},
     ola: {},
     uber: {},
