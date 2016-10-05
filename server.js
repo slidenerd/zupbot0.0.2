@@ -113,7 +113,7 @@ function configureExpress() {
   app.use(passport.session());
   app.use(flash());
   app.use((req, res, next) => {
-    if (req.path === '/api/upload' || req.path === '/api/messages') {
+    if (req.path === '/api/upload' || req.path === '/api/messages' || req.path === '/api/subscribe' || req.path === '/api/list') {
       next();
     } else {
       lusca.csrf()(req, res, next);
@@ -240,11 +240,11 @@ function configureExpress() {
     res.redirect('/api/pinterest');
   });
 
-  app.get('/list', function(req, res) {
+  app.get('/api/list', function(req, res) {
     mail.getAllLists("631957", res)
   });
 
-app.post('/subscribe', function (req, res) {
+app.post('/api/subscribe', function (req, res) {
     if(!req.body) {
         var responseBody = new Object();
         responseBody.success = false;

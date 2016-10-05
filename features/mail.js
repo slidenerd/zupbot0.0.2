@@ -37,7 +37,7 @@ mail.addToList = function(email, res) {
 }
 
 
-function createRecepient(email, res) {
+mail.createRecepient = function(email, res) {
     console.log("creating Recepient");
     var url = "https://api.sendgrid.com/v3/contactdb/recipients";
         var headers = {
@@ -60,7 +60,7 @@ function createRecepient(email, res) {
             var responseBody = new Object();
             if (!error && response.statusCode == 201) {
                 console.log(body.persisted_recipients[0]);
-                addToList(body.persisted_recipients[0], res);    
+                mail.addToList(body.persisted_recipients[0], res);    
                 return;
             } else {
             console.log("Error creating Recepient " + JSON.stringify(body.errors));                
@@ -97,34 +97,34 @@ mail.getAllLists = function(list, res) {
 
 
 
-function createList(list, email, res) {
-    console.log("creating list");
-    var url = "https://api.sendgrid.com/v3/contactdb/lists";
-        var headers = {
-            'Authorization': 'Bearer ' + API_KEY,
-        };
-        var options = {
-            url: url,
-            headers: headers,
-            body: "name=" + list,
-            json: true
-        };
-        request.post(options, (error, response, body) => {
-            console.log(body);
-            var responseBody = new Object();
-            if (!error && response.statusCode == 201) {
-                lists.push(response);
-                addToList(list, email, res);    
-                return;
-            } else {
-                console.log("Error creating list " + body.errors);
-                responseBody.success = false;
-                responseBody.field = body.errors[0].field;
-                responseBody.message = body.errors[0].message;
-            }
-            res.end(JSON.stringify(responseBody));
-        });    
-}
+// function createList(list, email, res) {
+//     console.log("creating list");
+//     var url = "https://api.sendgrid.com/v3/contactdb/lists";
+//         var headers = {
+//             'Authorization': 'Bearer ' + API_KEY,
+//         };
+//         var options = {
+//             url: url,
+//             headers: headers,
+//             body: "name=" + list,
+//             json: true
+//         };
+//         request.post(options, (error, response, body) => {
+//             console.log(body);
+//             var responseBody = new Object();
+//             if (!error && response.statusCode == 201) {
+//                 lists.push(response);
+//                 addToList(list, email, res);    
+//                 return;
+//             } else {
+//                 console.log("Error creating list " + body.errors);
+//                 responseBody.success = false;
+//                 responseBody.field = body.errors[0].field;
+//                 responseBody.message = body.errors[0].message;
+//             }
+//             res.end(JSON.stringify(responseBody));
+//         });    
+// }
 
 module.exports = mail
 
