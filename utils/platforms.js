@@ -30,6 +30,7 @@ platforms.greet = function (session) {
         platforms.facebook.sendThread('../json/facebook_greeting_text.json', 'Greeting')
         platforms.facebook.sendThread('../json/facebook_get_started.json', 'GetStarted')
         platforms.facebook.sendThread('../json/facebook_persistent_menu.json', 'PersistentMenu')
+        platforms.facebook.sendThread('../json/facebook_domain_whitelisting.json', 'Domain Whitelisting');
         console.log('greeting with facebook')
     }
     else if (channel.toLowerCase() === 'skype') {
