@@ -113,7 +113,7 @@ function configureExpress() {
   app.use(passport.session());
   app.use(flash());
   app.use((req, res, next) => {
-    if (req.path === '/api/upload' || req.path === '/api/messages' || req.path === '/api/subscribe' || req.path === '/api/list') {
+    if (req.path === '/api/upload' || req.path === '/api/messages' || req.path === '/api/subscribe' || req.path === '/api/sendMail') {
       next();
     } else {
       lusca.csrf()(req, res, next);
@@ -256,6 +256,16 @@ app.post('/api/subscribe', function (req, res) {
     mail.createRecepient(email, res);
 });
 
+app.post('/api/sendMail', function (req, res) {
+    if(!req.body) {
+        var responseBody = new Object();
+        responseBody.success = false;
+        responseBody.message = "Invalid request";
+        res.end(JSON.stringify(responseBody));
+        return;    
+    }
+    mail.sendMail(req, res);
+});
 
   /**
    * Error Handler.

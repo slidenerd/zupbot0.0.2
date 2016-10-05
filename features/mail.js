@@ -1,11 +1,46 @@
 var request = require('request')
 var express = require('express');
+var nodemailer = require('nodemailer');
 
 const API_KEY = "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";
 const LIST_ID = 631957
 
 const mail = {
 }
+
+const send_mail_to = "admin%40zup.chat";
+const mail_password = "";
+
+
+mail.sendMail = function(req, res) {
+    // create reusable transporter object using the default SMTP transport
+    var transporter = nodemailer.createTransport('smtps://' + send_mail_to + ':' + mail_password + '@smtp.gmail.com');
+    // setup e-mail data with unicode symbols
+
+    var plainText = "Name : " + req.body.name + "\nemail : " + req.body.email + "\nLocation : " + req.body.location + "\nType : " + req.body.type + "\nMessage : " + req.body.message;
+    var htmlText = "Name : " + req.body.name + "<br/>email : " + req.body.email + "<br/>Location : " + req.body.location + "<br/>Type : " + req.body.type + "<br/>Message : " + req.body.message; 
+    var mailOptions = {
+        from: '"' + req.body.name + '" <' + req.body.email + '>', // sender address
+        to: 'admin@zup.chat', // list of receivers
+        subject: req.body.subject, // Subject line
+        text: plainText, // plaintext body
+        html: htmlText // html body
+    };
+
+    // send mail with defined transport object
+    transporter.sendMail(mailOptions, function(error, info){
+        var response = new Object();
+        if(error){
+            response.success = false;
+            response.message = error;
+        } else {
+            response.success = true;
+            response.info = info;
+        }
+        res.end(JSON.stringify(response))    
+    });
+}
+
 
 mail.addToList = function(email, res) {
     console.log("Adding to List");
