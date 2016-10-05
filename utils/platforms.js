@@ -27,10 +27,10 @@ platforms.getCarouselLimits = function (channel) {
 platforms.greet = function (session) {
     const channel = session.message.address.channelId;
     if (channel.toLowerCase() === 'facebook') {
-        platforms.facebook.sendThread('../json/facebook_greeting_text.json', 'Greeting', session)
-        platforms.facebook.sendThread('../json/facebook_get_started.json', 'GetStarted', session)
-        platforms.facebook.sendThread('../json/facebook_persistent_menu.json', 'PersistentMenu', session)
-        platforms.facebook.sendThread('../json/facebook_domain_whitelisting.json', 'Domain Whitelisting', session);
+        platforms.facebook.sendThread('../json/facebook_greeting_text.json', 'Greeting')
+        platforms.facebook.sendThread('../json/facebook_get_started.json', 'GetStarted')
+        platforms.facebook.sendThread('../json/facebook_persistent_menu.json', 'PersistentMenu')
+        platforms.facebook.sendThread('../json/facebook_domain_whitelisting.json', 'Domain Whitelisting');
         console.log('greeting with facebook')
     }
     else if (channel.toLowerCase() === 'skype') {
@@ -51,7 +51,7 @@ platforms.greet = function (session) {
 }
 
 // Calls the Facebook graph api to change various bot settings
-platforms.facebook.sendThread = function (jsonFile, cmd, session) {
+platforms.facebook.sendThread = function (jsonFile, cmd) {
 
     // Start the request
     request({
@@ -63,11 +63,11 @@ platforms.facebook.sendThread = function (jsonFile, cmd, session) {
         function (error, response, body) {
             if (!error && response.statusCode == 200) {
                 // Print out the response body
-                session.send('Updated ' + cmd + ' for you ' + session.message.user.name + ' successfully')
+                console.log(cmd + ": Updated.");
                 console.log(body);
             } else {
                 // TODO: Handle errors
-                session.send('Oops ' + session.message.user.name + ' I had an error ' + error + ' while updating ' + cmd)
+                console.log(cmd + ": Failed. Need to handle errors.");
                 console.log(body);
             }
         });
