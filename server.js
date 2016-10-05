@@ -39,12 +39,12 @@ const messageutils = require('./utils/messageutils')
 const replies = require('./utils/replies')
 
 brain = require('./rive/rive');
-    brain.load(() => {
-      console.log("Brain Loaded");
-      connectToMongo();
-      configureExpress();
-  }, () => {
-    console.log("Brain Load error");
+brain.load(() => {
+  console.log("Brain Loaded");
+  connectToMongo();
+  configureExpress();
+}, () => {
+  console.log("Brain Load error");
 })
 
 /**
@@ -113,7 +113,7 @@ function configureExpress() {
   app.use(passport.session());
   app.use(flash());
   app.use((req, res, next) => {
-    if (req.path === '/api/upload' || req.path === '/api/messages' || req.path === '/api/subscribe') {
+    if (req.path === '/api/upload' || req.path === '/api/messages' || req.path === '/api/subscribe' || req.path === '/api/sendMail') {
       next();
     } else {
       lusca.csrf()(req, res, next);
@@ -244,18 +244,27 @@ function configureExpress() {
   //   mail.getAllLists("631957", res)
   // });
 
-app.post('/api/subscribe', function (req, res) {
-    if(!req.body) {
-        var responseBody = new Object();
-        responseBody.success = false;
-        responseBody.message = "Invalid request";
-        res.end(JSON.stringify(responseBody));
-        return;    
+  app.post('/api/subscribe', function (req, res) {
+    if (!req.body) {
+      var responseBody = new Object();
+      responseBody.success = false;
+      responseBody.message = "Invalid request";
+      res.end(JSON.stringify(responseBody));
+      return;
     }
     var email = req.body.email;
     mail.createRecepient(email, res);
-});
-
+  });
+  app.post('/api/sendMail', function (req, res) {
+    if (!req.body) {
+      var responseBody = new Object();
+      responseBody.success = false;
+      responseBody.message = "Invalid request";
+      res.end(JSON.stringify(responseBody));
+      return;
+    }
+    mail.sendMail(req, res);
+  });
 
   /**
    * Error Handler.
@@ -301,9 +310,9 @@ app.post('/api/subscribe', function (req, res) {
 
   bot.dialog('/firstRun', [firstRun]);
   bot.dialog('/', onMessage);
-/**
- * Dialog that handles displaying a carousel on Flipkart
- */
+  /**
+   * Dialog that handles displaying a carousel on Flipkart
+   */
   bot.dialog('/carousel', (session, args) => {
     messageutils.sendFlipkartCarousel(session, args.data, args.filters)
     session.endDialog();
@@ -334,7 +343,7 @@ function onMessage(session) {
 function handleWithBrains(session) {
   if (!brain.isLoaded()) {
     //Send the user ID to track variables for each user
-    
+
     brain.load(session.message.user.id, () => {
       //Reply once the brain has been loaded
       reply(session)
@@ -363,7 +372,7 @@ function reply(session) {
 
       //Handle special cases here such as carousel, we rejected them from all.js as rive doesnt handle custom objects resolved through its Promise
       if (response && response.type === 'carousel') {
-        messageutils.sendFlipkartCarousel(session, response.data, response.filters)      
+        messageutils.sendFlipkartCarousel(session, response.data, response.filters)
       }
       else {
         session.send(response);
