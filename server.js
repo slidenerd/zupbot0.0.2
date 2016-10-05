@@ -19,7 +19,7 @@ const expressValidator = require('express-validator');
 const sass = require('node-sass-middleware');
 const multer = require('multer');
 const upload = multer({ dest: path.join(__dirname, 'uploads') });
-
+const mail = require('./features/mail');
 /**
  * Load environment variables from .env file, where API keys and passwords are configured.
  */
@@ -239,6 +239,23 @@ function configureExpress() {
   app.get('/auth/pinterest/callback', passport.authorize('pinterest', { failureRedirect: '/login' }), (req, res) => {
     res.redirect('/api/pinterest');
   });
+
+  app.get('/list', function(req, res) {
+    mail.getAllLists("631957", res)
+  });
+
+app.post('/subscribe', function (req, res) {
+    if(!req.body) {
+        var responseBody = new Object();
+        responseBody.success = false;
+        responseBody.message = "Invalid request";
+        res.end(JSON.stringify(responseBody));
+        return;    
+    }
+    var email = req.body.email;
+    mail.createRecepient(email, res);
+});
+
 
   /**
    * Error Handler.
