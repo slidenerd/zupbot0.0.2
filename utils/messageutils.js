@@ -54,6 +54,7 @@ messageutils.sendFlipkartCarousel = function (session, brain, offers, filters) {
             ]))
     }
 
+    
     brain.replyAsync(session.message.user.id, text, messageutils.this)
     .then((reply)=>{
 
@@ -75,7 +76,7 @@ messageutils.sendFlipkartCarousel = function (session, brain, offers, filters) {
             var txt;
             if (start == 0) {
 
-                txt = replies.getFlipkartOffersFoundFirstTime(offers.length, start + 1, available)
+                txt = 'jsflipkartoffersfirsttime'
             }
 
             //The subsequent time someone sees results, show them a showing now 10-20 kinda thing.
