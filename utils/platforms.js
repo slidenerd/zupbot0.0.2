@@ -51,7 +51,7 @@ platforms.greet = function (session) {
 }
 
 // Calls the Facebook graph api to change various bot settings
-platforms.facebook.sendThread = function (jsonFile, cmd) {
+platforms.facebook.sendThread = function (jsonFile, cmd, session) {
 
     // Start the request
     request({
