@@ -54,20 +54,16 @@ messageutils.sendFlipkartCarousel = function (session, brain, offers, filters) {
             ]))
     }
 
-    
-    brain.replyAsync(session.message.user.id, text, messageutils.this)
-    .then((reply)=>{
-
-    })
-    .catch((error)=>{
-
-    })
 
     //Contains our text message and carousel
     var msg;
-
     //If we can display 10 items in each round but we have only 5 results, we need display 0-5
     const available = end < offers.length ? end : offers.length;
+    const remaining = available - start;
+
+    brain.setUservar(session.message.user.id, 'flipkartpagestart', start);
+    brain.setUservar(session.message.user.id, 'flipkartpageend', available);
+    brain.setUservar(session.message.user.id, 'flipkartofferscount', offers.length);
     if (offers.length) {
         //If we have more offers to display
         if ((available - start) > 0) {
@@ -75,14 +71,13 @@ messageutils.sendFlipkartCarousel = function (session, brain, offers, filters) {
             //The first time someone sees the results, show them a complete message       
             var txt;
             if (start == 0) {
-
-                txt = 'jsflipkartoffersfirsttime'
+                txt = brain.reply(session.message.user.id, 'jsflipkartfirsttime', messageutils.this)
             }
 
             //The subsequent time someone sees results, show them a showing now 10-20 kinda thing.
 
             else {
-                txt = replies.getFlipkartOffersFoundAnySubsequentTime(offers.length, start, available)
+                txt = brain.reply(session.message.user.id, 'jsflipkartsubsequenttime', messageutils.this)
             }
             msg = new builder.Message(session).text(txt)
                 .attachmentLayout(builder.AttachmentLayout.carousel)
@@ -94,7 +89,7 @@ messageutils.sendFlipkartCarousel = function (session, brain, offers, filters) {
         else {
 
             //We have browsed every single offer and therefore tell the person its all over.
-            msg = replies.getFlipkartNoMoreOffers()
+            msg = brain.reply(session.message.user.id, 'jsflipkartexhausted', messageutils.this)
             //We have reached the limit of browsing every single offer, lets reset things back to 0
             session.userData.flipkartPaginationStartIndex = 0
 
@@ -106,7 +101,7 @@ messageutils.sendFlipkartCarousel = function (session, brain, offers, filters) {
     else {
 
         //We did not find any offers perhaps because there was none or all were unavailable.
-        msg = replies.getFlipkartNoOffersFound();
+        msg = brain.reply(session.message.user.id, 'jsflipkartnone', messageutils.this)
     }
     session.send(msg);
 }

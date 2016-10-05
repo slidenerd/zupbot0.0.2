@@ -43,26 +43,30 @@
 > topic offers
 
 	// The rules whose names start with js... are triggered from code
-	+ jsflipkartoffersfirsttime
-	- Hurrah! I found <get flipkartofferscount> offers for you on Flipkart. May your shopping be shosperous, I mean properous. Here comes <get flipkartpaginationstart> to <get flipkartpaginationend>
-    - Weee, Flipkart gave us <get flipkartofferscount> offers. Isn\'t that awesome! Here comes <get flipkartpaginationstart> to <get flipkartpaginationend>
-    - Yee-Haw! that is so cool of Flipkart to give us <get flipkartofferscount> offers. Showing <get flipkartpaginationstart> to <get flipkartpaginationend>
-    - Ooh-la-la, I was able to get <get flipkartofferscount> offers on Flipkart. Displaying <get flipkartpaginationstart> to <get flipkartpaginationend>
+	+ jsflipkartfirsttime
+	- Hurrah! I found <get flipkartofferscount> offers for you on Flipkart. May your shopping be shosperous, I mean properous. Here comes <get flipkartpagestart> to <get flipkartpageend>
+    - Weee, Flipkart gave us <get flipkartofferscount> offers. Isn't that awesome! Here comes <get flipkartpagestart> to <get flipkartpageend>
+    - Yee-Haw! that is so cool of Flipkart to give us <get flipkartofferscount> offers. Showing <get flipkartpagestart> to <get flipkartpageend>
+    - Ooh-la-la, I was able to get <get flipkartofferscount> offers on Flipkart. Displaying <get flipkartpagestart> to <get flipkartpageend>
 
-	+ jsflipkartofferssubsequenttime
-	- Here comes %d - %d of %d
-    - Now showing, %d - %d of %d
-    - Showing %d - %d of %d
-    - Currently at %d - %d of %d
-    - Looking at %d - %d of %d
-    - Viewing %d - %d of %d
-    - Displaying %d - %d of %d
+	+ jsflipkartsubsequenttime
+	- Here comes <get flipkartpagestart> - <get flipkartpageend> of <get flipkartofferscount>
+    - Now showing, <get flipkartpagestart> to <get flipkartpageend> of <get flipkartofferscount>
+    - Showing <get flipkartpagestart> - <get flipkartpageend> of <get flipkartofferscount>
+    - Currently at <get flipkartpagestart> to <get flipkartpageend> of <get flipkartofferscount>
+    - Looking at <get flipkartpagestart> - <get flipkartpageend> of <get flipkartofferscount>
+    - Viewing <get flipkartpagestart> to <get flipkartpageend> of <get flipkartofferscount>
+    - Displaying <get flipkartpagestart> - <get flipkartpageend> of <get flipkartofferscount>
 
-	+ jsflipkart
-	- Sure, I found <get count> deals for you on flipkart
-	- Ahan! we got <get count> deals on Flipkart today
-	- This must be my lucky day, I found <get count> deals for you on Flipkart
-	- Of course! Flipkart is offering <get count> deals today. Here are some details
+	+ jsflipkartexhausted
+	- Oops thats all for now on Flipkart. I will get more for now shortly.
+    - Well, that's all the Flipkart offers for now. Feel free to browse the existing ones anytime.
+    - I guess our Flipkart party comes to an end for now. Flipkart will come out with new ones in a couple of hours
+
+	+ jsflipkartnone
+	- Ouch! It seems Flipkart has either no offers today or all their offers have been exhausted
+    - It seems we are late for the party. Flipkart doesnt seem to have any more offers for now
+    - Flipkart has no offers for the time being, I am now waiting for the next train to arrive
 
 	//Default messages by user will be handled by the random topic outside
 	+ *

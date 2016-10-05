@@ -61,11 +61,7 @@ const app = express();
  */
 
 function connectToMongo() {
-  const options = {
-    server: { socketOptions: { keepAlive: 300000, connectTimeoutMS: 30000 } },
-    replset: { socketOptions: { keepAlive: 300000, connectTimeoutMS: 30000 } }
-  };
-  mongoose.connect(process.env.MONGODB_URI || process.env.MONGOLAB_URI, options);
+  mongoose.connect(process.env.MONGODB_URI);
   mongoose.connection.on('connected', () => {
     console.log('%s MongoDB connection established!', chalk.green('✓'));
   });
@@ -372,7 +368,7 @@ function reply(session) {
 
       //Handle special cases here such as carousel, we rejected them from all.js as rive doesnt handle custom objects resolved through its Promise
       if (response && response.type === 'carousel') {
-        messageutils.sendFlipkartCarousel(session, response.data, response.filters)
+        messageutils.sendFlipkartCarousel(session, brain.riveScript, response.data, response.filters)
       }
       else {
         session.send(response);
