@@ -240,9 +240,9 @@ function configureExpress() {
     res.redirect('/api/pinterest');
   });
 
-  app.get('/api/list', function(req, res) {
-    mail.getAllLists("631957", res)
-  });
+  // app.get('/api/list', function(req, res) {
+  //   mail.getAllLists("631957", res)
+  // });
 
 app.post('/api/subscribe', function (req, res) {
     if(!req.body) {
