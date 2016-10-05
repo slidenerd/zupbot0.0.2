@@ -304,7 +304,6 @@ function firstRun(session) {
 
 function onMessage(session) {
   //If the user wasnt added before, add the user
-  session.reset('/firstRun')
   console.log('subsequent run')
   reply(session)
 }
