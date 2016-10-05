@@ -19,7 +19,7 @@ const expressValidator = require('express-validator');
 const sass = require('node-sass-middleware');
 const multer = require('multer');
 const upload = multer({ dest: path.join(__dirname, 'uploads') });
-
+const mail = require('./features/mail');
 /**
  * Load environment variables from .env file, where API keys and passwords are configured.
  */
@@ -37,16 +37,14 @@ const platforms = require('./utils/platforms');
 const builder = require('./core/');
 const messageutils = require('./utils/messageutils')
 const replies = require('./utils/replies')
-const all = require('./features/all')
 
 brain = require('./rive/rive');
-brain.load((count) => {
-  console.log("Brain Loaded");
-  connectToMongo();
-  configureExpress();
-  console.log('%s The brain was loaded successfully ', chalk.green('✓'));
-}, (error, count) => {
-  console.log('%s There was an error loading the brain ', chalk.red('✓'), error);
+    brain.load(() => {
+      console.log("Brain Loaded");
+      connectToMongo();
+      configureExpress();
+  }, () => {
+    console.log("Brain Load error");
 })
 
 /**
@@ -115,7 +113,7 @@ function configureExpress() {
   app.use(passport.session());
   app.use(flash());
   app.use((req, res, next) => {
-    if (req.path === '/api/upload' || req.path === '/api/messages') {
+    if (req.path === '/api/upload' || req.path === '/api/messages' || req.path === '/api/subscribe') {
       next();
     } else {
       lusca.csrf()(req, res, next);
@@ -242,6 +240,23 @@ function configureExpress() {
     res.redirect('/api/pinterest');
   });
 
+  // app.get('/api/list', function(req, res) {
+  //   mail.getAllLists("631957", res)
+  // });
+
+app.post('/api/subscribe', function (req, res) {
+    if(!req.body) {
+        var responseBody = new Object();
+        responseBody.success = false;
+        responseBody.message = "Invalid request";
+        res.end(JSON.stringify(responseBody));
+        return;    
+    }
+    var email = req.body.email;
+    mail.createRecepient(email, res);
+});
+
+
   /**
    * Error Handler.
    */
@@ -286,6 +301,13 @@ function configureExpress() {
 
   bot.dialog('/firstRun', [firstRun]);
   bot.dialog('/', onMessage);
+/**
+ * Dialog that handles displaying a carousel on Flipkart
+ */
+  bot.dialog('/carousel', (session, args) => {
+    messageutils.sendFlipkartCarousel(session, args.data, args.filters)
+    session.endDialog();
+  })
 }
 /**
  * When the brains are loading, ideally the reply should be sent first and 
@@ -297,15 +319,36 @@ function firstRun(session) {
   platforms.greet(session);
   //If the user wasnt added before, add the user
   userController.addBotUser(session);
-  reply(session)
-  console.log('first run finished')
+  handleWithBrains(session)
+  console.log('first run')
   session.endDialog()
 }
 
 function onMessage(session) {
   //If the user wasnt added before, add the user
+  userController.addBotUser(session);
   console.log('subsequent run')
-  reply(session)
+  handleWithBrains(session)
+}
+
+function handleWithBrains(session) {
+  if (!brain.isLoaded()) {
+    //Send the user ID to track variables for each user
+    
+    brain.load(session.message.user.id, () => {
+      //Reply once the brain has been loaded
+      reply(session)
+    }, () => {
+
+      //Notify the user of any errors that may occur if the brain loading fails
+      const error = replies.getBrainLoadingFailed()
+      session.send(error)
+    })
+  }
+  else {
+    //Reply if the brains were loaded previously
+    reply(session)
+  }
 }
 
 /**
@@ -317,9 +360,10 @@ function reply(session) {
       session.send(response);
     })
     .catch((response) => {
+
       //Handle special cases here such as carousel, we rejected them from all.js as rive doesnt handle custom objects resolved through its Promise
       if (response && response.type === 'carousel') {
-        messageutils.sendFlipkartCarousel(session, response.data, response.filters)
+        messageutils.sendFlipkartCarousel(session, response.data, response.filters)      
       }
       else {
         session.send(response);

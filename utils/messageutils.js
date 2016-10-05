@@ -7,12 +7,12 @@ const platforms = require('./platforms')
 const messageutils = {}
 
 //TODO add a show more button and no thanks
-messageutils.sendFlipkartCarousel = function (session, offers, filters) {
+messageutils.sendFlipkartCarousel = function (session, brain, offers, filters) {
 
     //A key from cache which indicates if this data was previously cached or freshly loaded
     const fresh = cache.get('fresh');
 
-    // Ask the user to select an item from a carousel.
+    // The container for our carousel items.
     var attachments = []
 
     //How many items will you display in a carousel on each platform is controlled by limit
@@ -32,15 +32,15 @@ messageutils.sendFlipkartCarousel = function (session, offers, filters) {
     }
 
     //Begin displaying items either from 0 or from a previous number
-    var paginationStartIndex = session.userData.flipkartPaginationStartIndex || 0
+    var start = session.userData.flipkartPaginationStartIndex || 0
 
     //Display exactly limit number of items
-    var paginationEndIndex = paginationStartIndex + limit
+    var end = start + limit
 
     offers = flipkart.applyFilters(offers, session.userData.flipkartFilters);
 
 
-    for (var i = paginationStartIndex; i < paginationEndIndex && i < offers.length; i++) {
+    for (var i = start; i < end && i < offers.length; i++) {
         var offer = offers[i];
         attachments.push(new builder.HeroCard(session)
             .title(offer.title)
@@ -50,36 +50,45 @@ messageutils.sendFlipkartCarousel = function (session, offers, filters) {
                     .tap(builder.CardAction.showImage(session, offer.url)),
             ])
             .buttons([
-                builder.CardAction.openUrl(session, offer.url, "Get On Flipkart")
+                builder.CardAction.openUrl(session, offer.url, "View On Flipkart")
             ]))
     }
+
+    brain.replyAsync(session.message.user.id, text, messageutils.this)
+    .then((reply)=>{
+
+    })
+    .catch((error)=>{
+
+    })
 
     //Contains our text message and carousel
     var msg;
 
     //If we can display 10 items in each round but we have only 5 results, we need display 0-5
-    const smaller = paginationEndIndex < offers.length ? paginationEndIndex : offers.length;
+    const available = end < offers.length ? end : offers.length;
     if (offers.length) {
         //If we have more offers to display
-        if ((smaller - paginationStartIndex) > 0) {
+        if ((available - start) > 0) {
 
             //The first time someone sees the results, show them a complete message       
             var txt;
-            if (paginationStartIndex == 0) {
-                txt = replies.getFlipkartOffersFoundFirstTime(offers.length, paginationStartIndex + 1, smaller)
+            if (start == 0) {
+
+                txt = replies.getFlipkartOffersFoundFirstTime(offers.length, start + 1, available)
             }
 
             //The subsequent time someone sees results, show them a showing now 10-20 kinda thing.
 
             else {
-                txt = replies.getFlipkartOffersFoundAnySubsequentTime(offers.length, paginationStartIndex, smaller)
+                txt = replies.getFlipkartOffersFoundAnySubsequentTime(offers.length, start, available)
             }
             msg = new builder.Message(session).text(txt)
                 .attachmentLayout(builder.AttachmentLayout.carousel)
                 .attachments(attachments);
 
             //Advance the start position so display the next N items for any platform
-            session.userData.flipkartPaginationStartIndex = paginationEndIndex;
+            session.userData.flipkartPaginationStartIndex = end;
         }
         else {
 
