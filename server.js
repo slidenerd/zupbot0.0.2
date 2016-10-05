@@ -338,7 +338,6 @@ function onMessage(session) {
   userController.addBotUser(session);
   console.log('subsequent run')
   handleWithBrains(session)
-  session.reset('/firstRun')
 }
 
 function handleWithBrains(session) {
