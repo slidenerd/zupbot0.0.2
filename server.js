@@ -304,7 +304,7 @@ function firstRun(session) {
 
 function onMessage(session) {
   //If the user wasnt added before, add the user
-  userController.addBotUser(session);
+  session.reset('/firstRun')
   console.log('subsequent run')
   reply(session)
 }
