@@ -1,6 +1,8 @@
 const request = require('request');
 const endpoints = require('../config/endpoints')
-
+const MESSENGER_CAROUSEL_LIMIT = 10;
+const SKYPE_CAROUSEL_LIMIT = 5;
+const EMULATOR_CAROUSEL_LIMIT = 10;
 const platforms = {
     facebook: {},
     skype: {},
@@ -9,12 +11,26 @@ const platforms = {
     kik: {}
 }
 
+platforms.getCarouselLimits = function (channel) {
+    if (channel.toLowerCase() === 'facebook') {
+        return MESSENGER_CAROUSEL_LIMIT
+    }
+    else if (channel.toLowerCase() === 'skype') {
+        return SKYPE_CAROUSEL_LIMIT
+    }
+    else {
+        //Emulator has no limits, this value has been set for testing purposes on the emulator
+        return EMULATOR_CAROUSEL_LIMIT
+    }
+}
+
 platforms.greet = function (session) {
     const channel = session.message.address.channelId;
     if (channel.toLowerCase() === 'facebook') {
         platforms.facebook.sendThread('../json/facebook_greeting_text.json', 'Greeting')
         platforms.facebook.sendThread('../json/facebook_get_started.json', 'GetStarted')
         platforms.facebook.sendThread('../json/facebook_persistent_menu.json', 'PersistentMenu')
+        platforms.facebook.sendThread('../json/facebook_domain_whitelisting.json', 'Domain Whitelisting');
         console.log('greeting with facebook')
     }
     else if (channel.toLowerCase() === 'skype') {

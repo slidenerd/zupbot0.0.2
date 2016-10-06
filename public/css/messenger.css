@@ -1,0 +1,40 @@
+/*
+////////////////////////////////////////
+Messenger Button By BG
+////////////////////////////////////////
+*/
+a.bg-fm:hover {
+background: #0F8BFF;
+}
+a.bg-fm {
+text-decoration: none;
+color: #FFF;
+}
+.bg-fm {
+background: #0084FF;
+color: #FFF;
+transition: .3s;
+margin-top: 7px;
+padding: 7px;
+border-radius: 2px;
+display: inline-block;
+padding-top: 4px;
+padding-bottom: 4px;
+font-family: sans-serif;
+font-size: 11px;
+}
+.m-bg {
+margin-top: 0px;
+}
+.fb-m {
+background: url(http://s32.postimg.org/6w6lc0z1h/screenshot_21.png);
+background-size: 18px;
+font-style: normal!important;
+background-repeat: no-repeat;
+color: transparent;
+margin-right: -2px;
+padding: 8px;
+position: relative;
+top: 6px;
+left: -3px;
+}
