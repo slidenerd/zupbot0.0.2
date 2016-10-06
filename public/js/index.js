@@ -70,9 +70,10 @@ $(window).on('keydown', function(e) {
 })
 
 var Fake = [
-  'Hi there, I\'m Zup still now developing, Please enter email to subscribe',
-  'Sorry, Worng input enter your email to subscribe',
-  'Thank you for subscribe we will update soon, Please to check subscribed E-Mail.',
+  'Hi there, I am Zup, and you?',
+  'Nice to meet you. How are you?',
+  'Not too bad myself. What do you do?',
+  'Awesome! I am here to help you find the best offers on Flipkart and provide a whole range of services to make your life better. Would you like to be notified about me via email when I come to life?',  
   'Sorry subscribe failed, Please to check your E-Mail ID again try again later'
 ]
 

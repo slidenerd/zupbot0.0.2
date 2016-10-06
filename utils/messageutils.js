@@ -61,7 +61,7 @@ messageutils.sendFlipkartCarousel = function (session, brain, offers, filters) {
     const available = end < offers.length ? end : offers.length;
     const remaining = available - start;
 
-    brain.setUservar(session.message.user.id, 'flipkartpagestart', start);
+    brain.setUservar(session.message.user.id, 'flipkartpagestart', start + 1);
     brain.setUservar(session.message.user.id, 'flipkartpageend', available);
     brain.setUservar(session.message.user.id, 'flipkartofferscount', offers.length);
     if (offers.length) {
