@@ -331,7 +331,6 @@ function firstRun(session) {
 
 function onMessage(session) {
   //If the user wasnt added before, add the user
-  platforms.testWebView(session)
   userController.addBotUser(session);
   console.log('subsequent run')
   handleWithBrains(session)
