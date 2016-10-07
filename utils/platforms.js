@@ -64,7 +64,7 @@ platforms.testWebView = function (session) {
                     buttons: [
                         {
                             "type": "web_url",
-                            "url": "https:/zup.chat/features/cab.html",
+                            "url": "https://zup.chat/features/cab.html",
                             "title": "Book A Cab",
                             "webview_height_ratio": "compact"
                         }
