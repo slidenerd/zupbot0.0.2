@@ -89,6 +89,7 @@ messageutils.sendFlipkartCarousel = function (session, brain, offers, filters) {
             var timeout = setTimeout(() => {
                 platforms.sendQuickReply(session, require('../json/quick_reply_flipkart_show_more.json'))
                 clearTimeout(timeout)
+                
             }, 30000)
         }
         else {

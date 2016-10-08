@@ -145,7 +145,21 @@ platforms.facebook.sendQuickReply = function (session, quickReplies) {
         },
         "message": quickReplies
     }
-
+     request({
+        url: 'https://graph.facebook.com/v2.7/me/messages?access_token=' + endpoints.FACEBOOK_PAGE_ACCESS_TOKEN,
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        form: quickReply
+    },
+        function (error, response, body) {
+            if (!error && response.statusCode == 200) {
+                // Print out the response body
+                console.log(": Updated with quick reply");
+            } else {
+                // TODO: Handle errors
+                console.log(": Failed. Need to handle errors." + error);
+            }
+        });
 }
 
 module.exports = platforms
