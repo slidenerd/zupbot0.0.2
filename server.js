@@ -40,7 +40,7 @@ const builder = require('./core/');
 const messageutils = require('./utils/messageutils')
 const replies = require('./utils/replies')
 
-brain = require('./rive/rive');
+let brain = require('./rive/rive');
 brain.load(() => {
   console.log("Brain Loaded");
   connectToMongo();
