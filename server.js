@@ -345,39 +345,42 @@ function reply(session) {
   const userId = session.message.user.id
   console.log('MAIN ', brain.getTopic(userId))
   let text;
+  //Triggered when the user hits the get started button on Facebook
   if (session.message.text === 'PAYLOAD_USER_CLICKED_GET_STARTED') {
     text = 'get started'
   }
+
+  //Triggered when the user hits the show more quick reply button on flipkart offers
   else if (session.message.text === 'PAYLOAD_FLIPKART_SHOW_MORE') {
     text = 'show more'
   }
+
+  //Triggered when the user hits the no quick reply button on flipkart offers
   else if (session.message.text === 'PAYLOAD_FLIPKART_CANCEL') {
     text = 'no'
   }
+
+  //Triggered when the user hits the persistent menu help button 
   else if (session.message.text === 'PAYLOAD_USER_CLICKED_HELP') {
     text = 'help'
   }
+
+  //Handle any other text message as you normally would
   else {
     text = session.message.text
   }
   brain.reply(userId, text)
     .then((response) => {
-      console.log('BEFORE REPLY ' + brain.getTopic(userId))
       session.send(response);
-      console.log('AFTER REPLY ' + brain.getTopic(userId))
     })
     .catch((response) => {
 
       //Handle special cases here such as carousel, we rejected them from all.js as rive doesnt handle custom objects resolved through its Promise
       if (response && response.type === 'carousel') {
-        console.log('BEFORE CAROURSEL', brain.getTopic(userId))
         messageutils.sendFlipkartCarousel(session, brain, response.data, response.filters)
-        console.log('AFTER CAROURSEL', brain.getTopic(userId))
       }
       else {
-        console.log('BEFORE ELSE', brain.getTopic(userId))
         session.send(response);
-        console.log('AFTER ELSE', brain.getTopic(userId))
       }
     })
 }

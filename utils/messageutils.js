@@ -62,11 +62,9 @@ messageutils.sendFlipkartCarousel = function (session, brain, offers, filters) {
     const available = end < offers.length ? end : offers.length;
     const remaining = available - start;
 
-    console.log('before letiables', brain.getTopic(userId))
     brain.set(userId, 'flipkartpagestart', start + 1)
     brain.set(userId, 'flipkartpageend', available)
     brain.set(userId, 'flipkartofferscount', offers.length)
-    console.log('after letiables', brain.getTopic(userId))
     if (offers.length) {
         //If we have more offers to display
         if ((available - start) > 0) {
@@ -74,34 +72,25 @@ messageutils.sendFlipkartCarousel = function (session, brain, offers, filters) {
             //The first time someone sees the results, show them a complete message       
             let txt;
             if (start == 0) {
-                console.log('before response', brain.getTopic(userId))
                 txt = brain.replySync(userId, 'jsflipkartfirsttime')
-                console.log('after response', brain.getTopic(userId))
             }
 
             //The subsequent time someone sees results, show them a showing now 10-20 kinda thing.
 
             else {
-                console.log('before 2nd response', brain.getTopic(userId))
                 txt = brain.replySync(userId, 'jsflipkartsubsequenttime')
-                console.log('after 2nd response', brain.getTopic(userId))
             }
             const lastActive = new Date().getTime();
-            console.log('outside both', brain.getTopic(userId))
             msg = new builder.Message(session).text(txt)
                 .attachmentLayout(builder.AttachmentLayout.carousel)
                 .attachments(attachments);
-            console.log('after message', brain.getTopic(userId))
             //Advance the start position so display the next N items for any platform
             session.userData.flipkartPaginationStartIndex = end;
 
-            console.log('FUCK THIS', brain.getTopic(userId))
             let timeout = setTimeout(() => {
                 let currentTime = new Date().getTime();
                 if (currentTime - lastActive > 30000) {
-                    console.log('BITCH', brain.getTopic(userId))
                     platforms.sendQuickReply(session, require('../json/quick_reply_flipkart_show_more.json'))
-                    console.log('BITCH2', brain.getTopic(userId))
                     clearTimeout(timeout)
                 }
             }, 30000)

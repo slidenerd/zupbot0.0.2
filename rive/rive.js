@@ -63,9 +63,7 @@ brain.onDebug = function (message) {
  * Return an asynchronous reply from the brain corresponding to a particular user id
  */
 brain.reply = function (userId, text) {
-    console.log('WHAT ABOUT HERE', brain.getTopic(userId))
     let reply = brain.riveScript.replyAsync(userId, text, brain.this);
-    console.log('AND HERE', brain.getTopic(userId))
     return reply;
 }
 
