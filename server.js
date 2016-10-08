@@ -43,7 +43,7 @@ const uber = require('./features/uber')
 brain = require('./rive/rive');
 brain.load(() => {
   console.log("Brain Loaded");
-  connectToMongo();
+  // connectToMongo();
   configureExpress();
 }, () => {
   console.log("Brain Load error");
@@ -98,14 +98,11 @@ function configureExpress() {
   app.use(bodyParser.json());
   app.use(bodyParser.urlencoded({ extended: true }));
   app.use(expressValidator());
+  app.set('view engine', 'ejs');
   app.use(session({
     resave: true,
     saveUninitialized: true,
     secret: process.env.SESSION_SECRET,
-    store: new MongoStore({
-      url: process.env.MONGODB_URI,
-      autoReconnect: true
-    })
   }));
   app.use(passport.initialize());
   app.use(passport.session());
