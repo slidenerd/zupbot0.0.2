@@ -38,7 +38,7 @@ uber.getRideEstimate = function(from, to, callback) {
 }
 
 uber.getRidePriceEstimateCoordinates = function(callback, args) {
-	console.log("fetching price");
+	// console.log("fetching price");
     var headers = {
         'Accept': 'application/json',
         'Authorization': 'Bearer ' + uber.accessToken 
@@ -50,7 +50,7 @@ uber.getRidePriceEstimateCoordinates = function(callback, args) {
         json: true
     }
     request.get(options, (error, response, body) => {
-    	console.log("fetched price");	
+    	// console.log("fetched price");	
     	done = true;
         if(error) {
             console.log(error);
@@ -82,7 +82,7 @@ uber.getRidePriceEstimateCoordinates = function(callback, args) {
 }
 
 uber.getRideTimeEstimateCoordinates = function(callback, args) {
-	console.log("fetching time");	
+	// console.log("fetching time");	
     var headers = {
         'Accept': 'application/json',
         'Authorization': 'Bearer ' + uber.accessToken 
@@ -93,7 +93,7 @@ uber.getRideTimeEstimateCoordinates = function(callback, args) {
         json: true
     }
     request.get(options, (error, response, body) => {
-        console.log("fetched price");
+        // console.log("fetched price");
         if(error) {
             console.log(error);
             return;
@@ -122,13 +122,3 @@ uber.getRideTimeEstimateCoordinates = function(callback, args) {
 
 
 module.exports = uber
-
-function test() {
-    uber.getRideEstimate('124, 4th cross, viswapriya layout, begur, bangalore 58', 
-        '785, 100 feet outer rind road, jp nagar 6th phase, bangalore-78', 
-        (response) => {
-        	console.log(response);
-        });
-
-}
-test()

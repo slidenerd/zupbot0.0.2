@@ -59,7 +59,6 @@ ola.getAvailabilityByCoordinates = function(callback, args) {
         headers: headers,
         json: true
     }
-    console.log("Fetching...");
     request.get(options, (error, response, body) => {
         if(error) {
             console.log(error);
@@ -67,7 +66,6 @@ ola.getAvailabilityByCoordinates = function(callback, args) {
             return;
         }
         if(response.statusCode == 200) {
-            console.log(body);
         } else {
             console.log(response.statusCode);
             console.log(body);
@@ -89,7 +87,6 @@ ola.getRideEstimateCoordinates = function(callback, args) {
         headers: headers,
         json: true
     }
-    console.log("Fetching...");
     request.get(options, (error, response, body) => {
         if(error) {
             console.log(error);
@@ -120,13 +117,3 @@ ola.getRideEstimateCoordinates = function(callback, args) {
     })
 }
 module.exports = ola
-
-function test() {
-    ola.getRideEstimate('124, 4th cross, viswapriya layout, begur, bangalore 58', 
-        '785, 100 feet outer rind road, jp nagar 6th phase, bangalore-78', 
-        (resObj) => {
-            console.log(resObj);
-        });
-}
-
-test();

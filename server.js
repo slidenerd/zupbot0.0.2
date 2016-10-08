@@ -37,6 +37,8 @@ const platforms = require('./utils/platforms');
 const builder = require('./core/');
 const messageutils = require('./utils/messageutils')
 const replies = require('./utils/replies')
+const ola = require('./features/ola')
+const uber = require('./features/uber')
 
 brain = require('./rive/rive');
 brain.load(() => {
@@ -236,9 +238,31 @@ function configureExpress() {
     res.redirect('/api/pinterest');
   });
 
-  // app.get('/api/list', function(req, res) {
-  //   mail.getAllLists("631957", res)
-  // });
+  app.get('/api/ride', function(req, res) {
+    var data = {};
+    var callback = function(data) {
+      res.end(data);
+    }
+    ola.getRideEstimate('124, 4th cross, viswapriya layout, begur, bangalore 58', 
+        '785, 100 feet outer rind road, jp nagar 6th phase, bangalore-78', 
+        (resObj) => {
+            data.ola = resObj;
+            if(data.hasOwnProperty("uber")) {
+                callback(data);
+            }
+        }
+    );
+
+    uber.getRideEstimate('124, 4th cross, viswapriya layout, begur, bangalore 58', 
+        '785, 100 feet outer rind road, jp nagar 6th phase, bangalore-78', 
+        (resObj) => {
+            data.uber = resObj;
+            if(data.hasOwnProperty("ola")) {
+                callback(data);
+            }
+        }
+    );
+  });
 
   app.post('/api/subscribe', function (req, res) {
     if (!req.body) {
