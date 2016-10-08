@@ -85,20 +85,24 @@ messageutils.sendFlipkartCarousel = function (session, brain, offers, filters) {
                 txt = brain.replySync(userId, 'jsflipkartsubsequenttime')
                 console.log('after 2nd response', brain.getTopic(userId))
             }
-            console.log('outside both',brain.getTopic(userId))
+            const lastActive = new Date().getTime();
+            console.log('outside both', brain.getTopic(userId))
             msg = new builder.Message(session).text(txt)
                 .attachmentLayout(builder.AttachmentLayout.carousel)
                 .attachments(attachments);
-            console.log('after message',brain.getTopic(userId))
+            console.log('after message', brain.getTopic(userId))
             //Advance the start position so display the next N items for any platform
             session.userData.flipkartPaginationStartIndex = end;
 
-            console.log('FUCK THIS',brain.getTopic(userId))
+            console.log('FUCK THIS', brain.getTopic(userId))
             var timeout = setTimeout(() => {
-                console.log('BITCH',brain.getTopic(userId))
-                platforms.sendQuickReply(session, require('../json/quick_reply_flipkart_show_more.json'))
-                console.log('BITCH2',brain.getTopic(userId))
-                clearTimeout(timeout)
+                var currentTime = new Date().getTime();
+                if (currentTime - lastActive > 30000) {
+                    console.log('BITCH', brain.getTopic(userId))
+                    platforms.sendQuickReply(session, require('../json/quick_reply_flipkart_show_more.json'))
+                    console.log('BITCH2', brain.getTopic(userId))
+                    clearTimeout(timeout)
+                }
             }, 30000)
         }
         else {
