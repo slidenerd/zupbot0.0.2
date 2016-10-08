@@ -241,7 +241,7 @@ function configureExpress() {
   app.get('/api/ride', function(req, res) {
     var data = {};
     var callback = function(data) {
-      res.end(data);
+        res.render('map/index', data);
     }
     ola.getRideEstimate('124, 4th cross, viswapriya layout, begur, bangalore 58', 
         '785, 100 feet outer rind road, jp nagar 6th phase, bangalore-78', 
