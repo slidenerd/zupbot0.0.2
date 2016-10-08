@@ -340,7 +340,7 @@ function handleWithBrains(session) {
   if (!brain.isLoaded()) {
     //Send the user ID to track variables for each user
 
-    brain.load(session.message.user.id, () => {
+    brain.load(userId, () => {
       //Reply once the brain has been loaded
       reply(session)
     }, () => {
@@ -360,19 +360,26 @@ function handleWithBrains(session) {
  * Generate a reply from the brain
  */
 function reply(session) {
-  brain.reply(session.message.user.id, session.message.text)
+  const userId = session.message.user.id
+  console.log('MAIN ', brain.getTopic(userId))
+  brain.reply(userId, session.message.text)
     .then((response) => {
+      console.log('BEFORE REPLY ' + brain.getTopic(userId))
       session.send(response);
+      console.log('AFTER REPLY ' + brain.getTopic(userId))
     })
     .catch((response) => {
 
       //Handle special cases here such as carousel, we rejected them from all.js as rive doesnt handle custom objects resolved through its Promise
       if (response && response.type === 'carousel') {
-        brain.riveScript.setUservar(session.message.user.id, 'topic', 'offers')
-        messageutils.sendFlipkartCarousel(session, brain.riveScript, response.data, response.filters)
+        console.log('BEFORE CAROURSEL',brain.getTopic(userId))
+        messageutils.sendFlipkartCarousel(session, brain, response.data, response.filters)
+        console.log('AFTER CAROURSEL',brain.getTopic(userId))
       }
       else {
+        console.log('BEFORE ELSE',brain.getTopic(userId))
         session.send(response);
+        console.log('AFTER ELSE',brain.getTopic(userId))
       }
     })
 }

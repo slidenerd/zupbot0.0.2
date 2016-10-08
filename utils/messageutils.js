@@ -11,7 +11,7 @@ messageutils.sendFlipkartCarousel = function (session, brain, offers, filters) {
 
     //A key from cache which indicates if this data was previously cached or freshly loaded
     const fresh = cache.get('fresh');
-
+    const userId = session.message.user.id;
     // The container for our carousel items.
     var attachments = []
 
@@ -61,9 +61,11 @@ messageutils.sendFlipkartCarousel = function (session, brain, offers, filters) {
     const available = end < offers.length ? end : offers.length;
     const remaining = available - start;
 
-    brain.setUservar(session.message.user.id, 'flipkartpagestart', start + 1);
-    brain.setUservar(session.message.user.id, 'flipkartpageend', available);
-    brain.setUservar(session.message.user.id, 'flipkartofferscount', offers.length);
+    console.log('before variables', brain.getTopic(userId))
+    brain.set(userId, 'flipkartpagestart', start + 1)
+    brain.set(userId, 'flipkartpageend', available)
+    brain.set(userId, 'flipkartofferscount', offers.length)
+    console.log('after variables', brain.getTopic(userId))
     if (offers.length) {
         //If we have more offers to display
         if ((available - start) > 0) {
@@ -71,31 +73,38 @@ messageutils.sendFlipkartCarousel = function (session, brain, offers, filters) {
             //The first time someone sees the results, show them a complete message       
             var txt;
             if (start == 0) {
-                txt = brain.reply(session.message.user.id, 'jsflipkartfirsttime', messageutils.this)
+                console.log('before response', brain.getTopic(userId))
+                txt = brain.replySync(userId, 'jsflipkartfirsttime')
+                console.log('after response', brain.getTopic(userId))
             }
 
             //The subsequent time someone sees results, show them a showing now 10-20 kinda thing.
 
             else {
-                txt = brain.reply(session.message.user.id, 'jsflipkartsubsequenttime', messageutils.this)
+                console.log('before 2nd response', brain.getTopic(userId))
+                txt = brain.replySync(userId, 'jsflipkartsubsequenttime')
+                console.log('after 2nd response', brain.getTopic(userId))
             }
+            console.log('outside both',brain.getTopic(userId))
             msg = new builder.Message(session).text(txt)
                 .attachmentLayout(builder.AttachmentLayout.carousel)
                 .attachments(attachments);
-
+            console.log('after message',brain.getTopic(userId))
             //Advance the start position so display the next N items for any platform
             session.userData.flipkartPaginationStartIndex = end;
 
+            console.log('FUCK THIS',brain.getTopic(userId))
             var timeout = setTimeout(() => {
-                
+                console.log('BITCH',brain.getTopic(userId))
                 platforms.sendQuickReply(session, require('../json/quick_reply_flipkart_show_more.json'))
+                console.log('BITCH2',brain.getTopic(userId))
                 clearTimeout(timeout)
             }, 30000)
         }
         else {
 
             //We have browsed every single offer and therefore tell the person its all over.
-            msg = brain.reply(session.message.user.id, 'jsflipkartexhausted', messageutils.this)
+            msg = brain.replySync(userId, 'jsflipkartexhausted')
             //We have reached the limit of browsing every single offer, lets reset things back to 0
             session.userData.flipkartPaginationStartIndex = 0
 
@@ -107,7 +116,7 @@ messageutils.sendFlipkartCarousel = function (session, brain, offers, filters) {
     else {
 
         //We did not find any offers perhaps because there was none or all were unavailable.
-        msg = brain.reply(session.message.user.id, 'jsflipkartnone', messageutils.this)
+        msg = brain.replySync(userId, 'jsflipkartnone')
     }
     session.send(msg);
 }

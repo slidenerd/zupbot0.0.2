@@ -66,8 +66,28 @@ brain.reply = function (userId, text) {
     return brain.riveScript.replyAsync(userId, text, brain.this);
 }
 
+brain.replySync = function (userId, text) {
+    return brain.riveScript.reply(userId, text, brain.this);
+}
+
 brain.setLoaded = function (loaded) {
     brain.loaded = loaded;
+}
+
+brain.set = function(userId, key, value){
+    brain.riveScript.setUservar(userId, key, value)
+}
+
+brain.get = function(userId, key){
+    return brain.riveScript.getUservar(userId, key)
+}
+
+brain.setTopic = function(userId, topic){
+    brain.riveScript.setUservar(userId, 'topic', value)
+}
+
+brain.getTopic = function(userId){
+    return brain.riveScript.getUservar(userId, 'topic')
 }
 
 module.exports = brain;

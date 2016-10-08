@@ -26,6 +26,7 @@ const all = {
 all.flipkart.name = 'flipkart';
 all.flipkart.subroutine = function (rs, args) {
     return new rs.Promise((resolve, reject) => {
+        console.log('GUESS WHAT',rs.getUservar(rs.currentUser(), 'topic'))
         //Load from cache
         const cachedOffers = cache.get(KEY_OFFERS)
         if (cachedOffers) {
