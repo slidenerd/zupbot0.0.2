@@ -28,16 +28,16 @@
 - I am sorry but I am not capable of doing stuff with <star> yet but lets ask my lazy creator to start slogging so that we can have this feature ready for you.
 
 + [*] (flipkart|flip kart) [*]{weight=999}
-- <call>flipkart nocategory</call>{topic=offers}
+- {topic=offers}<call>flipkart nocategory</call>
 
 + [*] (@offerwords) [*]{weight=998}
-- <call>flipkart nocategory</call>{topic=offers}
+- {topic=offers}<call>flipkart nocategory</call>
 
 + [*] (@categorymobiles) [*] (@offerwords) [*]{weight=999}
-- <call>flipkart mobiles_and_accessories</call>{topic=offers}
+- {topic=offers}<call>flipkart mobiles_and_accessories</call>
 
 + [*] (@offerwords) [*] (@categorymobiles) [*]{weight=999}
-- <call>flipkart mobiles_and_accessories</call>{topic=offers}
+- {topic=offers}<call>flipkart mobiles_and_accessories</call>
 
 //The name of this topic is being referred to from JS code
 > topic offers
@@ -67,6 +67,9 @@
 	- Ouch! It seems Flipkart has either no offers today or all their offers have been exhausted
     - It seems we are late for the party. Flipkart doesnt seem to have any more offers for now
     - Flipkart has no offers for the time being, I am now waiting for the next train to arrive
+
+	+ show more
+	- <call>flipkart <get flipkartcategory></call>
 
 	//Default messages by user will be handled by the random topic outside
 	+ *

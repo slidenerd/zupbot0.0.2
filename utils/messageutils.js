@@ -85,6 +85,13 @@ messageutils.sendFlipkartCarousel = function (session, brain, offers, filters) {
 
             //Advance the start position so display the next N items for any platform
             session.userData.flipkartPaginationStartIndex = end;
+
+            var timeout = setTimeout(() => {
+                rs.setUservar(session.message.user.id, 'topic', 'offers')
+                platforms.sendQuickReply(session, require('../json/quick_reply_flipkart_show_more.json'))
+                clearTimeout(timeout)
+                
+            }, 30000)
         }
         else {
 

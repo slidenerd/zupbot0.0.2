@@ -1,0 +1,15 @@
+{
+    "text": "Would you like to see more offers?",
+    "quick_replies":[
+        {
+            "content_type": "text",
+            "title": "Show More",
+            "payload": "PAYLOAD_FLIPKART_SHOW_MORE"
+        },
+        {
+            "content_type": "text",
+            "title": "No",
+            "payload": "PAYLOAD_FLIPKART_CANCEL"
+        }
+    ]
+}
