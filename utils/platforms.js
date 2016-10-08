@@ -1,3 +1,5 @@
+'use strict';
+
 const request = require('request');
 const endpoints = require('../config/endpoints')
 const MESSENGER_CAROUSEL_LIMIT = 10;
@@ -51,7 +53,7 @@ platforms.greet = function (session) {
 }
 
 platforms.testWebView = function (session) {
-    var webView = {
+    let webView = {
         recipient: {
             id: session.message.user.id
         },
@@ -115,7 +117,7 @@ platforms.sendQuickReply = function(session, quickReplies){
     }
 }
 
-// Calls the Facebook graph api to change various bot settings
+// Calls the Facebook graph api to change letious bot settings
 platforms.facebook.sendThread = function (jsonFile, cmd) {
 
     // Start the request
@@ -139,7 +141,7 @@ platforms.facebook.sendThread = function (jsonFile, cmd) {
 }
 
 platforms.facebook.sendQuickReply = function (session, quickReplies) {
-    var quickReply = {
+    let quickReply = {
         recipient: {
             id: session.message.user.id
         },

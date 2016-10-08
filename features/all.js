@@ -1,3 +1,5 @@
+'use strict';
+
 const amazon = require('./amazon')
 const flipkart = require('./flipkart')
 const ola = require('./ola')
@@ -26,7 +28,7 @@ const all = {
 all.flipkart.name = 'flipkart';
 all.flipkart.subroutine = function (rs, args) {
     return new rs.Promise((resolve, reject) => {
-        console.log('GUESS WHAT',rs.getUservar(rs.currentUser(), 'topic'))
+        console.log('GUESS WHAT',rs.getUserlet(rs.currentUser(), 'topic'))
         //Load from cache
         const cachedOffers = cache.get(KEY_OFFERS)
         if (cachedOffers) {
@@ -75,11 +77,11 @@ all.uber.subroutine = function (rs, args) {
 all.skyscanner.name = 'skyscanner'
 all.skyscanner.subroutine = function () {
     return new rs.Promise((resolve, reject) => {
-        var lat = 19, lon = 72;
+        let lat = 19, lon = 72;
         skyscanner.execute(lat, lon)
             .then((report) => {
-                rs.setUservar(rs.currentUser(), 'location', 'your place')
-                rs.setUservars(rs.currentUser(), report)
+                rs.setUserlet(rs.currentUser(), 'location', 'your place')
+                rs.setUserlets(rs.currentUser(), report)
                 return rs.replyAsync(rs.currentUser(), 'jsweather', all.this)
             })
             .then((reply) => {
@@ -94,11 +96,11 @@ all.skyscanner.subroutine = function () {
 all.weather.name = 'weather';
 all.weather.subroutine = function (rs, args) {
     return new rs.Promise((resolve, reject) => {
-        var lat = 19, lon = 72;
+        let lat = 19, lon = 72;
         weather.execute(lat, lon)
             .then((report) => {
-                rs.setUservar(rs.currentUser(), 'location', 'your place')
-                rs.setUservars(rs.currentUser(), report)
+                rs.setUserlet(rs.currentUser(), 'location', 'your place')
+                rs.setUserlets(rs.currentUser(), report)
                 return rs.replyAsync(rs.currentUser(), 'jsweather', all.this)
             })
             .then((reply) => {

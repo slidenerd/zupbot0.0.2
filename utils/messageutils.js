@@ -1,3 +1,4 @@
+'use strict'
 const builder = require('../core/');
 const cache = require('memory-cache');
 const replies = require('./replies');
@@ -13,13 +14,13 @@ messageutils.sendFlipkartCarousel = function (session, brain, offers, filters) {
     const fresh = cache.get('fresh');
     const userId = session.message.user.id;
     // The container for our carousel items.
-    var attachments = []
+    let attachments = []
 
     //How many items will you display in a carousel on each platform is controlled by limit
-    var limit = platforms.getCarouselLimits(session.message.address.channelId);
+    let limit = platforms.getCarouselLimits(session.message.address.channelId);
 
     //Out of say 60 offers that we may find, how many offers to display and start from where
-    //This variable keeps track of the start so that we can show exactly 20-30 of 60
+    //This letiable keeps track of the start so that we can show exactly 20-30 of 60
     //Number of items displayed depends on the carousel limits for each platform.
     if (fresh) {
         session.userData.flipkartPaginationStartIndex = 0;
@@ -32,16 +33,16 @@ messageutils.sendFlipkartCarousel = function (session, brain, offers, filters) {
     }
 
     //Begin displaying items either from 0 or from a previous number
-    var start = session.userData.flipkartPaginationStartIndex || 0
+    let start = session.userData.flipkartPaginationStartIndex || 0
 
     //Display exactly limit number of items
-    var end = start + limit
+    let end = start + limit
 
     offers = flipkart.applyFilters(offers, session.userData.flipkartFilters);
 
 
-    for (var i = start; i < end && i < offers.length; i++) {
-        var offer = offers[i];
+    for (let i = start; i < end && i < offers.length; i++) {
+        let offer = offers[i];
         attachments.push(new builder.HeroCard(session)
             .title(offer.title)
             .subtitle(offer.description)
@@ -56,22 +57,22 @@ messageutils.sendFlipkartCarousel = function (session, brain, offers, filters) {
 
 
     //Contains our text message and carousel
-    var msg;
+    let msg;
     //If we can display 10 items in each round but we have only 5 results, we need display 0-5
     const available = end < offers.length ? end : offers.length;
     const remaining = available - start;
 
-    console.log('before variables', brain.getTopic(userId))
+    console.log('before letiables', brain.getTopic(userId))
     brain.set(userId, 'flipkartpagestart', start + 1)
     brain.set(userId, 'flipkartpageend', available)
     brain.set(userId, 'flipkartofferscount', offers.length)
-    console.log('after variables', brain.getTopic(userId))
+    console.log('after letiables', brain.getTopic(userId))
     if (offers.length) {
         //If we have more offers to display
         if ((available - start) > 0) {
 
             //The first time someone sees the results, show them a complete message       
-            var txt;
+            let txt;
             if (start == 0) {
                 console.log('before response', brain.getTopic(userId))
                 txt = brain.replySync(userId, 'jsflipkartfirsttime')
@@ -95,8 +96,8 @@ messageutils.sendFlipkartCarousel = function (session, brain, offers, filters) {
             session.userData.flipkartPaginationStartIndex = end;
 
             console.log('FUCK THIS', brain.getTopic(userId))
-            var timeout = setTimeout(() => {
-                var currentTime = new Date().getTime();
+            let timeout = setTimeout(() => {
+                let currentTime = new Date().getTime();
                 if (currentTime - lastActive > 30000) {
                     console.log('BITCH', brain.getTopic(userId))
                     platforms.sendQuickReply(session, require('../json/quick_reply_flipkart_show_more.json'))

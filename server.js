@@ -1,3 +1,5 @@
+'use strict'
+
 /**
  * Module dependencies.
  */
@@ -21,7 +23,7 @@ const multer = require('multer');
 const upload = multer({ dest: path.join(__dirname, 'uploads') });
 const mail = require('./features/mail');
 /**
- * Load environment variables from .env file, where API keys and passwords are configured.
+ * Load environment letiables from .env file, where API keys and passwords are configured.
  */
 dotenv.load({ path: '.env.example' });
 
@@ -242,18 +244,18 @@ function configureExpress() {
 
   app.post('/api/subscribe', function (req, res) {
     if (!req.body) {
-      var responseBody = new Object();
+      let responseBody = new Object();
       responseBody.success = false;
       responseBody.message = "Invalid request";
       res.end(JSON.stringify(responseBody));
       return;
     }
-    var email = req.body.email;
+    let email = req.body.email;
     mail.createRecepient(email, res);
   });
   app.post('/api/sendMail', function (req, res) {
     if (!req.body) {
-      var responseBody = new Object();
+      let responseBody = new Object();
       responseBody.success = false;
       responseBody.message = "Invalid request";
       res.end(JSON.stringify(responseBody));
@@ -288,7 +290,7 @@ function configureExpress() {
 
   // Anytime the major version is incremented any existing conversations will be restarted.
 
-  var dialogVersionOptions = {
+  let dialogVersionOptions = {
     version: 1.0,
     resetCommand: /^reset/i
   };
@@ -304,7 +306,7 @@ function configureExpress() {
     dialogId: '/firstRun'
   }));
 
-  bot.dialog('/firstRun', [firstRun]);
+  bot.dialog('/firstRun', firstRun);
   bot.dialog('/', onMessage);
   /**
    * Dialog that handles displaying a carousel on Flipkart
@@ -324,8 +326,8 @@ function firstRun(session) {
   platforms.greet(session);
   //If the user wasnt added before, add the user
   userController.addBotUser(session);
-  handleWithBrains(session)
   console.log('first run')
+  reply(session)
   session.endDialog()
 }
 
@@ -333,27 +335,7 @@ function onMessage(session) {
   //If the user wasnt added before, add the user
   userController.addBotUser(session);
   console.log('subsequent run')
-  handleWithBrains(session)
-}
-
-function handleWithBrains(session) {
-  if (!brain.isLoaded()) {
-    //Send the user ID to track variables for each user
-
-    brain.load(userId, () => {
-      //Reply once the brain has been loaded
-      reply(session)
-    }, () => {
-
-      //Notify the user of any errors that may occur if the brain loading fails
-      const error = replies.getBrainLoadingFailed()
-      session.send(error)
-    })
-  }
-  else {
-    //Reply if the brains were loaded previously
-    reply(session)
-  }
+  reply(session)
 }
 
 /**

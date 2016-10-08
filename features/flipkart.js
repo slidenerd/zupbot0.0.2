@@ -41,12 +41,12 @@ function parse(json) {
 
 flipkart.execute = function () {
     return new Promise((resolve, reject) => {
-        var headers = {
+        let headers = {
             'Fk-Affiliate-Id': endpoints.FLIPKART_AFFILIATE_ID,
             'Fk-Affiliate-Token': endpoints.FLIPKART_AFFILIATE_TOKEN
         };
 
-        var options = {
+        let options = {
             url: endpoints.FLIPKART,
             headers: headers,
             json: true
@@ -71,11 +71,11 @@ flipkart.applyFilters = function (offers, filters) {
     if (filters) {
         //filters for category level
         if (filters.length == 1) {
-            var category = filters[0].toLowerCase();
+            let category = filters[0].toLowerCase();
             if (category != 'nocategory') {
                 offers = offers.filter((offer) => {
-                    var category = offer.category;
-                    var filter = filters[0];
+                    let category = offer.category;
+                    let filter = filters[0];
                     return category.toLowerCase() === filter;
                 });
             }
