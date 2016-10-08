@@ -1,10 +1,10 @@
 'use strict';
 //Toogle debugging on RiveScript object when you need to debug
-const cache = require('memory-cache');
-const RiveScript = require('rivescript');
-const events = require('events');
-
-const all = require('../features/all');
+const
+    all = require('../features/all'),
+    cache = require('memory-cache'),
+    events = require('events'),
+    RiveScript = require('rivescript');
 
 /**
  * Initially, the brain is not loaded
@@ -63,7 +63,10 @@ brain.onDebug = function (message) {
  * Return an asynchronous reply from the brain corresponding to a particular user id
  */
 brain.reply = function (userId, text) {
-    return brain.riveScript.replyAsync(userId, text, brain.this);
+    console.log('WHAT ABOUT HERE', brain.getTopic(userId))
+    let reply = brain.riveScript.replyAsync(userId, text, brain.this);
+    console.log('AND HERE', brain.getTopic(userId))
+    return reply;
 }
 
 brain.replySync = function (userId, text) {
