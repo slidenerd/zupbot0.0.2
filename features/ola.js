@@ -7,22 +7,8 @@ const ola = {
     endPoint: 'http://sandbox-t.olacabs.com/v1/products'
 }
 
-function test() {
-    var args = new Object();
-    args.lat = "12.9491416";
-    args.long = "77.64298";
 
-    args.droplat = "12.970016";
-    args.droplong = "77.641411";
-
-
-    args.category = "sedan"
-    getAvailability('124, 4th cross, viswapriya layout, begur, bangalore 58');
-    // getRideEstimateCoordinates(args);
-}
-
-
-function getAvailability(category, location, callback) {
+ola.getAvailability = function(category, location, callback) {
     geocoder.geocode(location, function(err, res) {
         if(err) {
             //TODO:
@@ -32,16 +18,15 @@ function getAvailability(category, location, callback) {
             args.lat = res[0].latitude;
             args.long = res[0].longitude;
             args.category = category
-            getAvailabilityByCoordinates(callback, args); 
+            ola.getAvailabilityByCoordinates(callback, args); 
         }
     });
 }
 
-function getRideEstimate(category, from, to, callback) {
+ola.getRideEstimate = function(from, to, callback) {
     var option = 0;
     var args = new Object();
-    args.category = category;
-    geocoder.geocode(from, function(err, res) {
+    var geoCallback = function(err, res) {
         if(err) {
             //TODO:
             console.log("Error : " + err);
@@ -51,21 +36,20 @@ function getRideEstimate(category, from, to, callback) {
                     args.lat = res[0].latitude;
                     args.long = res[0].longitude;
                     option++;
-                    geocoder.geocode(t0, this);
+                    geocoder.geocode(to, geoCallback);
                 break;
                 case 1:
                     args.droplat = res[0].latitude;
                     args.droplong = res[0].longitude;
-                    getRideEstimateCoordinates(callback, args);
+                    ola.getRideEstimateCoordinates(callback, args);
                 break;    
             }
-            if(option == 0) {
-            }
         }
-    });
+    };
+    geocoder.geocode(from, geoCallback);
 }
 
-function getAvailabilityByCoordinates(callback, args) {
+ola.getAvailabilityByCoordinates = function(callback, args) {
     var headers = {
         'Accept': 'application/json',
         'X-APP-TOKEN': ola.apiToken 
@@ -79,6 +63,7 @@ function getAvailabilityByCoordinates(callback, args) {
     request.get(options, (error, response, body) => {
         if(error) {
             console.log(error);
+            callback(error, response, body);
             return;
         }
         if(response.statusCode == 200) {
@@ -87,18 +72,20 @@ function getAvailabilityByCoordinates(callback, args) {
             console.log(response.statusCode);
             console.log(body);
         }
+        callback(error, response, body);
     })
 }
 
 
-function getRideEstimateCoordinates(callback, args) {
+ola.getRideEstimateCoordinates = function(callback, args) {
+    var resObj = {};
     var headers = {
         'Accept': 'application/json',
         'X-APP-TOKEN': ola.apiToken 
     };
     var options = {
         url: ola.endPoint + '?pickup_lat=' + args.lat + "&pickup_lng=" + args.long + 
-        "&drop_lat=" + args.droplat + "&drop_lng=" + args.droplong + "&category=" + args.category,
+        "&drop_lat=" + args.droplat + "&drop_lng=" + args.droplong,
         headers: headers,
         json: true
     }
@@ -109,7 +96,23 @@ function getRideEstimateCoordinates(callback, args) {
             return;
         }
         if(response.statusCode == 200) {
-            console.log(body);
+            for(var i = 0; i < body.ride_estimate.length; i++) {
+                var obj = new Object();
+                obj.display_name = body.ride_estimate[i].category;
+                obj.distance = body.ride_estimate[i].distance;
+                obj.duration = body.ride_estimate[i].travel_time_in_minutes * 60;
+                obj.high_price = body.ride_estimate[i].amount_max;
+                obj.low_price = body.ride_estimate[i].amount_min;
+                resObj[body.ride_estimate[i].category] = obj;
+            }
+
+            for(var i = 0; i < body.categories.length; i++) {
+                var category = body.categories[i];
+                if(resObj.hasOwnProperty(category.id)) {
+                    resObj[category.id].eta = category.eta;
+                }
+            }
+            callback(resObj);
         } else {
             console.log(response.statusCode);
             console.log(body);
@@ -117,3 +120,13 @@ function getRideEstimateCoordinates(callback, args) {
     })
 }
 module.exports = ola
+
+function test() {
+    ola.getRideEstimate('124, 4th cross, viswapriya layout, begur, bangalore 58', 
+        '785, 100 feet outer rind road, jp nagar 6th phase, bangalore-78', 
+        (resObj) => {
+            console.log(resObj);
+        });
+}
+
+test();
