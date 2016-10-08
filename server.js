@@ -43,7 +43,7 @@ const uber = require('./features/uber')
 brain = require('./rive/rive');
 brain.load(() => {
   console.log("Brain Loaded");
-  // connectToMongo();
+  connectToMongo();
   configureExpress();
 }, () => {
   console.log("Brain Load error");
@@ -244,8 +244,7 @@ function configureExpress() {
     var callback = function(data) {
         res.render('map/index', data);
     }
-    ola.getRideEstimate('124, 4th cross, viswapriya layout, begur, bangalore 58', 
-        '785, 100 feet outer rind road, jp nagar 6th phase, bangalore-78', 
+    ola.getRideEstimate(req.query.pickup, req.query.drop, 
         (resObj) => {
             data.ola = resObj;
             if(data.hasOwnProperty("uber")) {
@@ -254,8 +253,7 @@ function configureExpress() {
         }
     );
 
-    uber.getRideEstimate('124, 4th cross, viswapriya layout, begur, bangalore 58', 
-        '785, 100 feet outer rind road, jp nagar 6th phase, bangalore-78', 
+    uber.getRideEstimate(req.query.pickup, req.query.drop, 
         (resObj) => {
             data.uber = resObj;
             if(data.hasOwnProperty("ola")) {
