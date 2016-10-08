@@ -37,8 +37,7 @@ const platforms = require('./utils/platforms');
 const builder = require('./core/');
 const messageutils = require('./utils/messageutils')
 const replies = require('./utils/replies')
-const ola = require('./features/ola')
-const uber = require('./features/uber')
+const ride = require('./features/ride')
 
 brain = require('./rive/rive');
 brain.load(() => {
@@ -240,27 +239,7 @@ function configureExpress() {
   });
 
   app.get('/api/ride', function(req, res) {
-    var data = {};
-    var callback = function(data) {
-        res.render('map/index', data);
-    }
-    ola.getRideEstimate(req.query.pickup, req.query.drop, 
-        (resObj) => {
-            data.ola = resObj;
-            if(data.hasOwnProperty("uber")) {
-                callback(data);
-            }
-        }
-    );
-
-    uber.getRideEstimate(req.query.pickup, req.query.drop, 
-        (resObj) => {
-            data.uber = resObj;
-            if(data.hasOwnProperty("ola")) {
-                callback(data);
-            }
-        }
-    );
+    ride.getRideEstimate(req.query.pickup, req.query.drop, res);
   });
 
   app.post('/api/subscribe', function (req, res) {
