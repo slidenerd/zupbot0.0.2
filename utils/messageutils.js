@@ -87,10 +87,9 @@ messageutils.sendFlipkartCarousel = function (session, brain, offers, filters) {
             session.userData.flipkartPaginationStartIndex = end;
 
             var timeout = setTimeout(() => {
-                brain.setUservar(session.message.user.id, 'topic', 'offers')
+                
                 platforms.sendQuickReply(session, require('../json/quick_reply_flipkart_show_more.json'))
                 clearTimeout(timeout)
-                
             }, 30000)
         }
         else {

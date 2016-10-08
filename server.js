@@ -368,6 +368,7 @@ function reply(session) {
 
       //Handle special cases here such as carousel, we rejected them from all.js as rive doesnt handle custom objects resolved through its Promise
       if (response && response.type === 'carousel') {
+        brain.riveScript.setUservar(session.message.user.id, 'topic', 'offers')
         messageutils.sendFlipkartCarousel(session, brain.riveScript, response.data, response.filters)
       }
       else {
