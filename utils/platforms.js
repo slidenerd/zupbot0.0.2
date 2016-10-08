@@ -92,6 +92,29 @@ platforms.testWebView = function (session) {
         });
 
 }
+
+platforms.sendQuickReply = function(session, quickReplies){
+    const channel = session.message.address.channelId;
+    if (channel.toLowerCase() === 'facebook') {
+        platforms.facebook.sendQuickReply(session, quickReplies)
+    }
+    else if (channel.toLowerCase() === 'skype') {
+
+    }
+    else if (channel.toLowerCase() === 'slack') {
+
+    }
+    else if (channel.toLowerCase() === 'telegram') {
+
+    }
+    else if (channel.toLowerCase() === 'kik') {
+
+    }
+    else if (channel.toLowerCase() === 'emulator') {
+
+    }
+}
+
 // Calls the Facebook graph api to change various bot settings
 platforms.facebook.sendThread = function (jsonFile, cmd) {
 
@@ -113,6 +136,16 @@ platforms.facebook.sendThread = function (jsonFile, cmd) {
                 console.log(body);
             }
         });
+}
+
+platforms.facebook.sendQuickReply = function (session, quickReplies) {
+    var quickReply = {
+        recipient: {
+            id: session.message.user.id
+        },
+        "message": quickReplies
+    }
+
 }
 
 module.exports = platforms

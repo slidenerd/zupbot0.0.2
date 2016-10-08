@@ -103,7 +103,7 @@
 - Yes? {@<star>}
 
 + (what is your name|who are you|who is this)
-- I am <bot name>.
+- I am <bot name>, your smart buddy.
 - You can call me <bot name>.
 
 + how old are you
@@ -525,26 +525,18 @@
 - What's orange and sounds like a parrot?\nA Carrot.
 - How many tickles does it take to tickle an octopus?\nTen-tickles!
 
++ get started
+- hi there, {@who are you} {@help}
+- hey there, {@who are you} {@help}
+- hello there, {@who are you} {@help}
+
 + [*] help [*] {weight=1000}
-- Sure, I can tell you the weather currently at your place and help you find awesome deals on Flipkart\n
-^ You can say "show me the weather at mumbai" and I ll ask the weather gods, hope they dont shoot a lightning bar at your phone for that\n
-^ You can say "find me some coupons today" and I ll request the Flipkart guys to pop some offers, lets hope we find something solid for you today\n
-
-- Of course, currently I am a little baby who knows how to show the weather at your place and find you some awesome deals on Flipkart\n
-^ If you ask "show me the weather at delhi", I will ping the weather gods above and hopefully they dont give a 404\n
-^ If you ask "show me some awesome coupons today", I will ping the Flipkart bosses and they will give you something you love like a nice discount on their stuff.\n
-
-- I am so glad you asked, as of now, I can tell you the weather at your place and get you some nice discounts on Flipkart.\n
-^ You could simply type "whats the weather in Chennai" and I will travel at the speed of 186000 miles per second, look at the sky in Chennai, come back to you and tell you the weather\n
-^ You could also say "find me some offers" and this time I ll reach Flipkart for you and try my best to get you some good deals\n
-
-- Kudos on asking, as of now, I can forecast the weather and get you discounts on Flipkart\n
-^ If you say "how is the weather in Kolkata", I will enter the stratosphere on your behalf and analyze the conditions from there and tell you the weather\n
-^ If you say "get me some discount today", I will go to that guy who gives discounts all the time, dear old Flipkart and get you something nice in return\n
-
-- Hip hip hurrah, look who finally asked.\n
-^ Just say "show me the weather at bangalore" and I will write an email to the rain god and tell you the weather. Hopefully, he doesnt reply back with a 404\n
-^ Or say "find me a discount today" and I will send a bunch of 1s and 0s to Flipkart to get some awesome discounts for you.\n
+- You could ask "what offers do you have?" for starters. 
+^ I will get them from Flipkart for you if their servers are breathing.
+- If you ask "what offers can I get today?", I will get some good ones for you from Flipkart.
+- For starters, you could say "get me some offers today" and I will bargain with dear old Flipkart for ya!
+- Hip hip hurrah, look who is finally here
+^ Simply say "find me some discounts today" and I will send a bunch of 1s and 0s to Flipkart.
 
 + [*] (email|contact) [*] {999}
 - I am guessing you want to know how to reach the creator. You can reach Vivz with your inquiries at admin@zup.chat and he ll reply. Don't worry, he doesnt use a bot for that.
