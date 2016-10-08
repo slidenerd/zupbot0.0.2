@@ -103,6 +103,10 @@ function configureExpress() {
     resave: true,
     saveUninitialized: true,
     secret: process.env.SESSION_SECRET,
+    store: new MongoStore({
+      url: process.env.MONGODB_URI,
+      autoReconnect: true
+    })
   }));
   app.use(passport.initialize());
   app.use(passport.session());
