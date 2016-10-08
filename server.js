@@ -343,7 +343,7 @@ function onMessage(session) {
  */
 function reply(session) {
   const userId = session.message.user.id
-  console.log('MAIN ', brain.getTopic(userId))
+  console.log('MAIN ', brain.getTopic(userId), session.message.text)
   brain.reply(userId, session.message.text)
     .then((response) => {
       console.log('BEFORE REPLY ' + brain.getTopic(userId))
