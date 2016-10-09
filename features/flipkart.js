@@ -57,6 +57,7 @@ flipkart.findAllOffers = function () {
                 jsonfile.writeFile(__dirname + '/data.json', offers, { spaces: 4 }, function (err) {
                     console.log(err)
                 })
+                offers = flipkart.sortByDiscounts(offers);
                 resolve(offers);
             }
             else {
@@ -83,4 +84,176 @@ flipkart.applyFilters = function (offers, filters) {
     return offers;
 }
 
+/**
+ * If the specified category is anything other than the default category, we perform the filtering, else we simply return all the items as it is.
+ */
+flipkart.filterForCategory = function (category, offers) {
+    let filtered = offers
+    if (category !== 'nocategory') {
+        filtered = offers.filter((item) => {
+            return item.category.toLowerCase() === category;
+        })
+    }
+    return filtered
+}
+
+/**
+ * If the specified brand is not found, we return an empty array.
+ */
+flipkart.filterForBrand = function (brand, offers) {
+    let filtered = offers.filter((item) => {
+        let total = item.title + ' ' + item.description
+        return total.toLowerCase().includes(brand.toLowerCase())
+    })
+    return filtered;
+}
+
+/**
+ * \b               => begin word
+ * (?:              => begin non capturing group
+ * (\d{1,2})        => have 1 or 2 digits at most
+ * \s*?             => Any number of spaces following that in a non greedy fashion
+ * %?               => An optional percent symbol
+ * \s*?             => Any number of spaces following that in a non greedy fashion
+ * (?:-|to)         => Dont capture this group and match either a - or to
+ * \s*?             => Any number of spaces following that in a non greedy fashion
+ * )?               => end group and keep everything above optional
+ * (\d{1,2})        => have 1 to 2 digits at most since no one on flipkart is gonna give a 100% off
+ * \s*?             => Any number of spaces following that in a non greedy fashion
+ * \b               => end word
+ * %                => A compulsory % symbol at the end
+ * Matches 10%
+ * matches 99%, doesnt match 100%
+ * Matches 10-40%
+ * Matches 10 -   80%
+ * Matches 10% to 40%
+ * Matches 10  %    -     100 %
+ * 2 capture groups, 1st captures minimum value and 2nd one captures maximum value
+ * Example 10 - 40%, minimum = 10% and maximum = 40%, in all other cases, minimum is optional
+ * If no discounts were found anywhere, the filtered list will return empty array.
+ */
+flipkart.filterForDiscounts = function (offers) {
+    //get 10 -   20% discount handling min and max
+    let regex = new RegExp(/\b(?:(\d{1,2})\s*?%?\s*?(?:-|to)\s*?)?(\d{1,2})\s*?\b%/)
+    let filtered = offers.filter((item) => {
+        let text = item.title + ' ' + item.description
+        let result = regex.exec(text);
+        if (result) {
+            item.discount = {}
+            if (result[1]) {
+                item.discount.min = result[1]
+            }
+            if (result[2]) {
+                item.discount.max = result[2]
+            }
+        }
+        return result != null;
+    })
+        .sort((left, right) => {
+            if (right.discount.max && left.discount.max) {
+                return right.discount.max - left.discount.max
+            }
+            else {
+                //keep items without a discount if any at the end
+                return 1;
+            }
+        })
+    return filtered;
+}
+
+/**
+ * \B               => begin word boundary and take a word that is neither the beginning nor the end
+ * rs               => match the literal rs
+ * \W*?             => match any number of non alphanumeric characters such as symbols non greedily
+ * \d{1,7}          => match 1-7 digits
+ * (?:              => begin group without capturing it
+ * ,                => match a comma
+ * \d+              => match one or more digits
+ * )*               => end group and repeat the group 0 or more times    
+ * \b               => end word boundary
+ * (?:              => begin group without capturing it
+ * \s*?             => match 0 or more white spaces non greedily
+ * (?:-|to)         => match - or to without capturing it
+ * \s*?             => match 0 or more white spaces non greedily
+ * (?:\b            => begin word boundary
+ * rs               => match the literal rs
+ * \b               => end word boundary
+ * \W*?             => match any number of non alphanumeric characters such as symbols non greedily
+ * )?               => match the previous group any number of times
+ * \d{1,7}          => match 1-7 digits
+ * (?:              => begin group without capturing it
+ * ,                => match a comma
+ * \d+              => match one or more digits
+ * )*               => end group and repeat the group 0 or more times    
+ * \b)?             => end word boundary and keep the entire group optional    
+ * |\brs\W*?(\d{1,7}(?:,\d+)*)\b(?:\s*?(?:-|to)\s*?(?:\brs\b\W*?)?(\d{1,7}(?:,\d+)*)\b)?
+ */
+flipkart.filterForPricing = function (offers) {
+    //get 10 -   20% discount handling min and max
+    //find all currency expressions without a comma anywhere in them
+    let regex = new RegExp(/\Brs\W*?\d{1,7}(?:,\d+)*\b(?:\s*?(?:-|to)\s*?(?:\brs\b\W*?)?\d{1,7}(?:,\d+)*\b)?|\brs\W*?(\d{1,7}(?:,\d+)*)\b(?:\s*?(?:-|to)\s*?(?:\brs\b\W*?)?(\d{1,7}(?:,\d+)*)\b)?/ig)
+    let filtered = offers.filter((item) => {
+        let text = item.title + ' ' + item.description
+        let result = regex.exec(text);
+        if (result) {
+            //strip all the characters till nothing is left
+            item.price = {}
+
+            if (result[1]) {
+                item.price.max = result[1].replace(/,/g, '')
+            }
+
+            if (result[1] && result[2]) {
+                item.price.min = result[1].replace(/,/g, ''),
+                    item.price.max = result[2].replace(/,/g, '')
+            }
+        }
+        return result != null;
+    })
+        .sort((left, right) => {
+            if (left.price.max && right.price.max) {
+                return right.price.max - left.price.max
+            }
+            else {
+                //keep items without a price if any at the end
+                return 1;
+            }
+        })
+    return filtered;
+}
+
+flipkart.sortByDiscounts = function (offers) {
+    //get 10 -   20% discount handling min and max
+    var regex = new RegExp(/\b(?:(\d{1,2})\s*?%?\s*?(?:-|to)\s*?)?(\d{1,2})\s*?\b%/)
+    let filtered = offers.filter((item) => {
+        var text = item.title + ' ' + item.description
+        var result = regex.exec(text);
+        if (result) {
+            item.discount = {}
+            if (result[1]) {
+                item.discount.min = result[1]
+            }
+            if (result[2]) {
+                item.discount.max = result[2]
+            }
+        }
+        return true;
+    })
+        .sort((left, right) => {
+            if (right.discount && right.discount.max && left.discount && left.discount.max) {
+                return right.discount.max - left.discount.max
+            }
+            else if (right.discount && right.discount.max) {
+                return 1;
+            }
+            else if (left.discount && left.discount.max) {
+                return -1;
+            }
+            else {
+                //keep all the items without a discount at the end
+                return 0;
+            }
+        })
+    return filtered;
+}
 module.exports = flipkart
