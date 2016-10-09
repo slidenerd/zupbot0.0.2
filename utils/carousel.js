@@ -5,14 +5,16 @@ const replies = require('./replies');
 const flipkart = require('../features/flipkart');
 const platforms = require('./platforms')
 
-const messageutils = {}
+const carousel = {}
 
 //TODO add a show more button and no thanks
-messageutils.sendFlipkartCarousel = function (session, brain, offers, filters) {
+carousel.sendFlipkartCarousel = function (session, brain, offers, filters) {
+
+    const userId = session.message.user.id;
 
     //A key from cache which indicates if this data was previously cached or freshly loaded
     const fresh = cache.get('fresh');
-    const userId = session.message.user.id;
+
     // The container for our carousel items.
     let attachments = []
 
@@ -27,8 +29,6 @@ messageutils.sendFlipkartCarousel = function (session, brain, offers, filters) {
     }
 
     if (filters) {
-        console.log('old ' + session.userData.flipkartFilters);
-        console.log('new ' + filters[0]);
         session.userData.flipkartFilters = filters;
     }
 
@@ -80,7 +80,7 @@ messageutils.sendFlipkartCarousel = function (session, brain, offers, filters) {
             else {
                 txt = brain.replySync(userId, 'jsflipkartsubsequenttime')
             }
-            const lastActive = new Date().getTime();
+            session.userData.flipkartLastActive = new Date().getTime();
             msg = new builder.Message(session).text(txt)
                 .attachmentLayout(builder.AttachmentLayout.carousel)
                 .attachments(attachments);
@@ -89,7 +89,7 @@ messageutils.sendFlipkartCarousel = function (session, brain, offers, filters) {
 
             let timeout = setTimeout(() => {
                 let currentTime = new Date().getTime();
-                if (currentTime - lastActive > 30000) {
+                if (currentTime - session.userData.flipkartLastActive > 60000) {
                     platforms.sendQuickReply(session, require('../json/quick_reply_flipkart_show_more.json'))
                     clearTimeout(timeout)
                 }
@@ -115,4 +115,4 @@ messageutils.sendFlipkartCarousel = function (session, brain, offers, filters) {
     session.send(msg);
 }
 
-module.exports = messageutils;
+module.exports = carousel;

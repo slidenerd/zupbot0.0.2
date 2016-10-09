@@ -3,56 +3,54 @@
 /**
  * Module dependencies.
  */
-const express = require('express');
-const compression = require('compression');
-const session = require('express-session');
-const bodyParser = require('body-parser');
-const logger = require('morgan');
-const chalk = require('chalk');
-const errorHandler = require('errorhandler');
-const lusca = require('lusca');
-const dotenv = require('dotenv');
-const MongoStore = require('connect-mongo')(session);
-const flash = require('express-flash');
-const path = require('path');
-const mongoose = require('mongoose');
-const passport = require('passport');
-const expressValidator = require('express-validator');
-const sass = require('node-sass-middleware');
-const multer = require('multer');
-const upload = multer({ dest: path.join(__dirname, 'uploads') });
-const mail = require('./features/mail');
+const
+  express = require('express'),
+  compression = require('compression'),
+  session = require('express-session'),
+  bodyParser = require('body-parser'),
+  logger = require('morgan'),
+  chalk = require('chalk'),
+  errorHandler = require('errorhandler'),
+  lusca = require('lusca'),
+  dotenv = require('dotenv'),
+  MongoStore = require('connect-mongo')(session),
+  flash = require('express-flash'),
+  path = require('path'),
+  mongoose = require('mongoose'),
+  passport = require('passport'),
+  expressValidator = require('express-validator'),
+  sass = require('node-sass-middleware'),
+  multer = require('multer'),
+  upload = multer({ dest: path.join(__dirname, 'uploads') }),
+  mail = require('./features/mail');
 /**
  * Load environment letiables from .env file, where API keys and passwords are configured.
  */
 dotenv.load({ path: '.env.example' });
-
 /**
  * Controllers (route handlers).
  */
-const homeController = require('./controllers/home');
-const userController = require('./controllers/user');
-const apiController = require('./controllers/api');
-const contactController = require('./controllers/contact');
-const platforms = require('./utils/platforms');
-
-const builder = require('./core/');
-const messageutils = require('./utils/messageutils')
-const replies = require('./utils/replies')
+const
+  apiController = require('./controllers/api'),
+  builder = require('./core/'),
+  contactController = require('./controllers/contact'),
+  homeController = require('./controllers/home'),
+  carousel = require('./utils/carousel'),
+  passportConfig = require('./config/passport'),
+  payloads = require('./config/payloads'),
+  platforms = require('./utils/platforms'),
+  replies = require('./utils/replies'),
+  userController = require('./controllers/user');
 
 let brain = require('./rive/rive');
 brain.load(() => {
-  console.log("Brain Loaded");
+  console.log('%s Brain Loaded!', chalk.green('✓'));
   connectToMongo();
   configureExpress();
-}, () => {
-  console.log("Brain Load error");
+}, (error) => {
+  console.log('%s Brain Loaded Failed', chalk.red('✓'), error);
 })
 
-/**
- * API keys and Passport configuration.
- */
-const passportConfig = require('./config/passport');
 /**
  * Create Express server.
  */
@@ -111,7 +109,10 @@ function configureExpress() {
   app.use(passport.session());
   app.use(flash());
   app.use((req, res, next) => {
-    if (req.path === '/api/upload' || req.path === '/api/messages' || req.path === '/api/subscribe' || req.path === '/api/sendMail') {
+    if (req.path === '/api/upload'
+      || req.path === '/api/messages'
+      || req.path === '/api/subscribe'
+      || req.path === '/api/sendMail') {
       next();
     } else {
       lusca.csrf()(req, res, next);
@@ -308,33 +309,26 @@ function configureExpress() {
 
   bot.dialog('/firstRun', firstRun);
   bot.dialog('/', onMessage);
-  /**
-   * Dialog that handles displaying a carousel on Flipkart
-   */
-  bot.dialog('/carousel', (session, args) => {
-    messageutils.sendFlipkartCarousel(session, args.data, args.filters)
-    session.endDialog();
-  })
 }
+
 /**
- * When the brains are loading, ideally the reply should be sent first and 
- * then the brain should be loaded. This can be achieved with a setTimeout method 
- * session.send has a delay option of 250ms after which all messages are queued and sent
- * Refer https://github.com/Microsoft/BotBuilder/blob/master/Node/core/src/Session.ts for delay
+ * Send a greeting message for each specific platform
+ * Add the user to the mongodb database if the user does not exist
  */
 function firstRun(session) {
+  console.log('This user is running our bot the first time')
   platforms.greet(session);
-  //If the user wasnt added before, add the user
   userController.addBotUser(session);
-  console.log('first run')
   reply(session)
   session.endDialog()
 }
 
+/**
+ * Add the user to the mongodb database if the user does not exist
+ */
 function onMessage(session) {
-  //If the user wasnt added before, add the user
+  console.log('This user is running our bot the subsequent time')
   userController.addBotUser(session);
-  console.log('subsequent run')
   reply(session)
 }
 
@@ -343,45 +337,42 @@ function onMessage(session) {
  */
 function reply(session) {
   const userId = session.message.user.id
-  console.log('MAIN ', brain.getTopic(userId))
   let text;
-  //Triggered when the user hits the get started button on Facebook
-  if (session.message.text === 'PAYLOAD_USER_CLICKED_GET_STARTED') {
-    text = 'get started'
-  }
+  //the text values act as the triggers inside rive
 
-  //Triggered when the user hits the show more quick reply button on flipkart offers
-  else if (session.message.text === 'PAYLOAD_FLIPKART_SHOW_MORE') {
-    text = 'show more'
-  }
+  switch (session.message.text) {
+    //Triggered when the user hits the get started button on facebook
+    case payloads.FACEBOOK_GET_STARTED:
+      text = 'get started'
+      break;
+    //Triggered when the user hits the persistent menu help button 
+    case payloads.FACEBOOK_PERSISTENT_MENU_HELP:
+      text = 'help'
+      break;
+    //Triggered when the user hits the show more quick reply button on flipkart offers
+    case payloads.FACEBOOK_FLIPKART_SHOW_MORE:
+      text = 'show more'
+      break;
+    //Triggered when the user hits the no quick reply button on flipkart offers
+    case payloads.FACEBOOK_FLIPKART_CANCEL:
+      text = 'no'
+      break;
+    //Handle any other text message as you normally would
+    default:
+      brain.reply(userId, session.message.text)
+        .then((response) => {
+          session.send(response);
+        })
+        .catch((response) => {
 
-  //Triggered when the user hits the no quick reply button on flipkart offers
-  else if (session.message.text === 'PAYLOAD_FLIPKART_CANCEL') {
-    text = 'no'
+          //Handle special cases here such as carousel, we rejected them from all.js as rive doesnt handle custom objects resolved through its Promise
+          if (response && response.type === 'carousel') {
+            carousel.sendFlipkartCarousel(session, brain, response.data, response.filters)
+          }
+          else {
+            session.send(response);
+          }
+        })
   }
-
-  //Triggered when the user hits the persistent menu help button 
-  else if (session.message.text === 'PAYLOAD_USER_CLICKED_HELP') {
-    text = 'help'
-  }
-
-  //Handle any other text message as you normally would
-  else {
-    text = session.message.text
-  }
-  brain.reply(userId, text)
-    .then((response) => {
-      session.send(response);
-    })
-    .catch((response) => {
-
-      //Handle special cases here such as carousel, we rejected them from all.js as rive doesnt handle custom objects resolved through its Promise
-      if (response && response.type === 'carousel') {
-        messageutils.sendFlipkartCarousel(session, brain, response.data, response.filters)
-      }
-      else {
-        session.send(response);
-      }
-    })
 }
 module.exports = app;

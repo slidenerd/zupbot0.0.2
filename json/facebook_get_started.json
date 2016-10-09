@@ -3,7 +3,7 @@
   "thread_state":"new_thread",
   "call_to_actions":[
     {
-      "payload":"PAYLOAD_USER_CLICKED_GET_STARTED"
+      "payload":"PAYLOAD_GET_STARTED"
     }
   ]
 }
