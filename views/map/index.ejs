@@ -102,7 +102,7 @@
                         <div class="tab-pane active" id="ola" role="tabpanel">
                             <div class="list-group">
                             <% Object.keys(ola).forEach(function(prop) { %>
-                                <a onclick="bookList('ola-micro')" class="list-group-item waves-effect">
+                                <a onclick="bookList(<%=prop.product_id%>)" class="list-group-item waves-effect">
                                     <h4 class="list-group-item-heading"><b><%= prop %></b></h4>
                                     <p class="list-group-item-text"><img class="time-icon"/> &nbsp; 
                                     <%if(ola[prop].eta == -1) {%>
@@ -122,7 +122,7 @@
                         <div class="tab-pane" id="uber" role="tabpanel">
                             <div class="list-group">
                             <% Object.keys(uber).forEach(function(prop) { %>
-                                <a onclick="bookList('ola-micro')" class="list-group-item waves-effect">
+                                <a onclick="bookList('<%=uber[prop].product_id%>')" class="list-group-item waves-effect">
                                     <h4 class="list-group-item-heading"><b><%= prop %></b></h4>
                                     <p class="list-group-item-text"><img class="time-icon"/> &nbsp; Arrives in <%=uber[prop].eta / 60%> mins</p>
                                     <p class="list-group-item-text"><img class="cost-icon"/> &nbsp; Estimated Cost Rs <%=uber[prop].low_price%> - <%=uber[prop].high_price%></p>
@@ -141,8 +141,7 @@
 
         <!-- JQuery -->
         <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
-
-        <!-- Bootstrap core JavaScript -->
+             <!-- Bootstrap core JavaScript -->
         <!--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.4/js/bootstrap.min.js" integrity="sha384-VjEeINv9OSwtWFLAtmc4JCtEJXXBub00gtSnszmspDLCtC0I4z4nqz7rEFbIZLLU" crossorigin="anonymous"></script>-->
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
@@ -156,8 +155,10 @@
                 $('#bookingTab a:first').tab('show');
             });
 
-            function bookList(type) {
-                console.log(type);
+            function bookList(product_id) {
+                var location = '/api/ride/book?lat=' + <%=location.lat%> + '&long=' + <%=location.long%> + '&droplat=' + <%=location.droplat%> + '&droplong=' + <%=location.droplong%> + '&product_id=' + product_id
+                console.log(location);
+                window.location = location;
             };
         </script>
 

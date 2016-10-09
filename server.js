@@ -42,7 +42,7 @@ const ride = require('./features/ride')
 brain = require('./rive/rive');
 brain.load(() => {
   console.log("Brain Loaded");
-  connectToMongo();
+  // connectToMongo();
   configureExpress();
 }, () => {
   console.log("Brain Load error");
@@ -102,10 +102,10 @@ function configureExpress() {
     resave: true,
     saveUninitialized: true,
     secret: process.env.SESSION_SECRET,
-    store: new MongoStore({
-      url: process.env.MONGODB_URI,
-      autoReconnect: true
-    })
+    // store: new MongoStore({
+    //   url: process.env.MONGODB_URI,
+    //   autoReconnect: true
+    // })
   }));
   app.use(passport.initialize());
   app.use(passport.session());
@@ -241,6 +241,11 @@ function configureExpress() {
   app.get('/api/ride', function(req, res) {
     ride.getRideEstimate(req.query.pickup, req.query.drop, res);
   });
+
+  app.get('/api/ride/book', function(req, res) {
+    ride.bookRide(req, res);
+  });
+
 
   app.post('/api/subscribe', function (req, res) {
     if (!req.body) {

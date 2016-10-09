@@ -6,6 +6,7 @@ const geocoder = require('./geocoder');
 var ride = {};
 ride.getRideEstimate = function(from, to, res) {
     var callback = function(data) {
+        console.log(data);
         res.render('map/index', data);
     }
     var option = 0;
@@ -35,7 +36,9 @@ ride.getRideEstimate = function(from, to, res) {
 
 ride.getRideEstimateCoordinates = function(callback, args) {
     console.log("getRideEstimateCoordinates");
-    var data = {};
+    var data = {
+        location : args 
+    };
     var uberCallback = (resObj) => {
             data.uber = resObj;
             if(data.hasOwnProperty("ola")) {
@@ -54,4 +57,12 @@ ride.getRideEstimateCoordinates = function(callback, args) {
     , args);
 }
 
+ride.bookRide = function(req, res) {
+    console.log("bookRide");
+    uber.bookRide((body) => {
+        res.end(JSON.stringify(body));
+    }, req.query);    
+}
+
 module.exports = ride
+

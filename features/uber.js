@@ -7,6 +7,11 @@ const uber = {
     endPoint: 'https://sandbox-api.uber.com/v1/'
 }
 
+const headers = {
+    'Accept': 'application/json',
+    'Authorization': 'Bearer ' + uber.accessToken 
+};
+
 var resObj = {};
 var done = false;
 
@@ -39,10 +44,6 @@ uber.getRideEstimate = function(from, to, callback) {
 
 uber.getRidePriceEstimateCoordinates = function(callback, args) {
 	// console.log("fetching price");
-    var headers = {
-        'Accept': 'application/json',
-        'Authorization': 'Bearer ' + uber.accessToken 
-    };
     var options = {
         url: uber.endPoint + 'estimates/price?start_latitude=' + args.lat + "&start_longitude=" + args.long + 
         "&end_latitude=" + args.droplat + "&end_longitude=" + args.droplong,
@@ -63,6 +64,7 @@ uber.getRidePriceEstimateCoordinates = function(callback, args) {
     				obj = resObj[price.display_name];
     			} else {
 	    			obj = {}
+	    			obj.product_id = price.product_id;	    			
     			}
     			obj.display_name = price.display_name;
     			obj.high_price = price.high_estimate;
@@ -83,10 +85,6 @@ uber.getRidePriceEstimateCoordinates = function(callback, args) {
 
 uber.getRideTimeEstimateCoordinates = function(callback, args) {
 	// console.log("fetching time");	
-    var headers = {
-        'Accept': 'application/json',
-        'Authorization': 'Bearer ' + uber.accessToken 
-    };
     var options = {
         url: uber.endPoint + 'estimates/time?start_latitude=' + args.lat + "&start_longitude=" + args.long,
         headers: headers,
@@ -106,6 +104,7 @@ uber.getRideTimeEstimateCoordinates = function(callback, args) {
     				obj = resObj[time.display_name];
     			} else {
 	    			obj = {}
+	    			obj.product_id = time.product_id;
     			}
     			obj.eta = time.estimate;
     			resObj[time.display_name] = obj;
@@ -120,5 +119,74 @@ uber.getRideTimeEstimateCoordinates = function(callback, args) {
     })
 }
 
+uber.bookRide = function(callback, args) {
+    var body = {
+    	'start_latitude': args.lat,
+    	'start_longitude': args.long,
+    	'end_latitude': args.droplat,
+    	'end_longitude': args.droplong,
+    	'product_id': args.product_id
+    }
 
+    var options = {
+        url: uber.endPoint + 'requests',
+        headers: headers,
+        body: body,
+        json: true
+    }
+    request.post(options, (error, response, body) => {
+		uber.handleBookResponse(body, body.request_id, callback);    	
+    });
+}
+
+uber.pollRequest = function(request_id, callback) {
+    var options = {
+        url: uber.endPoint + 'requests/' + request_id,
+        headers: headers,
+        json: true
+    }
+    request.get(options, (error, response, body) => {
+    	console.log(body);
+    	uber.handleBookResponse(body, request_id, callback);
+    	uber.dummyChangeStatusRequest(request_id);
+    });
+}
+
+//in sandbox we should change status manually
+uber.dummyChangeStatusRequest = function(request_id) {
+    var body = {
+    	status: "accepted"
+    }
+    var options = {
+        url: uber.endPoint + 'sandbox/requests/' + request_id,
+        headers: headers,
+        body: body,
+        json: true
+    }
+    request.put(options, (error, response, body) => {
+    	console.log(body);
+    });
+}
+
+uber.handleBookResponse = function(body, request_id, callback) {
+    	if(body.status === "processing") {
+    		setTimeout(() => {
+    			uber.pollRequest(request_id, callback);
+	    	}, 1000)
+    	} else if(body.status === "no_drivers_available") {
+    		var response = {
+    			success: false,
+    			message: "No driver available"
+    		}
+    		callback(response);
+    	} else if(body.status === "accepted" || body.status === "arriving") {
+    		console.log(body);
+    		var response = {
+    			success: false,
+    			message: "Your booking is successful.",
+    			data: body
+    		}
+			callback(response);
+    	}
+}
 module.exports = uber
