@@ -367,38 +367,39 @@ function reply(session) {
       break;
 
     default:
-      brain.reply(userId, session.message.text)
-        .then((response) => {
-          session.send(response);
-        })
-        .catch((response) => {
-          if (response && response.type === 'carousel') {
-            carousel.sendFlipkartCarousel(session, brain, response.data, response.filters)
-
-            //update the last active time when the user viewed flipkart results
-            session.userData.flipkart.lastActive = new Date().getTime();
-
-            //if we havent set a timeout previously, we set one
-            if (!timeout) {
-              timeout = setInterval(() => {
-                let currentTime = new Date().getTime();
-                if (currentTime - session.userData.flipkart.lastActive > 30000) {
-
-                  //send the quick reply asking the user if they would like to see more results
-                  platforms.sendQuickReply(session, require('./json/quick_reply_flipkart_show_more.json'))
-                  clearInterval(timeout)
-
-                  //unset the timeout variable so that the person can see the quick reply once again after the next request to view flipkart carousel
-                  timeout = null;
-                }
-              }, 30000)
-            }
-          }
-          else {
-            session.send(response);
-          }
-        })
+      text = session.message.text;
   }
+  brain.reply(userId, text)
+    .then((response) => {
+      session.send(response);
+    })
+    .catch((response) => {
+      if (response && response.type === 'carousel') {
+        carousel.sendFlipkartCarousel(session, brain, response.data, response.filters)
+
+        //update the last active time when the user viewed flipkart results
+        session.userData.flipkart.lastActive = new Date().getTime();
+
+        //if we havent set a timeout previously, we set one
+        if (!timeout) {
+          timeout = setInterval(() => {
+            let currentTime = new Date().getTime();
+            if (currentTime - session.userData.flipkart.lastActive > 30000) {
+
+              //send the quick reply asking the user if they would like to see more results
+              platforms.sendQuickReply(session, require('./json/quick_reply_flipkart_show_more.json'))
+              clearInterval(timeout)
+
+              //unset the timeout variable so that the person can see the quick reply once again after the next request to view flipkart carousel
+              timeout = null;
+            }
+          }, 30000)
+        }
+      }
+      else {
+        session.send(response);
+      }
+    })
 }
 
 module.exports = app;
