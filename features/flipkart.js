@@ -4,9 +4,7 @@ const request = require('request')
 const endpoints = require('../config/endpoints')
 const jsonfile = require('jsonfile')
 
-const flipkart = {
-
-}
+const flipkart = {}
 
 function isValid(json) {
     return json && json.allOffersList && json.allOffersList.length
@@ -17,7 +15,8 @@ function parse(json) {
     if (isValid(json)) {
         for (let current of json.allOffersList) {
             //Chooose only LIVE offers
-            if (current.availability.toLowerCase() === 'live') {
+            let currentTime = new Date().getTime();
+            if (current.availability.toLowerCase() === 'live' && currentTime < current.endTime) {
                 let offer = {
                     title: current.title,
                     description: current.description,
@@ -39,7 +38,7 @@ function parse(json) {
     return offers;
 }
 
-flipkart.execute = function () {
+flipkart.findAllOffers = function () {
     return new Promise((resolve, reject) => {
         let headers = {
             'Fk-Affiliate-Id': endpoints.FLIPKART_AFFILIATE_ID,
@@ -69,7 +68,6 @@ flipkart.execute = function () {
 
 flipkart.applyFilters = function (offers, filters) {
     if (filters) {
-        //filters for category level
         if (filters.length == 1) {
             let category = filters[0].toLowerCase();
             if (category != 'nocategory') {

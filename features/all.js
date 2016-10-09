@@ -26,9 +26,14 @@ const all = {
 }
 
 all.flipkart.name = 'flipkart';
+
+/**
+ * Custom objects cannot be resolved using rs.Promise since it resolves only strings and converts custom objects into [object Object]
+ * The best way to resolve custom objects is to reject them and handle them separately inside the catch clause
+ * Note that we are rejecting offers regardless of whether they have data inside them or they are empty.
+ */
 all.flipkart.subroutine = function (rs, args) {
     return new rs.Promise((resolve, reject) => {
-        console.log('GUESS WHAT',rs.getUservar(rs.currentUser(), 'topic'))
         //Load from cache
         const cachedOffers = cache.get(KEY_OFFERS)
         if (cachedOffers) {
@@ -36,21 +41,17 @@ all.flipkart.subroutine = function (rs, args) {
             cache.put(KEY_FRESH_DATA, false, CACHE_VALIDITY_PERIOD, (key, value) => {
                 console.log('fresh was stored in the cache');
             });
-            //Reject this message as it is a carousel, we ll handle it differently from server
             reject({ type: 'carousel', data: cachedOffers, filters: args })
         }
         else {
-            flipkart.execute()
+            flipkart.findAllOffers()
                 .then((offers) => {
                     if (offers && offers.length) {
                         cache.put(KEY_FRESH_DATA, true, CACHE_VALIDITY_PERIOD, (key, value) => {
-                            console.log('fresh was stored in the cache');
                         });
                         cache.put(KEY_OFFERS, offers, CACHE_VALIDITY_PERIOD, (key, value) => {
-                            console.log(offers.length + 'offers was stored in the cache')
                         })
                     }
-                    //Reject this message as it is a carousel, we ll handle it differently from server
                     reject({ type: 'carousel', data: offers, filters: args })
                 })
                 .catch((error) => {
