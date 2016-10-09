@@ -385,9 +385,10 @@ function reply(session) {
           timeout = setInterval(() => {
             let currentTime = new Date().getTime();
             if (currentTime - session.userData.flipkart.lastActive > 30000) {
-
-              //send the quick reply asking the user if they would like to see more results
-              platforms.sendQuickReply(session, require('./json/quick_reply_flipkart_show_more.json'))
+              if (brain.getTopic(session.message.user.id) === 'offers') {
+                //send the quick reply asking the user if they would like to see more results
+                platforms.sendQuickReply(session, require('./json/quick_reply_flipkart_show_more.json'))
+              }
               clearInterval(timeout)
 
               //unset the timeout variable so that the person can see the quick reply once again after the next request to view flipkart carousel
