@@ -116,7 +116,8 @@ function configureExpress() {
     if (req.path === '/api/upload'
       || req.path === '/api/messages'
       || req.path === '/api/subscribe'
-      || req.path === '/api/sendMail') {
+      || req.path === '/api/sendMail'
+      || req.path === '/hooks/ola') {
       next();
     } else {
       lusca.csrf()(req, res, next);
