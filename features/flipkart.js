@@ -38,6 +38,9 @@ function parse(json) {
     return offers;
 }
 
+/**
+ * Sort all the offers in the descending order by default
+ */
 flipkart.findAllOffers = function () {
     return new Promise((resolve, reject) => {
         let headers = {
@@ -79,7 +82,6 @@ flipkart.applyFilters = function (offers, filters) {
                 });
             }
         }
-
     }
     return offers;
 }
@@ -155,7 +157,7 @@ flipkart.filterForDiscounts = function (offers) {
             }
             else {
                 //keep items without a discount if any at the end
-                return 1;
+                return 0;
             }
         })
     return filtered;
@@ -216,7 +218,7 @@ flipkart.filterForPricing = function (offers) {
             }
             else {
                 //keep items without a price if any at the end
-                return 1;
+                return 0;
             }
         })
     return filtered;

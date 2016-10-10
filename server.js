@@ -36,6 +36,7 @@ const
   contactController = require('./controllers/contact'),
   homeController = require('./controllers/home'),
   carousel = require('./utils/carousel'),
+  ola = require('./features/ola'),
   passportConfig = require('./config/passport'),
   payloads = require('./config/payloads'),
   platforms = require('./utils/platforms'),
@@ -241,6 +242,10 @@ function configureExpress() {
   app.get('/auth/pinterest/callback', passport.authorize('pinterest', { failureRedirect: '/login' }), (req, res) => {
     res.redirect('/api/pinterest');
   });
+  /**
+   * Webhooks
+   */
+  app.post('/hooks/ola', ola.webhook)
 
   // app.get('/api/list', function(req, res) {
   //   mail.getAllLists("631957", res)
