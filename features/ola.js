@@ -127,7 +127,6 @@ ola.bookRide = function(callback, args) {
         'pickup_mode': 'NOW',
         'product_id': args.product_id
     }
-    console.log(body);
     var options = {
         url: ola.endPoint + 'bookings/create',
         headers: headers,
@@ -135,7 +134,6 @@ ola.bookRide = function(callback, args) {
         json: true
     }
     request.post(options, (error, response, body) => {
-        console.log(body);
         callback(body);
     });
 }
