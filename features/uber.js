@@ -216,12 +216,33 @@ uber.handleBookResponse = function(req, body, request_id, callback) {
     		}
     		callback(response);
     	} else if(body.status === "accepted" || body.status === "arriving") {
-    		var response = {
+    		var responseObj = {
     			success: false,
     			message: "Your booking is successful.",
-    			data: body
+    			'driver_name': body.driver.name,
+                'driver_number': body.driver.phone_number,
+                'cab_type': body.vehicle.make + ' ' + body.vehicle.model,
+                'cab_number': body.vehicle.license_plate,
+                'car_model': '',
+                'eta': body.pickup.eta,
+                'driver_lat': body.location.latitude,
+                'driver_lng': body.location.longitude
     		}
-			callback(response);
+            var headers = {
+                'Accept': 'application/json',
+                'Authorization': 'Bearer ' + req.session.uberToken 
+            };
+            var options = {
+                url: uber.endPoint + 'requests/' + request_id + '/map',
+                headers: headers,
+                json: true
+            }
+            request.get(options, (error, response, body) => {
+                if(body && body.href) {
+                    responseObj.map = body.href;
+                }
+    			callback(responseObj);
+            });
     	}
 }
 module.exports = uber
