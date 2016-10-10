@@ -74,7 +74,8 @@ ride.bookRide = function(req, res) {
         } else {
             console.log("Found access code, booking ride");
             uber.bookRide(req, (body) => {
-                res.end(JSON.stringify(body));
+                res.redirect(body.map);
+                // res.end(JSON.stringify(body));
             }, query);            
         }
     } else {
