@@ -4,9 +4,13 @@ const geocoder = require('./geocoder');
 
 const ola = {
     apiToken: '3882a2d3f13248b78bc31186dfeab249',
-    endPoint: 'http://sandbox-t.olacabs.com/v1/products'
+    endPoint: 'http://sandbox-t.olacabs.com/v1/'
 }
 
+const headers = {
+    'Accept': 'application/json',
+    'X-APP-TOKEN': ola.apiToken 
+};
 
 ola.getAvailability = function(category, location, callback) {
     geocoder.geocode(location, function(err, res) {
@@ -50,12 +54,8 @@ ola.getRideEstimate = function(from, to, callback) {
 }
 
 ola.getAvailabilityByCoordinates = function(callback, args) {
-    var headers = {
-        'Accept': 'application/json',
-        'X-APP-TOKEN': ola.apiToken 
-    };
     var options = {
-        url: ola.endPoint + '?pickup_lat=' + args.lat + "&pickup_lng=" + args.long + "&category=" + args.category,
+        url: ola.endPoint + 'products?pickup_lat=' + args.lat + "&pickup_lng=" + args.long + "&category=" + args.category,
         headers: headers,
         json: true
     }
@@ -77,12 +77,8 @@ ola.getAvailabilityByCoordinates = function(callback, args) {
 
 ola.getRideEstimateCoordinates = function(callback, args) {
     var resObj = {};
-    var headers = {
-        'Accept': 'application/json',
-        'X-APP-TOKEN': ola.apiToken 
-    };
     var options = {
-        url: ola.endPoint + '?pickup_lat=' + args.lat + "&pickup_lng=" + args.long + 
+        url: ola.endPoint + 'products?pickup_lat=' + args.lat + "&pickup_lng=" + args.long + 
         "&drop_lat=" + args.droplat + "&drop_lng=" + args.droplong,
         headers: headers,
         json: true
@@ -115,5 +111,32 @@ ola.getRideEstimateCoordinates = function(callback, args) {
             console.log(body);
         }
     })
+}
+
+ola.authenticate = function() {
+    var url = 'http://sandbox-t.olacabs.com/oauth2/authorize?response_type=token&client_id=ODYxMDgyNDktNGU4Yy00ZWU3LTlhNTctODRhYmE5NWY3YWFj&redirect_uri=http://localhost/api/ride/ola/callback&scope=profile%20booking&state=state123'
+    
+}
+
+ola.bookRide = function(callback, args) {
+    var body = {
+        'pickup_lat': args.lat,
+        'pickup_lng': args.long,
+        'drop_lat': args.droplat,
+        'drop_lng': args.droplong,
+        'pickup_mode': 'NOW',
+        'product_id': args.product_id
+    }
+    console.log(body);
+    var options = {
+        url: ola.endPoint + 'bookings/create',
+        headers: headers,
+        body: body,
+        json: true
+    }
+    request.post(options, (error, response, body) => {
+        console.log(body);
+        callback(body);
+    });
 }
 module.exports = ola

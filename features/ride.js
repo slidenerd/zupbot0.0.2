@@ -58,10 +58,16 @@ ride.getRideEstimateCoordinates = function(callback, args) {
 }
 
 ride.bookRide = function(req, res) {
-    console.log("bookRide");
-    uber.bookRide((body) => {
-        res.end(JSON.stringify(body));
-    }, req.query);    
+    console.log("bookRide provider : " + req.query.provider);
+    if(req.query.provider == 'uber') {
+        uber.bookRide((body) => {
+            res.end(JSON.stringify(body));
+        }, req.query);            
+    } else {
+        ola.bookRide((body) => {
+            res.end(JSON.stringify(body));
+        }, req.query);            
+    }
 }
 
 module.exports = ride
