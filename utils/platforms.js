@@ -236,7 +236,7 @@ platforms.facebook.askLocation = function (session, message) {
                 console.log(": Updated with quick reply");
             } else {
                 // TODO: Handle errors
-                console.log(": Failed. Need to handle errors." + error);
+                console.log(": Failed. Need to handle errors." + error + ' ' + response.statusCode);
             }
         });
 }
