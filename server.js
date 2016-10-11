@@ -45,6 +45,8 @@ const
   ride = require('./features/ride'),
   userController = require('./controllers/user');
 
+console.log('%s App Initiated!', chalk.green('✓'));
+
 let
   brain = require('./rive/rive'),
   timeout;
