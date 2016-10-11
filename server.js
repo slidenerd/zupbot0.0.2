@@ -368,19 +368,19 @@ function firstRun(session) {
 function onMessage(session) {
   console.log('This user is running our bot the subsequent time')
   userController.addBotUser(session);
-  if (session.message.entities) {
-    let geolocation = platforms.getGeolocation(session);
-    if (geolocation) {
-      handleGeolocation(session, geolocation);
-    }
+  if (platforms.isGeolocation(session)) {
+    handleGeolocation(session)
   }
   else {
     reply(session)
   }
 }
 
-function handleGeolocation(session, geolocation) {
-  session.send('Gotcha, you are at ' + geolocation.lat + ' ' + geolocation.lon);
+function handleGeolocation(session) {
+  let geolocation = platforms.getGeolocation(session);
+  if (geolocation) {
+    session.send('Gotcha, you are at ' + geolocation.lat + ' ' + geolocation.lon);
+  }
 }
 
 /**

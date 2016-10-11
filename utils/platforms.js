@@ -52,6 +52,29 @@ platforms.greet = function (session) {
     }
 }
 
+platforms.isGeolocation = function (session) {
+    const channel = session.message.address.channelId;
+    if (channel.toLowerCase() === 'facebook') {
+        return platforms.facebook.isGeolocation(session)
+    }
+    else if (channel.toLowerCase() === 'skype') {
+        return false;
+    }
+    else if (channel.toLowerCase() === 'slack') {
+        return false;
+    }
+    else if (channel.toLowerCase() === 'telegram') {
+        return false;
+    }
+    else if (channel.toLowerCase() === 'kik') {
+        return false;
+    }
+    else if (channel.toLowerCase() === 'emulator') {
+        return false;
+    }
+    return false;
+}
+
 platforms.getGeolocation = function (session) {
     const channel = session.message.address.channelId;
     if (channel.toLowerCase() === 'facebook') {
@@ -72,9 +95,7 @@ platforms.getGeolocation = function (session) {
     else if (channel.toLowerCase() === 'emulator') {
         return null;
     }
-    else {
-        return null;
-    }
+    return null;
 }
 
 platforms.testWebView = function (session) {
@@ -220,16 +241,25 @@ platforms.facebook.askLocation = function (session, message) {
         });
 }
 
+platforms.facebook.isGeolocation = function (session) {
+    //Get the entities sent by the user if any
+    let entities = session.message.entities;
+    return entities
+        && entities.length
+        && entities[0]
+        && entities[0].geo
+        && entities[0].geo.latitude
+        && entities[0].geo.longitude
+        && entities[0].type.toLowerCase() === 'place'
+}
+
 platforms.facebook.getGeolocation = function (session) {
     //Get the entities sent by the user if any
     let entities = session.message.entities;
-    if (entities && entities.length && entities[0] && entities[0].geo && entities[0].type.toLowerCase() === 'place') {
-        return {
-            lat: entities[0].geo.latitude,
-            lon: entities[0].geo.longitude
-        }
+    return {
+        lat: entities[0].geo.latitude,
+        lon: entities[0].geo.longitude
     }
-    return null;
 }
 
 module.exports = platforms
