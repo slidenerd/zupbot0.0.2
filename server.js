@@ -455,7 +455,7 @@ function reply(session) {
         }
       }
       else if (response.type === 'location') {
-        platforms.facebook.askLocation(session, response)
+        platforms.facebook.askLocation(session, response.data)
       }
       else {
         session.send(response);
