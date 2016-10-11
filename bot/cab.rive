@@ -84,12 +84,22 @@
     - Would you mind sharing your location for the cab to arrive? 
 
     + cabtaxisource
-    - <call>askUserLocation</call>
+    - <call>askGeolocation</call>
 
     + cabtaxidestination
     - Where would you like to go?
-    - Where are you headed?
-    - Whats your destination?
+
+    + *
+    % where would you like to go
+    - Gotcha
+
+    + [*] to *
+    % where would you like to go
+    - Gotcha
+
+    + [*] reach *
+    % where would you like to go
+    - Gotcha
 
     + cabtaxiserviceprovider
     - Which one do you prefer? Ola or Uber?

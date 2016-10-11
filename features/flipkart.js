@@ -69,7 +69,6 @@ flipkart.findAllOffers = function () {
                 jsonfile.writeFile(__dirname + '/data.json', offers, { spaces: 4 }, function (err) {
                     console.log(err)
                 })
-                offers = flipkart.sortByDiscounts(offers);
                 resolve(offers);
             }
             else {
@@ -80,16 +79,14 @@ flipkart.findAllOffers = function () {
 }
 
 flipkart.applyFilters = function (offers, filters) {
-    if (filters) {
-        if (filters.length == 1) {
-            let category = filters[0].toLowerCase();
-            if (category !== CATEGORY_ALL) {
-                offers = offers.filter((offer) => {
-                    let category = offer.category;
-                    let filter = filters[0];
-                    return category.toLowerCase() === filter;
-                });
-            }
+    if (filters && filters[0]) {
+        let category = filters[0].toLowerCase();
+        if (category != flipkart.CATEGORY_ALL) {
+            offers = offers.filter((offer) => {
+                let category = offer.category;
+                let filter = filters[0];
+                return category.toLowerCase() === filter;
+            });
         }
     }
     return offers;

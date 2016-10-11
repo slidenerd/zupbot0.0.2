@@ -38,9 +38,7 @@ all.flipkart.subroutine = function (rs, args) {
         //Load from cache
         const cachedOffers = cache.get(KEY_OFFERS)
         if (cachedOffers) {
-            console.log('get offers from cache')
             cache.put(KEY_FRESH_DATA, false, CACHE_VALIDITY_PERIOD, (key, value) => {
-                console.log('fresh was stored in the cache');
             });
             reject({ type: 'carousel', data: cachedOffers, filters: args })
         }
@@ -114,7 +112,7 @@ all.weather.subroutine = function (rs, args) {
     })
 }
 
-all.location.name = 'askUserLocation';
+all.location.name = 'askGeolocation';
 all.location.subroutine = function (rs, args) {
     return new rs.Promise((resolve, reject) => {
         rs.replyAsync(rs.currentUser(), 'jsasklocation', all.this)
