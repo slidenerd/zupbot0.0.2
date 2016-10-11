@@ -31,6 +31,7 @@ dotenv.load({ path: '.env.example' });
  * Controllers (route handlers).
  */
 const
+  all = require('./features/all'),
   apiController = require('./controllers/api'),
   builder = require('./core/'),
   contactController = require('./controllers/contact'),
@@ -379,8 +380,16 @@ function onMessage(session) {
 function handleGeolocation(session) {
   let geolocation = platforms.getGeolocation(session);
   if (geolocation) {
-    session.send('Gotcha, you are at ' + geolocation.lat + ' ' + geolocation.lon);
+    brain.set(session.message.user.id, 'latitude', geolocation.lat)
+    brain.set(session.message.user.id, 'longitude', geolocation.lon)
   }
+  brain.reply(session.message.user.id, 'jshandlegeolocation')
+    .then((response) => {
+      session.send(response);
+    })
+    .catch((error) => {
+      session.send(error);
+    })
 }
 
 /**
@@ -445,8 +454,8 @@ function reply(session) {
           }, 30000)
         }
       }
-      else if (response && response.type === 'location') {
-        platforms.facebook.askLocation(session, response.data)
+      else if (response.type === 'location') {
+        platforms.facebook.askLocation(session, response)
       }
       else {
         session.send(response);

@@ -81,7 +81,7 @@
     + jsasklocation
     - Can you please share your location?
     - Yo, mind sharing your location so that I can get your cab?
-    - Would you mind sharing your location? The cab needs to reach you after all.
+    - Would you mind sharing your location for the cab to arrive? 
 
     + cabtaxisource
     - <call>askUserLocation</call>
@@ -98,6 +98,9 @@
 
     + cabtaxiget
     - getting now
+
+    + jshandlegeolocation
+    @ cabtaxidestination
 
     + *
     - <@>{topic=random}

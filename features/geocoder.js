@@ -7,9 +7,10 @@ var options = {
 };
 
 var geocoder = NodeGeocoder(options);
-    function geocode(address, callback) {
-        NodeGeocoder(options).geocode(address, callback);
-    }
+function geocode(address, callback) {
+    NodeGeocoder(options).geocode(address, callback);
+}
+
 
 module.exports = geocoder
 
