@@ -52,6 +52,31 @@ platforms.greet = function (session) {
     }
 }
 
+platforms.getGeolocation = function (session) {
+    const channel = session.message.address.channelId;
+    if (channel.toLowerCase() === 'facebook') {
+        return platforms.facebook.getGeolocation(session)
+    }
+    else if (channel.toLowerCase() === 'skype') {
+        return null;
+    }
+    else if (channel.toLowerCase() === 'slack') {
+        return null;
+    }
+    else if (channel.toLowerCase() === 'telegram') {
+        return null;
+    }
+    else if (channel.toLowerCase() === 'kik') {
+        return null;
+    }
+    else if (channel.toLowerCase() === 'emulator') {
+        return null;
+    }
+    else {
+        return null;
+    }
+}
+
 platforms.testWebView = function (session) {
     let webView = {
         recipient: {
@@ -95,7 +120,7 @@ platforms.testWebView = function (session) {
 
 }
 
-platforms.sendQuickReply = function(session, quickReplies){
+platforms.sendQuickReply = function (session, quickReplies) {
     const channel = session.message.address.channelId;
     if (channel.toLowerCase() === 'facebook') {
         platforms.facebook.sendQuickReply(session, quickReplies)
@@ -147,7 +172,7 @@ platforms.facebook.sendQuickReply = function (session, quickReplies) {
         },
         "message": quickReplies
     }
-     request({
+    request({
         url: 'https://graph.facebook.com/v2.7/me/messages?access_token=' + endpoints.FACEBOOK_PAGE_ACCESS_TOKEN,
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
@@ -162,6 +187,49 @@ platforms.facebook.sendQuickReply = function (session, quickReplies) {
                 console.log(": Failed. Need to handle errors." + error);
             }
         });
+}
+
+platforms.facebook.askLocation = function (session, message) {
+    let quickReply = {
+        recipient: {
+            id: session.message.user.id
+        },
+        "message": {
+            text: message,
+            quick_replies: [
+                {
+                    "content_type": "location"
+                }
+            ]
+        }
+    }
+    request({
+        url: 'https://graph.facebook.com/v2.7/me/messages?access_token=' + endpoints.FACEBOOK_PAGE_ACCESS_TOKEN,
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        form: quickReply
+    },
+        function (error, response, body) {
+            if (!error && response.statusCode == 200) {
+                // Print out the response body
+                console.log(": Updated with quick reply");
+            } else {
+                // TODO: Handle errors
+                console.log(": Failed. Need to handle errors." + error);
+            }
+        });
+}
+
+platforms.facebook.getGeolocation = function (session) {
+    //Get the entities sent by the user if any
+    let entities = session.message.entities;
+    if (entities && entities.length && entities[0] && entities[0].geo && entities[0].type.toLowerCase() === 'place') {
+        return {
+            lat: entities[0].geo.latitude,
+            lon: entities[0].geo.longitude
+        }
+    }
+    return null;
 }
 
 module.exports = platforms

@@ -1,23 +1,4 @@
 ! version = 2.0
-! array weatherwords = weather|temperature|forecast|climate|forcast
-! array offerwords = coupon|coupons|discount|discounts|offers|deals
-//Categories
-! array categorymobiles = mobile|mobiles|phone|phones|mobile phone|mobile phones
-! array brandcameras = Barbie|Canon|Canon|Click Pro|ClickPro|D-LINK|DJI OSMO|Dsantech|ENRG|FLIPFIT|Fujifilm|Gadget Hero's|Garmin|GoPro|Hot Wheels|Krish|Mobilegear|Nikon|Olympus|Panasonic|Pentax|Polaroid|SAMSUNG|SJCAM|Sony|Tech Gear|TOTO|Wonder World|YourDeal|ZVR
-
-! array brandmobiles = A&K|Acer|Adcom|Aeku|AEKU|AIEK|AIRI|Alcatel|ALCO|Alco|AOC|Apple|Aqua|ARCHOS|Arise|Asus|Atom|Auxus|BEC|Belkin|Binatone|Bingo|BlackBerry|Blackview|Blaupunkt|Bloom|Blu|BLU|BQ|BSNL|BSNL Penta|BSNL PENTA|Callbar|Camerii|Caterpillar|CELKON|Celkon|Champion|Cheers|Chilli|Colors|Cyrus|Darago|Datawind|Dell|Diamond|Diyi|DOMO|Edge|Energy Sistem|ENFIN|ePoch|F-Fook|F-FOOK|Fly|Forme|Gfive|Ginger|Gionee|Go Hello|Good One|GoodOne|GreenBerry|GS|Haier|Hasee|Hitech|Honor|Hotpary|HP|HPL|HTC|Huawei|Hyundai|Hyve|I KALL|i-Smart|Iball|Iberry|ICE|Ikall|iNew|Infix|InFocus|Intex|Itel|Jinga|Jivi|Jivi|Josh|K-tel|Kara|Karbonn|Kata|Kazam|KECHAODA|Kechaoda|Kenxinda|Kestrel|Kingstar|Kult|Lava|LeEco|Lemon|Lenovo|LG|LvTel|Lyf|LYF|M-Horse|M-HORSE|M-tech|Macoox|Mafe|Magicon|Magna|Matrixx|MAXX|Mediacom|Meizu|Melbon|MHL|Mi|mi-TRiBE|Microkey|Micromax|Microsoft|Mitashi|Mobell|Motorola|MTECH|Mtech|MTS|Multilaser|My Phone|Nexian|Nextbit|Nikcron|Nokia|Nosama|NUGen|Nuvo|OBI|Olive|OnePlus|Onida|Oorie|Oppo|Panasonic|Peace|Philips|Q-Tel|Rage|REACH|Reliance|Rio|Rivo|RIVO|RKMobile|Rocktel|Salora|SAMSUNG|Sansui|Saral sigmatel|Seniorworld|Senwa|SICT|Simmtronics|Sky|Skywin|Snexian|Sony|Sony Ericsson|Spice|Strawberry|Subor|Subway|Swingtel|Swipe|T-Com|T-Max|T-Mobile|Takee|Takee 1|Tashan|Trio|UNI|Uniscope|Usha Shriram|V3|Vell Com|Videocon|Vinner|Virat FanBox|VIVO|Vox|Wham|WHAM|Whitecherry|Wibridge|Wiko|Wishtel|Wynncom|XCCESS|XElectron|Xillion|XOLO|Yu|YU|Yxtel|YXTEL|Zen|Ziox|ZIOX|Zodiac|ZOPO|ZTE|Zync|Zyrex
-
-! array brandwearables = 99Gems|A connect Z|ABB|Aberdeen|Accore|Accurate|Accurate Collection|AE MOBILE ACCESSORIZE|Aja Retail|Aksmy|Aksmy|Alcatel|Anav|ANIMATE|Aomax|Aomax|APE|Apple|Arya|Asus|Atech|Attire|Attitude|Aurmen|Aurr|Auxus|Bbroz|Benison India|Beza|Big Retail Impex|Bingo|Black Cat|Bluetick|Blufury|BnC|BOOM|Bs Spy|Callmate|CareFone|Case|Celestech|Chilli|Clairbell|COGITO|Cogito|Costech|CREATION4U|crushacc|Crystal Digital|CrystaTech|cubee|Curiocity|CUVVA|Cyxus|Deals Extreme|DFit|DGI|DigiMart|Digiplus|Digir|Dillionline|Disko|Divine|DOIT|DreamShop|Easo India|Egizmos|eGizmos|EgreenTech|ELEGANZ|Elite Mkt|Emob|Empreus|ENRG|Epresent|eShop24x7|Fabdy|fbandz|FindU|Fitbit|Fitmate|FKU|Fletum|fletum|FLIPFIT|Flipfit|Fossil|Frenzy|Gadget Bucket|Gadget Hero's|GARMIN|Garmin|Gatasmay|Gazen|General Aux|Generic|GetActive|Gifts & Arts|Gismo|GLE|Gledati|GuzelWorld|gyoshi|Gyoshi|H&K|Hamee|Hari Krishna Enterprise|Healthline|HealthMax|Hesvit|Hewitt|HiWatch|Huawei|IBS|IGS|Ihealth|Impact|Infee|Influx|Intex|Iotex|iSweven|IWON|IWOWN|J STAR|Jango|Jas|Jindal Creations|JSS Exports|K Plus|Kenxinda|Kewin|Kimi|Kingshen|Kinsco|KMS|KOKO|LG|Life Like|life like|LIFE LIKE|Like Star|Link+|Lionix|Lovato|LOVEISH|M ZONE GADGET|Martian|Maxed|Maya|MCR|MDI|Medel|Mediacom|Medulla|Merchant Eshop|Merlin|Mezire|Micomy|Mithark|MM|Mob Care|Mobi Fashion|Mobizmo|Mobleo|Mobspy|Motorola|MOUSETRAP|NHA|Niki|Noise|Noosy|NoWhereElse|Ocean I|Oktata|om enterprise|Omate|Omezzle|Opta|Orbit|Original|Oumax|Outsmart|OUTSMART|Ozone|PAFL|Papago|PERSONA|PH Artistic|PhonoHolic|PI|Pinglo|Pinnaclz|Polar|Portronics|PowerPlay|Powerplay|POWR|PremK|Premsons|ProEnergy|ProGuard|Prro|PRS|Puna Store|PUSHCART|Qtec|R.choice|Raux|RDWorld|Red Knight|rich vogue|Rock|Roiex|ROOQ|RoQ|Royaldeals|S-Uni|Safeway|Sai Collections|Saihan|Salon|SAMSUNG|SANI|Santwissen|SD|SELVEL|SG|Shan|ShopAIS|SHOPE|Shopper24hr|shopper24hr|Shrih|ShutterBugs|Shutterbugs|Skovin|SKOVIN|SMART GEAR|Smart Indie|Smartec|Smiledrive|Sony|Soroo|SPECTER|Speed|Spice|Spot Dealz|SPY|Spycloud|SRB|stk|Stride Gear|Style Feathers|Style Maniac|SUPERVISION|Suunto|Syntrino|Taciturn|Tech Station|Teratonic|Titan|tnms|TomTom|Top Goods|TOTAL|TOYAVI|Traikoo|TRAK|Trek|TS|U Watch|U8Plus|UFLUX|UNI|urbannsmart|Urbannsmart|VCS|Velocity|VibeX|VintageShop|VIZIO|VU4|Wayona|WDS|Whitecherry|Wokit|Wonder World|X-Cross|XCCESS|XElectron|XEMEX|YGS|YourDeal|YURON|Zakk|Zgpax|Zigmo|Zingalalaa|ZOON|ZVR
-
-+ [*] (cab|taxi) [*] {weight=996}
-- I am assuming that you want me to book a <star> for you. My slow coach boss is still working on that feature.
-- I take it that you want me to get a <star> for you. Oops, work in progress, will keep you posted.
-- I think you are asking me to find a <star> for you. I will ask my dear boss to work faster on this.
-
-+ [*] (ola|uber) [*] {weight=996}
-- I am assuming that you want me to book an <star> cab for you. My slow coach boss is still working on that feature.
-- I take it that you want me to get an <star> cab for you. Oops, work in progress, will keep you posted.
-- I think you are asking me to find an <star> cab for you. I will ask my dear boss to work faster on this.
 
 + [*] (hotel|restaurant) [*] {weight=996}
 - I guess you want me to book a <star>. Its still work in progress.
@@ -33,10 +14,10 @@
 - I am sorry but I am not capable of doing stuff with <star> yet but lets ask my lazy creator to start slogging so that we can have this feature ready for you.
 
 + [*] (flipkart|flip kart) [*]{weight=999}
-- <call>flipkart nocategory</call>{topic=offers}
+- <call>flipkart categoryall</call>{topic=offers}
 
 + [*] (@offerwords) [*]{weight=998}
-- <call>flipkart nocategory</call>{topic=offers}
+- <call>flipkart categoryall</call>{topic=offers}
 
 + [*] (@categorymobiles) [*] (@offerwords) [*]{weight=999}
 - <call>flipkart mobiles_and_accessories</call>{topic=offers}

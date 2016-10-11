@@ -25,6 +25,7 @@ brain.initSubroutines = function () {
     brain.riveScript.setSubroutine(all.ola.name, all.ola.subroutine)
     brain.riveScript.setSubroutine(all.uber.name, all.uber.subroutine)
     brain.riveScript.setSubroutine(all.weather.name, all.weather.subroutine)
+    brain.riveScript.setSubroutine(all.location.name, all.location.subroutine)
 }
 
 /**

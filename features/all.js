@@ -22,7 +22,8 @@ const all = {
     ola: {},
     uber: {},
     skyscanner: {},
-    weather: {}
+    weather: {},
+    location: {}
 }
 
 all.flipkart.name = 'flipkart';
@@ -113,4 +114,16 @@ all.weather.subroutine = function (rs, args) {
     })
 }
 
+all.location.name = 'askUserLocation';
+all.location.subroutine = function (rs, args) {
+    return new rs.Promise((resolve, reject) => {
+        rs.replyAsync(rs.currentUser(), 'jsasklocation', all.this)
+            .then((reply) => {
+                reject({ type: 'location', data: reply })
+            })
+            .catch((error) => {
+                reject(error);
+            })
+    })
+}
 module.exports = all;

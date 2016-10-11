@@ -52,6 +52,17 @@
 ! array womennoun  = females girls chicks women ladies babes
 ! array yes        = yes yeah yep yup ya yea
 
+! array weatherwords = weather|temperature|forecast|climate|forcast
+! array offerwords = coupon|coupons|discount|discounts|offers|deals
+//Categories
+! array categorymobiles = mobile|phone|mobiles|phones
+! array categorycameras = camera|digicam|handycam|video recorder|camcorder
+
+! array brandcameras = barbie|canon|click pro|clickpro|dlink|dsantech|enrg|flipfit|fujifilm|gadget heros|garmin|gopro|hot wheels|irb|krish|mobilegear|nikon|olympus|panasonic|pentax|pixtek|polaroid|sjcam|sjcam|sony|tech gear|toto|wonder world|yourdeal|zvr
+
+! array brandmoblies = acer|adcom|aeku|aeku|agtel|aiek|airi mobile|ak|alcatel|alco|alco|aoc|apple|aqua|archos|arise|asus|atom|auxus|bec|belkin|binatone|bingo|blackberry|blackview|blaupunkt|bloom|blu|blu|bq|brillon|bsnl|bsnl penta|bsnl penta|callbar|camerii|caterpillar|celkon|celkon|champion|cheers|chilli|colors|coolpad|cyrus|darago|datawind|dell|diamond|diyi|domo|edge|energy sistem|enfin|epoch|evo|ffook|ffook|fly|forme|gfive|ginger|gionee|go hello|good one|goodone|google|greenberry|gs|haier|hasee|hitech|honor|hp|hpl|htc|huawei|hyundai|hyve|i kall|iball|iberry|ice|ikall|inew|infix|infocus|intex|ismart|itel|jinga|jivi|jivi|josh|josh|kara|karbonn|kata|kazam|kechaoda|kechaoda|kenxinda|kestrel|kingstar|ktel|kult|lava|leeco|lemon|lenovo|lg|lvtel|lyf|lyf|macoox|mafe|magicon|magna|matrixx|maxx|mediacom|meizu|melbon|mhl|mhorse|mhorse|mi|microkey|micromax|microsoft|mitashi|mitribe|mobell|motorola|mtech|mtech|mtech|mts|multilaser|my phone|nexian|nextbit|nikcron|nokia|nosama|nugen|nuvo|obi|olive|oneplus|onida|oorie|oppo|panasonic|peace|philips|qtel|rage|reach|reliance|rextel|rextel|rio|rivo|rivo|rkmobile|rocktel|salora|samsung|sansui|saral sigmatel|seniorworld|senwa|sict|simmtronics|sky mobiles|skywin|snexian|snowtel|sony|sony ericsson|spice|strawberry|subor|subway|swingtel|swipe|takee|takee 1|tashan|tcom|telenor|tmax|tmobile|trio|uni|uniscope|usha shriram|v3|vell com|videocon|vinner|virat fanbox|vivo|vox|wham|wham|whitecherry|wibridge|wiko|wishtel|wynncom|xccess|xelectron|xillion|xolo|yu|yu|yxtel|yxtel|zen|zen|ziox|ziox|zodiac|zopo|zte|zync|zyrex
+
+
 // Substitutions
 ! sub &amp;     = &
 ! sub &apos;    = '

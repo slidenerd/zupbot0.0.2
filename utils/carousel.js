@@ -7,7 +7,7 @@ const platforms = require('./platforms')
 
 const carousel = {}
 
-//TODO fix the timeout mechanism to prevent firing it multiple times
+//TODO reset session when a new query is encountered
 carousel.sendFlipkartCarousel = function (session, brain, offers, filters) {
 
     // The container for our carousel items.

@@ -41,6 +41,7 @@ const
   payloads = require('./config/payloads'),
   platforms = require('./utils/platforms'),
   replies = require('./utils/replies'),
+  ride = require('./features/ride'),
   userController = require('./controllers/user');
 
 let
@@ -100,6 +101,7 @@ function configureExpress() {
   app.use(bodyParser.json());
   app.use(bodyParser.urlencoded({ extended: true }));
   app.use(expressValidator());
+  app.set('view engine', 'ejs');
   app.use(session({
     resave: true,
     saveUninitialized: true,
@@ -117,7 +119,10 @@ function configureExpress() {
       || req.path === '/api/messages'
       || req.path === '/api/subscribe'
       || req.path === '/api/sendMail'
-      || req.path === '/hooks/ola') {
+      || req.path === '/hooks/ola'
+      || req.path === '/api/ride'
+      || req.path === '/api/ride/book'
+      || req.path === '/auth/uber/callback') {
       next();
     } else {
       lusca.csrf()(req, res, next);
@@ -248,6 +253,31 @@ function configureExpress() {
    */
   app.post('/hooks/ola', ola.webhook)
 
+  app.get('/api/ride', function (req, res) {
+    ride.getRideEstimate(req.query.pickup, req.query.drop, res);
+  });
+
+  app.get('/api/ride/book', function (req, res) {
+    ride.bookRide(req, res);
+  });
+
+  app.get('/auth/uber/callback', function (req, res) {
+    console.log("Got Uber Auth token");
+    ride.uber.authorization({
+      authorization_code: req.query.code
+    }, function (err, access_token, refresh_token) {
+      if (err) {
+        console.error(err);
+      } else {
+        // store the user id and associated access token
+        // redirect the user back to your actual app
+        req.session.uberToken = access_token;
+        console.log("Got Uber access token");
+        ride.bookRide(req, res);
+      }
+    });
+  });
+
   // app.get('/api/list', function(req, res) {
   //   mail.getAllLists("631957", res)
   // });
@@ -338,7 +368,19 @@ function firstRun(session) {
 function onMessage(session) {
   console.log('This user is running our bot the subsequent time')
   userController.addBotUser(session);
-  reply(session)
+  if (session.message.entities) {
+    let geolocation = platforms.getGeolocation(session);
+    if (geolocation) {
+      handleGeolocation(session, geolocation);
+    }
+  }
+  else {
+    reply(session)
+  }
+}
+
+function handleGeolocation(session, geolocation) {
+  session.send('Gotcha, you are at ' + geolocation.lat + ' ' + geolocation.lon);
 }
 
 /**
@@ -402,6 +444,9 @@ function reply(session) {
             }
           }, 30000)
         }
+      }
+      else if (response && response.type === 'location') {
+        platforms.facebook.askLocation(session, response.data)
       }
       else {
         session.send(response);

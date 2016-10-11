@@ -4,7 +4,16 @@ const request = require('request')
 const endpoints = require('../config/endpoints')
 const jsonfile = require('jsonfile')
 
-const flipkart = {}
+const flipkart = {
+    CATEGORY_ALL: 'categoryall',
+    filters: {
+        category: null,
+        brand: null,
+        model: null,
+        discount: null,
+        pricing: null
+    }
+}
 
 function isValid(json) {
     return json && json.allOffersList && json.allOffersList.length
@@ -74,7 +83,7 @@ flipkart.applyFilters = function (offers, filters) {
     if (filters) {
         if (filters.length == 1) {
             let category = filters[0].toLowerCase();
-            if (category != 'nocategory') {
+            if (category !== CATEGORY_ALL) {
                 offers = offers.filter((offer) => {
                     let category = offer.category;
                     let filter = filters[0];
@@ -91,7 +100,7 @@ flipkart.applyFilters = function (offers, filters) {
  */
 flipkart.filterForCategory = function (category, offers) {
     let filtered = offers
-    if (category !== 'nocategory') {
+    if (category !== CATEGORY_ALL) {
         filtered = offers.filter((item) => {
             return item.category.toLowerCase() === category;
         })
