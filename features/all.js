@@ -52,18 +52,32 @@ all.flipkart.subroutine = function (rs, args) {
             });
             reject({ type: 'carousel', data: cachedOffers, filters: args })
         }
-        flipkart.findAllOffers()
-            .then((offers) => {
-                if (offers.length) {
-                    cache.put(KEY_FRESH_DATA, true, CACHE_VALIDITY_PERIOD, (key, value) => {
-                    });
-                    cache.put(KEY_OFFERS, offers, CACHE_VALIDITY_PERIOD, (key, value) => {
-                    })
-                }
-                reject({ type: 'carousel', data: offers, filters: args })
+        else {
+            flipkart.findAllOffers()
+                .then((offers) => {
+                    if (offers.length) {
+                        cache.put(KEY_FRESH_DATA, true, CACHE_VALIDITY_PERIOD, (key, value) => {
+                        });
+                        cache.put(KEY_OFFERS, offers, CACHE_VALIDITY_PERIOD, (key, value) => {
+                        })
+                    }
+                    reject({ type: 'carousel', data: offers, filters: args })
+                })
+                .catch((error) => {
+                    reject({ type: 'error', data: error });
+                })
+        }
+    })
+}
+
+all.location.subroutine = function (rs, args) {
+    return new rs.Promise((resolve, reject) => {
+        rs.replyAsync(rs.currentUser(), 'jsasklocation', all.this)
+            .then((reply) => {
+                reject({ type: 'location', data: reply })
             })
             .catch((error) => {
-                reject({ type: 'error', data: error });
+                reject(error);
             })
     })
 }
@@ -110,18 +124,6 @@ all.weather.subroutine = function (rs, args) {
             })
             .then((reply) => {
                 resolve(reply)
-            })
-            .catch((error) => {
-                reject(error);
-            })
-    })
-}
-
-all.location.subroutine = function (rs, args) {
-    return new rs.Promise((resolve, reject) => {
-        rs.replyAsync(rs.currentUser(), 'jsasklocation', all.this)
-            .then((reply) => {
-                reject({ type: 'location', data: reply })
             })
             .catch((error) => {
                 reject(error);

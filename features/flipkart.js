@@ -1,18 +1,29 @@
 'use strict';
 
 const
+    cache = require('memory-cache'),
     endpoints = require('../config/endpoints'),
     jsonfile = require('jsonfile'),
+    platforms = require('../utils/platforms'),
     request = require('request');
 
 const flipkart = {
     CATEGORY_ALL: 'categoryall',
+    cache: {
+        key: 'offers'
+    },
     filters: {
         category: null,
         brand: null,
         model: null,
         discount: null,
         pricing: null
+    },
+    triggers: {
+        done: 'int done',
+        first: 'int first',
+        none: 'int none',
+        subsequent: 'int subsequent',
     }
 }
 
@@ -80,17 +91,63 @@ flipkart.findAllOffers = function () {
     });
 }
 
-flipkart.applyFilters = function (offers, filters) {
-    if (filters && filters[0]) {
-        let category = filters[0].toLowerCase();
-        if (category != flipkart.CATEGORY_ALL) {
-            offers = offers.filter((offer) => {
-                let category = offer.category;
-                let filter = filters[0];
-                return category.toLowerCase() === filter;
-            });
+flipkart.paginator = function (session, offers) {
+    //How many items will you display in a carousel on each platform is controlled by limit
+    let limit = platforms.getCarouselLimits(session.message.address.channelId);
+
+    //A key from cache which indicates if this data was previously cached or freshly loaded
+    if (cache.get('fresh')) {
+        session.userData.user.flipkart.page = 0
+    }
+    //Begin displaying items either from 0 or from a previous number
+    let start = session.userData.user.flipkart.page
+
+    //Display exactly limit number of items
+    let end = (start + limit < offers.length) ? (start + limit) : offers.length
+
+    let page;
+
+    //We did not find any offers perhaps because there was none or all were unavailable or we got no results after applying our filter
+    if ((end - start) === 0) {
+        page = {
+            triggerName: flipkart.triggers.none,
+            offers: []
         }
     }
+    else if ((end - start) > 0 && start === 0) {
+        page = {
+            triggerName: flipkart.triggers.first,
+            offers: offers.slice(start, end)
+        }
+    }
+    else if ((end - start) > 0) {
+        page = {
+            triggerName: flipkart.triggers.subsequent,
+            offers: offers.slice(start, end)
+        }
+    }
+    else {
+        page = {
+            triggerName: flipkart.triggers.done,
+            offers: []
+        }
+    }
+    session.userData.user.flipkart.page = end
+    return page;
+}
+
+flipkart.applyFilters = function (session, offers) {
+
+    // if (filters && filters[0]) {
+    //     let category = filters[0].toLowerCase();
+    //     if (category != flipkart.CATEGORY_ALL) {
+    //         offers = offers.filter((offer) => {
+    //             let category = offer.category;
+    //             let filter = filters[0];
+    //             return category.toLowerCase() === filter;
+    //         });
+    //     }
+    // }
     return offers;
 }
 
@@ -99,11 +156,11 @@ flipkart.applyFilters = function (offers, filters) {
  */
 flipkart.filterForCategory = function (category, offers) {
     let filtered = offers
-    if (category !== flipkart.CATEGORY_ALL) {
-        filtered = offers.filter((item) => {
-            return item.category.toLowerCase() === category;
-        })
-    }
+    // if (category !== flipkart.CATEGORY_ALL) {
+    //     filtered = offers.filter((item) => {
+    //         return item.category.toLowerCase() === category;
+    //     })
+    // }
     return filtered
 }
 
