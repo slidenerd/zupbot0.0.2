@@ -2,25 +2,11 @@
 
 const
     builder = require('../core/'),
-    constants = require('../engine/constants'),
-    utils = require('../engine/utils'),
-    //The name of the subroutine that can find deals
-    subroutineName = getFlightDetailsFromSkyScanner.name,
+    endpoints = require('../config/endpoints'),
     request = require('request')
 
 
 getFlightDetailsFromSkyScanner('coimb', 'chennai', '2016-10-12', '2016-10-22');
-
-/**
- * Main entry point in this file
- */
-function init(rs, userId, session) {
-    rs.setSubroutine(subroutineName, (rs, args) => {
-        return new rs.Promise((resolve, reject) => {
-            report(resolve, reject, rs, args, userId, session);
-        });
-    });
-}
 
 function getFlightDetailsFromSkyScanner(from, to, outboundDate, inboundDate) {
     var body = new Object();
@@ -38,7 +24,7 @@ function getFlightDetailsFromSkyScanner(from, to, outboundDate, inboundDate) {
 
 function findLocation(params, query, nextQuery, count) {
     var options = {
-        url: constants.ENDPOINT_SKY_SCANNER_AUTO_SUGGEST + query + '&apiKey=' + constants.SKYSCANNER_API_KEY,
+        url: endpoints.ENDPOINT_SKY_SCANNER_AUTO_SUGGEST + query + '&apiKey=' + constants.SKYSCANNER_API_KEY,
         json: true
     }
     request.get(options, (error, response, body) => {
