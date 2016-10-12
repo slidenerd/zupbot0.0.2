@@ -12,9 +12,16 @@ const headers = {
     'X-APP-TOKEN': ola.apiToken 
 };
 
-ola.getAvailability = function(category, location, callback) {
-    geocoder.geocode(location, function(err, res) {
-        if(err) {
+ola.webhook = function (req, res) {
+    res.send({
+        "success": "true",
+        "name": 'zup'
+    })
+}
+
+ola.getAvailability = function (category, location, callback) {
+    geocoder.geocode(location, function (err, res) {
+        if (err) {
             //TODO:
             console.log("Error : " + err);
         } else {
@@ -22,16 +29,16 @@ ola.getAvailability = function(category, location, callback) {
             args.lat = res[0].latitude;
             args.long = res[0].longitude;
             args.category = category
-            ola.getAvailabilityByCoordinates(callback, args); 
+            ola.getAvailabilityByCoordinates(callback, args);
         }
     });
 }
 
-ola.getRideEstimate = function(from, to, callback) {
+ola.getRideEstimate = function (from, to, callback) {
     var option = 0;
     var args = new Object();
-    var geoCallback = function(err, res) {
-        if(err) {
+    var geoCallback = function (err, res) {
+        if (err) {
             //TODO:
             console.log("Error : " + err);
         } else {
@@ -41,26 +48,26 @@ ola.getRideEstimate = function(from, to, callback) {
                     args.long = res[0].longitude;
                     option++;
                     geocoder.geocode(to, geoCallback);
-                break;
+                    break;
                 case 1:
                     args.droplat = res[0].latitude;
                     args.droplong = res[0].longitude;
                     ola.getRideEstimateCoordinates(callback, args);
-                break;    
+                    break;
             }
         }
     };
     geocoder.geocode(from, geoCallback);
 }
 
-ola.getAvailabilityByCoordinates = function(callback, args) {
+ola.getAvailabilityByCoordinates = function (callback, args) {
     var options = {
         url: ola.endPoint + 'products?pickup_lat=' + args.lat + "&pickup_lng=" + args.long + "&category=" + args.category,
         headers: headers,
         json: true
     }
     request.get(options, (error, response, body) => {
-        if(error) {
+        if (error) {
             console.log(error);
             callback(error, response, body);
             return;
@@ -75,21 +82,21 @@ ola.getAvailabilityByCoordinates = function(callback, args) {
 }
 
 
-ola.getRideEstimateCoordinates = function(callback, args) {
+ola.getRideEstimateCoordinates = function (callback, args) {
     var resObj = {};
     var options = {
-        url: ola.endPoint + 'products?pickup_lat=' + args.lat + "&pickup_lng=" + args.long + 
+        url: ola.endPoint + 'products?pickup_lat=' + args.lat + "&pickup_lng=" + args.long +
         "&drop_lat=" + args.droplat + "&drop_lng=" + args.droplong,
         headers: headers,
         json: true
     }
     request.get(options, (error, response, body) => {
-        if(error) {
+        if (error) {
             console.log(error);
             return;
         }
-        if(response.statusCode == 200) {
-            for(var i = 0; i < body.ride_estimate.length; i++) {
+        if (response.statusCode == 200) {
+            for (var i = 0; i < body.ride_estimate.length; i++) {
                 var obj = new Object();
                 obj.display_name = body.ride_estimate[i].category;
                 obj.distance = body.ride_estimate[i].distance;
@@ -99,9 +106,9 @@ ola.getRideEstimateCoordinates = function(callback, args) {
                 resObj[body.ride_estimate[i].category] = obj;
             }
 
-            for(var i = 0; i < body.categories.length; i++) {
+            for (var i = 0; i < body.categories.length; i++) {
                 var category = body.categories[i];
-                if(resObj.hasOwnProperty(category.id)) {
+                if (resObj.hasOwnProperty(category.id)) {
                     resObj[category.id].eta = category.eta;
                 }
             }
@@ -113,12 +120,12 @@ ola.getRideEstimateCoordinates = function(callback, args) {
     })
 }
 
-ola.authenticate = function() {
+ola.authenticate = function () {
     var url = 'http://sandbox-t.olacabs.com/oauth2/authorize?response_type=token&client_id=ODYxMDgyNDktNGU4Yy00ZWU3LTlhNTctODRhYmE5NWY3YWFj&redirect_uri=http://localhost/api/ride/ola/callback&scope=profile%20booking&state=state123'
-    
+
 }
 
-ola.bookRide = function(callback, args) {
+ola.bookRide = function (callback, args) {
     var body = {
         'pickup_lat': args.lat,
         'pickup_lng': args.long,

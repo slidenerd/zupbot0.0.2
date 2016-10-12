@@ -5,7 +5,7 @@
     {
       "type":"postback",
       "title":"Help",
-      "payload":"PAYLOAD_USER_CLICKED_HELP"
+      "payload":"PAYLOAD_PERSISTENT_MENU_HELP"
     },
     {
       "type":"web_url",

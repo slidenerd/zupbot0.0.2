@@ -1,10 +1,10 @@
 'use strict';
 //Toogle debugging on RiveScript object when you need to debug
-const cache = require('memory-cache');
-const RiveScript = require('rivescript');
-const events = require('events');
-
-const all = require('../features/all');
+const
+    all = require('../features/all'),
+    cache = require('memory-cache'),
+    events = require('events'),
+    RiveScript = require('rivescript');
 
 /**
  * Initially, the brain is not loaded
@@ -25,6 +25,7 @@ brain.initSubroutines = function () {
     brain.riveScript.setSubroutine(all.ola.name, all.ola.subroutine)
     brain.riveScript.setSubroutine(all.uber.name, all.uber.subroutine)
     brain.riveScript.setSubroutine(all.weather.name, all.weather.subroutine)
+    brain.riveScript.setSubroutine(all.location.name, all.location.subroutine)
 }
 
 /**
@@ -63,11 +64,32 @@ brain.onDebug = function (message) {
  * Return an asynchronous reply from the brain corresponding to a particular user id
  */
 brain.reply = function (userId, text) {
-    return brain.riveScript.replyAsync(userId, text, brain.this);
+    let reply = brain.riveScript.replyAsync(userId, text, brain.this);
+    return reply;
+}
+
+brain.replySync = function (userId, text) {
+    return brain.riveScript.reply(userId, text, brain.this);
 }
 
 brain.setLoaded = function (loaded) {
     brain.loaded = loaded;
+}
+
+brain.set = function(userId, key, value){
+    brain.riveScript.setUservar(userId, key, value)
+}
+
+brain.get = function(userId, key){
+    return brain.riveScript.getUservar(userId, key)
+}
+
+brain.setTopic = function(userId, topic){
+    brain.riveScript.setUservar(userId, 'topic', value)
+}
+
+brain.getTopic = function(userId){
+    return brain.riveScript.getUservar(userId, 'topic')
 }
 
 module.exports = brain;

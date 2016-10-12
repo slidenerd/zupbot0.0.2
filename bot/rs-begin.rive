@@ -52,6 +52,10 @@
 ! array womennoun  = females girls chicks women ladies babes
 ! array yes        = yes yeah yep yup ya yea
 
+! array weatherwords = weather|temperature|forecast|climate|forcast
+! array offerwords = coupon|coupons|discount|discounts|offers|offer|deals
+
+
 // Substitutions
 ! sub &amp;     = &
 ! sub &apos;    = '

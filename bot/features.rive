@@ -1,18 +1,4 @@
 ! version = 2.0
-! array weatherwords = weather|temperature|forecast|climate|forcast
-! array offerwords = coupon|coupons|discount|discounts|offers|deals
-//Categories
-! array categorymobiles = mobile|mobiles|phone|phones|mobile phone|mobile phones
-
-+ [*] (cab|taxi) [*] {weight=996}
-- I am assuming that you want me to book a <star> for you. My slow coach boss is still working on that feature.
-- I take it that you want me to get a <star> for you. Oops, work in progress, will keep you posted.
-- I think you are asking me to find a <star> for you. I will ask my dear boss to work faster on this.
-
-+ [*] (ola|uber) [*] {weight=996}
-- I am assuming that you want me to book an <star> cab for you. My slow coach boss is still working on that feature.
-- I take it that you want me to get an <star> cab for you. Oops, work in progress, will keep you posted.
-- I think you are asking me to find an <star> cab for you. I will ask my dear boss to work faster on this.
 
 + [*] (hotel|restaurant) [*] {weight=996}
 - I guess you want me to book a <star>. Its still work in progress.
@@ -28,16 +14,10 @@
 - I am sorry but I am not capable of doing stuff with <star> yet but lets ask my lazy creator to start slogging so that we can have this feature ready for you.
 
 + [*] (flipkart|flip kart) [*]{weight=999}
-- {topic=offers}<call>flipkart nocategory</call>
+- <call>getAllFlipkartOffers categoryall</call>{topic=offers}<set flipkartcategory=categoryall>
 
 + [*] (@offerwords) [*]{weight=998}
-- {topic=offers}<call>flipkart nocategory</call>
-
-+ [*] (@categorymobiles) [*] (@offerwords) [*]{weight=999}
-- {topic=offers}<call>flipkart mobiles_and_accessories</call>
-
-+ [*] (@offerwords) [*] (@categorymobiles) [*]{weight=999}
-- {topic=offers}<call>flipkart mobiles_and_accessories</call>
+- <call>getAllFlipkartOffers categoryall</call>{topic=offers}<set flipkartcategory=categoryall>
 
 //The name of this topic is being referred to from JS code
 > topic offers
@@ -68,8 +48,12 @@
     - It seems we are late for the party. Flipkart doesnt seem to have any more offers for now
     - Flipkart has no offers for the time being, I am now waiting for the next train to arrive
 
+	+ no
+	- Okay, enjoy your day!
+	- Understood, have a great day ahead!
+
 	+ show more
-	- <call>flipkart <get flipkartcategory></call>
+	- <call>getAllFlipkartOffers</call>
 
 	//Default messages by user will be handled by the random topic outside
 	+ *

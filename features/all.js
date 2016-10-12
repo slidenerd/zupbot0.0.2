@@ -1,3 +1,5 @@
+'use strict';
+
 const amazon = require('./amazon')
 const flipkart = require('./flipkart')
 const ola = require('./ola')
@@ -16,69 +18,76 @@ const KEY_FRESH_DATA = 'fresh'
 const KEY_OFFERS = 'offers'
 
 const all = {
-    flipkart: {},
-    ola: {},
-    uber: {},
-    skyscanner: {},
-    weather: {}
+    flipkart: {
+        name: 'getAllFlipkartOffers'
+    },
+    ola: {
+        name: 'ola'
+    },
+    uber: {
+        name: 'uber'
+    },
+    skyscanner: {
+        name: 'skyscanner'
+    },
+    weather: {
+        name: 'weather'
+    },
+    location: {
+        name: 'askGeolocation'
+    }
 }
 
-all.flipkart.name = 'flipkart';
+/**
+ * Custom objects cannot be resolved using rs.Promise since it resolves only strings and converts custom objects into [object Object]
+ * The best way to resolve custom objects is to reject them and handle them separately inside the catch clause
+ * Note that we are rejecting offers regardless of whether they have data inside them or they are empty.
+ */
 all.flipkart.subroutine = function (rs, args) {
     return new rs.Promise((resolve, reject) => {
         //Load from cache
         const cachedOffers = cache.get(KEY_OFFERS)
         if (cachedOffers) {
-            console.log('get offers from cache')
             cache.put(KEY_FRESH_DATA, false, CACHE_VALIDITY_PERIOD, (key, value) => {
-                console.log('fresh was stored in the cache');
             });
-            //Reject this message as it is a carousel, we ll handle it differently from server
             reject({ type: 'carousel', data: cachedOffers, filters: args })
         }
-        else {
-            flipkart.execute()
-                .then((offers) => {
-                    if (offers && offers.length) {
-                        cache.put(KEY_FRESH_DATA, true, CACHE_VALIDITY_PERIOD, (key, value) => {
-                            console.log('fresh was stored in the cache');
-                        });
-                        cache.put(KEY_OFFERS, offers, CACHE_VALIDITY_PERIOD, (key, value) => {
-                            console.log(offers.length + 'offers was stored in the cache')
-                        })
-                    }
-                    //Reject this message as it is a carousel, we ll handle it differently from server
-                    reject({ type: 'carousel', data: offers, filters: args })
-                })
-                .catch((error) => {
-                    reject({ type: 'error', data: error });
-                })
-        }
+        flipkart.findAllOffers()
+            .then((offers) => {
+                if (offers.length) {
+                    cache.put(KEY_FRESH_DATA, true, CACHE_VALIDITY_PERIOD, (key, value) => {
+                    });
+                    cache.put(KEY_OFFERS, offers, CACHE_VALIDITY_PERIOD, (key, value) => {
+                    })
+                }
+                reject({ type: 'carousel', data: offers, filters: args })
+            })
+            .catch((error) => {
+                reject({ type: 'error', data: error });
+            })
+
     })
 }
 
-all.ola.name = 'ola';
 all.ola.subroutine = function (rs, args) {
     return new rs.Promise((resolve, reject) => {
         resolve('booking a cab for you from mumbai to thane')
     })
 }
 
-all.uber.name = 'uber'
 all.uber.subroutine = function (rs, args) {
     return new rs.Promise((resolve, reject) => {
         resolve('booking a cab for you from tirupur to coimbatore')
     })
 }
 
-all.skyscanner.name = 'skyscanner'
 all.skyscanner.subroutine = function () {
     return new rs.Promise((resolve, reject) => {
-        var lat = 19, lon = 72;
+        let lat = 19, lon = 72;
         skyscanner.execute(lat, lon)
             .then((report) => {
-                rs.setUservar(rs.currentUser(), 'location', 'your place')
-                rs.setUservars(rs.currentUser(), report)
+                rs.setUserlet(rs.currentUser(), 'location', 'your place')
+                rs.setUserlets(rs.currentUser(), report)
                 return rs.replyAsync(rs.currentUser(), 'jsweather', all.this)
             })
             .then((reply) => {
@@ -90,15 +99,14 @@ all.skyscanner.subroutine = function () {
     })
 }
 
-all.weather.name = 'weather';
 all.weather.subroutine = function (rs, args) {
     return new rs.Promise((resolve, reject) => {
         var lat = 19, lon = 72;
         var userId = rs.session.userId;
         weather.execute(lat, lon)
             .then((report) => {
-                rs.setUservar(rs.currentUser(), 'location', 'your place')
-                rs.setUservars(rs.currentUser(), report)
+                rs.setUserlet(rs.currentUser(), 'location', 'your place')
+                rs.setUserlets(rs.currentUser(), report)
                 return rs.replyAsync(rs.currentUser(), 'jsweather', all.this)
             })
             .then((reply) => {
@@ -110,4 +118,15 @@ all.weather.subroutine = function (rs, args) {
     })
 }
 
+all.location.subroutine = function (rs, args) {
+    return new rs.Promise((resolve, reject) => {
+        rs.replyAsync(rs.currentUser(), 'jsasklocation', all.this)
+            .then((reply) => {
+                reject({ type: 'location', data: reply })
+            })
+            .catch((error) => {
+                reject(error);
+            })
+    })
+}
 module.exports = all;
