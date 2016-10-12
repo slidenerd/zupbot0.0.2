@@ -1,48 +1,56 @@
+'use strict'
+
 /**
  * Module dependencies.
  */
-const express = require('express');
-const compression = require('compression');
-const session = require('express-session');
-const bodyParser = require('body-parser');
-const logger = require('morgan');
-const chalk = require('chalk');
-const errorHandler = require('errorhandler');
-const lusca = require('lusca');
-const dotenv = require('dotenv');
-const MongoStore = require('connect-mongo')(session);
-const flash = require('express-flash');
-const path = require('path');
-const mongoose = require('mongoose');
-const passport = require('passport');
-const expressValidator = require('express-validator');
-const sass = require('node-sass-middleware');
-const multer = require('multer');
-const upload = multer({ dest: path.join(__dirname, 'uploads') });
-
+const
+  express = require('express'),
+  compression = require('compression'),
+  session = require('express-session'),
+  bodyParser = require('body-parser'),
+  logger = require('morgan'),
+  chalk = require('chalk'),
+  errorHandler = require('errorhandler'),
+  lusca = require('lusca'),
+  dotenv = require('dotenv'),
+  MongoStore = require('connect-mongo')(session),
+  flash = require('express-flash'),
+  path = require('path'),
+  mongoose = require('mongoose'),
+  passport = require('passport'),
+  expressValidator = require('express-validator'),
+  sass = require('node-sass-middleware'),
+  multer = require('multer'),
+  upload = multer({ dest: path.join(__dirname, 'uploads') }),
+  mail = require('./features/mail');
 /**
- * Load environment variables from .env file, where API keys and passwords are configured.
+ * Load environment letiables from .env file, where API keys and passwords are configured.
  */
 dotenv.load({ path: '.env.example' });
-
 /**
  * Controllers (route handlers).
  */
-const homeController = require('./controllers/home');
-const userController = require('./controllers/user');
-const apiController = require('./controllers/api');
-const contactController = require('./controllers/contact');
-const platforms = require('./utils/platforms');
+const
+  all = require('./features/all'),
+  apiController = require('./controllers/api'),
+  builder = require('./core/'),
+  zup = require('./bot/bot'),
+  contactController = require('./controllers/contact'),
+  homeController = require('./controllers/home'),
+  carousel = require('./utils/carousel'),
+  ola = require('./features/ola'),
+  passportConfig = require('./config/passport'),
+  payloads = require('./config/payloads'),
+  platforms = require('./utils/platforms'),
+  replies = require('./utils/replies'),
+  ride = require('./features/ride'),
+  userController = require('./controllers/user');
 
-const builder = require('./core/');
-const brain = require('./rive/rive');
-const messageutils = require('./utils/messageutils')
-const replies = require('./utils/replies')
+console.log('%s App Initiated!', chalk.green('✓'));
 
-/**
- * API keys and Passport configuration.
- */
-const passportConfig = require('./config/passport');
+let
+  brain = require('./bot/rive'),
+  timeout;
 /**
  * Create Express server.
  */
@@ -52,20 +60,19 @@ const app = express();
  * Connect to MongoDB.
  */
 
-const options = {
-  server: { socketOptions: { keepAlive: 300000, connectTimeoutMS: 30000 } },
-  replset: { socketOptions: { keepAlive: 300000, connectTimeoutMS: 30000 } }
-};
-mongoose.connect(process.env.MONGODB_URI || process.env.MONGOLAB_URI, options);
+
+mongoose.connect(process.env.MONGODB_URI);
 mongoose.connection.on('connected', () => {
   console.log('%s MongoDB connection established!', chalk.green('✓'));
 });
 mongoose.connection.on('error', (error) => {
   console.log('%s MongoDB connection error. Please make sure MongoDB is running.', chalk.red('✗'), error);
 });
-
 // If the Node process ends, close the Mongoose connection
 process.on('SIGINT', exitDatabase).on('SIGTERM', exitDatabase);
+
+
+
 function exitDatabase() {
   mongoose.connection.close(function () {
     console.log('mongoose disconnected because of SIGINT or SIGTERM');
@@ -88,12 +95,13 @@ app.use(logger('dev'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(expressValidator());
+app.set('view engine', 'ejs');
 app.use(session({
   resave: true,
   saveUninitialized: true,
   secret: process.env.SESSION_SECRET,
   store: new MongoStore({
-    url: process.env.MONGODB_URI || process.env.MONGOLAB_URI,
+    url: process.env.MONGODB_URI,
     autoReconnect: true
   })
 }));
@@ -101,7 +109,14 @@ app.use(passport.initialize());
 app.use(passport.session());
 app.use(flash());
 app.use((req, res, next) => {
-  if (req.path === '/api/upload' || req.path === '/api/messages') {
+  if (req.path === '/api/upload'
+    || req.path === '/api/messages'
+    || req.path === '/api/subscribe'
+    || req.path === '/api/sendMail'
+    || req.path === '/hooks/ola'
+    || req.path === '/api/ride'
+    || req.path === '/api/ride/book'
+    || req.path === '/auth/uber/callback') {
     next();
   } else {
     lusca.csrf()(req, res, next);
@@ -227,6 +242,61 @@ app.get('/auth/pinterest', passport.authorize('pinterest', { scope: 'read_public
 app.get('/auth/pinterest/callback', passport.authorize('pinterest', { failureRedirect: '/login' }), (req, res) => {
   res.redirect('/api/pinterest');
 });
+/**
+ * Webhooks
+ */
+app.post('/hooks/ola', ola.webhook)
+
+app.get('/api/ride', function (req, res) {
+  ride.getRideEstimate(req.query.pickup, req.query.drop, res);
+});
+
+app.get('/api/ride/book', function (req, res) {
+  ride.bookRide(req, res);
+});
+
+app.get('/auth/uber/callback', function (req, res) {
+  console.log("Got Uber Auth token");
+  ride.uber.authorization({
+    authorization_code: req.query.code
+  }, function (err, access_token, refresh_token) {
+    if (err) {
+      console.error(err);
+    } else {
+      // store the user id and associated access token
+      // redirect the user back to your actual app
+      req.session.uberToken = access_token;
+      console.log("Got Uber access token");
+      ride.bookRide(req, res);
+    }
+  });
+});
+
+// app.get('/api/list', function(req, res) {
+//   mail.getAllLists("631957", res)
+// });
+
+app.post('/api/subscribe', function (req, res) {
+  if (!req.body) {
+    let responseBody = new Object();
+    responseBody.success = false;
+    responseBody.message = "Invalid request";
+    res.end(JSON.stringify(responseBody));
+    return;
+  }
+  let email = req.body.email;
+  mail.createRecepient(email, res);
+});
+app.post('/api/sendMail', function (req, res) {
+  if (!req.body) {
+    let responseBody = new Object();
+    responseBody.success = false;
+    responseBody.message = "Invalid request";
+    res.end(JSON.stringify(responseBody));
+    return;
+  }
+  mail.sendMail(req, res);
+});
 
 /**
  * Error Handler.
@@ -236,17 +306,21 @@ app.use(errorHandler());
 /**
  * Start Express server.
  */
-app.listen(app.get('port'), () => {
-  console.log('%s Express server listening on port %d in %s mode.', chalk.green('✓'), app.get('port'), app.get('env'));
-});
+
+brain.load(() => {
+  app.listen(app.get('port'), () => {
+    console.log('%s Express server listening on port %d in %s mode after brain load ', chalk.green('✓'), app.get('port'), app.get('env'));
+  });
+}, (error) => {
+  console.log('%s Brain Loaded Failed', chalk.red('✓'), error);
+})
 
 // Create chat bot
 const connector = new builder.ChatConnector({
-  appId: process.env.APP_ID,
-  appPassword: process.env.APP_PASSWORD
+    appId: process.env.APP_ID,
+    appPassword: process.env.APP_PASSWORD
 });
 const bot = new builder.UniversalBot(connector);
-app.post('/api/messages', connector.listen());
 
 //=========================================================
 // Bots Middleware
@@ -254,9 +328,10 @@ app.post('/api/messages', connector.listen());
 
 // Anytime the major version is incremented any existing conversations will be restarted.
 
-var dialogVersionOptions = {
-  version: 1.0,
-  resetCommand: /^reset/i
+app.post('/api/messages', connector.listen());
+let dialogVersionOptions = {
+    version: 1.0,
+    resetCommand: /^reset/i
 };
 bot.use(builder.Middleware.dialogVersion(dialogVersionOptions));
 
@@ -266,79 +341,126 @@ bot.use(builder.Middleware.dialogVersion(dialogVersionOptions));
 
 //Run this dialog the very first time for a particular user
 bot.use(builder.Middleware.firstRun({
-  version: 1.0,
-  dialogId: '/firstRun'
+    version: 1.0,
+    dialogId: '/firstRun'
 }));
 
-bot.dialog('/firstRun', [firstRun]);
+bot.dialog('/firstRun', firstRun);
 bot.dialog('/', onMessage);
+
 /**
- * When the brains are loading, ideally the reply should be sent first and 
- * then the brain should be loaded. This can be achieved with a setTimeout method 
- * session.send has a delay option of 250ms after which all messages are queued and sent
- * Refer https://github.com/Microsoft/BotBuilder/blob/master/Node/core/src/Session.ts for delay
+ * Send a greeting message for each specific platform
+ * Add the user to the mongodb database if the user does not exist
  */
 function firstRun(session) {
-  handleWithBrains(session)
-  platforms.greet(session);
-  //If the user wasnt added before, add the user
-  userController.addBotUser(session);
-  console.log('first run finished')
-  session.endDialog()
-}
-
-function onMessage(session) {
-  //If the user wasnt added before, add the user
-  userController.addBotUser(session);
-  console.log('subsequent run')
-  handleWithBrains(session)
-}
-
-function handleWithBrains(session) {
-  if (!brain.isLoaded()) {
-    //Send the user ID to track variables for each user
-    brain.load(session.message.user.id, () => {
-      //Reply once the brain has been loaded
-      reply(session)
-    }, () => {
-
-      //Notify the user of any errors that may occur if the brain loading fails
-      const error = replies.getBrainLoadingFailed()
-      session.send(error)
-    })
-  }
-  else {
-    //Reply if the brains were loaded previously
+    console.log('This user is running our bot the first time')
+    platforms.firstRun(session);
+    userController.addBotUser(session);
     reply(session)
-  }
+    session.endDialog()
 }
 
 /**
- * Generate a reply from the brain
+ * Add the user to the mongodb database if the user does not exist
+ */
+function onMessage(session) {
+    console.log('This user is running our bot the subsequent time')
+    userController.addBotUser(session);
+    if (platforms.isGeolocation(session)) {
+        handleGeolocation(session)
+    }
+    else {
+        reply(session)
+    }
+}
+
+function handleGeolocation(session) {
+    let geolocation = platforms.getGeolocation(session);
+    if (geolocation) {
+        zup.brain.set(session.message.user.id, 'latitude', geolocation.lat)
+        zup.brain.set(session.message.user.id, 'longitude', geolocation.lon)
+    }
+    brain.reply(session.message.user.id, 'jshandlegeolocation')
+        .then((response) => {
+            session.send(response);
+        })
+        .catch((error) => {
+            session.send(error);
+        })
+}
+
+function preProcessReply(text) {
+    switch (text) {
+        case payloads.FACEBOOK_GET_STARTED:
+            return 'get started'
+
+        case payloads.FACEBOOK_PERSISTENT_MENU_HELP:
+            return 'help'
+
+        case payloads.FACEBOOK_FLIPKART_SHOW_MORE:
+            return 'show more'
+
+        case payloads.FACEBOOK_FLIPKART_CANCEL:
+            return 'no'
+
+        default:
+            return text;
+    }
+}
+
+/**
+ * Generate a reply from the zup.brain
+ * We also handle incoming PAYLOADS that are generated as a result of clicking quick replies on facebook
+ * PAYLOAD_FACEBOOK_GET_STARTED => Triggered when the user hits the get started button on facebook
+ * PAYLOAD_FACEBOOK_PERSISTENT_MENU_HELP => Triggered when the user hits the persistent menu help button 
+ * PAYLOAD_FACEBOOK_FLIPKART_SHOW_MORE => Triggered when the user hits the show more quick reply button on flipkart offers
+ * PAYLOAD_FACEBOOK_FLIPKART_CANCEL => Triggered when the user hits the no quick reply button on flipkart offers
+ * Handle special cases inside the catch block such as carousel, since we rejected them from all.js.
+ * If the results generated by any feature is not a string in all.js we reject the Object as zup.brain.rive does not let you resolve custom objects
  */
 function reply(session) {
-  brain.reply(session.message.user.id, session.message.text)
-    .then((response) => {
-      session.send(response);
-    })
-    .catch((response) => {
-
-      //Handle special cases here such as carousel, we rejected them from all.js as rive doesnt handle custom objects resolved through its Promise
-      if (response && response.type === 'carousel') {
-        session.beginDialog('/carousel', response.data);
-      }
-      else {
-        session.send(response);
-      }
-    })
+    const userId = session.message.user.id
+    const text = preProcessReply(session.message.text);
+    brain.reply(userId, text)
+        .then((response) => {
+            session.send(response);
+        })
+        .catch((response) => {
+            handleSpecialReplies(session, response)
+        })
 }
 
-/**
- * Dialog that handles displaying a carousel on Flipkart
- */
-bot.dialog('/carousel', (session, args) => {
-  messageutils.sendFlipkartCarousel(session, args)
-  session.endDialog();
-})
+function handleSpecialReplies(session, response) {
+    if (response && response.type === 'carousel') {
+        // carousel.sendFlipkartCarousel(session, zup.brain, response.data, response.filters)
+        carousel.showFlipkartOffers(session, response.data, 'Displaying', 0, 10)
+
+        //update the last active time when the user viewed flipkart results
+        session.userData.flipkart.lastActive = new Date().getTime();
+
+        //if we havent set a timeout previously, we set one
+        if (!timeout) {
+            timeout = setInterval(() => {
+                let currentTime = new Date().getTime();
+                if (currentTime - session.userData.flipkart.lastActive > 30000) {
+                    if (zup.brain.getTopic(session.message.user.id) === 'offers') {
+                        //send the quick reply asking the user if they would like to see more results
+                        platforms.sendQuickReply(session, require('./json/quick_reply_flipkart_show_more.json'))
+                    }
+                    clearInterval(timeout)
+
+                    //unset the timeout variable so that the person can see the quick reply once again after the next request to view flipkart carousel
+                    timeout = null;
+                }
+            }, 30000)
+        }
+    }
+    else if (response.type === 'location') {
+        platforms.facebook.askLocation(session, response.data)
+    }
+    else {
+        session.send(response);
+    }
+}
 
 module.exports = app;
