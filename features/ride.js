@@ -41,8 +41,9 @@ ride.getRideEstimateSourceDestination = function(fromlat, fromlng, to, res) {
     }
     var option = 0;
     var args = new Object();
-    args.lat = res[0].latitude;
-    args.long = res[0].longitude;
+    args.lat = fromlat;
+    args.long = fromlng;
+
 
     var geoCallback = function(err, res) {
         if(err) {
@@ -54,7 +55,7 @@ ride.getRideEstimateSourceDestination = function(fromlat, fromlng, to, res) {
             ride.getRideEstimateCoordinates(callback, args);
         }
     };
-    geocoder.geocode(from, geoCallback);
+    geocoder.geocode(to, geoCallback);
 }
 
 
@@ -109,4 +110,9 @@ ride.bookRide = function(req, res) {
 }
 
 module.exports = ride
+
+// function test() {
+//     ride.getRideEstimateSourceDestination('12.9716', '77.5946', 'shivaji nagar, bangalore')
+// }
+// test();
 

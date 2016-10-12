@@ -95,7 +95,7 @@ ola.getRideEstimateCoordinates = function (callback, args) {
             console.log(error);
             return;
         }
-        if (response.statusCode == 200) {
+        if (response.statusCode == 200 && body.ride_estimate) {
             for (var i = 0; i < body.ride_estimate.length; i++) {
                 var obj = new Object();
                 obj.display_name = body.ride_estimate[i].category;
