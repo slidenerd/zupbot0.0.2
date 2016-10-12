@@ -14,9 +14,6 @@ const CACHE_VALIDITY_PERIOD = 1000 * 60 * 30
 //key used to determine if flipkart results are fresh or came from the cache
 const KEY_FRESH_DATA = 'fresh'
 
-//Key used to store the offers retrieved from Flipkart
-const KEY_OFFERS = 'offers'
-
 const all = {
     flipkart: {
         name: 'getAllFlipkartOffers'

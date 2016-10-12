@@ -5,12 +5,13 @@ const
     endpoints = require('../config/endpoints'),
     jsonfile = require('jsonfile'),
     platforms = require('../utils/platforms'),
-    request = require('request');
+    request = require('request'),
+    Constants = require('../utils/constants');
 
 const flipkart = {
     CATEGORY_ALL: 'categoryall',
     cache: {
-        key: 'offers'
+        key: Constants.KEY_OFFERS
     },
     filters: {
         category: null,
