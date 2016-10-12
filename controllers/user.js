@@ -382,7 +382,7 @@ exports.addBotUser = function (session) {
     session.userData.user = {
       _id: session.message.user.id,
       //Replace all the - symbols in UUID to generate a plain string
-      email: 'dummy' + uuid.v1().replace(/-/g, '') + '@zup.chat',
+      email: session.message.user.id + session.message.address.channelId + '@zup.chat',
       bot: {
         id: session.message.address.bot.id,
         name: session.message.address.bot.userName
@@ -393,11 +393,19 @@ exports.addBotUser = function (session) {
         name: session.message.address.conversation.name,
         isGroup: session.message.address.conversation.isGroup
       },
+      flipkart: {
+        page: {
+          start: 0
+        },
+        filters: {
+          
+        }
+
+      },
       profile: {
         name: session.message.user.name
       }
     }
-
     //Dont add users to the database while running on the emulator
     if (session.message.address.channelId.toLowerCase() != 'emulator') {
       User.findOneAndUpdate({ _id: session.userData.user._id }, session.userData.user, { upsert: true, new: true }, (err, newUser) => {

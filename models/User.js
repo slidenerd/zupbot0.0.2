@@ -33,7 +33,7 @@ const userSchema = new mongoose.Schema({
   profile: {
     name: String,
     gender: String,
-    location: {type: String},
+    location: { type: String },
     lat: { type: Number },
     lon: { type: Number },
     website: String,

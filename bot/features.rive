@@ -23,13 +23,13 @@
 > topic offers
 
 	// The rules whose names start with js... are triggered from code
-	+ jsflipkartfirsttime
+	+ int first
 	- Hurrah! I found <get flipkartofferscount> offers for you on Flipkart. May your shopping be shosperous, I mean properous. Here comes <get flipkartpagestart> to <get flipkartpageend>
     - Weee, Flipkart gave us <get flipkartofferscount> offers. Isn't that awesome! Here comes <get flipkartpagestart> to <get flipkartpageend>
     - Yee-Haw! that is so cool of Flipkart to give us <get flipkartofferscount> offers. Showing <get flipkartpagestart> to <get flipkartpageend>
     - Ooh-la-la, I was able to get <get flipkartofferscount> offers on Flipkart. Displaying <get flipkartpagestart> to <get flipkartpageend>
 
-	+ jsflipkartsubsequenttime
+	+ int subsequent
 	- Here comes <get flipkartpagestart> - <get flipkartpageend> of <get flipkartofferscount>
     - Now showing, <get flipkartpagestart> to <get flipkartpageend> of <get flipkartofferscount>
     - Showing <get flipkartpagestart> - <get flipkartpageend> of <get flipkartofferscount>
@@ -38,12 +38,12 @@
     - Viewing <get flipkartpagestart> to <get flipkartpageend> of <get flipkartofferscount>
     - Displaying <get flipkartpagestart> - <get flipkartpageend> of <get flipkartofferscount>
 
-	+ jsflipkartexhausted
+	+ int done
 	- Oops thats all for now on Flipkart. I will get more for now shortly.
     - Well, that's all the Flipkart offers for now. Feel free to browse the existing ones anytime.
     - I guess our Flipkart party comes to an end for now. Flipkart will come out with new ones in a couple of hours
 
-	+ jsflipkartnone
+	+ int none
 	- Ouch! It seems Flipkart has either no offers today or all their offers have been exhausted
     - It seems we are late for the party. Flipkart doesnt seem to have any more offers for now
     - Flipkart has no offers for the time being, I am now waiting for the next train to arrive
@@ -71,7 +71,7 @@
 //The name of this topic is being referred to from JS code
 > topic recharge
 	// The rules whose names start with js... are triggered from code
-	+ jsoperatorinfo
+	+ int operator info
 	* <get operatorName> == undefined => Oops, I wasn't able to find your operator name. Would you like me to search again?
 	* <get circleName> == undefined => Oops, I wasn't able to find the state where your number is locatd. Would you like me to search again?
 	- Your phone belongs to <get operatorName> and you are based in <get circleName> However my boss is still working on the recharge part.
@@ -97,7 +97,7 @@
 > topic weather
 
 	// The rules whose names start with js... are triggered from code
-	+ jsweather
+	+ int weather
 	* <get temperature> == undefined => Ooops, I couldn't get any weather report that clearly mentions the temperature.
 	* <get location> == undefined => I couldn't get any weather report for this place.
 	- The weather gods told me that the temperature at <get location> is <get temperature> degrees C and the humidity is <get humidity>% 
