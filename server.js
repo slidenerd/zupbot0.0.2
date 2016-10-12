@@ -314,9 +314,6 @@ brain.load(() => {
   console.log('%s Brain Loaded Failed', chalk.red('✓'), error);
 })
 
-
-
-
 // Create chat bot
 const connector = new builder.ChatConnector({
   appId: process.env.APP_ID,
@@ -356,7 +353,7 @@ bot.dialog('/', onMessage);
  */
 function firstRun(session) {
   console.log('This user is running our bot the first time')
-  platforms.greet(session);
+  platforms.firstRun(session);
   userController.addBotUser(session);
   reply(session)
   session.endDialog()
@@ -431,7 +428,8 @@ function reply(session) {
     })
     .catch((response) => {
       if (response && response.type === 'carousel') {
-        carousel.sendFlipkartCarousel(session, brain, response.data, response.filters)
+        // carousel.sendFlipkartCarousel(session, brain, response.data, response.filters)
+        carousel.showFlipkartOffers(session, response.data, 'Displaying', 0, 10)
 
         //update the last active time when the user viewed flipkart results
         session.userData.flipkart.lastActive = new Date().getTime();

@@ -18,15 +18,25 @@ const KEY_FRESH_DATA = 'fresh'
 const KEY_OFFERS = 'offers'
 
 const all = {
-    flipkart: {},
-    ola: {},
-    uber: {},
-    skyscanner: {},
-    weather: {},
-    location: {}
+    flipkart: {
+        name: 'getAllFlipkartOffers'
+    },
+    ola: {
+        name: 'ola'
+    },
+    uber: {
+        name: 'uber'
+    },
+    skyscanner: {
+        name: 'skyscanner'
+    },
+    weather: {
+        name: 'weather'
+    },
+    location: {
+        name: 'askGeolocation'
+    }
 }
-
-all.flipkart.name = 'flipkart';
 
 /**
  * Custom objects cannot be resolved using rs.Promise since it resolves only strings and converts custom objects into [object Object]
@@ -42,39 +52,35 @@ all.flipkart.subroutine = function (rs, args) {
             });
             reject({ type: 'carousel', data: cachedOffers, filters: args })
         }
-        else {
-            flipkart.findAllOffers()
-                .then((offers) => {
-                    if (offers && offers.length) {
-                        cache.put(KEY_FRESH_DATA, true, CACHE_VALIDITY_PERIOD, (key, value) => {
-                        });
-                        cache.put(KEY_OFFERS, offers, CACHE_VALIDITY_PERIOD, (key, value) => {
-                        })
-                    }
-                    reject({ type: 'carousel', data: offers, filters: args })
-                })
-                .catch((error) => {
-                    reject({ type: 'error', data: error });
-                })
-        }
+        flipkart.findAllOffers()
+            .then((offers) => {
+                if (offers.length) {
+                    cache.put(KEY_FRESH_DATA, true, CACHE_VALIDITY_PERIOD, (key, value) => {
+                    });
+                    cache.put(KEY_OFFERS, offers, CACHE_VALIDITY_PERIOD, (key, value) => {
+                    })
+                }
+                reject({ type: 'carousel', data: offers, filters: args })
+            })
+            .catch((error) => {
+                reject({ type: 'error', data: error });
+            })
+
     })
 }
 
-all.ola.name = 'ola';
 all.ola.subroutine = function (rs, args) {
     return new rs.Promise((resolve, reject) => {
         resolve('booking a cab for you from mumbai to thane')
     })
 }
 
-all.uber.name = 'uber'
 all.uber.subroutine = function (rs, args) {
     return new rs.Promise((resolve, reject) => {
         resolve('booking a cab for you from tirupur to coimbatore')
     })
 }
 
-all.skyscanner.name = 'skyscanner'
 all.skyscanner.subroutine = function () {
     return new rs.Promise((resolve, reject) => {
         let lat = 19, lon = 72;
@@ -93,7 +99,6 @@ all.skyscanner.subroutine = function () {
     })
 }
 
-all.weather.name = 'weather';
 all.weather.subroutine = function (rs, args) {
     return new rs.Promise((resolve, reject) => {
         let lat = 19, lon = 72;
@@ -112,7 +117,6 @@ all.weather.subroutine = function (rs, args) {
     })
 }
 
-all.location.name = 'askGeolocation';
 all.location.subroutine = function (rs, args) {
     return new rs.Promise((resolve, reject) => {
         rs.replyAsync(rs.currentUser(), 'jsasklocation', all.this)

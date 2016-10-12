@@ -108,4 +108,25 @@ carousel.sendFlipkartCarousel = function (session, brain, offers, filters) {
     session.send(msg);
 }
 
+carousel.showFlipkartOffers = function (session, offers, text, start, end) {
+    let attachments = []
+    for (let i = start; i < end && i < offers.length; i++) {
+        let offer = offers[i];
+        attachments.push(new builder.HeroCard(session)
+            .title(offer.title)
+            .subtitle(offer.description)
+            .images([
+                builder.CardImage.create(session, offer.imageUrl)
+                    .tap(builder.CardAction.showImage(session, offer.url)),
+            ])
+            .buttons([
+                builder.CardAction.openUrl(session, offer.url, "View On Flipkart")
+            ]))
+    }
+    let msg = new builder.Message(session).text(text)
+        .attachmentLayout(builder.AttachmentLayout.carousel)
+        .attachments(attachments);
+    session.send(msg)
+}
+
 module.exports = carousel;

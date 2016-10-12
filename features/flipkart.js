@@ -1,8 +1,9 @@
 'use strict';
 
-const request = require('request')
-const endpoints = require('../config/endpoints')
-const jsonfile = require('jsonfile')
+const
+    endpoints = require('../config/endpoints'),
+    jsonfile = require('jsonfile'),
+    request = require('request');
 
 const flipkart = {
     CATEGORY_ALL: 'categoryall',
@@ -66,8 +67,9 @@ flipkart.findAllOffers = function () {
             if (!error && response.statusCode == 200) {
                 let data = body;
                 let offers = parse(data);
-                jsonfile.writeFile(__dirname + '/data.json', offers, { spaces: 4 }, function (err) {
-                    console.log(err)
+                offers = flipkart.sortByDiscounts(offers)
+                jsonfile.writeFile(__dirname + '/data.json', offers, { spaces: 4 }, (error) => {
+                    console.log(error)
                 })
                 resolve(offers);
             }
@@ -97,7 +99,7 @@ flipkart.applyFilters = function (offers, filters) {
  */
 flipkart.filterForCategory = function (category, offers) {
     let filtered = offers
-    if (category !== CATEGORY_ALL) {
+    if (category !== flipkart.CATEGORY_ALL) {
         filtered = offers.filter((item) => {
             return item.category.toLowerCase() === category;
         })
@@ -264,4 +266,5 @@ flipkart.sortByDiscounts = function (offers) {
         })
     return filtered;
 }
+
 module.exports = flipkart

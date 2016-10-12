@@ -14,16 +14,10 @@
 - I am sorry but I am not capable of doing stuff with <star> yet but lets ask my lazy creator to start slogging so that we can have this feature ready for you.
 
 + [*] (flipkart|flip kart) [*]{weight=999}
-- <call>flipkart categoryall</call>{topic=offers}
+- <call>getAllFlipkartOffers categoryall</call>{topic=offers}<set flipkartcategory=categoryall>
 
 + [*] (@offerwords) [*]{weight=998}
-- <call>flipkart categoryall</call>{topic=offers}
-
-+ [*] (@categorymobiles) [*] (@offerwords) [*]{weight=999}
-- <call>flipkart mobiles_and_accessories</call>{topic=offers}
-
-+ [*] (@offerwords) [*] (@categorymobiles) [*]{weight=999}
-- <call>flipkart mobiles_and_accessories</call>{topic=offers}
+- <call>getAllFlipkartOffers categoryall</call>{topic=offers}<set flipkartcategory=categoryall>
 
 //The name of this topic is being referred to from JS code
 > topic offers
@@ -59,7 +53,7 @@
 	- Understood, have a great day ahead!
 
 	+ show more
-	- <call>flipkart <get flipkartcategory></call>
+	- <call>getAllFlipkartOffers</call>
 
 	//Default messages by user will be handled by the random topic outside
 	+ *
