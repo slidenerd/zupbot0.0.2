@@ -111,25 +111,37 @@ flipkart.paginator = function (session, offers) {
     if ((end - start) === 0) {
         page = {
             triggerName: flipkart.triggers.none,
-            offers: []
+            offers: [],
+            start: 0,
+            end: 0,
+            count: offers.length
         }
     }
     else if ((end - start) > 0 && start === 0) {
         page = {
             triggerName: flipkart.triggers.first,
-            offers: offers.slice(start, end)
+            offers: offers.slice(start, end),
+            start: start,
+            end: end,
+            count: offers.length
         }
     }
     else if ((end - start) > 0) {
         page = {
             triggerName: flipkart.triggers.subsequent,
-            offers: offers.slice(start, end)
+            offers: offers.slice(start, end),
+            start: start,
+            end: end,
+            count: offers.length
         }
     }
     else {
         page = {
             triggerName: flipkart.triggers.done,
-            offers: []
+            offers: [],
+            start: 0,
+            end: 0,
+            count: offers.length
         }
     }
     session.userData.user.flipkart.page = end
