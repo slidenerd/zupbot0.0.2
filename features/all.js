@@ -65,7 +65,6 @@ all.flipkart.subroutine = function (rs, args) {
             .catch((error) => {
                 reject({ type: 'error', data: error });
             })
-
     })
 }
 
