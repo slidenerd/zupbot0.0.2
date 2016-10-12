@@ -466,7 +466,7 @@ function handleSpecialReplies(session, response) {
     let latitude = brain.get(session.message.user.id, 'latitude');
     let longitude = brain.get(session.message.user.id, 'longitude');
     let destination = brain.get(session.message.user.id, 'cabdestination')
-    let url = encodeURI('https://zup.chat/api/ride/book?lat=' + latitude + '&long=' + longitude + '&drop=' + destination);
+    let url = encodeURI('https://zup.chat/api/ride?lat=' + latitude + '&long=' + longitude + '&drop=' + destination);
     session.send(url)
     platforms.getWebViewButton(session, response.data, url, 'Your Cab', 'compact');
   }
