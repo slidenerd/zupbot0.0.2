@@ -35,6 +35,29 @@ ride.getRideEstimate = function(from, to, res) {
     geocoder.geocode(from, geoCallback);
 }
 
+ride.getRideEstimateSourceDestination = function(fromlat, fromlng, to, res) {
+    var callback = function(data) {
+        res.render('map/index', data);
+    }
+    var option = 0;
+    var args = new Object();
+    args.lat = res[0].latitude;
+    args.long = res[0].longitude;
+
+    var geoCallback = function(err, res) {
+        if(err) {
+            //TODO:
+            console.log("Error : " + err);
+        } else {
+            args.droplat = res[0].latitude;
+            args.droplong = res[0].longitude;
+            ride.getRideEstimateCoordinates(callback, args);
+        }
+    };
+    geocoder.geocode(from, geoCallback);
+}
+
+
 ride.getRideEstimateCoordinates = function(callback, args) {
     var data = {
         location : args 
