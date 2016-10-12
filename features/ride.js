@@ -6,14 +6,14 @@ const geocoder = require('./geocoder');
 var ride = {
     'uber': uber
 };
-ride.getRideEstimate = function (from, to, res) {
-    var callback = function (data) {
+ride.getRideEstimate = function(from, to, res) {
+    var callback = function(data) {
         res.render('map/index', data);
     }
     var option = 0;
     var args = new Object();
-    var geoCallback = function (err, res) {
-        if (err) {
+    var geoCallback = function(err, res) {
+        if(err) {
             //TODO:
             console.log("Error : " + err);
         } else {
@@ -23,20 +23,20 @@ ride.getRideEstimate = function (from, to, res) {
                     args.long = res[0].longitude;
                     option++;
                     geocoder.geocode(to, geoCallback);
-                    break;
+                break;
                 case 1:
                     args.droplat = res[0].latitude;
                     args.droplong = res[0].longitude;
                     ride.getRideEstimateCoordinates(callback, args);
-                    break;
+                break;    
             }
         }
     };
     geocoder.geocode(from, geoCallback);
 }
 
-ride.getRideEstimateSourceDestination = function (fromlat, fromlng, to, res) {
-    var callback = function (data) {
+ride.getRideEstimateSourceDestination = function(fromlat, fromlng, to, res) {
+    var callback = function(data) {
         res.render('map/index', data);
     }
     var option = 0;
@@ -45,8 +45,8 @@ ride.getRideEstimateSourceDestination = function (fromlat, fromlng, to, res) {
     args.long = fromlng;
 
 
-    var geoCallback = function (err, res) {
-        if (err) {
+    var geoCallback = function(err, res) {
+        if(err) {
             //TODO:
             console.log("Error : " + err);
         } else {
@@ -59,53 +59,53 @@ ride.getRideEstimateSourceDestination = function (fromlat, fromlng, to, res) {
 }
 
 
-ride.getRideEstimateCoordinates = function (callback, args) {
+ride.getRideEstimateCoordinates = function(callback, args) {
     var data = {
-        location: args
+        location : args 
     };
     var uberCallback = (resObj) => {
         delete resObj.done;
-        data.uber = resObj;
-        if (data.hasOwnProperty("ola")) {
-            console.log("Calling from uber callback");
-            callback(data);
-        }
-    }
+            data.uber = resObj;
+            if(data.hasOwnProperty("ola")) {
+                console.log("Calling from uber callback");
+                callback(data);
+            }
+        }        
 
     uber.getRideEstimateCoordinates(uberCallback, args);
-    ola.getRideEstimateCoordinates(
+    ola.getRideEstimateCoordinates( 
         (resObj) => {
             data.ola = resObj;
-            if (data.hasOwnProperty("uber")) {
+            if(data.hasOwnProperty("uber")) {
                 console.log("Calling from Ola callback");
                 callback(data);
             }
         }
-        , args);
+    , args);
 }
 
-ride.bookRide = function (req, res) {
+ride.bookRide = function(req, res) {
     var query;
-    if (req.query.provider == undefined) {
+    if(req.query.provider == undefined) {
         query = req.session.uber;
     } else {
         query = req.query;
     }
-    if (query.provider == 'uber') {
-        if (req.session.uberToken === undefined) {
+    if(query.provider == 'uber') {
+        if(req.session.uberToken === undefined) {
             req.session.uber = req.query;
-            uber.login(req, res);
+            uber.login(req, res);            
         } else {
             console.log("Found access code, booking ride");
             uber.bookRide(req, (body) => {
                 res.redirect(body.map);
                 // res.end(JSON.stringify(body));
-            }, query);
+            }, query);            
         }
     } else {
         ola.bookRide((body) => {
             res.end(JSON.stringify(body));
-        }, req.query);
+        }, req.query);            
     }
 }
 
