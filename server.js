@@ -248,7 +248,7 @@ app.get('/auth/pinterest/callback', passport.authorize('pinterest', { failureRed
 app.post('/hooks/ola', ola.webhook)
 
 app.get('/api/ride', function (req, res) {
-  ride.getRideEstimate(req.query.pickup, req.query.drop, res);
+  ride.getRideEstimateSourceDestination(req.query.lat, req.query.long, req.query.drop, res);
 });
 
 app.get('/api/ride/book', function (req, res) {
@@ -380,7 +380,7 @@ function handleGeolocation(session) {
     brain.set(session.message.user.id, 'latitude', geolocation.lat)
     brain.set(session.message.user.id, 'longitude', geolocation.lon)
   }
-  brain.reply(session.message.user.id, 'jshandlegeolocation')
+  brain.reply(session.message.user.id, 'int handlegeolocation')
     .then((response) => {
       session.send(response);
     })
@@ -460,7 +460,14 @@ function handleSpecialReplies(session, response) {
     }
   }
   else if (response.type === 'location') {
-    platforms.facebook.askLocation(session, response.data)
+    platforms.askGeolocation(session, response.data)
+  }
+  else if (response.type === 'cab') {
+    let latitude = brain.get(session.message.user.id, 'latitude');
+    let longitude = brain.get(session.message.user.id, 'longitude');
+    let destination = brain.get(session.message.user.id, 'cabdestination')
+    let url = encodeURI('https://zup.chat/api/ride/book?lat=' + latitude + '&long=' + longitude + '&drop=' + destination);
+    platforms.getWebViewButton(session, response.data, url, 'Your Cab', 'compact');
   }
   else {
     session.send(response);

@@ -46,6 +46,7 @@ platforms.askGeolocation = function (session, message) {
     const channel = session.message.address.channelId;
     switch (channel) {
         case platforms.channels.emulator:
+            session.send(message);
             break;
         case platforms.channels.facebook:
             platforms.facebook.askGeolocation(session, message);

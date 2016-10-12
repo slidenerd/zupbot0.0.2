@@ -21,11 +21,8 @@ const all = {
     flipkart: {
         name: 'getAllFlipkartOffers'
     },
-    ola: {
-        name: 'ola'
-    },
-    uber: {
-        name: 'uber'
+    ride: {
+        name: 'ride'
     },
     skyscanner: {
         name: 'skyscanner'
@@ -72,7 +69,7 @@ all.flipkart.subroutine = function (rs, args) {
 
 all.location.subroutine = function (rs, args) {
     return new rs.Promise((resolve, reject) => {
-        rs.replyAsync(rs.currentUser(), 'jsasklocation', all.this)
+        rs.replyAsync(rs.currentUser(), 'int asklocation', all.this)
             .then((reply) => {
                 reject({ type: 'location', data: reply })
             })
@@ -82,33 +79,16 @@ all.location.subroutine = function (rs, args) {
     })
 }
 
-all.ola.subroutine = function (rs, args) {
+all.ride.subroutine = function (rs, args) {
     return new rs.Promise((resolve, reject) => {
-        resolve('booking a cab for you from mumbai to thane')
-    })
-}
 
-all.uber.subroutine = function (rs, args) {
-    return new rs.Promise((resolve, reject) => {
-        resolve('booking a cab for you from tirupur to coimbatore')
+        reject({ type: 'cab', data: 'Here is your cab' })
     })
 }
 
 all.skyscanner.subroutine = function () {
     return new rs.Promise((resolve, reject) => {
-        let lat = 19, lon = 72;
-        skyscanner.execute(lat, lon)
-            .then((report) => {
-                rs.setUserlet(rs.currentUser(), 'location', 'your place')
-                rs.setUserlets(rs.currentUser(), report)
-                return rs.replyAsync(rs.currentUser(), 'jsweather', all.this)
-            })
-            .then((reply) => {
-                resolve(reply)
-            })
-            .catch((error) => {
-                reject(error);
-            })
+        resolve('getting your flight')
     })
 }
 

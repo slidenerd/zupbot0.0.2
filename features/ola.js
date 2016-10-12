@@ -9,7 +9,7 @@ const ola = {
 
 const headers = {
     'Accept': 'application/json',
-    'X-APP-TOKEN': ola.apiToken
+    'X-APP-TOKEN': ola.apiToken 
 };
 
 ola.webhook = function (req, res) {
@@ -72,7 +72,7 @@ ola.getAvailabilityByCoordinates = function (callback, args) {
             callback(error, response, body);
             return;
         }
-        if (response.statusCode == 200) {
+        if(response.statusCode == 200) {
         } else {
             console.log(response.statusCode);
             console.log(body);
@@ -95,7 +95,7 @@ ola.getRideEstimateCoordinates = function (callback, args) {
             console.log(error);
             return;
         }
-        if (response.statusCode == 200) {
+        if (response.statusCode == 200 && body.ride_estimate) {
             for (var i = 0; i < body.ride_estimate.length; i++) {
                 var obj = new Object();
                 obj.display_name = body.ride_estimate[i].category;
@@ -134,7 +134,6 @@ ola.bookRide = function (callback, args) {
         'pickup_mode': 'NOW',
         'product_id': args.product_id
     }
-    console.log(body);
     var options = {
         url: ola.endPoint + 'bookings/create',
         headers: headers,
@@ -142,7 +141,6 @@ ola.bookRide = function (callback, args) {
         json: true
     }
     request.post(options, (error, response, body) => {
-        console.log(body);
         callback(body);
     });
 }
