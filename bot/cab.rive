@@ -1,4 +1,5 @@
-! array cabwords = cab taxi ola uber
+! array cabwords = cab taxi
+! array cabservices = ola uber
 
 //NO SOURCE NO DESTINATION
 //cabwords
@@ -9,16 +10,23 @@
 //NO SOURCE NO DESTINATION
 
 + [*] (@cabwords) [*] {weight=996}
-* <star> == ola => {@int cabtaxisource}{topic=bookcab}<set cabprovider=ola>
-* <star> == uber => {@int cabtaxisource}{topic=bookcab}<set cabprovider=uber>
-- {@int cabtaxisource}{topic=bookcab}
+- {@int bookcabsource}{topic=bookcab}
+
++ [*] (@cabservices) [*] {weight=996}
+- {@int bookcabsource}<set cabprovider=<star>>{topic=bookcab}
+
++ [*] (@cabwords) [*] (@cabservices) [*] {weight=996}
+- {@int bookcabsource}<set cabprovider=<star2>>{topic=bookcab}
+
++ [*] (@cabservices) [*] (@cabwords) [*] {weight=996}
+- {@int bookcabsource}<set cabprovider=<star1>>{topic=bookcab}
 
 > topic bookcab
 
     + int asklocation
     - Can you please share your location?
 
-    + int cabtaxisource
+    + int bookcabsource
     - <call>askGeolocation</call>
 
     + int handlegeolocation
