@@ -430,7 +430,7 @@ function reply(session) {
       session.send(response);
     })
     .catch((response) => {
-      console.log('brain.reply has special case or error ' + response)
+      
       handleSpecialReplies(session, response)
     })
 }
@@ -438,12 +438,15 @@ function reply(session) {
 function handleSpecialReplies(session, response) {
   if (response && response.type === 'carousel') {
     // carousel.sendFlipkartCarousel(session, brain, response.data, response.filters)
+    console.log('brain.reply has special case carousel')
     carousel.handleResponse(brain, session, response)
   }
   else if (response.type === 'location') {
+    console.log('brain.reply has special ask geolocation')
     platforms.askGeolocation(session, response.data)
   }
   else if (response.type === 'cab') {
+    console.log('brain.reply has special case cab')
     let latitude = brain.get(session.message.user.id, 'latitude');
     let longitude = brain.get(session.message.user.id, 'longitude');
     let destination = brain.get(session.message.user.id, 'cabdestination')
@@ -452,6 +455,7 @@ function handleSpecialReplies(session, response) {
     // brain.set(session.message.user.id, 'topic', 'random');
   }
   else {
+    console.log('brain.reply has error')
     session.send(response);
   }
 }
