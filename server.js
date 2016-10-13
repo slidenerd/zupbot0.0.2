@@ -382,6 +382,7 @@ function handleGeolocation(session) {
     brain.set(session.message.user.id, 'longitude', geolocation.lon)
     brain.reply(session.message.user.id, 'int handlegeolocation')
       .then((response) => {
+        console.log('handleGeolocation response ' + response)
         session.send(response);
       })
       .catch((error) => {
