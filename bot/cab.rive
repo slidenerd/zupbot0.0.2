@@ -18,21 +18,10 @@
     + int asklocation
     - Can you please share your location?
 
-    + [*] at *
-    % can you please share your location
-    - Where would you like to go?
-
-    + *
-    % can you please share your location
-    - Where would you like to go?
-
     + int cabtaxisource
     - <call>askGeolocation</call>
 
     + int handlegeolocation
-    - Where would you like to go?
-
-    + int cabtaxidestination
     - Where would you like to go?
 
     + [*] to *
@@ -43,18 +32,8 @@
     % where would you like to go
     - You wanna go to <star>? <set cabdestination=<star>>{@int cabtaxiget}
 
-    + int cabtaxiprovider
-    - Which one do you prefer? Ola or Uber?
-    - Whats it gonna be? Ola or Uber?
-    - Ola or Uber?
-
     + int cabtaxiget
-    - Gotcha <call>ride</call>
-
-    + int yourcab
-    - Here's your ride! Have a smooth one
-    - Your ride's headed for you right here! Enjoy
-    - There you go!
+    - <call>ride</call>
 
     + *
     - <@>{topic=random}
