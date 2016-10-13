@@ -367,9 +367,11 @@ function onMessage(session) {
   console.log('This user is running our bot the subsequent time')
   userController.addBotUser(session);
   if (platforms.isGeolocation(session)) {
+    console.log('is Geolocation called')
     handleGeolocation(session)
   }
   else {
+    console.log('onMessage called for ' + session.message.text)
     reply(session)
   }
 }
@@ -445,7 +447,7 @@ function handleSpecialReplies(session, response) {
     let destination = brain.get(session.message.user.id, 'cabdestination')
     let url = encodeURI('https://zup.chat/api/ride?lat=' + latitude + '&long=' + longitude + '&drop=' + destination);
     platforms.getWebViewButton(session, response.data, url, 'Your Cab', 'tall');
-    brain.set(session.message.user.id, 'topic', 'random');
+    // brain.set(session.message.user.id, 'topic', 'random');
   }
   else {
     session.send(response);
