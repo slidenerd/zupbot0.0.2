@@ -41,7 +41,7 @@
     - You wanna go to <star>? <set cabdestination=<star>>{@int cabtaxiget}
 
     + int cabtaxiget
-    - <call>ride</call>
+    - DONE
 
     + *
     - <@>{topic=random}
