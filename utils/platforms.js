@@ -187,13 +187,16 @@ platforms.facebook.getWebViewButton = function (webView) {
 platforms.facebook.isGeolocation = function (session) {
     //Get the entities sent by the user if any
     let entities = session.message.entities;
-    return entities
+    if (entities
         && entities.length
         && entities[0]
         && entities[0].geo
         && entities[0].geo.latitude
         && entities[0].geo.longitude
-        && entities[0].type.toLowerCase() === 'place'
+        && entities[0].type.toLowerCase() === 'place') {
+        return true;
+    }
+    return false;
 }
 
 // Calls the Facebook graph api to change letious bot settings

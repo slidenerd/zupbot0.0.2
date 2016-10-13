@@ -8,8 +8,9 @@ const carousel = {}
 let timeout;
 
 carousel.handleResponse = function (brain, session, response) {
-    if (brain.getTopic(session.message.user.id) === constants.KEY_OFFERS) {
-        carousel.handleFlipkartResponse(session, response);
+    let topic = brain.getTopic(session.message.user.id) 
+    if (topic === constants.KEY_OFFERS) {
+        carousel.handleFlipkartResponse(session, brain, response);
     }
 }
 
