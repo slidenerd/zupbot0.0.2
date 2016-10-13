@@ -409,9 +409,9 @@ function reply(session) {
   const userId = session.message.user.id
   const text = preProcessReply(session);
   brain.reply(userId, text)
-    .then((response) => {
-      console.log('brain.reply has response ' + response)
-      session.send(response);
+    .then((reply) => {
+      console.log('brain.reply has response ' + reply)
+      session.send(reply);
     })
     .catch((response) => {
       handleSpecialReplies(session, response)
