@@ -9,108 +9,73 @@
 //NO SOURCE NO DESTINATION
 
 + [*] (@cabwords) [*] {weight=996}
-* <star> == ola => {@cabtaxisource}{topic=bookcab}<set cabprovider=ola>
-* <star> == uber => {@cabtaxisource}{topic=bookcab}<set cabprovider=uber>
-- {@cabtaxisource}{topic=bookcab}
-
-//SOURCE but not DESTINATION
-
-+ [*] (@cabwords) [*] (from|at) *{weight=996}
-* <star1> == ola => {@getcabfrom <star3>}<set cabprovider=ola>
-* <star1> == uber => {@getcabfrom <star3>}<set cabprovider=uber>
-- Ok, so you want a cab from <star3> {@cabtaxidestination}{topic=bookcab}
-
-+ [*] (from|at) * [*] (@cabwords) [*] {weight=996}
-* <star3> == ola => {@getcabfrom <star3>}<set cabprovider=ola>
-* <star3> == uber => {@getcabfrom <star3>}<set cabprovider=uber>
-- Ok, so you want a cab from <star3> {@cabtaxidestination}{topic=bookcab}
+* <star> == ola => {@int cabtaxisource}{topic=bookcab}<set cabprovider=ola>
+* <star> == uber => {@int cabtaxisource}{topic=bookcab}<set cabprovider=uber>
+- {@int cabtaxisource}{topic=bookcab}
 
 //DESTINATION but no SOURCE
 
 + [*] (@cabwords) [*] (to reach|to) *{weight=996}
-* <star1> == ola => {@getcabto <star3>}<set cabprovider=ola>
-* <star1> == uber => {@getcabto <star3>}<set cabprovider=uber>
-- Ok so you want a cab to reach <star3> {@cabtaxisource}{topic=bookcab}
+* <star1> == ola => {@int getcabto <star3>}<set cabprovider=ola>
+* <star1> == uber => {@int getcabto <star3>}<set cabprovider=uber>
+- Ok so you want a cab to reach <star3> {@int cabtaxisource}{topic=bookcab}
 
 + [*] (go to|reach) * [*] (@cabwords) [*] {weight=996}
-* <star3> == ola => {@getcabto <star2>}<set cabprovider=ola>
-* <star3> == uber => {@getcabto <star2>}<set cabprovider=uber>
-- Ok so you want a cab to reach <star2> {@cabtaxisource}{topic=bookcab}
+* <star3> == ola => {@int getcabto <star2>}<set cabprovider=ola>
+* <star3> == uber => {@int getcabto <star2>}<set cabprovider=uber>
+- Ok so you want a cab to reach <star2> {@int cabtaxisource}{topic=bookcab}
 
-//DESTINATION and SOURCE
++ int getcabto *{weight=996}
+- Ok so you want an <get cabprovider> cab to reach <star> {@int cabtaxisource}{topic=bookcab}
+- Sure, I guess you want an <get cabprovider> cab to reach <star> {@int cabtaxisource}{topic=bookcab}
 
-+ [*] (@cabwords) [*] (from|at) * (to reach|to go to|to) *{weight=996}
-* <star1> == ola => {@cabtaxiget}{topic=bookcab}<set cabprovider=ola>
-* <star1> == uber => {@cabtaxiget}{topic=bookcab}<set cabprovider=uber>
-- {@cabtaxiget}{topic=bookcab}
++ int getcabfrom *{weight=996}
+- Ok so you want an <get cabprovider> cab to from <star> {@int cabtaxidestination}{topic=bookcab}
+- Sure, I guess you want an <get cabprovider> cab from <star> {@int cabtaxidestination}{topic=bookcab}
 
-+ [*] (@cabwords) [*] (to reach|to go to|to) * (from|at) *{weight=996}
-* <star1> == ola => {@cabtaxiget}{topic=bookcab}<set cabprovider=ola>
-* <star1> == uber => {@cabtaxiget}{topic=bookcab}<set cabprovider=uber>
-- {@cabtaxiget}{topic=bookcab}
-
-+ [*] (from|at) * [*] (@cabwords) [*] (to reach|to go to|to) *{weight=996}
-* <star3> == ola => {@getcabfromto <star2> <star5>}<set cabprovider=ola>
-* <star3> == uber => {@getcabfromto <star2> <star5>}<set cabprovider=uber>
-- Sure, I guess you are at <star2> and you want a cab to go to<star5>{@cabtaxiget}{topic=bookcab}
-
-+ [*] (from|at) * [*] (to reach|to go to|to) * [*] (@cabwords) [*]{weight=996}
-* <star5> == ola => {@getcabfromto <star2> <star4>}<set cabprovider=ola>
-* <star5> == uber => {@getcabfromto <star2> <star4>}<set cabprovider=uber>
-- Sure, I guess you are at <star2> and you want a cab to go to<star4>{@cabtaxiget}{topic=bookcab}
-
-+ [*] (to reach|to) * [*] (@cabwords) [*] (from|at) *{weight=996}
-* <star3> == ola => {@getcabfromto <star5> <star2>}<set cabprovider=ola>
-* <star3> == uber => {@getcabfromto <star5> <star2>}<set cabprovider=uber>
-- Sure, I guess you are at <star5> and you want a cab to go to<star2>{@cabtaxiget}{topic=bookcab}
-
-+ getcabto *{weight=996}
-- Ok so you want an <get cabprovider> cab to reach <star> {@cabtaxisource}{topic=bookcab}
-- Sure, I guess you want an <get cabprovider> cab to reach <star> {@cabtaxisource}{topic=bookcab}
-
-+ getcabfrom *{weight=996}
-- Ok so you want an <get cabprovider> cab to from <star> {@cabtaxisource}{topic=bookcab}
-- Sure, I guess you want an <get cabprovider> cab from <star> {@cabtaxisource}{topic=bookcab}
-
-+ getcabfromto * *{weight=996}
-- Ok so you want an <get cabprovider> cab from <star1> to reach <star2> {@cabtaxiget}{topic=bookcab}
-- Sure, I guess you want an <get cabprovider> cab from <star1> to go to <star2> {@cabtaxiget}{topic=bookcab}
++ int getcabfromto * *{weight=996}
+- Ok so you want an <get cabprovider> cab from <star1> to reach <star2> {@int cabtaxiget}{topic=bookcab}
+- Sure, I guess you want an <get cabprovider> cab from <star1> to go to <star2> {@int cabtaxiget}{topic=bookcab}
 
 > topic bookcab
 
-    + jsasklocation
+    + int asklocation
     - Can you please share your location?
-    - Yo, mind sharing your location so that I can get your cab?
-    - Would you mind sharing your location for the cab to arrive? 
 
-    + cabtaxisource
+    + *
+    % can you please share your location
+    - {@int cabtaxidestination}
+
+    + [*] at *
+    % can you please share your location
+    - {@int cabtaxidestination}
+
+    + int cabtaxisource
     - <call>askGeolocation</call>
 
-    + cabtaxidestination
+    + int cabtaxidestination
     - Where would you like to go?
 
     + *
     % where would you like to go
-    - Gotcha
+    - <set cabdestination=<star>>{@int cabtaxiget}
 
-    + [*] to *
-    % where would you like to go
-    - Gotcha
+    + [*] (to go to|to|reach) *
+    % where would you like to go{weight=2}
+    - <set cabdestination=<star2>>{@int cabtaxiget}
 
-    + [*] reach *
-    % where would you like to go
-    - Gotcha
-
-    + cabtaxiserviceprovider
+    + int cabtaxiprovider
     - Which one do you prefer? Ola or Uber?
     - Whats it gonna be? Ola or Uber?
     - Ola or Uber?
 
-    + cabtaxiget
-    - getting now
+    + int cabtaxiget
+    - <call>ride</call>
 
-    + jshandlegeolocation
-    @ cabtaxidestination
+    + int yourcab
+    - Here's your ride! Have a smooth one
+    - Your ride's headed for you right here! Enjoy
+    - There you go!
 
     + *
     - <@>{topic=random}

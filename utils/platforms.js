@@ -46,6 +46,7 @@ platforms.askGeolocation = function (session, message) {
     const channel = session.message.address.channelId;
     switch (channel) {
         case platforms.channels.emulator:
+            session.send(message);
             break;
         case platforms.channels.facebook:
             platforms.facebook.askGeolocation(session, message);
@@ -111,7 +112,7 @@ platforms.getWebViewButton = function (session, text, url, urlTitle, webViewRati
         case platforms.channels.emulator:
             break;
         case platforms.channels.facebook:
-            webView = facebookTemplates.getWebViewButton(session.message.user.id, text, url, urlTitle, webViewRatio)
+            webView = facebookTemplates.getWebViewButtonTemplate(session.message.user.id, text, url, urlTitle, webViewRatio)
             platforms.facebook.getWebViewButton(webView)
             break;
         case platforms.channels.skype:

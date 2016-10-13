@@ -111,8 +111,3 @@ ride.bookRide = function(req, res) {
 
 module.exports = ride
 
-// function test() {
-//     ride.getRideEstimateSourceDestination('12.9716', '77.5946', 'shivaji nagar, bangalore')
-// }
-// test();
-
