@@ -371,7 +371,6 @@ function onMessage(session) {
     handleGeolocation(session)
   }
   else {
-    console.log('onMessage called for ' + session.message.text)
     reply(session)
   }
 }
@@ -424,6 +423,7 @@ function preProcessReply(text) {
 function reply(session) {
   const userId = session.message.user.id
   const text = preProcessReply(session.message.text);
+  console.log('brain.reply called for ' + session.message.text)
   brain.reply(userId, text)
     .then((response) => {
       session.send(response);
