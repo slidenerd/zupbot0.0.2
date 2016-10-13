@@ -424,12 +424,13 @@ function preProcessReply(text) {
 function reply(session) {
   const userId = session.message.user.id
   const text = preProcessReply(session.message.text);
-  console.log('brain.reply called for ' + session.message.text)
   brain.reply(userId, text)
     .then((response) => {
+      console.log('brain.reply has response ' + response)
       session.send(response);
     })
     .catch((response) => {
+      console.log('brain.reply has special case or error ' + response)
       handleSpecialReplies(session, response)
     })
 }
