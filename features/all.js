@@ -76,8 +76,7 @@ all.location.subroutine = function (rs, args) {
 
 all.ride.subroutine = function (rs, args) {
     return new rs.Promise((resolve, reject) => {
-        let reply = rs.reply(rs.currentUser(), 'int yourcab', all.this)
-        reject({ type: 'cab', data: reply })
+        reject({ type: 'cab', data: 'Here\'s your ride! Have a smooth one' })
     })
 }
 
