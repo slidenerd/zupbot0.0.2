@@ -69,20 +69,15 @@ all.flipkart.subroutine = function (rs, args) {
 
 all.location.subroutine = function (rs, args) {
     return new rs.Promise((resolve, reject) => {
-        rs.replyAsync(rs.currentUser(), 'int asklocation', all.this)
-            .then((reply) => {
-                reject({ type: 'location', data: reply })
-            })
-            .catch((error) => {
-                reject(error);
-            })
+        let reply = rs.reply(rs.currentUser(), 'int asklocation', all.this);
+        reject({ type: 'location', data: reply })
     })
 }
 
 all.ride.subroutine = function (rs, args) {
     return new rs.Promise((resolve, reject) => {
-
-        reject({ type: 'cab', data: 'Here is your cab' })
+        let reply = rs.reply(rs.currentUser(), 'int yourcab', all.this)
+        reject({ type: 'cab', data: reply })
     })
 }
 
