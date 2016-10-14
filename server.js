@@ -437,7 +437,7 @@ function handleSpecialReplies(session, response) {
   if (response && response.type === 'carousel') {
     // carousel.sendFlipkartCarousel(session, brain, response.data, response.filters)
     console.log('brain.reply has special case carousel')
-    carousel.handleResponse(brain, session, response.data)
+    carousel.handleResponse(brain, session, response)
   }
   else if (response.type === 'location') {
     console.log('brain.reply has special ask geolocation')
