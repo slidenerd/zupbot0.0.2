@@ -12,7 +12,8 @@ const uberObj = new Uber({
     client_id: '8exI8gJATHVUDQhClYVezEfFKFN_Pjpi',
     client_secret: 'tgWo_lU-lmYGXbWEaWLRka_kotJFK6lgOzAsawJN',
     server_token: uber.accessToken,
-    redirect_uri: 'http://localhost:3000/auth/uber/callback',
+    // redirect_uri: 'http://localhost:3000/auth/uber/callback',
+    redirect_uri: 'https://zup.chat/auth/uber/callback',
     name: 'ChatBot-vkslabs',
     language: 'en_US', // optional, defaults to en_US
     sandbox: true // optional, defaults to false

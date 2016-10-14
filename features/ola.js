@@ -6,7 +6,8 @@ const ola = {
     apiToken: '3882a2d3f13248b78bc31186dfeab249',
     endPoint: 'http://sandbox-t.olacabs.com/v1/',
     client_id: 'ODYxMDgyNDktNGU4Yy00ZWU3LTlhNTctODRhYmE5NWY3YWFj',
-    redirect_uri: 'http://localhost/api/ride/ola/callback',
+    // redirect_uri: 'http://localhost/api/ride/ola/callback',
+    redirect_uri: 'https://zup.chat/api/ride/ola/callback',
     auth_url: 'http://sandbox-t.olacabs.com/oauth2/authorize'
 }
 

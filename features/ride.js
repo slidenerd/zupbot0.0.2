@@ -178,4 +178,3 @@ ride.bookRide = function(req, res) {
 }
 
 module.exports = ride
-

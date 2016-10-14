@@ -31,13 +31,14 @@
     + int handlegeolocation
     - Where would you like to go?
 
+    //While calling @cabtaxiget, if you add a response before it, modify server.js reply method accordingly
     + [*] (to go to|go to|reach|to) *
     % where would you like to go
-    - {@int cabtaxiget}
+    - <set cabdestination=<star2>>{@int cabtaxiget}
 
     + *
     % where would you like to go
-    - {@int cabtaxiget}
+    - <set cabdestination=<star>>{@int cabtaxiget}
 
     + int cabtaxiget
     - <call>ride</call>
