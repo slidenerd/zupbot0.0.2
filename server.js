@@ -399,7 +399,7 @@ function preProcessReply(session) {
     brain.set(session.message.user.id, 'longitude', geolocation.lon)
     return 'int handlegeolocation'
   }
-  else{
+  else {
     return text
   }
 }
@@ -410,7 +410,17 @@ function reply(session) {
   brain.reply(userId, text)
     .then((reply) => {
       console.log('brain.reply has response ' + reply)
-      session.send(reply);
+      if (reply === 'int bookcab') {
+        console.log('brain.reply has special case cab')
+        let latitude = brain.get(session.message.user.id, 'latitude');
+        let longitude = brain.get(session.message.user.id, 'longitude');
+        let destination = brain.get(session.message.user.id, 'cabdestination')
+        let url = encodeURI('https://zup.chat/api/ride?lat=' + latitude + '&long=' + longitude + '&drop=' + destination);
+        platforms.getWebViewButton(session, response.data, url, 'Your Cab', 'tall');
+      }
+      else {
+        session.send(reply);
+      }
     })
     .catch((response) => {
       handleSpecialReplies(session, response)
@@ -426,16 +436,6 @@ function handleSpecialReplies(session, response) {
   else if (response.type === 'location') {
     console.log('brain.reply has special ask geolocation')
     platforms.askGeolocation(session, response.data)
-  }
-  else if (response.type === 'cab') {
-    console.log('brain.reply has special case cab')
-    let latitude = brain.get(session.message.user.id, 'latitude');
-    let longitude = brain.get(session.message.user.id, 'longitude');
-    let destination = brain.get(session.message.user.id, 'cabdestination')
-    let url = encodeURI('https://zup.chat/api/ride?lat=' + latitude + '&long=' + longitude + '&drop=' + destination);
-    session.send('GOT IT')
-    // platforms.getWebViewButton(session, response.data, url, 'Your Cab', 'tall');
-    // brain.set(session.message.user.id, 'topic', 'random');
   }
   else {
     console.log('brain.reply has error')

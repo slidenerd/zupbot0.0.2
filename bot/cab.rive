@@ -10,33 +10,39 @@
 //NO SOURCE NO DESTINATION
 
 + [*] (@cabwords) [*] {weight=996}
-- {@int bookcabsource}
+- {@int bookcabsource}{topic=bookcab}
 
 + [*] (@cabservices) [*] {weight=996}
-- {@int bookcabsource}<set cabprovider=<star>>
+- {@int bookcabsource}<set cabprovider=<star>>{topic=bookcab}
 
 + [*] (@cabwords) [*] (@cabservices) [*] {weight=996}
-- {@int bookcabsource}<set cabprovider=<star2>>
+- {@int bookcabsource}<set cabprovider=<star2>>{topic=bookcab}
 
 + [*] (@cabservices) [*] (@cabwords) [*] {weight=996}
-- {@int bookcabsource}<set cabprovider=<star1>>
+- {@int bookcabsource}<set cabprovider=<star1>>{topic=bookcab}
 
-+ int bookcabsource
-- <call>askGeolocation</call>
+> topic bookcab
+    + int bookcabsource
+    - <call>askGeolocation</call>
 
-+ int asklocation
-- Can you please share your location?
+    + int asklocation
+    - Can you please share your location?
 
-+ int handlegeolocation
-- Where would you like to go?
+    + int handlegeolocation
+    - Where would you like to go?
 
-+ [*] to *
-% where would you like to go
-- You wanna go to <star>? <set cabdestination=<star2>>{@int cabtaxiget}
+    + [*] (to go to|go to|reach|to) *
+    % where would you like to go
+    - {@int cabtaxiget}
 
-+ *
-% where would you like to go
-- You wanna go to <star>? <set cabdestination=<star>>{@int cabtaxiget}
+    + *
+    % where would you like to go
+    - {@int cabtaxiget}
 
-+ int cabtaxiget
-- <call>ride</call>
+    + int cabtaxiget
+    - <call>ride</call>
+
+    + *
+    - <@>{topic=random}
+< topic
+

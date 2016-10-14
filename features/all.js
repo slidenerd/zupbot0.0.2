@@ -76,7 +76,7 @@ all.location.subroutine = function (rs, args) {
 
 all.ride.subroutine = function (rs, args) {
     return new rs.Promise((resolve, reject) => {
-        resolve('cab')
+        resolve('int bookcab')
     })
 }
 
