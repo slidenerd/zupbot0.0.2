@@ -4,7 +4,8 @@ const uber = require('./uber')
 const geocoder = require('./geocoder');
 
 var ride = {
-    'uber': uber
+    'uber': uber,
+    'ola': ola
 };
 
 ride.ride = function(req, res) {
@@ -68,6 +69,32 @@ ride.getRideEstimate = function(from, to, res) {
     geocoder.geocode(from, geoCallback);
 }
 
+ride.authorize = function(modulename, req, res) {
+    if(modulename == 'uber') {
+        console.log("Got Uber Auth token");
+        ride.uber.authorization({
+            authorization_code: req.query.code
+        }, function (err, access_token, refresh_token) {
+            if (err) {
+            console.error(err);
+            } else {
+            // store the user id and associated access token
+            // redirect the user back to your actual app
+                req.session.uberToken = access_token;
+                console.log("Got Uber access token");
+                ride.bookRide(req, res);
+            }
+        });    
+    } else {
+        //Ola
+        ride.authorize(req, res, (access_token) => {
+            req.session.olaToken = access_token;
+            console.log("Got Uber access token");
+            ride.bookRide(req, res);
+        });
+    }
+}
+
 ride.getRideEstimateSourceDestination = function(fromlat, fromlng, to, res) {
     var callback = function(data) {
         res.render('map/index', data);
@@ -76,8 +103,6 @@ ride.getRideEstimateSourceDestination = function(fromlat, fromlng, to, res) {
     var args = new Object();
     args.lat = fromlat;
     args.long = fromlng;
-
-
     var geoCallback = function(err, res) {
         if(err) {
             //TODO:
@@ -136,6 +161,16 @@ ride.bookRide = function(req, res) {
             }, query);            
         }
     } else {
+        if(req.session.olaToken === undefined) {
+            req.session.ola = req.query;
+            ola.login(req, res);            
+        } else {
+            console.log("Found access code, booking ride");
+            uber.bookRide(req, (body) => {
+                res.redirect(body.map);
+                // res.end(JSON.stringify(body));
+            }, query);            
+        }
         ola.bookRide((body) => {
             res.end(JSON.stringify(body));
         }, req.query);            
