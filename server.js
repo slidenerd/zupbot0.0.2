@@ -434,7 +434,6 @@ function reply(session) {
 function handleSpecialReplies(session, response) {
   if (response && response.type === 'carousel') {
     // carousel.sendFlipkartCarousel(session, brain, response.data, response.filters)
-    console.log('brain.reply has special case carousel')
     carousel.handleResponse(session, brain, response)
   }
   else if (response.type === 'location') {
