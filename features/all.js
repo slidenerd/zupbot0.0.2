@@ -76,7 +76,7 @@ all.location.subroutine = function (rs, args) {
 
 all.ride.subroutine = function (rs, args) {
     return new rs.Promise((resolve, reject) => {
-        reject({ type: 'cab', data: 'Here\'s your ride! Have a smooth one' })
+        resolve('cab')
     })
 }
 

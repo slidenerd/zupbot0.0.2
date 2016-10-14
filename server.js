@@ -50,7 +50,6 @@ console.log('%s App Initiated!', chalk.green('✓'));
 
 let
   brain = require('./bot/rive'),
-  timeout;
 /**
  * Create Express server.
  */
