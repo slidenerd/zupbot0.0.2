@@ -33,6 +33,7 @@ dotenv.load({ path: '.env.example' });
 const
   all = require('./features/all'),
   apiController = require('./controllers/api'),
+  brain = require('./bot/rive'),
   builder = require('./core/'),
   contactController = require('./controllers/contact'),
   homeController = require('./controllers/home'),
@@ -48,8 +49,6 @@ const
 
 console.log('%s App Initiated!', chalk.green('✓'));
 
-let
-  brain = require('./bot/rive');
 /**
  * Create Express server.
  */
@@ -379,16 +378,16 @@ function onMessage(session) {
 function preProcessReply(session) {
   let text = session.message.text
   if (text === payloads.FACEBOOK_GET_STARTED) {
-    return 'get started'
+    return 'int get started'
   }
   else if (text === payloads.FACEBOOK_PERSISTENT_MENU_HELP) {
     return 'help'
   }
   else if (text === payloads.FACEBOOK_FLIPKART_SHOW_MORE) {
-    return 'show more'
+    return 'int show more'
   }
   else if (text === payloads.FACEBOOK_FLIPKART_CANCEL) {
-    return 'no'
+    return 'int no'
   }
   else if (platforms.isGeolocation(session)) {
     let geolocation = platforms.getGeolocation(session);
@@ -429,6 +428,9 @@ function handleSpecialReplies(session, response) {
   }
   else if (response.type === 'location') {
     platforms.askGeolocation(session, response.data)
+  }
+  else if (response.type === 'cabProvider') {
+    platforms.sendTextQuickReply(session, response.data, ['Uber', 'Ola'], ['PAYLOAD_PROVIDER_UBER', 'PAYLOAD_PROVIDER_OLA'])
   }
   else {
     session.send(response);

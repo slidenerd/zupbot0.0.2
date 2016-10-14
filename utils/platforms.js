@@ -237,6 +237,21 @@ platforms.sendQuickReply = function (session, quickReplies) {
     }
 }
 
+platforms.sendTextQuickReply = function (session, text, titles, payloads) {
+    const channel = session.message.address.channelId;
+    switch (channel) {
+        case platforms.channels.emulator:
+            break;
+        case platforms.channels.facebook:
+            platforms.facebook.sendTextQuickReply(session, text, titles, payloads)
+            break;
+        case platforms.channels.skype:
+            break;
+        default:
+            break;
+    }
+}
+
 platforms.facebook.sendQuickReply = function (session, quickReplies) {
     let quickReply = {
         recipient: {
@@ -261,4 +276,28 @@ platforms.facebook.sendQuickReply = function (session, quickReplies) {
         });
 }
 
+platforms.facebook.sendTextQuickReply = function (session, text, titles, payloads) {
+    let quickReplies = facebookTemplates.getTextQuickReplies(text, titles, payloads);
+    let json = {
+        recipient: {
+            id: session.message.user.id
+        },
+        "message": quickReplies
+    }
+    request({
+        url: 'https://graph.facebook.com/v2.7/me/messages?access_token=' + endpoints.FACEBOOK_PAGE_ACCESS_TOKEN,
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        form: json
+    },
+        function (error, response, body) {
+            if (!error && response.statusCode == 200) {
+                // Print out the response body
+                console.log(": Updated with quick reply");
+            } else {
+                // TODO: Handle errors
+                console.log(": Failed. Need to handle errors." + error);
+            }
+        });
+}
 module.exports = platforms

@@ -525,7 +525,7 @@
 - What's orange and sounds like a parrot?\nA Carrot.
 - How many tickles does it take to tickle an octopus?\nTen-tickles!
 
-+ get started
++ int get started
 - hi there, {@who are you} {@help}
 - hey there, {@who are you} {@help}
 - hello there, {@who are you} {@help}
