@@ -2,18 +2,20 @@
 const request = require('request')
 const geocoder = require('./geocoder');
 
+/**
+ * https://sandbox-t1.olacabs.com/oauth2/authorize?response_type=token&client_id=NjNmZGNmNjAtOTVkYy00YzAyLTg1MjktZTNjYzBkYzMyZTQ3&redirect_uri=https://zup.chat/api/ride/ola/callback&scope=profile%20booking&state=state123
+ */
 const ola = {
-    apiToken: '3882a2d3f13248b78bc31186dfeab249',
-    endPoint: 'http://sandbox-t.olacabs.com/v1/',
-    client_id: 'ODYxMDgyNDktNGU4Yy00ZWU3LTlhNTctODRhYmE5NWY3YWFj',
-    // redirect_uri: 'http://localhost/api/ride/ola/callback',
+    apiToken: '0c31668dfb814df79c3c43c4d5b337df',
+    endPoint: 'http://sandbox-t1.olacabs.com/v1/',
+    client_id: 'NjNmZGNmNjAtOTVkYy00YzAyLTg1MjktZTNjYzBkYzMyZTQ3',
     redirect_uri: 'https://zup.chat/api/ride/ola/callback',
-    auth_url: 'http://sandbox-t.olacabs.com/oauth2/authorize'
+    auth_url: 'https://sandbox-t1.olacabs.com/oauth2/authorize'
 }
 
 const headers = {
     'Accept': 'application/json',
-    'X-APP-TOKEN': ola.apiToken 
+    'X-APP-TOKEN': ola.apiToken
 };
 
 ola.webhook = function (req, res) {
@@ -76,7 +78,7 @@ ola.getAvailabilityByCoordinates = function (callback, args) {
             callback(error, response, body);
             return;
         }
-        if(response.statusCode == 200) {
+        if (response.statusCode == 200) {
         } else {
             console.log(response.statusCode);
             console.log(body);
@@ -124,18 +126,21 @@ ola.getRideEstimateCoordinates = function (callback, args) {
     })
 }
 
+/**
+ * https://sandbox-t1.olacabs.com/oauth2/authorize?response_type=token&client_id=NjNmZGNmNjAtOTVkYy00YzAyLTg1MjktZTNjYzBkYzMyZTQ3&redirect_uri=https://zup.chat/api/ride/ola/callback&scope=profile%20booking&state=state123
+ */
 // ola.authenticate = function () {
 //     var url = 'http://sandbox-t.olacabs.com/oauth2/authorize?response_type=token&client_id=ODYxMDgyNDktNGU4Yy00ZWU3LTlhNTctODRhYmE5NWY3YWFj
 //&redirect_uri=http://localhost/api/ride/ola/callback&scope=profile%20booking&state=state123'
 // }
 
-ola.authorization = function(req, res) {
+ola.authorization = function (req, res) {
 
 }
 
-ola.login = function(req, res) {
-    var url = ola.auth_url + '?response_type=token&client_id=' + ola.client_id + '&redirect_uri=' + 
-                ola.redirect_uri + '&scope=profile%20booking&state=state123'
+ola.login = function (req, res) {
+    var url = ola.auth_url + '?response_type=token&client_id=' + ola.client_id + '&redirect_uri=' +
+        ola.redirect_uri + '&scope=profile%20booking&state=state123'
     res.redirect(url);
 }
 

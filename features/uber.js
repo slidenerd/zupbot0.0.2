@@ -5,16 +5,16 @@ const Uber = require('node-uber');
 
 const uber = {
     endPoint: 'https://sandbox-api.uber.com/v1/',
-    accessToken: 'f66_z76gV63NmDY1bhl2oNES3r2fYjxGONs3iJeL',
+    accessToken: 'dlQLWx7Rz1SBuqYWbRWoDkADNbm7Ka15cHbu1Zq3',
 }
 
 const uberObj = new Uber({
-    client_id: '8exI8gJATHVUDQhClYVezEfFKFN_Pjpi',
-    client_secret: 'tgWo_lU-lmYGXbWEaWLRka_kotJFK6lgOzAsawJN',
+    client_id: '2D_Wy-fU_jcAXgP8_DT9Oze_xg3nnpfx',
+    client_secret: 'X2_zVVpoigocAk2Cdr44i9XoxQg03Uw3gYwjce8j',
     server_token: uber.accessToken,
     // redirect_uri: 'http://localhost:3000/auth/uber/callback',
     redirect_uri: 'https://zup.chat/auth/uber/callback',
-    name: 'ChatBot-vkslabs',
+    name: 'zup.chat',
     language: 'en_US', // optional, defaults to en_US
     sandbox: true // optional, defaults to false
 });
