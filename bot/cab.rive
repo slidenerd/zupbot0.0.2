@@ -1,4 +1,5 @@
-! array cabwords = cab taxi ola uber
+! array cabwords = cab taxi
+! array cabservices = ola uber
 
 //NO SOURCE NO DESTINATION
 //cabwords
@@ -9,74 +10,33 @@
 //NO SOURCE NO DESTINATION
 
 + [*] (@cabwords) [*] {weight=996}
-* <star> == ola => {@int cabtaxisource}{topic=bookcab}<set cabprovider=ola>
-* <star> == uber => {@int cabtaxisource}{topic=bookcab}<set cabprovider=uber>
-- {@int cabtaxisource}{topic=bookcab}
+- {@int bookcabsource}
 
-//DESTINATION but no SOURCE
++ [*] (@cabservices) [*] {weight=996}
+- {@int bookcabsource}<set cabprovider=<star>>
 
-+ [*] (@cabwords) [*] (to reach|to) *{weight=996}
-* <star1> == ola => {@int getcabto <star3>}<set cabprovider=ola>
-* <star1> == uber => {@int getcabto <star3>}<set cabprovider=uber>
-- Ok so you want a cab to reach <star3> {@int cabtaxisource}{topic=bookcab}
++ [*] (@cabwords) [*] (@cabservices) [*] {weight=996}
+- {@int bookcabsource}<set cabprovider=<star2>>
 
-+ [*] (go to|reach) * [*] (@cabwords) [*] {weight=996}
-* <star3> == ola => {@int getcabto <star2>}<set cabprovider=ola>
-* <star3> == uber => {@int getcabto <star2>}<set cabprovider=uber>
-- Ok so you want a cab to reach <star2> {@int cabtaxisource}{topic=bookcab}
++ [*] (@cabservices) [*] (@cabwords) [*] {weight=996}
+- {@int bookcabsource}<set cabprovider=<star1>>
 
-+ int getcabto *{weight=996}
-- Ok so you want an <get cabprovider> cab to reach <star> {@int cabtaxisource}{topic=bookcab}
-- Sure, I guess you want an <get cabprovider> cab to reach <star> {@int cabtaxisource}{topic=bookcab}
++ int bookcabsource
+- <call>askGeolocation</call>
 
-+ int getcabfrom *{weight=996}
-- Ok so you want an <get cabprovider> cab to from <star> {@int cabtaxidestination}{topic=bookcab}
-- Sure, I guess you want an <get cabprovider> cab from <star> {@int cabtaxidestination}{topic=bookcab}
++ int asklocation
+- Can you please share your location?
 
-+ int getcabfromto * *{weight=996}
-- Ok so you want an <get cabprovider> cab from <star1> to reach <star2> {@int cabtaxiget}{topic=bookcab}
-- Sure, I guess you want an <get cabprovider> cab from <star1> to go to <star2> {@int cabtaxiget}{topic=bookcab}
++ int handlegeolocation
+- Where would you like to go?
 
-> topic bookcab
++ [*] to *
+% where would you like to go
+- You wanna go to <star>? <set cabdestination=<star2>>{@int cabtaxiget}
 
-    + int asklocation
-    - Can you please share your location?
++ *
+% where would you like to go
+- You wanna go to <star>? <set cabdestination=<star>>{@int cabtaxiget}
 
-    + *
-    % can you please share your location
-    - {@int cabtaxidestination}
-
-    + [*] at *
-    % can you please share your location
-    - {@int cabtaxidestination}
-
-    + int cabtaxisource
-    - <call>askGeolocation</call>
-
-    + int cabtaxidestination
-    - Where would you like to go?
-
-    + *
-    % where would you like to go
-    - <set cabdestination=<star>>{@int cabtaxiget}
-
-    + [*] (to go to|to|reach) *
-    % where would you like to go{weight=2}
-    - <set cabdestination=<star2>>{@int cabtaxiget}
-
-    + int cabtaxiprovider
-    - Which one do you prefer? Ola or Uber?
-    - Whats it gonna be? Ola or Uber?
-    - Ola or Uber?
-
-    + int cabtaxiget
-    - <call>ride</call>
-
-    + int yourcab
-    - Here's your ride! Have a smooth one
-    - Your ride's headed for you right here! Enjoy
-    - There you go!
-
-    + *
-    - <@>{topic=random}
-< topic
++ int cabtaxiget
+- <call>ride</call>
