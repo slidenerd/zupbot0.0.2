@@ -49,7 +49,7 @@ const
 console.log('%s App Initiated!', chalk.green('✓'));
 
 let
-  brain = require('./bot/rive'),
+  brain = require('./bot/rive');
 /**
  * Create Express server.
  */
