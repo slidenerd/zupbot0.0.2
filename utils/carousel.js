@@ -11,12 +11,14 @@ carousel.handleResponse = function (session, brain, response) {
     let topic = brain.getTopic(session.message.user.id)
     console.log(topic + ' ' + constants.KEY_OFFERS)
     if (topic === constants.KEY_OFFERS) {
+        console.log('arrived inside the condition ')
         carousel.handleFlipkartResponse(session, brain, response);
     }
 }
 
 carousel.handleFlipkartResponse = function (session, brain, response) {
     // carousel.sendFlipkartCarousel(session, brain, response.data, response.filters)
+    console.log('we are good here')
     let page = flipkart.paginator(session, response.data);
     console.log('got the page ', page)
     brain.set(session.message.user.id, 'flipkartpagestart', page.start + 1)

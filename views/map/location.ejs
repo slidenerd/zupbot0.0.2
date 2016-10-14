@@ -39,6 +39,11 @@
         text-align: center;
         font-weight: 900;
     }
+    .status {
+        color: #939393;
+        font-family: 'Arial', 'Sans-serif';
+        font-size: 12px;
+    }
     .fWidth {
         width: 200px;
     }
@@ -70,7 +75,8 @@
                         <input type="text" id="pickupLocation" value="<%=pickup%>"/>
                     <%} else {%>
                         <input type="text" id="pickupLocation"/>
-                    <%}%>    
+                    <%}%>
+                    <p class="status" id="output"></p>
                 </div>
                 <div class="row top-buffer">
                     <label for="dropLocation">Drop Location:</label>
@@ -95,7 +101,47 @@
             input = /** @type {!HTMLInputElement} */(
                 document.getElementById('dropLocation'));
             autocomplete = new google.maps.places.Autocomplete(input);
+            geocodeLatLng(document.getElementById('pickupLocation').value);
         }
+    function geocodeLatLng(input) {
+        var latlngStr = input.split(',');
+        if(latlngStr.length != 2) {
+            console.log("pickup seems to be address, not doing reverse geocode");
+            return;
+        }
+        
+        var lat, lng;
+        if(latlngStr[0]) {
+            lat = parseFloat(latlngStr[0].trim());
+        }
+        if(latlngStr[1]) {
+            lng = parseFloat(latlngStr[1].trim());
+        }
+        if(isNaN(lat) || isNaN(lng)) {
+            console.log("pickup seems to be address, not doing reverse geocode");
+            return;
+        }
+        var latlng = {lat: lat, lng: lng};
+        var geocoder = new google.maps.Geocoder;
+        var output = document.getElementById('output'); 
+        geocoder.geocode({'location': latlng}, function(results, status) {
+          if (status === 'OK') {
+            if (results[1]) {
+              output.innerHTML = (results[1].formatted_address);
+            } else {
+                output.innerHTML = 'No address found' 
+            }
+          } else {
+           output.innerHTML = 'Geocoder failed due to: ' + status 
+          }
+        });
+      }
+    $('#pickupLocation').on('input',function(e){
+          var val = $('#pickupLocation').val();
+          if(val.length > 3) {
+            geocodeLatLng(val);
+          }  
+    });      
     </script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAdpqTe4-aUVsa8AcxD4WbHDD7lqyrAqzM&libraries=places&callback=initMap"
         async defer></script>
