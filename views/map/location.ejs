@@ -16,6 +16,7 @@
 
         <!-- Font -->
         <link rel='stylesheet prefetch' href='https://fonts.googleapis.com/css?family=Open+Sans'>
+        <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
 
         <!-- Font Awesome -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css">
@@ -36,9 +37,26 @@
         margin: 0 auto;
         margin-top: 20px;
         text-align: center;
+        font-weight: 900;
+    }
+    .fWidth {
+        width: 200px;
     }
     .top-buffer { margin-top:40px; }
 </style>
+<script>
+    function checkPrice(orgValue) {
+        var pickupVal = document.getElementById('pickupLocation');
+        var dropVal = document.getElementById('dropLocation');
+        window.location = '/api/ride/price?pickup=' + pickupVal.value + "&drop=" + dropVal.value;
+    }
+    function clearForm() {
+        var pickup = document.getElementById('pickupLocation');
+        var drop = document.getElementById('dropLocation');
+        pickup.value = "";
+        drop.value = "";
+    }
+</script>
 </head>
 <body>
         <main>
@@ -61,6 +79,10 @@
                     <%} else {%>
                         <input type="text" id="dropLocation"/>
                     <%}%>    
+                </div>
+                <div class="row top-buffer text-center">
+                    <button type="button" class="btn btn-primary fWidth" onclick="checkPrice('<%=pickup%>');">Check Price</button>
+                    <button type="button" class="btn btn-danger fWidth" onclick="clearForm();">Clear</button>
                 </div>
             </div>
         </main>                   

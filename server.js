@@ -115,6 +115,7 @@ app.use((req, res, next) => {
     || req.path === '/hooks/ola'
     || req.path === '/api/ride'
     || req.path === '/api/ride/book'
+    || req.path === '/api/ride/price'
     || req.path === '/auth/uber/callback') {
     next();
   } else {
@@ -247,12 +248,17 @@ app.get('/auth/pinterest/callback', passport.authorize('pinterest', { failureRed
 app.post('/hooks/ola', ola.webhook)
 
 app.get('/api/ride', function (req, res) {
-  ride.getRideEstimateSourceDestination(req.query.lat, req.query.long, req.query.drop, res);
+  ride.ride(req, res);
+});
+
+app.get('/api/ride/price', function (req, res) {
+  ride.price(req, res);
 });
 
 app.get('/api/ride/book', function (req, res) {
   ride.bookRide(req, res);
 });
+
 
 app.get('/auth/uber/callback', function (req, res) {
   console.log("Got Uber Auth token");
