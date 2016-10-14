@@ -6,6 +6,39 @@ const geocoder = require('./geocoder');
 var ride = {
     'uber': uber
 };
+
+ride.ride = function(req, res) {
+  var pickup;
+  console.log(req.query.lat == undefined);
+  if(req.query.lat == undefined) {
+    pickup = req.query.pickup;
+  } else {
+    pickup = req.query.lat + ', ' + req.query.long; 
+  }
+  const data = {
+    pickup: pickup,
+    drop: req.query.drop 
+  }
+  res.render('map/location', data);    
+}
+
+ride.price = function(req, res) {
+    var pickup = req.query.pickup;
+    var address = pickup.split(',');
+    if(address.length == 2) {
+        var lat = parseFloat(address[0]);
+        var long = parseFloat(address[1]);
+        if(isNaN(lat) || isNaN(long)) { 
+            var callback = function(data) {
+                res.render('map/index', data);
+            }
+            ride.getRideEstimateSourceDestination(lat, long, req.query.drop, res);
+            return;
+        }
+    }
+    ride.getRideEstimate(pickup, req.query.drop, res);
+}
+
 ride.getRideEstimate = function(from, to, res) {
     var callback = function(data) {
         res.render('map/index', data);

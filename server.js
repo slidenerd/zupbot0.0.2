@@ -247,7 +247,11 @@ app.get('/auth/pinterest/callback', passport.authorize('pinterest', { failureRed
 app.post('/hooks/ola', ola.webhook)
 
 app.get('/api/ride', function (req, res) {
-  ride.getRideEstimateSourceDestination(req.query.lat, req.query.long, req.query.drop, res);
+  ride.ride(req, res);
+});
+
+app.get('/api/ride/price', function (req, res) {
+  ride.price(req, res);
 });
 
 app.get('/api/ride/book', function (req, res) {
