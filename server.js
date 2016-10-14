@@ -335,7 +335,7 @@ const bot = new builder.UniversalBot(connector);
 
 app.post('/api/messages', connector.listen());
 let dialogVersionOptions = {
-  version: 1.01,
+  version: 2,
   resetCommand: /^reset/i
 };
 bot.use(builder.Middleware.dialogVersion(dialogVersionOptions));
@@ -346,7 +346,7 @@ bot.use(builder.Middleware.dialogVersion(dialogVersionOptions));
 
 //Run this dialog the very first time for a particular user
 bot.use(builder.Middleware.firstRun({
-  version: 1.0,
+  version: 2,
   dialogId: '/firstRun'
 }));
 
