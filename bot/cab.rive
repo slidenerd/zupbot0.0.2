@@ -33,11 +33,11 @@
 
     + [*] (to go to|go to|reach|to) *
     % where would you like to go
-    - {@int cabtaxiget}
+    - <set cabdestination=<star2>>{@int cabtaxiget}
 
     + *
     % where would you like to go
-    - {@int cabtaxiget}
+    - <set cabdestination=<star>>{@int cabtaxiget}
 
     + int cabtaxiget
     - <call>ride</call>
