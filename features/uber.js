@@ -4,26 +4,24 @@ const geocoder = require('./geocoder');
 const Uber = require('node-uber');
 
 const uber = {
-    accessToken: 'f66_z76gV63NmDY1bhl2oNES3r2fYjxGONs3iJeL',
     endPoint: 'https://sandbox-api.uber.com/v1/',
-    sandbox: true
+    accessToken: 'f66_z76gV63NmDY1bhl2oNES3r2fYjxGONs3iJeL',
 }
-
-var headers = {
-    'Accept': 'application/json',
-    'Authorization': 'Token ' + uber.accessToken 
-};
 
 const uberObj = new Uber({
     client_id: '8exI8gJATHVUDQhClYVezEfFKFN_Pjpi',
     client_secret: 'tgWo_lU-lmYGXbWEaWLRka_kotJFK6lgOzAsawJN',
-    server_token: 'f66_z76gV63NmDY1bhl2oNES3r2fYjxGONs3iJeL',
-    redirect_uri: 'http://localhost:3000/auth/uber/callback',
+    server_token: uber.accessToken,
+    redirect_uri: 'https://zup.chat/auth/uber/callback',
     name: 'ChatBot-vkslabs',
     language: 'en_US', // optional, defaults to en_US
-    sandbox: uber.sandbox // optional, defaults to false
+    sandbox: true // optional, defaults to false
 });
 
+const headers = {
+    'Accept': 'application/json',
+    'Authorization': 'Token ' + uber.accessToken 
+};
 
 // var resObj = {};
 // var done = false;
@@ -93,8 +91,9 @@ uber.getRidePriceEstimateCoordinates = function(resObj, callback, args) {
     			obj.distance = price.distance;
     			resObj[price.display_name] = obj;
     		}
-    	}
-
+    	} else {
+            console.log("Something went wrong in getRidePriceEstimateCoordinates " + JSON.stringify(body));
+        }
         if(!resObj.done) {
         	resObj.done = true;
         } else {
@@ -181,7 +180,9 @@ uber.pollRequest = function(req, request_id, callback) {
     }
     request.get(options, (error, response, body) => {
     	uber.handleBookResponse(req, body, request_id, callback);
-    	uber.dummyChangeStatusRequest(req, request_id);
+        if(uberObj.sandbox) {
+        	uber.dummyChangeStatusRequest(req, request_id);
+        }
     });
 }
 

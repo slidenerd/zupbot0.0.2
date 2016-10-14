@@ -116,6 +116,7 @@ app.use((req, res, next) => {
     || req.path === '/api/ride'
     || req.path === '/api/ride/book'
     || req.path === '/api/ride/price'
+    || req.path === '/auth/ola/callback'
     || req.path === '/auth/uber/callback') {
     next();
   } else {
@@ -259,22 +260,12 @@ app.get('/api/ride/book', function (req, res) {
   ride.bookRide(req, res);
 });
 
+app.get('/auth/ola/callback', function (req, res) {
+  ride.ola.authorization(req, res);
+});
 
 app.get('/auth/uber/callback', function (req, res) {
-  console.log("Got Uber Auth token");
-  ride.uber.authorization({
-    authorization_code: req.query.code
-  }, function (err, access_token, refresh_token) {
-    if (err) {
-      console.error(err);
-    } else {
-      // store the user id and associated access token
-      // redirect the user back to your actual app
-      req.session.uberToken = access_token;
-      console.log("Got Uber access token");
-      ride.bookRide(req, res);
-    }
-  });
+  ride.authorize('uber', req, res);
 });
 
 // app.get('/api/list', function(req, res) {
