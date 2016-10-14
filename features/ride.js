@@ -8,9 +8,9 @@ var ride = {
     'ola': ola
 };
 
+
 ride.ride = function(req, res) {
   var pickup;
-  console.log(req.query.lat == undefined);
   if(req.query.lat == undefined) {
     pickup = req.query.pickup;
   } else {
@@ -18,7 +18,8 @@ ride.ride = function(req, res) {
   }
   const data = {
     pickup: pickup,
-    drop: req.query.drop 
+    drop: req.query.drop,
+    provider: req.query.provider
   }
   res.render('map/location', data);    
 }
@@ -30,22 +31,21 @@ ride.price = function(req, res) {
         var lat = parseFloat(address[0]);
         var long = parseFloat(address[1]);
         if(isNaN(lat) || isNaN(long)) { 
-            var callback = function(data) {
-                res.render('map/index', data);
-            }
             ride.getRideEstimateSourceDestination(lat, long, req.query.drop, res);
             return;
         }
     }
-    ride.getRideEstimate(pickup, req.query.drop, res);
+    ride.getRideEstimate(pickup, req.query.drop, req.query.provider, res);
 }
 
-ride.getRideEstimate = function(from, to, res) {
-    var callback = function(data) {
-        res.render('map/index', data);
-    }
+ride.getRideEstimate = function(from, to, provider, res) {
     var option = 0;
     var args = new Object();
+    args.provider = provider;
+    const priceCallback = function(data) {
+        console.log(data);
+        res.render('map/price', data);
+    }
     var geoCallback = function(err, res) {
         if(err) {
             //TODO:
@@ -61,7 +61,7 @@ ride.getRideEstimate = function(from, to, res) {
                 case 1:
                     args.droplat = res[0].latitude;
                     args.droplong = res[0].longitude;
-                    ride.getRideEstimateCoordinates(callback, args);
+                    ride.getRideEstimateCoordinates(priceCallback, args);
                 break;    
             }
         }
@@ -96,9 +96,6 @@ ride.authorize = function(modulename, req, res) {
 }
 
 ride.getRideEstimateSourceDestination = function(fromlat, fromlng, to, res) {
-    var callback = function(data) {
-        res.render('map/index', data);
-    }
     var option = 0;
     var args = new Object();
     args.lat = fromlat;
@@ -110,7 +107,7 @@ ride.getRideEstimateSourceDestination = function(fromlat, fromlng, to, res) {
         } else {
             args.droplat = res[0].latitude;
             args.droplong = res[0].longitude;
-            ride.getRideEstimateCoordinates(callback, args);
+            ride.getRideEstimateCoordinates(priceCallback, args);
         }
     };
     geocoder.geocode(to, geoCallback);
@@ -121,25 +118,33 @@ ride.getRideEstimateCoordinates = function(callback, args) {
     var data = {
         location : args 
     };
-    var uberCallback = (resObj) => {
-        delete resObj.done;
-            data.uber = resObj;
-            if(data.hasOwnProperty("ola")) {
-                console.log("Calling from uber callback");
-                callback(data);
-            }
-        }        
 
-    uber.getRideEstimateCoordinates(uberCallback, args);
-    ola.getRideEstimateCoordinates( 
-        (resObj) => {
-            data.ola = resObj;
-            if(data.hasOwnProperty("uber")) {
-                console.log("Calling from Ola callback");
-                callback(data);
+    var uberEnabled = args.provider != 'ola'
+    var olaEnabled = args.provider != 'uber'
+
+    console.log(uberEnabled + ':' + olaEnabled);
+    if(uberEnabled) {
+        var uberCallback = (resObj) => {
+            delete resObj.done;
+                data.uber = resObj;
+                if(olaEnabled == false || (olaEnabled && data.hasOwnProperty("ola"))) {
+                    console.log("Calling from uber callback");
+                    callback(data);
+                }
+            }        
+        uber.getRideEstimateCoordinates(uberCallback, args);
+    }
+    if(olaEnabled) {
+        ola.getRideEstimateCoordinates( 
+            (resObj) => {
+                data.ola = resObj;
+                if(!uberEnabled || (uberEnabled && data.hasOwnProperty("uber"))) {
+                    console.log("Calling from Ola callback");
+                    callback(data);
+                }
             }
-        }
-    , args);
+        , args);
+    }
 }
 
 ride.bookRide = function(req, res) {
