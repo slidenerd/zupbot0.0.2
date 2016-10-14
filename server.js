@@ -415,9 +415,7 @@ function reply(session) {
   const text = preProcessReply(session);
   brain.reply(userId, text)
     .then((reply) => {
-      console.log('brain.reply has response ' + reply)
       if (reply === 'int bookcab') {
-        console.log('brain.reply has special case cab')
         let latitude = brain.get(session.message.user.id, 'latitude');
         let longitude = brain.get(session.message.user.id, 'longitude');
         let destination = brain.get(session.message.user.id, 'cabdestination')
@@ -437,14 +435,12 @@ function handleSpecialReplies(session, response) {
   if (response && response.type === 'carousel') {
     // carousel.sendFlipkartCarousel(session, brain, response.data, response.filters)
     console.log('brain.reply has special case carousel')
-    carousel.handleResponse(brain, session, response)
+    carousel.handleResponse(session, brain, response)
   }
   else if (response.type === 'location') {
-    console.log('brain.reply has special ask geolocation')
     platforms.askGeolocation(session, response.data)
   }
   else {
-    console.log('brain.reply has error')
     session.send(response);
   }
 }

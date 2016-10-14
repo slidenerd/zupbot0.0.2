@@ -7,8 +7,8 @@ const
 const carousel = {}
 let timeout;
 
-carousel.handleResponse = function (brain, session, response) {
-    let topic = brain.getTopic(session.message.user.id) 
+carousel.handleResponse = function (session, brain, response) {
+    let topic = brain.getTopic(session.message.user.id)
     if (topic === constants.KEY_OFFERS) {
         carousel.handleFlipkartResponse(session, brain, response);
     }
@@ -20,6 +20,7 @@ carousel.handleFlipkartResponse = function (session, brain, response) {
     brain.set(session.message.user.id, 'flipkartpagestart', page.start + 1)
     brain.set(session.message.user.id, 'flipkartpageend', page.end)
     brain.set(session.message.user.id, 'flipkartofferscount', page.count)
+    console.log('showing offers from ' + (page.start + 1) + ' to  ' + page.end)
     let reply = brain.replySync(session.message.user.id, page.triggerName)
     carousel.showFlipkartOffers(session, page.offers, reply)
 
