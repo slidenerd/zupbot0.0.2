@@ -370,7 +370,6 @@ function firstRun(session) {
  */
 function onMessage(session) {
   console.log('This user is running our bot the subsequent time')
-  session.userData.user = null
   userController.addBotUser(session);
   reply(session)
 }
