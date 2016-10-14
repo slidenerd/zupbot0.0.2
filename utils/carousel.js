@@ -9,6 +9,7 @@ let timeout;
 
 carousel.handleResponse = function (session, brain, response) {
     let topic = brain.getTopic(session.message.user.id)
+    console.log(topic + ' ' + constants.KEY_OFFERS)
     if (topic === constants.KEY_OFFERS) {
         carousel.handleFlipkartResponse(session, brain, response);
     }
