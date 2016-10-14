@@ -416,7 +416,7 @@ function reply(session) {
         let longitude = brain.get(session.message.user.id, 'longitude');
         let destination = brain.get(session.message.user.id, 'cabdestination')
         let url = encodeURI('https://zup.chat/api/ride?lat=' + latitude + '&long=' + longitude + '&drop=' + destination);
-        platforms.getWebViewButton(session, response.data, url, 'Your Cab', 'tall');
+        platforms.getWebViewButton(session, 'Here is your ride!', url, 'Your Cab', 'tall');
       }
       else {
         session.send(reply);
