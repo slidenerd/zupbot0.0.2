@@ -18,6 +18,7 @@ carousel.handleResponse = function (session, brain, response) {
 carousel.handleFlipkartResponse = function (session, brain, response) {
     // carousel.sendFlipkartCarousel(session, brain, response.data, response.filters)
     let page = flipkart.paginator(session, response.data);
+    console.log('got the page ', page)
     brain.set(session.message.user.id, 'flipkartpagestart', page.start + 1)
     brain.set(session.message.user.id, 'flipkartpageend', page.end)
     brain.set(session.message.user.id, 'flipkartofferscount', page.count)
