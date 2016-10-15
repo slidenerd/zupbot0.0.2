@@ -80,7 +80,7 @@ flipkart.findAllOffers = function () {
                 let offers = parse(data);
                 offers = flipkart.sortByDiscounts(offers)
                 jsonfile.writeFile(__dirname + '/data.json', offers, { spaces: 4 }, (error) => {
-                    if(error){
+                    if (error) {
                         console.log(error)
                     }
                 })
@@ -119,6 +119,7 @@ flipkart.paginator = function (session, offers) {
             count: offers.length
         }
     }
+    //If we found results but this is the first time we are paginating through them
     else if ((end - start) > 0 && start === 0) {
         page = {
             triggerName: flipkart.triggers.first,
@@ -128,6 +129,7 @@ flipkart.paginator = function (session, offers) {
             count: offers.length
         }
     }
+    //If we found results and this is not the first page of results that we are viewing
     else if ((end - start) > 0) {
         page = {
             triggerName: flipkart.triggers.subsequent,
@@ -137,6 +139,7 @@ flipkart.paginator = function (session, offers) {
             count: offers.length
         }
     }
+    //if we browsed every result and there is nothing else left to browse
     else {
         page = {
             triggerName: flipkart.triggers.done,
@@ -146,7 +149,8 @@ flipkart.paginator = function (session, offers) {
             count: offers.length
         }
     }
-    session.userData.user.flipkart.page = end
+    //Reset the page index if we have browsed all offers
+    session.userData.user.flipkart.page = (end == offers.length) ? 0 : end
     return page;
 }
 
