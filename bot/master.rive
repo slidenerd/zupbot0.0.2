@@ -88,8 +88,33 @@
 + am i (@malenoun) or (@femalenoun){weight=10}
 - You're a <get sex>.
 
-+ what is my favorite *{weight=10}
-- Your favorite <star> is <get fav<star>>
++ what [*] my favorite *{weight=10}
+* <get fav<star>> == undefined => You havent told me your favorite <star> yet. What is it?{topic=myfavorite}
+- Your favorite <star> is <get fav<star>>{topic=myfavorite}
+
+> topic myfavorite
+
+    + [*] my favorite [*] (is|be) *
+    % you havent told me your favorite * yet what is it
+    - Gotcha, your favorite <botstar> is <star><set fav<botstar>=<star>>
+
+    + [*] it [*] be *
+    % you havent told me your favorite * yet what is it
+    - Gotcha, your favorite <botstar> is <star><set fav<botstar>=<star>>
+
+    + [*] it is *
+    % you havent told me your favorite * yet what is it
+    - Gotcha, your favorite <botstar> is <star><set fav<botstar>=<star>>
+
+
+    + *
+    % you havent told me your favorite * yet what is it
+    - Gotcha, your favorite <botstar> is <star><set fav<botstar>=<star>>
+
+    + *
+    - <@>{topic=random}
+
+< topic
 
 + who is my (boyfriend|girlfriend|spouse){weight=10}
 - <get spouse>
@@ -147,7 +172,7 @@
 - I have <bot eyes> eyes and <bot hairlen> <bot hair> hair.
 
 + what do you do
-- I'm a <bot job>.
+@ help
 
 + who is your favorite author
 - <bot author>.
@@ -530,12 +555,15 @@
 - hey there, {@who are you} {@help}
 - hello there, {@who are you} {@help}
 
++ what can you do
+@ help
+
 + [*] help [*] {weight=1000}
 - You could ask "what offers do you have?" for starters. 
 ^ I will get them from Flipkart for you if their servers are breathing.
 - If you ask "what offers can I get today?", I will get some good ones for you from Flipkart.
 - For starters, you could say "get me some offers today" and I will bargain with dear old Flipkart for ya!
-- Hip hip hurrah, look who is finally here
+- Hip hip hurrah, look who is finally here 
 ^ Simply say "find me some discounts today" and I will send a bunch of 1s and 0s to Flipkart.
 
 + [*] (email|contact) [*] {999}

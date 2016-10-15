@@ -13,7 +13,22 @@ const
 let brain = {
     loaded: false,
     path: __dirname,
-    riveScript: new RiveScript({ debug: false, utf8: true, onDebug: this.onDebug })
+    riveScript: new RiveScript({ debug: false, utf8: true, onDebug: this.onDebug }),
+    triggers: {
+        ASK_LOCATION_OLA_CAB: 'int askcabsource',
+        ASK_LOCATION_UBER_CAB: 'int askcabsource',
+        FLIPKART_CANCEL: 'int cancel',
+        FLIPKART_SHOW_MORE: 'int show more',
+        GET_STARTED: 'int get started',
+        HANDLE_GEOLOCATION: 'int handlegeolocation',
+        HELP: 'help'
+    },
+    keys: {
+        CAB_PROVIDER: 'cabprovider',
+        CAB_DESTINATION: 'cabdestination',
+        LATITUDE: 'latitude',
+        LONGITUDE: 'longitude'
+    }
 }
 
 /**

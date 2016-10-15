@@ -1,3 +1,4 @@
+const payloads = require('../config/payloads')
 const templates = {}
 
 templates.greet = function () {
@@ -15,7 +16,7 @@ templates.getStarted = function () {
         thread_state: "new_thread",
         call_to_actions: [
             {
-                payload: "PAYLOAD_GET_STARTED"
+                payload: payloads.FACEBOOK_GET_STARTED
             }
         ]
     }
@@ -29,7 +30,7 @@ templates.getPersistentMenu = function () {
             {
                 type: "postback",
                 title: "Help",
-                payload: "PAYLOAD_PERSISTENT_MENU_HELP"
+                payload: payloads.FACEBOOK_PERSISTENT_MENU_HELP
             },
             {
                 type: "web_url",

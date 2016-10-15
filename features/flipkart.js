@@ -80,7 +80,9 @@ flipkart.findAllOffers = function () {
                 let offers = parse(data);
                 offers = flipkart.sortByDiscounts(offers)
                 jsonfile.writeFile(__dirname + '/data.json', offers, { spaces: 4 }, (error) => {
-                    console.log(error)
+                    if(error){
+                        console.log(error)
+                    }
                 })
                 resolve(offers);
             }
