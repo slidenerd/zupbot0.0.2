@@ -10,7 +10,7 @@
 //NO SOURCE NO DESTINATION
 
 + [*] (@cabwords) [*] {weight=996}
-- {@int bookcabsource}{topic=bookcab}
+- {@int askcabprovider}{topic=bookcab}
 
 + [*] (@cabservices) [*] {weight=996}
 - {@int bookcabsource}<set cabprovider=<star>>{topic=bookcab}
@@ -22,6 +22,12 @@
 - {@int bookcabsource}<set cabprovider=<star1>>{topic=bookcab}
 
 > topic bookcab
+    + int askcabprovider
+    - <call>askCabProvider</call>
+
+    + int askcabprovidermessage
+    - Which cab do you prefer?
+
     + int bookcabsource
     - <call>askGeolocation</call>
 
@@ -32,7 +38,7 @@
     - Where would you like to go?
 
     //While calling @cabtaxiget, if you add a response before it, modify server.js reply method accordingly
-    + [*] (to go to|go to|reach|to) *
+    + [*] (to go to|reach|to) *
     % where would you like to go
     - <set cabdestination=<star2>>{@int cabtaxiget}
 

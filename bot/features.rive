@@ -48,11 +48,14 @@
     - It seems we are late for the party. Flipkart doesnt seem to have any more offers for now
     - Flipkart has no offers for the time being, I am now waiting for the next train to arrive
 
-	+ no
+	+ int no
 	- Okay, enjoy your day!
 	- Understood, have a great day ahead!
 
-	+ show more
+	+ int show more
+	- <call>getAllFlipkartOffers</call>
+
+	+ [*] show [*] more [*]
 	- <call>getAllFlipkartOffers</call>
 
 	//Default messages by user will be handled by the random topic outside

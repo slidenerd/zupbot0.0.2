@@ -33,6 +33,7 @@ dotenv.load({ path: '.env.example' });
 const
   all = require('./features/all'),
   apiController = require('./controllers/api'),
+  brain = require('./bot/rive'),
   builder = require('./core/'),
   contactController = require('./controllers/contact'),
   homeController = require('./controllers/home'),
@@ -48,8 +49,6 @@ const
 
 console.log('%s App Initiated!', chalk.green('✓'));
 
-let
-  brain = require('./bot/rive');
 /**
  * Create Express server.
  */
@@ -378,17 +377,29 @@ function onMessage(session) {
  */
 function preProcessReply(session) {
   let text = session.message.text
+
+  console.log(text, brain.getTopic(session.message.user.id))
   if (text === payloads.FACEBOOK_GET_STARTED) {
-    return 'get started'
+    return 'int get started'
   }
   else if (text === payloads.FACEBOOK_PERSISTENT_MENU_HELP) {
     return 'help'
   }
   else if (text === payloads.FACEBOOK_FLIPKART_SHOW_MORE) {
-    return 'show more'
+    return 'int show more'
   }
   else if (text === payloads.FACEBOOK_FLIPKART_CANCEL) {
-    return 'no'
+    return 'int no'
+  }
+  else if(text === payloads.FACEBOOK_CAB_UBER){
+    console.log('incoming ' + text)
+    brain.set(session.message.user.id, 'cabprovider','uber')
+    return 'int bookcabsource'
+  }
+  else if(text === payloads.FACEBOOK_CAB_OLA){
+    console.log('incoming ' + text)
+    brain.set(session.message.user.id, 'cabprovider','ola')
+    return 'int bookcabsource'
   }
   else if (platforms.isGeolocation(session)) {
     let geolocation = platforms.getGeolocation(session);
@@ -410,7 +421,8 @@ function reply(session) {
         let latitude = brain.get(session.message.user.id, 'latitude');
         let longitude = brain.get(session.message.user.id, 'longitude');
         let destination = brain.get(session.message.user.id, 'cabdestination')
-        let url = encodeURI('https://zup.chat/api/ride?lat=' + latitude + '&long=' + longitude + '&drop=' + destination);
+        let cabProvider = brain.get(session.message.user.id, 'cabprovider')
+        let url = encodeURI('https://zup.chat/api/ride?lat=' + latitude + '&long=' + longitude + '&drop=' + destination + '&provider='+cabProvider);
         platforms.getWebViewButton(session, 'Here is your ride!', url, 'Your Cab', 'tall');
       }
       else {
@@ -429,6 +441,9 @@ function handleSpecialReplies(session, response) {
   }
   else if (response.type === 'location') {
     platforms.askGeolocation(session, response.data)
+  }
+  else if (response.type === 'cabProvider') {
+    platforms.sendTextQuickReply(session, response.data, ['Uber', 'Ola'], [payloads.FACEBOOK_CAB_UBER, payloads.FACEBOOK_CAB_OLA])
   }
   else {
     session.send(response);

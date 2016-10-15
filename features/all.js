@@ -18,6 +18,9 @@ const all = {
     flipkart: {
         name: 'getAllFlipkartOffers'
     },
+    cabProvider: {
+        name: 'askCabProvider'
+    },
     ride: {
         name: 'ride'
     },
@@ -68,6 +71,13 @@ all.location.subroutine = function (rs, args) {
     return new rs.Promise((resolve, reject) => {
         let reply = rs.reply(rs.currentUser(), 'int asklocation', all.this);
         reject({ type: 'location', data: reply })
+    })
+}
+
+all.cabProvider.subroutine = function (rs, args) {
+    return new rs.Promise((resolve, reject) => {
+        let reply = rs.reply(rs.currentUser(), 'int askcabprovidermessage', all.this);
+        reject({ type: 'cabProvider', data: reply })
     })
 }
 
