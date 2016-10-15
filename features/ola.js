@@ -98,10 +98,14 @@ ola.getRideEstimateCoordinates = function (callback, args) {
     }
     request.get(options, (error, response, body) => {
         if (error) {
-            console.log(error);
+            console.log("ERROR:" + error);
+            resObj.success = false;
+            resObj.message = JSON.stringify(error);
             return;
         }
         if (response.statusCode == 200 && body.ride_estimate) {
+            resObj.data = {}
+            resObj.success = true;
             for (var i = 0; i < body.ride_estimate.length; i++) {
                 var obj = new Object();
                 obj.display_name = body.ride_estimate[i].category;
@@ -120,6 +124,8 @@ ola.getRideEstimateCoordinates = function (callback, args) {
             }
             callback(resObj);
         } else {
+            resObj.success = false;
+            resObj.message = JSON.stringify(response);
             console.log(response.statusCode);
             console.log(body);
         }

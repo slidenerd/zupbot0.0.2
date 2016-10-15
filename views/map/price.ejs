@@ -112,18 +112,18 @@
                                     <a onclick="bookList('<%=prop%>', 'ola')" class="list-group-item waves-effect">
                                         <h4 class="list-group-item-heading"><b><%= prop %></b></h4>
                                         <p class="list-group-item-text"><img class="time-icon"/> &nbsp; 
-                                        <%if(ola[prop].eta == -1) {%>
+                                        <%if(ola.data[prop].eta == -1) {%>
                                             Arrival time unknown
                                         <%} else {%>
                                             Arrives in <%=ola.data[prop].eta%> mins                                    
                                         <%}%>            
                                         </p>
-                                        <p class="list-group-item-text"><img class="cost-icon"/> &nbsp; Estimated Cost Rs <%=ola.data[prop].low_price%> - <%=ola[prop].high_price%></p>
+                                        <p class="list-group-item-text"><img class="cost-icon"/> &nbsp; Estimated Cost Rs <%=ola.data[prop].low_price%> - <%=ola.data[prop].high_price%></p>
                                         <p class="list-group-item-text"><img class="distance-icon"/>Distance <%=ola.data[prop].distance%> Kms</p>
                                         <p class="list-group-item-text"><img class="time-icon"/>Duration : <%=ola.data[prop].duration / 60%> mins</p>
                                     </a>
                                 <% }) %>     
-                            <% } else {%>
+                            <% } else if(typeof(ola) != 'undefined') {%>
                                 <p class="error"><%=ola.message%></p>
                             <% } %>                                
                             </div>
@@ -140,7 +140,7 @@
                                         <p class="list-group-item-text"><img class="time-icon"/>Duration : <%=uber.data[prop].duration / 60%> mins</p>
                                     </a>
                                 <% }) %>         
-                            <% } else {%>
+                            <% } else if(typeof(uber) != 'undefined') {%>
                                 <p class="error"><%=uber.message%></p>
                             <% } %>                                
                             </div>
