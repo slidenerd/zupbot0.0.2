@@ -22,7 +22,7 @@ let brain = {
  */
 brain.initSubroutines = function () {
     brain.riveScript.setSubroutine(all.flipkart.name, all.flipkart.subroutine)
-    brain.riveScript.setSubroutine(all.ride.name, all.ride.subroutine)
+    brain.riveScript.setSubroutine(all.cab.name, all.cab.subroutine)
     brain.riveScript.setSubroutine(all.cabProvider.name, all.cabProvider.subroutine)
     brain.riveScript.setSubroutine(all.weather.name, all.weather.subroutine)
     brain.riveScript.setSubroutine(all.location.name, all.location.subroutine)

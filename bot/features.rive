@@ -13,55 +13,6 @@
 - I guess you are asking me to find stuff on <star>. Oops, currently I am not capable of doing so but I will ask my creator to start slogging on this.
 - I am sorry but I am not capable of doing stuff with <star> yet but lets ask my lazy creator to start slogging so that we can have this feature ready for you.
 
-+ [*] (flipkart|flip kart) [*]{weight=999}
-- <call>getAllFlipkartOffers categoryall</call>{topic=offers}<set flipkartcategory=categoryall>
-
-+ [*] (@offerwords) [*]{weight=998}
-- <call>getAllFlipkartOffers categoryall</call>{topic=offers}<set flipkartcategory=categoryall>
-
-//The name of this topic is being referred to from JS code
-> topic offers
-
-	// The rules whose names start with js... are triggered from code
-	+ int first
-	- Hurrah! I found <get flipkartofferscount> offers for you on Flipkart. May your shopping be shosperous, I mean properous. Here comes <get flipkartpagestart> to <get flipkartpageend>
-    - Weee, Flipkart gave us <get flipkartofferscount> offers. Isn't that awesome! Here comes <get flipkartpagestart> to <get flipkartpageend>
-    - Yee-Haw! that is so cool of Flipkart to give us <get flipkartofferscount> offers. Showing <get flipkartpagestart> to <get flipkartpageend>
-    - Ooh-la-la, I was able to get <get flipkartofferscount> offers on Flipkart. Displaying <get flipkartpagestart> to <get flipkartpageend>
-
-	+ int subsequent
-	- Here comes <get flipkartpagestart> - <get flipkartpageend> of <get flipkartofferscount>
-    - Now showing, <get flipkartpagestart> to <get flipkartpageend> of <get flipkartofferscount>
-    - Showing <get flipkartpagestart> - <get flipkartpageend> of <get flipkartofferscount>
-    - Currently at <get flipkartpagestart> to <get flipkartpageend> of <get flipkartofferscount>
-    - Looking at <get flipkartpagestart> - <get flipkartpageend> of <get flipkartofferscount>
-    - Viewing <get flipkartpagestart> to <get flipkartpageend> of <get flipkartofferscount>
-    - Displaying <get flipkartpagestart> - <get flipkartpageend> of <get flipkartofferscount>
-
-	+ int done
-	- Oops thats all for now on Flipkart. I will get more for now shortly.
-    - Well, that's all the Flipkart offers for now. Feel free to browse the existing ones anytime.
-    - I guess our Flipkart party comes to an end for now. Flipkart will come out with new ones in a couple of hours
-
-	+ int none
-	- Ouch! It seems Flipkart has either no offers today or all their offers have been exhausted
-    - It seems we are late for the party. Flipkart doesnt seem to have any more offers for now
-    - Flipkart has no offers for the time being, I am now waiting for the next train to arrive
-
-	+ int no
-	- Okay, enjoy your day!
-	- Understood, have a great day ahead!
-
-	+ int show more
-	- <call>getAllFlipkartOffers</call>
-
-	+ [*] show [*] more [*]
-	- <call>getAllFlipkartOffers</call>
-
-	//Default messages by user will be handled by the random topic outside
-	+ *
-	- <@>{topic=random}
-< topic
 
 + [*] recharge [*] # [*]{weight=998}
 - Ofc, I take it you wanna recharge this number <star> <call>findOperatorInfo <star></call>
@@ -82,42 +33,6 @@
 	//Default messages by user will be handled by the random topic outside
 	+ *
 	- <@>{topic=random}
-< topic
-
-+ [*] (what|how) [*] (@weatherwords) [*] (at|in|of|for) my *{weight=997}
-- <call>askLocation</call>{topic=weather}
-
-+ [*] (what|how) [*] (@weatherwords) [*] (at|in|of|for) *{weight=997}
-- <call>weather {formal}<star4>{/formal}</call> {topic=weather}
-
-+ [*] (@weatherwords) [*] (at|in|of|for) my *{weight=997}
-- <call>askLocation</call>{topic=weather}
-
-+ [*] (@weatherwords) [*] (at|in|of|for) *{weight=997}
-- <call>weather {formal}<star3>{/formal}</call> {topic=weather} 
-
-//The name of this topic is being referred to from JS code
-> topic weather
-
-	// The rules whose names start with js... are triggered from code
-	+ int weather
-	* <get temperature> == undefined => Ooops, I couldn't get any weather report that clearly mentions the temperature.
-	* <get location> == undefined => I couldn't get any weather report for this place.
-	- The weather gods told me that the temperature at <get location> is <get temperature> degrees C and the humidity is <get humidity>% 
-	- I sent an email to the weather gods and this was their reply. The temperature is <get temperature> degrees C at <get location> and the humidity is <get humidity>% 
-	- I said 'ping ping' to the weather gods and they replied back with a 'ding ding'. The temperature at <get location> seems to be <get temperature> degrees C and it is <get humidity>% humid 
-
-	+ [*] humidity [*]
-	- It is <get humidity>% humid at <get location>
-	- The humidity is <get humidity>% at <get location>
-
-	+ [*] pressure [*]
-	- The pressure seems to be <get pressure> at <get location>
-
-	//Default messages by user will be handled by the random topic outside
-	+ *
-	- <@>{topic=random}
-
 < topic
 
 

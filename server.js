@@ -394,7 +394,7 @@ function preProcessReply(session) {
   else if(text === payloads.FACEBOOK_CAB_UBER){
     console.log('incoming ' + text)
     brain.set(session.message.user.id, 'cabprovider','uber')
-    return 'int bookcabsource'
+    return 'int askcabsource'
   }
   else if(text === payloads.FACEBOOK_CAB_OLA){
     console.log('incoming ' + text)

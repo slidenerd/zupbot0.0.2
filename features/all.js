@@ -24,8 +24,8 @@ const all = {
     cabProvider: {
         name: 'askCabProvider'
     },
-    ride: {
-        name: 'ride'
+    cab: {
+        name: 'bookCab'
     },
     skyscanner: {
         name: 'skyscanner'
@@ -37,6 +37,7 @@ const all = {
         name: 'askGeolocation'
     }
 }
+
 
 /**
  * Custom objects cannot be resolved using rs.Promise since it resolves only strings and converts custom objects into [object Object]
@@ -72,7 +73,7 @@ all.flipkart.subroutine = function (rs, args) {
 
 all.location.subroutine = function (rs, args) {
     return new rs.Promise((resolve, reject) => {
-        let reply = rs.reply(rs.currentUser(), 'int asklocation', all.this);
+        let reply = rs.reply(rs.currentUser(), 'int askcabsourcemessage', all.this);
         reject({ type: 'location', data: reply })
     })
 }
@@ -84,7 +85,7 @@ all.cabProvider.subroutine = function (rs, args) {
     })
 }
 
-all.ride.subroutine = function (rs, args) {
+all.cab.subroutine = function (rs, args) {
     return new rs.Promise((resolve, reject) => {
         //add the previous response?
         resolve('int bookcab')

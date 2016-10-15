@@ -12,6 +12,7 @@ const uberObj = new Uber({
     client_id: '2D_Wy-fU_jcAXgP8_DT9Oze_xg3nnpfx',
     client_secret: 'X2_zVVpoigocAk2Cdr44i9XoxQg03Uw3gYwjce8j',
     server_token: uber.accessToken,
+    // redirect_uri: 'http://localhost:3000/auth/uber/callback',
     redirect_uri: 'https://zup.chat/auth/uber/callback',
     name: 'zup.chat',
     language: 'en_US', // optional, defaults to en_US
@@ -72,14 +73,20 @@ uber.getRidePriceEstimateCoordinates = function(resObj, callback, args) {
     request.get(options, (error, response, body) => {
         if(error) {
             console.log(error);
+            resObj.success = false;
+            resObj.message = error.message;
         }
         // console.log(body);
     	if(body && body.prices) {
+            resObj.success = true;
+            if(!resObj.data) {
+                resObj.data = {}
+            }
     		for(var i = 0; i < body.prices.length; i++) {
     			var price = body.prices[i];
     			var obj;
-    			if(resObj.hasOwnProperty(price.display_name)) {
-    				obj = resObj[price.display_name];
+    			if(resObj.data.hasOwnProperty(price.display_name)) {
+    				obj = resObj.data[price.display_name];
     			} else {
 	    			obj = {}
 	    			obj.product_id = price.product_id;	    			
@@ -89,9 +96,11 @@ uber.getRidePriceEstimateCoordinates = function(resObj, callback, args) {
     			obj.low_price = price.low_estimate;
     			obj.duration = price.duration;
     			obj.distance = price.distance;
-    			resObj[price.display_name] = obj;
+    			resObj.data[price.display_name] = obj;
     		}
     	} else {
+            resObj.success = false;
+            resObj.message = body.message
             console.log("Something went wrong in getRidePriceEstimateCoordinates " + JSON.stringify(body));
         }
         if(!resObj.done) {
@@ -111,23 +120,35 @@ uber.getRideTimeEstimateCoordinates = function(resObj, callback, args) {
     request.get(options, (error, response, body) => {
         if(error) {
             console.log(error);
+            resObj.success = false;
+            resObj.message = error.message;
             return;
         }
         // console.log(body);
     	if(body && body.times) {
+            if(resObj.success) {
+                resObj.success = true;
+            }
+            if(!resObj.data) {
+                resObj.data = {}
+            }
     		for(var i = 0; i < body.times.length; i++) {
     			var time = body.times[i];
     			var obj;
-    			if(resObj.hasOwnProperty(time.display_name)) {
-    				obj = resObj[time.display_name];
+    			if(resObj.data.hasOwnProperty(time.display_name)) {
+    				obj = resObj.data[time.display_name];
     			} else {
 	    			obj = {}
 	    			obj.product_id = time.product_id;
     			}
     			obj.eta = time.estimate;
-    			resObj[time.display_name] = obj;
+    			resObj.data[time.display_name] = obj;
     		}
-    	}
+    	} else {
+            console.log("Something went wrong in getRideTimeEstimateCoordinates " + JSON.stringify(body));
+            resObj.success = false;
+            resObj.message = body.message;
+        }
 
         if(!resObj.done) {
         	resObj.done = true;
@@ -140,6 +161,7 @@ uber.getRideTimeEstimateCoordinates = function(resObj, callback, args) {
 uber.getRideEstimateCoordinates = function(uberCallback, args) {
     var resObj = new Object();
     resObj.done = false;
+    resObj.success = true;
     uber.getRidePriceEstimateCoordinates(resObj, uberCallback, args);
     uber.getRideTimeEstimateCoordinates(resObj, uberCallback, args);
 }

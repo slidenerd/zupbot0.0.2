@@ -1,0 +1,36 @@
+
++ [*] (what|how) [*] (@weatherwords) [*] (at|in|of|for) my *{weight=997}
+- <call>askLocation</call>{topic=weather}
+
++ [*] (what|how) [*] (@weatherwords) [*] (at|in|of|for) *{weight=997}
+- <call>weather {formal}<star4>{/formal}</call> {topic=weather}
+
++ [*] (@weatherwords) [*] (at|in|of|for) my *{weight=997}
+- <call>askLocation</call>{topic=weather}
+
++ [*] (@weatherwords) [*] (at|in|of|for) *{weight=997}
+- <call>weather {formal}<star3>{/formal}</call> {topic=weather} 
+
+//The name of this topic is being referred to from JS code
+> topic weather
+
+	// The rules whose names start with js... are triggered from code
+	+ int weather
+	* <get temperature> == undefined => Ooops, I couldn't get any weather report that clearly mentions the temperature.
+	* <get location> == undefined => I couldn't get any weather report for this place.
+	- The weather gods told me that the temperature at <get location> is <get temperature> degrees C and the humidity is <get humidity>% 
+	- I sent an email to the weather gods and this was their reply. The temperature is <get temperature> degrees C at <get location> and the humidity is <get humidity>% 
+	- I said 'ping ping' to the weather gods and they replied back with a 'ding ding'. The temperature at <get location> seems to be <get temperature> degrees C and it is <get humidity>% humid 
+
+	+ [*] humidity [*]
+	- It is <get humidity>% humid at <get location>
+	- The humidity is <get humidity>% at <get location>
+
+	+ [*] pressure [*]
+	- The pressure seems to be <get pressure> at <get location>
+
+	//Default messages by user will be handled by the random topic outside
+	+ *
+	- <@>{topic=random}
+
+< topic
