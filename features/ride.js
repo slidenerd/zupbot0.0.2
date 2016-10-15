@@ -140,6 +140,7 @@ ride.getRideEstimateCoordinates = function(callback, args) {
                 data.ola = resObj;
                 if(!uberEnabled || (uberEnabled && data.hasOwnProperty("uber"))) {
                     console.log("Calling from Ola callback");
+                    console.log(JSON.stringify(data));
                     callback(data);
                 }
             }
