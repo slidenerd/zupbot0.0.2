@@ -88,28 +88,27 @@
 + am i (@malenoun) or (@femalenoun){weight=10}
 - You're a <get sex>.
 
-+ what [*] my favorite *{weight=10}
-* <get fav<star>> == undefined => You havent told me your favorite <star> yet. What is it?{topic=myfavorite}
-- Your favorite <star> is <get fav<star>>{topic=myfavorite}
++ what [*] my (favorite|favourite) *{weight=10}
+* <get fav<star2>> == undefined => You havent told me your <star> <star2> yet. What is it?{topic=myfavorite}
+- Your <star> <star2> is <get fav<star2>>{topic=myfavorite}
 
 > topic myfavorite
 
-    + [*] my favorite [*] (is|be) *
-    % you havent told me your favorite * yet what is it
-    - Gotcha, your favorite <botstar> is <star><set fav<botstar>=<star>>
+    + [*] my (favorite|favourite) [*] (is|be) *
+    % you havent told me your (favorite|favourite) * yet what is it
+    - Gotcha, your <botstar1> <botstar2> is <star3><set fav<botstar2>=<star3>>
 
     + [*] it [*] be *
-    % you havent told me your favorite * yet what is it
-    - Gotcha, your favorite <botstar> is <star><set fav<botstar>=<star>>
+    % you havent told me your (favorite|favourite) * yet what is it
+    - Gotcha, your <botstar1> <botstar2> is <star><set fav<botstar2>=<star>>
 
     + [*] it is *
-    % you havent told me your favorite * yet what is it
-    - Gotcha, your favorite <botstar> is <star><set fav<botstar>=<star>>
-
+    % you havent told me your (favorite|favourite) * yet what is it
+    - Gotcha, your <botstar1> <botstar2> is <star><set fav<botstar2>=<star>>
 
     + *
-    % you havent told me your favorite * yet what is it
-    - Gotcha, your favorite <botstar> is <star><set fav<botstar>=<star>>
+    % you havent told me your (favorite|favourite) * yet what is it
+    - Gotcha, your <botstar1> <botstar2> is <star><set fav<botstar2>=<star>>
 
     + *
     - <@>{topic=random}

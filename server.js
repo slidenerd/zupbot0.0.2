@@ -246,23 +246,10 @@ app.get('/auth/pinterest/callback', passport.authorize('pinterest', { failureRed
  * Webhooks
  */
 app.post('/hooks/ola', ola.webhook)
-
-app.get('/api/ride', function (req, res) {
-  ride.ride(req, res);
-});
-
-app.get('/api/ride/price', function (req, res) {
-  ride.price(req, res);
-});
-
-app.get('/api/ride/book', function (req, res) {
-  ride.bookRide(req, res);
-});
-
-app.get('/auth/ola/callback', function (req, res) {
-  ride.ola.authorization(req, res);
-});
-
+app.get('/api/ride', ride.ride);
+app.get('/api/ride/price', ride.price);
+app.get('/api/ride/book', ride.bookRide);
+app.get('/auth/ola/callback', ride.ola.authorization);
 app.get('/auth/uber/callback', function (req, res) {
   ride.authorize('uber', req, res);
 });
@@ -282,6 +269,7 @@ app.post('/api/subscribe', function (req, res) {
   let email = req.body.email;
   mail.createRecepient(email, res);
 });
+
 app.post('/api/sendMail', function (req, res) {
   if (!req.body) {
     let responseBody = new Object();
