@@ -377,6 +377,7 @@ function onMessage(session) {
  */
 function preProcessReply(session) {
   let text = session.message.text
+  console.log(text)
   if (text === payloads.FACEBOOK_GET_STARTED) {
     return 'int get started'
   }
@@ -390,10 +391,12 @@ function preProcessReply(session) {
     return 'int no'
   }
   else if(text === payloads.FACEBOOK_CAB_UBER){
+    console.log('incoming ' + text)
     brain.set(session.message.user.id, 'cabprovider','uber')
     return 'int handlecabprovider'
   }
   else if(text === payloads.FACEBOOK_CAB_OLA){
+    console.log('incoming ' + text)
     brain.set(session.message.user.id, 'cabprovider','ola')
     return 'int handlecabprovider'
   }
