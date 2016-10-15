@@ -313,7 +313,7 @@ const bot = new builder.UniversalBot(connector);
 
 app.post('/api/messages', connector.listen());
 let dialogVersionOptions = {
-  version: 2,
+  version: 2.1,
   resetCommand: /^reset/i
 };
 bot.use(builder.Middleware.dialogVersion(dialogVersionOptions));
@@ -324,7 +324,7 @@ bot.use(builder.Middleware.dialogVersion(dialogVersionOptions));
 
 //Run this dialog the very first time for a particular user
 bot.use(builder.Middleware.firstRun({
-  version: 2,
+  version: 2.1,
   dialogId: '/firstRun'
 }));
 
@@ -347,6 +347,8 @@ function firstRun(session) {
  * Add the user to the mongodb database if the user does not exist
  */
 function onMessage(session) {
+  let address = JSON.stringify(session.message.address)
+  console.log(address);
   console.log('This user is running our bot the subsequent time')
   userController.addBotUser(session);
   reply(session)

@@ -6,16 +6,24 @@ const userSchema = new mongoose.Schema({
   _id: { type: String, required: true, unique: true },
   email: { type: String, unique: true },
 
-  bot: {
-    id: { type: String },
-    name: { type: String }
-  },
-
-  channelId: { type: String },
-  conv: {
-    id: { type: String },
-    name: { type: String },
-    isGroup: { type: String }
+  address: {
+    id: { type: String, required: true, unique: true },
+    channelId: String,
+    user: {
+      id: String,
+      name: String
+    },
+    conversation: {
+      isGroup: Boolean,
+      id: String,
+      name: String
+    },
+    bot: {
+      id: String,
+      name: String
+    },
+    serviceUrl: String,
+    useAuth: Boolean
   },
   password: String,
   passwordResetToken: String,

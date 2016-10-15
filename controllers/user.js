@@ -383,24 +383,32 @@ exports.addBotUser = function (session) {
       _id: session.message.user.id,
       //Replace all the - symbols in UUID to generate a plain string
       email: session.message.user.id + session.message.address.channelId + '@zup.chat',
-      bot: {
-        id: session.message.address.bot.id,
-        name: session.message.address.bot.userName
-      },
-      channelId: session.message.address.channelId,
-      conv: {
-        id: session.message.address.conversation.id,
-        name: session.message.address.conversation.name,
-        isGroup: session.message.address.conversation.isGroup
+      address: {
+        id: session.message.address.id,
+        channelId: session.message.address.channelId,
+        user: {
+          id: session.message.address.user.id,
+          name: session.message.address.user.name
+        },
+        conversation: {
+          isGroup: session.message.address.conversation.isGroup,
+          id: session.message.address.conversation.id,
+          name: session.message.address.conversation.name
+        },
+        bot: {
+          id: session.message.address.bot.id,
+          name: session.message.address.bot.name
+        },
+        serviceUrl: session.message.address.serviceUrl,
+        useAuth: session.message.address.useAuth
       },
       flipkart: {
         page: {
           start: 0
         },
         filters: {
-          
-        }
 
+        }
       },
       profile: {
         name: session.message.user.name
