@@ -389,6 +389,14 @@ function preProcessReply(session) {
   else if (text === payloads.FACEBOOK_FLIPKART_CANCEL) {
     return 'int no'
   }
+  else if(text === payloads.FACEBOOK_CAB_UBER){
+    brain.set(session.message.user.id, 'cabprovider','uber')
+    return 'int handlecabprovider'
+  }
+  else if(text === payloads.FACEBOOK_CAB_OLA){
+    brain.set(session.message.user.id, 'cabprovider','ola')
+    return 'int handlecabprovider'
+  }
   else if (platforms.isGeolocation(session)) {
     let geolocation = platforms.getGeolocation(session);
     brain.set(session.message.user.id, 'latitude', geolocation.lat)
@@ -409,7 +417,8 @@ function reply(session) {
         let latitude = brain.get(session.message.user.id, 'latitude');
         let longitude = brain.get(session.message.user.id, 'longitude');
         let destination = brain.get(session.message.user.id, 'cabdestination')
-        let url = encodeURI('https://zup.chat/api/ride?lat=' + latitude + '&long=' + longitude + '&drop=' + destination);
+        let cabProvider = brain.get(session.message.user.id, 'cabprovider')
+        let url = encodeURI('https://zup.chat/api/ride?lat=' + latitude + '&long=' + longitude + '&drop=' + destination + '&provider='+cabProvider);
         platforms.getWebViewButton(session, 'Here is your ride!', url, 'Your Cab', 'tall');
       }
       else {
@@ -430,7 +439,7 @@ function handleSpecialReplies(session, response) {
     platforms.askGeolocation(session, response.data)
   }
   else if (response.type === 'cabProvider') {
-    platforms.sendTextQuickReply(session, response.data, ['Uber', 'Ola'], ['PAYLOAD_CAB_UBER', 'PAYLOAD_CAB_OLA'])
+    platforms.sendTextQuickReply(session, response.data, ['Uber', 'Ola'], [payloads.FACEBOOK_CAB_UBER, payloads.FACEBOOK_CAB_OLA])
   }
   else {
     session.send(response);

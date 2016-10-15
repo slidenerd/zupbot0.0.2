@@ -45,13 +45,13 @@
     .top-buffer { margin-top:40px; }
 </style>
 <script>
-    function checkPrice(orgValue) {
+    function checkPrice(orgValue, provider) {
         var pickupVal = document.getElementById('pickupLocation').value;
         var dropVal = document.getElementById('dropLocation').value;
         if(pickupVal == orgLocation) {
             pickupVal = orgValue;
         }
-        window.location = '/api/ride/price?pickup=' + pickupVal + "&drop=" + dropVal;
+        window.location = '/api/ride/price?pickup=' + pickupVal + "&drop=" + dropVal + '&provider=' + provider;
     }
     function clearForm() {
         var pickup = document.getElementById('pickupLocation');
@@ -84,7 +84,7 @@
                     <%}%>    
                 </div>
                 <div class="row top-buffer text-center">
-                    <button type="button" class="btn btn-primary fWidth" onclick="checkPrice('<%=pickup%>');">Check Price</button>
+                    <button type="button" class="btn btn-primary fWidth" onclick="checkPrice('<%=pickup%>', '<%=provider%>');">Check Price</button>
                     <button type="button" class="btn btn-danger fWidth" onclick="clearForm();">Clear</button>
                 </div>
             </div>
