@@ -38,7 +38,7 @@
     - Where would you like to go?
 
     //While calling @bookcab, if you add a response before it, modify server.js reply method accordingly
-    + [*] (to go to|reach|to) *
+    + [*] (to go to|to reach|reach|to) *
     % where would you like to go
     - <set cabdestination=<star2>>{@int bookcab}
 
