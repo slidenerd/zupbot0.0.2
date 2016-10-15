@@ -377,7 +377,8 @@ function onMessage(session) {
  */
 function preProcessReply(session) {
   let text = session.message.text
-  console.log(text)
+
+  console.log(text, brain.getTopic(session.message.user.id))
   if (text === payloads.FACEBOOK_GET_STARTED) {
     return 'int get started'
   }
