@@ -28,9 +28,6 @@
     + int askcabprovidermessage
     - Which cab do you prefer?
 
-    + int handlecabprovider
-    - {@bookcabsource}
-
     + int bookcabsource
     - <call>askGeolocation</call>
 
