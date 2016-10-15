@@ -109,13 +109,13 @@ ola.getRideEstimateCoordinates = function (callback, args) {
                 obj.duration = body.ride_estimate[i].travel_time_in_minutes * 60;
                 obj.high_price = body.ride_estimate[i].amount_max;
                 obj.low_price = body.ride_estimate[i].amount_min;
-                resObj[body.ride_estimate[i].category] = obj;
+                resObj.data[body.ride_estimate[i].category] = obj;
             }
 
             for (var i = 0; i < body.categories.length; i++) {
                 var category = body.categories[i];
-                if (resObj.hasOwnProperty(category.id)) {
-                    resObj[category.id].eta = category.eta;
+                if (resObj.data.hasOwnProperty(category.id)) {
+                    resObj.data[category.id].eta = category.eta;
                 }
             }
             callback(resObj);

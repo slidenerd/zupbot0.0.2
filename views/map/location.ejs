@@ -127,6 +127,13 @@
             if (results[1]) {
               orgLocation = results[1].formatted_address;
               document.getElementById('pickupLocation').value = orgLocation;
+              results[1].address_components.forEach(item => {
+                    var types = JSON.stringify(item.types)
+                    if(types.indexOf('"locality"') != -1) {
+                        document.getElementById('dropLocation').value = document.getElementById('dropLocation').value + ', ' + item.long_name;
+                        return false;
+                    } 
+              })  
               return;
             }
         }
