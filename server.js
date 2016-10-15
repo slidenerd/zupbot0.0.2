@@ -366,7 +366,7 @@ function onMessage(session) {
 
 function reply(session) {
   const userId = session.message.user.id
-  const text = all.preprocessReplies(session);
+  const text = all.preprocessReplies(session, brain);
   brain.reply(userId, text)
     .then((response) => {
       all.handleSpecialRepliesOnResolve(session, brain, response)
