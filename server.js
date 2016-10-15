@@ -430,7 +430,7 @@ function handleSpecialReplies(session, response) {
     platforms.askGeolocation(session, response.data)
   }
   else if (response.type === 'cabProvider') {
-    platforms.sendTextQuickReply(session, response.data, ['Uber', 'Ola'], ['PAYLOAD_PROVIDER_UBER', 'PAYLOAD_PROVIDER_OLA'])
+    platforms.sendTextQuickReply(session, response.data, ['Uber', 'Ola'], ['PAYLOAD_CAB_UBER', 'PAYLOAD_CAB_OLA'])
   }
   else {
     session.send(response);

@@ -257,7 +257,7 @@ platforms.facebook.sendQuickReply = function (session, quickReplies) {
         recipient: {
             id: session.message.user.id
         },
-        "message": quickReplies
+        message: quickReplies
     }
     request({
         url: 'https://graph.facebook.com/v2.7/me/messages?access_token=' + endpoints.FACEBOOK_PAGE_ACCESS_TOKEN,
@@ -282,8 +282,9 @@ platforms.facebook.sendTextQuickReply = function (session, text, titles, payload
         recipient: {
             id: session.message.user.id
         },
-        "message": quickReplies
+        message: JSON.stringify(quickReplies)
     }
+    console.log(json)
     request({
         url: 'https://graph.facebook.com/v2.7/me/messages?access_token=' + endpoints.FACEBOOK_PAGE_ACCESS_TOKEN,
         method: 'POST',
