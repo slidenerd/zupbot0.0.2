@@ -36,6 +36,26 @@ uber.authorization = function(authToken, callback) {
     uberObj.authorization(authToken, callback);
 }
 
+uber.getCurrentRide = function(req, res, data) {
+    if(req.session.uberToken) {
+        var options = {
+            url: uber.endPoint + 'requests/current',
+            headers: headers,
+            json: true
+        }
+        request.get(options, (error, response, body) => {
+            if(error || !body.request_id) {
+                res.render('ride/location', data);
+            } else {
+                var url = uber.endPoint + 'requests/' + request_id + '/map'
+                res.render(url);
+            }
+        });    
+    } else {
+        res.render('ride/location', data);
+    }
+}
+
 uber.getRideEstimate = function(from, to, callback) {
     var option = 0;
     var args = new Object();
@@ -167,11 +187,12 @@ uber.getRideEstimateCoordinates = function(uberCallback, args) {
 }
 
 
-uber.bookRide = function(req, callback, args) {
+uber.bookRide = function(req, res, callback, args) {
     var headers = {
         'Accept': 'application/json',
         'Authorization': 'Bearer ' + req.session.uberToken 
     };
+    console.log(headers);
     var body = {
     	'start_latitude': args.lat,
     	'start_longitude': args.long,
@@ -186,11 +207,11 @@ uber.bookRide = function(req, callback, args) {
         json: true
     }
     request.post(options, (error, response, body) => {
-		uber.handleBookResponse(req, body, body.request_id, callback);    	
+		uber.handleBookResponse(req, res, body, body.request_id, callback, response);    	
     });
 }
 
-uber.pollRequest = function(req, request_id, callback) {
+uber.pollRequest = function(req, res, request_id, callback) {
     var headers = {
         'Accept': 'application/json',
         'Authorization': 'Bearer ' + req.session.uberToken 
@@ -201,7 +222,7 @@ uber.pollRequest = function(req, request_id, callback) {
         json: true
     }
     request.get(options, (error, response, body) => {
-    	uber.handleBookResponse(req, body, request_id, callback);
+    	uber.handleBookResponse(req, res, body, request_id, callback, response);
         if(uberObj.sandbox) {
         	uber.dummyChangeStatusRequest(req, request_id);
         }
@@ -227,7 +248,11 @@ uber.dummyChangeStatusRequest = function(req, request_id) {
     });
 }
 
-uber.handleBookResponse = function(req, body, request_id, callback) {
+uber.handleBookResponse = function(req, res, body, request_id, callback, response) {
+    console.log(req.query);
+        if(response.statusCode == 401) {
+            callback(response.statusCode, null)
+        }
     	if(body.status === "processing") {
     		setTimeout(() => {
     			uber.pollRequest(req, request_id, callback);
@@ -264,7 +289,7 @@ uber.handleBookResponse = function(req, body, request_id, callback) {
                 if(body && body.href) {
                     responseObj.map = body.href;
                 }
-    			callback(responseObj);
+    			callback(response.statusCode, responseObj);
             });
     	}
 }

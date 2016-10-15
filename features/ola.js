@@ -151,7 +151,7 @@ ola.login = function (req, res) {
 }
 
 
-ola.bookRide = function (callback, args) {
+ola.bookRide = function (req, res, callback, args) {
     var body = {
         'pickup_lat': args.lat,
         'pickup_lng': args.long,

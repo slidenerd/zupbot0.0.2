@@ -3,6 +3,7 @@ const ola = require('./ola')
 const uber = require('./uber')
 const geocoder = require('./geocoder');
 
+
 var ride = {
     'uber': uber,
     'ola': ola
@@ -21,7 +22,12 @@ ride.ride = function(req, res) {
     drop: req.query.drop,
     provider: req.query.provider
   }
-  res.render('map/location', data);    
+
+  if(req.query.provider == 'uber') {
+      uber.getCurrentRide(req, res, data);
+  } else {
+      res.render('ride/location', data);    
+  }
 }
 
 ride.price = function(req, res) {
@@ -44,7 +50,7 @@ ride.getRideEstimate = function(from, to, provider, res) {
     args.provider = provider;
     const priceCallback = function(data) {
         console.log(data);
-        res.render('map/price', data);
+        res.render('ride/price', data);
     }
     var geoCallback = function(err, res) {
         if(err) {
@@ -76,7 +82,7 @@ ride.authorize = function(modulename, req, res) {
             authorization_code: req.query.code
         }, function (err, access_token, refresh_token) {
             if (err) {
-            console.error(err);
+                console.error(err);
             } else {
             // store the user id and associated access token
             // redirect the user back to your actual app
@@ -160,8 +166,14 @@ ride.bookRide = function(req, res) {
             req.session.uber = req.query;
             uber.login(req, res);            
         } else {
-            console.log("Found access code, booking ride");
-            uber.bookRide(req, (body) => {
+            console.log("Found access code, booking Uber ride");
+            uber.bookRide(req, res, (responseCode, body) => {
+                if(responseCode == 401) {
+                    delete req.session.uberToken;
+                    uber.login(req, res);                    
+                    return;
+                }
+
                 res.redirect(body.map);
                 // res.end(JSON.stringify(body));
             }, query);            
@@ -171,15 +183,15 @@ ride.bookRide = function(req, res) {
             req.session.ola = req.query;
             ola.login(req, res);            
         } else {
-            console.log("Found access code, booking ride");
-            uber.bookRide(req, (body) => {
+            console.log("Found access code, booking Ola ride");
+            ola.bookRide(req, res, (body) => {
                 res.redirect(body.map);
                 // res.end(JSON.stringify(body));
             }, query);            
         }
-        ola.bookRide((body) => {
-            res.end(JSON.stringify(body));
-        }, req.query);            
+        // ola.bookRide((body) => {
+        //     res.end(JSON.stringify(body));
+        // }, req.query);            
     }
 }
 
