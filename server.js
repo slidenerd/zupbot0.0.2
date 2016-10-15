@@ -347,10 +347,7 @@ function firstRun(session) {
  * Add the user to the mongodb database if the user does not exist
  */
 function onMessage(session) {
-  let address = JSON.stringify(session.message.address)
-  console.log(address);
   console.log('This user is running our bot the subsequent time')
-  userController.addBotUser(session);
   reply(session)
 }
 
