@@ -45,6 +45,7 @@ const
   platforms = require('./utils/platforms'),
   replies = require('./utils/replies'),
   ride = require('./features/ride'),
+  skyscanner = require('./features/skyscanner'),
   userController = require('./controllers/user');
 
 console.log('%s App Initiated!', chalk.green('✓'));
@@ -260,16 +261,18 @@ app.get('/api/ride/book', function (req, res) {
 });
 
 app.get('/auth/ola/callback', function (req, res) {
-  ride.ola.authorization(req, res);
+  ride.authorize('ola', req, res);
 });
 
 app.get('/auth/uber/callback', function (req, res) {
   ride.authorize('uber', req, res);
 });
 
-// app.get('/api/list', function(req, res) {
-//   mail.getAllLists("631957", res)
-// });
+// =============SkyScanner=============
+app.get('/api/airfare', function (req, res) {
+  skyscanner.fetchFlightDetails(req, res);
+});
+// =============SkyScanner=============
 
 app.post('/api/subscribe', function (req, res) {
   if (!req.body) {

@@ -2,6 +2,7 @@
 const ola = require('./ola')
 const uber = require('./uber')
 const geocoder = require('./geocoder');
+const url = require('url');
 
 
 var ride = {
@@ -87,7 +88,7 @@ ride.authorize = function(modulename, req, res) {
             // store the user id and associated access token
             // redirect the user back to your actual app
                 req.session.uberToken = access_token;
-                if(req.users) {
+                if(req.user) {
                     req.user.tokens.push({ kind: 'uber', access_token });                
                 }
                 console.log("Got Uber access token");
@@ -96,12 +97,15 @@ ride.authorize = function(modulename, req, res) {
         });    
     } else {
         //Ola
-        ride.authorize(req, res, (access_token) => {
-            req.session.olaToken = access_token;
-            user.tokens.push({ kind: 'ola', access_token });
-            console.log("Got Uber access token");
-            ride.bookRide(req, res);
-        });
+        console.log(req.url);
+        console.log(req.query);
+        var access_token = req.query.access_token
+        req.session.olaToken = access_token;
+        if(req.user) {
+            req.user.tokens.push({ kind: 'ola', access_token });
+        }
+        console.log("Got OLA access token");
+        // ride.bookRide(req, res);
     }
 }
 
@@ -168,14 +172,15 @@ ride.getToken = function(req, key) {
 ride.bookRide = function(req, res) {
     var query;
     if(req.query.provider == undefined) {
-        query = req.session.uber;
+        query = req.session.ride;
     } else {
         query = req.query;
     }
+    console.log(query);
     if(query.provider == 'uber') {
         if(ride.getToken(req, 'uber') === undefined) {
             console.log("############" + ride.getToken(req, 'uber'));
-            req.session.uber = req.query;
+            req.session.ride = req.query;
             uber.login(req, res);            
         } else {
             console.log("Found access code, booking Uber ride");
@@ -190,13 +195,13 @@ ride.bookRide = function(req, res) {
         }
     } else {
         if(req.session.olaToken === undefined) {
-            req.session.ola = req.query;
+            req.session.ride = req.query;
             ola.login(req, res);            
         } else {
             console.log("Found access code, booking Ola ride");
             ola.bookRide(req, res, (body) => {
-                res.redirect(body.map);
-                // res.end(JSON.stringify(body));
+                // res.redirect(body.map);
+                res.end(JSON.stringify(body));
             }, query);            
         }
         // ola.bookRide((body) => {

@@ -6,25 +6,37 @@ const
     request = require('request')
 
 
-getFlightDetailsFromSkyScanner('coimb', 'chennai', '2016-10-12', '2016-10-22');
+const SKYSCANNER_API_KEY = 'prtl6749387986743898559646983194'
 
-function getFlightDetailsFromSkyScanner(from, to, outboundDate, inboundDate) {
+const skyscanner = {};
+
+skyscanner.fetchFlightDetails = function(req, res) {
+    skyscanner.getFlightDetailsFromSkyScanner(res, req.query.from, req.query.to, req.query.outbounddate, req.query.inbounddate, 
+    (error, body) => {
+        if (!error) {
+            let flightOptions = skyscanner.parse(body);
+            res.render('airfare/skyscanner', flightOptions)
+        }
+    });
+}
+
+skyscanner.getFlightDetailsFromSkyScanner = function(res, from, to, outboundDate, inboundDate, callback) {
     var body = new Object();
     body.country = 'IN';
     body.currency = 'INR';
     body.locale = 'en-IN';
     body.locationSchema = 'sky';
-    body.apikey = 'prtl6749387986743898559646983194';
+    body.apikey = SKYSCANNER_API_KEY;
     body.grouppricing = 'on';
     body.outbounddate = outboundDate;
     body.inbounddate = inboundDate;
     body.adults = 1;
-    findLocation(body, from, to, 0);
+    skyscanner.findLocation(res, body, from, to, 0, callback);
 }
 
-function findLocation(params, query, nextQuery, count) {
+skyscanner.findLocation = function(res, params, query, nextQuery, count, callback) {
     var options = {
-        url: endpoints.ENDPOINT_SKY_SCANNER_AUTO_SUGGEST + query + '&apiKey=' + constants.SKYSCANNER_API_KEY,
+        url: endpoints.ENDPOINT_SKY_SCANNER_AUTO_SUGGEST + query + '&apiKey=' + SKYSCANNER_API_KEY,
         json: true
     }
     request.get(options, (error, response, body) => {
@@ -32,106 +44,112 @@ function findLocation(params, query, nextQuery, count) {
             if(body.Places.length == 0) {
                 //TODO: no results found
                 console.log("Found no results for query " + query);
-            } else if(body.Places.length == 1) {
+            } else if(body.Places.length > 0) {
                 if(count == 0) {
                     params.originplace = body.Places[0].PlaceId;
-                    findLocation(params, nextQuery, null, 1);
+                    skyscanner.findLocation(res, params, nextQuery, null, 1, callback);
                 } else if(count == 1) {
                     params.destinationplace = body.Places[0].PlaceId;
-                    getFlightDetails(params);
-                }    
+                    skyscanner.getFlightDetails(res, params, callback);
+                }
             } else {
                 //TODO: multiple results found
                 console.log("Found " + body.Places.length + " results for query " + query);
             }
+        } else {
+            console.log(response.statusCode);
+            callback(null, error);
         }
     });
 }
 
-function getFlightDetails(body) {
+skyscanner.getFlightDetails = function(res, body, callback) {
     var headers = {
         'Content-Type': 'application/x-www-form-urlencoded',
         'Accept': 'application/json' 
     };
-
     var options = {
-        url: constants.ENDPOINT_SKY_SCANNER_LIVE_PRICE + constants.SKYSCANNER_API_KEY,
+        url: endpoints.ENDPOINT_SKY_SCANNER_LIVE_PRICE + '?apiKey=' + SKYSCANNER_API_KEY,
         headers: headers,
         form: body,
         json: false
     };
-
-
-
-    return new Promise((resolve, reject) => {
-        request.post(options, (error, response, body) => {
-            sessionStartCallback(resolve, reject, error, response, body)
-        });
+    request.post(options, (error, response, body) => {
+        //TODO:
+        skyscanner.sessionStartCallback(res, response, body, error, callback)
     });
 }
 
-function sessionStartCallback(resolve, reject, error, response, body) {
+skyscanner.sessionStartCallback = function(res, response, body, error, callback) {
     if (!error && response.statusCode == 201) {
+        var cookie;
+        if(response.headers["set-cookie"] && response.headers["set-cookie"].length > 0) {
+            cookie = response.headers["set-cookie"][0];
+        }
         var location = response.headers.location;
         var headers = {
             'Content-Type': 'application/x-www-form-urlencoded',
             'Accept': 'application/json',
-            'Cookie': response.headers["set-cookie"][0]
+            'Cookie': response.headers["set-cookie"] && response.headers["set-cookie"].length > 0 ? response.headers["set-cookie"][0] : '' 
         };
         
         var options = {
-            url: location + "?apikey=" + constants.SKYSCANNER_API_KEY + "&pageindex=0&pagesize=20",
+            url: location + "?apikey=" + SKYSCANNER_API_KEY + "&pageindex=0&pagesize=20",
             headers: headers,
             json: true
         };
         setTimeout(function() {
-            pollSession(options, resolve, reject);
-        }, 1000);
+            skyscanner.pollSession(res, options, callback);
+        }, 2000);
         return;
     }
-    finalCallback(resolve, reject, error, response, body);
+    callback(res, body);
 }
 
-function pollSession(options, resolve, reject) {
+skyscanner.pollSession = function(res, options, callback) {
     console.log("Polling...");
+    console.log("#################")
+    console.log(callback);
+    console.log("#################")
         request.get(options, (error, response, body) => {
             if(error) {
-                reject(error);
+                callback(error, null);
                 return;
             }
+            console.log("Response code : " + response.statusCode);
             if (response.statusCode == 200) {
+                console.log("Status : " + body.Status);
                 if(body.Status == "UpdatesPending") {
                     setTimeout(function() {
-                        pollSession(options, resolve, reject);
-                    }, 500)                
+                        skyscanner.pollSession(res, options, callback);
+                    }, 1000)                
                 } else if(body.Status == "UpdatesComplete") {
-                    finalCallback(resolve, reject, error, response, body);
+                    callback(null, body);
                 }
                 return;
             } else if(response.statusCode == 304) {
                 setTimeout(function() {
-                    pollSession(options, resolve, reject);
-                }, 500)                
+                    skyscanner.pollSession(res, options, callback);
+                }, 2000)                
                 return;    
             }
-            finalCallback(resolve, reject, error, response, body);
+            callback(res, body);
         });
 }
 
-function finalCallback(resolve, reject, error, response, body) {
-    if (!error) {
-        let flightOptions = parse(body);
-        console.log(flightOptions);
-        resolve(flightOptions);
-    }
-    else {
-        reject(error);
-    }
-}
+// skyscanner.finalCallback = function(res, body) {
+//     if (!error) {
+//         let flightOptions = skyscanner.parse(body);
+//         console.log(flightOptions);
+//         resolve(flightOptions);
+//     }
+//     else {
+//         reject(error);
+//     }
+// }
 
-function parse(json) {
+skyscanner.parse = function(json) {
     let options = [];
-    console.log(json);
     for (let legs of json.Legs) {
         var option = new Object();
         var outbound = new Object();
@@ -140,7 +158,7 @@ function parse(json) {
         outbound.stops = legs.Stops.length
         outbound.duration = legs.Duration
         outbound.id = legs.Id
-        option.outboud = outbound
+        option.outbound = outbound
         
         var inbound = new Object();
         inbound.departure = legs.Departure
@@ -149,13 +167,13 @@ function parse(json) {
         inbound.duration = legs.Duration
         inbound.id = legs.Id
         option.inbound = inbound
-        option = findCheapestPrice(option, json)
+        option = skyscanner.findCheapestPrice(option, json)
         options.push(option)
     }
     return options;
 }
 
-function findCheapestPrice(option, json) {
+skyscanner.findCheapestPrice = function(option, json) {
     var price = Number.MAX_SAFE_INTEGER;
     var bookingLink;
     for (let priceObj of json.Itineraries[0].PricingOptions) {
@@ -170,88 +188,8 @@ function findCheapestPrice(option, json) {
     
 }
 
-//TODO detect source if its skype or facebook and render different content for each
-function report(resolve, reject, rs, args, userId, session) {
-    getDealsOfTheDayFromFlipkart()
-        .then((deals) => {
-            if (deals) {
-                let channelId = session.message.address.channelId;
-                return handlePlatforms(userId, channelId,session, rs, deals)
-            }
-            else {
-                session.send(utils.sendRandomMessage(constants.INFO_NO_DEALS_FOUND));
-                resolve(true);
-            }
-        })
-        .then((reply) => {
-            resolve(reply);
-        })
-        .catch((error) => {
-            console.log(error);
-            reject(error);
-        })
-}
+// skyscanner.getFlightDetailsFromSkyScanner('coimb', 'chennai', '2016-10-21', '2016-11-22', (response, error) => {
+//     console.log(error);
+// });
 
-//TODO handle limits for each platform while displaying carousel, Facebook has a limit of 15, Skype has a limit of 5
-
-//TODO track this bug https://github.com/Microsoft/BotBuilder/issues/1167
-//If Skype is on, messenger doesnt show carousel and if messenger is ON, skype doesnt show carousel
-function handlePlatforms(userId, channelId, session, rs, deals) {
-    let attachments = []
-    if (channelId.toLowerCase() === 'facebook') {
-        //Build cards containing all the data
-        for (let i = 0; i < deals.length && i < constants.MESSENGER_CAROUSEL_LIMIT; i++) {
-            let deal = deals[i];
-            attachments.push(
-                new builder.HeroCard(session)
-                    .title(deal.title)
-                    .subtitle(deal.subtitle)
-                    .images([
-                        builder.CardImage.create(session, deal.imageUrl)
-                            .tap(builder.CardAction.openUrl(session, deal.url)),
-                    ])
-                    .buttons([
-                        builder.CardAction.openUrl(session, deal.url, "View On Flipkart")
-                    ])
-            )
-        }
-    }
-    else {
-        //Build cards containing all the data
-        //All skype urls must be in HTTPS else they wont be rendered
-        for (let i = 0; i < deals.length && i < constants.SKYPE_CAROUSEL_LIMIT; i++) {
-            let deal = deals[i];
-            let httpsDealUrl =  replaceHttpLinksWithHttpsForSkype(deal.url);
-            let httpsImageUrl = replaceHttpLinksWithHttpsForSkype(deal.imageUrl);
-            attachments.push(
-                new builder.HeroCard(session)
-                    .title(deal.title)
-                    .subtitle(deal.subtitle)
-                    .images([
-                        builder.CardImage.create(session, httpsImageUrl)
-                            .tap(builder.CardAction.openUrl(session, httpsDealUrl)),
-                    ])
-                    .buttons([
-                        builder.CardAction.openUrl(session, httpsDealUrl, "View On Flipkart")
-                    ])
-            )
-        }
-    }
-    rs.setUservar(userId, constants.VAR_FLIPKART_RESULTS_SIZE, deals.length)
-    let msg = new builder.Message(session)
-        .attachmentLayout(builder.AttachmentLayout.carousel)
-        .attachments(attachments);
-    session.send(msg);
-    return rs.replyAsync(userId, constants.JS_TRIGGER_DEALS, this);
-}
-
-//TODO do this with a regex that matches the beginning of each line
-function replaceHttpLinksWithHttpsForSkype(url){
-	let regex = 'http://'
-	return url.replace(regex, 'https://');
-}
-
-let deals = {
-    init: init
-}
-module.exports = deals
+module.exports = skyscanner
