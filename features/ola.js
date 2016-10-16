@@ -6,10 +6,13 @@ const geocoder = require('./geocoder');
  * https://sandbox-t1.olacabs.com/oauth2/authorize?response_type=token&client_id=NjNmZGNmNjAtOTVkYy00YzAyLTg1MjktZTNjYzBkYzMyZTQ3&redirect_uri=https://zup.chat/api/ride/ola/callback&scope=profile%20booking&state=state123
  */
 const ola = {
-    apiToken: '0c31668dfb814df79c3c43c4d5b337df',
     endPoint: 'http://sandbox-t1.olacabs.com/v1/',
-    client_id: 'NjNmZGNmNjAtOTVkYy00YzAyLTg1MjktZTNjYzBkYzMyZTQ3',
-    redirect_uri: 'https://zup.chat/api/ride/ola/callback',
+    // apiToken: '0c31668dfb814df79c3c43c4d5b337df',
+    // client_id: 'NjNmZGNmNjAtOTVkYy00YzAyLTg1MjktZTNjYzBkYzMyZTQ3',
+    // redirect_uri: 'https://zup.chat/api/ride/ola/callback',
+    apiToken: '3882a2d3f13248b78bc31186dfeab249',
+    client_id: 'ODYxMDgyNDktNGU4Yy00ZWU3LTlhNTctODRhYmE5NWY3YWFj',
+    redirect_uri: 'http://localhost:3000/auth/ola/callback',
     auth_url: 'https://sandbox-t1.olacabs.com/oauth2/authorize'
 }
 
@@ -151,7 +154,7 @@ ola.login = function (req, res) {
 }
 
 
-ola.bookRide = function (callback, args) {
+ola.bookRide = function (req, res, callback, args) {
     var body = {
         'pickup_lat': args.lat,
         'pickup_lng': args.long,

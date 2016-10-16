@@ -73,12 +73,16 @@
               width: 16px;  
               height: 16px;
             }
-<<<<<<< HEAD:views/map/price.ejs
             .error {
                 color: #F00;
                 font-size: 18px;
                 text-align: center;
                 padding: 35px;
+            }
+            .alert-title {
+                text-align: center;
+                font-weight: 900;
+                padding-top: 10px;
             }
         </style>
 
@@ -148,6 +152,21 @@
                     </div>
                 </div>
             </div>
+
+            <div id="alert" class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+            <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content">
+                    <h4 class="modal-title alert-title">Book Uber?</h4>
+                    <div class="modal-body">
+                        <p>Are you sure you want to book your ride?</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary" onclick="bookUber()">Book Uber</button>
+                    </div>                                        
+                </div>
+            </div>
+            </div>            
         </main>
 
         <!-- SCRIPTS -->
@@ -167,11 +186,14 @@
             $(function () {
                 $('#bookingTab a:first').tab('show');
             });
+            var location;
             function bookList(product_id,  provider) {
-                var location = '/api/ride/book?lat=' + <%=location.lat%> + '&long=' + <%=location.long%> + '&droplat=' + <%=location.droplat%> + '&droplong=' + <%=location.droplong%> + '&product_id=' + product_id + '&provider=' + provider
-                console.log(location);
-                window.location = location;
+                location = '/api/ride/book?lat=' + <%=location.lat%> + '&long=' + <%=location.long%> + '&droplat=' + <%=location.droplat%> + '&droplong=' + <%=location.droplong%> + '&product_id=' + product_id + '&provider=' + provider
+                $('#alert').modal('show');
             };
+            function bookUber() {
+                window.location = location;
+            }
         </script>
 
     </body>

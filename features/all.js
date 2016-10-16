@@ -172,7 +172,7 @@ all.handleSpecialRepliesOnResolve = function (session, brain, response) {
         let destination = brain.get(session.message.user.id, brain.keys.CAB_DESTINATION)
         let cabProvider = brain.get(session.message.user.id, brain.keys.CAB_PROVIDER)
         let url = encodeURI('https://zup.chat/api/ride?lat=' + latitude + '&long=' + longitude + '&drop=' + destination + '&provider=' + cabProvider);
-        platforms.getWebViewButton(session, 'Here is your ride!', url, 'Your Cab', 'tall');
+        platforms.getWebViewButton(session, 'Here is your ride! :)', url, 'Your Cab', 'full');
     }
     else {
         session.send(response);

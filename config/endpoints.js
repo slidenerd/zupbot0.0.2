@@ -12,4 +12,7 @@ endpoints.FLIPKART_AFFILIATE_TOKEN = 'cb49349872094f7494d802c1efc6b67b'
 endpoints.OPEN_WEATHER_MAP = 'http://api.openweathermap.org/data/2.5/weather'
 endpoints.OPEN_WEATHER_MAP_KEY = '353263113c293de88e214ced88de05a7'
 
+endpoints.ENDPOINT_SKY_SCANNER_LIVE_PRICE = 'http://partners.api.skyscanner.net/apiservices/pricing/v1.0'
+endpoints.ENDPOINT_SKY_SCANNER_AUTO_SUGGEST = 'http://partners.api.skyscanner.net/apiservices/autosuggest/v1.0/IN/INR/en-US?query='
+
 module.exports = endpoints;

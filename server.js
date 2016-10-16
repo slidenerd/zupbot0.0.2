@@ -367,7 +367,7 @@ function reply(session) {
 function runCron() {
   console.log('%s Init Cron Jobs', chalk.green('✓'));
   // all.runCron();
-  setTimeout(runCron, 200000)
+  // setTimeout(runCron, 200000)
 }
 
 module.exports = app;
