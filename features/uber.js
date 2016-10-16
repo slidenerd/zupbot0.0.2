@@ -4,7 +4,7 @@ const geocoder = require('./geocoder');
 const Uber = require('node-uber');
 
 const uber = {
-    endPoint: 'https://sandbox-api.uber.com/v1/',
+    endPoint: 'https://api.uber.com/v1/',
     accessToken: 'dlQLWx7Rz1SBuqYWbRWoDkADNbm7Ka15cHbu1Zq3',
 }
 
