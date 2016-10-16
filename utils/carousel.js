@@ -1,4 +1,4 @@
-'use strict'
+'use strict';
 const
     builder = require('../core/'),
     constants = require('./constants'),
