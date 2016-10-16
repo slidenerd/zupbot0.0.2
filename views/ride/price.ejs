@@ -189,14 +189,15 @@
             $(function () {
                 $('#bookingTab a:first').tab('show');
             });
-            var location;
+            var loc;
             function bookList(product_id,  provider) {
-                location = '/api/ride/book?lat=' + <%=location.lat%> + '&long=' + <%=location.long%> + '&droplat=' + <%=location.droplat%> + '&droplong=' + <%=location.droplong%> + '&product_id=' + product_id + '&provider=' + provider
+                loc = '/api/ride/book?lat=' + <%=location.lat%> + '&long=' + <%=location.long%> + '&droplat=' + <%=location.droplat%> + '&droplong=' + <%=location.droplong%> + '&product_id=' + product_id + '&provider=' + provider
                 $('#alert').modal('show');
             };
 
             function bookUber() {
-                window.location = location;
+                alert("bookUber");
+                window.location = loc;
             }
         </script>
 

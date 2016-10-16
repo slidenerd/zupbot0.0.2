@@ -53,7 +53,6 @@ uber.getCurrentRide = function(req, res, data) {
         }
         console.log(headers);
         request.get(options, (error, response, body) => {
-            console.log(body);
             if(error || !body.request_id) {
                 res.render('ride/location', data);
             } else {
@@ -62,8 +61,10 @@ uber.getCurrentRide = function(req, res, data) {
                     headers: headers,
                     json: true
                 }
-                request.get(options, (error, response, body) => {
-                    res.redirect(body.href);
+                request.get(options, (error, response, mapbody) => {
+                    // res.redirect(body.href);
+                    body.map = mapbody.href;
+                    res.render('ride/map', body);
                 });       
             }
         });    
