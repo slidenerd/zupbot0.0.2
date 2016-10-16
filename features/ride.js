@@ -190,7 +190,8 @@ ride.bookRide = function(req, res) {
                     uber.login(req, res);                    
                     return;
                 }
-                res.redirect(body.map);
+                res.render('ride/map', body);
+                // res.redirect(body.map);
             }, query);            
         }
     } else {
