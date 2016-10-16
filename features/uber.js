@@ -4,8 +4,8 @@ const geocoder = require('./geocoder');
 const Uber = require('node-uber');
 
 const uber = {
-    // endPoint: 'https://sandbox-api.uber.com/v1/',
-    endPoint: 'https://api.uber.com/v1/',
+    endPoint: 'https://sandbox-api.uber.com/v1/',
+    // endPoint: 'https://api.uber.com/v1/',
     accessToken: 'dlQLWx7Rz1SBuqYWbRWoDkADNbm7Ka15cHbu1Zq3',
 }
 
@@ -13,8 +13,8 @@ const uberObj = new Uber({
     client_id: '2D_Wy-fU_jcAXgP8_DT9Oze_xg3nnpfx',
     client_secret: 'X2_zVVpoigocAk2Cdr44i9XoxQg03Uw3gYwjce8j',
     server_token: uber.accessToken,
-    // redirect_uri: 'http://localhost:3000/auth/uber/callback',
-    redirect_uri: 'https://zup.chat/auth/uber/callback',
+    redirect_uri: 'http://localhost:3000/auth/uber/callback',
+    // redirect_uri: 'https://zup.chat/auth/uber/callback',
     name: 'zup.chat',
     language: 'en_US', // optional, defaults to en_US
     sandbox: true // optional, defaults to false
@@ -51,7 +51,6 @@ uber.getCurrentRide = function(req, res, data) {
             headers: headers,
             json: true
         }
-        console.log(headers);
         request.get(options, (error, response, body) => {
             if(error || !body.request_id) {
                 res.render('ride/location', data);
@@ -63,8 +62,20 @@ uber.getCurrentRide = function(req, res, data) {
                 }
                 request.get(options, (error, response, mapbody) => {
                     // res.redirect(body.href);
-                    body.map = mapbody.href;
-                    res.render('ride/map', body);
+                    var responseObj = {
+                        success: false,
+                        message: "Your booking is successful.",
+                        'driver_name': body.driver.name,
+                        'driver_number': body.driver.phone_number,
+                        'cab_type': body.vehicle.make + ' ' + body.vehicle.model,
+                        'cab_number': body.vehicle.license_plate,
+                        'car_model': '',
+                        'eta': body.pickup.eta,
+                        'driver_lat': body.location.latitude,
+                        'driver_lng': body.location.longitude
+                    }
+                    responseObj.map = mapbody.href;
+                    res.render('ride/map', responseObj);
                 });       
             }
         });    
@@ -107,6 +118,7 @@ uber.getRidePriceEstimateCoordinates = function(resObj, callback, args) {
         headers: headers,
         json: true
     }
+    console.log(options);
     request.get(options, (error, response, body) => {
         if(error) {
             console.log(error);
