@@ -291,6 +291,7 @@ app.use(errorHandler());
  */
 
 brain.load(() => {
+  runCron();
   app.listen(app.get('port'), () => {
     console.log('%s Express server listening on port %d in %s mode after brain load ', chalk.green('✓'), app.get('port'), app.get('env'));
   });
@@ -361,6 +362,12 @@ function reply(session) {
     .catch((response) => {
       all.handleSpecialRepliesOnReject(session, brain, response)
     })
+}
+
+function runCron() {
+  console.log('%s Init Cron Jobs', chalk.green('✓'));
+  // all.runCron();
+  setTimeout(runCron, 200000)
 }
 
 module.exports = app;

@@ -12,12 +12,13 @@ const uberObj = new Uber({
     client_id: '2D_Wy-fU_jcAXgP8_DT9Oze_xg3nnpfx',
     client_secret: 'X2_zVVpoigocAk2Cdr44i9XoxQg03Uw3gYwjce8j',
     server_token: uber.accessToken,
-    // redirect_uri: 'http://localhost:3000/auth/uber/callback',
-    redirect_uri: 'https://zup.chat/auth/uber/callback',
+    redirect_uri: 'http://localhost:3000/auth/uber/callback',
+    // redirect_uri: 'https://zup.chat/auth/uber/callback',
     name: 'zup.chat',
     language: 'en_US', // optional, defaults to en_US
     sandbox: true // optional, defaults to false
 });
+
 
 const headers = {
     'Accept': 'application/json',
@@ -28,12 +29,46 @@ const headers = {
 // var done = false;
 
 uber.login = function(req, res) {
+    console.log("Uber.login");
     var url = uberObj.getAuthorizeUrl(['history','profile', 'request', 'places']);
+    console.log('uber.login : ' + url)
     res.redirect(url);
 }
 
 uber.authorization = function(authToken, callback) {
     uberObj.authorization(authToken, callback);
+}
+
+uber.getCurrentRide = function(req, res, data) {
+    if(req.session.uberToken) {
+        var headers = {
+            'Accept': 'application/json',
+            'Authorization': 'Bearer ' + req.session.uberToken 
+        };
+        var options = {
+            url: uber.endPoint + 'requests/current',
+            headers: headers,
+            json: true
+        }
+        console.log(headers);
+        request.get(options, (error, response, body) => {
+            console.log(body);
+            if(error || !body.request_id) {
+                res.render('ride/location', data);
+            } else {
+                var options = {
+                    url: uber.endPoint + 'requests/' + body.request_id + '/map',
+                    headers: headers,
+                    json: true
+                }
+                request.get(options, (error, response, body) => {
+                    res.redirect(body.href);
+                });       
+            }
+        });    
+    } else {
+        res.render('ride/location', data);
+    }
 }
 
 uber.getRideEstimate = function(from, to, callback) {
@@ -167,7 +202,7 @@ uber.getRideEstimateCoordinates = function(uberCallback, args) {
 }
 
 
-uber.bookRide = function(req, callback, args) {
+uber.bookRide = function(req, res, callback, args) {
     var headers = {
         'Accept': 'application/json',
         'Authorization': 'Bearer ' + req.session.uberToken 
@@ -186,11 +221,11 @@ uber.bookRide = function(req, callback, args) {
         json: true
     }
     request.post(options, (error, response, body) => {
-		uber.handleBookResponse(req, body, body.request_id, callback);    	
+		uber.handleBookResponse(req, res, body, body.request_id, callback, response);    	
     });
 }
 
-uber.pollRequest = function(req, request_id, callback) {
+uber.pollRequest = function(req, res, request_id, callback) {
     var headers = {
         'Accept': 'application/json',
         'Authorization': 'Bearer ' + req.session.uberToken 
@@ -200,8 +235,10 @@ uber.pollRequest = function(req, request_id, callback) {
         headers: headers,
         json: true
     }
+    console.log(options);
     request.get(options, (error, response, body) => {
-    	uber.handleBookResponse(req, body, request_id, callback);
+        console.log("Poll Response");
+    	uber.handleBookResponse(req, res, body, request_id, callback, response);
         if(uberObj.sandbox) {
         	uber.dummyChangeStatusRequest(req, request_id);
         }
@@ -227,10 +264,15 @@ uber.dummyChangeStatusRequest = function(req, request_id) {
     });
 }
 
-uber.handleBookResponse = function(req, body, request_id, callback) {
+uber.handleBookResponse = function(req, res, body, request_id, callback, response) {
+    console.log(body.status);
+        if(response.statusCode == 401) {
+            console.log("Unauthorized. Redirecting");
+            callback(response.statusCode, null)
+        }
     	if(body.status === "processing") {
     		setTimeout(() => {
-    			uber.pollRequest(req, request_id, callback);
+    			uber.pollRequest(req, res, request_id, callback);
 	    	}, 1000)
     	} else if(body.status === "no_drivers_available") {
     		var response = {
@@ -264,7 +306,7 @@ uber.handleBookResponse = function(req, body, request_id, callback) {
                 if(body && body.href) {
                     responseObj.map = body.href;
                 }
-    			callback(responseObj);
+    			callback(response.statusCode, responseObj);
             });
     	}
 }

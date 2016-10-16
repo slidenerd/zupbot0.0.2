@@ -195,4 +195,8 @@ all.handleSpecialRepliesOnReject = function (session, brain, response) {
         session.send(response)
     }
 }
+
+all.runCron = function () {
+    flipkart.runCron();
+}
 module.exports = all;

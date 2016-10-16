@@ -79,11 +79,6 @@ flipkart.findAllOffers = function () {
                 let data = body;
                 let offers = parse(data);
                 offers = flipkart.sortByDiscounts(offers)
-                jsonfile.writeFile(__dirname + '/data.json', offers, { spaces: 4 }, (error) => {
-                    if (error) {
-                        console.log(error)
-                    }
-                })
                 resolve(offers);
             }
             else {
@@ -152,6 +147,25 @@ flipkart.paginator = function (session, offers) {
     //Reset the page index if we have browsed all offers
     session.userData.user.flipkart.page = (end == offers.length) ? 0 : end
     return page;
+}
+
+flipkart.runCron = function () {
+    flipkart.findAllOffers()
+        .then((offers) => {
+            if (offers.length) {
+                jsonfile.writeFile(__dirname + '/../json/all_flipkart_offers.json', offers, { spaces: 4 }, (error) => {
+                    if (error) {
+                        console.log(error)
+                    }
+                    else {
+                        console.log('Successfully updated flipkart offers from cron job')
+                    }
+                })
+            }
+        })
+        .catch((error) => {
+            console.log('rejected offers ' + error)
+        })
 }
 
 flipkart.applyFilters = function (session, offers) {
