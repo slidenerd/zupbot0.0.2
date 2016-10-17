@@ -168,6 +168,28 @@ platforms.facebook.askGeolocation = function (session, message) {
         });
 }
 
+platfoms.facebook.deletePersistentMenu = function () {
+    request({
+        url: 'https://graph.facebook.com/v2.7/me/thread_settings?access_token=' + endpoints.FACEBOOK_PAGE_ACCESS_TOKEN,
+        method: 'DELETE',
+        headers: { 'Content-Type': 'application/json' },
+        form: {
+            setting_type: "call_to_actions",
+            thread_state: "existing_thread"
+        }
+    },
+        function (error, response, body) {
+            if (!error && response.statusCode == 200) {
+                // Print out the response body
+                console.log(": deleted persistent menu ", body);
+
+            } else {
+                // TODO: Handle errors
+                console.log(": Failed. Need to handle errors.", error, response.statusCode);
+            }
+        });
+}
+
 platforms.facebook.getGeolocation = function (session) {
     //Get the entities sent by the user if any
     let entities = session.message.entities;
