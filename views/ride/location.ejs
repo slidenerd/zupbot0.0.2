@@ -40,9 +40,21 @@
         font-weight: 900;
     }
     .fWidth {
-        width: 200px;
+        width: 150px;
     }
     .top-buffer { margin-top:40px; }
+    .spacing {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .btn-white {
+        background-color: #FFF;
+        color: #2B7FD2 !important;
+    }
+    .btn-blue {
+        background-color: #2B7FD2;
+        color: #FFF !important;
+    }
 </style>
 <script>
     function checkPrice(orgValue, provider) {
@@ -67,7 +79,7 @@
                 <div class="row">
                     <div class="title h3">Book your ride</div>
                 </div>
-                <div class="row top-buffer">
+                <div class="row top-buffer spacing">
                     <label for="pickupLocation">Pickup Location:</label>
                     <%if(typeof pickup != 'undefined') {%>
                         <input type="text" id="pickupLocation" value="<%=pickup%>"/>
@@ -75,7 +87,7 @@
                         <input type="text" id="pickupLocation"/>
                     <%}%>
                 </div>
-                <div class="row top-buffer">
+                <div class="row top-buffer spacing">
                     <label for="dropLocation">Drop Location:</label>
                     <%if(typeof drop != 'undefined') {%>
                         <input type="text" id="dropLocation" value="<%=drop%>"/>
@@ -84,8 +96,12 @@
                     <%}%>    
                 </div>
                 <div class="row top-buffer text-center">
-                    <button type="button" class="btn btn-primary fWidth" onclick="checkPrice('<%=pickup%>', '<%=provider%>');">Check Price</button>
-                    <button type="button" class="btn btn-danger fWidth" onclick="clearForm();">Clear</button>
+                    <div class="col-xs-6 text-center">
+                        <button type="button" class="btn btn-blue fWidth" onclick="checkPrice('<%=pickup%>', '<%=provider%>');">Check Price</button>
+                    </div>
+                    <div class="col-xs-6 text-center">
+                        <button type="button" class="btn btn-white fWidth" onclick="clearForm();">Clear</button>
+                    </div>
                 </div>
             </div>
         </main>                   

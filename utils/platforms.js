@@ -178,7 +178,23 @@ platforms.facebook.getGeolocation = function (session) {
 }
 
 platforms.facebook.getProfile = function (session) {
-    return null
+    request({
+        url: 'https://graph.facebook.com/v2.7/' + session.message.user.id + '?access_token=' + endpoints.FACEBOOK_PAGE_ACCESS_TOKEN,
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        form: webView
+    },
+        function (error, response, body) {
+            if (!error && response.statusCode == 200) {
+                // Print out the response body
+                console.log(": Updated.");
+                console.log(body);
+            } else {
+                // TODO: Handle errors
+                console.log(": Failed. Need to handle errors.");
+                console.log(body);
+            }
+        });
 }
 
 platforms.facebook.getWebViewButton = function (webView) {
