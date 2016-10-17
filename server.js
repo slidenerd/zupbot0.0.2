@@ -314,7 +314,7 @@ const bot = new builder.UniversalBot(connector);
 
 app.post('/api/messages', connector.listen());
 let dialogVersionOptions = {
-  version: 2.1,
+  version: 3,
   resetCommand: /^reset/i
 };
 bot.use(builder.Middleware.dialogVersion(dialogVersionOptions));
@@ -325,8 +325,10 @@ bot.use(builder.Middleware.dialogVersion(dialogVersionOptions));
 
 //Run this dialog the very first time for a particular user
 bot.use(builder.Middleware.firstRun({
-  version: 2.1,
-  dialogId: '/firstRun'
+  version: 3,
+  dialogId: '/firstRun',
+  upgradeDialogId: '/onUpgrade',
+  upgradeDialogArgs: 'My brain size increased by another gram :) Now I can get you an uber cab or awesome offers from flipkart. All you gotta do is type \'help\''
 }));
 
 bot.dialog('/firstRun', firstRun);
@@ -350,7 +352,6 @@ function firstRun(session) {
  */
 function onMessage(session) {
   console.log('This user is running our bot the subsequent time')
-  platforms.facebook.deletePersistentMenu()
   reply(session)
 }
 
@@ -364,6 +365,10 @@ function reply(session) {
     .catch((response) => {
       all.handleSpecialRepliesOnReject(session, brain, response)
     })
+}
+
+function onUpgrade(session, args) {
+  session.send(args)
 }
 
 function runCron() {
