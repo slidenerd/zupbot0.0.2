@@ -10,16 +10,19 @@
 //NO SOURCE NO DESTINATION
 
 + [*] (@cabwords) [*] {weight=996}
-- {@int askcabprovider}{topic=bookcab}
+- {@int askcabprovider}{topic=bookcab}<set cabdestination=undefined>
 
 + [*] (@cabservices) [*] {weight=996}
-- {@int askcabsource}<set cabprovider=<star>>{topic=bookcab}
+- {@int askcabsource}<set cabprovider=<star>>{topic=bookcab}<set cabdestination=undefined>
 
 + [*] (@cabwords) [*] (@cabservices) [*] {weight=996}
-- {@int askcabsource}<set cabprovider=<star2>>{topic=bookcab}
+- {@int askcabsource}<set cabprovider=<star2>>{topic=bookcab}<set cabdestination=undefined>
 
 + [*] (@cabservices) [*] (@cabwords) [*] {weight=996}
-- {@int askcabsource}<set cabprovider=<star1>>{topic=bookcab}
+- {@int askcabsource}<set cabprovider=<star1>>{topic=bookcab}<set cabdestination=undefined>
+
++ [*] (@cabservices) [*] (@cabwords) [*] (to go to|go to|to reach|reach|to) *{weight=996}
+- {@int askcabsource}<set cabprovider=<star1>><set cabdestination=<star4>>{topic=bookcab}
 
 > topic bookcab
     + int askcabprovider
@@ -35,6 +38,7 @@
     - Can you please share your location?
 
     + int handlegeolocation
+    * <get cabdestination> != undefined => {@int bookcab}
     - Where would you like to go?
 
     //While calling @bookcab, if you add a response before it, modify server.js reply method accordingly
