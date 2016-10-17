@@ -86,6 +86,24 @@
                 font-weight: 900;
                 padding-top: 10px;
             }
+
+            .bold {
+                font-weight: 900;
+            }
+
+            .rightAlign {
+                text-align: right;
+            }
+
+            .titleRow {
+                padding-top: 20px;
+                padding-bottom: 20px;
+            }
+
+            .vcenter {
+                display: flex;
+                align-items: center;
+            }
         </style>
 
     </head>
@@ -109,25 +127,35 @@
                         </li>
                         <%}%>
                     </ul>
-
                     <div class="tab-content">
                         <div class="tab-pane active" id="ola" role="tabpanel">
                             <div class="list-group">
                             <% if(typeof(ola) != 'undefined' && typeof(ola.data) != 'undefined' && ola.success) {%>
+                            <div class="row titleRow">
+                                <div class="col-xs-6 text-center">
+                                <span class="bold">Distance: <%=ola.data[Object.keys(ola.data)[0]].distance%> Miles</span>
+                                </div>
+                                <div class="col-xs-6 text-center">
+                                    <span class="bold">Ride Duration: <%=ola.data[Object.keys(ola.data)[0]].duration / 60%> mins</span>
+                                </div>
+                            </div>
                                 <% Object.keys(ola.data).forEach(function(prop) { %>
                                     <a onclick="bookList('<%=prop%>', 'ola')" class="list-group-item waves-effect">
-                                        <h4 class="list-group-item-heading"><b><%= prop %></b></h4>
-                                        <p class="list-group-item-text"><img class="time-icon"/> &nbsp; 
-                                        <%if(ola.data[prop].eta == -1) {%>
-                                            Arrival time unknown
-                                        <%} else {%>
-                                            Arrives in <%=ola.data[prop].eta%> mins                                    
-                                        <%}%>            
 
-                                        </p>
-                                        <p class="list-group-item-text"><img class="cost-icon"/> &nbsp; Estimated Cost Rs <%=ola.data[prop].low_price%> - <%=ola.data[prop].high_price%></p>
-                                        <p class="list-group-item-text"><img class="distance-icon"/>Distance <%=ola.data[prop].distance%> Kms</p>
-                                        <p class="list-group-item-text"><img class="time-icon"/>Duration : <%=ola.data[prop].duration / 60%> mins</p>
+                                        <div class="row">
+                                            <div class="col-xs-8">
+                                                <h4 class="list-group-item-heading"><b><%= prop %></b></h4>
+                                                <span>
+                                                    <%if(ola.data[prop].eta == -1) {%>
+                                                        Arrival time unknown
+                                                    <%} else {%>
+                                                        Arrives in <%=ola.data[prop].eta%> mins                                    
+                                                    <%}%>            
+                                                </span>
+                                            </div>    
+                                            <div class="col-xs-4">
+                                                <%=uber.currency_code%>&nbsp;&nbsp;<%=ola.data[prop].low_price%> - <%=ola.data[prop].high_price%>
+                                            </div>
                                     </a>
                                 <% }) %>     
                             <% } else if(typeof(ola) != 'undefined') {%>
@@ -135,16 +163,28 @@
                             <% } %>                                
                             </div>
                         </div>
-                        <div class="tab-pane" id="uber" role="tabpanel">
-                            <div class="list-group">
                             <% if(typeof(uber) != 'undefined' && typeof(uber.data) != 'undefined' && uber.success) {%>
+                            <div class="row titleRow">
+                                <div class="col-xs-6 text-center">
+                                <span class="bold">Distance: <%=uber.data[Object.keys(uber.data)[0]].distance%> Kms</span>
+                                </div>
+                                <div class="col-xs-6 text-center">
+                                    <span class="bold">Ride Duration: <%=uber.data[Object.keys(uber.data)[0]].duration / 60%> mins</span>
+                                </div>
+                            </div>
                                 <% Object.keys(uber.data).forEach(function(prop) { %>
+                                <div class="tab-pane" id="uber" role="tabpanel">
+                                <div class="list-group">
                                     <a onclick="bookList('<%=uber.data[prop].product_id%>', 'uber')" class="list-group-item waves-effect">
-                                        <h4 class="list-group-item-heading"><b><%= prop %></b></h4>
-                                        <p class="list-group-item-text"><img class="time-icon"/> &nbsp; Arrives in <%=uber.data[prop].eta / 60%> mins</p>
-                                        <p class="list-group-item-text"><img class="cost-icon"/> &nbsp; Estimated Cost Rs <%=uber.data[prop].low_price%> - <%=uber.data[prop].high_price%></p>
-                                        <p class="list-group-item-text"><img class="distance-icon"/>Distance <%=uber.data[prop].distance%> Kms</p>
-                                        <p class="list-group-item-text"><img class="time-icon"/>Duration : <%=uber.data[prop].duration / 60%> mins</p>
+                                        <div class="row">
+                                            <div class="col-xs-8">
+                                                <h4 class="list-group-item-heading"><b><%= prop %></b></h4>
+                                                <span>Arrives in <%=uber.data[Object.keys(uber.data)[0]].eta / 60%> mins</span>
+                                            </div>
+                                            <div class="col-xs-4 vcenter">
+                                                <div class="vcenter"><%=uber.currency_code%>&nbsp;&nbsp;<%=uber.data[prop].low_price%> - <%=uber.data[prop].high_price%></div>
+                                            </div>
+                                        </div>
                                     </a>
                                 <% }) %>         
                             <% } else if(typeof(uber) != 'undefined') {%>

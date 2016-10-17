@@ -117,6 +117,7 @@ ola.getRideEstimateCoordinates = function (callback, args) {
                 obj.high_price = body.ride_estimate[i].amount_max;
                 obj.low_price = body.ride_estimate[i].amount_min;
                 resObj.data[body.ride_estimate[i].category] = obj;
+                resObj.currency_code = body.currency;
             }
 
             for (var i = 0; i < body.categories.length; i++) {

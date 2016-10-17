@@ -146,6 +146,7 @@ uber.getRidePriceEstimateCoordinates = function(resObj, callback, args) {
     			obj.duration = price.duration;
     			obj.distance = price.distance;
     			resObj.data[price.display_name] = obj;
+                resObj.currency_code = price.currency_code;
     		}
     	} else {
             resObj.success = false;
