@@ -42,13 +42,16 @@
     .infoBox{
         position:absolute;
         bottom:0;
-        left:10%;
-        width:80%;
-        height:150px;
-        background-color: rgba(255, 255, 255, 0.8);
+        left:0%;
+        width:100%;
+        height:175px;
+        background-color: rgba(255, 255, 255, 1);
     }
+
     .infoBox.hide1 {  
+
     }
+
     #menu {
         float: right;
         padding: 10px;
@@ -58,6 +61,11 @@
         font-weight: 900;
         padding: 10px;
     }
+
+    #infoDiv {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
 </style>
 </head>
 <body>
@@ -66,36 +74,28 @@
         <div class="container">
         <div class="infoBox">
             <div class="row">
-                <div class="col-sm-11 title">Ride Information</div>
-                <div class="col-sm-1"><span class="glyphicon glyphicon-list" id="menu"></span></div>
+                <div class="col-xs-11 title">Ride Information</div>
+                <div class="col-xs-1"><span class="glyphicon glyphicon-list" id="menu"></span></div>
             </div>
             <div id="infoDiv">
                 <div class="row">
-                    <div class="col-sm-1"></div>
-                    <div class="col-sm-5">Driver Name</div>
-                    <div class="col-sm-5"><%=driver_name%></div>
-                    <div class="col-sm-1"></div>
+                    <div class="col-xs-6">Driver Name</div>
+                    <div class="col-xs-6"><%=driver_name%></div>
                 </div>
                 <div class="row">
-                    <div class="col-sm-1"></div>
-                    <div class="col-sm-5">Driver Number</div>
-                    <div class="col-sm-5"><a href="tel://<%=driver_number%>"><%=driver_number%></a></div>
-                    <div class="col-sm-1"></div>
+                    <div class="col-xs-6">Driver Number</div>
+                    <div class="col-xs-6"><a href="tel://<%=driver_number%>"><%=driver_number%></a></div>
                 </div>
                 <div class="row">
-                    <div class="col-sm-1"></div>
-                    <div class="col-sm-5">Vehicle</div>
-                    <div class="col-sm-5"><%=cab_type%></div>
-                    <div class="col-sm-1"></div>
+                    <div class="col-xs-6">Vehicle</div>
+                    <div class="col-xs-6"><%=cab_type%></div>
                 </div>
                 <div class="row">
-                    <div class="col-sm-1"></div>
-                    <div class="col-sm-5">Vehicle Number</div>
-                    <div class="col-sm-5"><%=cab_number%></div>
-                    <div class="col-sm-1"></div>
+                    <div class="col-xs-6">Vehicle Number</div>
+                    <div class="col-xs-6"><%=cab_number%></div>
                 </div>
                 <div class="row">
-                    <div class="col-sm-4 col-sm-offset-4 text-center">
+                    <div class="col-xs-12 text-center">
                         <button type="button" class="btn btn-danger">Cancel Ride</button>
                     </div>
                 </div>
@@ -114,5 +114,13 @@
                 $("#infoDiv").hide()
             }
         })
+
+        var checkStatus = function() {
+            $.ajax({
+                url: "/api/ride/status",
+            }).done(function() {
+                $( this ).addClass( "done" );
+            });            
+        }
     </script>
 </html>
