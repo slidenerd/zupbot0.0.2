@@ -197,6 +197,7 @@ platforms.facebook.getProfile = function (session) {
                     timezone: body.timezone,
                     gender: body.gender
                 }
+                console.log(session.userData.user.profile);
             } else {
                 // TODO: Handle errors
                 console.log(" Failed. Need to handle errors ", error);
