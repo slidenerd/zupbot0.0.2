@@ -40,7 +40,7 @@ uber.authorization = function(authToken, callback) {
     uberObj.authorization(authToken, callback);
 }
 
-uber.getCurrentRide = function(req, res, data) {
+uber.getCurrentRide = function(req, res, data, callback) {
     if(req.session.uberToken) {
         var headers = {
             'Accept': 'application/json',
@@ -75,12 +75,12 @@ uber.getCurrentRide = function(req, res, data) {
                         'driver_lng': body.location.longitude
                     }
                     responseObj.map = mapbody.href;
-                    res.render('ride/map', responseObj);
+                    callback(responseObj);
                 });       
             }
         });    
     } else {
-        res.render('ride/location', data);
+        callback();
     }
 }
 
