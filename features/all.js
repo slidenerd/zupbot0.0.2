@@ -136,6 +136,12 @@ all.preprocessReplies = function (session, brain) {
     if (text === payloads.FACEBOOK_GET_STARTED) {
         return brain.triggers.GET_STARTED
     }
+    else if (text === payloads.FACEBOOK_PERSISTENT_MENU_GET_UBER_CAB) {
+        return 'get me an uber cab ma boy'
+    }
+    else if (text === payloads.FACEBOOK_PERSISTENT_MENU_FLIPKART_OFFERS) {
+        return 'show me some offers on flipkart mate'
+    }
     else if (text === payloads.FACEBOOK_PERSISTENT_MENU_HELP) {
         return brain.triggers.HELP
     }

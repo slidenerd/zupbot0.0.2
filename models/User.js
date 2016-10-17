@@ -39,13 +39,15 @@ const userSchema = new mongoose.Schema({
   tokens: Array,
 
   profile: {
-    name: String,
+    firstName: String,
+    lastName: String,
     gender: String,
     location: { type: String },
     lat: { type: Number },
     lon: { type: Number },
-    website: String,
-    picture: String
+    picture: String,
+    timezone: {type: Number},
+    website: String
   }
 }, { timestamps: true });
 

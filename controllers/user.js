@@ -376,54 +376,15 @@ exports.postForgot = (req, res, next) => {
 };
 
 exports.addBotUser = function (session) {
-  if (!session.userData.user) {
-    console.log('adding user for the first time if its not an emulator')
-    //Add a dummy email address since we dont have one for bot users
-    session.userData.user = {
-      _id: session.message.user.id,
-      //Replace all the - symbols in UUID to generate a plain string
-      email: session.message.user.id + session.message.address.channelId + '@zup.chat',
-      address: {
-        id: session.message.address.id,
-        channelId: session.message.address.channelId,
-        user: {
-          id: session.message.address.user.id,
-          name: session.message.address.user.name
-        },
-        conversation: {
-          isGroup: session.message.address.conversation.isGroup,
-          id: session.message.address.conversation.id,
-          name: session.message.address.conversation.name
-        },
-        bot: {
-          id: session.message.address.bot.id,
-          name: session.message.address.bot.name
-        },
-        serviceUrl: session.message.address.serviceUrl,
-        useAuth: session.message.address.useAuth
-      },
-      flipkart: {
-        page: {
-          start: 0
-        },
-        filters: {
-
-        }
-      },
-      profile: {
-        name: session.message.user.name
+  //Dont add users to the database while running on the emulator
+  if (session.message.address.channelId.toLowerCase() != 'emulator') {
+    User.findOneAndUpdate({ _id: session.userData.user._id }, session.userData.user, { upsert: true, new: true }, (err, newUser) => {
+      if (err) {
+        console.log('there was an error adding this person' + err)
       }
-    }
-    //Dont add users to the database while running on the emulator
-    if (session.message.address.channelId.toLowerCase() != 'emulator') {
-      User.findOneAndUpdate({ _id: session.userData.user._id }, session.userData.user, { upsert: true, new: true }, (err, newUser) => {
-        if (err) {
-          console.log('there was an error adding this person' + err)
-        }
-        if (newUser) {
-          console.log('the person was added successfully')
-        }
-      });
-    }
+      if (newUser) {
+        console.log('the person was added successfully')
+      }
+    });
   }
 }

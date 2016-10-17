@@ -109,13 +109,13 @@ platforms.getProfile = function (session) {
     const channel = session.message.address.channelId;
     switch (channel) {
         case platforms.channels.emulator:
-            return null;
+            break;
         case platforms.channels.facebook:
-            return platforms.facebook.getProfile(session);
+            platforms.facebook.getProfile(session);
+            break;
         case platforms.channels.skype:
-            return null;
+            break;
         default:
-            return null;
     }
 }
 
@@ -163,7 +163,7 @@ platforms.facebook.askGeolocation = function (session, message) {
                 console.log(": Updated with quick reply");
             } else {
                 // TODO: Handle errors
-                console.log(": Failed. Need to handle errors." + error + ' ' + response.statusCode);
+                console.log(": Failed. Need to handle errors.", error, response.statusCode);
             }
         });
 }
@@ -179,20 +179,27 @@ platforms.facebook.getGeolocation = function (session) {
 
 platforms.facebook.getProfile = function (session) {
     request({
-        url: 'https://graph.facebook.com/v2.7/' + session.message.user.id + '?access_token=' + endpoints.FACEBOOK_PAGE_ACCESS_TOKEN,
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        form: webView
+        url: 'https://graph.facebook.com/v2.7/' + session.message.user.id,
+        method: 'GET',
+        qs: {
+            access_token: endpoints.FACEBOOK_PAGE_ACCESS_TOKEN,
+            fields: 'first_name,last_name,profile_pic,locale,timezone,gender'
+        },
+        headers: { 'Content-Type': 'application/json' }
     },
         function (error, response, body) {
             if (!error && response.statusCode == 200) {
-                // Print out the response body
-                console.log(": Updated.");
-                console.log(body);
+                session.userData.user.profile = {
+                    firstName: body.first_name,
+                    lastName: body.last_name,
+                    picture: body.profile_pic,
+                    locale: body.locale,
+                    timezone: body.timezone,
+                    gender: body.gender
+                }
             } else {
                 // TODO: Handle errors
-                console.log(": Failed. Need to handle errors.");
-                console.log(body);
+                console.log(" Failed. Need to handle errors ", error);
             }
         });
 }
@@ -208,11 +215,9 @@ platforms.facebook.getWebViewButton = function (webView) {
             if (!error && response.statusCode == 200) {
                 // Print out the response body
                 console.log(": Updated.");
-                console.log(body);
             } else {
                 // TODO: Handle errors
-                console.log(": Failed. Need to handle errors.");
-                console.log(body);
+                console.log(": Failed. Need to handle errors.", error);
             }
         });
 

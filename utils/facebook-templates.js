@@ -23,6 +23,13 @@ templates.getStarted = function () {
 }
 
 templates.getPersistentMenu = function () {
+    /**
+     * {
+            type: "web_url",
+            title: "Checkout zup",
+            url: "https://zup.chat/"
+        }
+     */
     return {
         setting_type: "call_to_actions",
         thread_state: "existing_thread",
@@ -33,9 +40,14 @@ templates.getPersistentMenu = function () {
                 payload: payloads.FACEBOOK_PERSISTENT_MENU_HELP
             },
             {
-                type: "web_url",
-                title: "Checkout zup",
-                url: "https://zup.chat/"
+                type: "postback",
+                title: "Get An Uber Cab",
+                payload: payloads.FACEBOOK_PERSISTENT_MENU_GET_UBER_CAB
+            },
+            {
+                type: "postback",
+                title: "Show me some Flipkart Offers",
+                payload: payloads.FACEBOOK_PERSISTENT_MENU_FLIPKART_OFFERS
             }
         ]
     }
