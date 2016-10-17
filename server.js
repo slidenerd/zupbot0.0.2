@@ -353,7 +353,6 @@ function firstRun(session) {
 function onMessage(session) {
   console.log('This user is running our bot the subsequent time')
   reply(session)
-  session.userData.user = null;
 }
 
 function reply(session) {
