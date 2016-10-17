@@ -47,11 +47,8 @@
         height:175px;
         background-color: rgba(255, 255, 255, 1);
     }
-
     .infoBox.hide1 {  
-
     }
-
     #menu {
         float: right;
         padding: 10px;
@@ -61,11 +58,15 @@
         font-weight: 900;
         padding: 10px;
     }
-
     #infoDiv {
         padding-left: 10px;
         padding-right: 10px;
     }
+    .btn-white {
+        background-color: #FFFFFF !important;
+        color: #212121 !important;
+    }
+    
 </style>
 </head>
 <body>
@@ -96,7 +97,7 @@
                 </div>
                 <div class="row">
                     <div class="col-xs-12 text-center">
-                        <button type="button" class="btn btn-default">Cancel Ride</button>
+                        <button type="button" class="btn btn-white">Cancel Ride</button>
                     </div>
                 </div>
                 </div>
@@ -114,7 +115,6 @@
                 $("#infoDiv").hide()
             }
         })
-
         var checkStatus = function() {
             $.ajax({
                 url: "/api/ride/status",
