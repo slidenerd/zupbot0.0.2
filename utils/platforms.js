@@ -168,7 +168,7 @@ platforms.facebook.askGeolocation = function (session, message) {
         });
 }
 
-platfoms.facebook.deletePersistentMenu = function () {
+platforms.facebook.deletePersistentMenu = function () {
     request({
         url: 'https://graph.facebook.com/v2.7/me/thread_settings?access_token=' + endpoints.FACEBOOK_PAGE_ACCESS_TOKEN,
         method: 'DELETE',
