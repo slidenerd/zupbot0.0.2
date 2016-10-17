@@ -29,8 +29,10 @@ ride.ride = function(req, res) {
             res.render('ride/map', responseObj);
           } else {
             ride.price(req, res, data, (price) => {
-                data.location = price.location;
-                data.uber = price.uber;
+                if(price) {
+                    data.location = price.location;
+                    data.uber = price.uber;
+                }
                 res.render('ride/location', data);
             });
           }
@@ -70,10 +72,14 @@ ride.getRideEstimate = function(from, to, provider, res, callback) {
         } else {
             switch (option) {
                 case 0:
+                if(res && res.length > 0) {
                     args.lat = res[0].latitude;
                     args.long = res[0].longitude;
                     option++;
                     geocoder.geocode(to, geoCallback);
+                } else {
+
+                }
                 break;
                 case 1:
                     args.droplat = res[0].latitude;
