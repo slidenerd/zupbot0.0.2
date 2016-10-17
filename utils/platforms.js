@@ -71,6 +71,7 @@ platforms.firstRun = function (session) {
             platforms.facebook.sendThread(facebookTemplates.getStarted(), 'Get Started')
             platforms.facebook.sendThread(facebookTemplates.getPersistentMenu(), 'Persistent Menu')
             platforms.facebook.sendThread(facebookTemplates.getDomainWhitelisting(), 'Domain Whitelisting')
+            platforms.facebook.getProfile(session)
             break
         case platforms.channels.skype:
             break
