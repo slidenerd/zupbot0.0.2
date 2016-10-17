@@ -28,10 +28,11 @@ ride.ride = function(req, res) {
           if(responseObj) {
             res.render('ride/map', responseObj);
           } else {
-                ride.price(req, res, data, (price) => {
-                    data.uber = price.uber;
-                    res.render('ride/location', data);
-                });
+            ride.price(req, res, data, (price) => {
+                data.location = price.location;
+                data.uber = price.uber;
+                res.render('ride/location', data);
+            });
           }
       });
   } else {
@@ -50,7 +51,6 @@ ride.price = function(req, res, data, callback) {
         var lat = parseFloat(address[0]);
         var long = parseFloat(address[1]);
         if(isNaN(lat) || isNaN(long)) {
-          console.log("########getRideEstimateSourceDestination#########")      
             ride.getRideEstimateSourceDestination(lat, long, req.query.drop, res, callback);
             return;
         }
