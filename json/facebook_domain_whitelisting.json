@@ -1,5 +1,0 @@
-{
-  "setting_type" : "domain_whitelisting",
-  "whitelisted_domains" : ["https://zup.chat"],
-  "domain_action_type": "add"
-}

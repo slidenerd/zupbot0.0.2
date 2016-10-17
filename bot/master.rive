@@ -516,6 +516,7 @@
 - Does this topic make you feel angry?
 - Is something making you feel angry?
 - Does using that kind of language make you feel better?
+- If you are unhappy about something, please tell my bonehead creator about it via email
 
 + [*] (joke|jokes) [*] {weight=999}
 - I haven't slept for three days, because that would be too long
@@ -558,12 +559,10 @@
 @ help
 
 + [*] help [*] {weight=1000}
-- You could ask "what offers do you have?" for starters. 
-^ I will get them from Flipkart for you if their servers are breathing.
-- If you ask "what offers can I get today?", I will get some good ones for you from Flipkart.
-- For starters, you could say "get me some offers today" and I will bargain with dear old Flipkart for ya!
-- Hip hip hurrah, look who is finally here 
-^ Simply say "find me some discounts today" and I will send a bunch of 1s and 0s to Flipkart.
+- You could say "get me an uber cab" for starters or you could ask "show me some offers today" and watch the show :)
+- If you ask "what offers can I get today?", I will get some for you from Flipkart or you can say "I want an uber cab" :)
+- For starters, you could say "I need an uber cab now" or "Give me some discounts today" and guess what I'll do :)
+- if you type "find me an uber cab" or "get me the best offers today" I will ask the genie to grant your wishes :)
 
 + [*] (email|contact) [*] {999}
 - I am guessing you want to know how to reach the creator. You can reach Vivz with your inquiries at admin@zup.chat and he ll reply. Don't worry, he doesnt use a bot for that.
@@ -574,6 +573,10 @@
 - Say hahaha instead, makes you laugh harder :)
 - I saw your face while saying lol, lets try a hahaha instead
 - Lets try hahaha while laughing, oh wait, you arent laughing!
+
++ [*](phone|phones|laptop|laptops|camera|cameras|shirt|shirts|pant|pants|pen drive|pen drives|hard disk|hard disks|hard drive|hard drives|iphone|graphics card) [*]
+- Oh, I believe you are trying to find some offer on <star> My lazyass creator is working on it. You can email him if you want it :)
+
 
 + (ha|haha|ha ha|hahaha|ha ha ha|hahahah|hahahaha|ha ha ha ha)
 - Ha ha ha, Glad you found that amusing :)

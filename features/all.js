@@ -172,6 +172,7 @@ all.preprocessReplies = function (session, brain) {
 }
 
 all.handleSpecialRepliesOnResolve = function (session, brain, response) {
+    session.sendTyping();
     if (response === 'int bookcab') {
         let latitude = brain.get(session.message.user.id, brain.keys.LATITUDE);
         let longitude = brain.get(session.message.user.id, brain.keys.LONGITUDE);
@@ -186,6 +187,7 @@ all.handleSpecialRepliesOnResolve = function (session, brain, response) {
 }
 
 all.handleSpecialRepliesOnReject = function (session, brain, response) {
+    session.sendTyping();
     if (response && response.type === 'carousel') {
         // carousel.sendFlipkartCarousel(session, brain, response.data, response.filters)
         carousel.handleResponse(session, brain, response)

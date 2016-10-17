@@ -1,6 +1,0 @@
-{
-  "setting_type":"greeting",
-  "greeting":{  
-    "text":"Yoo-hoo {{user_first_name}}, I am Zup, your smart buddy. You can ask me something like \"get me some offers today?\" and I will get you the best ones from Flipkart as long as rats arent chewing their server wires."
-  }
-}

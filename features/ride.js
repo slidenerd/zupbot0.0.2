@@ -24,35 +24,45 @@ ride.ride = function(req, res) {
     provider: req.query.provider
   }
   if(req.query.provider == 'uber') {
-    //   req.session.uberToken = req.user.tokens.find(token => token.kind === key);
-    // console.log(user);
-      uber.getCurrentRide(req, res, data);
+      uber.getCurrentRide(req, res, data, (responseObj) => {
+          if(responseObj) {
+            res.render('ride/map', responseObj);
+          } else {
+            ride.price(req, res, data, (price) => {
+                data.location = price.location;
+                data.uber = price.uber;
+                res.render('ride/location', data);
+            });
+          }
+      });
   } else {
-      res.render('ride/location', data);    
+      ride.price(req, res, (price) => {
+          data.price = price;
+          console.log(data);
+          res.render('ride/location', data);
+      });
   }
 }
 
-ride.price = function(req, res) {
-    var pickup = req.query.pickup;
+ride.price = function(req, res, data, callback) {
+    var pickup = data.pickup;
     var address = pickup.split(',');
     if(address.length == 2) {
         var lat = parseFloat(address[0]);
         var long = parseFloat(address[1]);
-        if(isNaN(lat) || isNaN(long)) { 
-            ride.getRideEstimateSourceDestination(lat, long, req.query.drop, res);
+        if(isNaN(lat) || isNaN(long)) {
+            ride.getRideEstimateSourceDestination(lat, long, req.query.drop, res, callback);
             return;
         }
     }
-    ride.getRideEstimate(pickup, req.query.drop, req.query.provider, res);
+    ride.getRideEstimate(pickup, req.query.drop, req.query.provider, res, callback);
 }
 
-ride.getRideEstimate = function(from, to, provider, res) {
+
+ride.getRideEstimate = function(from, to, provider, res, callback) {
     var option = 0;
     var args = new Object();
     args.provider = provider;
-    const priceCallback = function(data) {
-        res.render('ride/price', data);
-    }
     var geoCallback = function(err, res) {
         if(err) {
             //TODO:
@@ -68,7 +78,7 @@ ride.getRideEstimate = function(from, to, provider, res) {
                 case 1:
                     args.droplat = res[0].latitude;
                     args.droplong = res[0].longitude;
-                    ride.getRideEstimateCoordinates(priceCallback, args);
+                    ride.getRideEstimateCoordinates(callback, args);
                 break;    
             }
         }
@@ -76,40 +86,7 @@ ride.getRideEstimate = function(from, to, provider, res) {
     geocoder.geocode(from, geoCallback);
 }
 
-ride.authorize = function(modulename, req, res) {
-    if(modulename == 'uber') {
-        console.log("Got Uber Auth token");
-        ride.uber.authorization({
-            authorization_code: req.query.code
-        }, function (err, access_token, refresh_token) {
-            if (err) {
-                console.error(err);
-            } else {
-            // store the user id and associated access token
-            // redirect the user back to your actual app
-                req.session.uberToken = access_token;
-                if(req.user) {
-                    req.user.tokens.push({ kind: 'uber', access_token });                
-                }
-                console.log("Got Uber access token");
-                ride.bookRide(req, res);
-            }
-        });    
-    } else {
-        //Ola
-        console.log(req.url);
-        console.log(req.query);
-        var access_token = req.query.access_token
-        req.session.olaToken = access_token;
-        if(req.user) {
-            req.user.tokens.push({ kind: 'ola', access_token });
-        }
-        console.log("Got OLA access token");
-        // ride.bookRide(req, res);
-    }
-}
-
-ride.getRideEstimateSourceDestination = function(fromlat, fromlng, to, res) {
+ride.getRideEstimateSourceDestination = function(fromlat, fromlng, to, res, callback) {
     var option = 0;
     var args = new Object();
     args.lat = fromlat;
@@ -121,7 +98,7 @@ ride.getRideEstimateSourceDestination = function(fromlat, fromlng, to, res) {
         } else {
             args.droplat = res[0].latitude;
             args.droplong = res[0].longitude;
-            ride.getRideEstimateCoordinates(priceCallback, args);
+            ride.getRideEstimateCoordinates(callback, args);
         }
     };
     geocoder.geocode(to, geoCallback);
@@ -129,6 +106,7 @@ ride.getRideEstimateSourceDestination = function(fromlat, fromlng, to, res) {
 
 
 ride.getRideEstimateCoordinates = function(callback, args) {
+    console.log("###########getRideEstimateCoordinates##############");
     var data = {
         location : args 
     };
@@ -208,6 +186,39 @@ ride.bookRide = function(req, res) {
         // ola.bookRide((body) => {
         //     res.end(JSON.stringify(body));
         // }, req.query);            
+    }
+}
+
+ride.authorize = function(modulename, req, res) {
+    if(modulename == 'uber') {
+        console.log("Got Uber Auth token");
+        ride.uber.authorization({
+            authorization_code: req.query.code
+        }, function (err, access_token, refresh_token) {
+            if (err) {
+                console.error(err);
+            } else {
+            // store the user id and associated access token
+            // redirect the user back to your actual app
+                req.session.uberToken = access_token;
+                if(req.user) {
+                    req.user.tokens.push({ kind: 'uber', access_token });                
+                }
+                console.log("Got Uber access token");
+                ride.bookRide(req, res);
+            }
+        });    
+    } else {
+        //Ola
+        console.log(req.url);
+        console.log(req.query);
+        var access_token = req.query.access_token
+        req.session.olaToken = access_token;
+        if(req.user) {
+            req.user.tokens.push({ kind: 'ola', access_token });
+        }
+        console.log("Got OLA access token");
+        // ride.bookRide(req, res);
     }
 }
 
