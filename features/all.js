@@ -172,7 +172,7 @@ all.preprocessReplies = function (session, brain) {
 }
 
 all.handleSpecialRepliesOnResolve = function (session, brain, response) {
-    session.sendTyping();
+    
     if (response === 'int bookcab') {
         let latitude = brain.get(session.message.user.id, brain.keys.LATITUDE);
         let longitude = brain.get(session.message.user.id, brain.keys.LONGITUDE);
@@ -182,12 +182,12 @@ all.handleSpecialRepliesOnResolve = function (session, brain, response) {
         platforms.getWebViewButton(session, 'Here is your ride! :)', url, 'Your Cab', 'full');
     }
     else {
+        session.sendTyping();
         session.send(response);
     }
 }
 
 all.handleSpecialRepliesOnReject = function (session, brain, response) {
-    session.sendTyping();
     if (response && response.type === 'carousel') {
         // carousel.sendFlipkartCarousel(session, brain, response.data, response.filters)
         carousel.handleResponse(session, brain, response)
@@ -200,6 +200,7 @@ all.handleSpecialRepliesOnReject = function (session, brain, response) {
     }
     //ERROR here, make an appropriate message for this
     else {
+        session.sendTyping();
         session.send(response)
     }
 }
