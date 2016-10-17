@@ -105,6 +105,20 @@ platforms.getGeolocation = function (session) {
     }
 }
 
+platforms.getProfile = function (session) {
+    const channel = session.message.address.channelId;
+    switch (channel) {
+        case platforms.channels.emulator:
+            return null;
+        case platforms.channels.facebook:
+            return platforms.facebook.getProfile(session);
+        case platforms.channels.skype:
+            return null;
+        default:
+            return null;
+    }
+}
+
 platforms.getWebViewButton = function (session, text, url, urlTitle, webViewRatio) {
     const channel = session.message.address.channelId;
     let webView;
@@ -161,6 +175,10 @@ platforms.facebook.getGeolocation = function (session) {
         lat: entities[0].geo.latitude,
         lon: entities[0].geo.longitude
     }
+}
+
+platforms.facebook.getProfile = function (session) {
+    return null
 }
 
 platforms.facebook.getWebViewButton = function (webView) {
