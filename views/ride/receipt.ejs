@@ -28,8 +28,127 @@
         <!-- Material Design Bootstrap -->
         <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.1.1/css/mdb.min.css" rel="stylesheet">
 
+        <style>
+            .title {
+                color: #A9A9A9;
+            }
+
+            .bold {
+                font-weight: 900;
+            }
+
+            .small {
+                text-size: 12px;
+            }
+
+            .row {
+                margin-top: 10px;
+            }
+
+            .vcenter {
+                 display: flex;
+                align-items: center;
+                justify-content: center;                
+            }
+        </style>
 </head>
 <body>
-    Here goes the receipt
+    <div class="container main-content">
+        <%if(typeof request_id != 'undefined') { %>
+        <div class="row">
+            <div class="col-xs-4 text-center">
+                <p class="title small">CAR</p>
+                <span>uberGo</span>
+            </div>    
+            <div class="col-xs-4 text-center">
+                <p class="title small">Car</p>
+                <span>uberGo</span>
+            </div>    
+            <div class="col-xs-4 text-center">
+                <p class="title small">TRIP TIME</p>
+                <span>uberGo</span>
+            </div>    
+        </div> 
+        <div class="row">
+            <!--<div class="col-xs-3">
+                <div style="display:flex;justify-content:center;align-items:center;width:100px;padding-right:10px;">
+                <div style="height:1px;background-color:#D3D3D3;width: 100%;margin-top:10px"></div>
+                </div>
+            </div>    -->
+            <div class="col-xs-12 text-center">
+                <span class="title">FARE BREAKDOWN</span>
+            </div>    
+            <!--<div class="col-xs-3">
+                <div style="display:flex;justify-content:center;align-items:center;width:100px;padding-right:5px;">
+                <div style="height:1px;background-color:#D3D3D3;width: 100%;margin-top:10px"></div>
+                </div>
+            </div>    -->
+        </div>
+    <%if(typeof charge_adjustments != 'undefined') {%>
+        <% for(var i=0; i< charges.length; i++) {%>
+                <div class="row">
+                    <div class="col-xs-6 title">
+                        <%=charges[i].name%>
+                    </div>    
+                    <div class="col-xs-6 text-right">
+                        <%=charges[i].amount%>
+                    </div>    
+                </div>
+        <% } %>
+    <% } %>
+        <div class="row">
+            <div class="col-xs-12">
+                <hr/>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-xs-6 bold">
+                Normal Fare
+            </div>
+            <div class="col-xs-6 bold text-right">
+                <%=normal_fare%>
+            </div>
+        </div>
+
+        <%if(typeof surge_charge != 'undefined') {%>
+            <div class="row">
+                <div class="col-xs-6 title">
+                    <%=surge_charge.name%>
+                </div>
+                <div class="col-xs-6 bold text-right">
+                    <$=surge_charge.amount%>
+                </div>
+            </div>
+        <%}%>
+        <div class="row">
+            <div class="col-xs-12">
+                <hr/>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-6 bold">
+                Subtotal
+            </div>
+            <div class="col-xs-6 bold text-right">
+                <%=subtotal%>
+            </div>
+        </div>
+        <%if(typeof charge_adjustments != 'undefined') {%>
+            <% for(var i=0; i< charge_adjustments.length; i++) {%>
+                <div class="row">
+                    <div class="col-xs-8 title text-right small">
+                        charge_adjustments[i].name
+                    </div>
+                    <div class="col-xs-4 bold text-right">
+                        charge_adjustments[i].amount
+                    </div>
+                </div>
+            <%}%>
+        <%}%>
+        <%} else {%>
+            
+        <%}%>            
+    </div>
 </body>
 </html>        

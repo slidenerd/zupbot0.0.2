@@ -69,6 +69,11 @@ uber.status = function(req, res, callback) {
 
     request.get(options, (error, response, body) => {
         callback(error, response, body);
+        if(uberObj.sandbox) {
+            setTimeout(() => {
+                uber.dummyChangeStatusRequest(body.status, req, req.query.request_id);
+            }, 10000)
+        }        
     });
     
 }
@@ -86,7 +91,7 @@ uber.getCurrentRide = function(req, res, data, callback) {
         }
         request.get(options, (error, response, body) => {
             if(error || !body.request_id) {
-                res.render('ride/location', data);
+                callback();
             } else {
                 var options = {
                     url: uber.endPoint + 'requests/' + body.request_id + '/map',
@@ -109,7 +114,7 @@ uber.getCurrentRide = function(req, res, data, callback) {
                         'request_id' : body.request_id
                     }
                     responseObj.map = mapbody.href;
-                    callback(responseObj);
+                    callback(responseObj);                    
                 });       
             }
         });    
@@ -152,7 +157,6 @@ uber.getRidePriceEstimateCoordinates = function(resObj, callback, args) {
         headers: headers,
         json: true
     }
-    console.log(options);
     request.get(options, (error, response, body) => {
         if(error) {
             console.log(error);
@@ -284,21 +288,22 @@ uber.pollRequest = function(req, res, request_id, callback) {
         headers: headers,
         json: true
     }
-    console.log(options);
     request.get(options, (error, response, body) => {
         console.log("Poll Response");
     	uber.handleBookResponse(req, res, body, request_id, callback, response);
-        if(uberObj.sandbox) {
-        	uber.dummyChangeStatusRequest(req, request_id);
-        }
     });
 }
 
 //in sandbox we should change status manually
-uber.dummyChangeStatusRequest = function(req, request_id) {
-    console.log("########Changing status to completed##########");
+uber.dummyChangeStatusRequest = function(status, req, request_id) {
+    console.log("Current Status : " + status);
+    status = uber.getNextStatus(status);
+    if(typeof(status) == 'undefined') {
+        return
+    }
+    console.log("Next Status : " + status);
     var body = {
-    	status: "completed"
+    	status: status
     }
     var headers = {
         'Accept': 'application/json',
@@ -314,8 +319,18 @@ uber.dummyChangeStatusRequest = function(req, request_id) {
     });
 }
 
+uber.getNextStatus = function(status) {
+    if(status === "processing") {
+        return "accepted";
+    } else if(status === "accepted") {
+        return "in_progress";
+    } else if(status === "in_progress") {
+        return "completed";
+    }
+}
+
 uber.handleBookResponse = function(req, res, body, request_id, callback, response) {
-    console.log(body.status);
+        console.log("Current Status : " + body.status);
         if(response.statusCode == 401) {
             console.log("Unauthorized. Redirecting");
             callback(response.statusCode, null)
@@ -323,14 +338,19 @@ uber.handleBookResponse = function(req, res, body, request_id, callback, respons
     	if(body.status === "processing") {
     		setTimeout(() => {
     			uber.pollRequest(req, res, request_id, callback);
-	    	}, 1000)
+	    	}, 1000);
+            if(uberObj.sandbox) {
+                setTimeout(() => {
+                    uber.dummyChangeStatusRequest(body.status, req, request_id);
+                }, 10000)
+            }            
     	} else if(body.status === "no_drivers_available") {
     		var response = {
     			success: false,
     			message: "No driver available"
     		}
     		callback(response);
-    	} else if(body.status === "accepted" || body.status === "arriving") {
+    	} else if(body.status === "accepted" || body.status === "arriving" || body.status == "in_progress") {
     		var responseObj = {
     			success: false,
     			message: "Your booking is successful.",
@@ -359,6 +379,15 @@ uber.handleBookResponse = function(req, res, body, request_id, callback, respons
                 }
     			callback(response.statusCode, responseObj);
             });
-    	}
+            if(uberObj.sandbox) {
+                setTimeout(() => {
+                    uber.dummyChangeStatusRequest(body.status, req, request_id);
+                }, 10000)
+            }            
+    	} else if(body.status === "no_drivers_available") {
+            //TODO:
+        } else if(body.status === "driver_canceled" || body.status === "rider_canceled") {
+            //TODO:
+        }        
 }
 module.exports = uber

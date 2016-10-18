@@ -10,45 +10,61 @@
   <style>
   .carousel-inner > .item > img,
   .carousel-inner > .item > a > img {
-      width: 70%;
+      width: 100%;
+      height: 100%
       margin: auto;
   }
+
+  .carousel-control.left {
+    background-image:none
+  }
+  .carousel-control.right {
+    background-image:none
+  }
+
+
+.full-screen {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
   </style>
 </head>
 <body>
 
 <div class="container">
   <br>
-  <div id="myCarousel" class="carousel slide" data-ride="carousel">
     <!-- Indicators -->
-    <ol class="carousel-indicators">
-      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-      <li data-target="#myCarousel" data-slide-to="1"></li>
-      <li data-target="#myCarousel" data-slide-to="2"></li>
-      <li data-target="#myCarousel" data-slide-to="3"></li>
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+      <%if(typeof list != 'undefined') {%>
+        <%for(var i = 0; i < list.length; i++) {%>
+          <%if(i == 0) {%>
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+          <% } else { %>
+            <li data-target="#myCarousel" data-slide-to="<%=i%>"></li>
+          <% } %>
+        <%}%>
+      <%}%>
     </ol>
 
     <!-- Wrapper for slides -->
-    <div class="carousel-inner" role="listbox">
-
-        
-      <div class="item active">
-        <img src="img_chania.jpg" alt="Chania" width="460" height="345">
-      </div>
-
-      <div class="item">
-        <img src="img_chania2.jpg" alt="Chania" width="460" height="345">
-      </div>
-    
-      <div class="item">
-        <img src="img_flower.jpg" alt="Flower" width="460" height="345">
-      </div>
-
-      <div class="item">
-        <img src="img_flower2.jpg" alt="Flower" width="460" height="345">
-      </div>
+    <div class="carousel-inner" role="listbox"> 
+        <%if(typeof list != 'undefined') {%>
+          <%for(var i = 0; i < list.length; i++) { %>
+          <%if(i == 0) {%>
+          <div class="item active">
+          <% } else { %>
+          <div class="item">
+          <% } %>
+            <div style="width:100%;height:100%">
+              <%=list[i].outbound.stops%>
+            </div>
+          </div>          
+        <%}%>
+      <%}%>
     </div>
-
     <!-- Left and right controls -->
     <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
       <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
@@ -60,7 +76,33 @@
     </a>
   </div>
 </div>
-
 </body>
+  <script>
+    var $item = $('.carousel .item'); 
+    var $wHeight = $(window).height();
+    $item.eq(0).addClass('active');
+    $item.height($wHeight); 
+    $item.addClass('full-screen');
+
+    $('.carousel img').each(function() {
+      var $src = $(this).attr('src');
+      var $color = $(this).attr('data-color');
+      $(this).parent().css({
+        'background-image' : 'url(' + $src + ')',
+        'background-color' : $color
+      });
+      $(this).remove();
+    });
+
+    $(window).on('resize', function (){
+      $wHeight = $(window).height();
+      $item.height($wHeight);
+    });
+
+    $('.carousel').carousel({
+      interval: 6000,
+      pause: "false"
+    });    
+</script>
 </html>
 

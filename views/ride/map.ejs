@@ -127,7 +127,7 @@
                 dataType: 'json',
             }).done(function(result) {
                 console.log(result.status);
-                if(result.status != 'arriving') {
+                if(result.status != 'arriving' && result.status != 'accepted') {
                     $("#cancelRow").hide();
                 } 
                 if(result.status == 'completed') {

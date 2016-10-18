@@ -10,11 +10,18 @@ const SKYSCANNER_API_KEY = 'prtl6749387986743898559646983194'
 
 const skyscanner = {};
 
+var tempCache;
 skyscanner.fetchFlightDetails = function(req, res) {
+    if(tempCache) {
+        res.render('airfare/skyscanner', tempCache)
+        return;
+    }
     skyscanner.getFlightDetailsFromSkyScanner(res, req.query.from, req.query.to, req.query.outbounddate, req.query.inbounddate, 
     (error, body) => {
         if (!error) {
             let flightOptions = skyscanner.parse(body);
+            tempCache = flightOptions;
+            console.log(flightOptions);
             res.render('airfare/skyscanner', flightOptions)
         }
     });
@@ -108,9 +115,6 @@ skyscanner.sessionStartCallback = function(res, response, body, error, callback)
 
 skyscanner.pollSession = function(res, options, callback) {
     console.log("Polling...");
-    console.log("#################")
-    console.log(callback);
-    console.log("#################")
         request.get(options, (error, response, body) => {
             if(error) {
                 callback(error, null);
@@ -170,7 +174,10 @@ skyscanner.parse = function(json) {
         option = skyscanner.findCheapestPrice(option, json)
         options.push(option)
     }
-    return options;
+    var data = {
+        list: options
+    }
+    return data;
 }
 
 skyscanner.findCheapestPrice = function(option, json) {
