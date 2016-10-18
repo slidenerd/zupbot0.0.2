@@ -268,6 +268,10 @@ app.get('/api/ride/book', function (req, res) {
   ride.bookRide(req, res);
 });
 
+app.get('/api/ride/cancel', function (req, res) {
+  ride.cancelRide(req, res);
+});
+
 app.get('/auth/ola/callback', function (req, res) {
   ride.authorize('ola', req, res);
 });

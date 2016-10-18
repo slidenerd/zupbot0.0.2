@@ -10,6 +10,15 @@ var ride = {
     'ola': ola
 };
 
+ride.cancelRide = function(req, res) {
+    uber.cancelRide(req, res, (error, response, body) => {
+        var status = {
+            success: response.statusCode != 404
+        }
+        res.end(JSON.stringify(status));
+    });
+}
+
 ride.status = function(req, res) {
     uber.status(req, res, (error, response, body) => {
         if(response.statusCode == 404) {

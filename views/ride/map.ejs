@@ -71,6 +71,13 @@
         background-color: #FFFFFF !important;
         color: #212121 !important;
     }
+
+    .alert-title {
+        text-align: center;
+        font-weight: 900;
+        padding-top: 10px;
+    }
+    
     
 </style>
 </head>
@@ -102,15 +109,43 @@
                 </div>
                 <div class="row" id="cancelRow">
                     <div class="col-xs-12 text-center">
-                        <button type="button" class="btn btn-white">Cancel Ride</button>
+                        <button type="button" class="btn btn-white" id="cancelRide">Cancel Ride</button>
                     </div>
                 </div>
                 </div>
                 </div>
         </div>
     </div>​
+
+    <div id="cancelalert" class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <h4 class="modal-title alert-title">Cancel Uber?</h4>
+            <div class="modal-body">
+                <p>Are you sure you want to cancel your ride?</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary" onclick="cancelRide()">Cancel Uber</button>
+            </div>                                        
+        </div>
+    </div>
+    </div>            
+
+
 </body>
     <script>
+        function cancelRide() {
+            $('#cancelalert').modal('show');
+            $.ajax({
+                url: "/api/ride/cancel?request_id=<%=request_id%>",
+                dataType: 'json',
+            }).done(function(result) {
+                console.log(result.status);
+                window.history.back();
+            });
+        }
+
         $("#menu").click(function() {
             if($(".infoBox").hasClass('hide1')) {
                  $(".infoBox").animate({height:150},200).removeClass('hide1');
@@ -119,7 +154,11 @@
                 $(".infoBox").animate({height:20},200).addClass('hide1');
                 $("#infoDiv").hide()
             }
-        })
+        });
+
+        $("#cancelRide").click(function() {
+            $('#cancelalert').modal('show');
+        });
 
         var checkStatus = function() {
             $.ajax({

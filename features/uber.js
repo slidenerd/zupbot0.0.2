@@ -26,6 +26,23 @@ const headers = {
     'Authorization': 'Token ' + uber.accessToken 
 };
 
+uber.cancelRide = function(req, res, callback) {
+    var headers = {
+        'Accept': 'application/json',
+        'Authorization': 'Bearer ' + req.session.uberToken 
+    };
+    var options = {
+        url: uber.endPoint + 'requests/' + req.query.request_id,
+        headers: headers,
+        json: true
+    }
+    request.delete(options, (error, response, body) => {
+        console.log("############Ride Cancellled$#############")
+        callback(error, response, body);
+    });
+}
+
+
 // var resObj = {};
 // var done = false;
 

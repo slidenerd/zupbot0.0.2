@@ -58,9 +58,14 @@
           <% } else { %>
           <div class="item">
           <% } %>
-            <div style="width:100%;height:100%">
-              <%=list[i].outbound.stops%>
-            </div>
+            <%if(list[i].inbound) {%>
+              <div class="bold">Inbound</div>
+              <div>
+                <hr/>
+              </div>
+              <%=list[i].inbound.stops%> Stops
+              <p><%=list[i].inbound.departure%></p>
+            <% } %>
           </div>          
         <%}%>
       <%}%>

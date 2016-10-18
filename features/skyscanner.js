@@ -157,11 +157,15 @@ skyscanner.parse = function(json) {
     for (let legs of json.Legs) {
         var option = new Object();
         var outbound = new Object();
+
         outbound.departure = legs.Departure
         outbound.arrival = legs.Arrival
         outbound.stops = legs.Stops.length
         outbound.duration = legs.Duration
         outbound.id = legs.Id
+        outbound.OriginStation = legs.OriginStation
+        outbound.DestinationStation = legs.DestinationStation
+        outbound.Carriers = legs.Carriers
         option.outbound = outbound
         
         var inbound = new Object();
@@ -195,8 +199,9 @@ skyscanner.findCheapestPrice = function(option, json) {
     
 }
 
-// skyscanner.getFlightDetailsFromSkyScanner('coimb', 'chennai', '2016-10-21', '2016-11-22', (response, error) => {
-//     console.log(error);
-// });
 
 module.exports = skyscanner
+
+skyscanner.getFlightDetailsFromSkyScanner(null, 'coimb', 'chennai', '2016-10-21', '2016-10-26', (error, response) => {
+    console.log(response);
+});
