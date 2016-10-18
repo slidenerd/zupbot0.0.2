@@ -92,10 +92,11 @@ flipkart.paginator = function (session, offers) {
     //How many items will you display in a carousel on each platform is controlled by limit
     
     let limit = platforms.getCarouselLimits(session.message.address.channelId);
-
+    console.log(limit)
     //A key from cache which indicates if this data was previously cached or freshly loaded
     if (cache.get('fresh')) {
         session.userData.user.flipkart.page = 0
+        console.log('fresh')
     }
     //Begin displaying items either from 0 or from a previous number
     let start = session.userData.user.flipkart.page
@@ -103,6 +104,7 @@ flipkart.paginator = function (session, offers) {
     //Display exactly limit number of items
     let end = (start + limit < offers.length) ? (start + limit) : offers.length
 
+    console.log(start, end)
     let page;
 
     //We did not find any offers perhaps because there was none or all were unavailable or we got no results after applying our filter
