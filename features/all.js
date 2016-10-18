@@ -188,7 +188,6 @@ all.handleSpecialRepliesOnResolve = function (session, brain, response) {
         analytics.trackOutgoing(userId, text + ' to ' + destination + ' with ' + cabProvider, channel);
     }
     else {
-        session.sendTyping();
         session.send(response);
         analytics.trackOutgoing(userId, response, channel);
     }
@@ -211,7 +210,6 @@ all.handleSpecialRepliesOnReject = function (session, brain, response) {
     }
     //ERROR here, make an appropriate message for this
     else {
-        session.sendTyping();
         session.send(response)
         analytics.trackOutgoing(userId, response, channel);
     }

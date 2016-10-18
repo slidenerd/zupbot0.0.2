@@ -208,19 +208,18 @@ platforms.facebook.getProfile = function (session) {
             access_token: endpoints.FACEBOOK_PAGE_ACCESS_TOKEN,
             fields: 'first_name,last_name,profile_pic,locale,timezone,gender'
         },
-        headers: { 'Content-Type': 'application/json' }
+        headers: { 'Content-Type': 'application/json' },
+        json: true
     },
         function (error, response, body) {
             if (!error && response.statusCode == 200) {
-                session.userData.user.profile = {
-                    firstName: body.first_name,
-                    lastName: body.last_name,
-                    picture: body.profile_pic,
-                    locale: body.locale,
-                    timezone: body.timezone,
-                    gender: body.gender
-                }
-                console.log(session.userData.user.profile);
+                let profile = session.userData.user.profile;
+                profile.firstName = body.first_name;
+                profile.lastName = body.last_name;
+                profile.picture = body.profile_pic;
+                profile.locale = body.locale;
+                profile.timezone = body.timezone;
+                profile.gender = body.gender;
             } else {
                 // TODO: Handle errors
                 console.log(" Failed. Need to handle errors ", error);

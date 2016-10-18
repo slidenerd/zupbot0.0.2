@@ -346,7 +346,7 @@ bot.dialog('/', onMessage);
  */
 function firstRun(session) {
   console.log('This user is running our bot the first time')
-  createUserIfNotExists(session)
+  createUser(session)
   platforms.firstRun(session);
   userController.addBotUser(session);
   reply(session)
@@ -384,43 +384,41 @@ function runCron() {
   // setTimeout(runCron, 200000)
 }
 
-function createUserIfNotExists(session) {
+function createUser(session) {
   //Add a dummy email address since we dont have one for bot users
-  if (!session.userData.user) {
-    session.userData.user = {
-      _id: session.message.user.id,
-      //Replace all the - symbols in UUID to generate a plain string
-      email: session.message.user.id + session.message.address.channelId + '@zup.chat',
-      address: {
-        id: session.message.address.id,
-        channelId: session.message.address.channelId,
-        user: {
-          id: session.message.address.user.id,
-          name: session.message.address.user.name
-        },
-        conversation: {
-          isGroup: session.message.address.conversation.isGroup,
-          id: session.message.address.conversation.id,
-          name: session.message.address.conversation.name
-        },
-        bot: {
-          id: session.message.address.bot.id,
-          name: session.message.address.bot.name
-        },
-        serviceUrl: session.message.address.serviceUrl,
-        useAuth: session.message.address.useAuth
+  session.userData.user = {
+    _id: session.message.user.id,
+    //Replace all the - symbols in UUID to generate a plain string
+    email: session.message.user.id + session.message.address.channelId + '@zup.chat',
+    address: {
+      id: session.message.address.id,
+      channelId: session.message.address.channelId,
+      user: {
+        id: session.message.address.user.id,
+        name: session.message.address.user.name
       },
-      flipkart: {
-        page: {
-          start: 0
-        },
-        filters: {
+      conversation: {
+        isGroup: session.message.address.conversation.isGroup,
+        id: session.message.address.conversation.id,
+        name: session.message.address.conversation.name
+      },
+      bot: {
+        id: session.message.address.bot.id,
+        name: session.message.address.bot.name
+      },
+      serviceUrl: session.message.address.serviceUrl,
+      useAuth: session.message.address.useAuth
+    },
+    flipkart: {
+      page: {
+        start: 0
+      },
+      filters: {
 
-        }
-      },
-      profile: {
-        firstName: session.message.user.name
       }
+    },
+    profile: {
+      firstName: session.message.user.name
     }
   }
 }
