@@ -13,6 +13,7 @@ carousel.handleResponse = function (session, brain, response) {
     let topic = brain.getTopic(session.message.user.id)
     console.log(topic + ' ' + constants.KEY_OFFERS)
     if (topic === constants.KEY_OFFERS) {
+        console.log('handling offers')
         carousel.handleFlipkartResponse(session, brain, response);
     }
 }
