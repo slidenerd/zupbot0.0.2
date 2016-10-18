@@ -20,13 +20,14 @@ carousel.handleResponse = function (session, brain, response) {
 carousel.handleFlipkartResponse = function (session, brain, response) {
     // carousel.sendFlipkartCarousel(session, brain, response.data, response.filters)
     let page = flipkart.paginator(session, response.data);
+    console.log(page)
     brain.set(session.message.user.id, 'flipkartpagestart', page.start + 1)
     brain.set(session.message.user.id, 'flipkartpageend', page.end)
     brain.set(session.message.user.id, 'flipkartofferscount', page.count)
     let reply = brain.replySync(session.message.user.id, page.triggerName)
-    analytics.trackOutgoing(session.message.user.id, reply, session.message.address.channelId)
+    console.log(reply)
     carousel.showFlipkartOffers(session, page.offers, reply)
-
+    analytics.trackOutgoing(session.message.user.id, reply, session.message.address.channelId)
     //update the last active time when the user viewed flipkart results
     session.userData.user.flipkart.lastActive = new Date().getTime();
     //if we havent set a timeout previously, we set one
