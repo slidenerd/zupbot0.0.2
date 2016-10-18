@@ -181,8 +181,12 @@
                                         </div>
                                     </a>
                                 <% }) %>         
-                            <% } else if(typeof(uber) != 'undefined') {%>
-                                <p class="error"><%=uber.message%></p>
+                            <% } else if(typeof(uber) == 'undefined') {%>
+                                <%if(typeof(location) == 'undefined') {%>
+                                    <p class="error">Invalid Location</p> 
+                                <% } else {%>
+                                    <p class="error"><%=uber.message%></p>
+                                <% } %>
                             <% } %>                                
                             </div>
                         </div>
@@ -278,8 +282,10 @@
         <script type="text/javascript">
             var loc;
             function bookList(product_id,  provider) {
-                loc = '/api/ride/book?lat=' + <%=location.lat%> + '&long=' + <%=location.long%> + '&droplat=' + <%=location.droplat%> + '&droplong=' + <%=location.droplong%> + '&product_id=' + product_id + '&provider=' + provider
-                $('#alert').modal('show');
+                <%if(typeof location != 'undefined') {%>
+                    loc = '/api/ride/book?lat=' + <%=location.lat%> + '&long=' + <%=location.long%> + '&droplat=' + <%=location.droplat%> + '&droplong=' + <%=location.droplong%> + '&product_id=' + product_id + '&provider=' + provider
+                    $('#alert').modal('show');
+                <%}%>
             };
 
             function bookUber() {

@@ -40,6 +40,23 @@ uber.authorization = function(authToken, callback) {
     uberObj.authorization(authToken, callback);
 }
 
+uber.status = function(callback) {
+    var headers = {
+        'Accept': 'application/json',
+        'Authorization': 'Bearer ' + req.session.uberToken 
+    };
+    var options = {
+        url: uber.endPoint + 'requests/current',
+        headers: headers,
+        json: true
+    }
+
+    request.get(options, (error, response, body) => {
+        callback(error, response, body);
+    });
+    
+}
+
 uber.getCurrentRide = function(req, res, data, callback) {
     if(req.session.uberToken) {
         var headers = {
