@@ -11,7 +11,7 @@ var ride = {
 };
 
 ride.status = function(req, res) {
-    uber.status((error, response, body) => {
+    uber.status(req, res, (error, response, body) => {
         if(response.statusCode == 404) {
             var response = {
                 status: false
@@ -22,6 +22,12 @@ ride.status = function(req, res) {
         }
     });
 }
+
+ride.receipt = function(req, res) {
+    uber.receipt(req, res, (error, response, body) => {
+        res.render('ride/receipt', body);
+    });
+};
 
 ride.ride = function(req, res) {
   var pickup;
@@ -66,9 +72,13 @@ ride.price = function(req, res, data, callback) {
         var lat = parseFloat(address[0]);
         var long = parseFloat(address[1]);
         if(isNaN(lat) || isNaN(long)) {
+            console.log("#########getRideEstimateSourceDestination")
             ride.getRideEstimateSourceDestination(lat, long, req.query.drop, res, callback);
             return;
+        } else {
+            ride.getRideEstimate(pickup, req.query.drop, req.query.provider, res, callback);
         }
+        return
     }
     ride.getRideEstimate(pickup, req.query.drop, req.query.provider, res, callback);
 }

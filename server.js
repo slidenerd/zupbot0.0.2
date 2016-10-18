@@ -252,8 +252,12 @@ app.get('/api/ride', function (req, res) {
   ride.ride(req, res);
 });
 
-app.get('/api/status', function (req, res) {
+app.get('/api/ride/status', function (req, res) {
   ride.status(req, res);
+});
+
+app.get('/api/ride/receipt', function (req, res) {
+  ride.receipt(req, res);
 });
 
 app.get('/api/ride/price', function (req, res) {
