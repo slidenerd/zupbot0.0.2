@@ -4,25 +4,26 @@
  * Module dependencies.
  */
 const
-  express = require('express'),
-  compression = require('compression'),
-  session = require('express-session'),
   bodyParser = require('body-parser'),
-  logger = require('morgan'),
   chalk = require('chalk'),
-  errorHandler = require('errorhandler'),
-  lusca = require('lusca'),
+  compression = require('compression'),
   dotenv = require('dotenv'),
-  MongoStore = require('connect-mongo')(session),
-  flash = require('express-flash'),
-  path = require('path'),
-  mongoose = require('mongoose'),
-  passport = require('passport'),
+  errorHandler = require('errorhandler'),
+  express = require('express'),
   expressValidator = require('express-validator'),
-  sass = require('node-sass-middleware'),
+  flash = require('express-flash'),
+  logger = require('morgan'),
+  lusca = require('lusca'),
+  mail = require('./features/mail'),
+  mongoose = require('mongoose'),
   multer = require('multer'),
-  upload = multer({ dest: path.join(__dirname, 'uploads') }),
-  mail = require('./features/mail');
+  passport = require('passport'),
+  path = require('path'),
+  sass = require('node-sass-middleware'),
+  session = require('express-session'),
+  MongoStore = require('connect-mongo')(session),
+  upload = multer({ dest: path.join(__dirname, 'uploads') });
+
 /**
  * Load environment letiables from .env file, where API keys and passwords are configured.
  */
@@ -32,13 +33,14 @@ dotenv.load({ path: '.env.example' });
  */
 const
   all = require('./features/all'),
+  analytics = require('./utils/analytics'),
   apiController = require('./controllers/api'),
   brain = require('./bot/rive'),
   builder = require('./core/'),
-  contactController = require('./controllers/contact'),
-  homeController = require('./controllers/home'),
   carousel = require('./utils/carousel'),
+  contactController = require('./controllers/contact'),
   flipkart = require('./features/flipkart'),
+  homeController = require('./controllers/home'),
   ola = require('./features/ola'),
   passportConfig = require('./config/passport'),
   payloads = require('./config/payloads'),
@@ -115,6 +117,8 @@ app.use((req, res, next) => {
     || req.path === '/api/ride'
     || req.path === '/api/ride/book'
     || req.path === '/api/ride/price'
+    || req.path === '/api/ride/status'
+    || req.path === '/api/ride/receipt'
     || req.path === '/auth/ola/callback'
     || req.path === '/auth/uber/callback') {
     next();
@@ -247,6 +251,8 @@ app.get('/auth/pinterest/callback', passport.authorize('pinterest', { failureRed
  */
 app.post('/hooks/ola', ola.webhook)
 app.get('/api/ride', ride.ride);
+app.get('/api/ride/status', ride.status);
+app.get('/api/ride/receipt', ride.receipt);
 app.get('/api/ride/price', ride.price);
 app.get('/api/ride/book', ride.bookRide);
 app.get('/auth/ola/callback', ride.ola.authorization);
@@ -254,9 +260,9 @@ app.get('/auth/uber/callback', function (req, res) {
   ride.authorize('uber', req, res);
 });
 
-// app.get('/api/list', function(req, res) {
-//   mail.getAllLists("631957", res)
-// });
+app.get('/api/airfare', function (req, res) {
+  skyscanner.fetchFlightDetails(req, res);
+});
 
 app.post('/api/subscribe', function (req, res) {
   if (!req.body) {
@@ -358,6 +364,7 @@ function onMessage(session) {
 function reply(session) {
   const userId = session.message.user.id
   const text = all.preprocessReplies(session, brain);
+  analytics.trackIncoming(session.message.user.id, text, session.message.address.channelId);
   brain.reply(userId, text)
     .then((response) => {
       all.handleSpecialRepliesOnResolve(session, brain, response)

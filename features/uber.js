@@ -14,7 +14,7 @@ const uberObj = new Uber({
     client_secret: 'X2_zVVpoigocAk2Cdr44i9XoxQg03Uw3gYwjce8j',
     server_token: uber.accessToken,
     redirect_uri: 'https://zup.chat/auth/uber/callback',
-    // redirect_uri: 'https://zup.chat/auth/uber/callback',
+    // redirect_uri: 'http://localhost:3000/auth/uber/callback',
     name: 'zup.chat',
     language: 'en_US', // optional, defaults to en_US
     sandbox: true // optional, defaults to false
@@ -36,8 +36,41 @@ uber.login = function(req, res) {
     res.redirect(url);
 }
 
+uber.receipt = function(req, res, callback) {
+    var headers = {
+        'Accept': 'application/json',
+        'Authorization': 'Bearer ' + req.session.uberToken 
+    };
+    var options = {
+        url: uber.endPoint + 'requests/' + req.query.request_id + '/receipt',
+        headers: headers,
+        json: true
+    }
+
+    request.get(options, (error, response, body) => {
+        callback(error, response, body);
+    });
+}
+
 uber.authorization = function(authToken, callback) {
     uberObj.authorization(authToken, callback);
+}
+
+uber.status = function(req, res, callback) {
+    var headers = {
+        'Accept': 'application/json',
+        'Authorization': 'Bearer ' + req.session.uberToken 
+    };
+    var options = {
+        url: uber.endPoint + 'requests/' + req.query.request_id,
+        headers: headers,
+        json: true
+    }
+
+    request.get(options, (error, response, body) => {
+        callback(error, response, body);
+    });
+    
 }
 
 uber.getCurrentRide = function(req, res, data, callback) {
@@ -72,7 +105,8 @@ uber.getCurrentRide = function(req, res, data, callback) {
                         'car_model': '',
                         'eta': body.pickup.eta,
                         'driver_lat': body.location.latitude,
-                        'driver_lng': body.location.longitude
+                        'driver_lng': body.location.longitude,
+                        'request_id' : body.request_id
                     }
                     responseObj.map = mapbody.href;
                     callback(responseObj);
@@ -262,8 +296,9 @@ uber.pollRequest = function(req, res, request_id, callback) {
 
 //in sandbox we should change status manually
 uber.dummyChangeStatusRequest = function(req, request_id) {
+    console.log("########Changing status to completed##########");
     var body = {
-    	status: "accepted"
+    	status: "completed"
     }
     var headers = {
         'Accept': 'application/json',
@@ -306,7 +341,8 @@ uber.handleBookResponse = function(req, res, body, request_id, callback, respons
                 'car_model': '',
                 'eta': body.pickup.eta,
                 'driver_lat': body.location.latitude,
-                'driver_lng': body.location.longitude
+                'driver_lng': body.location.longitude,
+                'request_id': request_id,
     		}
             var headers = {
                 'Accept': 'application/json',

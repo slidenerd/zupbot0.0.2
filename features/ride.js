@@ -10,6 +10,24 @@ var ride = {
     'ola': ola
 };
 
+ride.status = function(req, res) {
+    uber.status(req, res, (error, response, body) => {
+        if(response.statusCode == 404) {
+            var response = {
+                status: false
+            }
+            res.end(JSON.stringify(response));
+        } else {
+            res.end(JSON.stringify(body));
+        }
+    });
+}
+
+ride.receipt = function(req, res) {
+    uber.receipt(req, res, (error, response, body) => {
+        res.render('ride/receipt', body);
+    });
+};
 
 ride.ride = function(req, res) {
   var pickup;
@@ -40,11 +58,12 @@ ride.ride = function(req, res) {
   } else {
       ride.price(req, res, (price) => {
           data.price = price;
-          console.log(data);
           res.render('ride/location', data);
       });
   }
 }
+
+
 
 ride.price = function(req, res, data, callback) {
     var pickup = data.pickup;
@@ -53,9 +72,13 @@ ride.price = function(req, res, data, callback) {
         var lat = parseFloat(address[0]);
         var long = parseFloat(address[1]);
         if(isNaN(lat) || isNaN(long)) {
+            console.log("#########getRideEstimateSourceDestination")
             ride.getRideEstimateSourceDestination(lat, long, req.query.drop, res, callback);
             return;
+        } else {
+            ride.getRideEstimate(pickup, req.query.drop, req.query.provider, res, callback);
         }
+        return
     }
     ride.getRideEstimate(pickup, req.query.drop, req.query.provider, res, callback);
 }
@@ -78,13 +101,17 @@ ride.getRideEstimate = function(from, to, provider, res, callback) {
                     option++;
                     geocoder.geocode(to, geoCallback);
                 } else {
-
+                    callback();
                 }
                 break;
                 case 1:
+                if(res && res.length > 0) {
                     args.droplat = res[0].latitude;
                     args.droplong = res[0].longitude;
                     ride.getRideEstimateCoordinates(callback, args);
+                } else {
+                    callback();
+                }
                 break;    
             }
         }
@@ -112,7 +139,6 @@ ride.getRideEstimateSourceDestination = function(fromlat, fromlng, to, res, call
 
 
 ride.getRideEstimateCoordinates = function(callback, args) {
-    console.log("###########getRideEstimateCoordinates##############");
     var data = {
         location : args 
     };
@@ -160,7 +186,6 @@ ride.bookRide = function(req, res) {
     } else {
         query = req.query;
     }
-    console.log(query);
     if(query.provider == 'uber') {
         if(ride.getToken(req, 'uber') === undefined) {
             console.log("############" + ride.getToken(req, 'uber'));

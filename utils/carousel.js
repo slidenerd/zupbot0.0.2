@@ -1,5 +1,6 @@
 'use strict';
 const
+    analytics = require('./analytics'),
     builder = require('../core/'),
     constants = require('./constants'),
     flipkart = require('../features/flipkart'),
@@ -23,6 +24,7 @@ carousel.handleFlipkartResponse = function (session, brain, response) {
     brain.set(session.message.user.id, 'flipkartpageend', page.end)
     brain.set(session.message.user.id, 'flipkartofferscount', page.count)
     let reply = brain.replySync(session.message.user.id, page.triggerName)
+    analytics.trackOutgoing(session.message.user.id, reply, session.message.address.channelId)
     carousel.showFlipkartOffers(session, page.offers, reply)
 
     //update the last active time when the user viewed flipkart results

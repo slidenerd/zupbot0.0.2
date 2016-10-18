@@ -95,7 +95,7 @@
                     <div class="col-xs-6">Vehicle Number</div>
                     <div class="col-xs-6"><%=cab_number%></div>
                 </div>
-                <div class="row">
+                <div class="row" id="cancelRow">
                     <div class="col-xs-12 text-center">
                         <button type="button" class="btn btn-white">Cancel Ride</button>
                     </div>
@@ -117,10 +117,19 @@
         })
         var checkStatus = function() {
             $.ajax({
-                url: "/api/ride/status",
-            }).done(function() {
-                $( this ).addClass( "done" );
-            });            
+                url: "/api/ride/status?request_id=<%=request_id%>",
+                dataType: 'json',
+            }).done(function(result) {
+                console.log(result.status);
+                if(result.status != 'arriving') {
+                    $("#cancelRow").hide();
+                } 
+                if(result.status == 'completed') {
+                    window.location = '/api/ride/receipt?request_id=<%=request_id%>'
+                }
+            });
+            setTimeout(checkStatus, 5000);     
         }
+        checkStatus();
     </script>
 </html>

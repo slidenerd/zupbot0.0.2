@@ -1,8 +1,9 @@
 'use strict';
 
-const request = require('request');
-const endpoints = require('../config/endpoints')
-const facebookTemplates = require('./facebook-templates')
+const
+    endpoints = require('../config/endpoints'),
+    facebookTemplates = require('./facebook-templates'),
+    request = require('request');
 
 const platforms = {
     actions: {

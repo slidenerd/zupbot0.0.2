@@ -2,6 +2,7 @@
 
 const
     amazon = require('./amazon'),
+    analytics = require('../utils/analytics'),
     cache = require('memory-cache'),
     carousel = require('../utils/carousel'),
     flipkart = require('./flipkart'),
@@ -172,36 +173,45 @@ all.preprocessReplies = function (session, brain) {
 }
 
 all.handleSpecialRepliesOnResolve = function (session, brain, response) {
-    
+    let userId = session.message.user.id;
+    let platform = session.message.address.channelId
     if (response === 'int bookcab') {
         let latitude = brain.get(session.message.user.id, brain.keys.LATITUDE);
         let longitude = brain.get(session.message.user.id, brain.keys.LONGITUDE);
         let destination = brain.get(session.message.user.id, brain.keys.CAB_DESTINATION)
         let cabProvider = brain.get(session.message.user.id, brain.keys.CAB_PROVIDER)
         let url = encodeURI('https://zup.chat/api/ride?lat=' + latitude + '&long=' + longitude + '&drop=' + destination + '&provider=' + cabProvider);
-        platforms.getWebViewButton(session, 'Here is your ride! :)', url, 'Your Cab', 'full');
+        let message = 'Here is your ride! :)'
+        platforms.getWebViewButton(session, message, url, 'Your Cab', 'full');
+        analytics.trackOutgoing(userId, message + ' to ' + destination + ' with ' + cabProvider, platform);
     }
     else {
         session.sendTyping();
         session.send(response);
+        analytics.trackOutgoing(userId, response, platform);
     }
 }
 
 all.handleSpecialRepliesOnReject = function (session, brain, response) {
+    let userId = session.message.user.id;
+    let platform = session.message.address.channelId
     if (response && response.type === 'carousel') {
         // carousel.sendFlipkartCarousel(session, brain, response.data, response.filters)
         carousel.handleResponse(session, brain, response)
     }
-    else if (response.type === 'location') {
+    else if (response && response.type === 'location') {
         platforms.askGeolocation(session, response.data)
+        analytics.trackOutgoing(userId, response.data, platform);
     }
-    else if (response.type === 'cabProvider') {
+    else if (response && response.type === 'cabProvider') {
         platforms.sendTextQuickReply(session, response.data, ['Uber', 'Ola'], [payloads.FACEBOOK_CAB_UBER, payloads.FACEBOOK_CAB_OLA])
+        analytics.trackOutgoing(userId, response.data, platform);
     }
     //ERROR here, make an appropriate message for this
     else {
         session.sendTyping();
         session.send(response)
+        analytics.trackOutgoing(userId, response, platform);
     }
 }
 
