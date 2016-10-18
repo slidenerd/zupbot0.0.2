@@ -25,6 +25,7 @@ ride.status = function(req, res) {
 
 ride.receipt = function(req, res) {
     uber.receipt(req, res, (error, response, body) => {
+        console.log(body);
         res.render('ride/receipt', body);
     });
 };
@@ -41,11 +42,18 @@ ride.ride = function(req, res) {
     drop: req.query.drop,
     provider: req.query.provider
   }
-  if(req.query.provider == 'uber') {
+
+   console.log(req.query)
+  console.log(req.query.provider === 'uber')
+  if(req.query.provider === 'uber') {
+    console.log("Getting current ride")
       uber.getCurrentRide(req, res, data, (responseObj) => {
+    console.log("Getting current ride123")
           if(responseObj) {
+              console.log("Found ongoing ride")
             res.render('ride/map', responseObj);
           } else {
+              console.log("No ongoing ride found, checking price")
             ride.price(req, res, data, (price) => {
                 if(price) {
                     data.location = price.location;

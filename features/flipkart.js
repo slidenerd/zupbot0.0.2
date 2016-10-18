@@ -90,6 +90,7 @@ flipkart.findAllOffers = function () {
 
 flipkart.paginator = function (session, offers) {
     //How many items will you display in a carousel on each platform is controlled by limit
+    
     let limit = platforms.getCarouselLimits(session.message.address.channelId);
 
     //A key from cache which indicates if this data was previously cached or freshly loaded

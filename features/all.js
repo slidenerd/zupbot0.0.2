@@ -134,6 +134,8 @@ all.weather.subroutine = function (rs, args) {
 
 all.preprocessReplies = function (session, brain) {
     let text = session.message.text
+    let channel = session.message.address.channelId
+    let entities = session.message.entities
     if (text === payloads.FACEBOOK_GET_STARTED) {
         return brain.triggers.GET_STARTED
     }
@@ -161,8 +163,8 @@ all.preprocessReplies = function (session, brain) {
         return brain.triggers.ASK_LOCATION_OLA_CAB
     }
     //TODO handle null geolocation
-    else if (platforms.isGeolocation(session)) {
-        let geolocation = platforms.getGeolocation(session);
+    else if (platforms.isGeolocation(channel, entities)) {
+        let geolocation = platforms.getGeolocation(channel, entities);
         brain.set(session.message.user.id, brain.keys.LATITUDE, geolocation.lat)
         brain.set(session.message.user.id, brain.keys.LONGITUDE, geolocation.lon)
         return brain.triggers.HANDLE_GEOLOCATION
@@ -174,44 +176,44 @@ all.preprocessReplies = function (session, brain) {
 
 all.handleSpecialRepliesOnResolve = function (session, brain, response) {
     let userId = session.message.user.id;
-    let platform = session.message.address.channelId
+    let channel = session.message.address.channelId
     if (response === 'int bookcab') {
         let latitude = brain.get(session.message.user.id, brain.keys.LATITUDE);
         let longitude = brain.get(session.message.user.id, brain.keys.LONGITUDE);
         let destination = brain.get(session.message.user.id, brain.keys.CAB_DESTINATION)
         let cabProvider = brain.get(session.message.user.id, brain.keys.CAB_PROVIDER)
         let url = encodeURI('https://zup.chat/api/ride?lat=' + latitude + '&long=' + longitude + '&drop=' + destination + '&provider=' + cabProvider);
-        let message = 'Here is your ride! :)'
-        platforms.getWebViewButton(session, message, url, 'Your Cab', 'full');
-        analytics.trackOutgoing(userId, message + ' to ' + destination + ' with ' + cabProvider, platform);
+        let text = 'Here is your ride! :)'
+        platforms.getWebViewButton(userId, channel, text, url, 'Your Cab', 'full');
+        analytics.trackOutgoing(userId, text + ' to ' + destination + ' with ' + cabProvider, channel);
     }
     else {
         session.sendTyping();
         session.send(response);
-        analytics.trackOutgoing(userId, response, platform);
+        analytics.trackOutgoing(userId, response, channel);
     }
 }
 
 all.handleSpecialRepliesOnReject = function (session, brain, response) {
     let userId = session.message.user.id;
-    let platform = session.message.address.channelId
+    let channel = session.message.address.channelId
     if (response && response.type === 'carousel') {
         // carousel.sendFlipkartCarousel(session, brain, response.data, response.filters)
         carousel.handleResponse(session, brain, response)
     }
     else if (response && response.type === 'location') {
-        platforms.askGeolocation(session, response.data)
-        analytics.trackOutgoing(userId, response.data, platform);
+        platforms.askGeolocation(userId, channel, response.data)
+        analytics.trackOutgoing(userId, response.data, channel);
     }
     else if (response && response.type === 'cabProvider') {
         platforms.sendTextQuickReply(session, response.data, ['Uber', 'Ola'], [payloads.FACEBOOK_CAB_UBER, payloads.FACEBOOK_CAB_OLA])
-        analytics.trackOutgoing(userId, response.data, platform);
+        analytics.trackOutgoing(userId, response.data, channel);
     }
     //ERROR here, make an appropriate message for this
     else {
         session.sendTyping();
         session.send(response)
-        analytics.trackOutgoing(userId, response, platform);
+        analytics.trackOutgoing(userId, response, channel);
     }
 }
 

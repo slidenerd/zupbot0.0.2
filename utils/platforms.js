@@ -40,17 +40,21 @@ const platforms = {
         limits: {
             carousel: 5
         }
+    },
+    none: {
+        limits: {
+            carousel: 5
+        }
     }
 }
 
-platforms.askGeolocation = function (session, message) {
-    const channel = session.message.address.channelId;
+platforms.askGeolocation = function (userId, channel, message) {
     switch (channel) {
         case platforms.channels.emulator:
-            session.send(message);
+            //Handle emulator case
             break;
         case platforms.channels.facebook:
-            platforms.facebook.askGeolocation(session, message);
+            platforms.facebook.askGeolocation(userId, message);
             break;
         case platforms.channels.skype:
             break;
@@ -89,17 +93,16 @@ platforms.getCarouselLimits = function (channel) {
         case platforms.channels.skype:
             return platforms.skype.limits.carousel;
         default:
-            return 5;
+            return platforms.none.limits.carousel;
     }
 }
 
-platforms.getGeolocation = function (session) {
-    const channel = session.message.address.channelId;
+platforms.getGeolocation = function (channel, entities) {
     switch (channel) {
         case platforms.channels.emulator:
             return null;
         case platforms.channels.facebook:
-            return platforms.facebook.getGeolocation(session);
+            return platforms.facebook.getGeolocation(entities);
         case platforms.channels.skype:
             return null;
         default:
@@ -121,14 +124,13 @@ platforms.getProfile = function (session) {
     }
 }
 
-platforms.getWebViewButton = function (session, text, url, urlTitle, webViewRatio) {
-    const channel = session.message.address.channelId;
+platforms.getWebViewButton = function (userId, channel, text, url, urlTitle, webViewRatio) {
     let webView;
     switch (channel) {
         case platforms.channels.emulator:
             break;
         case platforms.channels.facebook:
-            webView = facebookTemplates.getWebViewButtonTemplate(session.message.user.id, text, url, urlTitle, webViewRatio)
+            webView = facebookTemplates.getWebViewButtonTemplate(userId, text, url, urlTitle, webViewRatio)
             platforms.facebook.getWebViewButton(webView)
             break;
         case platforms.channels.skype:
@@ -138,13 +140,12 @@ platforms.getWebViewButton = function (session, text, url, urlTitle, webViewRati
     }
 }
 
-platforms.isGeolocation = function (session) {
-    const channel = session.message.address.channelId;
+platforms.isGeolocation = function (channel, entities) {
     switch (channel) {
         case platforms.channels.emulator:
             return false;
         case platforms.channels.facebook:
-            return platforms.facebook.isGeolocation(session);
+            return platforms.facebook.isGeolocation(entities);
         case platforms.channels.skype:
             return false;
         default:
@@ -152,12 +153,12 @@ platforms.isGeolocation = function (session) {
     }
 }
 
-platforms.facebook.askGeolocation = function (session, message) {
+platforms.facebook.askGeolocation = function (userId, message) {
     request({
         url: 'https://graph.facebook.com/v2.7/me/messages?access_token=' + endpoints.FACEBOOK_PAGE_ACCESS_TOKEN,
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        form: facebookTemplates.getGeolocationTemplate(session.message.user.id, message)
+        form: facebookTemplates.getGeolocationTemplate(userId, message)
     },
         function (error, response, body) {
             if (!error && response.statusCode == 200) {
@@ -192,9 +193,7 @@ platforms.facebook.deletePersistentMenu = function () {
         });
 }
 
-platforms.facebook.getGeolocation = function (session) {
-    //Get the entities sent by the user if any
-    let entities = session.message.entities;
+platforms.facebook.getGeolocation = function (entities) {
     return {
         lat: entities[0].geo.latitude,
         lon: entities[0].geo.longitude
@@ -248,9 +247,8 @@ platforms.facebook.getWebViewButton = function (webView) {
 
 }
 
-platforms.facebook.isGeolocation = function (session) {
+platforms.facebook.isGeolocation = function (entities) {
     //Get the entities sent by the user if any
-    let entities = session.message.entities;
     if (entities
         && entities.length
         && entities[0]
