@@ -3,8 +3,8 @@ var baseURL = "https://zup.chat/api/", call_url = "";
 // Email Subscribe
 function subscribeEmail(email) {
     call_url = "subscribe";
-    var form = new FormData();
-    form.append( 'email', email );
+    var form = new Object();
+    form['email'] = email;
 
     var settings = {
       "async": true,
@@ -15,8 +15,7 @@ function subscribeEmail(email) {
       "xhrFields": { withCredentials: true },
       "processData": false,
       "contentType": false,
-      "mimeType": "multipart/form-data",
-      "data": form
+      "data": JSON.stringify(form)
     }
 
     $.ajax(settings).success(function (response) {
@@ -36,18 +35,20 @@ function subscribeEmail(email) {
 function contactUs() {
     call_url = "sendMail"
     var type = '';
-    var form = new FormData();
-    form.append( 'name', $('#form1').val() );
-    form.append( 'email', $('#form2').val() );
-    form.append( 'subject', $('#form3').val() );
-    form.append( 'message', $('#form4').val() );
-    form.append( 'location', $('#form5').val() );
+    var form = new Object();
+    form['name'] = $('#form1').val();
+    form['email'] = $('#form1').val();
+    form['subject'] = $('#form1').val();
+    form['message'] = $('#form1').val();
+    form['location'] = $('#form1').val();
+    form['name'] = $('#form1').val();
+
     if($('#form6').val() == 1) {
         type = 'individual';
     } else if($('#form6').val() == 1) {
         type = 'company';
     }
-    form.append( 'type',  type);
+    form['type'] = $('#form1').val();
 
     var settings = {
       "async": true,
@@ -58,8 +59,8 @@ function contactUs() {
       "xhrFields": { withCredentials: true },
       "processData": false,
       "contentType": false,
-      "mimeType": "multipart/form-data",
-      "data": form
+      "dataType": "json",
+      "data": JSON.stringify(form)
     }
 
     $.ajax(settings).success(function (response) {
