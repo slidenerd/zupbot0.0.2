@@ -273,7 +273,7 @@ app.post('/api/subscribe', function (req, res) {
     return;
   }
   let email = req.body.email;
-  console.log('GOT EMAIL ' + email)
+  console.log('GOT EMAIL ' + req.body)
   mail.createRecepient(email, res);
 });
 
