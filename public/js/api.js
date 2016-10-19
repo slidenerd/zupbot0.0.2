@@ -1,4 +1,4 @@
-var baseURL = "https://zup.chat/api/", call_url = "";
+var baseURL = "https://zup.chat/api/", call_url = "subscribe";
 
 // Email Subscribe
 function subscribeEmail(email) {
