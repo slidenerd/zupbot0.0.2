@@ -1,4 +1,4 @@
-var baseURL = "https://zup.chat/api/", call_url = "subscribe";
+var baseURL = "https://zup.chat/api/", call_url = "";
 
 // Email Subscribe
 function subscribeEmail(email) {
@@ -8,14 +8,10 @@ function subscribeEmail(email) {
     var form = new FormData();
     form.append( 'email', email );
     var settings = {
-      "async": true,
-      "crossDomain": true,
       "url": baseURL+call_url,
-      "method": "POST",
-      "crossOrigin" :true,
+      "type": "POST",
       "xhrFields": { withCredentials: true },
       "processData": false,
-      "contentType": false,
       "mimeType": "multipart/form-data",
       "data": form
     }
@@ -70,14 +66,11 @@ function contactUs() {
     form.append( 'type',  type);
 
     var settings = {
-      "async": true,
-      "crossDomain": true,
       "url": baseURL+call_url,
-      "method": "POST",
+      "type": "POST",
       "crossOrigin" :true,
       "xhrFields": { withCredentials: true },
       "processData": false,
-      "contentType": false,
       "mimeType": "multipart/form-data",
       "data": form
     }
