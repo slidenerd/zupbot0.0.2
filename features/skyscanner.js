@@ -20,8 +20,9 @@ skyscanner.fetchFlightDetails = function(req, res) {
     (error, body) => {
         if (!error) {
             let flightOptions = skyscanner.parse(body);
+            // let flightOptions = body;
             tempCache = flightOptions;
-            console.log(flightOptions);
+            console.log(JSON.stringify(flightOptions));
             res.render('airfare/skyscanner', flightOptions)
         }
     });
@@ -32,7 +33,7 @@ skyscanner.getFlightDetailsFromSkyScanner = function(res, from, to, outboundDate
     body.country = 'IN';
     body.currency = 'INR';
     body.locale = 'en-IN';
-    body.locationSchema = 'sky';
+    body.locationSchema = 'iata';
     body.apikey = SKYSCANNER_API_KEY;
     body.grouppricing = 'on';
     body.outbounddate = outboundDate;
@@ -101,7 +102,7 @@ skyscanner.sessionStartCallback = function(res, response, body, error, callback)
         };
         
         var options = {
-            url: location + "?apikey=" + SKYSCANNER_API_KEY + "&pageindex=0&pagesize=20",
+            url: location + "?apikey=" + SKYSCANNER_API_KEY,// + "&pageindex=0&pagesize=2",
             headers: headers,
             json: true
         };
@@ -153,35 +154,53 @@ skyscanner.pollSession = function(res, options, callback) {
 // }
 
 skyscanner.parse = function(json) {
-    let options = [];
-    for (let legs of json.Legs) {
-        var option = new Object();
-        var outbound = new Object();
+    console.log("#######################Parsing##########")
+    Object.keys(json).forEach(function(key) {
+        if(Array.isArray(json[key])) {
+            var arr = json[key];
+            var obj = {};
+            for(var i = 0; i < arr.length; i++) {
+                if(key === "Currencies") {
+                    obj[arr[i].Code] = arr[i];
+                } else {
+                    obj[arr[i].Id] = arr[i];
+                }
+            }
+            delete json[key];
+            json[key] = obj
+        }
+    });
 
-        outbound.departure = legs.Departure
-        outbound.arrival = legs.Arrival
-        outbound.stops = legs.Stops.length
-        outbound.duration = legs.Duration
-        outbound.id = legs.Id
-        outbound.OriginStation = legs.OriginStation
-        outbound.DestinationStation = legs.DestinationStation
-        outbound.Carriers = legs.Carriers
-        option.outbound = outbound
+    return json;
+
+    // for (let legs of json.Legs) {
+    //     var option = new Object();
+    //     var outbound = new Object();
+
+    //     outbound.departure = legs.Departure
+    //     outbound.arrival = legs.Arrival
+    //     outbound.stops = legs.Stops.length
+    //     outbound.duration = legs.Duration
+    //     outbound.id = legs.Id
+    //     outbound.OriginStation = legs.OriginStation
+    //     outbound.DestinationStation = legs.DestinationStation
+    //     outbound.Carriers = legs.Carriers
+    //     option.outbound = outbound
         
-        var inbound = new Object();
-        inbound.departure = legs.Departure
-        inbound.arrival = legs.Arrival
-        inbound.stops = legs.Stops.length
-        inbound.duration = legs.Duration
-        inbound.id = legs.Id
-        option.inbound = inbound
-        option = skyscanner.findCheapestPrice(option, json)
-        options.push(option)
-    }
-    var data = {
-        list: options
-    }
-    return data;
+    //     var inbound = new Object();
+    //     inbound.departure = legs.Departure
+    //     inbound.arrival = legs.Arrival
+    //     inbound.stops = legs.Stops.length
+    //     inbound.duration = legs.Duration
+    //     inbound.id = legs.Id
+    //     option.inbound = inbound
+    //     option = skyscanner.findCheapestPrice(option, json)
+    //     options.push(option)
+    // }
+    // var data = {
+    //     list: options
+    // }
+    // return data;
 }
 
 skyscanner.findCheapestPrice = function(option, json) {
@@ -203,5 +222,6 @@ skyscanner.findCheapestPrice = function(option, json) {
 module.exports = skyscanner
 
 skyscanner.getFlightDetailsFromSkyScanner(null, 'coimb', 'chennai', '2016-10-21', '2016-10-26', (error, response) => {
-    console.log(response);
+    console.log(skyscanner.parse(response));
+    // console.log(JSON.stringify(response));
 });

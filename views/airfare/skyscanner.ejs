@@ -38,8 +38,8 @@
     <!-- Indicators -->
   <div id="myCarousel" class="carousel slide" data-ride="carousel">
       <ol class="carousel-indicators">
-      <%if(typeof list != 'undefined') {%>
-        <%for(var i = 0; i < list.length; i++) {%>
+      <%if(typeof Itineraries != 'undefined') {%>
+        <%for(var i = 0; i < Itineraries.length; i++) {%>
           <%if(i == 0) {%>
             <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
           <% } else { %>
@@ -51,22 +51,23 @@
 
     <!-- Wrapper for slides -->
     <div class="carousel-inner" role="listbox"> 
-        <%if(typeof list != 'undefined') {%>
-          <%for(var i = 0; i < list.length; i++) { %>
-          <%if(i == 0) {%>
-          <div class="item active">
-          <% } else { %>
-          <div class="item">
-          <% } %>
-            <%if(list[i].inbound) {%>
-              <div class="bold">Inbound</div>
-              <div>
-                <hr/>
-              </div>
-              <%=list[i].inbound.stops%> Stops
-              <p><%=list[i].inbound.departure%></p>
+        <%if(typeof Itineraries != 'undefined') {%>
+          <%for(var i = 0; i < Itineraries.length; i++) { %>
+            <%if(i == 0) {%>
+            <div class="item active">
+            <% } else { %>
+            <div class="item">
             <% } %>
-          </div>          
+              <%if(Itineraries[i].OutboundLegId) {%>
+                <div class="bold">Outbound</div>
+                <div>
+                  <hr/>
+                </div>
+                <%var leg = Legs[Itineraries[i].OutboundLegId]%>
+                <%=leg.Stops.length%> Stops
+                <p><%=Itineraries[i].OutboundLegId.Departure%></p>
+              <% } %>
+            </div>          
         <%}%>
       <%}%>
     </div>
