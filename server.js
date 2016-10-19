@@ -347,8 +347,19 @@ bot.dialog('/', onMessage);
 function firstRun(session) {
   console.log('This user is running our bot the first time')
   createUser(session)
-  platforms.firstRun(session);
-  userController.addBotUser(session);
+  platforms.firstRun(session.message.user.id, session.message.address.channelId)
+    .then((values) => {
+      for (let value of values) {
+        if (value.data.firstName && value.data.lastName) {
+          session.userData.user.profile = value.data
+          userController.addBotUser(session);
+        }
+      }
+    })
+    .catch((errors => {
+      console.log(errors);
+      userController.addBotUser(session);
+    }))
   reply(session)
   session.endDialog()
 }

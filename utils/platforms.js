@@ -32,6 +32,7 @@ const platforms = {
         }
     },
     facebook: {
+        GRAPH_BASE_URI: 'https://graph.facebook.com/v2.8',
         limits: {
             carousel: 10
         }
@@ -66,21 +67,16 @@ platforms.askGeolocation = function (userId, channel, message) {
 /**
  * Actions to perform on each platform when the user runs it the first time
  */
-platforms.firstRun = function (session) {
-    const channel = session.message.address.channelId;
+platforms.firstRun = function (userId, channel) {
     switch (channel) {
         case platforms.channels.emulator:
-            break
+            return Promise.reject('none')
         case platforms.channels.facebook:
-            platforms.facebook.sendThread(facebookTemplates.greet(), 'Greeting')
-            platforms.facebook.sendThread(facebookTemplates.getStarted(), 'Get Started')
-            platforms.facebook.sendThread(facebookTemplates.getPersistentMenu(), 'Persistent Menu')
-            platforms.facebook.sendThread(facebookTemplates.getDomainWhitelisting(), 'Domain Whitelisting')
-            platforms.facebook.getProfile(session)
-            break
+            return platforms.facebook.firstRun(userId)
         case platforms.channels.skype:
-            break
+            return Promise.reject('none')
         default:
+            return Promise.reject('none')
     }
 }
 
@@ -110,13 +106,12 @@ platforms.getGeolocation = function (channel, entities) {
     }
 }
 
-platforms.getProfile = function (session) {
-    const channel = session.message.address.channelId;
+platforms.getProfile = function (userId, channel) {
     switch (channel) {
         case platforms.channels.emulator:
             break;
         case platforms.channels.facebook:
-            platforms.facebook.getProfile(session);
+            platforms.facebook.getProfile(userId);
             break;
         case platforms.channels.skype:
             break;
@@ -155,7 +150,7 @@ platforms.isGeolocation = function (channel, entities) {
 
 platforms.facebook.askGeolocation = function (userId, message) {
     request({
-        url: 'https://graph.facebook.com/v2.7/me/messages?access_token=' + endpoints.FACEBOOK_PAGE_ACCESS_TOKEN,
+        url: platforms.facebook.GRAPH_BASE_URI + '/me/messages?access_token=' + endpoints.FACEBOOK_PAGE_ACCESS_TOKEN,
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         form: facebookTemplates.getGeolocationTemplate(userId, message)
@@ -173,7 +168,7 @@ platforms.facebook.askGeolocation = function (userId, message) {
 
 platforms.facebook.deletePersistentMenu = function () {
     request({
-        url: 'https://graph.facebook.com/v2.7/me/thread_settings?access_token=' + endpoints.FACEBOOK_PAGE_ACCESS_TOKEN,
+        url: platforms.facebook.GRAPH_BASE_URI + '/me/thread_settings?access_token=' + endpoints.FACEBOOK_PAGE_ACCESS_TOKEN,
         method: 'DELETE',
         headers: { 'Content-Type': 'application/json' },
         form: {
@@ -193,6 +188,16 @@ platforms.facebook.deletePersistentMenu = function () {
         });
 }
 
+platforms.facebook.firstRun = function (userId) {
+    return Promise.all([
+        platforms.facebook.sendThread(facebookTemplates.greet(), 'Greeting'),
+        platforms.facebook.sendThread(facebookTemplates.getStarted(), 'Get Started'),
+        platforms.facebook.sendThread(facebookTemplates.getPersistentMenu(), 'Persistent Menu'),
+        platforms.facebook.sendThread(facebookTemplates.getDomainWhitelisting(), 'Domain Whitelisting'),
+        platforms.facebook.getProfile(userId)
+    ])
+}
+
 platforms.facebook.getGeolocation = function (entities) {
     return {
         lat: entities[0].geo.latitude,
@@ -200,36 +205,40 @@ platforms.facebook.getGeolocation = function (entities) {
     }
 }
 
-platforms.facebook.getProfile = function (session) {
-    request({
-        url: 'https://graph.facebook.com/v2.7/' + session.message.user.id,
-        method: 'GET',
-        qs: {
-            access_token: endpoints.FACEBOOK_PAGE_ACCESS_TOKEN,
-            fields: 'first_name,last_name,profile_pic,locale,timezone,gender'
+platforms.facebook.getProfile = function (userId) {
+    return new Promise((resolve, reject) => {
+        request({
+            url: platforms.facebook.GRAPH_BASE_URI + '/' + userId,
+            method: 'GET',
+            qs: {
+                access_token: endpoints.FACEBOOK_PAGE_ACCESS_TOKEN,
+                fields: 'first_name,last_name,profile_pic,locale,timezone,gender'
+            },
+            headers: { 'Content-Type': 'application/json' },
+            json: true
         },
-        headers: { 'Content-Type': 'application/json' },
-        json: true
-    },
-        function (error, response, body) {
-            if (!error && response.statusCode == 200) {
-                let profile = session.userData.user.profile;
-                profile.firstName = body.first_name;
-                profile.lastName = body.last_name;
-                profile.picture = body.profile_pic;
-                profile.locale = body.locale;
-                profile.timezone = body.timezone;
-                profile.gender = body.gender;
-            } else {
-                // TODO: Handle errors
-                console.log(" Failed. Need to handle errors ", error);
-            }
-        });
+            function (error, response, body) {
+                if (!error && response.statusCode == 200) {
+                    let profile = {
+                        firstName: body.first_name,
+                        lastName: body.last_name,
+                        picture: body.profile_pic,
+                        locale: body.locale,
+                        timezone: body.timezone,
+                        gender: body.gender
+                    }
+                    resolve({ status: response.statusCode, data: profile })
+                } else {
+                    // TODO: Handle errors
+                    reject({ status: response.statusCode, data: error })
+                }
+            });
+    })
 }
 
 platforms.facebook.getWebViewButton = function (webView) {
     request({
-        url: 'https://graph.facebook.com/v2.7/me/messages?access_token=' + endpoints.FACEBOOK_PAGE_ACCESS_TOKEN,
+        url: platforms.facebook.GRAPH_BASE_URI + '/me/messages?access_token=' + endpoints.FACEBOOK_PAGE_ACCESS_TOKEN,
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         form: webView
@@ -260,27 +269,27 @@ platforms.facebook.isGeolocation = function (entities) {
     return false;
 }
 
-// Calls the Facebook graph api to change letious bot settings
+// Calls the Facebook graph api to change bot settings
 platforms.facebook.sendThread = function (template, cmd) {
 
-    // Start the request
-    request({
-        url: 'https://graph.facebook.com/v2.7/me/thread_settings?access_token=' + endpoints.FACEBOOK_PAGE_ACCESS_TOKEN,
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        form: template
-    },
-        function (error, response, body) {
-            if (!error && response.statusCode == 200) {
-                // Print out the response body
-                console.log(cmd + ": Updated.");
-                console.log(body);
-            } else {
-                // TODO: Handle errors
-                console.log(cmd + ": Failed. Need to handle errors.");
-                console.log(body);
-            }
-        });
+    return new Promise((resolve, reject) => {
+        // Start the request
+        request({
+            url: platforms.facebook.GRAPH_BASE_URI + '/me/thread_settings?access_token=' + endpoints.FACEBOOK_PAGE_ACCESS_TOKEN,
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            form: template
+        },
+            function (error, response, body) {
+                if (!error && response.statusCode == 200) {
+                    // Print out the response body
+                    resolve({ status: response.statusCode, data: body })
+                } else {
+                    // TODO: Handle errors
+                    reject({ status: response.statusCode, data: error })
+                }
+            });
+    })
 }
 
 platforms.sendQuickReply = function (session, quickReplies) {
@@ -321,7 +330,7 @@ platforms.facebook.sendQuickReply = function (session, quickReplies) {
         message: quickReplies
     }
     request({
-        url: 'https://graph.facebook.com/v2.7/me/messages?access_token=' + endpoints.FACEBOOK_PAGE_ACCESS_TOKEN,
+        url: platforms.facebook.GRAPH_BASE_URI + '/me/messages?access_token=' + endpoints.FACEBOOK_PAGE_ACCESS_TOKEN,
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         form: quickReply
@@ -347,7 +356,7 @@ platforms.facebook.sendTextQuickReply = function (session, text, titles, payload
     }
     console.log(json)
     request({
-        url: 'https://graph.facebook.com/v2.7/me/messages?access_token=' + endpoints.FACEBOOK_PAGE_ACCESS_TOKEN,
+        url: platforms.facebook.GRAPH_BASE_URI + '/me/messages?access_token=' + endpoints.FACEBOOK_PAGE_ACCESS_TOKEN,
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         form: json
