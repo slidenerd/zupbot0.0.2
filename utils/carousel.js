@@ -2,7 +2,6 @@
 const
     analytics = require('./analytics'),
     builder = require('../core/'),
-    constants = require('./constants'),
     flipkart = require('../features/flipkart'),
     platforms = require('./platforms');
 
@@ -11,8 +10,8 @@ let timeout;
 
 carousel.handleResponse = function (session, brain, offers) {
     let topic = brain.getTopic(session.message.user.id)
-    console.log(topic + ' ' + constants.KEY_OFFERS)
-    if (topic === constants.KEY_OFFERS) {
+    console.log(topic + ' ' + brain.topics.FLIPKART)
+    if (topic === brain.topics.FLIPKART) {
         carousel.handleFlipkartResponse(session, brain, offers);
     }
 }
@@ -20,7 +19,7 @@ carousel.handleResponse = function (session, brain, offers) {
 carousel.handleFlipkartResponse = function (session, brain, offers) {
     // carousel.sendFlipkartCarousel(session, brain, response.data, response.filters)
     let page = flipkart.paginator(session, offers);
-    console.log(page)
+    console.log(page.start + ' ' + page.end + ' ' + page.count + ' ' + page.triggerName);
     brain.set(session.message.user.id, 'flipkartpagestart', page.start + 1)
     brain.set(session.message.user.id, 'flipkartpageend', page.end)
     brain.set(session.message.user.id, 'flipkartofferscount', page.count)
@@ -34,7 +33,8 @@ carousel.handleFlipkartResponse = function (session, brain, offers) {
     if (!timeout) {
         timeout = setInterval(() => {
             let currentTime = new Date().getTime();
-            if (currentTime - session.userData.user.flipkart.lastActive > 30000) {
+            let topic = brain.getTopic(session.message.user.id);
+            if (currentTime - session.userData.user.flipkart.lastActive > 30000 && topic === brain.topics.FLIPKART) {
                 platforms.sendQuickReply(session, require('../json/quick_reply_flipkart_show_more.json'))
                 clearInterval(timeout)
                 //unset the timeout variable so that the person can see the quick reply once again after the next request to view flipkart carousel

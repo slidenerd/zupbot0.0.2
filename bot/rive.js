@@ -29,6 +29,9 @@ let brain = {
         CAB_DESTINATION: 'cabdestination',
         LATITUDE: 'latitude',
         LONGITUDE: 'longitude'
+    },
+    topics: {
+        FLIPKART: 'flipkart'
     }
 }
 
