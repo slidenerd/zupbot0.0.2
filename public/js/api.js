@@ -7,22 +7,24 @@ function subscribeEmail(email) {
     form['email'] = email;
 
     var settings = {
-      "async": true,
-      "crossDomain": true,
-      "url": baseURL+call_url,
-      "method": "POST",
-      "crossOrigin" :true,
-      "xhrFields": { withCredentials: true },
-      "processData": false,
-      "contentType": 'application/json',
-      "data": JSON.stringify(form)
+        "async": true,
+        "crossDomain": true,
+        "url": baseURL + call_url,
+        "method": "POST",
+        "crossOrigin": true,
+        "xhrFields": { withCredentials: true },
+        "processData": false,
+        "contentType": 'application/json',
+        "data": JSON.stringify(form)
     }
 
     $.ajax(settings).success(function (response) {
         console.log(response);
-        if(response.success === true) {
+        if (response.success === true) {
+            console.log(response.success);
             fakeMessage('Thank you, you have been successfully added to the wait list');
         } else {
+            console.log(response.success);
             fakeMessage('Oops, looks like a rat bit the wire while your email was travelling through it');
         }
     }).error(function (errorResponse) {
@@ -43,35 +45,35 @@ function contactUs() {
     form['location'] = $('#form5').val();
     form['name'] = $('#form1').val();
 
-    if($('#form6').val() == 1) {
+    if ($('#form6').val() == 1) {
         type = 'individual';
-    } else if($('#form6').val() == 1) {
+    } else if ($('#form6').val() == 1) {
         type = 'company';
     }
     form['type'] = $('#form1').val();
 
     var settings = {
-      "async": true,
-      "crossDomain": true,
-      "url": baseURL+call_url,
-      "method": "POST",
-      "crossOrigin" :true,
-      "xhrFields": { withCredentials: true },
-      "processData": false,
-      "contentType": 'application/json',
-      "dataType": "json",
-      "data": JSON.stringify(form)
+        "async": true,
+        "crossDomain": true,
+        "url": baseURL + call_url,
+        "method": "POST",
+        "crossOrigin": true,
+        "xhrFields": { withCredentials: true },
+        "processData": false,
+        "contentType": 'application/json',
+        "dataType": "json",
+        "data": JSON.stringify(form)
     }
 
     $.ajax(settings).success(function (response) {
         console.log(response);
-        if(response.success == true) {
+        if (response.success == true) {
             clear();
         }
     }).error(function (errorResponse) {
         console.warn(errorResponse);
-    }).complete(function(completeResponse) {
-        if(completeResponse.success == true) {
+    }).complete(function (completeResponse) {
+        if (completeResponse.success == true) {
             clear();
         }
     });
