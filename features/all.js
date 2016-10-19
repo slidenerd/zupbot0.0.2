@@ -58,17 +58,8 @@ all.flipkart.subroutine = function (rs, args) {
             reject({ type: 'carousel', data: cachedOffers, filters: args })
         }
         else {
-            flipkart.findAllOffers()
-                .then((offers) => {
-                    if (offers.length) {
-                        cache.put(KEY_FRESH_DATA, true, CACHE_VALIDITY_PERIOD);
-                        cache.put(KEY_OFFERS, offers, CACHE_VALIDITY_PERIOD)
-                    }
-                    reject({ type: 'carousel', data: offers, filters: args })
-                })
-                .catch((error) => {
-                    reject({ type: 'error', data: error });
-                })
+            let reply = rs.reply(rs.currentUser(), 'int wait', all.this);
+            reject({ type: 'wait', data: reply, filters: args })
         }
     })
 }
@@ -195,7 +186,23 @@ all.handleSpecialRepliesOnReject = function (session, brain, response) {
     let channel = session.message.address.channelId
     if (response && response.type === 'carousel') {
         // carousel.sendFlipkartCarousel(session, brain, response.data, response.filters)
-        carousel.handleResponse(session, brain, response)
+        carousel.handleResponse(session, brain, response.data)
+    }
+    else if (response && response.type === 'wait') {
+        session.send(response.data);
+        flipkart.findAllOffers()
+            .then((offers) => {
+                if (offers.length) {
+                    cache.put(KEY_FRESH_DATA, true, CACHE_VALIDITY_PERIOD);
+                    cache.put(KEY_OFFERS, offers, CACHE_VALIDITY_PERIOD)
+                }
+                carousel.handleResponse(session, brain, offers)
+            })
+            .catch((error) => {
+                let msg = 'The Flipkart guys kicked me out of their office. Sorry about that. Will try again in a while'
+                session.send(msg)
+                analytics.trackOutgoing(userId, msg, channel);
+            })
     }
     else if (response && response.type === 'location') {
         platforms.askGeolocation(userId, channel, response.data)

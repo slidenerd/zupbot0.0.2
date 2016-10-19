@@ -9,17 +9,17 @@ const
 const carousel = {}
 let timeout;
 
-carousel.handleResponse = function (session, brain, response) {
+carousel.handleResponse = function (session, brain, offers) {
     let topic = brain.getTopic(session.message.user.id)
     console.log(topic + ' ' + constants.KEY_OFFERS)
     if (topic === constants.KEY_OFFERS) {
-        carousel.handleFlipkartResponse(session, brain, response);
+        carousel.handleFlipkartResponse(session, brain, offers);
     }
 }
 
-carousel.handleFlipkartResponse = function (session, brain, response) {
+carousel.handleFlipkartResponse = function (session, brain, offers) {
     // carousel.sendFlipkartCarousel(session, brain, response.data, response.filters)
-    let page = flipkart.paginator(session, response.data);
+    let page = flipkart.paginator(session, offers);
     console.log(page)
     brain.set(session.message.user.id, 'flipkartpagestart', page.start + 1)
     brain.set(session.message.user.id, 'flipkartpageend', page.end)

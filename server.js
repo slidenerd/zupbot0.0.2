@@ -320,7 +320,8 @@ const bot = new builder.UniversalBot(connector);
 
 app.post('/api/messages', connector.listen());
 let dialogVersionOptions = {
-  version: 4,
+  version: 4.1,
+  message: 'My brain size increased by another gram :) Now I can get you an uber cab or awesome offers from flipkart. All you gotta do is type \'help\'',
   resetCommand: /^reset/i
 };
 bot.use(builder.Middleware.dialogVersion(dialogVersionOptions));
@@ -331,10 +332,9 @@ bot.use(builder.Middleware.dialogVersion(dialogVersionOptions));
 
 //Run this dialog the very first time for a particular user
 bot.use(builder.Middleware.firstRun({
-  version: 4,
+  version: 4.1,
   dialogId: '/firstRun',
-  upgradeDialogId: '/onUpgrade',
-  upgradeDialogArgs: 'My brain size increased by another gram :) Now I can get you an uber cab or awesome offers from flipkart. All you gotta do is type \'help\''
+  upgradeDialogId: '/firstRun',
 }));
 
 bot.dialog('/firstRun', firstRun);
@@ -383,10 +383,6 @@ function reply(session) {
     .catch((response) => {
       all.handleSpecialRepliesOnReject(session, brain, response)
     })
-}
-
-function onUpgrade(session, args) {
-  session.send(args)
 }
 
 function runCron() {

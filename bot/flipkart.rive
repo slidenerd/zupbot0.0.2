@@ -36,6 +36,10 @@
 	- Okay, enjoy your day!
 	- Understood, have a great day ahead!
 
+	+ int wait
+	- Sure, ping, ping, ping, I am trying to ping the Flipkart guys. This may take a minute or two :)
+	- Gotcha, ding dong, ding dong, I am waiting for the Flipkart guys to reply. This may take a few minutes :) 
+
 	+ int show more
 	- <call>getAllFlipkartOffers</call>
 

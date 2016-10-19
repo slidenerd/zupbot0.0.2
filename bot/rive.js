@@ -18,6 +18,7 @@ let brain = {
         ASK_LOCATION_OLA_CAB: 'int askcabsource',
         ASK_LOCATION_UBER_CAB: 'int askcabsource',
         FLIPKART_CANCEL: 'int cancel',
+        FLIPKART_RESET: 'int reset',
         FLIPKART_SHOW_MORE: 'int show more',
         GET_STARTED: 'int get started',
         HANDLE_GEOLOCATION: 'int handlegeolocation',
