@@ -20,12 +20,12 @@ function subscribeEmail(email) {
 
     $.ajax(settings).success(function (response) {
         console.log(response);
-        if (response.success === true) {
-            console.log(response.success);
-            fakeMessage('Thank you, you have been successfully added to the wait list');
-        } else {
+        if (response.success === false) {
             console.log(response.success);
             fakeMessage('Oops, looks like a rat bit the wire while your email was travelling through it');
+        } else {
+            console.log(response.success);
+            fakeMessage('Thank you, you have been successfully added to the wait list');
         }
     }).error(function (errorResponse) {
         console.warn(errorResponse);
