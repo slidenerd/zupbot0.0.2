@@ -20,7 +20,7 @@ function subscribeEmail(email) {
 
     $.ajax(settings).success(function (response) {
         console.log(response);
-        if(response.success == true) {
+        if(response.success === true) {
             fakeMessage('Thank you, you have been successfully added to the wait list');
         } else {
             fakeMessage('Oops, looks like a rat bit the wire while your email was travelling through it');
