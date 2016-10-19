@@ -29,13 +29,6 @@ a:hover {
     color: #f44336 !important;
     border-radius: 20px !important;
 }
-footer.page-footer {
-    position: absolute;
-    left: 0px;
-    bottom: 0px;
-    width: 100%;
-}
-
 
 @media screen and (max-width: 1400px) {
     .chat {

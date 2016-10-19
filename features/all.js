@@ -190,6 +190,7 @@ all.handleSpecialRepliesOnReject = function (session, brain, response) {
     }
     else if (response && response.type === 'wait') {
         session.send(response.data);
+        analytics.trackOutgoing(userId, response.data, channel);
         flipkart.findAllOffers()
             .then((offers) => {
                 if (offers.length) {

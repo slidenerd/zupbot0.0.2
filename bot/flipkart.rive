@@ -39,6 +39,8 @@
 	+ int wait
 	- Sure, ping, ping, ping, I am trying to ping the Flipkart guys. This may take a minute or two :)
 	- Gotcha, ding dong, ding dong, I am waiting for the Flipkart guys to reply. This may take a few minutes :) 
+	- Understood, knock knock, hello Flipkart, I am looking for some offers. Give me a few mins, they are sleeping on their couch :)
+	- Got it! peep peep, make way for some offers. Someone's stuck at the signal :) This may take a few mins
 
 	+ int show more
 	- <call>getAllFlipkartOffers</call>

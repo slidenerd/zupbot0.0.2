@@ -3,6 +3,8 @@ var baseURL = "https://zup.chat/api/", call_url = "";
 // Email Subscribe
 function subscribeEmail(email) {
     call_url = "subscribe";
+    var successMsg = 'Subscribed successfully, Please check your mail, thanks.';
+    var errorMsg = 'Subscribe failed.';
     var form = new FormData();
     form.append( 'email', email );
 
@@ -22,21 +24,40 @@ function subscribeEmail(email) {
     $.ajax(settings).success(function (response) {
         console.log(response);
         if(response.success == true) {
-            fakeMessage(2);
+            fakeMessage(successMsg);
         } else {
-            fakeMessage(3);
+            fakeMessage(errorMsg);
         }
     }).error(function (errorResponse) {
         console.warn(errorResponse);
-        fakeMessage(3);
+        fakeMessage(errorMsg);
     });
 }
 
 // Contact Us
 function contactUs() {
-    call_url = "sendMail"
+    call_url = "sendMail";
+    var successMsg = "Your request has been sent, we will reach out to you shortly.";
+    var errorMsg = "Your request has been not sent, please try again later.";
     var type = '';
     var form = new FormData();
+    var opts = {
+        "closeButton": true,
+        "debug": false,
+        "positionClass": "toast-top-right",
+        "onclick": null,
+        "showDuration": "300",
+        "hideDuration": "1000",
+        "timeOut": "5000",
+        "extendedTimeOut": "1000",
+        "showEasing": "swing",
+        "hideEasing": "linear",
+        "showMethod": "fadeIn",
+        "hideMethod": "fadeOut"
+    };
+    
+    $('body').append('<div class="loader-bg"><div class="loader"></div></div>');
+
     form.append( 'name', $('#form1').val() );
     form.append( 'email', $('#form2').val() );
     form.append( 'subject', $('#form3').val() );
@@ -66,10 +87,15 @@ function contactUs() {
         console.log(response);
         if(response.success == true) {
             clear();
+            toastr.success(successMsg, null, opts);
+        } else {
+            toastr.error(errorMsg, null, opts);
         }
     }).error(function (errorResponse) {
         console.warn(errorResponse);
+        toastr.error(errorMsg, null, opts);
     }).complete(function(completeResponse) {
+        $('.loader-bg').remove();
         if(completeResponse.success == true) {
             clear();
         }

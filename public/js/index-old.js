@@ -43,7 +43,7 @@ function insertMessage() {
 
   text = msg;
   if (text != null && text != '') {
-      emails = text.match(/([a-zA-Z0-9._-]+@[a-zA-Z0-9._-]+\.[a-zA-Z._-]+)/gi);
+      emails = text.match(/([a-zA-Z0-9._-]+@[a-zA-Z0-9._-]+\.[a-zA-Z0-9._-]+)/gi);
       $('<div class="message message-personal">' + msg + '</div>').appendTo($('.mCSB_container')).addClass('new');
       setDate();
       $('.message-input').val(null);
@@ -52,7 +52,7 @@ function insertMessage() {
           console.log(emails);
           subscribeEmail(emails[0]);
       } else {
-          fakeMessage();
+          fakeMessage(1);
           return;
       }
   }
@@ -70,14 +70,13 @@ $(window).on('keydown', function(e) {
 })
 
 var Fake = [
-  'Hi there, I am Zup, and you?',
-  'Nice to meet you. How are you?',
-  'Not too bad myself. What do you do?',
-  'Awesome! I can get you an Uber cab or find Flipkart deals for you. Let me know your email if you wish to be notified when I become alive. I wont spam you',  
-  'Thank you, Cya around :)'
+  'Hi there, I\'m Zup still now developing, Please enter email to subscribe',
+  'Sorry, Worng input enter your email to subscribe',
+  'Thank you for subscribe we will update soon, Please to check subscribed E-Mail.',
+  'Sorry subscribe failed, Please to check your E-Mail ID again try again later'
 ]
 
-function fakeMessage(responseMsg) {
+function fakeMessage(msgType) {
   var statusMsg = '';
   if ($('.message-input').val() != '') {
     return false;
@@ -88,11 +87,16 @@ function fakeMessage(responseMsg) {
 
   setTimeout(function() {
     $('.message.loading').remove();
-    statusMsg = responseMsg != undefined ? responseMsg : (Fake[i] == undefined ? ': (' : Fake[i]);
+      if (msgType) {
+          statusMsg = Fake[msgType];
+      } else if (i == 0) {
+          statusMsg = Fake[0];
+      } else {
+          statusMsg = Fake[1];
+      }
     $('<div class="message new"><figure class="avatar"><img src="'+zupBase64+'" /></figure>' + statusMsg + '</div>').appendTo($('.mCSB_container')).addClass('new');
     setDate();
     updateScrollbar();
-    if(responseMsg == undefined)
-        i++;
+    i++;
   }, 1000 + (Math.random() * 20) * 100);
 }
