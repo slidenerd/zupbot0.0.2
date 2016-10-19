@@ -4,7 +4,7 @@ const geocoder = require('./geocoder');
 const Uber = require('node-uber');
 
 const uber = {
-    endPoint: 'https://sandbox-api.uber.com/v1/',
+    endPoint: 'https://api.uber.com/v1/',
     // endPoint: 'https://api.uber.com/v1/',
     accessToken: 'dlQLWx7Rz1SBuqYWbRWoDkADNbm7Ka15cHbu1Zq3',
 }
@@ -17,7 +17,7 @@ const uberObj = new Uber({
     // redirect_uri: 'https://zup.chat/auth/uber/callback',
     name: 'zup.chat',
     language: 'en_US', // optional, defaults to en_US
-    sandbox: true // optional, defaults to false
+    sandbox: false // optional, defaults to false
 });
 
 

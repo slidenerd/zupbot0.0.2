@@ -25,7 +25,7 @@ function subscribeEmail(email) {
             fakeMessage('Oops, looks like a rat bit the wire while your email was travelling through it');
         } else {
             console.log(response.success);
-            fakeMessage('Thank you, you have been successfully added to the wait list');
+            fakeMessage('Thank you, you have been added successfully!');
         }
     }).error(function (errorResponse) {
         console.warn(errorResponse);
