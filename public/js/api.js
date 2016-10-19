@@ -37,10 +37,10 @@ function contactUs() {
     var type = '';
     var form = new Object();
     form['name'] = $('#form1').val();
-    form['email'] = $('#form1').val();
-    form['subject'] = $('#form1').val();
-    form['message'] = $('#form1').val();
-    form['location'] = $('#form1').val();
+    form['email'] = $('#form2').val();
+    form['subject'] = $('#form3').val();
+    form['message'] = $('#form4').val();
+    form['location'] = $('#form5').val();
     form['name'] = $('#form1').val();
 
     if($('#form6').val() == 1) {
