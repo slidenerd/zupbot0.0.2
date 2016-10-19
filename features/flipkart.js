@@ -90,19 +90,19 @@ flipkart.findAllOffers = function () {
 
 flipkart.paginator = function (session, offers) {
     //How many items will you display in a carousel on each platform is controlled by limit
-    
+
     let limit = platforms.getCarouselLimits(session.message.address.channelId);
     console.log(limit)
     //A key from cache which indicates if this data was previously cached or freshly loaded
     if (cache.get('fresh')) {
-        session.userData.user.flipkart.page = 0
+        session.userData.user.flipkart.page.start = 0
         console.log('fresh')
     }
     //Begin displaying items either from 0 or from a previous number
-    let start = session.userData.user.flipkart.page
+    let start = session.userData.user.flipkart.page.start
 
     //Display exactly limit number of items
-    let end = (start + limit < offers.length) ? (start + limit) : offers.length
+    let end = ((start + limit) < offers.length) ? (start + limit) : offers.length
 
     console.log(start, end)
     let page;
@@ -148,7 +148,12 @@ flipkart.paginator = function (session, offers) {
         }
     }
     //Reset the page index if we have browsed all offers
-    session.userData.user.flipkart.page = (end == offers.length) ? 0 : end
+    if (end === offers.length) {
+        session.userData.user.flipkart.page.start = 0
+    }
+    else {
+        session.userData.user.flipkart.page.start = end
+    }
     return page;
 }
 

@@ -54,18 +54,15 @@ all.flipkart.subroutine = function (rs, args) {
         //Load from cache
         const cachedOffers = cache.get(KEY_OFFERS)
         if (cachedOffers) {
-            cache.put(KEY_FRESH_DATA, false, CACHE_VALIDITY_PERIOD, (key, value) => {
-            });
+            cache.put(KEY_FRESH_DATA, false, CACHE_VALIDITY_PERIOD);
             reject({ type: 'carousel', data: cachedOffers, filters: args })
         }
         else {
             flipkart.findAllOffers()
                 .then((offers) => {
                     if (offers.length) {
-                        cache.put(KEY_FRESH_DATA, true, CACHE_VALIDITY_PERIOD, (key, value) => {
-                        });
-                        cache.put(KEY_OFFERS, offers, CACHE_VALIDITY_PERIOD, (key, value) => {
-                        })
+                        cache.put(KEY_FRESH_DATA, true, CACHE_VALIDITY_PERIOD);
+                        cache.put(KEY_OFFERS, offers, CACHE_VALIDITY_PERIOD)
                     }
                     reject({ type: 'carousel', data: offers, filters: args })
                 })
