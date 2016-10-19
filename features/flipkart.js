@@ -92,7 +92,6 @@ flipkart.paginator = function (session, offers) {
     //How many items will you display in a carousel on each platform is controlled by limit
 
     let limit = platforms.getCarouselLimits(session.message.address.channelId);
-    console.log(limit)
     //if flipkart does not exist for a particular user 
     if (!session.userData.user.flipkart) {
         let flipkart = {
@@ -186,7 +185,7 @@ flipkart.runCron = function () {
                         console.log(error)
                     }
                     else {
-                        console.log('Successfully updated flipkart offers from cron job')
+
                     }
                 })
             }

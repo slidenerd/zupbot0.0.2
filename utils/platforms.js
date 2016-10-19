@@ -158,7 +158,6 @@ platforms.facebook.askGeolocation = function (userId, message) {
         function (error, response, body) {
             if (!error && response.statusCode == 200) {
                 // Print out the response body
-                console.log(": Updated with quick reply");
             } else {
                 // TODO: Handle errors
                 console.log(": Failed. Need to handle errors.", error, response.statusCode);
@@ -179,11 +178,9 @@ platforms.facebook.deletePersistentMenu = function () {
         function (error, response, body) {
             if (!error && response.statusCode == 200) {
                 // Print out the response body
-                console.log(": deleted persistent menu ", body);
 
             } else {
                 // TODO: Handle errors
-                console.log(": Failed. Need to handle errors.", error, response.statusCode);
             }
         });
 }
@@ -246,7 +243,6 @@ platforms.facebook.getWebViewButton = function (webView) {
         function (error, response, body) {
             if (!error && response.statusCode == 200) {
                 // Print out the response body
-                console.log(": Updated.");
             } else {
                 // TODO: Handle errors
                 console.log(": Failed. Need to handle errors.", error);
@@ -338,7 +334,6 @@ platforms.facebook.sendQuickReply = function (session, quickReplies) {
         function (error, response, body) {
             if (!error && response.statusCode == 200) {
                 // Print out the response body
-                console.log(": Updated with quick reply");
             } else {
                 // TODO: Handle errors
                 console.log(": Failed. Need to handle errors." + error);
@@ -354,7 +349,6 @@ platforms.facebook.sendTextQuickReply = function (session, text, titles, payload
         },
         message: JSON.stringify(quickReplies)
     }
-    console.log(json)
     request({
         url: platforms.facebook.GRAPH_BASE_URI + '/me/messages?access_token=' + endpoints.FACEBOOK_PAGE_ACCESS_TOKEN,
         method: 'POST',
@@ -364,7 +358,6 @@ platforms.facebook.sendTextQuickReply = function (session, text, titles, payload
         function (error, response, body) {
             if (!error && response.statusCode == 200) {
                 // Print out the response body
-                console.log(": Updated with quick reply");
             } else {
                 // TODO: Handle errors
                 console.log(": Failed. Need to handle errors." + error);

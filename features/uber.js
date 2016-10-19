@@ -30,9 +30,7 @@ const headers = {
 // var done = false;
 
 uber.login = function(req, res) {
-    console.log("Uber.login");
     var url = uberObj.getAuthorizeUrl(['history','profile', 'request', 'places']);
-    console.log('uber.login : ' + url)
     res.redirect(url);
 }
 
