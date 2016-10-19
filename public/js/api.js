@@ -21,13 +21,13 @@ function subscribeEmail(email) {
     $.ajax(settings).success(function (response) {
         console.log(response);
         if(response.success == true) {
-            fakeMessage(2);
+            fakeMessage('Thank you, you have been successfully added to the wait list');
         } else {
-            fakeMessage(3);
+            fakeMessage('Oops, looks like a rat bit the wire while your email was travelling through it');
         }
     }).error(function (errorResponse) {
         console.warn(errorResponse);
-        fakeMessage(3);
+        fakeMessage('Sorry, the watchman spilled some water on the server wire. Please try again in a while');
     });
 }
 

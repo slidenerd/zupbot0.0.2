@@ -72,7 +72,6 @@ $(window).on('keydown', function(e) {
 var Fake = [
   'Hi there, I am Zup, and you?',
   'Nice to meet you. How are you?',
-  'Not too bad myself. What do you do?',
   'Awesome! I can get you an Uber cab or find Flipkart deals for you. Let me know your email if you wish to be notified when I become alive. I wont spam you',  
   'Thank you, Cya around :)'
 ]
