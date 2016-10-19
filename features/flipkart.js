@@ -93,11 +93,31 @@ flipkart.paginator = function (session, offers) {
 
     let limit = platforms.getCarouselLimits(session.message.address.channelId);
     console.log(limit)
+    //if flipkart does not exist for a particular user 
+    if (!session.userData.user.flipkart) {
+        let flipkart = {
+            page: {
+                start: 0
+            }
+        }
+        session.userData.user.flipkart = flipkart;
+    }
+    if (!session.userData.user.flipkart.page) {
+        let page = {
+            start: 0
+        }
+        session.userData.user.flipkart.page = page;
+    }
+
+    if (!session.userData.user.flipkart.page.hasOwnProperty('start')) {
+        session.userData.user.flipkart.page.start = 0
+    }
     //A key from cache which indicates if this data was previously cached or freshly loaded
     if (cache.get('fresh')) {
         session.userData.user.flipkart.page.start = 0
         console.log('fresh')
     }
+
     //Begin displaying items either from 0 or from a previous number
     let start = session.userData.user.flipkart.page.start
 
