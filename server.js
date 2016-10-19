@@ -273,6 +273,7 @@ app.post('/api/subscribe', function (req, res) {
     return;
   }
   let email = req.body.email;
+  console.log('GOT EMAIL ' + email)
   mail.createRecepient(email, res);
 });
 
@@ -386,7 +387,6 @@ function reply(session) {
 }
 
 function runCron() {
-  console.log('%s Init Cron Jobs', chalk.green('✓'));
   // all.runCron();
   // setTimeout(runCron, 200000)
 }

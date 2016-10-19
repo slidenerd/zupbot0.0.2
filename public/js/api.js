@@ -7,7 +7,6 @@ function subscribeEmail(email) {
     var errorMsg = 'Subscribe failed.';
     var form = new FormData();
     form.append( 'email', email );
-
     var settings = {
       "async": true,
       "crossDomain": true,
