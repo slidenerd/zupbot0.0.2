@@ -320,7 +320,7 @@ const bot = new builder.UniversalBot(connector);
 
 app.post('/api/messages', connector.listen());
 let dialogVersionOptions = {
-  version: 4.1,
+  version: 5,
   message: 'My brain size increased by another gram :) Now I can get you an uber cab or awesome offers from flipkart. All you gotta do is type \'help\'',
   resetCommand: /^reset/i
 };
@@ -332,7 +332,7 @@ bot.use(builder.Middleware.dialogVersion(dialogVersionOptions));
 
 //Run this dialog the very first time for a particular user
 bot.use(builder.Middleware.firstRun({
-  version: 4.1,
+  version: 5,
   dialogId: '/firstRun',
   upgradeDialogId: '/firstRun',
 }));
