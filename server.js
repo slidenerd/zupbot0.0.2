@@ -368,7 +368,6 @@ function firstRun(session) {
  * Add the user to the mongodb database if the user does not exist
  */
 function onMessage(session) {
-  firstRun(session)
   console.log('This user is running our bot the subsequent time')
   reply(session)
 }
