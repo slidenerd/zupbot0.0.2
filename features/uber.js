@@ -26,11 +26,30 @@ const headers = {
     'Authorization': 'Token ' + uber.accessToken 
 };
 
+uber.cancelRide = function(req, res, callback) {
+    var headers = {
+        'Accept': 'application/json',
+        'Authorization': 'Bearer ' + req.session.uberToken 
+    };
+    var options = {
+        url: uber.endPoint + 'requests/' + req.query.request_id,
+        headers: headers,
+        json: true
+    }
+    request.delete(options, (error, response, body) => {
+        console.log("############Ride Cancellled$#############")
+        callback(error, response, body);
+    });
+}
+
+
 // var resObj = {};
 // var done = false;
 
 uber.login = function(req, res) {
+    console.log("Uber.login");
     var url = uberObj.getAuthorizeUrl(['history','profile', 'request', 'places']);
+    console.log('uber.login : ' + url)
     res.redirect(url);
 }
 
@@ -161,8 +180,7 @@ uber.getRidePriceEstimateCoordinates = function(resObj, callback, args) {
             resObj.success = false;
             resObj.message = error.message;
         }
-        // console.log(body);
-    	if(body && body.prices) {
+    	if(body && body.prices && body.prices.length > 0) {
             resObj.success = true;
             if(!resObj.data) {
                 resObj.data = {}
@@ -186,12 +204,19 @@ uber.getRidePriceEstimateCoordinates = function(resObj, callback, args) {
     		}
     	} else {
             resObj.success = false;
-            resObj.message = body.message
+            var message;
+            if(!body.message) {
+                message = "Unable to find Uber for your location";
+            } else {
+                message = body.message
+            }
+            resObj.message = message
             console.log("Something went wrong in getRidePriceEstimateCoordinates " + JSON.stringify(body));
         }
         if(!resObj.done) {
         	resObj.done = true;
         } else {
+            console.log("@@@@@@@@Callingback@@@@@@@@@@@")
         	callback(resObj);
         }
     })

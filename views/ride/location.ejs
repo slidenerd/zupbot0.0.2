@@ -173,10 +173,10 @@
                                         </div>
                                     </a>
                                 <% }) %>         
-                            <% } else if(typeof(uber) == 'undefined') {%>
+                            <% } else {%>
                                 <%if(typeof(location) == 'undefined') {%>
                                     <p class="error">Invalid Location</p> 
-                                <% } else {%>
+                                <% } else if(typeof(uber) != 'undefined') {%>
                                     <p class="error"><%=uber.message%></p>
                                 <% } %>
                             <% } %>                                
