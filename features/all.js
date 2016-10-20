@@ -170,7 +170,7 @@ all.handleSpecialRepliesOnResolve = function (session, brain, response) {
         let longitude = brain.get(session.message.user.id, brain.keys.LONGITUDE);
         let destination = brain.get(session.message.user.id, brain.keys.CAB_DESTINATION)
         let cabProvider = brain.get(session.message.user.id, brain.keys.CAB_PROVIDER)
-        if (cabProvider === 'ola') {
+        if (cabProvider === 'uber') {
             let url = encodeURI('https://zup.chat/api/ride?lat=' + latitude + '&long=' + longitude + '&drop=' + destination + '&provider=' + cabProvider);
             let text = 'Here is your ride! :)'
             platforms.getWebViewButton(userId, channel, text, url, 'Your Cab', 'full');
