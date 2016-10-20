@@ -121,7 +121,7 @@ ride.getRideEstimate = function(from, to, provider, res, callback) {
                 } else {
                     var resObj = {}
                     resObj.success = false;
-                    resObj.message = error.message;                    
+                    resObj.message = "Invalid Pickup Location";                    
                     callback(resObj);
                 }
                 break;
@@ -133,7 +133,7 @@ ride.getRideEstimate = function(from, to, provider, res, callback) {
                 } else {
                     var resObj = {}
                     resObj.success = false;
-                    resObj.message = error.message;                    
+                    resObj.message = "Invalid Drop Location";                    
                     callback(resObj);
                 }
                 break;    
