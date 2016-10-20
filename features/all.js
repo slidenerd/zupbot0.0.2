@@ -177,7 +177,10 @@ all.handleSpecialRepliesOnResolve = function (session, brain, response) {
             analytics.trackOutgoing(userId, text + ' to ' + destination + ' with ' + cabProvider, channel);
         }
         else {
-            session.send('Only Uber is supported for now, my bonehead creator is working hard on Ola :)')
+            session.send('Only Uber is supported for now, my bonehead creator is working hard on Ola')
+            let url = encodeURI('https://zup.chat/api/ride?lat=' + latitude + '&long=' + longitude + '&drop=' + destination + '&provider=' + 'uber');
+            let text = 'Here is your ride! :)'
+            platforms.getWebViewButton(userId, channel, text, url, 'Your Cab', 'full');
             analytics.trackOutgoing(userId, text + ' to ' + destination + ' with ' + cabProvider, channel);
         }
     }
