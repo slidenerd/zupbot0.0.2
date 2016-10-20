@@ -170,10 +170,16 @@ all.handleSpecialRepliesOnResolve = function (session, brain, response) {
         let longitude = brain.get(session.message.user.id, brain.keys.LONGITUDE);
         let destination = brain.get(session.message.user.id, brain.keys.CAB_DESTINATION)
         let cabProvider = brain.get(session.message.user.id, brain.keys.CAB_PROVIDER)
-        let url = encodeURI('https://zup.chat/api/ride?lat=' + latitude + '&long=' + longitude + '&drop=' + destination + '&provider=' + cabProvider);
-        let text = 'Here is your ride! :)'
-        platforms.getWebViewButton(userId, channel, text, url, 'Your Cab', 'full');
-        analytics.trackOutgoing(userId, text + ' to ' + destination + ' with ' + cabProvider, channel);
+        if (cabProvider === 'ola') {
+            let url = encodeURI('https://zup.chat/api/ride?lat=' + latitude + '&long=' + longitude + '&drop=' + destination + '&provider=' + cabProvider);
+            let text = 'Here is your ride! :)'
+            platforms.getWebViewButton(userId, channel, text, url, 'Your Cab', 'full');
+            analytics.trackOutgoing(userId, text + ' to ' + destination + ' with ' + cabProvider, channel);
+        }
+        else {
+            session.send('Only Uber is supported for now, my bonehead creator is working hard on Ola :)')
+            analytics.trackOutgoing(userId, text + ' to ' + destination + ' with ' + cabProvider, channel);
+        }
     }
     else {
         session.send(response);
