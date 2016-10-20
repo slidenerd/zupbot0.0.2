@@ -89,8 +89,9 @@ ride.price = function(req, res, data, callback) {
         var lat = parseFloat(address[0]);
         var long = parseFloat(address[1]);
         if(isNaN(lat) || isNaN(long)) {
-            console.log("#########getRideEstimateSourceDestination")
-            ride.getRideEstimateSourceDestination(lat, long, req.query.drop, res, callback);
+            console.log("#########getRideEstimateSourceDestination" + lat + ":" + long)
+            // ride.getRideEstimateSourceDestination(lat, long, req.query.drop, res, callback);
+            ride.getRideEstimate(pickup, req.query.drop, req.query.provider, res, callback);
             return;
         } else {
             ride.getRideEstimate(pickup, req.query.drop, req.query.provider, res, callback);
@@ -118,7 +119,10 @@ ride.getRideEstimate = function(from, to, provider, res, callback) {
                     option++;
                     geocoder.geocode(to, geoCallback);
                 } else {
-                    callback();
+                    var resObj = {}
+                    resObj.success = false;
+                    resObj.message = error.message;                    
+                    callback(resObj);
                 }
                 break;
                 case 1:
@@ -127,7 +131,10 @@ ride.getRideEstimate = function(from, to, provider, res, callback) {
                     args.droplong = res[0].longitude;
                     ride.getRideEstimateCoordinates(callback, args);
                 } else {
-                    callback();
+                    var resObj = {}
+                    resObj.success = false;
+                    resObj.message = error.message;                    
+                    callback(resObj);
                 }
                 break;    
             }
@@ -169,6 +176,7 @@ ride.getRideEstimateCoordinates = function(callback, args) {
                 data.uber = resObj;
                 if(olaEnabled == false || (olaEnabled && data.hasOwnProperty("ola"))) {
                     console.log("Calling from uber callback");
+                    console.log(data);
                     callback(data);
                 }
             }        

@@ -180,8 +180,7 @@ uber.getRidePriceEstimateCoordinates = function(resObj, callback, args) {
             resObj.success = false;
             resObj.message = error.message;
         }
-        // console.log(body);
-    	if(body && body.prices) {
+    	if(body && body.prices && body.prices.length > 0) {
             resObj.success = true;
             if(!resObj.data) {
                 resObj.data = {}
@@ -205,12 +204,19 @@ uber.getRidePriceEstimateCoordinates = function(resObj, callback, args) {
     		}
     	} else {
             resObj.success = false;
-            resObj.message = body.message
+            var message;
+            if(!body.message) {
+                message = "Unable to find Uber for your location";
+            } else {
+                message = body.message
+            }
+            resObj.message = message
             console.log("Something went wrong in getRidePriceEstimateCoordinates " + JSON.stringify(body));
         }
         if(!resObj.done) {
         	resObj.done = true;
         } else {
+            console.log("@@@@@@@@Callingback@@@@@@@@@@@")
         	callback(resObj);
         }
     })
