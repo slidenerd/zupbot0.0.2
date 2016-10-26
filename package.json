@@ -71,7 +71,8 @@
     "twit": "^2.2.4",
     "uuid": "^2.0.3",
     "validator": "^6.0.0",
-    "ejs": "^1.0.0"
+    "ejs": "^1.0.0",
+    "amazon-product-api": "^0.4.2"
   },
   "devDependencies": {
     "chai": "^3.5.0",
