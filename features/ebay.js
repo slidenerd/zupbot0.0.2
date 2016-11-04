@@ -48,8 +48,8 @@ ebay.searchProduct = function(keyword, callback, categoryId) {
 // });
 
 
-ebay.searchProduct('iphone 6', function(result) {
-    console.log(JSON.stringify(result));
-}, null);
+// ebay.searchProduct('iphone 6', function(result) {
+//     console.log(JSON.stringify(result));
+// }, null);
 
 module.exports = ebay;
