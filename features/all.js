@@ -93,7 +93,7 @@ all.skyscanner.subroutine = function () {
 
 all.weather.subroutine = function (rs, args) {
     return new rs.Promise((resolve, reject) => {
-        
+
         weather.execute(lat, lon)
             .then((report) => {
                 rs.setUserlet(rs.currentUser(), 'location', 'your place')
@@ -200,8 +200,9 @@ all.handleSpecialRepliesOnReject = function (session, brain, response) {
     else if (response && response.type === 'wait') {
         session.send(response.data);
         analytics.trackOutgoing(userId, response.data, channel);
-        flipkart.findAllOffers()
-            .then((offers) => {
+        flipkart.findDealsOfTheDay()
+            .then((rawOffers) => {
+                let offers = flipkart.parseDealsOfTheDay(rawOffers)
                 if (offers.length) {
                     cache.put(KEY_FRESH_DATA, true, CACHE_VALIDITY_PERIOD);
                     cache.put(KEY_OFFERS, offers, CACHE_VALIDITY_PERIOD)
