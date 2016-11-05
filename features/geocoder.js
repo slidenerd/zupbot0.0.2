@@ -11,6 +11,5 @@ function geocode(address, callback) {
     NodeGeocoder(options).geocode(address, callback);
 }
 
-
 module.exports = geocoder
 

@@ -1,0 +1,1334 @@
+[
+    {
+        "productBaseInfoV1": {
+            "productId": "MOBEFJVUU7B8SM96",
+            "title": "Forme C1Plus",
+            "productDescription": "",
+            "imageUrls": {
+                "200x200": "http://img.fkcdn.com/image/mobile/m/9/6/forme-c1plus-c1plus-200x200-imadzd9jcybzvbuz.jpeg",
+                "400x400": "http://img.fkcdn.com/image/mobile/m/9/6/forme-c1plus-c1plus-400x400-imadzd9jcybzvbuz.jpeg",
+                "800x800": "http://img.fkcdn.com/image/mobile/m/9/6/forme-c1plus-c1plus-800x800-imadzd9jcybzvbuz.jpeg",
+                "unknown": "http://img.fkcdn.com/image/mobile/m/9/6/forme-c1plus-c1plus-original-imadzd9jcybzvbuz.jpeg"
+            },
+            "productFamily": [
+                "[MOBEFJVVKYPY9ANH",
+                " MOBEFJVVXHRZ8HF3]"
+            ],
+            "maximumRetailPrice": {
+                "amount": 699,
+                "currency": "INR"
+            },
+            "flipkartSellingPrice": {
+                "amount": 629,
+                "currency": "INR"
+            },
+            "flipkartSpecialPrice": {
+                "amount": 629,
+                "currency": "INR"
+            },
+            "productUrl": "http://dl.flipkart.com/dl/forme-c1plus/p/itmefjvvzexncxqa?pid=MOBEFJVUU7B8SM96&affid=slidenerd",
+            "productBrand": "Forme",
+            "inStock": false,
+            "codAvailable": true,
+            "discountPercentage": 0,
+            "offers": [
+                "Extra 5% off* on Axis Bank Buzz Credit Cards",
+                "Extra 15% Cashback* with Citi Cards"
+            ],
+            "categoryPath": "Mobiles>Handsets",
+            "attributes": {
+                "size": "",
+                "color": "Black",
+                "storage": "",
+                "sizeUnit": "",
+                "displaySize": ""
+            }
+        },
+        "productShippingInfoV1": {
+            "shippingCharges": {
+                "amount": 0,
+                "currency": "INR"
+            },
+            "estimatedDeliveryTime": "",
+            "sellerName": "Electronicpanda",
+            "sellerAverageRating": 3.88028,
+            "sellerNoOfRatings": 4001,
+            "sellerNoOfReviews": 95
+        },
+        "categorySpecificInfoV1": {
+            "keySpecs": [
+                "32 MB RAM | Expandable Upto 16 GB",
+                "1.44 inch QVGA Display",
+                "0.3MP Primary Camera",
+                "950 mAh Battery"
+            ],
+            "detailedSpecs": [
+                "32 MB RAM | Expandable Upto 16 GB",
+                "1.44 inch QVGA Display",
+                "0.3MP Primary Camera",
+                "950 mAh Battery"
+            ],
+            "specificationList": [
+                {
+                    "key": "General",
+                    "values": [
+                        {
+                            "key": "Model Name",
+                            "value": [
+                                "C1Plus"
+                            ]
+                        },
+                        {
+                            "key": "Model Number",
+                            "value": [
+                                "C1plus"
+                            ]
+                        },
+                        {
+                            "key": "Network Type",
+                            "value": [
+                                "2G"
+                            ]
+                        },
+                        {
+                            "key": "Browse Type",
+                            "value": [
+                                "Feature Phones"
+                            ]
+                        },
+                        {
+                            "key": "Sim Type",
+                            "value": [
+                                "Dual Sim"
+                            ]
+                        },
+                        {
+                            "key": "Operating System Version Number",
+                            "value": [
+                                "NA"
+                            ]
+                        },
+                        {
+                            "key": "Touchscreen",
+                            "value": [
+                                "No"
+                            ]
+                        },
+                        {
+                            "key": "New Sales Package",
+                            "value": [
+                                "Handset, Charger, Battery, Headset, Warranty Card, User Manual"
+                            ]
+                        },
+                        {
+                            "key": "Internal Storage",
+                            "value": [
+                                "32 MB"
+                            ]
+                        },
+                        {
+                            "key": "RAM",
+                            "value": [
+                                "32 MB"
+                            ]
+                        },
+                        {
+                            "key": "Additional Content",
+                            "value": [
+                                "Handsfree, Charger, User Manual"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "Camera Features",
+                    "values": [
+                        {
+                            "key": "Primary Camera",
+                            "value": [
+                                "0.3 megapixel"
+                            ]
+                        },
+                        {
+                            "key": "HD Recording",
+                            "value": [
+                                "No"
+                            ]
+                        },
+                        {
+                            "key": "Full HD Recording",
+                            "value": [
+                                "No"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "Display Features",
+                    "values": [
+                        {
+                            "key": "Resolution",
+                            "value": [
+                                "128 x 160"
+                            ]
+                        },
+                        {
+                            "key": "Display Size",
+                            "value": [
+                                "1.44 inch"
+                            ]
+                        },
+                        {
+                            "key": "Resolution Type",
+                            "value": [
+                                "QVGA"
+                            ]
+                        },
+                        {
+                            "key": "Display Type",
+                            "value": [
+                                "TFT"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "Connectivity Features",
+                    "values": [
+                        {
+                            "key": "Micro USB Port",
+                            "value": [
+                                "No"
+                            ]
+                        },
+                        {
+                            "key": "3G",
+                            "value": [
+                                "No"
+                            ]
+                        },
+                        {
+                            "key": "USB Connectivity",
+                            "value": [
+                                "Yes"
+                            ]
+                        },
+                        {
+                            "key": "Mini HDMI Port",
+                            "value": [
+                                "No"
+                            ]
+                        },
+                        {
+                            "key": "Mini USB Port",
+                            "value": [
+                                "Yes"
+                            ]
+                        },
+                        {
+                            "key": "Wi-Fi",
+                            "value": [
+                                "No"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "Power Features",
+                    "values": [
+                        {
+                            "key": "Battery Capacity",
+                            "value": [
+                                "950 mAh"
+                            ]
+                        },
+                        {
+                            "key": "Battery Type",
+                            "value": [
+                                "Li-Ion"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "Storage Features",
+                    "values": [
+                        {
+                            "key": "Supported Memory Card Type",
+                            "value": [
+                                "MicroSD"
+                            ]
+                        },
+                        {
+                            "key": "Expandable Storage",
+                            "value": [
+                                "16 GB"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "Navigation and Processor Features",
+                    "values": [
+                        {
+                            "key": "Clock Speed",
+                            "value": [
+                                "1.2 GHz"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "Other Details",
+                    "values": [
+                        {
+                            "key": "SIM Size",
+                            "value": [
+                                "Mini SIM"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "Warranty",
+                    "values": [
+                        {
+                            "key": "Warranty Summary",
+                            "value": [
+                                "1 Year Manufacturer Warranty"
+                            ]
+                        },
+                        {
+                            "key": "Warranty Service Type",
+                            "value": [
+                                "Authorized Service Centre"
+                            ]
+                        },
+                        {
+                            "key": "Covered in Warranty",
+                            "value": [
+                                "Warranty Of the Product is Limited to Manufacturing Defects Only"
+                            ]
+                        },
+                        {
+                            "key": "Not Covered in Warranty",
+                            "value": [
+                                "Warranty does not cover any external accessories (such as battery, cable, carrying bag), damage caused to the product due to improper installation by customer, normal wear and tear to magnetic heads, audio, video, laser pick-ups and TV picture tubes, panel, damages caused to the product by accident, lightening, ingress of water, fire, dropping or excessive shock, any damage caused due to tampering of the product by an unauthorized agent, liability for loss of data, recorded images or business opportunity loss."
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "booksInfo": {
+                "language": null,
+                "binding": null,
+                "pages": null,
+                "publisher": null,
+                "year": 0,
+                "authors": []
+            },
+            "lifeStyleInfo": {
+                "sleeve": null,
+                "neck": null,
+                "idealFor": null
+            }
+        }
+    },
+    {
+        "productBaseInfoV1": {
+            "productId": "MOBEH4F4ABGJHXXR",
+            "title": "XOLO ERA 4K (Blue, 8 GB)",
+            "productDescription": "",
+            "imageUrls": {
+                "200x200": "http://img.fkcdn.com/image/mobile/x/x/r/xolo-era-4k-era-4k-200x200-imaeh8q2xkzuchdv.jpeg",
+                "400x400": "http://img.fkcdn.com/image/mobile/x/x/r/xolo-era-4k-era-4k-400x400-imaeh8q2xkzuchdv.jpeg",
+                "800x800": "http://img.fkcdn.com/image/mobile/x/x/r/xolo-era-4k-era-4k-800x800-imaeh8q2xkzuchdv.jpeg",
+                "unknown": "http://img.fkcdn.com/image/mobile/x/x/r/xolo-era-4k-era-4k-original-imaeh8q2xkzuchdv.jpeg"
+            },
+            "productFamily": [
+                "[MOBEH49DMBQFGSG6",
+                " MOBEH4FYGKFDSVMC]"
+            ],
+            "maximumRetailPrice": {
+                "amount": 6999,
+                "currency": "INR"
+            },
+            "flipkartSellingPrice": {
+                "amount": 5999,
+                "currency": "INR"
+            },
+            "flipkartSpecialPrice": {
+                "amount": 5999,
+                "currency": "INR"
+            },
+            "productUrl": "http://dl.flipkart.com/dl/xolo-era-4k-blue-8-gb/p/itmeh4fyv7r3jtnt?pid=MOBEH4F4ABGJHXXR&affid=slidenerd",
+            "productBrand": "XOLO",
+            "inStock": false,
+            "codAvailable": true,
+            "discountPercentage": 14,
+            "offers": [],
+            "categoryPath": "Mobiles>Handsets",
+            "attributes": {
+                "size": "",
+                "color": "Blue",
+                "storage": "8 GB",
+                "sizeUnit": "",
+                "displaySize": ""
+            }
+        },
+        "productShippingInfoV1": {
+            "shippingCharges": {
+                "amount": 0,
+                "currency": "INR"
+            },
+            "estimatedDeliveryTime": "",
+            "sellerName": "XOLOMOBILES",
+            "sellerAverageRating": 3.8869348,
+            "sellerNoOfRatings": 796,
+            "sellerNoOfReviews": 15
+        },
+        "categorySpecificInfoV1": {
+            "keySpecs": [
+                "2 GB RAM | Expandable Upto 32 GB",
+                "5 inch HD Display",
+                "8MP Primary Camera | 5MP Front",
+                "4000 mAh Battery",
+                "Android Lollipop"
+            ],
+            "detailedSpecs": [
+                "2 GB RAM | Expandable Upto 32 GB",
+                "5 inch HD Display",
+                "8MP Primary Camera | 5MP Front",
+                "4000 mAh Battery",
+                "Android Lollipop"
+            ],
+            "specificationList": [
+                {
+                    "key": "General",
+                    "values": [
+                        {
+                            "key": "Model Name",
+                            "value": [
+                                "ERA 4K"
+                            ]
+                        },
+                        {
+                            "key": "Model Number",
+                            "value": [
+                                "ERA 4K"
+                            ]
+                        },
+                        {
+                            "key": "Operating System",
+                            "value": [
+                                "Android"
+                            ]
+                        },
+                        {
+                            "key": "Operating System Version Name",
+                            "value": [
+                                "Lollipop"
+                            ]
+                        },
+                        {
+                            "key": "Network Type",
+                            "value": [
+                                "4G"
+                            ]
+                        },
+                        {
+                            "key": "Supported Network",
+                            "value": [
+                                "GSM, LTE"
+                            ]
+                        },
+                        {
+                            "key": "Browse Type",
+                            "value": [
+                                "Smartphones"
+                            ]
+                        },
+                        {
+                            "key": "Sim Type",
+                            "value": [
+                                "Dual Sim"
+                            ]
+                        },
+                        {
+                            "key": "Operating System Version Number",
+                            "value": [
+                                "5.1"
+                            ]
+                        },
+                        {
+                            "key": "Touchscreen",
+                            "value": [
+                                "Yes"
+                            ]
+                        },
+                        {
+                            "key": "New Sales Package",
+                            "value": [
+                                "Handset, Battery, Charger, USB Cable, Earphone"
+                            ]
+                        },
+                        {
+                            "key": "Internal Storage",
+                            "value": [
+                                "8 GB"
+                            ]
+                        },
+                        {
+                            "key": "RAM",
+                            "value": [
+                                "2 GB"
+                            ]
+                        },
+                        {
+                            "key": "Additional Content",
+                            "value": [
+                                "SD Card"
+                            ]
+                        },
+                        {
+                            "key": "Mobile Tracker",
+                            "value": [
+                                "Yes"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "Product Details",
+                    "values": [
+                        {
+                            "key": "MMS",
+                            "value": [
+                                "Yes"
+                            ]
+                        },
+                        {
+                            "key": "SMS",
+                            "value": [
+                                "Yes"
+                            ]
+                        },
+                        {
+                            "key": "JAVA Support",
+                            "value": [
+                                "Yes"
+                            ]
+                        },
+                        {
+                            "key": "Infrared",
+                            "value": [
+                                "Yes"
+                            ]
+                        },
+                        {
+                            "key": "Instant Message",
+                            "value": [
+                                "Yes"
+                            ]
+                        },
+                        {
+                            "key": "Business Phone",
+                            "value": [
+                                "Yes"
+                            ]
+                        },
+                        {
+                            "key": "Radio",
+                            "value": [
+                                "Yes"
+                            ]
+                        },
+                        {
+                            "key": "Java Application",
+                            "value": [
+                                "Yes"
+                            ]
+                        },
+                        {
+                            "key": "Smartphone",
+                            "value": [
+                                "Yes"
+                            ]
+                        },
+                        {
+                            "key": "Removable Battery",
+                            "value": [
+                                "No"
+                            ]
+                        },
+                        {
+                            "key": "Keypad",
+                            "value": [
+                                "No"
+                            ]
+                        },
+                        {
+                            "key": "Keypad Type",
+                            "value": [
+                                "Alphanumeric"
+                            ]
+                        },
+                        {
+                            "key": "Social Networking Phone",
+                            "value": [
+                                "Yes"
+                            ]
+                        },
+                        {
+                            "key": "Voice Input",
+                            "value": [
+                                "Yes"
+                            ]
+                        },
+                        {
+                            "key": "Predictive Text Input",
+                            "value": [
+                                "Yes"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "Camera Features",
+                    "values": [
+                        {
+                            "key": "Primary Camera",
+                            "value": [
+                                "8 megapixel"
+                            ]
+                        },
+                        {
+                            "key": "Primary Camera Features",
+                            "value": [
+                                "Face Detection, Multi Angle View Mode, HDR, Panorama, QR Code Scanner"
+                            ]
+                        },
+                        {
+                            "key": "Secondary Camera Available",
+                            "value": [
+                                "Yes"
+                            ]
+                        },
+                        {
+                            "key": "Secondary Camera Megapixel",
+                            "value": [
+                                "5 megapixel"
+                            ]
+                        },
+                        {
+                            "key": "HD Recording",
+                            "value": [
+                                "Yes"
+                            ]
+                        },
+                        {
+                            "key": "Video Recording",
+                            "value": [
+                                "Yes"
+                            ]
+                        },
+                        {
+                            "key": "Full HD Recording",
+                            "value": [
+                                "Yes"
+                            ]
+                        },
+                        {
+                            "key": "Image Editor",
+                            "value": [
+                                "Yes"
+                            ]
+                        },
+                        {
+                            "key": "Primary Camera Available",
+                            "value": [
+                                "Yes"
+                            ]
+                        },
+                        {
+                            "key": "Optical Zoom",
+                            "value": [
+                                "Yes"
+                            ]
+                        },
+                        {
+                            "key": "Video Recording Resolution",
+                            "value": [
+                                "720 x 1280 pixel"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "Display Features",
+                    "values": [
+                        {
+                            "key": "Resolution",
+                            "value": [
+                                "720 x 1280"
+                            ]
+                        },
+                        {
+                            "key": "Display Size",
+                            "value": [
+                                "5 inch"
+                            ]
+                        },
+                        {
+                            "key": "Resolution Type",
+                            "value": [
+                                "HD"
+                            ]
+                        },
+                        {
+                            "key": "HD Game Support",
+                            "value": [
+                                "Yes"
+                            ]
+                        },
+                        {
+                            "key": "Display Type",
+                            "value": [
+                                "IPS"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "Connectivity Features",
+                    "values": [
+                        {
+                            "key": "WAP",
+                            "value": [
+                                "Yes"
+                            ]
+                        },
+                        {
+                            "key": "Micro USB Port",
+                            "value": [
+                                "Yes"
+                            ]
+                        },
+                        {
+                            "key": "NFC",
+                            "value": [
+                                "No"
+                            ]
+                        },
+                        {
+                            "key": "USB Tethering",
+                            "value": [
+                                "Yes"
+                            ]
+                        },
+                        {
+                            "key": "Wi-Fi Hotspot",
+                            "value": [
+                                "Yes"
+                            ]
+                        },
+                        {
+                            "key": "GPRS",
+                            "value": [
+                                "Yes"
+                            ]
+                        },
+                        {
+                            "key": "Bluetooth Support",
+                            "value": [
+                                "Yes"
+                            ]
+                        },
+                        {
+                            "key": "3G",
+                            "value": [
+                                "Yes"
+                            ]
+                        },
+                        {
+                            "key": "USB Connectivity",
+                            "value": [
+                                "Yes"
+                            ]
+                        },
+                        {
+                            "key": "Mini HDMI Port",
+                            "value": [
+                                "No"
+                            ]
+                        },
+                        {
+                            "key": "Mini USB Port",
+                            "value": [
+                                "Yes"
+                            ]
+                        },
+                        {
+                            "key": "EDGE",
+                            "value": [
+                                "Yes"
+                            ]
+                        },
+                        {
+                            "key": "Wi-Fi",
+                            "value": [
+                                "Yes"
+                            ]
+                        },
+                        {
+                            "key": "Audio Jack",
+                            "value": [
+                                "3.5 mm"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "Power Features",
+                    "values": [
+                        {
+                            "key": "Battery Capacity",
+                            "value": [
+                                "4000 mAh"
+                            ]
+                        },
+                        {
+                            "key": "Dual Battery",
+                            "value": [
+                                "No"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "Call Features",
+                    "values": [
+                        {
+                            "key": "Call Wait/Hold",
+                            "value": [
+                                "Yes"
+                            ]
+                        },
+                        {
+                            "key": "Conference Call",
+                            "value": [
+                                "Yes"
+                            ]
+                        },
+                        {
+                            "key": "Hands Free",
+                            "value": [
+                                "Yes"
+                            ]
+                        },
+                        {
+                            "key": "Video Call Support",
+                            "value": [
+                                "Yes"
+                            ]
+                        },
+                        {
+                            "key": "Call Divert",
+                            "value": [
+                                "Yes"
+                            ]
+                        },
+                        {
+                            "key": "Phone Book",
+                            "value": [
+                                "Yes"
+                            ]
+                        },
+                        {
+                            "key": "Call Timer",
+                            "value": [
+                                "Yes"
+                            ]
+                        },
+                        {
+                            "key": "Speaker Phone",
+                            "value": [
+                                "Yes"
+                            ]
+                        },
+                        {
+                            "key": "Speed Dialing",
+                            "value": [
+                                "Yes"
+                            ]
+                        },
+                        {
+                            "key": "Logs",
+                            "value": [
+                                "Missed Calls"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "Storage Features",
+                    "values": [
+                        {
+                            "key": "Hot SWAP Support",
+                            "value": [
+                                "Yes"
+                            ]
+                        },
+                        {
+                            "key": "Call Log Memory",
+                            "value": [
+                                "Yes"
+                            ]
+                        },
+                        {
+                            "key": "Expandable Storage",
+                            "value": [
+                                "32 GB"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "Multimedia Features",
+                    "values": [
+                        {
+                            "key": "DLNA Support",
+                            "value": [
+                                "Yes"
+                            ]
+                        },
+                        {
+                            "key": "FM Radio Recording",
+                            "value": [
+                                "Yes"
+                            ]
+                        },
+                        {
+                            "key": "FM Radio",
+                            "value": [
+                                "Yes"
+                            ]
+                        },
+                        {
+                            "key": "Music Player",
+                            "value": [
+                                "MP3/WAV/WMA/AAC player"
+                            ]
+                        },
+                        {
+                            "key": "Video Formats",
+                            "value": [
+                                "MP4"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "Navigation and Processor Features",
+                    "values": [
+                        {
+                            "key": "Number of Cores",
+                            "value": [
+                                "4"
+                            ]
+                        },
+                        {
+                            "key": "Clock Speed",
+                            "value": [
+                                "600 MHz"
+                            ]
+                        },
+                        {
+                            "key": "GPS Support",
+                            "value": [
+                                "Yes"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "Business Features",
+                    "values": [
+                        {
+                            "key": "Document Editor",
+                            "value": [
+                                "Yes"
+                            ]
+                        },
+                        {
+                            "key": "Document Viewer",
+                            "value": [
+                                "Yes"
+                            ]
+                        },
+                        {
+                            "key": "Email",
+                            "value": [
+                                "Yes"
+                            ]
+                        },
+                        {
+                            "key": "VoIP Support",
+                            "value": [
+                                "Yes"
+                            ]
+                        },
+                        {
+                            "key": "Pushmail",
+                            "value": [
+                                "Yes"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "Other Details",
+                    "values": [
+                        {
+                            "key": "Touchscreen Type",
+                            "value": [
+                                "Capacitive"
+                            ]
+                        },
+                        {
+                            "key": "Series",
+                            "value": [
+                                "Curve"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "Warranty",
+                    "values": [
+                        {
+                            "key": "Warranty Summary",
+                            "value": [
+                                "1 Year Manufacturer Warranty"
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "booksInfo": {
+                "language": null,
+                "binding": null,
+                "pages": null,
+                "publisher": null,
+                "year": 0,
+                "authors": []
+            },
+            "lifeStyleInfo": {
+                "sleeve": null,
+                "neck": null,
+                "idealFor": null
+            }
+        }
+    },
+    {
+        "productBaseInfoV1": {
+            "productId": "MOBE7DQRAVZV9V8Z",
+            "title": "Forme W350",
+            "productDescription": "Your stylish personality deserves a chic-looking phone like this Forme W350. With this elegant phone, not only can you create a style statement but you can also stay connected to your friends and family. This music edition feature phone also keeps you entertained all the time. It also comes with dual speakers and is a party essential. Display Featuring a 5.16 cm TFT LCD display, this phone is perfect for text messaging and calling. Storage You can store your favourite songs, pictures and videos in microSD and enjoy nonstop entertainment. This phone supports microSD up to 32 GB. Battery Powered by an 800 mAH Li-Ion battery, this phone offers good battery life.",
+            "imageUrls": {
+                "200x200": "http://img.fkcdn.com/image/mobile/v/8/z/forme-w350-w350p-200x200-imae9wjbffgegnf5.jpeg",
+                "400x400": "http://img.fkcdn.com/image/mobile/v/8/z/forme-w350-w350p-400x400-imae9wjbffgegnf5.jpeg",
+                "800x800": "http://img.fkcdn.com/image/mobile/v/8/z/forme-w350-w350p-800x800-imae9wjbffgegnf5.jpeg",
+                "unknown": "http://img.fkcdn.com/image/mobile/v/8/z/forme-w350-w350p-original-imae9wjbffgegnf5.jpeg"
+            },
+            "productFamily": [
+                "[MOBE6PWSFAQUZYEH",
+                " MOBE6PWSTJXTMBZQ",
+                " MOBE6PWSWMQXMJTD",
+                " MOBE6PWSZWE2GU9G",
+                " MOBE6Y3MMHVJRTW9",
+                " MOBE7DQRFBNKHUGC",
+                " MOBE7DQRMBJ52BUD]"
+            ],
+            "maximumRetailPrice": {
+                "amount": 1299,
+                "currency": "INR"
+            },
+            "flipkartSellingPrice": {
+                "amount": 1245,
+                "currency": "INR"
+            },
+            "flipkartSpecialPrice": {
+                "amount": 1245,
+                "currency": "INR"
+            },
+            "productUrl": "http://dl.flipkart.com/dl/forme-w350/p/itme7dqrc7w9q6rn?pid=MOBE7DQRAVZV9V8Z&affid=slidenerd",
+            "productBrand": "Forme",
+            "inStock": true,
+            "codAvailable": true,
+            "discountPercentage": 4,
+            "offers": [],
+            "categoryPath": "Mobiles>Handsets",
+            "attributes": {
+                "size": "",
+                "color": "Pink",
+                "storage": "",
+                "sizeUnit": "",
+                "displaySize": ""
+            }
+        },
+        "productShippingInfoV1": {
+            "shippingCharges": {
+                "amount": 0,
+                "currency": "INR"
+            },
+            "estimatedDeliveryTime": "",
+            "sellerName": "Electronicpanda",
+            "sellerAverageRating": 3.88028,
+            "sellerNoOfRatings": 4001,
+            "sellerNoOfReviews": 95
+        },
+        "categorySpecificInfoV1": {
+            "keySpecs": [
+                "| Expandable Upto 32 GB",
+                "2.032 inch WVGA Display",
+                "0.3MP Primary Camera",
+                "800 mAh Li-Ion Battery"
+            ],
+            "detailedSpecs": [
+                "| Expandable Upto 32 GB",
+                "2.032 inch WVGA Display",
+                "0.3MP Primary Camera",
+                "800 mAh Li-Ion Battery"
+            ],
+            "specificationList": [
+                {
+                    "key": "General",
+                    "values": [
+                        {
+                            "key": "Model Name",
+                            "value": [
+                                "W350"
+                            ]
+                        },
+                        {
+                            "key": "Model Number",
+                            "value": [
+                                "W350p"
+                            ]
+                        },
+                        {
+                            "key": "Sim Type",
+                            "value": [
+                                "Dual Sim"
+                            ]
+                        },
+                        {
+                            "key": "New Sales Package",
+                            "value": [
+                                "Handset, Charger, Battery, Headset, Warranty Card, User Manual"
+                            ]
+                        },
+                        {
+                            "key": "Internal Storage",
+                            "value": [
+                                "32 MB"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "Camera Features",
+                    "values": [
+                        {
+                            "key": "Primary Camera",
+                            "value": [
+                                "0.3 megapixel"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "Display Features",
+                    "values": [
+                        {
+                            "key": "Resolution",
+                            "value": [
+                                "220 x 176"
+                            ]
+                        },
+                        {
+                            "key": "Display Size",
+                            "value": [
+                                "2.032 inch"
+                            ]
+                        },
+                        {
+                            "key": "Resolution Type",
+                            "value": [
+                                "WVGA"
+                            ]
+                        },
+                        {
+                            "key": "Display Type",
+                            "value": [
+                                "TFT LCD Display"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "Connectivity Features",
+                    "values": [
+                        {
+                            "key": "Micro USB Port",
+                            "value": [
+                                "Yes"
+                            ]
+                        },
+                        {
+                            "key": "3G",
+                            "value": [
+                                "No"
+                            ]
+                        },
+                        {
+                            "key": "USB Connectivity",
+                            "value": [
+                                "Yes"
+                            ]
+                        },
+                        {
+                            "key": "Mini HDMI Port",
+                            "value": [
+                                "No"
+                            ]
+                        },
+                        {
+                            "key": "Mini USB Port",
+                            "value": [
+                                "No"
+                            ]
+                        },
+                        {
+                            "key": "Wi-Fi",
+                            "value": [
+                                "No"
+                            ]
+                        },
+                        {
+                            "key": "Audio Jack",
+                            "value": [
+                                "3.5 mm"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "Power Features",
+                    "values": [
+                        {
+                            "key": "Battery Capacity",
+                            "value": [
+                                "800 mAh"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "Storage Features",
+                    "values": [
+                        {
+                            "key": "Supported Memory Card Type",
+                            "value": [
+                                "MicroSD"
+                            ]
+                        },
+                        {
+                            "key": "Expandable Storage",
+                            "value": [
+                                "32 GB"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "Other Details",
+                    "values": [
+                        {
+                            "key": "SIM Size",
+                            "value": [
+                                "Mini Sim"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "Dimensions",
+                    "values": [
+                        {
+                            "key": "Width",
+                            "value": [
+                                "44 mm"
+                            ]
+                        },
+                        {
+                            "key": "Height",
+                            "value": [
+                                "108 mm"
+                            ]
+                        },
+                        {
+                            "key": "Depth",
+                            "value": [
+                                "11 mm"
+                            ]
+                        },
+                        {
+                            "key": "Weight",
+                            "value": [
+                                "90 g"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "Warranty",
+                    "values": [
+                        {
+                            "key": "Warranty Summary",
+                            "value": [
+                                "1 Year Manufacturer Warranty"
+                            ]
+                        },
+                        {
+                            "key": "Warranty Service Type",
+                            "value": [
+                                "Authorized Service Centre"
+                            ]
+                        },
+                        {
+                            "key": "Not Covered in Warranty",
+                            "value": [
+                                "Warranty Does Not Cover Any External Accessories (Such As Battery, Cable, Carrying Bag), Damage Caused To The Product Due To Improper Installation By Customer, Normal Wear And Tear To Magnetic Heads, Audio, Video, Laser Pick-Ups And Tv Picture Tubes, Panel, Damages Caused To The Product By Accident, Lightening, Ingress Of Water, Fire, Dropping Or Excessive Shock, Any Damage Caused Due To Tampering Of The Product By An Unauthorized Agent, Liability For Loss Of Data, Recorded Images Or Business Opportunity Loss."
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "booksInfo": {
+                "language": null,
+                "binding": null,
+                "pages": null,
+                "publisher": null,
+                "year": 0,
+                "authors": []
+            },
+            "lifeStyleInfo": {
+                "sleeve": null,
+                "neck": null,
+                "idealFor": null
+            }
+        }
+    }
+]

@@ -1,0 +1,173 @@
+[
+    {
+        "productBaseInfoV1": {
+            "productId": "REMEHX29FEBNUXDU",
+            "title": "W2W BLUSTAR Remote Controller",
+            "productDescription": "",
+            "imageUrls": {
+                "200x200": "http://img.fkcdn.com/image/remote-controller/x/d/u/w2w-blustar-200x200-imaegrja97d22gfh.jpeg",
+                "400x400": "http://img.fkcdn.com/image/remote-controller/x/d/u/w2w-blustar-400x400-imaegrja97d22gfh.jpeg",
+                "800x800": "http://img.fkcdn.com/image/remote-controller/x/d/u/w2w-blustar-800x800-imaegrja97d22gfh.jpeg",
+                "unknown": "http://img.fkcdn.com/image/remote-controller/x/d/u/w2w-blustar-original-imaegrja97d22gfh.jpeg"
+            },
+            "productFamily": [
+                "[REMEHX29FEBNUXDU]"
+            ],
+            "maximumRetailPrice": {
+                "amount": 799,
+                "currency": "INR"
+            },
+            "flipkartSellingPrice": {
+                "amount": 399,
+                "currency": "INR"
+            },
+            "flipkartSpecialPrice": {
+                "amount": 399,
+                "currency": "INR"
+            },
+            "productUrl": "http://dl.flipkart.com/dl/w2w-blustar-remote-controller/p/itmehx296w3nvhjr?pid=REMEHX29FEBNUXDU&affid=slidenerd",
+            "productBrand": "W2W",
+            "inStock": false,
+            "codAvailable": true,
+            "discountPercentage": 50,
+            "offers": [
+                "10% Cashback* with Citi Cards"
+            ],
+            "categoryPath": "Electronics>Entertainment>TV & Video>Accessories>Remote Controllers",
+            "attributes": {
+                "size": "",
+                "color": "",
+                "storage": "",
+                "sizeUnit": "",
+                "displaySize": ""
+            }
+        },
+        "productShippingInfoV1": {
+            "shippingCharges": {
+                "amount": 65,
+                "currency": "INR"
+            },
+            "estimatedDeliveryTime": "Usually Delivered in Thu Sep 08 23:59:59 IST 2016 - Fri Sep 09 23:59:59 IST 2016 days.",
+            "sellerName": "WTW",
+            "sellerAverageRating": null,
+            "sellerNoOfRatings": 0,
+            "sellerNoOfReviews": 0
+        },
+        "categorySpecificInfoV1": {
+            "keySpecs": [
+                "AC",
+                "2 Batteries"
+            ],
+            "detailedSpecs": [
+                "AC",
+                "2 Batteries"
+            ],
+            "specificationList": [
+                {
+                    "key": "In The Box",
+                    "values": [
+                        {
+                            "key": "Sales Package",
+                            "value": [
+                                "1 REMOTE CONTROLLER"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "General",
+                    "values": [
+                        {
+                            "key": "Brand",
+                            "value": [
+                                "W2W"
+                            ]
+                        },
+                        {
+                            "key": "Color",
+                            "value": [
+                                "White"
+                            ]
+                        },
+                        {
+                            "key": "Model ID",
+                            "value": [
+                                "BLUSTAR"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "Compatibility",
+                    "values": [
+                        {
+                            "key": "Types of Devices Controlled",
+                            "value": [
+                                "AC"
+                            ]
+                        },
+                        {
+                            "key": "Compatible Brand Names",
+                            "value": [
+                                "BLUE STAR"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "Power",
+                    "values": [
+                        {
+                            "key": "Battery",
+                            "value": [
+                                "2 AAA"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "Warranty",
+                    "values": [
+                        {
+                            "key": "Warranty Summary",
+                            "value": [
+                                "NA"
+                            ]
+                        },
+                        {
+                            "key": "Covered in Warranty",
+                            "value": [
+                                "NA"
+                            ]
+                        },
+                        {
+                            "key": "Not Covered in Warranty",
+                            "value": [
+                                "NA"
+                            ]
+                        },
+                        {
+                            "key": "Warranty Service Type",
+                            "value": [
+                                "NO WARRANTY"
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "booksInfo": {
+                "language": null,
+                "binding": null,
+                "pages": null,
+                "publisher": null,
+                "year": 0,
+                "authors": []
+            },
+            "lifeStyleInfo": {
+                "sleeve": null,
+                "neck": null,
+                "idealFor": null
+            }
+        }
+    }
+]

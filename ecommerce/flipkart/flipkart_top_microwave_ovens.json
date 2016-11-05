@@ -1,0 +1,612 @@
+[
+    {
+        "productBaseInfoV1": {
+            "productId": "MRCDWK8TEZYZKAYF",
+            "title": "Whirlpool 25 L Grill Microwave Oven",
+            "productDescription": "If you are spending hours in the kitchen, maybe it’s time you got someone to help you out. And by someone, we mean this Whirlpool grill microwave oven. Designed for easy, quick and efficient cooking process, this oven comes with cooking features such as Multi-stage Cook that help you easily cook your favourite dish in less time.",
+            "imageUrls": {
+                "200x200": "http://img.fkcdn.com/image/microwave-new/a/y/f/whirlpool-mw-25-bg-200x200-imaeygnbgvqzdza3.jpeg",
+                "400x400": "http://img.fkcdn.com/image/microwave-new/a/y/f/whirlpool-mw-25-bg-400x400-imaeygnbgvqzdza3.jpeg",
+                "800x800": "http://img.fkcdn.com/image/microwave-new/a/y/f/whirlpool-mw-25-bg-800x800-imaeygnbgvqzdza3.jpeg",
+                "unknown": "http://img.fkcdn.com/image/microwave-new/a/y/f/whirlpool-mw-25-bg-original-imaeygnbgvqzdza3.jpeg"
+            },
+            "productFamily": [
+                "[MRCDWK8TEZYZKAYF]"
+            ],
+            "maximumRetailPrice": {
+                "amount": 9290,
+                "currency": "INR"
+            },
+            "flipkartSellingPrice": {
+                "amount": 7290,
+                "currency": "INR"
+            },
+            "flipkartSpecialPrice": {
+                "amount": 6490,
+                "currency": "INR"
+            },
+            "productUrl": "http://dl.flipkart.com/dl/whirlpool-25-l-grill-microwave-oven/p/itmdwmvz5xzjxpyf?pid=MRCDWK8TEZYZKAYF&affid=slidenerd",
+            "productBrand": "Whirlpool",
+            "inStock": true,
+            "codAvailable": true,
+            "discountPercentage": 32,
+            "offers": [
+                "Extra Rs.800 Off on  Whirlpool Microwave Oven"
+            ],
+            "categoryPath": "Electronics>Appliances>Kitchen Appliances>Microwave Ovens",
+            "attributes": {
+                "size": "",
+                "color": "",
+                "storage": "",
+                "sizeUnit": "",
+                "displaySize": ""
+            }
+        },
+        "productShippingInfoV1": {
+            "shippingCharges": {
+                "amount": 0,
+                "currency": "INR"
+            },
+            "estimatedDeliveryTime": "Usually Delivered in Tue Sep 06 23:59:59 IST 2016 - Wed Sep 07 23:59:59 IST 2016 days.",
+            "sellerName": "OmniTechRetail",
+            "sellerAverageRating": 4.303704,
+            "sellerNoOfRatings": 270,
+            "sellerNoOfReviews": 13
+        },
+        "categorySpecificInfoV1": {
+            "keySpecs": [
+                "Power: 900 W | Capacity: 25 L",
+                "Power Levels: 10 | Display Type: LED",
+                "Starter Kit Included",
+                "Control: Feather Touch",
+                "Superior Powder Coated"
+            ],
+            "detailedSpecs": [
+                "Power: 900 W | Capacity: 25 L",
+                "Power Levels: 10 | Display Type: LED",
+                "Starter Kit Included",
+                "Control: Feather Touch",
+                "Superior Powder Coated"
+            ],
+            "specificationList": [
+                {
+                    "key": "General",
+                    "values": [
+                        {
+                            "key": "Sales Package",
+                            "value": [
+                                "Super Chef Kit, Microwave Oven, 1 User Manual & Warranty Card"
+                            ]
+                        },
+                        {
+                            "key": "Brand",
+                            "value": [
+                                "Whirlpool"
+                            ]
+                        },
+                        {
+                            "key": "Model Name",
+                            "value": [
+                                "MW 25 BG"
+                            ]
+                        },
+                        {
+                            "key": "Type",
+                            "value": [
+                                "Grill"
+                            ]
+                        },
+                        {
+                            "key": "Capacity",
+                            "value": [
+                                "25 L"
+                            ]
+                        },
+                        {
+                            "key": "Shade",
+                            "value": [
+                                "Black"
+                            ]
+                        },
+                        {
+                            "key": "Control Type",
+                            "value": [
+                                "Feather Touch"
+                            ]
+                        },
+                        {
+                            "key": "Display Type",
+                            "value": [
+                                "LED"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "Installation and Demo",
+                    "values": [
+                        {
+                            "key": "Demo Details",
+                            "value": [
+                                "Demo is provided free of cost. After delivery of your Microwave Oven, you will receive a ticket number via message. Post that, you will receive a call from the brand authorized service engineer to schedule a mutually convenient time to provide demo at your doorstep. The demo is usually done within 2 Business days of delivery of your Microwave Oven. Kindly contact us on1800 208 9898FREEfor any further queries."
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "Warranty",
+                    "values": [
+                        {
+                            "key": "Warranty Summary",
+                            "value": [
+                                "1 Year Product Warranty & 2 Years on Magnetron"
+                            ]
+                        },
+                        {
+                            "key": "Covered in Warranty",
+                            "value": [
+                                "Parts & Labour: Covered under Warranty against any Defect arising out of Faulty or Defective Material or Workmanship."
+                            ]
+                        },
+                        {
+                            "key": "Not Covered in Warranty",
+                            "value": [
+                                "Parts: Main Door/Door Plastic, The warranty does not cover accessories external to the product, The product is not used according to the instructions given in the instruction manual, Modification or alteration of any nature is made in the electrical circuitry/ or physical construction of the set, Site (premises where the product is kept) conditions that do not confirm to the recommended operating conditions of the machine, Defects due to cause beyond control like lightning, abnormal voltage, acts of God or while in transit to service centre or purchaser's residence."
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "Performance Features",
+                    "values": [
+                        {
+                            "key": "Preheat",
+                            "value": [
+                                "Yes"
+                            ]
+                        },
+                        {
+                            "key": "Defrost",
+                            "value": [
+                                "Yes"
+                            ]
+                        },
+                        {
+                            "key": "Power Levels",
+                            "value": [
+                                "10"
+                            ]
+                        },
+                        {
+                            "key": "Other Performance Features",
+                            "value": [
+                                "Manual Defrost, Weight Defrost, Quick Defrost"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "Cooking Features",
+                    "values": [
+                        {
+                            "key": "Auto Cook Menu",
+                            "value": [
+                                "NA"
+                            ]
+                        },
+                        {
+                            "key": "Auto Cook Menu Available",
+                            "value": [
+                                "No"
+                            ]
+                        },
+                        {
+                            "key": "Cooking Modes",
+                            "value": [
+                                "Grill Combi Mode"
+                            ]
+                        },
+                        {
+                            "key": "Other Cooking Features",
+                            "value": [
+                                "Multi Stage Cooking, Combi Cooking"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "Body and Design Features",
+                    "values": [
+                        {
+                            "key": "Cavity Features",
+                            "value": [
+                                "Superior Powder Coated"
+                            ]
+                        },
+                        {
+                            "key": "Door Type",
+                            "value": [
+                                "Side Swing"
+                            ]
+                        },
+                        {
+                            "key": "Turntable",
+                            "value": [
+                                "Yes"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "Convenience Features",
+                    "values": [
+                        {
+                            "key": "Racks & Trays Available",
+                            "value": [
+                                "Grill Rack"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "Power Features",
+                    "values": [
+                        {
+                            "key": "Power Output",
+                            "value": [
+                                "900 W"
+                            ]
+                        },
+                        {
+                            "key": "Other Power Features",
+                            "value": [
+                                "Grill Output: 1000 W"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "Additional Features",
+                    "values": [
+                        {
+                            "key": "Other Features",
+                            "value": [
+                                "Grill with Easy Touch Foil, Clock, Accessory Kit, Quick Heat Mode, Start Mode"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "Dimensions",
+                    "values": [
+                        {
+                            "key": "Width",
+                            "value": [
+                                "48.5 cm"
+                            ]
+                        },
+                        {
+                            "key": "Height",
+                            "value": [
+                                "29.3 cm"
+                            ]
+                        },
+                        {
+                            "key": "Depth",
+                            "value": [
+                                "39.8 cm"
+                            ]
+                        },
+                        {
+                            "key": "Turntable Diameter",
+                            "value": [
+                                "27 cm"
+                            ]
+                        },
+                        {
+                            "key": "Cavity Width",
+                            "value": [
+                                "31.4 cm"
+                            ]
+                        },
+                        {
+                            "key": "Cavity Height",
+                            "value": [
+                                "22.1 cm"
+                            ]
+                        },
+                        {
+                            "key": "Cavity Depth",
+                            "value": [
+                                "34.8 cm"
+                            ]
+                        },
+                        {
+                            "key": "Weight",
+                            "value": [
+                                "13.2 kg"
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "booksInfo": {
+                "language": null,
+                "binding": null,
+                "pages": null,
+                "publisher": null,
+                "year": 0,
+                "authors": []
+            },
+            "lifeStyleInfo": {
+                "sleeve": null,
+                "neck": null,
+                "idealFor": null
+            }
+        }
+    },
+    {
+        "productBaseInfoV1": {
+            "productId": "MRCDWYS5HRKAHVQY",
+            "title": "Morphy Richards 25 L Convection Microwave Oven",
+            "productDescription": "Finding it hard to cook food because of your busy schedule? Bring home this Morphy Richards convection microwave oven and make life easier with healthy and yummy food. With 200 Auto Cook Menus, this oven is guaranteed to bring out the inner chef in you. Features such as Deodorizer, Cooling, three-way heating system, and Preset function make it easier for you to run your kitchen with ease and efficiency.",
+            "imageUrls": {
+                "200x200": "http://img.fkcdn.com/image/microwave-new/v/q/y/morphy-richard-25cg-200x200-imaec2ddymudmze3.jpeg",
+                "400x400": "http://img.fkcdn.com/image/microwave-new/v/q/y/morphy-richard-25cg-400x400-imaec2ddymudmze3.jpeg",
+                "800x800": "http://img.fkcdn.com/image/microwave-new/v/q/y/morphy-richard-25cg-800x800-imaec2ddymudmze3.jpeg",
+                "unknown": "http://img.fkcdn.com/image/microwave-new/v/q/y/morphy-richard-25cg-original-imaec2ddymudmze3.jpeg"
+            },
+            "productFamily": [
+                "[MRCDWYS5HRKAHVQY]"
+            ],
+            "maximumRetailPrice": {
+                "amount": 12995,
+                "currency": "INR"
+            },
+            "flipkartSellingPrice": {
+                "amount": 9990,
+                "currency": "INR"
+            },
+            "flipkartSpecialPrice": {
+                "amount": 8990,
+                "currency": "INR"
+            },
+            "productUrl": "http://dl.flipkart.com/dl/morphy-richards-25-l-convection-microwave-oven/p/itmdwys83cjxbgfc?pid=MRCDWYS5HRKAHVQY&affid=slidenerd",
+            "productBrand": "Morphy Richards",
+            "inStock": true,
+            "codAvailable": true,
+            "discountPercentage": 23,
+            "offers": [
+                "Extra Rs.1000 Off MorphyRichard MicrowaveOven"
+            ],
+            "categoryPath": "Electronics>Appliances>Kitchen Appliances>Microwave Ovens",
+            "attributes": {
+                "size": "",
+                "color": "",
+                "storage": "",
+                "sizeUnit": "",
+                "displaySize": ""
+            }
+        },
+        "productShippingInfoV1": {
+            "shippingCharges": {
+                "amount": 0,
+                "currency": "INR"
+            },
+            "estimatedDeliveryTime": "Usually Delivered in Tue Sep 06 23:59:59 IST 2016 - Wed Sep 07 23:59:59 IST 2016 days.",
+            "sellerName": "OmniTechRetail",
+            "sellerAverageRating": 4.306273,
+            "sellerNoOfRatings": 271,
+            "sellerNoOfReviews": 13
+        },
+        "categorySpecificInfoV1": {
+            "keySpecs": [
+                "Capacity: 25 L",
+                "Power Levels: 11",
+                "Starter Kit Included",
+                "Control: Feather Touch",
+                "Deodrizer | Child Lock"
+            ],
+            "detailedSpecs": [
+                "Capacity: 25 L",
+                "Power Levels: 11",
+                "Starter Kit Included",
+                "Control: Feather Touch",
+                "Deodrizer | Child Lock"
+            ],
+            "specificationList": [
+                {
+                    "key": "General",
+                    "values": [
+                        {
+                            "key": "Brand",
+                            "value": [
+                                "Morphy Richards"
+                            ]
+                        },
+                        {
+                            "key": "Model Name",
+                            "value": [
+                                "25CG"
+                            ]
+                        },
+                        {
+                            "key": "Type",
+                            "value": [
+                                "Convection"
+                            ]
+                        },
+                        {
+                            "key": "Capacity",
+                            "value": [
+                                "25 L"
+                            ]
+                        },
+                        {
+                            "key": "Shade",
+                            "value": [
+                                "Steel"
+                            ]
+                        },
+                        {
+                            "key": "Control Type",
+                            "value": [
+                                "Feather Touch"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "Installation and Demo",
+                    "values": [
+                        {
+                            "key": "Demo Details",
+                            "value": [
+                                "Demo is provided free of cost. After delivery of your Microwave Oven, you will receive a ticket number via message. Post that, you will receive a call from the brand authorized service engineer to schedule a mutually convenient time to provide demo at your doorstep. The demo is usually done within 2 Business days of delivery of your Microwave Oven. Kindly contact us on1800 208 9898FREEfor any further queries."
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "Warranty",
+                    "values": [
+                        {
+                            "key": "Warranty Summary",
+                            "value": [
+                                "2 years product warranty from Morphy Richard"
+                            ]
+                        },
+                        {
+                            "key": "Covered in Warranty",
+                            "value": [
+                                "Parts & Labour: Covered under Warranty against any Defect arising out of Faulty or Defective Material or Workmanship."
+                            ]
+                        },
+                        {
+                            "key": "Not Covered in Warranty",
+                            "value": [
+                                "Parts: Main Door/Door Plastic, The warranty does not cover accessories external to the product, The product is not used according to the instructions given in the instruction manual, Modification or alteration of any nature is made in the electrical circuitry/ or physical construction of the set, Site (premises where the product is kept) conditions that do not confirm to the recommended operating conditions of the machine, Defects due to cause beyond control like lightning, abnormal voltage, acts of God or while in transit to service centre or purchaser's residence."
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "Performance Features",
+                    "values": [
+                        {
+                            "key": "Defrost",
+                            "value": [
+                                "Yes"
+                            ]
+                        },
+                        {
+                            "key": "Power Levels",
+                            "value": [
+                                "11"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "Cooking Features",
+                    "values": [
+                        {
+                            "key": "Auto Cook Menu",
+                            "value": [
+                                "200"
+                            ]
+                        },
+                        {
+                            "key": "Cooking Modes",
+                            "value": [
+                                "Convection, Grill"
+                            ]
+                        },
+                        {
+                            "key": "Other Cooking Features",
+                            "value": [
+                                "Multi Stage Cooking (Upto 3 Levels), Combination Cooking"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "Body and Design Features",
+                    "values": [
+                        {
+                            "key": "Cavity Material",
+                            "value": [
+                                "Stainless Steel"
+                            ]
+                        },
+                        {
+                            "key": "Door Type",
+                            "value": [
+                                "Mirror Glass Finish"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "Convenience Features",
+                    "values": [
+                        {
+                            "key": "Deodorizer",
+                            "value": [
+                                "Yes"
+                            ]
+                        },
+                        {
+                            "key": "Child Lock",
+                            "value": [
+                                "Yes"
+                            ]
+                        },
+                        {
+                            "key": "Overheat Protection",
+                            "value": [
+                                "Yes"
+                            ]
+                        },
+                        {
+                            "key": "Racks & Trays Available",
+                            "value": [
+                                "Wire Rack"
+                            ]
+                        },
+                        {
+                            "key": "Other Convenience Features",
+                            "value": [
+                                "Sensory Protection, 3 Way Heating System: Grill, Quartz, Convection"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "Additional Features",
+                    "values": [
+                        {
+                            "key": "Other Features",
+                            "value": [
+                                "Fan, Cooling Function, Preset Function, Baking Plate"
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "booksInfo": {
+                "language": null,
+                "binding": null,
+                "pages": null,
+                "publisher": null,
+                "year": 0,
+                "authors": []
+            },
+            "lifeStyleInfo": {
+                "sleeve": null,
+                "neck": null,
+                "idealFor": null
+            }
+        }
+    }
+]

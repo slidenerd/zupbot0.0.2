@@ -3,13 +3,13 @@
 - <call>askLocation</call>{topic=weather}
 
 + [*] (what|how) [*] (@weatherwords) [*] (at|in|of|for) *{weight=997}
-- <call>weather {formal}<star4>{/formal}</call> {topic=weather}
+- <call>findWeather {formal}<star4>{/formal}</call> {topic=weather}
 
 + [*] (@weatherwords) [*] (at|in|of|for) my *{weight=997}
 - <call>askLocation</call>{topic=weather}
 
 + [*] (@weatherwords) [*] (at|in|of|for) *{weight=997}
-- <call>weather {formal}<star3>{/formal}</call> {topic=weather} 
+- <call>findWeather {formal}<star3>{/formal}</call> {topic=weather} 
 
 //The name of this topic is being referred to from JS code
 > topic weather

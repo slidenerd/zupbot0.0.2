@@ -1,0 +1,3099 @@
+[
+    {
+        "productBaseInfoV1": {
+            "productId": "COMEHFZYG8GSGWGW",
+            "title": "Asus ZenBook Core i7 - (8 GB/512 GB SSD/Windows 10) 90NB0AB1-M01430 UX305UA-FB004T Ultrabook",
+            "productDescription": "",
+            "imageUrls": {
+                "200x200": "http://img.fkcdn.com/image/computer/e/k/q/asus-zenbook-ultrabook-200x200-imaeh2y64czgdtyh.jpeg",
+                "400x400": "http://img.fkcdn.com/image/computer/e/k/q/asus-zenbook-ultrabook-400x400-imaeh2y64czgdtyh.jpeg",
+                "800x800": "http://img.fkcdn.com/image/computer/e/k/q/asus-zenbook-ultrabook-800x800-imaeh2y64czgdtyh.jpeg",
+                "unknown": "http://img.fkcdn.com/image/computer/e/k/q/asus-zenbook-ultrabook-original-imaeh2y64czgdtyh.jpeg"
+            },
+            "productFamily": [
+                "[COMEHFZYG8GSGWGW]"
+            ],
+            "maximumRetailPrice": {
+                "amount": 95990,
+                "currency": "INR"
+            },
+            "flipkartSellingPrice": {
+                "amount": 93990,
+                "currency": "INR"
+            },
+            "flipkartSpecialPrice": {
+                "amount": 93990,
+                "currency": "INR"
+            },
+            "productUrl": "http://dl.flipkart.com/dl/asus-zenbook-core-i7-8-gb-512-gb-ssd-windows-10-90nb0ab1-m01430-ux305ua-fb004t-ultrabook/p/itmehfzyjz6v3py3?pid=COMEHFZYG8GSGWGW&affid=slidenerd",
+            "productBrand": "Asus",
+            "inStock": true,
+            "codAvailable": false,
+            "discountPercentage": 2,
+            "offers": [
+                "Extra 5% off* on Axis Bank Buzz Credit Cards",
+                "Extra 15% Cashback* with Citi Cards"
+            ],
+            "categoryPath": "Computers>Laptops",
+            "attributes": {
+                "size": "",
+                "color": "Black",
+                "storage": "",
+                "sizeUnit": "",
+                "displaySize": ""
+            }
+        },
+        "productShippingInfoV1": {
+            "shippingCharges": {
+                "amount": 0,
+                "currency": "INR"
+            },
+            "estimatedDeliveryTime": "Usually Delivered in Sat Sep 10 23:59:59 IST 2016 - Sun Sep 11 23:59:59 IST 2016 days.",
+            "sellerName": "AmazingDeal",
+            "sellerAverageRating": 3.6167665,
+            "sellerNoOfRatings": 167,
+            "sellerNoOfReviews": 12
+        },
+        "categorySpecificInfoV1": {
+            "keySpecs": [
+                "Intel Core i7 Processor",
+                "8 GB DDR3 RAM",
+                "64 bit Windows 10 Operating System",
+                "512 GB SSD",
+                "13.3 inch Display"
+            ],
+            "detailedSpecs": [
+                "Intel Core i7 Processor",
+                "8 GB DDR3 RAM",
+                "64 bit Windows 10 Operating System",
+                "512 GB SSD",
+                "13.3 inch Display"
+            ],
+            "specificationList": [
+                {
+                    "key": "General",
+                    "values": [
+                        {
+                            "key": "Sales Package",
+                            "value": [
+                                "Ultrabook, Battery, AC Adapter, User Guide"
+                            ]
+                        },
+                        {
+                            "key": "Model Number",
+                            "value": [
+                                "UX305UA-FB004T"
+                            ]
+                        },
+                        {
+                            "key": "Part Number",
+                            "value": [
+                                "90NB0AB1-M01430"
+                            ]
+                        },
+                        {
+                            "key": "Model Name",
+                            "value": [
+                                "ZenBook"
+                            ]
+                        },
+                        {
+                            "key": "Series",
+                            "value": [
+                                "ZenBook"
+                            ]
+                        },
+                        {
+                            "key": "Color",
+                            "value": [
+                                "Black"
+                            ]
+                        },
+                        {
+                            "key": "Type",
+                            "value": [
+                                "Ultrabook"
+                            ]
+                        },
+                        {
+                            "key": "Suitable For",
+                            "value": [
+                                "Processing & Multitasking, Travel & Business"
+                            ]
+                        },
+                        {
+                            "key": "Power Supply",
+                            "value": [
+                                "45 W AC Adapter"
+                            ]
+                        },
+                        {
+                            "key": "Battery Cell",
+                            "value": [
+                                "3 cell"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "Processor and Memory Features",
+                    "values": [
+                        {
+                            "key": "Processor Brand",
+                            "value": [
+                                "Intel"
+                            ]
+                        },
+                        {
+                            "key": "Processor Name",
+                            "value": [
+                                "Core i7"
+                            ]
+                        },
+                        {
+                            "key": "Graphic Processor",
+                            "value": [
+                                "Intel HD Graphics 520"
+                            ]
+                        },
+                        {
+                            "key": "SSD",
+                            "value": [
+                                "Yes"
+                            ]
+                        },
+                        {
+                            "key": "SSD Capacity",
+                            "value": [
+                                "512 GB"
+                            ]
+                        },
+                        {
+                            "key": "RAM",
+                            "value": [
+                                "8 GB"
+                            ]
+                        },
+                        {
+                            "key": "RAM Type",
+                            "value": [
+                                "DDR3"
+                            ]
+                        },
+                        {
+                            "key": "Processor Variant",
+                            "value": [
+                                "6500U"
+                            ]
+                        },
+                        {
+                            "key": "Clock Speed",
+                            "value": [
+                                "2.5 GHz with Turbo Boost Upto 3.1 GHz"
+                            ]
+                        },
+                        {
+                            "key": "RAM Frequency",
+                            "value": [
+                                "1600 MHz"
+                            ]
+                        },
+                        {
+                            "key": "Cache",
+                            "value": [
+                                "4 MB"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "Operating System",
+                    "values": [
+                        {
+                            "key": "OS Architecture",
+                            "value": [
+                                "64 bit"
+                            ]
+                        },
+                        {
+                            "key": "Operating System",
+                            "value": [
+                                "Windows 10"
+                            ]
+                        },
+                        {
+                            "key": "System Architecture",
+                            "value": [
+                                "64 bit"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "Port and Slot Features",
+                    "values": [
+                        {
+                            "key": "Mic In",
+                            "value": [
+                                "Yes"
+                            ]
+                        },
+                        {
+                            "key": "USB Port",
+                            "value": [
+                                "2 x USB 3.0, 1 x USB 2.0"
+                            ]
+                        },
+                        {
+                            "key": "HDMI Port",
+                            "value": [
+                                "Yes, Micro HDMI"
+                            ]
+                        },
+                        {
+                            "key": "Multi Card Slot",
+                            "value": [
+                                "SDXC Card Reader"
+                            ]
+                        },
+                        {
+                            "key": "Hardware Interface",
+                            "value": [
+                                "SATA3"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "Display and Audio Features",
+                    "values": [
+                        {
+                            "key": "Touchscreen",
+                            "value": [
+                                "No"
+                            ]
+                        },
+                        {
+                            "key": "Screen Size",
+                            "value": [
+                                "13.3 inch"
+                            ]
+                        },
+                        {
+                            "key": "Screen Resolution",
+                            "value": [
+                                "3200 X 1800 pixel"
+                            ]
+                        },
+                        {
+                            "key": "Screen Type",
+                            "value": [
+                                "QHD+ LED Backlit Slim Wide View Anti Glare Display"
+                            ]
+                        },
+                        {
+                            "key": "Speakers",
+                            "value": [
+                                "Yes"
+                            ]
+                        },
+                        {
+                            "key": "Internal Mic",
+                            "value": [
+                                "Built-in Microphone"
+                            ]
+                        },
+                        {
+                            "key": "Sound Properties",
+                            "value": [
+                                "Audio by ICEpower, Sonic Master, Built-in Speaker"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "Connectivity Features",
+                    "values": [
+                        {
+                            "key": "Bluetooth",
+                            "value": [
+                                "v4.0"
+                            ]
+                        },
+                        {
+                            "key": "Ethernet",
+                            "value": [
+                                "10/100 Mbps"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "Dimensions",
+                    "values": [
+                        {
+                            "key": "Dimensions",
+                            "value": [
+                                "324 x 226 x 16.0 mm"
+                            ]
+                        },
+                        {
+                            "key": "Weight",
+                            "value": [
+                                "1.3 kg"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "Additional Features",
+                    "values": [
+                        {
+                            "key": "Web Camera",
+                            "value": [
+                                "HD Webcam"
+                            ]
+                        },
+                        {
+                            "key": "Security Chip",
+                            "value": [
+                                "Intel Anti-theft"
+                            ]
+                        },
+                        {
+                            "key": "Antivirus",
+                            "value": [
+                                "McAfee Internet Security"
+                            ]
+                        },
+                        {
+                            "key": "Keyboard",
+                            "value": [
+                                "Chiclet Keyboard"
+                            ]
+                        },
+                        {
+                            "key": "Pointer Device",
+                            "value": [
+                                "Intuitive Touchpad with Smart Gestures Technology"
+                            ]
+                        },
+                        {
+                            "key": "Included Software",
+                            "value": [
+                                "Asus GiftBox, Asus Smart Gesture, Asus Splendid, CyberLink PowerDVD 12 (JP Only), Dropbox 25 GB, Evernote, ICEsound, I-filter, KingSoft Office (JP Only), KKBOX (JP/TW Only), Netflix (For Specific Region), TripAdvisor, USB Charger+, WPS Office (NA, JP Exclude), Includes 1 Month Trial for New Microsoft Office 365 Customers"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "Warranty",
+                    "values": [
+                        {
+                            "key": "Warranty Summary",
+                            "value": [
+                                "2 Years Limited International Hardware Warranty"
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "booksInfo": {
+                "language": null,
+                "binding": null,
+                "pages": null,
+                "publisher": null,
+                "year": 0,
+                "authors": []
+            },
+            "lifeStyleInfo": {
+                "sleeve": null,
+                "neck": null,
+                "idealFor": null
+            }
+        }
+    },
+    {
+        "productBaseInfoV1": {
+            "productId": "COMEGH8MD6NY7ZJA",
+            "title": "Alienware R2 Core i7 - (16 GB/1 TB HDD/256 GB SSD/Windows 10/8 GB Graphics) Z569972HIN9 R2 Notebook",
+            "productDescription": "",
+            "imageUrls": {
+                "200x200": "http://img.fkcdn.com/image/computer/3/s/4/alienware-r2-notebook-200x200-imaegteahfghwpzm.jpeg",
+                "400x400": "http://img.fkcdn.com/image/computer/3/s/4/alienware-r2-notebook-400x400-imaegteahfghwpzm.jpeg",
+                "800x800": "http://img.fkcdn.com/image/computer/3/s/4/alienware-r2-notebook-800x800-imaegteahfghwpzm.jpeg",
+                "unknown": "http://img.fkcdn.com/image/computer/3/s/4/alienware-r2-notebook-original-imaegteahfghwpzm.jpeg"
+            },
+            "productFamily": [
+                "[COMEGH8MD6NY7ZJA]"
+            ],
+            "maximumRetailPrice": {
+                "amount": 184500,
+                "currency": "INR"
+            },
+            "flipkartSellingPrice": {
+                "amount": 184500,
+                "currency": "INR"
+            },
+            "flipkartSpecialPrice": {
+                "amount": 184500,
+                "currency": "INR"
+            },
+            "productUrl": "http://dl.flipkart.com/dl/alienware-r2-core-i7-16-gb-1-tb-hdd-256-gb-ssd-windows-10-8-graphics-z569972hin9-notebook/p/itmegh8mqnhzqktr?pid=COMEGH8MD6NY7ZJA&affid=slidenerd",
+            "productBrand": "Alienware",
+            "inStock": false,
+            "codAvailable": false,
+            "discountPercentage": 0,
+            "offers": [
+                "Extra 5% off* on Axis Bank Buzz Credit Cards",
+                "Extra 15% Cashback* with Citi Cards"
+            ],
+            "categoryPath": "Computers>Laptops",
+            "attributes": {
+                "size": "",
+                "color": "Aluminium",
+                "storage": "",
+                "sizeUnit": "",
+                "displaySize": ""
+            }
+        },
+        "productShippingInfoV1": {
+            "shippingCharges": {
+                "amount": 0,
+                "currency": "INR"
+            },
+            "estimatedDeliveryTime": "Usually Delivered in Sat Sep 10 23:59:59 IST 2016 - Sun Sep 11 23:59:59 IST 2016 days.",
+            "sellerName": "OmniTechRetail",
+            "sellerAverageRating": 4.2934785,
+            "sellerNoOfRatings": 276,
+            "sellerNoOfReviews": 13
+        },
+        "categorySpecificInfoV1": {
+            "keySpecs": [
+                "Intel Core i7 Processor",
+                "16 GB DDR4 RAM",
+                "64 bit Windows 10 Operating System",
+                "1 TB HDD|256 GB SSD",
+                "17.3 inch Display"
+            ],
+            "detailedSpecs": [
+                "Intel Core i7 Processor",
+                "16 GB DDR4 RAM",
+                "64 bit Windows 10 Operating System",
+                "1 TB HDD|256 GB SSD",
+                "17.3 inch Display"
+            ],
+            "specificationList": [
+                {
+                    "key": "General",
+                    "values": [
+                        {
+                            "key": "Sales Package",
+                            "value": [
+                                "Notebook, Battery, Power Adapter, Warranty Document"
+                            ]
+                        },
+                        {
+                            "key": "Model Number",
+                            "value": [
+                                "R2"
+                            ]
+                        },
+                        {
+                            "key": "Part Number",
+                            "value": [
+                                "Z569972HIN9"
+                            ]
+                        },
+                        {
+                            "key": "Model Name",
+                            "value": [
+                                "R2"
+                            ]
+                        },
+                        {
+                            "key": "Series",
+                            "value": [
+                                "R2"
+                            ]
+                        },
+                        {
+                            "key": "Color",
+                            "value": [
+                                "Aluminium"
+                            ]
+                        },
+                        {
+                            "key": "Type",
+                            "value": [
+                                "Notebook"
+                            ]
+                        },
+                        {
+                            "key": "Suitable For",
+                            "value": [
+                                "Gaming"
+                            ]
+                        },
+                        {
+                            "key": "Power Supply",
+                            "value": [
+                                "92 W AC Adapter"
+                            ]
+                        },
+                        {
+                            "key": "Battery Cell",
+                            "value": [
+                                "8 cell"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "Processor and Memory Features",
+                    "values": [
+                        {
+                            "key": "Dedicated Graphic Memory Type",
+                            "value": [
+                                "GDDR5"
+                            ]
+                        },
+                        {
+                            "key": "Dedicated Graphic Memory Capacity",
+                            "value": [
+                                "8 GB"
+                            ]
+                        },
+                        {
+                            "key": "Processor Brand",
+                            "value": [
+                                "Intel"
+                            ]
+                        },
+                        {
+                            "key": "Processor Name",
+                            "value": [
+                                "Core i7"
+                            ]
+                        },
+                        {
+                            "key": "Processor Generation",
+                            "value": [
+                                "6th Gen"
+                            ]
+                        },
+                        {
+                            "key": "Graphic Processor",
+                            "value": [
+                                "Nvidia Geforce Gtx 980M"
+                            ]
+                        },
+                        {
+                            "key": "SSD",
+                            "value": [
+                                "Yes"
+                            ]
+                        },
+                        {
+                            "key": "SSD Capacity",
+                            "value": [
+                                "256 GB"
+                            ]
+                        },
+                        {
+                            "key": "RAM",
+                            "value": [
+                                "16 GB"
+                            ]
+                        },
+                        {
+                            "key": "RAM Type",
+                            "value": [
+                                "DDR4"
+                            ]
+                        },
+                        {
+                            "key": "HDD Capacity",
+                            "value": [
+                                "1 TB"
+                            ]
+                        },
+                        {
+                            "key": "Processor Variant",
+                            "value": [
+                                "6700HQ"
+                            ]
+                        },
+                        {
+                            "key": "Clock Speed",
+                            "value": [
+                                "2.6 GHz with Turbo Boost Upto 3.5 GHz"
+                            ]
+                        },
+                        {
+                            "key": "Memory Slots",
+                            "value": [
+                                "2 Slots"
+                            ]
+                        },
+                        {
+                            "key": "RAM Frequency",
+                            "value": [
+                                "2133 MHz"
+                            ]
+                        },
+                        {
+                            "key": "Cache",
+                            "value": [
+                                "6 MB"
+                            ]
+                        },
+                        {
+                            "key": "RPM",
+                            "value": [
+                                "7200"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "Operating System",
+                    "values": [
+                        {
+                            "key": "OS Architecture",
+                            "value": [
+                                "64 bit"
+                            ]
+                        },
+                        {
+                            "key": "Operating System",
+                            "value": [
+                                "Windows 10"
+                            ]
+                        },
+                        {
+                            "key": "System Architecture",
+                            "value": [
+                                "64 bit"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "Port and Slot Features",
+                    "values": [
+                        {
+                            "key": "USB Port",
+                            "value": [
+                                "3 x USB 3.0"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "Display and Audio Features",
+                    "values": [
+                        {
+                            "key": "Touchscreen",
+                            "value": [
+                                "No"
+                            ]
+                        },
+                        {
+                            "key": "Screen Size",
+                            "value": [
+                                "17.3 inch"
+                            ]
+                        },
+                        {
+                            "key": "Screen Resolution",
+                            "value": [
+                                "3840 X 2160 pixel"
+                            ]
+                        },
+                        {
+                            "key": "Speakers",
+                            "value": [
+                                "Yes"
+                            ]
+                        },
+                        {
+                            "key": "Internal Mic",
+                            "value": [
+                                "Yes"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "Connectivity Features",
+                    "values": [
+                        {
+                            "key": "Wireless LAN",
+                            "value": [
+                                "Killer 1535 (IEEE 802.11ac 2x2)"
+                            ]
+                        },
+                        {
+                            "key": "Bluetooth",
+                            "value": [
+                                "v4.1"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "Additional Features",
+                    "values": [
+                        {
+                            "key": "Web Camera",
+                            "value": [
+                                "Yes"
+                            ]
+                        },
+                        {
+                            "key": "Antivirus",
+                            "value": [
+                                "Mcafee LiveSafe 12 Months"
+                            ]
+                        },
+                        {
+                            "key": "Keyboard",
+                            "value": [
+                                "Yes"
+                            ]
+                        },
+                        {
+                            "key": "Pointer Device",
+                            "value": [
+                                "Touchpad"
+                            ]
+                        },
+                        {
+                            "key": "Included Software",
+                            "value": [
+                                "Microsoft Office Trial"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "Warranty",
+                    "values": [
+                        {
+                            "key": "Warranty Summary",
+                            "value": [
+                                "1 Year Pro Support, NBD Onsite with Accidental Damage Service"
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "booksInfo": {
+                "language": null,
+                "binding": null,
+                "pages": null,
+                "publisher": null,
+                "year": 0,
+                "authors": []
+            },
+            "lifeStyleInfo": {
+                "sleeve": null,
+                "neck": null,
+                "idealFor": null
+            }
+        }
+    },
+    {
+        "productBaseInfoV1": {
+            "productId": "COMEGH8MKZA4Z3S4",
+            "title": "Alienware R2 Core i7 - (16 GB/1 TB HDD/Windows 10/8 GB Graphics) Z569971HIN9 R2 Notebook",
+            "productDescription": "",
+            "imageUrls": {
+                "200x200": "http://img.fkcdn.com/image/computer/3/s/4/alienware-r2-notebook-200x200-imaegteahfghwpzm.jpeg",
+                "400x400": "http://img.fkcdn.com/image/computer/3/s/4/alienware-r2-notebook-400x400-imaegteahfghwpzm.jpeg",
+                "800x800": "http://img.fkcdn.com/image/computer/3/s/4/alienware-r2-notebook-800x800-imaegteahfghwpzm.jpeg",
+                "unknown": "http://img.fkcdn.com/image/computer/3/s/4/alienware-r2-notebook-original-imaegteahfghwpzm.jpeg"
+            },
+            "productFamily": [
+                "[COMEGH8MKZA4Z3S4]"
+            ],
+            "maximumRetailPrice": {
+                "amount": 170000,
+                "currency": "INR"
+            },
+            "flipkartSellingPrice": {
+                "amount": 170000,
+                "currency": "INR"
+            },
+            "flipkartSpecialPrice": {
+                "amount": 170000,
+                "currency": "INR"
+            },
+            "productUrl": "http://dl.flipkart.com/dl/alienware-r2-core-i7-16-gb-1-tb-hdd-windows-10-8-gb-graphics-z569971hin9-notebook/p/itmegh8mzkqwjgzg?pid=COMEGH8MKZA4Z3S4&affid=slidenerd",
+            "productBrand": "Alienware",
+            "inStock": true,
+            "codAvailable": false,
+            "discountPercentage": 1,
+            "offers": [
+                "Flat Rs. 10000 off on Exchange of Laptop",
+                "Extra 5% off* on Axis Bank Buzz Credit Cards",
+                "Extra 15% Cashback* with Citi Cards"
+            ],
+            "categoryPath": "Computers>Laptops",
+            "attributes": {
+                "size": "",
+                "color": "Aluminium",
+                "storage": "",
+                "sizeUnit": "",
+                "displaySize": ""
+            }
+        },
+        "productShippingInfoV1": {
+            "shippingCharges": {
+                "amount": 0,
+                "currency": "INR"
+            },
+            "estimatedDeliveryTime": "Usually Delivered in Sat Sep 10 23:59:59 IST 2016 - Sun Sep 11 23:59:59 IST 2016 days.",
+            "sellerName": "RetailNet",
+            "sellerAverageRating": 4.177347,
+            "sellerNoOfRatings": 55163,
+            "sellerNoOfReviews": 639
+        },
+        "categorySpecificInfoV1": {
+            "keySpecs": [
+                "Intel Core i7 Processor",
+                "16 GB DDR4 RAM",
+                "64 bit Windows 10 Operating System",
+                "1 TB HDD",
+                "17.3 inch Display"
+            ],
+            "detailedSpecs": [
+                "Intel Core i7 Processor",
+                "16 GB DDR4 RAM",
+                "64 bit Windows 10 Operating System",
+                "1 TB HDD",
+                "17.3 inch Display"
+            ],
+            "specificationList": [
+                {
+                    "key": "General",
+                    "values": [
+                        {
+                            "key": "Sales Package",
+                            "value": [
+                                "Notebook, Battery, Power Adapter, Warranty Document"
+                            ]
+                        },
+                        {
+                            "key": "Model Number",
+                            "value": [
+                                "R2"
+                            ]
+                        },
+                        {
+                            "key": "Part Number",
+                            "value": [
+                                "Z569971HIN9"
+                            ]
+                        },
+                        {
+                            "key": "Model Name",
+                            "value": [
+                                "R2"
+                            ]
+                        },
+                        {
+                            "key": "Series",
+                            "value": [
+                                "R2"
+                            ]
+                        },
+                        {
+                            "key": "Color",
+                            "value": [
+                                "Aluminium"
+                            ]
+                        },
+                        {
+                            "key": "Type",
+                            "value": [
+                                "Notebook"
+                            ]
+                        },
+                        {
+                            "key": "Suitable For",
+                            "value": [
+                                "Gaming"
+                            ]
+                        },
+                        {
+                            "key": "Power Supply",
+                            "value": [
+                                "92 W AC Adapter"
+                            ]
+                        },
+                        {
+                            "key": "Battery Cell",
+                            "value": [
+                                "8 cell"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "Processor and Memory Features",
+                    "values": [
+                        {
+                            "key": "Dedicated Graphic Memory Type",
+                            "value": [
+                                "GDDR5"
+                            ]
+                        },
+                        {
+                            "key": "Dedicated Graphic Memory Capacity",
+                            "value": [
+                                "8 GB"
+                            ]
+                        },
+                        {
+                            "key": "Processor Brand",
+                            "value": [
+                                "Intel"
+                            ]
+                        },
+                        {
+                            "key": "Processor Name",
+                            "value": [
+                                "Core i7"
+                            ]
+                        },
+                        {
+                            "key": "Processor Generation",
+                            "value": [
+                                "6th Gen"
+                            ]
+                        },
+                        {
+                            "key": "Graphic Processor",
+                            "value": [
+                                "Nvidia Geforce Gtx 980M"
+                            ]
+                        },
+                        {
+                            "key": "SSD",
+                            "value": [
+                                "No"
+                            ]
+                        },
+                        {
+                            "key": "RAM",
+                            "value": [
+                                "16 GB"
+                            ]
+                        },
+                        {
+                            "key": "RAM Type",
+                            "value": [
+                                "DDR4"
+                            ]
+                        },
+                        {
+                            "key": "HDD Capacity",
+                            "value": [
+                                "1 TB"
+                            ]
+                        },
+                        {
+                            "key": "Processor Variant",
+                            "value": [
+                                "6700HQ"
+                            ]
+                        },
+                        {
+                            "key": "Clock Speed",
+                            "value": [
+                                "2.6 GHz with Turbo Boost Upto 3.5 GHz"
+                            ]
+                        },
+                        {
+                            "key": "Memory Slots",
+                            "value": [
+                                "2 Slots"
+                            ]
+                        },
+                        {
+                            "key": "RAM Frequency",
+                            "value": [
+                                "2133 MHz"
+                            ]
+                        },
+                        {
+                            "key": "Cache",
+                            "value": [
+                                "6 MB"
+                            ]
+                        },
+                        {
+                            "key": "RPM",
+                            "value": [
+                                "7200"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "Operating System",
+                    "values": [
+                        {
+                            "key": "OS Architecture",
+                            "value": [
+                                "64 bit"
+                            ]
+                        },
+                        {
+                            "key": "Operating System",
+                            "value": [
+                                "Windows 10"
+                            ]
+                        },
+                        {
+                            "key": "System Architecture",
+                            "value": [
+                                "64 bit"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "Port and Slot Features",
+                    "values": [
+                        {
+                            "key": "USB Port",
+                            "value": [
+                                "3 x USB 3.0"
+                            ]
+                        },
+                        {
+                            "key": "Hardware Interface",
+                            "value": [
+                                "SATA"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "Display and Audio Features",
+                    "values": [
+                        {
+                            "key": "Touchscreen",
+                            "value": [
+                                "No"
+                            ]
+                        },
+                        {
+                            "key": "Screen Size",
+                            "value": [
+                                "17.3 inch"
+                            ]
+                        },
+                        {
+                            "key": "Screen Resolution",
+                            "value": [
+                                "1920 X 1080 pixel"
+                            ]
+                        },
+                        {
+                            "key": "Speakers",
+                            "value": [
+                                "Yes"
+                            ]
+                        },
+                        {
+                            "key": "Internal Mic",
+                            "value": [
+                                "Yes"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "Connectivity Features",
+                    "values": [
+                        {
+                            "key": "Wireless LAN",
+                            "value": [
+                                "Killer 1535 (IEEE 802.11ac 2x2)"
+                            ]
+                        },
+                        {
+                            "key": "Bluetooth",
+                            "value": [
+                                "v4.1"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "Additional Features",
+                    "values": [
+                        {
+                            "key": "Web Camera",
+                            "value": [
+                                "Yes"
+                            ]
+                        },
+                        {
+                            "key": "Antivirus",
+                            "value": [
+                                "Mcafee LiveSafe 12 Months"
+                            ]
+                        },
+                        {
+                            "key": "Keyboard",
+                            "value": [
+                                "Yes"
+                            ]
+                        },
+                        {
+                            "key": "Pointer Device",
+                            "value": [
+                                "Touchpad"
+                            ]
+                        },
+                        {
+                            "key": "Included Software",
+                            "value": [
+                                "Microsoft Office Trial"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "Warranty",
+                    "values": [
+                        {
+                            "key": "Warranty Summary",
+                            "value": [
+                                "1 Year Pro Support, NBD Onsite with Accidental Damage Service"
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "booksInfo": {
+                "language": null,
+                "binding": null,
+                "pages": null,
+                "publisher": null,
+                "year": 0,
+                "authors": []
+            },
+            "lifeStyleInfo": {
+                "sleeve": null,
+                "neck": null,
+                "idealFor": null
+            }
+        }
+    },
+    {
+        "productBaseInfoV1": {
+            "productId": "COMEGH8MH2RKKZ9G",
+            "title": "Alienware R2 Core i7 - (16 GB/1 TB HDD/256 GB SSD/Windows 10/8 GB Graphics) Z569952HIN9 R2 Notebook",
+            "productDescription": "",
+            "imageUrls": {
+                "200x200": "http://img.fkcdn.com/image/computer/z/9/g/alienware-r2-notebook-200x200-imaegteagsezmuqn.jpeg",
+                "400x400": "http://img.fkcdn.com/image/computer/z/9/g/alienware-r2-notebook-400x400-imaegteagsezmuqn.jpeg",
+                "800x800": "http://img.fkcdn.com/image/computer/z/9/g/alienware-r2-notebook-800x800-imaegteagsezmuqn.jpeg",
+                "unknown": "http://img.fkcdn.com/image/computer/z/9/g/alienware-r2-notebook-original-imaegteagsezmuqn.jpeg"
+            },
+            "productFamily": [
+                "[COMEGH8MH2RKKZ9G]"
+            ],
+            "maximumRetailPrice": {
+                "amount": 68000,
+                "currency": "INR"
+            },
+            "flipkartSellingPrice": {
+                "amount": 68000,
+                "currency": "INR"
+            },
+            "flipkartSpecialPrice": {
+                "amount": 61200,
+                "currency": "INR"
+            },
+            "productUrl": "http://dl.flipkart.com/dl/alienware-r2-core-i7-16-gb-1-tb-hdd-256-gb-ssd-windows-10-8-graphics-z569952hin9-notebook/p/itmegh8m4rjtw9hz?pid=COMEGH8MH2RKKZ9G&affid=slidenerd",
+            "productBrand": "Alienware",
+            "inStock": false,
+            "codAvailable": false,
+            "discountPercentage": 0,
+            "offers": [
+                "Extra 10% off on this Laptop",
+                "Extra 5% off* on Axis Bank Buzz Credit Cards",
+                "Extra 15% Cashback* with Citi Cards"
+            ],
+            "categoryPath": "Computers>Laptops",
+            "attributes": {
+                "size": "",
+                "color": "Aluminium",
+                "storage": "",
+                "sizeUnit": "",
+                "displaySize": ""
+            }
+        },
+        "productShippingInfoV1": {
+            "shippingCharges": {
+                "amount": 0,
+                "currency": "INR"
+            },
+            "estimatedDeliveryTime": "",
+            "sellerName": "WS Retail",
+            "sellerAverageRating": 4.2291837,
+            "sellerNoOfRatings": 5820203,
+            "sellerNoOfReviews": 179038
+        },
+        "categorySpecificInfoV1": {
+            "keySpecs": [
+                "Intel Core i7 Processor",
+                "16 GB DDR4 RAM",
+                "64 bit Windows 10 Operating System",
+                "1 TB HDD|256 GB SSD",
+                "15.6 inch Display"
+            ],
+            "detailedSpecs": [
+                "Intel Core i7 Processor",
+                "16 GB DDR4 RAM",
+                "64 bit Windows 10 Operating System",
+                "1 TB HDD|256 GB SSD",
+                "15.6 inch Display"
+            ],
+            "specificationList": [
+                {
+                    "key": "General",
+                    "values": [
+                        {
+                            "key": "Sales Package",
+                            "value": [
+                                "Notebook, Battery, Power Adapter, Warranty Document"
+                            ]
+                        },
+                        {
+                            "key": "Model Number",
+                            "value": [
+                                "R2"
+                            ]
+                        },
+                        {
+                            "key": "Part Number",
+                            "value": [
+                                "Z569952HIN9"
+                            ]
+                        },
+                        {
+                            "key": "Model Name",
+                            "value": [
+                                "R2"
+                            ]
+                        },
+                        {
+                            "key": "Series",
+                            "value": [
+                                "R2"
+                            ]
+                        },
+                        {
+                            "key": "Color",
+                            "value": [
+                                "Aluminium"
+                            ]
+                        },
+                        {
+                            "key": "Type",
+                            "value": [
+                                "Notebook"
+                            ]
+                        },
+                        {
+                            "key": "Suitable For",
+                            "value": [
+                                "Gaming"
+                            ]
+                        },
+                        {
+                            "key": "Power Supply",
+                            "value": [
+                                "92 W AC Adapter"
+                            ]
+                        },
+                        {
+                            "key": "Battery Cell",
+                            "value": [
+                                "8 cell"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "Processor and Memory Features",
+                    "values": [
+                        {
+                            "key": "Dedicated Graphic Memory Type",
+                            "value": [
+                                "GDDR5"
+                            ]
+                        },
+                        {
+                            "key": "Dedicated Graphic Memory Capacity",
+                            "value": [
+                                "8 GB"
+                            ]
+                        },
+                        {
+                            "key": "Processor Brand",
+                            "value": [
+                                "Intel"
+                            ]
+                        },
+                        {
+                            "key": "Processor Name",
+                            "value": [
+                                "Core i7"
+                            ]
+                        },
+                        {
+                            "key": "Processor Generation",
+                            "value": [
+                                "6th Gen"
+                            ]
+                        },
+                        {
+                            "key": "Graphic Processor",
+                            "value": [
+                                "Nvidia Geforce Gtx 980M"
+                            ]
+                        },
+                        {
+                            "key": "SSD",
+                            "value": [
+                                "Yes"
+                            ]
+                        },
+                        {
+                            "key": "SSD Capacity",
+                            "value": [
+                                "256 GB"
+                            ]
+                        },
+                        {
+                            "key": "RAM",
+                            "value": [
+                                "16 GB"
+                            ]
+                        },
+                        {
+                            "key": "RAM Type",
+                            "value": [
+                                "DDR4"
+                            ]
+                        },
+                        {
+                            "key": "HDD Capacity",
+                            "value": [
+                                "1 TB"
+                            ]
+                        },
+                        {
+                            "key": "Processor Variant",
+                            "value": [
+                                "6700HQ"
+                            ]
+                        },
+                        {
+                            "key": "Clock Speed",
+                            "value": [
+                                "2.6 GHz with Turbo Boost Upto 3.5 GHz"
+                            ]
+                        },
+                        {
+                            "key": "Memory Slots",
+                            "value": [
+                                "2 Slots"
+                            ]
+                        },
+                        {
+                            "key": "RAM Frequency",
+                            "value": [
+                                "2133 MHz"
+                            ]
+                        },
+                        {
+                            "key": "Cache",
+                            "value": [
+                                "6 MB"
+                            ]
+                        },
+                        {
+                            "key": "RPM",
+                            "value": [
+                                "7200"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "Operating System",
+                    "values": [
+                        {
+                            "key": "OS Architecture",
+                            "value": [
+                                "64 bit"
+                            ]
+                        },
+                        {
+                            "key": "Operating System",
+                            "value": [
+                                "Windows 10"
+                            ]
+                        },
+                        {
+                            "key": "System Architecture",
+                            "value": [
+                                "64 bit"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "Port and Slot Features",
+                    "values": [
+                        {
+                            "key": "USB Port",
+                            "value": [
+                                "3 x USB 3.0"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "Display and Audio Features",
+                    "values": [
+                        {
+                            "key": "Touchscreen",
+                            "value": [
+                                "No"
+                            ]
+                        },
+                        {
+                            "key": "Screen Size",
+                            "value": [
+                                "15.6 inch"
+                            ]
+                        },
+                        {
+                            "key": "Screen Resolution",
+                            "value": [
+                                "1920 X 1080 pixel"
+                            ]
+                        },
+                        {
+                            "key": "Speakers",
+                            "value": [
+                                "Yes"
+                            ]
+                        },
+                        {
+                            "key": "Internal Mic",
+                            "value": [
+                                "Yes"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "Connectivity Features",
+                    "values": [
+                        {
+                            "key": "Wireless LAN",
+                            "value": [
+                                "Killer 1535 (IEEE 802.11ac 2x2)"
+                            ]
+                        },
+                        {
+                            "key": "Bluetooth",
+                            "value": [
+                                "v4.1"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "Additional Features",
+                    "values": [
+                        {
+                            "key": "Web Camera",
+                            "value": [
+                                "Yes"
+                            ]
+                        },
+                        {
+                            "key": "Antivirus",
+                            "value": [
+                                "Mcafee LiveSafe 12 Months"
+                            ]
+                        },
+                        {
+                            "key": "Keyboard",
+                            "value": [
+                                "Yes"
+                            ]
+                        },
+                        {
+                            "key": "Pointer Device",
+                            "value": [
+                                "Touchpad"
+                            ]
+                        },
+                        {
+                            "key": "Included Software",
+                            "value": [
+                                "Microsoft Office Trial"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "Warranty",
+                    "values": [
+                        {
+                            "key": "Warranty Summary",
+                            "value": [
+                                "1 Year Pro Support, NBD Onsite with Accidental Damage Service"
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "booksInfo": {
+                "language": null,
+                "binding": null,
+                "pages": null,
+                "publisher": null,
+                "year": 0,
+                "authors": []
+            },
+            "lifeStyleInfo": {
+                "sleeve": null,
+                "neck": null,
+                "idealFor": null
+            }
+        }
+    },
+    {
+        "productBaseInfoV1": {
+            "productId": "COMEKD2VDZN9YZDE",
+            "title": "Micromax Alpha Core i3 (5th Gen) - (6 GB/500 GB HDD/Windows 10) LI351568W LI351 Notebook",
+            "productDescription": "",
+            "imageUrls": {
+                "200x200": "http://img.fkcdn.com/image/computer/z/d/e/micromax-alpha-notebook-200x200-imaekrb2xqreft56.jpeg",
+                "400x400": "http://img.fkcdn.com/image/computer/z/d/e/micromax-alpha-notebook-400x400-imaekrb2xqreft56.jpeg",
+                "800x800": "http://img.fkcdn.com/image/computer/z/d/e/micromax-alpha-notebook-800x800-imaekrb2xqreft56.jpeg",
+                "unknown": "http://img.fkcdn.com/image/computer/z/d/e/micromax-alpha-notebook-original-imaekrb2xqreft56.jpeg"
+            },
+            "productFamily": [
+                "[COMEKD2VDZN9YZDE]"
+            ],
+            "maximumRetailPrice": {
+                "amount": 27000,
+                "currency": "INR"
+            },
+            "flipkartSellingPrice": {
+                "amount": 26990,
+                "currency": "INR"
+            },
+            "flipkartSpecialPrice": {
+                "amount": 23990,
+                "currency": "INR"
+            },
+            "productUrl": "http://dl.flipkart.com/dl/micromax-alpha-core-i3-5th-gen-6-gb-500-gb-hdd-windows-10-li351568w-li351-notebook/p/itmekd2veyqzh5qg?pid=COMEKD2VDZN9YZDE&affid=slidenerd",
+            "productBrand": "Micromax",
+            "inStock": true,
+            "codAvailable": true,
+            "discountPercentage": 0,
+            "offers": [
+                "Extra Rs. 3000 off on this Laptop",
+                "Flat Rs. 3000 off on Exchange",
+                "Extra 5% off* on Axis Bank Buzz Credit Cards",
+                "Extra 15% Cashback* with Citi Cards"
+            ],
+            "categoryPath": "Computers>Laptops",
+            "attributes": {
+                "size": "",
+                "color": "Grey",
+                "storage": "",
+                "sizeUnit": "",
+                "displaySize": ""
+            }
+        },
+        "productShippingInfoV1": {
+            "shippingCharges": {
+                "amount": 0,
+                "currency": "INR"
+            },
+            "estimatedDeliveryTime": "Usually Delivered in Sat Sep 10 23:59:59 IST 2016 - Sun Sep 11 23:59:59 IST 2016 days.",
+            "sellerName": "RetailNet",
+            "sellerAverageRating": 4.177347,
+            "sellerNoOfRatings": 55163,
+            "sellerNoOfReviews": 639
+        },
+        "categorySpecificInfoV1": {
+            "keySpecs": [
+                "Intel Core i3 (5th Gen) Processor",
+                "6 GB DDR3 RAM",
+                "64 bit Windows 10 Operating System",
+                "500 GB HDD",
+                "15.6 inch Display"
+            ],
+            "detailedSpecs": [
+                "Intel Core i3 (5th Gen) Processor",
+                "6 GB DDR3 RAM",
+                "64 bit Windows 10 Operating System",
+                "500 GB HDD",
+                "15.6 inch Display"
+            ],
+            "specificationList": [
+                {
+                    "key": "General",
+                    "values": [
+                        {
+                            "key": "Sales Package",
+                            "value": [
+                                "Laptop, Battery, Adapter, Warranty Document"
+                            ]
+                        },
+                        {
+                            "key": "Model Number",
+                            "value": [
+                                "LI351"
+                            ]
+                        },
+                        {
+                            "key": "Part Number",
+                            "value": [
+                                "LI351568W"
+                            ]
+                        },
+                        {
+                            "key": "Model Name",
+                            "value": [
+                                "Alpha"
+                            ]
+                        },
+                        {
+                            "key": "Series",
+                            "value": [
+                                "Alpha"
+                            ]
+                        },
+                        {
+                            "key": "Color",
+                            "value": [
+                                "Grey"
+                            ]
+                        },
+                        {
+                            "key": "Type",
+                            "value": [
+                                "Notebook"
+                            ]
+                        },
+                        {
+                            "key": "Suitable For",
+                            "value": [
+                                "Processing & Multitasking"
+                            ]
+                        },
+                        {
+                            "key": "Battery Backup",
+                            "value": [
+                                "Upto 4.7 hours"
+                            ]
+                        },
+                        {
+                            "key": "Battery Cell",
+                            "value": [
+                                "4 cell"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "Processor and Memory Features",
+                    "values": [
+                        {
+                            "key": "Processor Brand",
+                            "value": [
+                                "Intel"
+                            ]
+                        },
+                        {
+                            "key": "Processor Name",
+                            "value": [
+                                "Core i3 (5th Gen)"
+                            ]
+                        },
+                        {
+                            "key": "Graphic Processor",
+                            "value": [
+                                "Intel HD Graphics 5500"
+                            ]
+                        },
+                        {
+                            "key": "SSD",
+                            "value": [
+                                "No"
+                            ]
+                        },
+                        {
+                            "key": "RAM",
+                            "value": [
+                                "6 GB"
+                            ]
+                        },
+                        {
+                            "key": "RAM Type",
+                            "value": [
+                                "DDR3"
+                            ]
+                        },
+                        {
+                            "key": "HDD Capacity",
+                            "value": [
+                                "500 GB"
+                            ]
+                        },
+                        {
+                            "key": "Processor Variant",
+                            "value": [
+                                "5005U"
+                            ]
+                        },
+                        {
+                            "key": "Clock Speed",
+                            "value": [
+                                "1.6 Ghz"
+                            ]
+                        },
+                        {
+                            "key": "Cache",
+                            "value": [
+                                "3 MB"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "Operating System",
+                    "values": [
+                        {
+                            "key": "OS Architecture",
+                            "value": [
+                                "64 bit"
+                            ]
+                        },
+                        {
+                            "key": "Operating System",
+                            "value": [
+                                "Windows 10"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "Port and Slot Features",
+                    "values": [
+                        {
+                            "key": "RJ45",
+                            "value": [
+                                "Yes"
+                            ]
+                        },
+                        {
+                            "key": "USB Port",
+                            "value": [
+                                "2 x USB 2.0, 2 X USB 3.0"
+                            ]
+                        },
+                        {
+                            "key": "HDMI Port",
+                            "value": [
+                                "Yes"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "Display and Audio Features",
+                    "values": [
+                        {
+                            "key": "Touchscreen",
+                            "value": [
+                                "No"
+                            ]
+                        },
+                        {
+                            "key": "Screen Size",
+                            "value": [
+                                "15.6 inch"
+                            ]
+                        },
+                        {
+                            "key": "Screen Resolution",
+                            "value": [
+                                "1366 x 768 pixel"
+                            ]
+                        },
+                        {
+                            "key": "Screen Type",
+                            "value": [
+                                "Anti Glare LCD Display"
+                            ]
+                        },
+                        {
+                            "key": "Speakers",
+                            "value": [
+                                "Dual Speakers"
+                            ]
+                        },
+                        {
+                            "key": "Sound Properties",
+                            "value": [
+                                "Dual Speakers"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "Connectivity Features",
+                    "values": [
+                        {
+                            "key": "Wireless LAN",
+                            "value": [
+                                "IEEE 802.11b/g/n"
+                            ]
+                        },
+                        {
+                            "key": "Bluetooth",
+                            "value": [
+                                "V4.0"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "Additional Features",
+                    "values": [
+                        {
+                            "key": "Disk Drive",
+                            "value": [
+                                "Not Available"
+                            ]
+                        },
+                        {
+                            "key": "Web Camera",
+                            "value": [
+                                "Yes"
+                            ]
+                        },
+                        {
+                            "key": "Read/Write Speed",
+                            "value": [
+                                "NA"
+                            ]
+                        },
+                        {
+                            "key": "Keyboard",
+                            "value": [
+                                "Standard Keyboard"
+                            ]
+                        },
+                        {
+                            "key": "Pointer Device",
+                            "value": [
+                                "Touchpad"
+                            ]
+                        },
+                        {
+                            "key": "Additional Features",
+                            "value": [
+                                "External HDD Support"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "Warranty",
+                    "values": [
+                        {
+                            "key": "Warranty Summary",
+                            "value": [
+                                "1 Year Onsite Warranty"
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "booksInfo": {
+                "language": null,
+                "binding": null,
+                "pages": null,
+                "publisher": null,
+                "year": 0,
+                "authors": []
+            },
+            "lifeStyleInfo": {
+                "sleeve": null,
+                "neck": null,
+                "idealFor": null
+            }
+        }
+    },
+    {
+        "productBaseInfoV1": {
+            "productId": "COMEK6BXBVPVW2JD",
+            "title": "HP Spectre Core i7 (6th Gen) - (8 GB/512 GB SSD/Windows 10) W6T26PA#ACJ 13-v010TU Notebook",
+            "productDescription": "Carrying this laptop to your meetings and business trips is going to be comfortable and easy, thanks to its sleek profile. With a light weight of 1.11kgs, you won’t even feel like you have a laptop in your messenger bag. The laptop has a battery life of nine hours so you can use it for an entire working day. With Bang & Olufsen audio with quad speakers, the laptop gives you an immersive music listening experience, each time you need a break from work.  ",
+            "imageUrls": {
+                "200x200": "http://img.fkcdn.com/image/computer/2/j/d/hp-spectre-notebook-200x200-imaekrbysexecagk.jpeg",
+                "400x400": "http://img.fkcdn.com/image/computer/2/j/d/hp-spectre-notebook-400x400-imaekrbysexecagk.jpeg",
+                "800x800": "http://img.fkcdn.com/image/computer/2/j/d/hp-spectre-notebook-800x800-imaekrbysexecagk.jpeg",
+                "unknown": "http://img.fkcdn.com/image/computer/2/j/d/hp-spectre-notebook-original-imaekrbysexecagk.jpeg"
+            },
+            "productFamily": [
+                "[COMEK6BXBVPVW2JD]"
+            ],
+            "maximumRetailPrice": {
+                "amount": 146991,
+                "currency": "INR"
+            },
+            "flipkartSellingPrice": {
+                "amount": 146991,
+                "currency": "INR"
+            },
+            "flipkartSpecialPrice": {
+                "amount": 146991,
+                "currency": "INR"
+            },
+            "productUrl": "http://dl.flipkart.com/dl/hp-spectre-core-i7-6th-gen-8-gb-512-gb-ssd-windows-10-w6t26pa-acj-13-v010tu-notebook/p/itmek6bxfebkaefh?pid=COMEK6BXBVPVW2JD&affid=slidenerd",
+            "productBrand": "HP",
+            "inStock": false,
+            "codAvailable": false,
+            "discountPercentage": 0,
+            "offers": [
+                "Extra 5% off* on Axis Bank Buzz Credit Cards",
+                "Extra 15% Cashback* with Citi Cards"
+            ],
+            "categoryPath": "Computers>Laptops",
+            "attributes": {
+                "size": "",
+                "color": "Black",
+                "storage": "",
+                "sizeUnit": "",
+                "displaySize": ""
+            }
+        },
+        "productShippingInfoV1": {
+            "shippingCharges": {
+                "amount": 0,
+                "currency": "INR"
+            },
+            "estimatedDeliveryTime": "Usually Delivered in Sat Sep 10 23:59:59 IST 2016 - Sun Sep 11 23:59:59 IST 2016 days.",
+            "sellerName": "WS Retail",
+            "sellerAverageRating": 4.2291837,
+            "sellerNoOfRatings": 5820203,
+            "sellerNoOfReviews": 179038
+        },
+        "categorySpecificInfoV1": {
+            "keySpecs": [
+                "Intel Core i7 (6th Gen) Processor",
+                "8 GB DDR3 RAM",
+                "64 bit Windows 10 Operating System",
+                "512 GB SSD",
+                "13.3 inch Display"
+            ],
+            "detailedSpecs": [
+                "Intel Core i7 (6th Gen) Processor",
+                "8 GB DDR3 RAM",
+                "64 bit Windows 10 Operating System",
+                "512 GB SSD",
+                "13.3 inch Display"
+            ],
+            "specificationList": [
+                {
+                    "key": "General",
+                    "values": [
+                        {
+                            "key": "Sales Package",
+                            "value": [
+                                "Spectre Notebook , USB Type-C Power Adapter,USB Type-C to HDMI Adapter, USB Type-C to VGA Adapter, USB Type-C to RJ-45 Gigabit Adapter, USB Type-C to USB-Type-A dongle, Warranty Document"
+                            ]
+                        },
+                        {
+                            "key": "Model Number",
+                            "value": [
+                                "13-v010TU"
+                            ]
+                        },
+                        {
+                            "key": "Part Number",
+                            "value": [
+                                "W6T26PA#ACJ"
+                            ]
+                        },
+                        {
+                            "key": "Model Name",
+                            "value": [
+                                "Spectre"
+                            ]
+                        },
+                        {
+                            "key": "Series",
+                            "value": [
+                                "Spectre"
+                            ]
+                        },
+                        {
+                            "key": "Color",
+                            "value": [
+                                "Black"
+                            ]
+                        },
+                        {
+                            "key": "Type",
+                            "value": [
+                                "Notebook"
+                            ]
+                        },
+                        {
+                            "key": "Suitable For",
+                            "value": [
+                                "Processing & Multitasking, Travel & Business, Entertainment"
+                            ]
+                        },
+                        {
+                            "key": "Battery Backup",
+                            "value": [
+                                "Upto 9 hours"
+                            ]
+                        },
+                        {
+                            "key": "Power Supply",
+                            "value": [
+                                "45 W Adapter"
+                            ]
+                        },
+                        {
+                            "key": "Battery Cell",
+                            "value": [
+                                "4-cell, 38 Wh Li-ion"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "Processor and Memory Features",
+                    "values": [
+                        {
+                            "key": "Processor Brand",
+                            "value": [
+                                "Intel"
+                            ]
+                        },
+                        {
+                            "key": "Processor Name",
+                            "value": [
+                                "Core i7 (6th Gen)"
+                            ]
+                        },
+                        {
+                            "key": "Graphic Processor",
+                            "value": [
+                                "Intel HD Graphics 520"
+                            ]
+                        },
+                        {
+                            "key": "SSD",
+                            "value": [
+                                "Yes"
+                            ]
+                        },
+                        {
+                            "key": "SSD Capacity",
+                            "value": [
+                                "512 GB"
+                            ]
+                        },
+                        {
+                            "key": "RAM",
+                            "value": [
+                                "8 GB"
+                            ]
+                        },
+                        {
+                            "key": "RAM Type",
+                            "value": [
+                                "DDR3"
+                            ]
+                        },
+                        {
+                            "key": "Processor Variant",
+                            "value": [
+                                "6500U"
+                            ]
+                        },
+                        {
+                            "key": "Clock Speed",
+                            "value": [
+                                "2.5 GHz with Turbo Boost Upto 3.1 GHz"
+                            ]
+                        },
+                        {
+                            "key": "RAM Frequency",
+                            "value": [
+                                "1866 MHz"
+                            ]
+                        },
+                        {
+                            "key": "Cache",
+                            "value": [
+                                "4 MB"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "Operating System",
+                    "values": [
+                        {
+                            "key": "OS Architecture",
+                            "value": [
+                                "64 bit"
+                            ]
+                        },
+                        {
+                            "key": "Operating System",
+                            "value": [
+                                "Windows 10"
+                            ]
+                        },
+                        {
+                            "key": "System Architecture",
+                            "value": [
+                                "64 bit"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "Port and Slot Features",
+                    "values": [
+                        {
+                            "key": "Mic In",
+                            "value": [
+                                "Yes"
+                            ]
+                        },
+                        {
+                            "key": "USB Port",
+                            "value": [
+                                "2 x USB 3.1 Type-C (Gen 2) with Thunderbolt Gen 3 Technology, 1 x USB 3.1 Type-C (Gen 1)"
+                            ]
+                        },
+                        {
+                            "key": "HDMI Port",
+                            "value": [
+                                "HDMI Port (v1.4) Out Support Through Dongle"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "Display and Audio Features",
+                    "values": [
+                        {
+                            "key": "Touchscreen",
+                            "value": [
+                                "No"
+                            ]
+                        },
+                        {
+                            "key": "Screen Size",
+                            "value": [
+                                "13.3 inch"
+                            ]
+                        },
+                        {
+                            "key": "Screen Resolution",
+                            "value": [
+                                "1920 x 1080 pixel"
+                            ]
+                        },
+                        {
+                            "key": "Screen Type",
+                            "value": [
+                                "Full HD LED Backlit Edge-to-edge Gorilla Glass 4 BrightView Display"
+                            ]
+                        },
+                        {
+                            "key": "Speakers",
+                            "value": [
+                                "Quad Speakers"
+                            ]
+                        },
+                        {
+                            "key": "Internal Mic",
+                            "value": [
+                                "Dual Array Digital Microphones"
+                            ]
+                        },
+                        {
+                            "key": "Sound Properties",
+                            "value": [
+                                "Bang and Olufsen Audio, HP Audio Boost Smart Amp, True Audio Perfection"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "Connectivity Features",
+                    "values": [
+                        {
+                            "key": "Wireless LAN",
+                            "value": [
+                                "IEEE 802.11ac"
+                            ]
+                        },
+                        {
+                            "key": "Bluetooth",
+                            "value": [
+                                "v4.2"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "Dimensions",
+                    "values": [
+                        {
+                            "key": "Dimensions",
+                            "value": [
+                                "325.12 x 229.36 x 10.41 mm"
+                            ]
+                        },
+                        {
+                            "key": "Weight",
+                            "value": [
+                                "1.11 kg"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "Additional Features",
+                    "values": [
+                        {
+                            "key": "Web Camera",
+                            "value": [
+                                "HP TrueVision HD Webcam"
+                            ]
+                        },
+                        {
+                            "key": "Keyboard",
+                            "value": [
+                                "Backlit Island-style Keyboard"
+                            ]
+                        },
+                        {
+                            "key": "Pointer Device",
+                            "value": [
+                                "HP Imagepad with Glass Surface Multi-Touch Gesture Support"
+                            ]
+                        },
+                        {
+                            "key": "Included Software",
+                            "value": [
+                                "Recovery Manager Installer for Windows 10"
+                            ]
+                        },
+                        {
+                            "key": "Additional Features",
+                            "value": [
+                                "Crafted with Durable Aluminum and Carbon Fiber, Artfully Crafted Piston Hinge Design for Nearly Hingeless Look, Hyperbaric Cooling Technology, 72% Colour Gamut, 300 nits Brightness, 16:9 Ultra Wide Aspect Ratio, Flush Glass with Direct Bonding, Intel WiDi, Miracast Certified, Intel Alpine Ridge DP Design"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "Warranty",
+                    "values": [
+                        {
+                            "key": "Warranty Summary",
+                            "value": [
+                                "1 Year Limited Parts and Labour Warranty"
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "booksInfo": {
+                "language": null,
+                "binding": null,
+                "pages": null,
+                "publisher": null,
+                "year": 0,
+                "authors": []
+            },
+            "lifeStyleInfo": {
+                "sleeve": null,
+                "neck": null,
+                "idealFor": null
+            }
+        }
+    },
+    {
+        "productBaseInfoV1": {
+            "productId": "COMEDMWCBGWZTYVS",
+            "title": "Acer Chromebook Celeron Dual Core - (2 GB/32 GB EMMC HDD/32 GB EMMC Storage/Chrome OS) NX.MRCSI.003 C730-C890 Netbook",
+            "productDescription": "The Acer Chromebook is designed for everyone. You can invest in this sleek and compact laptop and ensure that your work, entertainment, and general computing is quick, seamless, and lag-free.",
+            "imageUrls": {
+                "200x200": "http://img.fkcdn.com/image/computer/y/v/s/acer-chromebook-netbook-200x200-imaeef82zye3ekca.jpeg",
+                "400x400": "http://img.fkcdn.com/image/computer/y/v/s/acer-chromebook-netbook-400x400-imaeef82zye3ekca.jpeg",
+                "800x800": "http://img.fkcdn.com/image/computer/y/v/s/acer-chromebook-netbook-800x800-imaeef82zye3ekca.jpeg",
+                "unknown": "http://img.fkcdn.com/image/computer/y/v/s/acer-chromebook-netbook-original-imaeef82zye3ekca.jpeg"
+            },
+            "productFamily": [
+                "[COMEDMWCBGWZTYVS]"
+            ],
+            "maximumRetailPrice": {
+                "amount": 17499,
+                "currency": "INR"
+            },
+            "flipkartSellingPrice": {
+                "amount": 16990,
+                "currency": "INR"
+            },
+            "flipkartSpecialPrice": {
+                "amount": 14990,
+                "currency": "INR"
+            },
+            "productUrl": "http://dl.flipkart.com/dl/acer-chromebook-celeron-dual-core-2-gb-32-gb-emmc-hdd-32-storage-chrome-os-nx-mrcsi-003-c730-c890-netbook/p/itmedmwctnyfvwsh?pid=COMEDMWCBGWZTYVS&affid=slidenerd",
+            "productBrand": "Acer",
+            "inStock": true,
+            "codAvailable": true,
+            "discountPercentage": 11,
+            "offers": [
+                "Extra Rs. 2000 off on this Laptop",
+                "Flat Rs. 3000 off on Exchange",
+                "Extra 5% off* on Axis Bank Buzz Credit Cards",
+                "Extra 15% Cashback* with Citi Cards"
+            ],
+            "categoryPath": "Computers>Laptops",
+            "attributes": {
+                "size": "",
+                "color": "Granite Grey",
+                "storage": "",
+                "sizeUnit": "",
+                "displaySize": ""
+            }
+        },
+        "productShippingInfoV1": {
+            "shippingCharges": {
+                "amount": 0,
+                "currency": "INR"
+            },
+            "estimatedDeliveryTime": "Usually Delivered in Sat Sep 10 23:59:59 IST 2016 - Sun Sep 11 23:59:59 IST 2016 days.",
+            "sellerName": "RetailNet",
+            "sellerAverageRating": 4.177347,
+            "sellerNoOfRatings": 55163,
+            "sellerNoOfReviews": 639
+        },
+        "categorySpecificInfoV1": {
+            "keySpecs": [
+                "Intel Celeron Dual Core Processor",
+                "2 GB DDR3 RAM",
+                "Chrome OS Operating System",
+                "32 GB EMMC HDD",
+                "11.6 inch Display"
+            ],
+            "detailedSpecs": [
+                "Intel Celeron Dual Core Processor",
+                "2 GB DDR3 RAM",
+                "Chrome OS Operating System",
+                "32 GB EMMC HDD",
+                "11.6 inch Display"
+            ],
+            "specificationList": [
+                {
+                    "key": "General",
+                    "values": [
+                        {
+                            "key": "Sales Package",
+                            "value": [
+                                "Laptop, Battery, AC Adapter"
+                            ]
+                        },
+                        {
+                            "key": "Model Number",
+                            "value": [
+                                "C730-C890"
+                            ]
+                        },
+                        {
+                            "key": "Part Number",
+                            "value": [
+                                "NX.MRCSI.003"
+                            ]
+                        },
+                        {
+                            "key": "Model Name",
+                            "value": [
+                                "Chromebook"
+                            ]
+                        },
+                        {
+                            "key": "Series",
+                            "value": [
+                                "Chromebook"
+                            ]
+                        },
+                        {
+                            "key": "Color",
+                            "value": [
+                                "Granite Grey"
+                            ]
+                        },
+                        {
+                            "key": "Type",
+                            "value": [
+                                "Netbook"
+                            ]
+                        },
+                        {
+                            "key": "Suitable For",
+                            "value": [
+                                "Everyday Use"
+                            ]
+                        },
+                        {
+                            "key": "Battery Backup",
+                            "value": [
+                                "Upto 8 hours"
+                            ]
+                        },
+                        {
+                            "key": "Power Supply",
+                            "value": [
+                                "45 W AC Adapter"
+                            ]
+                        },
+                        {
+                            "key": "Battery Cell",
+                            "value": [
+                                "3 cell"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "Processor and Memory Features",
+                    "values": [
+                        {
+                            "key": "Processor Brand",
+                            "value": [
+                                "Intel"
+                            ]
+                        },
+                        {
+                            "key": "Processor Name",
+                            "value": [
+                                "Celeron Dual Core"
+                            ]
+                        },
+                        {
+                            "key": "Graphic Processor",
+                            "value": [
+                                "Intel HD Graphics"
+                            ]
+                        },
+                        {
+                            "key": "SSD",
+                            "value": [
+                                "No"
+                            ]
+                        },
+                        {
+                            "key": "RAM",
+                            "value": [
+                                "2 GB"
+                            ]
+                        },
+                        {
+                            "key": "RAM Type",
+                            "value": [
+                                "DDR3"
+                            ]
+                        },
+                        {
+                            "key": "HDD Capacity",
+                            "value": [
+                                "32 GB EMMC"
+                            ]
+                        },
+                        {
+                            "key": "EMMC Storage Capacity",
+                            "value": [
+                                "32 GB"
+                            ]
+                        },
+                        {
+                            "key": "Processor Variant",
+                            "value": [
+                                "N2840"
+                            ]
+                        },
+                        {
+                            "key": "Clock Speed",
+                            "value": [
+                                "2.16 GHz with Turbo Boost Upto 2.58 GHz"
+                            ]
+                        },
+                        {
+                            "key": "Cache",
+                            "value": [
+                                "1 MB"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "Operating System",
+                    "values": [
+                        {
+                            "key": "Operating System",
+                            "value": [
+                                "Chrome OS"
+                            ]
+                        },
+                        {
+                            "key": "System Architecture",
+                            "value": [
+                                "64-bit"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "Port and Slot Features",
+                    "values": [
+                        {
+                            "key": "USB Port",
+                            "value": [
+                                "1 x USB 3.0, 1 x USB 2.0"
+                            ]
+                        },
+                        {
+                            "key": "HDMI Port",
+                            "value": [
+                                "Yes"
+                            ]
+                        },
+                        {
+                            "key": "Multi Card Slot",
+                            "value": [
+                                "SD Card Reader"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "Display and Audio Features",
+                    "values": [
+                        {
+                            "key": "Touchscreen",
+                            "value": [
+                                "No"
+                            ]
+                        },
+                        {
+                            "key": "Screen Size",
+                            "value": [
+                                "11.6 inch"
+                            ]
+                        },
+                        {
+                            "key": "Screen Resolution",
+                            "value": [
+                                "1366 X 768 pixel"
+                            ]
+                        },
+                        {
+                            "key": "Screen Type",
+                            "value": [
+                                "HD High Brightness LED Backlit TFT LCD ComfyView Display"
+                            ]
+                        },
+                        {
+                            "key": "Speakers",
+                            "value": [
+                                "Yes"
+                            ]
+                        },
+                        {
+                            "key": "Internal Mic",
+                            "value": [
+                                "Built-in Microphone"
+                            ]
+                        },
+                        {
+                            "key": "Sound Properties",
+                            "value": [
+                                "Two Built-in Stereo Speakers"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "Connectivity Features",
+                    "values": [
+                        {
+                            "key": "Wireless LAN",
+                            "value": [
+                                "IEEE 802.11b/g/n/ac/a"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "Dimensions",
+                    "values": [
+                        {
+                            "key": "Dimensions",
+                            "value": [
+                                "302.6 x 206.6 x 21.75 mm"
+                            ]
+                        },
+                        {
+                            "key": "Weight",
+                            "value": [
+                                "1.44 kg"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "Additional Features",
+                    "values": [
+                        {
+                            "key": "Web Camera",
+                            "value": [
+                                "HD Webcam"
+                            ]
+                        },
+                        {
+                            "key": "Keyboard",
+                            "value": [
+                                "Spill Resistant Chiclet Keyboard"
+                            ]
+                        },
+                        {
+                            "key": "Pointer Device",
+                            "value": [
+                                "MultiGesture Touchpad"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "Warranty",
+                    "values": [
+                        {
+                            "key": "Warranty Summary",
+                            "value": [
+                                "1 Year International Travelers Warranty"
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "booksInfo": {
+                "language": null,
+                "binding": null,
+                "pages": null,
+                "publisher": null,
+                "year": 0,
+                "authors": []
+            },
+            "lifeStyleInfo": {
+                "sleeve": null,
+                "neck": null,
+                "idealFor": null
+            }
+        }
+    },
+    {
+        "productBaseInfoV1": {
+            "productId": "COMEKD2VHDMKX4HM",
+            "title": "Micromax Ignite Pentium Quad Core - (4 GB/1 TB HDD/Windows 10) LPQ61408W LPQ61 Notebook",
+            "productDescription": "The Micromax Ignite laptop is an ideal investment for your college-going son. Running on a Quad-core processor and a 4GB RAM, your son can get all hi college work done quickly and efficiently. The laptop can also double up as an entertainment unit.",
+            "imageUrls": {
+                "200x200": "http://img.fkcdn.com/image/computer/4/h/m/micromax-ignite-notebook-200x200-imaekrb2uzhtuqvb.jpeg",
+                "400x400": "http://img.fkcdn.com/image/computer/4/h/m/micromax-ignite-notebook-400x400-imaekrb2uzhtuqvb.jpeg",
+                "800x800": "http://img.fkcdn.com/image/computer/4/h/m/micromax-ignite-notebook-800x800-imaekrb2uzhtuqvb.jpeg",
+                "unknown": "http://img.fkcdn.com/image/computer/4/h/m/micromax-ignite-notebook-original-imaekrb2uzhtuqvb.jpeg"
+            },
+            "productFamily": [
+                "[COMEKD2VHDMKX4HM]"
+            ],
+            "maximumRetailPrice": {
+                "amount": 21699,
+                "currency": "INR"
+            },
+            "flipkartSellingPrice": {
+                "amount": 18990,
+                "currency": "INR"
+            },
+            "flipkartSpecialPrice": {
+                "amount": 16490,
+                "currency": "INR"
+            },
+            "productUrl": "http://dl.flipkart.com/dl/micromax-ignite-pentium-quad-core-4-gb-1-tb-hdd-windows-10-lpq61408w-lpq61-notebook/p/itmekd2vx8ggmyma?pid=COMEKD2VHDMKX4HM&affid=slidenerd",
+            "productBrand": "Micromax",
+            "inStock": true,
+            "codAvailable": true,
+            "discountPercentage": 12,
+            "offers": [
+                "Extra Rs. 2500 off on this Laptop",
+                "Flat Rs. 3000 off on Exchange",
+                "Extra 5% off* on Axis Bank Buzz Credit Cards",
+                "Extra 15% Cashback* with Citi Cards"
+            ],
+            "categoryPath": "Computers>Laptops",
+            "attributes": {
+                "size": "",
+                "color": "Black",
+                "storage": "",
+                "sizeUnit": "",
+                "displaySize": ""
+            }
+        },
+        "productShippingInfoV1": {
+            "shippingCharges": {
+                "amount": 0,
+                "currency": "INR"
+            },
+            "estimatedDeliveryTime": "Usually Delivered in Sat Sep 10 23:59:59 IST 2016 - Sun Sep 11 23:59:59 IST 2016 days.",
+            "sellerName": "RetailNet",
+            "sellerAverageRating": 4.1773405,
+            "sellerNoOfRatings": 55165,
+            "sellerNoOfReviews": 639
+        },
+        "categorySpecificInfoV1": {
+            "keySpecs": [
+                "Intel Pentium Quad Core Processor",
+                "4 GB DDR3 RAM",
+                "64 bit Windows 10 Operating System",
+                "1 TB HDD",
+                "14 inch Display"
+            ],
+            "detailedSpecs": [
+                "Intel Pentium Quad Core Processor",
+                "4 GB DDR3 RAM",
+                "64 bit Windows 10 Operating System",
+                "1 TB HDD",
+                "14 inch Display"
+            ],
+            "specificationList": [
+                {
+                    "key": "General",
+                    "values": [
+                        {
+                            "key": "Sales Package",
+                            "value": [
+                                "Laptop, Battery, Adapter, Warranty Document"
+                            ]
+                        },
+                        {
+                            "key": "Model Number",
+                            "value": [
+                                "LPQ61"
+                            ]
+                        },
+                        {
+                            "key": "Part Number",
+                            "value": [
+                                "LPQ61408W"
+                            ]
+                        },
+                        {
+                            "key": "Model Name",
+                            "value": [
+                                "Ignite"
+                            ]
+                        },
+                        {
+                            "key": "Series",
+                            "value": [
+                                "Ignite"
+                            ]
+                        },
+                        {
+                            "key": "Color",
+                            "value": [
+                                "Black"
+                            ]
+                        },
+                        {
+                            "key": "Type",
+                            "value": [
+                                "Notebook"
+                            ]
+                        },
+                        {
+                            "key": "Suitable For",
+                            "value": [
+                                "Everyday Use"
+                            ]
+                        },
+                        {
+                            "key": "Battery Cell",
+                            "value": [
+                                "4500 mAh"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "Processor and Memory Features",
+                    "values": [
+                        {
+                            "key": "Processor Brand",
+                            "value": [
+                                "Intel"
+                            ]
+                        },
+                        {
+                            "key": "Processor Name",
+                            "value": [
+                                "Pentium Quad Core"
+                            ]
+                        },
+                        {
+                            "key": "Graphic Processor",
+                            "value": [
+                                "Intel HD Graphics"
+                            ]
+                        },
+                        {
+                            "key": "SSD",
+                            "value": [
+                                "No"
+                            ]
+                        },
+                        {
+                            "key": "RAM",
+                            "value": [
+                                "4 GB"
+                            ]
+                        },
+                        {
+                            "key": "RAM Type",
+                            "value": [
+                                "DDR3"
+                            ]
+                        },
+                        {
+                            "key": "HDD Capacity",
+                            "value": [
+                                "1 TB"
+                            ]
+                        },
+                        {
+                            "key": "Processor Variant",
+                            "value": [
+                                "N3700"
+                            ]
+                        },
+                        {
+                            "key": "Clock Speed",
+                            "value": [
+                                "1.6 GHz with Turbo Boost Upto 2.4 Ghz"
+                            ]
+                        },
+                        {
+                            "key": "Cache",
+                            "value": [
+                                "2 MB"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "Operating System",
+                    "values": [
+                        {
+                            "key": "OS Architecture",
+                            "value": [
+                                "64 bit"
+                            ]
+                        },
+                        {
+                            "key": "Operating System",
+                            "value": [
+                                "Windows 10"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "Port and Slot Features",
+                    "values": [
+                        {
+                            "key": "RJ45",
+                            "value": [
+                                "Yes"
+                            ]
+                        },
+                        {
+                            "key": "USB Port",
+                            "value": [
+                                "2 x USB 3.0"
+                            ]
+                        },
+                        {
+                            "key": "HDMI Port",
+                            "value": [
+                                "Micro HDMI"
+                            ]
+                        },
+                        {
+                            "key": "Multi Card Slot",
+                            "value": [
+                                "Micro Card Reader"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "Display and Audio Features",
+                    "values": [
+                        {
+                            "key": "Touchscreen",
+                            "value": [
+                                "No"
+                            ]
+                        },
+                        {
+                            "key": "Screen Size",
+                            "value": [
+                                "14 inch"
+                            ]
+                        },
+                        {
+                            "key": "Screen Resolution",
+                            "value": [
+                                "1366 x 768 pixel"
+                            ]
+                        },
+                        {
+                            "key": "Screen Type",
+                            "value": [
+                                "HD LED Backlit Display"
+                            ]
+                        },
+                        {
+                            "key": "Speakers",
+                            "value": [
+                                "Dual Speakers"
+                            ]
+                        },
+                        {
+                            "key": "Sound Properties",
+                            "value": [
+                                "Dual Speakers"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "Connectivity Features",
+                    "values": [
+                        {
+                            "key": "Wireless LAN",
+                            "value": [
+                                "IEEE 802.11b/g/n"
+                            ]
+                        },
+                        {
+                            "key": "Bluetooth",
+                            "value": [
+                                "V4.0"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "Additional Features",
+                    "values": [
+                        {
+                            "key": "Web Camera",
+                            "value": [
+                                "1 Megapixel HD Webcam"
+                            ]
+                        },
+                        {
+                            "key": "Keyboard",
+                            "value": [
+                                "Standard Keyboard"
+                            ]
+                        },
+                        {
+                            "key": "Pointer Device",
+                            "value": [
+                                "Touchpad"
+                            ]
+                        },
+                        {
+                            "key": "Additional Features",
+                            "value": [
+                                "External HDD Support"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "Warranty",
+                    "values": [
+                        {
+                            "key": "Warranty Summary",
+                            "value": [
+                                "1 Year Onsite Warranty"
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "booksInfo": {
+                "language": null,
+                "binding": null,
+                "pages": null,
+                "publisher": null,
+                "year": 0,
+                "authors": []
+            },
+            "lifeStyleInfo": {
+                "sleeve": null,
+                "neck": null,
+                "idealFor": null
+            }
+        }
+    }
+]

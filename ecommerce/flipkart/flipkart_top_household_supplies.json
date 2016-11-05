@@ -1,0 +1,3603 @@
+[
+    {
+        "productBaseInfoV1": {
+            "productId": "LDGE8PD7RPUD5PAW",
+            "title": "Natural Care Laundry Liquid Detergent",
+            "productDescription": "Introducing Clean Clothes Done Naturally. Make Your Giant Pile Of Laundry Disappear With Our Natural Laundry Detergent! It’S Tough On Dirt And Stains — And Tested For Sensitive Skin. A Powerful Combination Of Naturally Derived Cleaning Ingredients Will Leave Your Clothes, Towels And Linens Fresh And Clean — Without Phosphates, Optical Brighteners Or Harsh Chemical Residue. Formulated For Both Standard And High-Efficiency (He) Washing Machines",
+            "imageUrls": {
+                "200x200": "http://img.fkcdn.com/image/liquid-detergent/p/a/w/natural-care-160-1-laundry-200x200-imae8p2wvh3zevyf.jpeg",
+                "400x400": "http://img.fkcdn.com/image/liquid-detergent/p/a/w/natural-care-160-1-laundry-400x400-imae8p2wvh3zevyf.jpeg",
+                "800x800": "http://img.fkcdn.com/image/liquid-detergent/p/a/w/natural-care-160-1-laundry-800x800-imae8p2wvh3zevyf.jpeg",
+                "unknown": "http://img.fkcdn.com/image/liquid-detergent/p/a/w/natural-care-160-1-laundry-original-imae8p2wvh3zevyf.jpeg"
+            },
+            "productFamily": [
+                "[LDGE8PD7RPUD5PAW]"
+            ],
+            "maximumRetailPrice": {
+                "amount": 1550,
+                "currency": "INR"
+            },
+            "flipkartSellingPrice": {
+                "amount": 1450,
+                "currency": "INR"
+            },
+            "flipkartSpecialPrice": {
+                "amount": 1450,
+                "currency": "INR"
+            },
+            "productUrl": "http://dl.flipkart.com/dl/natural-care-laundry-liquid-detergent/p/itme8pd7fhxn2hkm?pid=LDGE8PD7RPUD5PAW&affid=slidenerd",
+            "productBrand": "Natural Care",
+            "inStock": true,
+            "codAvailable": true,
+            "discountPercentage": 6,
+            "offers": [],
+            "categoryPath": "Household>Housekeeping & Laundry>Laundry>Liquid Detergents",
+            "attributes": {
+                "size": "",
+                "color": "",
+                "storage": "",
+                "sizeUnit": "",
+                "displaySize": ""
+            }
+        },
+        "productShippingInfoV1": {
+            "shippingCharges": {
+                "amount": 0,
+                "currency": "INR"
+            },
+            "estimatedDeliveryTime": "Usually Delivered in Wed Aug 24 23:59:59 IST 2016 - Thu Aug 25 23:59:59 IST 2016 days.",
+            "sellerName": "THESGSTORE",
+            "sellerAverageRating": 3.6666667,
+            "sellerNoOfRatings": 6,
+            "sellerNoOfReviews": 0
+        },
+        "categorySpecificInfoV1": {
+            "keySpecs": [
+                "No Optical Brighteners",
+                "Phosphates Free",
+                "Hypoallergenic"
+            ],
+            "detailedSpecs": [
+                "No Optical Brighteners",
+                "Phosphates Free",
+                "Hypoallergenic"
+            ],
+            "specificationList": [
+                {
+                    "key": "In the box",
+                    "values": [
+                        {
+                            "key": "Pack of",
+                            "value": [
+                                "1"
+                            ]
+                        },
+                        {
+                            "key": "Sales Package",
+                            "value": [
+                                "1 Liquid Detergent"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "General",
+                    "values": [
+                        {
+                            "key": "Brand",
+                            "value": [
+                                "Natural Care"
+                            ]
+                        },
+                        {
+                            "key": "Model Name",
+                            "value": [
+                                "Laundry"
+                            ]
+                        },
+                        {
+                            "key": "Quantity",
+                            "value": [
+                                "160 loads"
+                            ]
+                        },
+                        {
+                            "key": "Fragrance",
+                            "value": [
+                                "Fresh Flower"
+                            ]
+                        },
+                        {
+                            "key": "Composition",
+                            "value": [
+                                "Non Ionic Surfacants And A Very Small Portion Of Ionic Surfacants"
+                            ]
+                        },
+                        {
+                            "key": "Usage Instructions",
+                            "value": [
+                                "Start Washer, Fill Cap To 30ml For Medium Loads Or 40 Ml For Large Loads. Use More For Heavily Soiled Loads, Add Detergent To Washer, Add Clothes."
+                            ]
+                        },
+                        {
+                            "key": "Container Type",
+                            "value": [
+                                "Bottle"
+                            ]
+                        },
+                        {
+                            "key": "Quantity per Load",
+                            "value": [
+                                "30 Ml For 6 Kg Load & 40 Ml For 8 Kg Load"
+                            ]
+                        },
+                        {
+                            "key": "Compatible With",
+                            "value": [
+                                "Washing Machines, Front Load Washing Machines"
+                            ]
+                        },
+                        {
+                            "key": "Chemical Free",
+                            "value": [
+                                "Yes"
+                            ]
+                        },
+                        {
+                            "key": "Biodegradable",
+                            "value": [
+                                "Yes"
+                            ]
+                        },
+                        {
+                            "key": "Color Safe",
+                            "value": [
+                                "Yes"
+                            ]
+                        },
+                        {
+                            "key": "Skin Friendly",
+                            "value": [
+                                "Yes"
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "booksInfo": {
+                "language": null,
+                "binding": null,
+                "pages": null,
+                "publisher": null,
+                "year": 0,
+                "authors": []
+            },
+            "lifeStyleInfo": {
+                "sleeve": null,
+                "neck": null,
+                "idealFor": null
+            }
+        }
+    },
+    {
+        "productBaseInfoV1": {
+            "productId": "TCNEDE7FW62A4HRM",
+            "title": "Cleanmax CM02 5L Regular Toilet Cleaner",
+            "productDescription": "",
+            "imageUrls": {
+                "200x200": "http://img.fkcdn.com/image/bathroom-floor-cleaner/b/g/t/rose-cleanmax-5-5l-toilet-bowl-200x200-imaedd4jxzdvgmnp.jpeg",
+                "400x400": "http://img.fkcdn.com/image/bathroom-floor-cleaner/b/g/t/rose-cleanmax-5-5l-toilet-bowl-400x400-imaedd4jxzdvgmnp.jpeg",
+                "800x800": "http://img.fkcdn.com/image/bathroom-floor-cleaner/b/g/t/rose-cleanmax-5-5l-toilet-bowl-800x800-imaedd4jxzdvgmnp.jpeg",
+                "unknown": "http://img.fkcdn.com/image/bathroom-floor-cleaner/b/g/t/rose-cleanmax-5-5l-toilet-bowl-original-imaedd4jxzdvgmnp.jpeg"
+            },
+            "productFamily": [
+                "[TCNEDE7FW62A4HRM]"
+            ],
+            "maximumRetailPrice": {
+                "amount": 1699,
+                "currency": "INR"
+            },
+            "flipkartSellingPrice": {
+                "amount": 1049,
+                "currency": "INR"
+            },
+            "flipkartSpecialPrice": {
+                "amount": 1049,
+                "currency": "INR"
+            },
+            "productUrl": "http://dl.flipkart.com/dl/cleanmax-cm02-5l-regular-toilet-cleaner/p/itmede7fndggdfsr?pid=TCNEDE7FW62A4HRM&affid=slidenerd",
+            "productBrand": "Cleanmax",
+            "inStock": true,
+            "codAvailable": true,
+            "discountPercentage": 38,
+            "offers": [],
+            "categoryPath": "Daily Essentials>Household Supplies>Home Cleaning>Toilet Cleaners",
+            "attributes": {
+                "size": "",
+                "color": "",
+                "storage": "",
+                "sizeUnit": "",
+                "displaySize": ""
+            }
+        },
+        "productShippingInfoV1": {
+            "shippingCharges": {
+                "amount": 100,
+                "currency": "INR"
+            },
+            "estimatedDeliveryTime": "Usually Delivered in Thu Aug 25 23:59:59 IST 2016 - Fri Aug 26 23:59:59 IST 2016 days.",
+            "sellerName": "Cleanmaxindia",
+            "sellerAverageRating": 3.6363637,
+            "sellerNoOfRatings": 11,
+            "sellerNoOfReviews": 1
+        },
+        "categorySpecificInfoV1": {
+            "keySpecs": [
+                "High Performance",
+                "Eco-Friendly",
+                "Stain Remover",
+                "Biodegradable"
+            ],
+            "detailedSpecs": [
+                "High Performance",
+                "Eco-Friendly",
+                "Stain Remover",
+                "Biodegradable"
+            ],
+            "specificationList": [
+                {
+                    "key": "In the box",
+                    "values": [
+                        {
+                            "key": "Pack of",
+                            "value": [
+                                "1"
+                            ]
+                        },
+                        {
+                            "key": "Sales Package",
+                            "value": [
+                                "1 Toilet Cleaner"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "General",
+                    "values": [
+                        {
+                            "key": "Brand",
+                            "value": [
+                                "Cleanmax"
+                            ]
+                        },
+                        {
+                            "key": "Model Name",
+                            "value": [
+                                "CM02 5L"
+                            ]
+                        },
+                        {
+                            "key": "Quantity",
+                            "value": [
+                                "5 L"
+                            ]
+                        },
+                        {
+                            "key": "Type",
+                            "value": [
+                                "Liquid"
+                            ]
+                        },
+                        {
+                            "key": "Container Type",
+                            "value": [
+                                "Bottle"
+                            ]
+                        },
+                        {
+                            "key": "Used For",
+                            "value": [
+                                "Germs, Fungi, Limescale, Odor, Stains"
+                            ]
+                        },
+                        {
+                            "key": "Fragrance",
+                            "value": [
+                                "Regular"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "Additonal Features",
+                    "values": [
+                        {
+                            "key": "Usage Instructions",
+                            "value": [
+                                "Toilet Cleaner, Toilet Tile Clean, Porcelain Wash Basin Cleaning, Tile Floors. Free From Fumes And Easy To Apply And To Remove Stubborn-Stains And Protects From Germs 500 Times Stronger Than Phenyls."
+                            ]
+                        },
+                        {
+                            "key": "Other Features",
+                            "value": [
+                                "Use for cleaning all types of floors (marble, wood, granite, glass, laminate, glass, etc), De-greasing, deep-cleaning and odor control, Immediate and long lasting results, Saves water, labor and time, Multipurpose applications, Bio-enzymatic, Contains NO chemicals, Environment friendly, Fully biodegradable, Non toxic and non-corrosive"
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "booksInfo": {
+                "language": null,
+                "binding": null,
+                "pages": null,
+                "publisher": null,
+                "year": 0,
+                "authors": []
+            },
+            "lifeStyleInfo": {
+                "sleeve": null,
+                "neck": null,
+                "idealFor": null
+            }
+        }
+    },
+    {
+        "productBaseInfoV1": {
+            "productId": "TCNEDE73GQZ8YYTY",
+            "title": "Cleanmax CM01 500ml Regular Toilet Cleaner",
+            "productDescription": "",
+            "imageUrls": {
+                "200x200": "http://img.fkcdn.com/image/toilet-cleaner/y/t/y/cleanmax-500-cm01-500ml-200x200-imaede2v8ec9bbmz.jpeg",
+                "400x400": "http://img.fkcdn.com/image/toilet-cleaner/y/t/y/cleanmax-500-cm01-500ml-400x400-imaede2v8ec9bbmz.jpeg",
+                "800x800": "http://img.fkcdn.com/image/toilet-cleaner/y/t/y/cleanmax-500-cm01-500ml-800x800-imaede2v8ec9bbmz.jpeg",
+                "unknown": "http://img.fkcdn.com/image/toilet-cleaner/y/t/y/cleanmax-500-cm01-500ml-original-imaede2v8ec9bbmz.jpeg"
+            },
+            "productFamily": [
+                "[TCNEDE73GQZ8YYTY]"
+            ],
+            "maximumRetailPrice": {
+                "amount": 250,
+                "currency": "INR"
+            },
+            "flipkartSellingPrice": {
+                "amount": 129,
+                "currency": "INR"
+            },
+            "flipkartSpecialPrice": {
+                "amount": 129,
+                "currency": "INR"
+            },
+            "productUrl": "http://dl.flipkart.com/dl/cleanmax-cm01-500ml-regular-toilet-cleaner/p/itmede73fcgxjgv5?pid=TCNEDE73GQZ8YYTY&affid=slidenerd",
+            "productBrand": "Cleanmax",
+            "inStock": true,
+            "codAvailable": true,
+            "discountPercentage": 56,
+            "offers": [],
+            "categoryPath": "Daily Essentials>Household Supplies>Home Cleaning>Toilet Cleaners",
+            "attributes": {
+                "size": "",
+                "color": "",
+                "storage": "",
+                "sizeUnit": "",
+                "displaySize": ""
+            }
+        },
+        "productShippingInfoV1": {
+            "shippingCharges": {
+                "amount": 65,
+                "currency": "INR"
+            },
+            "estimatedDeliveryTime": "Usually Delivered in Thu Aug 25 23:59:59 IST 2016 - Fri Aug 26 23:59:59 IST 2016 days.",
+            "sellerName": "Cleanmaxindia",
+            "sellerAverageRating": 3.6363637,
+            "sellerNoOfRatings": 11,
+            "sellerNoOfReviews": 1
+        },
+        "categorySpecificInfoV1": {
+            "keySpecs": [
+                "High Performance",
+                "Eco-Friendly",
+                "Stain Remover",
+                "Biodegradable,"
+            ],
+            "detailedSpecs": [
+                "High Performance",
+                "Eco-Friendly",
+                "Stain Remover",
+                "Biodegradable,"
+            ],
+            "specificationList": [
+                {
+                    "key": "In the box",
+                    "values": [
+                        {
+                            "key": "Pack of",
+                            "value": [
+                                "1"
+                            ]
+                        },
+                        {
+                            "key": "Sales Package",
+                            "value": [
+                                "1 Toilet Cleaner"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "General",
+                    "values": [
+                        {
+                            "key": "Brand",
+                            "value": [
+                                "Cleanmax"
+                            ]
+                        },
+                        {
+                            "key": "Model Name",
+                            "value": [
+                                "CM01 500ml"
+                            ]
+                        },
+                        {
+                            "key": "Quantity",
+                            "value": [
+                                "500 ml"
+                            ]
+                        },
+                        {
+                            "key": "Type",
+                            "value": [
+                                "Liquid"
+                            ]
+                        },
+                        {
+                            "key": "Container Type",
+                            "value": [
+                                "Bottle"
+                            ]
+                        },
+                        {
+                            "key": "Used For",
+                            "value": [
+                                "Germs, Fungi, Limescale, Odor, Stains"
+                            ]
+                        },
+                        {
+                            "key": "Fragrance",
+                            "value": [
+                                "Regular"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "Additonal Features",
+                    "values": [
+                        {
+                            "key": "Nozzle",
+                            "value": [
+                                "Yes"
+                            ]
+                        },
+                        {
+                            "key": "Usage Instructions",
+                            "value": [
+                                "Toilet cleaner, toilet tile clean, porcelain wash basin cleaning, tile floors. Free from fumes and easy to apply and to remove stubborn-stains and protects from germs 500 times stronger than phenyls."
+                            ]
+                        },
+                        {
+                            "key": "Other Features",
+                            "value": [
+                                "High Performance, Eco-Friendly, Ultra Clean, Stain Remover, Germ Free, Biodegradable, Soft Perfume, Immediate Results"
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "booksInfo": {
+                "language": null,
+                "binding": null,
+                "pages": null,
+                "publisher": null,
+                "year": 0,
+                "authors": []
+            },
+            "lifeStyleInfo": {
+                "sleeve": null,
+                "neck": null,
+                "idealFor": null
+            }
+        }
+    },
+    {
+        "productBaseInfoV1": {
+            "productId": "LDGEDDZJ9F897BZN",
+            "title": "Cleanmax Orange Fragrance 5L Liquid Detergent",
+            "productDescription": "This is a synergetic blend of Anionic detergent, non-ionic detergent, cationic detergent with moisture retention agent and fabric conditioners along with nature identical perfume to be friendly with the cloth and skin. This liquid detergent locks the fabrics natural moisture leaving the cloth/fabric sparkling clean.Usually vegetable oil based Laundry soaps failed to completely remove the sludge that forms from the combination of dirts with its soap due to presence of hard minerals like calcium, automobile effluent toxic minerals which thereby remains as patches seen in clothes after wash. These patches are the cause for skin irritation and dhobi-itches.Detergent powder containing Dish-washing chemicals like Neutralised Linear Alkyl Benzene Sullphonate along with heavy amount of Sodium Carbonate, Phosphates of Calcium, Sulphamic acid were good enough to completely wash the fabric. However, In complete rinse which are commonly seen due to lack of water leads residual remaining in the final wash and these Detergent powder chemicals will dissolve with the sweat to form rashes in skin.CleanMax Liquid detergent which is innovative product using the nature identical chemicals which are anti-oxidant, disinfectant, cleansers wet with the cloth uniformly and its cleaning properties releases the oil-based dirts, automobile pollutants adhering, other kitchen dirts right from each strands of the fabric. The final fabric comes as sparkling clean with its natural moisture intact since CleanMax Liquid detergent is by manufacture free from SODIUM SILICATE, free from STPP,TSP, other PHOSPHATES, SODA ASH, ALKALIES, SULPHAMIC ACID. FRIEND TO CLOTH, HUMAN SKIN. It increases the SHELF-LIFE of the FABRIC [COTTON, LINEN, WOOLEN, and SYNTHETIC FABRIC]. Liquid detergent does not form scales on the washing machine drums which is a boon to the life of the machine and saves from maintenance bill.We are sure that the innovative ingredients used in our liquid detergent will bring glow and smile to our valuable customers. Enzyme based detergents and silicon based softening detergents may give the fabric the required softness feel when touched by the hand. But these enzymes cannot be totally irradicated from the final rinse of clothes, thereby leads to untold skin itching, untold smell dominating these inner fabrics. Silicone based softeners will be rejected by your sensitive skin. Automobile car polish which are silicon –based will exhibit instantaneous shining to the applied surface- whether it is seats, dash-board, and outer exterior paint surface of the car. These layers quickly dry and leave micro-level crack skin. Similarly the fabrics also develop internal cracks which may lead to irrevocable shelf-life shortening.Commercial laundry detergent powder, commercial laundry soaps in order to withstand the stringent price reduction condition framed by the greedy local-dealers adopt unfair trade practices by violating the safety aspects of ingredients which are to be used in the laundry powder/liquid. STRONG ALKALIES, SODIUM SILICATES, PHOSPHATES which are toxic to water based livings are added in these formulations which may wash the clothes easily, but easily show their effect by way of yellowish tint seen on fabrics. Drying of fabrics due to alkalies, sulphamic acid are common ill-effect of these addition.",
+            "imageUrls": {
+                "200x200": "http://img.fkcdn.com/image/laundry-detergent/u/q/n/5-litre-cleanmax-5-5l-orange-fragrance-liquid-detergent-200x200-imaeddvdqhz6mcza.jpeg",
+                "400x400": "http://img.fkcdn.com/image/laundry-detergent/u/q/n/5-litre-cleanmax-5-5l-orange-fragrance-liquid-detergent-400x400-imaeddvdqhz6mcza.jpeg",
+                "800x800": "http://img.fkcdn.com/image/laundry-detergent/u/q/n/5-litre-cleanmax-5-5l-orange-fragrance-liquid-detergent-800x800-imaeddvdqhz6mcza.jpeg",
+                "unknown": "http://img.fkcdn.com/image/laundry-detergent/u/q/n/5-litre-cleanmax-5-5l-orange-fragrance-liquid-detergent-original-imaeddvdqhz6mcza.jpeg"
+            },
+            "productFamily": [
+                "[LDGEDDZJ9F897BZN]"
+            ],
+            "maximumRetailPrice": {
+                "amount": 1899,
+                "currency": "INR"
+            },
+            "flipkartSellingPrice": {
+                "amount": 1149,
+                "currency": "INR"
+            },
+            "flipkartSpecialPrice": {
+                "amount": 1149,
+                "currency": "INR"
+            },
+            "productUrl": "http://dl.flipkart.com/dl/cleanmax-orange-fragrance-5l-liquid-detergent/p/itmeddzjrpkghhfd?pid=LDGEDDZJ9F897BZN&affid=slidenerd",
+            "productBrand": "Cleanmax",
+            "inStock": true,
+            "codAvailable": true,
+            "discountPercentage": 39,
+            "offers": [],
+            "categoryPath": "Household>Housekeeping & Laundry>Laundry>Liquid Detergents",
+            "attributes": {
+                "size": "",
+                "color": "",
+                "storage": "",
+                "sizeUnit": "",
+                "displaySize": ""
+            }
+        },
+        "productShippingInfoV1": {
+            "shippingCharges": {
+                "amount": 100,
+                "currency": "INR"
+            },
+            "estimatedDeliveryTime": "Usually Delivered in Thu Aug 25 23:59:59 IST 2016 - Fri Aug 26 23:59:59 IST 2016 days.",
+            "sellerName": "Cleanmaxindia",
+            "sellerAverageRating": 3.6363637,
+            "sellerNoOfRatings": 11,
+            "sellerNoOfReviews": 1
+        },
+        "categorySpecificInfoV1": {
+            "keySpecs": [
+                "Free From SILICATE,",
+                "Hand & Machines",
+                "Tough On Stains",
+                "Free From Phosphates"
+            ],
+            "detailedSpecs": [
+                "Free From SILICATE,",
+                "Hand & Machines",
+                "Tough On Stains",
+                "Free From Phosphates"
+            ],
+            "specificationList": [
+                {
+                    "key": "In the box",
+                    "values": [
+                        {
+                            "key": "Pack of",
+                            "value": [
+                                "1"
+                            ]
+                        },
+                        {
+                            "key": "Sales Package",
+                            "value": [
+                                "1 Liquid Detergent"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "General",
+                    "values": [
+                        {
+                            "key": "Brand",
+                            "value": [
+                                "Cleanmax"
+                            ]
+                        },
+                        {
+                            "key": "Model Name",
+                            "value": [
+                                "Orange Fragrance 5L"
+                            ]
+                        },
+                        {
+                            "key": "Quantity",
+                            "value": [
+                                "5 L"
+                            ]
+                        },
+                        {
+                            "key": "Fragrance",
+                            "value": [
+                                "Orange"
+                            ]
+                        },
+                        {
+                            "key": "Usage Instructions",
+                            "value": [
+                                "These liquid detergents due to their ease of dissolution with the wetted fabric made the LAUNDRY WORK easy and efficient. Adequate soaking time is all that is required for complete and satisfactory cleaning of clothes. Unnecessary wetting of hands with the liquid was reduced and the final wash was completely effeftive and also the fabric texture roughage was drastically reduced."
+                            ]
+                        },
+                        {
+                            "key": "Container Type",
+                            "value": [
+                                "Bottle"
+                            ]
+                        },
+                        {
+                            "key": "Compatible With",
+                            "value": [
+                                "Washing Machines, Hand Wash"
+                            ]
+                        },
+                        {
+                            "key": "Chemical Free",
+                            "value": [
+                                "Yes"
+                            ]
+                        },
+                        {
+                            "key": "Biodegradable",
+                            "value": [
+                                "Yes"
+                            ]
+                        },
+                        {
+                            "key": "Color Safe",
+                            "value": [
+                                "Yes"
+                            ]
+                        },
+                        {
+                            "key": "Skin Friendly",
+                            "value": [
+                                "Yes"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "Additional Features",
+                    "values": [
+                        {
+                            "key": "Caution",
+                            "value": [
+                                "Keep Out Reach Our Eyes"
+                            ]
+                        },
+                        {
+                            "key": "Other Features",
+                            "value": [
+                                "-Free From SULPHATE, SILICATE, PHOSPHORUS, COLOUR AND PARABEN., -Mild to skin,Eco friendly product., -Effectively removes stubborn stains., -Can also be used as Baby Laundary Detergent., -Can be used also as Tile/Floor Cleaner Concentrate., -Effective in cleaning even under Salty-Water ."
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "booksInfo": {
+                "language": null,
+                "binding": null,
+                "pages": null,
+                "publisher": null,
+                "year": 0,
+                "authors": []
+            },
+            "lifeStyleInfo": {
+                "sleeve": null,
+                "neck": null,
+                "idealFor": null
+            }
+        }
+    },
+    {
+        "productBaseInfoV1": {
+            "productId": "KSCEEH6ZZDWHCXTN",
+            "title": "Force1Homecare 8906057410101 Kitchen Cleaner",
+            "productDescription": "OVEN & CHIMNEY CLEANER FORCE 1 Oven & Chimney cleaner’s new formula whilst cleaning Ovens, Grills, Hobs, Hot plates & Chimney works directly on dirty & greasy surfaces without causing any fumes. It instantly lifts off burnt on grease and grime & eliminates unpleasant odors with its strawberry perfume. Switch off all gadgets including pilot light before use. 3. let the product work for around 10 – 15 minutes. Now your gadget is sparkling clean.Dissolves oil & grease immediatly no hot water no detergent required.Helps you clean thick layers of grease inside your chimeny aswell.Hassel free just spray & wipe with a wet cloth.Cleans Microwave & oven inside aswell outside.gives a strawberry fragnace.",
+            "imageUrls": {
+                "200x200": "http://img.fkcdn.com/image/kitchen-surface-cleaner/x/t/n/force1homecare-500-8906057410101-200x200-imaefzzh39mmptnn.jpeg",
+                "400x400": "http://img.fkcdn.com/image/kitchen-surface-cleaner/x/t/n/force1homecare-500-8906057410101-400x400-imaefzzh39mmptnn.jpeg",
+                "800x800": "http://img.fkcdn.com/image/kitchen-surface-cleaner/x/t/n/force1homecare-500-8906057410101-800x800-imaefzzh39mmptnn.jpeg",
+                "unknown": "http://img.fkcdn.com/image/kitchen-surface-cleaner/x/t/n/force1homecare-500-8906057410101-original-imaefzzh39mmptnn.jpeg"
+            },
+            "productFamily": [
+                "[KSCEEH6ZZDWHCXTN]"
+            ],
+            "maximumRetailPrice": {
+                "amount": 325,
+                "currency": "INR"
+            },
+            "flipkartSellingPrice": {
+                "amount": 325,
+                "currency": "INR"
+            },
+            "flipkartSpecialPrice": {
+                "amount": 325,
+                "currency": "INR"
+            },
+            "productUrl": "http://dl.flipkart.com/dl/force1homecare-8906057410101-kitchen-cleaner/p/itmeeh6zf8rkndtr?pid=KSCEEH6ZZDWHCXTN&affid=slidenerd",
+            "productBrand": "Force1Homecare",
+            "inStock": true,
+            "codAvailable": true,
+            "discountPercentage": 0,
+            "offers": [],
+            "categoryPath": "Daily Essentials>Household Supplies>Home Cleaning>Kitchen Surface Cleaners",
+            "attributes": {
+                "size": "",
+                "color": "",
+                "storage": "",
+                "sizeUnit": "",
+                "displaySize": ""
+            }
+        },
+        "productShippingInfoV1": {
+            "shippingCharges": {
+                "amount": 50,
+                "currency": "INR"
+            },
+            "estimatedDeliveryTime": "Usually Delivered in Thu Aug 25 23:59:59 IST 2016 - Fri Aug 26 23:59:59 IST 2016 days.",
+            "sellerName": "Force1HomeCare",
+            "sellerAverageRating": 3.375,
+            "sellerNoOfRatings": 8,
+            "sellerNoOfReviews": 0
+        },
+        "categorySpecificInfoV1": {
+            "keySpecs": [
+                "Oven & Chimney Cleaner",
+                "500ml"
+            ],
+            "detailedSpecs": [
+                "Oven & Chimney Cleaner",
+                "500ml"
+            ],
+            "specificationList": [
+                {
+                    "key": "In the box",
+                    "values": [
+                        {
+                            "key": "Pack of",
+                            "value": [
+                                "1"
+                            ]
+                        },
+                        {
+                            "key": "Sales Package",
+                            "value": [
+                                "1 Oven & Chimney Cleaner"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "General",
+                    "values": [
+                        {
+                            "key": "Brand",
+                            "value": [
+                                "Force1Homecare"
+                            ]
+                        },
+                        {
+                            "key": "Model Name",
+                            "value": [
+                                "8906057410101"
+                            ]
+                        },
+                        {
+                            "key": "Quantity",
+                            "value": [
+                                "500 ml"
+                            ]
+                        },
+                        {
+                            "key": "Fragrance",
+                            "value": [
+                                "None"
+                            ]
+                        },
+                        {
+                            "key": "Suitable For",
+                            "value": [
+                                "Bottle"
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "booksInfo": {
+                "language": null,
+                "binding": null,
+                "pages": null,
+                "publisher": null,
+                "year": 0,
+                "authors": []
+            },
+            "lifeStyleInfo": {
+                "sleeve": null,
+                "neck": null,
+                "idealFor": null
+            }
+        }
+    },
+    {
+        "productBaseInfoV1": {
+            "productId": "KSCEERV53AJAJPZW",
+            "title": "Force1Homecare Furniture Wax Polish Kitchen Cleaner",
+            "productDescription": "Furniture Wax Polish Wood Loses Its Natural Beauty From Exposure To Sunlight, Dirt Buildup And Cleaning With Abrasive Chemicals. To Prevent Damage & For Natural Glow Treat Your Wood Furniture With Force 1 Homecare Furniture Wax Polish.Ideal For Carved & Natural Polished Fine Wood Furniture & Also All Kinds Of Laminated Furniture. It Conditions & Protects With Lasting Shine Without Leaving Any Oily Residue. Cleans & Shines Wood To A Deep Luster.Ideal For Carved & Natural Polished Fine Wood Furniture & Also All Kinds Of Laminated Furniture.It Conditions & Protects With Lasting Shine Without Leaving Any Oily Residue. Cleans & Shines Wood To A Deep Luster.Helps You Clean Finger Marks, Smudges, Dirt, Grime, Etc.Leaves A Thin Layer Of Wax, Also Acts Like A Protective Layer & Gives Shine.Cleans Hand Polished Wooden Furniture.",
+            "imageUrls": {
+                "200x200": "http://img.fkcdn.com/image/kitchen-surface-cleaner/p/z/w/force1homecare-500-furniture-wax-polish-200x200-imaefzzjqdh23srz.jpeg",
+                "400x400": "http://img.fkcdn.com/image/kitchen-surface-cleaner/p/z/w/force1homecare-500-furniture-wax-polish-400x400-imaefzzjqdh23srz.jpeg",
+                "800x800": "http://img.fkcdn.com/image/kitchen-surface-cleaner/p/z/w/force1homecare-500-furniture-wax-polish-800x800-imaefzzjqdh23srz.jpeg",
+                "unknown": "http://img.fkcdn.com/image/kitchen-surface-cleaner/p/z/w/force1homecare-500-furniture-wax-polish-original-imaefzzjqdh23srz.jpeg"
+            },
+            "productFamily": [
+                "[KSCEERV53AJAJPZW]"
+            ],
+            "maximumRetailPrice": {
+                "amount": 325,
+                "currency": "INR"
+            },
+            "flipkartSellingPrice": {
+                "amount": 325,
+                "currency": "INR"
+            },
+            "flipkartSpecialPrice": {
+                "amount": 325,
+                "currency": "INR"
+            },
+            "productUrl": "http://dl.flipkart.com/dl/force1homecare-furniture-wax-polish-kitchen-cleaner/p/itmeerv5zdpgvafv?pid=KSCEERV53AJAJPZW&affid=slidenerd",
+            "productBrand": "Force1Homecare",
+            "inStock": true,
+            "codAvailable": true,
+            "discountPercentage": 0,
+            "offers": [],
+            "categoryPath": "Daily Essentials>Household Supplies>Home Cleaning>Kitchen Surface Cleaners",
+            "attributes": {
+                "size": "",
+                "color": "",
+                "storage": "",
+                "sizeUnit": "",
+                "displaySize": ""
+            }
+        },
+        "productShippingInfoV1": {
+            "shippingCharges": {
+                "amount": 50,
+                "currency": "INR"
+            },
+            "estimatedDeliveryTime": "Usually Delivered in Thu Aug 25 23:59:59 IST 2016 - Fri Aug 26 23:59:59 IST 2016 days.",
+            "sellerName": "Force1HomeCare",
+            "sellerAverageRating": 3.375,
+            "sellerNoOfRatings": 8,
+            "sellerNoOfReviews": 0
+        },
+        "categorySpecificInfoV1": {
+            "keySpecs": [
+                "Furniture Wax Polish",
+                "500ml"
+            ],
+            "detailedSpecs": [
+                "Furniture Wax Polish",
+                "500ml"
+            ],
+            "specificationList": [
+                {
+                    "key": "In the box",
+                    "values": [
+                        {
+                            "key": "Pack of",
+                            "value": [
+                                "1"
+                            ]
+                        },
+                        {
+                            "key": "Sales Package",
+                            "value": [
+                                "1 Furniture Wax Polish"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "General",
+                    "values": [
+                        {
+                            "key": "Brand",
+                            "value": [
+                                "Force1Homecare"
+                            ]
+                        },
+                        {
+                            "key": "Model Name",
+                            "value": [
+                                "Furniture Wax Polish"
+                            ]
+                        },
+                        {
+                            "key": "Quantity",
+                            "value": [
+                                "500 ml"
+                            ]
+                        },
+                        {
+                            "key": "Fragrance",
+                            "value": [
+                                "None"
+                            ]
+                        },
+                        {
+                            "key": "Suitable For",
+                            "value": [
+                                "Bottle"
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "booksInfo": {
+                "language": null,
+                "binding": null,
+                "pages": null,
+                "publisher": null,
+                "year": 0,
+                "authors": []
+            },
+            "lifeStyleInfo": {
+                "sleeve": null,
+                "neck": null,
+                "idealFor": null
+            }
+        }
+    },
+    {
+        "productBaseInfoV1": {
+            "productId": "CSCE7GRRFJBHFNEY",
+            "title": "Force1HomeCare Carpet & Upholstery Cleaner",
+            "productDescription": "Carpet & Upholstery Dry CleanerUnlike ordinary household cleaners, Force-1 carpet & Upholstery cleaner is specially formulated to quickly and effectively clean your carpets & upholstery. Formulated with grime cutter and dirt lifters, Force-1 Carpet & Upholstery Cleaner penetrates deep in to fabric’s fibers and removes grime, allergens, dirt and odors. Force-1 Carpet & Upholstery Cleaners is the one cleaning solutions for your interiors.Unlike ordinary household cleaners, Force-1 carpet & Upholstery cleaner is specially formulated to quickly and effectively clean your carpets & upholstery.",
+            "imageUrls": {
+                "200x200": "http://img.fkcdn.com/image/carpet-sofa-cleaner/n/e/y/carpet-upholstery-cleaner-force1homecare-500-1-200x200-imae7fefqkkzwmbt.jpeg",
+                "400x400": "http://img.fkcdn.com/image/carpet-sofa-cleaner/n/e/y/carpet-upholstery-cleaner-force1homecare-500-1-400x400-imae7fefqkkzwmbt.jpeg",
+                "800x800": "http://img.fkcdn.com/image/carpet-sofa-cleaner/n/e/y/carpet-upholstery-cleaner-force1homecare-500-1-800x800-imae7fefqkkzwmbt.jpeg",
+                "unknown": "http://img.fkcdn.com/image/carpet-sofa-cleaner/n/e/y/carpet-upholstery-cleaner-force1homecare-500-1-original-imae7fefqkkzwmbt.jpeg"
+            },
+            "productFamily": [
+                "[CSCE7GRRFJBHFNEY]"
+            ],
+            "maximumRetailPrice": {
+                "amount": 325,
+                "currency": "INR"
+            },
+            "flipkartSellingPrice": {
+                "amount": 325,
+                "currency": "INR"
+            },
+            "flipkartSpecialPrice": {
+                "amount": 325,
+                "currency": "INR"
+            },
+            "productUrl": "http://dl.flipkart.com/dl/force1homecare-carpet-upholstery-cleaner/p/itme7grr2tzjbgns?pid=CSCE7GRRFJBHFNEY&affid=slidenerd",
+            "productBrand": "Force1HomeCare",
+            "inStock": true,
+            "codAvailable": true,
+            "discountPercentage": 0,
+            "offers": [],
+            "categoryPath": "Household>Housekeeping & Laundry>Home Cleaning>Carpet & Upholstery Cleaners",
+            "attributes": {
+                "size": "",
+                "color": "",
+                "storage": "",
+                "sizeUnit": "",
+                "displaySize": ""
+            }
+        },
+        "productShippingInfoV1": {
+            "shippingCharges": {
+                "amount": 50,
+                "currency": "INR"
+            },
+            "estimatedDeliveryTime": "Usually Delivered in Sat Sep 10 23:59:59 IST 2016 - Sun Sep 11 23:59:59 IST 2016 days.",
+            "sellerName": "Force1HomeCare",
+            "sellerAverageRating": null,
+            "sellerNoOfRatings": 0,
+            "sellerNoOfReviews": 0
+        },
+        "categorySpecificInfoV1": {
+            "keySpecs": [
+                "Sofa Cleaner",
+                "Car Seat Cleaner",
+                "Carpet Cleaner",
+                "Dashboard Cleaner"
+            ],
+            "detailedSpecs": [
+                "Sofa Cleaner",
+                "Car Seat Cleaner",
+                "Carpet Cleaner",
+                "Dashboard Cleaner"
+            ],
+            "specificationList": [
+                {
+                    "key": "In the box",
+                    "values": [
+                        {
+                            "key": "Sales Package",
+                            "value": [
+                                "1"
+                            ]
+                        },
+                        {
+                            "key": "Pack of",
+                            "value": [
+                                "1"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "General",
+                    "values": [
+                        {
+                            "key": "Brand",
+                            "value": [
+                                "Force1HomeCare"
+                            ]
+                        },
+                        {
+                            "key": "Quantity",
+                            "value": [
+                                "500 ml"
+                            ]
+                        },
+                        {
+                            "key": "Type",
+                            "value": [
+                                "Liquid"
+                            ]
+                        },
+                        {
+                            "key": "Model Number",
+                            "value": [
+                                "Carpet & Upholstery Cleaner"
+                            ]
+                        },
+                        {
+                            "key": "Wet Cleaning",
+                            "value": [
+                                "No"
+                            ]
+                        },
+                        {
+                            "key": "Scent",
+                            "value": [
+                                "Fresh Lime"
+                            ]
+                        },
+                        {
+                            "key": "Removes Odor",
+                            "value": [
+                                "Yes"
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "booksInfo": {
+                "language": null,
+                "binding": null,
+                "pages": null,
+                "publisher": null,
+                "year": 0,
+                "authors": []
+            },
+            "lifeStyleInfo": {
+                "sleeve": null,
+                "neck": null,
+                "idealFor": null
+            }
+        }
+    },
+    {
+        "productBaseInfoV1": {
+            "productId": "PTPE4BQYUYFYFWQE",
+            "title": "Tirupati Teflon Coated Dish Pizza Pan 20.32 cm diameter",
+            "productDescription": "",
+            "imageUrls": {
+                "200x200": "http://img.fkcdn.com/image/pot-pan/w/q/e/ppan-08-tirupati-200x200-imaeh3aqdgnzr5ej.jpeg",
+                "400x400": "http://img.fkcdn.com/image/pot-pan/w/q/e/ppan-08-tirupati-400x400-imaeh3aqdgnzr5ej.jpeg",
+                "800x800": "http://img.fkcdn.com/image/pot-pan/w/q/e/ppan-08-tirupati-800x800-imaeh3aqdgnzr5ej.jpeg",
+                "unknown": "http://img.fkcdn.com/image/pot-pan/w/q/e/ppan-08-tirupati-original-imaeh3aqdgnzr5ej.jpeg"
+            },
+            "productFamily": [
+                "[PTPE4BQY3GFYPBQT",
+                " PTPE4BQYBZKAS7CE",
+                " PTPE4BQYK6E3ENUJ",
+                " PTPE4BQYRHKGVFKH",
+                " PTPE4BQYYZAHGEFN]"
+            ],
+            "maximumRetailPrice": {
+                "amount": 1352,
+                "currency": "INR"
+            },
+            "flipkartSellingPrice": {
+                "amount": 676,
+                "currency": "INR"
+            },
+            "flipkartSpecialPrice": {
+                "amount": 676,
+                "currency": "INR"
+            },
+            "productUrl": "http://dl.flipkart.com/dl/tirupati-teflon-coated-dish-pizza-pan-20-32-cm-diameter/p/itme4bqy4rcfbeuq?pid=PTPE4BQYUYFYFWQE&affid=slidenerd",
+            "productBrand": "Tirupati",
+            "inStock": true,
+            "codAvailable": true,
+            "discountPercentage": 50,
+            "offers": [],
+            "categoryPath": "Household>Cookware>Pots & Pans>Pans & Tawas",
+            "attributes": {
+                "size": "",
+                "color": "Black",
+                "storage": "",
+                "sizeUnit": "",
+                "displaySize": ""
+            }
+        },
+        "productShippingInfoV1": {
+            "shippingCharges": {
+                "amount": 0,
+                "currency": "INR"
+            },
+            "estimatedDeliveryTime": "Usually Delivered in Wed Sep 14 23:59:59 IST 2016 - Thu Sep 15 23:59:59 IST 2016 days.",
+            "sellerName": "TirupatiPizzaTools",
+            "sellerAverageRating": 4.195122,
+            "sellerNoOfRatings": 41,
+            "sellerNoOfReviews": 0
+        },
+        "categorySpecificInfoV1": {
+            "keySpecs": [
+                "Type: Pan",
+                "Material: Aluminium",
+                "Non-stick"
+            ],
+            "detailedSpecs": [
+                "Type: Pan",
+                "Material: Aluminium",
+                "Non-stick"
+            ],
+            "specificationList": [
+                {
+                    "key": "In the box",
+                    "values": [
+                        {
+                            "key": "Sales Package",
+                            "value": [
+                                "1 Pan"
+                            ]
+                        },
+                        {
+                            "key": "Pack of",
+                            "value": [
+                                "1"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "General",
+                    "values": [
+                        {
+                            "key": "Brand",
+                            "value": [
+                                "Tirupati"
+                            ]
+                        },
+                        {
+                            "key": "Model Name",
+                            "value": [
+                                "Teflon Coated Dish Pizza"
+                            ]
+                        },
+                        {
+                            "key": "Model Number",
+                            "value": [
+                                "PPAN-08"
+                            ]
+                        },
+                        {
+                            "key": "Color",
+                            "value": [
+                                "Black"
+                            ]
+                        },
+                        {
+                            "key": "Capacity",
+                            "value": [
+                                "NA L"
+                            ]
+                        },
+                        {
+                            "key": "Type",
+                            "value": [
+                                "Pan"
+                            ]
+                        },
+                        {
+                            "key": "Pan Type",
+                            "value": [
+                                "Baking"
+                            ]
+                        },
+                        {
+                            "key": "Induction Bottom",
+                            "value": [
+                                "No"
+                            ]
+                        },
+                        {
+                            "key": "Material",
+                            "value": [
+                                "Aluminium"
+                            ]
+                        },
+                        {
+                            "key": "Lid Included",
+                            "value": [
+                                "No"
+                            ]
+                        },
+                        {
+                            "key": "Non-stick",
+                            "value": [
+                                "Yes"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "Additional Features",
+                    "values": [
+                        {
+                            "key": "Other Features",
+                            "value": [
+                                "Non Stick, Teflon Coated"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "Dimensions",
+                    "values": [
+                        {
+                            "key": "Diameter",
+                            "value": [
+                                "20.32 cm"
+                            ]
+                        },
+                        {
+                            "key": "Weight",
+                            "value": [
+                                "180 g"
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "booksInfo": {
+                "language": null,
+                "binding": null,
+                "pages": null,
+                "publisher": null,
+                "year": 0,
+                "authors": []
+            },
+            "lifeStyleInfo": {
+                "sleeve": null,
+                "neck": null,
+                "idealFor": null
+            }
+        }
+    },
+    {
+        "productBaseInfoV1": {
+            "productId": "DROEGRFJQRXMDJY6",
+            "title": "Bioclean Septic Biological Product Powder Drain Opener",
+            "productDescription": "Bioclean Septic....Now Flush out your drain clogging problems !!Bioclean Septic gives peace of mind by helping maintain free flow system, solving blockage issues in drian pipelines.Bioclean septic is scientifically formulated with a mix of different bacterias and enzymes that breakdowns the fats , oils and grease which opens up the clogs and reduces the septic sludge volume also it completely eliminates the odour problems .It reduces cleaning frequency by 10-15 times saving your time, efforts and money.\"Bioclean Septic\" also retards growth of harmful pathogens that are more likely to grow in anaerobic conditions of sewer Lines.",
+            "imageUrls": {
+                "200x200": "http://img.fkcdn.com/image/drain-opener/t/f/2/bioclean-septic-250-bioculture-for-septic-tan-treatment-200x200-imae94fkyzpsfavz.jpeg",
+                "400x400": "http://img.fkcdn.com/image/drain-opener/t/f/2/bioclean-septic-250-bioculture-for-septic-tan-treatment-400x400-imae94fkyzpsfavz.jpeg",
+                "800x800": "http://img.fkcdn.com/image/drain-opener/t/f/2/bioclean-septic-250-bioculture-for-septic-tan-treatment-800x800-imae94fkyzpsfavz.jpeg",
+                "unknown": "http://img.fkcdn.com/image/drain-opener/t/f/2/bioclean-septic-250-bioculture-for-septic-tan-treatment-original-imae94fkyzpsfavz.jpeg"
+            },
+            "productFamily": [
+                "[DROEDP6R8MWFMSKU",
+                " DROEGRFJQRXMDJY6]"
+            ],
+            "maximumRetailPrice": {
+                "amount": 300,
+                "currency": "INR"
+            },
+            "flipkartSellingPrice": {
+                "amount": 300,
+                "currency": "INR"
+            },
+            "flipkartSpecialPrice": {
+                "amount": 300,
+                "currency": "INR"
+            },
+            "productUrl": "http://dl.flipkart.com/dl/bioclean-septic-biological-product-powder-drain-opener/p/itmedp6rj6gzhnhc?pid=DROEGRFJQRXMDJY6&affid=slidenerd",
+            "productBrand": "Bioclean Septic",
+            "inStock": true,
+            "codAvailable": true,
+            "discountPercentage": 0,
+            "offers": [],
+            "categoryPath": "Daily Essentials>Household Supplies>Home Cleaning>Drain Openers",
+            "attributes": {
+                "size": "",
+                "color": "",
+                "storage": "",
+                "sizeUnit": "",
+                "displaySize": ""
+            }
+        },
+        "productShippingInfoV1": {
+            "shippingCharges": {
+                "amount": 80,
+                "currency": "INR"
+            },
+            "estimatedDeliveryTime": "Usually Delivered in Wed Sep 14 23:59:59 IST 2016 - Thu Sep 15 23:59:59 IST 2016 days.",
+            "sellerName": "OrganicaBiotech",
+            "sellerAverageRating": 4.857143,
+            "sellerNoOfRatings": 7,
+            "sellerNoOfReviews": 1
+        },
+        "categorySpecificInfoV1": {
+            "keySpecs": [],
+            "detailedSpecs": [],
+            "specificationList": [
+                {
+                    "key": "In the box",
+                    "values": [
+                        {
+                            "key": "",
+                            "value": [
+                                "1 Drain Cleaner"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "General",
+                    "values": [
+                        {
+                            "key": "Brand",
+                            "value": [
+                                "Bioclean Septic"
+                            ]
+                        },
+                        {
+                            "key": "Model Name",
+                            "value": [
+                                "Biological Product"
+                            ]
+                        },
+                        {
+                            "key": "Quantity",
+                            "value": [
+                                "250 g"
+                            ]
+                        },
+                        {
+                            "key": "Type",
+                            "value": [
+                                "Powder"
+                            ]
+                        },
+                        {
+                            "key": "Chemical Type",
+                            "value": [
+                                "100 % biological"
+                            ]
+                        },
+                        {
+                            "key": "Suitable For",
+                            "value": [
+                                "Toilet drains, Pipes, Toilet outlets"
+                            ]
+                        },
+                        {
+                            "key": "Composition",
+                            "value": [
+                                "Mixture of beneficial microbes"
+                            ]
+                        },
+                        {
+                            "key": "Use Instructions",
+                            "value": [
+                                "It has to be flushed through the plumbing outlets at night"
+                            ]
+                        },
+                        {
+                            "key": "Recommended Use",
+                            "value": [
+                                "Drain cleaning, Drain opening, Odour removal"
+                            ]
+                        },
+                        {
+                            "key": "Odorless",
+                            "value": [
+                                "Yes"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "Additional Features",
+                    "values": [
+                        {
+                            "key": "Corrosion Protection",
+                            "value": [
+                                "No"
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "booksInfo": {
+                "language": null,
+                "binding": null,
+                "pages": null,
+                "publisher": null,
+                "year": 0,
+                "authors": []
+            },
+            "lifeStyleInfo": {
+                "sleeve": null,
+                "neck": null,
+                "idealFor": null
+            }
+        }
+    },
+    {
+        "productBaseInfoV1": {
+            "productId": "DROEHGW2FUDK6MYF",
+            "title": "Bioclean Septic septic degradation bioproduct Powder Drain Opener",
+            "productDescription": "Bioclean Septic....Now Flush out your drain clogging problems !!Bioclean Septic gives peace of mind by helping maintain free flow system, solving blockage issues in drian pipelines.Bioclean septic is scientifically formulated with a mix of different bacterias and enzymes that breakdowns the fats , oils and grease which opens up the clogs and reduces the septic sludge volume also it completely eliminates the odour problems .It reduces cleaning frequency by 10-15 times saving your time, efforts and money.\"Bioclean Septic\" also retards growth of harmful pathogens that are more likely to grow in anaerobic conditions of sewer Lines.",
+            "imageUrls": {
+                "200x200": "http://img.fkcdn.com/image/drain-opener/t/f/2/bioclean-septic-250-bioculture-for-septic-tan-treatment-200x200-imae94fkyzpsfavz.jpeg",
+                "400x400": "http://img.fkcdn.com/image/drain-opener/t/f/2/bioclean-septic-250-bioculture-for-septic-tan-treatment-400x400-imae94fkyzpsfavz.jpeg",
+                "800x800": "http://img.fkcdn.com/image/drain-opener/t/f/2/bioclean-septic-250-bioculture-for-septic-tan-treatment-800x800-imae94fkyzpsfavz.jpeg",
+                "unknown": "http://img.fkcdn.com/image/drain-opener/t/f/2/bioclean-septic-250-bioculture-for-septic-tan-treatment-original-imae94fkyzpsfavz.jpeg"
+            },
+            "productFamily": [
+                "[DROEHGW2FUDK6MYF]"
+            ],
+            "maximumRetailPrice": {
+                "amount": 300,
+                "currency": "INR"
+            },
+            "flipkartSellingPrice": {
+                "amount": 300,
+                "currency": "INR"
+            },
+            "flipkartSpecialPrice": {
+                "amount": 300,
+                "currency": "INR"
+            },
+            "productUrl": "http://dl.flipkart.com/dl/bioclean-septic-degradation-bioproduct-powder-drain-opener/p/itmehgw2vfr7aynu?pid=DROEHGW2FUDK6MYF&affid=slidenerd",
+            "productBrand": "Bioclean Septic",
+            "inStock": true,
+            "codAvailable": true,
+            "discountPercentage": 0,
+            "offers": [],
+            "categoryPath": "Daily Essentials>Household Supplies>Home Cleaning>Drain Openers",
+            "attributes": {
+                "size": "",
+                "color": "",
+                "storage": "",
+                "sizeUnit": "",
+                "displaySize": ""
+            }
+        },
+        "productShippingInfoV1": {
+            "shippingCharges": {
+                "amount": 80,
+                "currency": "INR"
+            },
+            "estimatedDeliveryTime": "Usually Delivered in Wed Sep 14 23:59:59 IST 2016 - Thu Sep 15 23:59:59 IST 2016 days.",
+            "sellerName": "OrganicaBiotech",
+            "sellerAverageRating": 4.857143,
+            "sellerNoOfRatings": 7,
+            "sellerNoOfReviews": 1
+        },
+        "categorySpecificInfoV1": {
+            "keySpecs": [],
+            "detailedSpecs": [],
+            "specificationList": [
+                {
+                    "key": "In the box",
+                    "values": [
+                        {
+                            "key": "",
+                            "value": [
+                                "Clogged Drain Opener"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "General",
+                    "values": [
+                        {
+                            "key": "Brand",
+                            "value": [
+                                "Bioclean Septic"
+                            ]
+                        },
+                        {
+                            "key": "Model Name",
+                            "value": [
+                                "septic degradation bioproduct"
+                            ]
+                        },
+                        {
+                            "key": "Quantity",
+                            "value": [
+                                "250 g"
+                            ]
+                        },
+                        {
+                            "key": "Type",
+                            "value": [
+                                "Powder"
+                            ]
+                        },
+                        {
+                            "key": "Suitable For",
+                            "value": [
+                                "Toilet drains, Pipes, Toilet outlets"
+                            ]
+                        },
+                        {
+                            "key": "Composition",
+                            "value": [
+                                "Mixture of beneficial microbes"
+                            ]
+                        },
+                        {
+                            "key": "Use Instructions",
+                            "value": [
+                                "It has to be flushed through the plumbing outlets at night"
+                            ]
+                        },
+                        {
+                            "key": "Recommended Use",
+                            "value": [
+                                "Drain cleaning, Drain opening, Odour removal, clogged drain opener"
+                            ]
+                        },
+                        {
+                            "key": "Odorless",
+                            "value": [
+                                "Yes"
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "booksInfo": {
+                "language": null,
+                "binding": null,
+                "pages": null,
+                "publisher": null,
+                "year": 0,
+                "authors": []
+            },
+            "lifeStyleInfo": {
+                "sleeve": null,
+                "neck": null,
+                "idealFor": null
+            }
+        }
+    },
+    {
+        "productBaseInfoV1": {
+            "productId": "TCNEGNTAG4SDJDNT",
+            "title": "SWACHH TOILET CLEANER None Toilet Cleaner",
+            "productDescription": "",
+            "imageUrls": {
+                "200x200": "http://img.fkcdn.com/image/toilet-cleaner/d/n/t/swachh-500-toilet-cleaner-200x200-imaegwq5y2av7dwq.jpeg",
+                "400x400": "http://img.fkcdn.com/image/toilet-cleaner/d/n/t/swachh-500-toilet-cleaner-400x400-imaegwq5y2av7dwq.jpeg",
+                "800x800": "http://img.fkcdn.com/image/toilet-cleaner/d/n/t/swachh-500-toilet-cleaner-800x800-imaegwq5y2av7dwq.jpeg",
+                "unknown": "http://img.fkcdn.com/image/toilet-cleaner/d/n/t/swachh-500-toilet-cleaner-original-imaegwq5y2av7dwq.jpeg"
+            },
+            "productFamily": [
+                "[TCNEGNTAG4SDJDNT]"
+            ],
+            "maximumRetailPrice": {
+                "amount": 60,
+                "currency": "INR"
+            },
+            "flipkartSellingPrice": {
+                "amount": 49,
+                "currency": "INR"
+            },
+            "flipkartSpecialPrice": {
+                "amount": 49,
+                "currency": "INR"
+            },
+            "productUrl": "http://dl.flipkart.com/dl/swachh-toilet-cleaner-none/p/itmegntadepttzqh?pid=TCNEGNTAG4SDJDNT&affid=slidenerd",
+            "productBrand": "SWACHH",
+            "inStock": false,
+            "codAvailable": true,
+            "discountPercentage": 18,
+            "offers": [],
+            "categoryPath": "Daily Essentials>Household Supplies>Home Cleaning>Toilet Cleaners",
+            "attributes": {
+                "size": "",
+                "color": "",
+                "storage": "",
+                "sizeUnit": "",
+                "displaySize": ""
+            }
+        },
+        "productShippingInfoV1": {
+            "shippingCharges": {
+                "amount": 0,
+                "currency": "INR"
+            },
+            "estimatedDeliveryTime": "",
+            "sellerName": "ConsolidatedTeknics",
+            "sellerAverageRating": null,
+            "sellerNoOfRatings": 0,
+            "sellerNoOfReviews": 0
+        },
+        "categorySpecificInfoV1": {
+            "keySpecs": [],
+            "detailedSpecs": [],
+            "specificationList": [
+                {
+                    "key": "General",
+                    "values": [
+                        {
+                            "key": "Brand",
+                            "value": [
+                                "SWACHH"
+                            ]
+                        },
+                        {
+                            "key": "Model Name",
+                            "value": [
+                                "TOILET CLEANER"
+                            ]
+                        },
+                        {
+                            "key": "Quantity",
+                            "value": [
+                                "500 ml"
+                            ]
+                        },
+                        {
+                            "key": "Type",
+                            "value": [
+                                "Liquid"
+                            ]
+                        },
+                        {
+                            "key": "Container Type",
+                            "value": [
+                                "Bottle"
+                            ]
+                        },
+                        {
+                            "key": "Used For",
+                            "value": [
+                                "Stains"
+                            ]
+                        },
+                        {
+                            "key": "Fragrance",
+                            "value": [
+                                "None"
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "booksInfo": {
+                "language": null,
+                "binding": null,
+                "pages": null,
+                "publisher": null,
+                "year": 0,
+                "authors": []
+            },
+            "lifeStyleInfo": {
+                "sleeve": null,
+                "neck": null,
+                "idealFor": null
+            }
+        }
+    },
+    {
+        "productBaseInfoV1": {
+            "productId": "DCGE85GWHRCPCQXF",
+            "title": "Natural Care Supreme Dish Cleaning Gel",
+            "productDescription": "Dealing With Kitchenware Grime Is Easy With Natural Care'S Dish Liquid. Tough On Grease, Soft On Hands. Our Dish Liquid Reduces The Daily Household Chore Into A Quick And Effortless Swipe",
+            "imageUrls": {
+                "200x200": "http://img.fkcdn.com/image/dish-cleaning-gel/q/x/f/lemon-natural-care-supreme-1900-200x200-imae7zqvmhnzzzmz.jpeg",
+                "400x400": "http://img.fkcdn.com/image/dish-cleaning-gel/q/x/f/lemon-natural-care-supreme-1900-400x400-imae7zqvmhnzzzmz.jpeg",
+                "800x800": "http://img.fkcdn.com/image/dish-cleaning-gel/q/x/f/lemon-natural-care-supreme-1900-800x800-imae7zqvmhnzzzmz.jpeg",
+                "unknown": "http://img.fkcdn.com/image/dish-cleaning-gel/q/x/f/lemon-natural-care-supreme-1900-original-imae7zqvmhnzzzmz.jpeg"
+            },
+            "productFamily": [
+                "[DCGE85GWHRCPCQXF]"
+            ],
+            "maximumRetailPrice": {
+                "amount": 895,
+                "currency": "INR"
+            },
+            "flipkartSellingPrice": {
+                "amount": 556,
+                "currency": "INR"
+            },
+            "flipkartSpecialPrice": {
+                "amount": 556,
+                "currency": "INR"
+            },
+            "productUrl": "http://dl.flipkart.com/dl/natural-care-supreme-dish-cleaning-gel/p/itme85gw5xhgecrc?pid=DCGE85GWHRCPCQXF&affid=slidenerd",
+            "productBrand": "Natural Care",
+            "inStock": true,
+            "codAvailable": true,
+            "discountPercentage": 37,
+            "offers": [],
+            "categoryPath": "Daily Essentials>Household Supplies>Kitchen Supplies>Dish Cleaning Gels",
+            "attributes": {
+                "size": "",
+                "color": "",
+                "storage": "",
+                "sizeUnit": "",
+                "displaySize": ""
+            }
+        },
+        "productShippingInfoV1": {
+            "shippingCharges": {
+                "amount": 0,
+                "currency": "INR"
+            },
+            "estimatedDeliveryTime": "Usually Delivered in Fri Aug 26 23:59:59 IST 2016 - Sat Aug 27 23:59:59 IST 2016 days.",
+            "sellerName": "THESGSTORE",
+            "sellerAverageRating": 3.6666667,
+            "sellerNoOfRatings": 6,
+            "sellerNoOfReviews": 0
+        },
+        "categorySpecificInfoV1": {
+            "keySpecs": [
+                "Sparkling Clean",
+                "Keeps Hands Baby Soft",
+                "No Soda Or Soda Ash",
+                "Fresh & Squeaky Clean"
+            ],
+            "detailedSpecs": [
+                "Sparkling Clean",
+                "Keeps Hands Baby Soft",
+                "No Soda Or Soda Ash",
+                "Fresh & Squeaky Clean"
+            ],
+            "specificationList": [
+                {
+                    "key": "In the box",
+                    "values": [
+                        {
+                            "key": "Pack of",
+                            "value": [
+                                "2"
+                            ]
+                        },
+                        {
+                            "key": "Sales Package",
+                            "value": [
+                                "2 Dish Liquid Bottles Of 1 Ltr Each"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "General",
+                    "values": [
+                        {
+                            "key": "Brand",
+                            "value": [
+                                "Natural Care"
+                            ]
+                        },
+                        {
+                            "key": "Fragrance",
+                            "value": [
+                                "Lemon"
+                            ]
+                        },
+                        {
+                            "key": "Model Name",
+                            "value": [
+                                "Supreme"
+                            ]
+                        },
+                        {
+                            "key": "Liquid Quantity",
+                            "value": [
+                                "1900 ml"
+                            ]
+                        },
+                        {
+                            "key": "Suitable For",
+                            "value": [
+                                "Glass, Steel, Melmoware, Plastic, Silverware"
+                            ]
+                        },
+                        {
+                            "key": "Stain Type",
+                            "value": [
+                                "Grease, Oil, Tea, Coffee, Rust"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "Safety Features",
+                    "values": [
+                        {
+                            "key": "Bleach Free",
+                            "value": [
+                                "Yes"
+                            ]
+                        },
+                        {
+                            "key": "Chemical Free",
+                            "value": [
+                                "Yes"
+                            ]
+                        },
+                        {
+                            "key": "Dermatology Tested",
+                            "value": [
+                                "Yes"
+                            ]
+                        },
+                        {
+                            "key": "Other Safety Features",
+                            "value": [
+                                "No Caustic Soda Or Soda Ash"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "Additional Features",
+                    "values": [
+                        {
+                            "key": "Biodegradable",
+                            "value": [
+                                "Yes"
+                            ]
+                        },
+                        {
+                            "key": "Other Features",
+                            "value": [
+                                "Non Toxic, Non Polluting, Bio-Degradable"
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "booksInfo": {
+                "language": null,
+                "binding": null,
+                "pages": null,
+                "publisher": null,
+                "year": 0,
+                "authors": []
+            },
+            "lifeStyleInfo": {
+                "sleeve": null,
+                "neck": null,
+                "idealFor": null
+            }
+        }
+    },
+    {
+        "productBaseInfoV1": {
+            "productId": "FSNE85GWYZTWXHPN",
+            "title": "Natural Care Softner Fabric Softener",
+            "productDescription": "For Soft & Cuddly Clothes The Natural Care Fabric Softner Delivers Long-Lasting Freshness And Everyday Softness To Keep Your Laundry Beautifully Conditioned. We Believe Caring For Your Clothes Is A Great Way To Demonstrate Tender Loving Care For Yourself And Your Family.",
+            "imageUrls": {
+                "200x200": "http://img.fkcdn.com/image/fabric-softener/h/p/n/natural-care-1-softner-200x200-imae7zpzkxccrdqp.jpeg",
+                "400x400": "http://img.fkcdn.com/image/fabric-softener/h/p/n/natural-care-1-softner-400x400-imae7zpzkxccrdqp.jpeg",
+                "800x800": "http://img.fkcdn.com/image/fabric-softener/h/p/n/natural-care-1-softner-800x800-imae7zpzkxccrdqp.jpeg",
+                "unknown": "http://img.fkcdn.com/image/fabric-softener/h/p/n/natural-care-1-softner-original-imae7zpzkxccrdqp.jpeg"
+            },
+            "productFamily": [
+                "[FSNE85GWYZTWXHPN]"
+            ],
+            "maximumRetailPrice": {
+                "amount": 495,
+                "currency": "INR"
+            },
+            "flipkartSellingPrice": {
+                "amount": 360,
+                "currency": "INR"
+            },
+            "flipkartSpecialPrice": {
+                "amount": 360,
+                "currency": "INR"
+            },
+            "productUrl": "http://dl.flipkart.com/dl/natural-care-softner-fabric-softener/p/itme85gwmezs8jhz?pid=FSNE85GWYZTWXHPN&affid=slidenerd",
+            "productBrand": "Natural Care",
+            "inStock": true,
+            "codAvailable": true,
+            "discountPercentage": 27,
+            "offers": [],
+            "categoryPath": "Household>Housekeeping & Laundry>Laundry>Fabric Softeners",
+            "attributes": {
+                "size": "",
+                "color": "",
+                "storage": "",
+                "sizeUnit": "",
+                "displaySize": ""
+            }
+        },
+        "productShippingInfoV1": {
+            "shippingCharges": {
+                "amount": 0,
+                "currency": "INR"
+            },
+            "estimatedDeliveryTime": "Usually Delivered in Fri Aug 26 23:59:59 IST 2016 - Sat Aug 27 23:59:59 IST 2016 days.",
+            "sellerName": "THESGSTORE",
+            "sellerAverageRating": 3.6666667,
+            "sellerNoOfRatings": 6,
+            "sellerNoOfReviews": 0
+        },
+        "categorySpecificInfoV1": {
+            "keySpecs": [
+                "Protects & Softens",
+                "Lingering Fragrance",
+                "Bio-Degradable Formula",
+                "Ultra-Concentrated"
+            ],
+            "detailedSpecs": [
+                "Protects & Softens",
+                "Lingering Fragrance",
+                "Bio-Degradable Formula",
+                "Ultra-Concentrated"
+            ],
+            "specificationList": [
+                {
+                    "key": "In the box",
+                    "values": [
+                        {
+                            "key": "",
+                            "value": [
+                                "1 Fabric Softener"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "General",
+                    "values": [
+                        {
+                            "key": "Brand",
+                            "value": [
+                                "Natural Care"
+                            ]
+                        },
+                        {
+                            "key": "Model Name",
+                            "value": [
+                                "Softner"
+                            ]
+                        },
+                        {
+                            "key": "Quantity",
+                            "value": [
+                                "1 L"
+                            ]
+                        },
+                        {
+                            "key": "Type",
+                            "value": [
+                                "Liquid"
+                            ]
+                        },
+                        {
+                            "key": "Scent",
+                            "value": [
+                                "Tuberose Fragrance"
+                            ]
+                        },
+                        {
+                            "key": "Suitable For",
+                            "value": [
+                                "Nylon, Cotton, Polyster, Woolen, Silks"
+                            ]
+                        },
+                        {
+                            "key": "Functions",
+                            "value": [
+                                "Easy Dry, Ultra Concentrated"
+                            ]
+                        },
+                        {
+                            "key": "Appropriate For",
+                            "value": [
+                                "After Wash"
+                            ]
+                        },
+                        {
+                            "key": "Freshness Duration",
+                            "value": [
+                                "7 day"
+                            ]
+                        },
+                        {
+                            "key": "Machine Use",
+                            "value": [
+                                "Yes"
+                            ]
+                        },
+                        {
+                            "key": "Color",
+                            "value": [
+                                "Milky White"
+                            ]
+                        },
+                        {
+                            "key": "Temperature Compatibility",
+                            "value": [
+                                "Luke Warm Water, Cold Water"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "Safety Features",
+                    "values": [
+                        {
+                            "key": "Bleach Free",
+                            "value": [
+                                "Yes"
+                            ]
+                        },
+                        {
+                            "key": "Toxic Free",
+                            "value": [
+                                "Yes"
+                            ]
+                        },
+                        {
+                            "key": "Dermatology Tested",
+                            "value": [
+                                "Yes"
+                            ]
+                        },
+                        {
+                            "key": "Other Safety Features",
+                            "value": [
+                                "Plant Based, Mineral Ingredients"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "Additional Features",
+                    "values": [
+                        {
+                            "key": "Biodegradable",
+                            "value": [
+                                "Yes"
+                            ]
+                        },
+                        {
+                            "key": "Other Features",
+                            "value": [
+                                "Only 30 Ml For A 6-8 Kg Load To Be Used"
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "booksInfo": {
+                "language": null,
+                "binding": null,
+                "pages": null,
+                "publisher": null,
+                "year": 0,
+                "authors": []
+            },
+            "lifeStyleInfo": {
+                "sleeve": null,
+                "neck": null,
+                "idealFor": null
+            }
+        }
+    },
+    {
+        "productBaseInfoV1": {
+            "productId": "DWDE8WMHZDHGQSJH",
+            "title": "Fortune Automatic Dishwasher Tablets Dishwashing Detergent",
+            "productDescription": "Now Fortune Dishwasher Tablets have the power of Enzymes. Our new formula thoroughly removes the toughest of stains such as tea and coffee, dried on food and grease. Dishes, glassware come out sparkling clean. The Indian style of cooking is a lot different from Western Countries. Our products are specially made for India. Fortune Dishwasher Tablets also prevent build up of lime scale.5 IN 1 ACTIONDETERGENT ACTIONRINSE AIDSALTGLASS PROTECTIONPOWER CLEAN ACTIONSUITABLE FOR ALL DISHWASHER BRANDS SUCH AS MIELE, IFB, SIEMENS, SAMSUNG, BOSCH, LG, HAIER, INDESIT, KITCHEN AID, KAFF, ELECTROLUX ETC.",
+            "imageUrls": {
+                "200x200": "http://img.fkcdn.com/image/dish-washing-detergent/s/j/h/lemon-fortune-30-automatic-dishwasher-tablets-200x200-imae3nz6krb5mbue.jpeg",
+                "400x400": "http://img.fkcdn.com/image/dish-washing-detergent/s/j/h/lemon-fortune-30-automatic-dishwasher-tablets-400x400-imae3nz6krb5mbue.jpeg",
+                "800x800": "http://img.fkcdn.com/image/dish-washing-detergent/s/j/h/lemon-fortune-30-automatic-dishwasher-tablets-800x800-imae3nz6krb5mbue.jpeg",
+                "unknown": "http://img.fkcdn.com/image/dish-washing-detergent/s/j/h/lemon-fortune-30-automatic-dishwasher-tablets-original-imae3nz6krb5mbue.jpeg"
+            },
+            "productFamily": [
+                "[DWDE8WMHZDHGQSJH]"
+            ],
+            "maximumRetailPrice": {
+                "amount": 440,
+                "currency": "INR"
+            },
+            "flipkartSellingPrice": {
+                "amount": 399,
+                "currency": "INR"
+            },
+            "flipkartSpecialPrice": {
+                "amount": 399,
+                "currency": "INR"
+            },
+            "productUrl": "http://dl.flipkart.com/dl/fortune-automatic-dishwasher-tablets-dishwashing-detergent/p/itme8wmh3fkfgmph?pid=DWDE8WMHZDHGQSJH&affid=slidenerd",
+            "productBrand": "Fortune",
+            "inStock": false,
+            "codAvailable": true,
+            "discountPercentage": 1,
+            "offers": [
+                "10% Instant Discount* with Axis Bank Cards",
+                "10% Instant Discount* with StanChart Cards"
+            ],
+            "categoryPath": "Daily Essentials>Household Supplies>Kitchen Supplies>Dish Washer Detergents",
+            "attributes": {
+                "size": "",
+                "color": "",
+                "storage": "",
+                "sizeUnit": "",
+                "displaySize": ""
+            }
+        },
+        "productShippingInfoV1": {
+            "shippingCharges": {
+                "amount": 50,
+                "currency": "INR"
+            },
+            "estimatedDeliveryTime": "Usually Delivered in Wed Aug 24 23:59:59 IST 2016 - Thu Aug 25 23:59:59 IST 2016 days.",
+            "sellerName": "baronialexports",
+            "sellerAverageRating": 4.25,
+            "sellerNoOfRatings": 4,
+            "sellerNoOfReviews": 1
+        },
+        "categorySpecificInfoV1": {
+            "keySpecs": [],
+            "detailedSpecs": [],
+            "specificationList": [
+                {
+                    "key": "General",
+                    "values": [
+                        {
+                            "key": "Quantity",
+                            "value": [
+                                "30 Pod"
+                            ]
+                        },
+                        {
+                            "key": "Fragrance",
+                            "value": [
+                                "Lemon"
+                            ]
+                        },
+                        {
+                            "key": "Type",
+                            "value": [
+                                "Pod"
+                            ]
+                        },
+                        {
+                            "key": "Suitable For",
+                            "value": [
+                                "Dishwasher"
+                            ]
+                        },
+                        {
+                            "key": "Used For",
+                            "value": [
+                                "Cleaning Utensils in a Dishwasher"
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "booksInfo": {
+                "language": null,
+                "binding": null,
+                "pages": null,
+                "publisher": null,
+                "year": 0,
+                "authors": []
+            },
+            "lifeStyleInfo": {
+                "sleeve": null,
+                "neck": null,
+                "idealFor": null
+            }
+        }
+    },
+    {
+        "productBaseInfoV1": {
+            "productId": "WSPEG2KPWZZWGHHV",
+            "title": "NEW PA 1KG 1000 g Washing Powder",
+            "productDescription": "",
+            "imageUrls": {
+                "200x200": "http://img.fkcdn.com/image/washing-powder/h/h/v/new-pa-1000-1kg-200x200-imaehzhkzzaxnsxm.jpeg",
+                "400x400": "http://img.fkcdn.com/image/washing-powder/h/h/v/new-pa-1000-1kg-400x400-imaehzhkzzaxnsxm.jpeg",
+                "800x800": "http://img.fkcdn.com/image/washing-powder/h/h/v/new-pa-1000-1kg-800x800-imaehzhkzzaxnsxm.jpeg",
+                "unknown": "http://img.fkcdn.com/image/washing-powder/h/h/v/new-pa-1000-1kg-original-imaehzhkzzaxnsxm.jpeg"
+            },
+            "productFamily": [
+                "[WSPEG2KPWZZWGHHV]"
+            ],
+            "maximumRetailPrice": {
+                "amount": 80,
+                "currency": "INR"
+            },
+            "flipkartSellingPrice": {
+                "amount": 65,
+                "currency": "INR"
+            },
+            "flipkartSpecialPrice": {
+                "amount": 65,
+                "currency": "INR"
+            },
+            "productUrl": "http://dl.flipkart.com/dl/new-pa-1kg-1000-g-washing-powder/p/itmeg2kpegma6x5d?pid=WSPEG2KPWZZWGHHV&affid=slidenerd",
+            "productBrand": "NEW PA",
+            "inStock": false,
+            "codAvailable": true,
+            "discountPercentage": 18,
+            "offers": [],
+            "categoryPath": "Household>Housekeeping & Laundry>Laundry>Machine Washing Powders",
+            "attributes": {
+                "size": "",
+                "color": "",
+                "storage": "",
+                "sizeUnit": "",
+                "displaySize": ""
+            }
+        },
+        "productShippingInfoV1": {
+            "shippingCharges": {
+                "amount": 0,
+                "currency": "INR"
+            },
+            "estimatedDeliveryTime": "",
+            "sellerName": "NEWPA",
+            "sellerAverageRating": 1,
+            "sellerNoOfRatings": 1,
+            "sellerNoOfReviews": 0
+        },
+        "categorySpecificInfoV1": {
+            "keySpecs": [],
+            "detailedSpecs": [],
+            "specificationList": [
+                {
+                    "key": "In the box",
+                    "values": [
+                        {
+                            "key": "",
+                            "value": [
+                                "1 WASING POWDER"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "General",
+                    "values": [
+                        {
+                            "key": "Brand",
+                            "value": [
+                                "NEW PA"
+                            ]
+                        },
+                        {
+                            "key": "Model Name",
+                            "value": [
+                                "1KG"
+                            ]
+                        },
+                        {
+                            "key": "Quantity",
+                            "value": [
+                                "1000 g"
+                            ]
+                        },
+                        {
+                            "key": "Type",
+                            "value": [
+                                "Machine Wash"
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "booksInfo": {
+                "language": null,
+                "binding": null,
+                "pages": null,
+                "publisher": null,
+                "year": 0,
+                "authors": []
+            },
+            "lifeStyleInfo": {
+                "sleeve": null,
+                "neck": null,
+                "idealFor": null
+            }
+        }
+    },
+    {
+        "productBaseInfoV1": {
+            "productId": "DWDE8WJSJJMKZHGU",
+            "title": "Fortune Automatic Dishwasher Detergent Dishwashing Detergent",
+            "productDescription": "",
+            "imageUrls": {
+                "200x200": "http://img.fkcdn.com/image/dish-washing-detergent/h/g/u/lemon-fortune-1-automatic-dishwasher-detergent-200x200-imae3xcfc3apdxzd.jpeg",
+                "400x400": "http://img.fkcdn.com/image/dish-washing-detergent/h/g/u/lemon-fortune-1-automatic-dishwasher-detergent-400x400-imae3xcfc3apdxzd.jpeg",
+                "800x800": "http://img.fkcdn.com/image/dish-washing-detergent/h/g/u/lemon-fortune-1-automatic-dishwasher-detergent-800x800-imae3xcfc3apdxzd.jpeg",
+                "unknown": "http://img.fkcdn.com/image/dish-washing-detergent/h/g/u/lemon-fortune-1-automatic-dishwasher-detergent-original-imae3xcfc3apdxzd.jpeg"
+            },
+            "productFamily": [
+                "[DWDE8WJSJJMKZHGU]"
+            ],
+            "maximumRetailPrice": {
+                "amount": 220,
+                "currency": "INR"
+            },
+            "flipkartSellingPrice": {
+                "amount": 220,
+                "currency": "INR"
+            },
+            "flipkartSpecialPrice": {
+                "amount": 220,
+                "currency": "INR"
+            },
+            "productUrl": "http://dl.flipkart.com/dl/fortune-automatic-dishwasher-detergent-dishwashing/p/itme8wjssp4b6gua?pid=DWDE8WJSJJMKZHGU&affid=slidenerd",
+            "productBrand": "Fortune",
+            "inStock": false,
+            "codAvailable": true,
+            "discountPercentage": 0,
+            "offers": [],
+            "categoryPath": "Daily Essentials>Household Supplies>Kitchen Supplies>Dish Washer Detergents",
+            "attributes": {
+                "size": "",
+                "color": "",
+                "storage": "",
+                "sizeUnit": "",
+                "displaySize": ""
+            }
+        },
+        "productShippingInfoV1": {
+            "shippingCharges": {
+                "amount": 0,
+                "currency": "INR"
+            },
+            "estimatedDeliveryTime": "",
+            "sellerName": "EXCELRASAYAN",
+            "sellerAverageRating": 4.3469386,
+            "sellerNoOfRatings": 49,
+            "sellerNoOfReviews": 3
+        },
+        "categorySpecificInfoV1": {
+            "keySpecs": [],
+            "detailedSpecs": [],
+            "specificationList": [
+                {
+                    "key": "General",
+                    "values": [
+                        {
+                            "key": "Quantity",
+                            "value": [
+                                "1 kg"
+                            ]
+                        },
+                        {
+                            "key": "Fragrance",
+                            "value": [
+                                "Lemon"
+                            ]
+                        },
+                        {
+                            "key": "Type",
+                            "value": [
+                                "Powder"
+                            ]
+                        },
+                        {
+                            "key": "Suitable For",
+                            "value": [
+                                "Dishwasher"
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "booksInfo": {
+                "language": null,
+                "binding": null,
+                "pages": null,
+                "publisher": null,
+                "year": 0,
+                "authors": []
+            },
+            "lifeStyleInfo": {
+                "sleeve": null,
+                "neck": null,
+                "idealFor": null
+            }
+        }
+    },
+    {
+        "productBaseInfoV1": {
+            "productId": "CSCEC897DCUZBCTU",
+            "title": "KKE Carpet & Upholstery Cleaner",
+            "productDescription": "This is a high foaming carpet shampoo that cleans and deodorizes carpet and upholstery. Contains optical brightener to bring out the original beauty while leaving no residue. Lemon scented.",
+            "imageUrls": {
+                "200x200": "http://img.fkcdn.com/image/carpet-sofa-cleaner/c/t/u/303-kke-500-1-200x200-imaeabwec5gwyrsm.jpeg",
+                "400x400": "http://img.fkcdn.com/image/carpet-sofa-cleaner/c/t/u/303-kke-500-1-400x400-imaeabwec5gwyrsm.jpeg",
+                "800x800": "http://img.fkcdn.com/image/carpet-sofa-cleaner/c/t/u/303-kke-500-1-800x800-imaeabwec5gwyrsm.jpeg",
+                "unknown": "http://img.fkcdn.com/image/carpet-sofa-cleaner/c/t/u/303-kke-500-1-original-imaeabwec5gwyrsm.jpeg"
+            },
+            "productFamily": [
+                "[CSCEC897DCUZBCTU]"
+            ],
+            "maximumRetailPrice": {
+                "amount": 308,
+                "currency": "INR"
+            },
+            "flipkartSellingPrice": {
+                "amount": 308,
+                "currency": "INR"
+            },
+            "flipkartSpecialPrice": {
+                "amount": 308,
+                "currency": "INR"
+            },
+            "productUrl": "http://dl.flipkart.com/dl/kke-carpet-upholstery-cleaner/p/itmec897kmhjyjnp?pid=CSCEC897DCUZBCTU&affid=slidenerd",
+            "productBrand": "KKE",
+            "inStock": true,
+            "codAvailable": true,
+            "discountPercentage": 0,
+            "offers": [],
+            "categoryPath": "Household>Housekeeping & Laundry>Home Cleaning>Carpet & Upholstery Cleaners",
+            "attributes": {
+                "size": "",
+                "color": "",
+                "storage": "",
+                "sizeUnit": "",
+                "displaySize": ""
+            }
+        },
+        "productShippingInfoV1": {
+            "shippingCharges": {
+                "amount": 50,
+                "currency": "INR"
+            },
+            "estimatedDeliveryTime": "Usually Delivered in Thu Aug 25 23:59:59 IST 2016 - Fri Aug 26 23:59:59 IST 2016 days.",
+            "sellerName": "KKEAutocare",
+            "sellerAverageRating": 1,
+            "sellerNoOfRatings": 1,
+            "sellerNoOfReviews": 0
+        },
+        "categorySpecificInfoV1": {
+            "keySpecs": [
+                "Eco Friendly",
+                "Bio Degradable"
+            ],
+            "detailedSpecs": [
+                "Eco Friendly",
+                "Bio Degradable"
+            ],
+            "specificationList": [
+                {
+                    "key": "In the box",
+                    "values": [
+                        {
+                            "key": "Sales Package",
+                            "value": [
+                                "1 Upholstry And Carpet Cleaner"
+                            ]
+                        },
+                        {
+                            "key": "Pack of",
+                            "value": [
+                                "1"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "General",
+                    "values": [
+                        {
+                            "key": "Brand",
+                            "value": [
+                                "KKE"
+                            ]
+                        },
+                        {
+                            "key": "Quantity",
+                            "value": [
+                                "500 ml"
+                            ]
+                        },
+                        {
+                            "key": "Type",
+                            "value": [
+                                "Liquid"
+                            ]
+                        },
+                        {
+                            "key": "Container Type",
+                            "value": [
+                                "Bottle"
+                            ]
+                        },
+                        {
+                            "key": "Model Number",
+                            "value": [
+                                "303"
+                            ]
+                        },
+                        {
+                            "key": "Model Name",
+                            "value": [
+                                "Fabric Clean"
+                            ]
+                        },
+                        {
+                            "key": "Usage Instructions",
+                            "value": [
+                                "Dilute Product 1:16 Parts Water. Place A Proper Amount Of Carpet Shampoo In A Handy Container., Add Water With A Strong Stream To Produce Suds., Scrub Carpet With The Diluted Shampoo And Use A Brush To Help Attract And Suspend Dirt Particles., Towel Dry Or Use A Wet / Dry Vacuum To Remove Excess Water."
+                            ]
+                        },
+                        {
+                            "key": "Suitable For",
+                            "value": [
+                                "Carpet, Upholstry, Fabrics Of Sofa Sets, Car Fabric Seats"
+                            ]
+                        },
+                        {
+                            "key": "Cleaning Type",
+                            "value": [
+                                "SW - Solvent and water-based cleaning"
+                            ]
+                        },
+                        {
+                            "key": "Used For",
+                            "value": [
+                                "All Kind Of Fabric Covers, Fabric Seats, Upholstery & Carpets"
+                            ]
+                        },
+                        {
+                            "key": "Color Safe",
+                            "value": [
+                                "Yes"
+                            ]
+                        },
+                        {
+                            "key": "Wet Cleaning",
+                            "value": [
+                                "No"
+                            ]
+                        },
+                        {
+                            "key": "Scent",
+                            "value": [
+                                "Lemon"
+                            ]
+                        },
+                        {
+                            "key": "Removes Odor",
+                            "value": [
+                                "Yes"
+                            ]
+                        },
+                        {
+                            "key": "Safe For",
+                            "value": [
+                                "Skin"
+                            ]
+                        },
+                        {
+                            "key": "Brush Included",
+                            "value": [
+                                "No"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "Additional Features",
+                    "values": [
+                        {
+                            "key": "Toxic Free",
+                            "value": [
+                                "Yes"
+                            ]
+                        },
+                        {
+                            "key": "Biodegradable",
+                            "value": [
+                                "Yes"
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "booksInfo": {
+                "language": null,
+                "binding": null,
+                "pages": null,
+                "publisher": null,
+                "year": 0,
+                "authors": []
+            },
+            "lifeStyleInfo": {
+                "sleeve": null,
+                "neck": null,
+                "idealFor": null
+            }
+        }
+    },
+    {
+        "productBaseInfoV1": {
+            "productId": "LDGEDMYQS8F5RT2G",
+            "title": "Taj Clean Liquid Detergent",
+            "productDescription": "",
+            "imageUrls": {
+                "200x200": "http://img.fkcdn.com/image/liquid-detergent/t/2/g/taj-500-1-clean-200x200-imaedmwfkyyn5et9.jpeg",
+                "400x400": "http://img.fkcdn.com/image/liquid-detergent/t/2/g/taj-500-1-clean-400x400-imaedmwfkyyn5et9.jpeg",
+                "800x800": "http://img.fkcdn.com/image/liquid-detergent/t/2/g/taj-500-1-clean-800x800-imaedmwfkyyn5et9.jpeg",
+                "unknown": "http://img.fkcdn.com/image/liquid-detergent/t/2/g/taj-500-1-clean-original-imaedmwfkyyn5et9.jpeg"
+            },
+            "productFamily": [
+                "[LDGEDMYQS8F5RT2G]"
+            ],
+            "maximumRetailPrice": {
+                "amount": 130,
+                "currency": "INR"
+            },
+            "flipkartSellingPrice": {
+                "amount": 85,
+                "currency": "INR"
+            },
+            "flipkartSpecialPrice": {
+                "amount": 85,
+                "currency": "INR"
+            },
+            "productUrl": "http://dl.flipkart.com/dl/taj-clean-liquid-detergent/p/itmedmyqjj8vzggr?pid=LDGEDMYQS8F5RT2G&affid=slidenerd",
+            "productBrand": "Taj",
+            "inStock": true,
+            "codAvailable": true,
+            "discountPercentage": 34,
+            "offers": [],
+            "categoryPath": "Household>Housekeeping & Laundry>Laundry>Liquid Detergents",
+            "attributes": {
+                "size": "",
+                "color": "",
+                "storage": "",
+                "sizeUnit": "",
+                "displaySize": ""
+            }
+        },
+        "productShippingInfoV1": {
+            "shippingCharges": {
+                "amount": 50,
+                "currency": "INR"
+            },
+            "estimatedDeliveryTime": "Usually Delivered in Thu Aug 25 23:59:59 IST 2016 - Fri Aug 26 23:59:59 IST 2016 days.",
+            "sellerName": "Tajdetergent",
+            "sellerAverageRating": 5,
+            "sellerNoOfRatings": 1,
+            "sellerNoOfReviews": 0
+        },
+        "categorySpecificInfoV1": {
+            "keySpecs": [],
+            "detailedSpecs": [],
+            "specificationList": [
+                {
+                    "key": "In the box",
+                    "values": [
+                        {
+                            "key": "Pack of",
+                            "value": [
+                                "1"
+                            ]
+                        },
+                        {
+                            "key": "Sales Package",
+                            "value": [
+                                "Liquid Detergent"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "General",
+                    "values": [
+                        {
+                            "key": "Brand",
+                            "value": [
+                                "Taj"
+                            ]
+                        },
+                        {
+                            "key": "Model Name",
+                            "value": [
+                                "Clean"
+                            ]
+                        },
+                        {
+                            "key": "Quantity",
+                            "value": [
+                                "500 ml"
+                            ]
+                        },
+                        {
+                            "key": "Container Type",
+                            "value": [
+                                "Bottle"
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "booksInfo": {
+                "language": null,
+                "binding": null,
+                "pages": null,
+                "publisher": null,
+                "year": 0,
+                "authors": []
+            },
+            "lifeStyleInfo": {
+                "sleeve": null,
+                "neck": null,
+                "idealFor": null
+            }
+        }
+    },
+    {
+        "productBaseInfoV1": {
+            "productId": "DCGEHZTFJ8MAUNCV",
+            "title": "SWACHH Lemon Dish Washer Dish Cleaning Gel",
+            "productDescription": "",
+            "imageUrls": {
+                "200x200": "http://img.fkcdn.com/image/dish-cleaning-gel/n/c/v/lemon-swachh-lemon-dish-washer-250-200x200-imaegh6uzjvbxj53.jpeg",
+                "400x400": "http://img.fkcdn.com/image/dish-cleaning-gel/n/c/v/lemon-swachh-lemon-dish-washer-250-400x400-imaegh6uzjvbxj53.jpeg",
+                "800x800": "http://img.fkcdn.com/image/dish-cleaning-gel/n/c/v/lemon-swachh-lemon-dish-washer-250-800x800-imaegh6uzjvbxj53.jpeg",
+                "unknown": "http://img.fkcdn.com/image/dish-cleaning-gel/n/c/v/lemon-swachh-lemon-dish-washer-250-original-imaegh6uzjvbxj53.jpeg"
+            },
+            "productFamily": [
+                "[DCGEHZTFJ8MAUNCV]"
+            ],
+            "maximumRetailPrice": {
+                "amount": 60,
+                "currency": "INR"
+            },
+            "flipkartSellingPrice": {
+                "amount": 45,
+                "currency": "INR"
+            },
+            "flipkartSpecialPrice": {
+                "amount": 45,
+                "currency": "INR"
+            },
+            "productUrl": "http://dl.flipkart.com/dl/swachh-lemon-dish-washer-cleaning-gel/p/itmehztfpesdzyka?pid=DCGEHZTFJ8MAUNCV&affid=slidenerd",
+            "productBrand": "SWACHH",
+            "inStock": false,
+            "codAvailable": true,
+            "discountPercentage": 25,
+            "offers": [],
+            "categoryPath": "Daily Essentials>Household Supplies>Kitchen Supplies>Dish Cleaning Gels",
+            "attributes": {
+                "size": "",
+                "color": "",
+                "storage": "",
+                "sizeUnit": "",
+                "displaySize": ""
+            }
+        },
+        "productShippingInfoV1": {
+            "shippingCharges": {
+                "amount": 0,
+                "currency": "INR"
+            },
+            "estimatedDeliveryTime": "",
+            "sellerName": "ConsolidatedTeknics",
+            "sellerAverageRating": null,
+            "sellerNoOfRatings": 0,
+            "sellerNoOfReviews": 0
+        },
+        "categorySpecificInfoV1": {
+            "keySpecs": [],
+            "detailedSpecs": [],
+            "specificationList": [
+                {
+                    "key": "General",
+                    "values": [
+                        {
+                            "key": "Brand",
+                            "value": [
+                                "SWACHH"
+                            ]
+                        },
+                        {
+                            "key": "Fragrance",
+                            "value": [
+                                "LEMON"
+                            ]
+                        },
+                        {
+                            "key": "Model Name",
+                            "value": [
+                                "Lemon Dish Washer"
+                            ]
+                        },
+                        {
+                            "key": "Liquid Quantity",
+                            "value": [
+                                "250 ml"
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "booksInfo": {
+                "language": null,
+                "binding": null,
+                "pages": null,
+                "publisher": null,
+                "year": 0,
+                "authors": []
+            },
+            "lifeStyleInfo": {
+                "sleeve": null,
+                "neck": null,
+                "idealFor": null
+            }
+        }
+    },
+    {
+        "productBaseInfoV1": {
+            "productId": "TBSEKY5CZJMHCZH3",
+            "title": "Power Toilet Brush",
+            "productDescription": "",
+            "imageUrls": {
+                "200x200": "http://img.fkcdn.com/image/toilet-brush/z/h/3/5689-power-200x200-imaekufeff9mzfmg.jpeg",
+                "400x400": "http://img.fkcdn.com/image/toilet-brush/z/h/3/5689-power-400x400-imaekufeff9mzfmg.jpeg",
+                "800x800": "http://img.fkcdn.com/image/toilet-brush/z/h/3/5689-power-800x800-imaekufeff9mzfmg.jpeg",
+                "unknown": "http://img.fkcdn.com/image/toilet-brush/z/h/3/5689-power-original-imaekufeff9mzfmg.jpeg"
+            },
+            "productFamily": [
+                "[TBSEKY5CZJMHCZH3]"
+            ],
+            "maximumRetailPrice": {
+                "amount": 450,
+                "currency": "INR"
+            },
+            "flipkartSellingPrice": {
+                "amount": 229,
+                "currency": "INR"
+            },
+            "flipkartSpecialPrice": {
+                "amount": 229,
+                "currency": "INR"
+            },
+            "productUrl": "http://dl.flipkart.com/dl/power-toilet-brush/p/itmeky5cdw9xzfzj?pid=TBSEKY5CZJMHCZH3&affid=slidenerd",
+            "productBrand": "Power",
+            "inStock": true,
+            "codAvailable": true,
+            "discountPercentage": 55,
+            "offers": [],
+            "categoryPath": "Daily Essentials>Household Supplies>Home Cleaning>Toilet Brushes",
+            "attributes": {
+                "size": "",
+                "color": "",
+                "storage": "",
+                "sizeUnit": "",
+                "displaySize": ""
+            }
+        },
+        "productShippingInfoV1": {
+            "shippingCharges": {
+                "amount": 40,
+                "currency": "INR"
+            },
+            "estimatedDeliveryTime": "Usually Delivered in Wed Sep 14 23:59:59 IST 2016 - Thu Sep 15 23:59:59 IST 2016 days.",
+            "sellerName": "HUMpartners",
+            "sellerAverageRating": 3.4285715,
+            "sellerNoOfRatings": 7,
+            "sellerNoOfReviews": 0
+        },
+        "categorySpecificInfoV1": {
+            "keySpecs": [],
+            "detailedSpecs": [],
+            "specificationList": [
+                {
+                    "key": "In the box",
+                    "values": [
+                        {
+                            "key": "",
+                            "value": [
+                                "3 Toilet Brush"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "General",
+                    "values": [
+                        {
+                            "key": "Brand",
+                            "value": [
+                                "Power"
+                            ]
+                        },
+                        {
+                            "key": "Model Number",
+                            "value": [
+                                "5689"
+                            ]
+                        },
+                        {
+                            "key": "Color",
+                            "value": [
+                                "Orange"
+                            ]
+                        },
+                        {
+                            "key": "With Holder",
+                            "value": [
+                                "No"
+                            ]
+                        },
+                        {
+                            "key": "Suitable For",
+                            "value": [
+                                "Indian, Western"
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "booksInfo": {
+                "language": null,
+                "binding": null,
+                "pages": null,
+                "publisher": null,
+                "year": 0,
+                "authors": []
+            },
+            "lifeStyleInfo": {
+                "sleeve": null,
+                "neck": null,
+                "idealFor": null
+            }
+        }
+    },
+    {
+        "productBaseInfoV1": {
+            "productId": "DWBEG8GS6ZYH96QY",
+            "title": "Oswal Washing Dishwashing Bar",
+            "productDescription": "Oswal Dishwash tub is a product for every day house hold need. its tub and scratcher are practical for the day to day utensils. Its unique quick action formula cleans deep inside the utensils.",
+            "imageUrls": {
+                "200x200": "http://img.fkcdn.com/image/dish-washing-bar/6/q/y/500-oswal-1-washing-200x200-imaeg8dcfhz4y2wr.jpeg",
+                "400x400": "http://img.fkcdn.com/image/dish-washing-bar/6/q/y/500-oswal-1-washing-400x400-imaeg8dcfhz4y2wr.jpeg",
+                "800x800": "http://img.fkcdn.com/image/dish-washing-bar/6/q/y/500-oswal-1-washing-800x800-imaeg8dcfhz4y2wr.jpeg",
+                "unknown": "http://img.fkcdn.com/image/dish-washing-bar/6/q/y/500-oswal-1-washing-original-imaeg8dcfhz4y2wr.jpeg"
+            },
+            "productFamily": [
+                "[DWBEG8GS6ZYH96QY]"
+            ],
+            "maximumRetailPrice": {
+                "amount": 30,
+                "currency": "INR"
+            },
+            "flipkartSellingPrice": {
+                "amount": 30,
+                "currency": "INR"
+            },
+            "flipkartSpecialPrice": {
+                "amount": 30,
+                "currency": "INR"
+            },
+            "productUrl": "http://dl.flipkart.com/dl/oswal-washing-dishwashing-bar/p/itmeg8gs8cazmrwx?pid=DWBEG8GS6ZYH96QY&affid=slidenerd",
+            "productBrand": "Oswal",
+            "inStock": false,
+            "codAvailable": true,
+            "discountPercentage": 0,
+            "offers": [],
+            "categoryPath": "Daily Essentials>Household Supplies>Kitchen Supplies>Dish Washing Bars",
+            "attributes": {
+                "size": "",
+                "color": "",
+                "storage": "",
+                "sizeUnit": "",
+                "displaySize": ""
+            }
+        },
+        "productShippingInfoV1": {
+            "shippingCharges": {
+                "amount": 0,
+                "currency": "INR"
+            },
+            "estimatedDeliveryTime": "",
+            "sellerName": "UttamchandDeshraj",
+            "sellerAverageRating": 5,
+            "sellerNoOfRatings": 1,
+            "sellerNoOfReviews": 0
+        },
+        "categorySpecificInfoV1": {
+            "keySpecs": [],
+            "detailedSpecs": [],
+            "specificationList": [
+                {
+                    "key": "In the box",
+                    "values": [
+                        {
+                            "key": "Pack of",
+                            "value": [
+                                "1"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "General",
+                    "values": [
+                        {
+                            "key": "Brand",
+                            "value": [
+                                "Oswal"
+                            ]
+                        },
+                        {
+                            "key": "Weight",
+                            "value": [
+                                "500 g"
+                            ]
+                        },
+                        {
+                            "key": "Model Name",
+                            "value": [
+                                "Washing"
+                            ]
+                        },
+                        {
+                            "key": "Fragrance",
+                            "value": [
+                                "Fruity"
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "booksInfo": {
+                "language": null,
+                "binding": null,
+                "pages": null,
+                "publisher": null,
+                "year": 0,
+                "authors": []
+            },
+            "lifeStyleInfo": {
+                "sleeve": null,
+                "neck": null,
+                "idealFor": null
+            }
+        }
+    },
+    {
+        "productBaseInfoV1": {
+            "productId": "DROEAKMTHW3SZMXG",
+            "title": "BTM Septic BTM Septic Liquid Drain Opener",
+            "productDescription": "Required twice a year per toilet SeatBTM septic is a Septic Tank Treatment which is a combination of microbes & Active carbon that can be simply flushed down the toilet, relieve septic systems of many of their most irritating & potentially costly problems. It eliminates nasty odors, relieves slow drainage & system backup, keeps wet spots from forming, & puts an end to frequent pump outsBenefits:1. 100% Environment friendly2. Reduction in sludge volume & line choke3. Keeps the septic tank clean & dry, results in disturbing the reproduction cycle of mosquito & housefly4. Provides clean over flow water5. Breakdowns build up in pipes & sludge in septic tank & in leach field6. Reduces maintenance cost7. Facilitates more thorough degradation of wastes that enter the system8. Destroys harmful & odour-producing microorganismsDosageUse per toilet SeatMix BTM Septic (A) 100 ml in 1 ltr of water & pour into the seat after 20 min. Mix BTM Septic (B) 100 ml in 1ltr water & pour into the same seat",
+            "imageUrls": {
+                "200x200": "http://img.fkcdn.com/image/drain-opener/7/4/k/btm-septic-1-combo-of-5-septic-200x200-imaeajpd5wgczsvm.jpeg",
+                "400x400": "http://img.fkcdn.com/image/drain-opener/7/4/k/btm-septic-1-combo-of-5-septic-400x400-imaeajpd5wgczsvm.jpeg",
+                "800x800": "http://img.fkcdn.com/image/drain-opener/7/4/k/btm-septic-1-combo-of-5-septic-800x800-imaeajpd5wgczsvm.jpeg",
+                "unknown": "http://img.fkcdn.com/image/drain-opener/7/4/k/btm-septic-1-combo-of-5-septic-original-imaeajpd5wgczsvm.jpeg"
+            },
+            "productFamily": [
+                "[DROEAKMTHW3SZMXG]"
+            ],
+            "maximumRetailPrice": {
+                "amount": 220,
+                "currency": "INR"
+            },
+            "flipkartSellingPrice": {
+                "amount": 215,
+                "currency": "INR"
+            },
+            "flipkartSpecialPrice": {
+                "amount": 215,
+                "currency": "INR"
+            },
+            "productUrl": "http://dl.flipkart.com/dl/btm-septic-liquid-drain-opener/p/itmeakmtrvxsnjyb?pid=DROEAKMTHW3SZMXG&affid=slidenerd",
+            "productBrand": "BTM Septic",
+            "inStock": true,
+            "codAvailable": true,
+            "discountPercentage": 2,
+            "offers": [],
+            "categoryPath": "Daily Essentials>Household Supplies>Home Cleaning>Drain Openers",
+            "attributes": {
+                "size": "",
+                "color": "",
+                "storage": "",
+                "sizeUnit": "",
+                "displaySize": ""
+            }
+        },
+        "productShippingInfoV1": {
+            "shippingCharges": {
+                "amount": 0,
+                "currency": "INR"
+            },
+            "estimatedDeliveryTime": "Usually Delivered in Thu Sep 01 23:59:59 IST 2016 - Fri Sep 02 23:59:59 IST 2016 days.",
+            "sellerName": "AmeyaAgritech",
+            "sellerAverageRating": null,
+            "sellerNoOfRatings": 0,
+            "sellerNoOfReviews": 0
+        },
+        "categorySpecificInfoV1": {
+            "keySpecs": [
+                "Req. Twice In A Year",
+                "Keeps Tank Clean & Dry",
+                "Increases Life Of Tank",
+                "Environment Friendly"
+            ],
+            "detailedSpecs": [
+                "Req. Twice In A Year",
+                "Keeps Tank Clean & Dry",
+                "Increases Life Of Tank",
+                "Environment Friendly"
+            ],
+            "specificationList": [
+                {
+                    "key": "In the box",
+                    "values": [
+                        {
+                            "key": "",
+                            "value": [
+                                "1 Drain Opener"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "General",
+                    "values": [
+                        {
+                            "key": "Brand",
+                            "value": [
+                                "BTM Septic"
+                            ]
+                        },
+                        {
+                            "key": "Model Name",
+                            "value": [
+                                "BTM Septic"
+                            ]
+                        },
+                        {
+                            "key": "Quantity",
+                            "value": [
+                                "200 ml"
+                            ]
+                        },
+                        {
+                            "key": "Type",
+                            "value": [
+                                "Liquid"
+                            ]
+                        },
+                        {
+                            "key": "Chemical Type",
+                            "value": [
+                                "Biological Toilet Tank Cleaner"
+                            ]
+                        },
+                        {
+                            "key": "Used For",
+                            "value": [
+                                "Toilet Tanks, Drainage"
+                            ]
+                        },
+                        {
+                            "key": "Suitable For",
+                            "value": [
+                                "PVC Pipes, Metal Pipes, Plastic Pipes"
+                            ]
+                        },
+                        {
+                            "key": "Drain Clearing Time",
+                            "value": [
+                                "72 hr"
+                            ]
+                        },
+                        {
+                            "key": "Composition",
+                            "value": [
+                                "Microbiological Culture"
+                            ]
+                        },
+                        {
+                            "key": "Use Instructions",
+                            "value": [
+                                "Follow the Step by Step instruction given on package"
+                            ]
+                        },
+                        {
+                            "key": "Recommended Use",
+                            "value": [
+                                "Septic Tank Clog, Drain Clog, Toilet seat Pipe Clog"
+                            ]
+                        },
+                        {
+                            "key": "Fragrance",
+                            "value": [
+                                "Organic"
+                            ]
+                        },
+                        {
+                            "key": "Odorless",
+                            "value": [
+                                "Yes"
+                            ]
+                        },
+                        {
+                            "key": "Phosphorus Free",
+                            "value": [
+                                "Yes"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "Additional Features",
+                    "values": [
+                        {
+                            "key": "Corrosion Protection",
+                            "value": [
+                                "Yes"
+                            ]
+                        },
+                        {
+                            "key": "Precaution",
+                            "value": [
+                                "Avoid Contact With Eyes, Do Not Squeeze Bottle, Do not swallow"
+                            ]
+                        },
+                        {
+                            "key": "Other Features",
+                            "value": [
+                                "Due to dry tank less mosquito less diseases and illness. 8. Less illness less doctor visit is as good as saving money. Clean over flow water. Most economical solution available in the market. Easy to use. No need to call the vacuum truck / sludge sucking truck. No trucks so, no pollution in air. No worries of calling labourer to clean it. Clean environment. No machines required. No chemicals so no harm to living beings. Safe even if skin contact happens. Clean environment for future generations. Reduction in pollutions of water sources. No electricity or fuel required. Time saving & automatic cleaning. No hazardous fumes. International technology at door step"
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "booksInfo": {
+                "language": null,
+                "binding": null,
+                "pages": null,
+                "publisher": null,
+                "year": 0,
+                "authors": []
+            },
+            "lifeStyleInfo": {
+                "sleeve": null,
+                "neck": null,
+                "idealFor": null
+            }
+        }
+    },
+    {
+        "productBaseInfoV1": {
+            "productId": "TCNECPMGGPGZQZUM",
+            "title": "Handitizer Seat Sanitizer None Toilet Cleaner",
+            "productDescription": "",
+            "imageUrls": {
+                "200x200": "http://img.fkcdn.com/image/toilet-cleaner/z/u/m/handitizer-225-seat-sanitizer-200x200-imaeczc5xephkjq6.jpeg",
+                "400x400": "http://img.fkcdn.com/image/toilet-cleaner/z/u/m/handitizer-225-seat-sanitizer-400x400-imaeczc5xephkjq6.jpeg",
+                "800x800": "http://img.fkcdn.com/image/toilet-cleaner/z/u/m/handitizer-225-seat-sanitizer-800x800-imaeczc5xephkjq6.jpeg",
+                "unknown": "http://img.fkcdn.com/image/toilet-cleaner/z/u/m/handitizer-225-seat-sanitizer-original-imaeczc5xephkjq6.jpeg"
+            },
+            "productFamily": [
+                "[TCNECPMGGPGZQZUM]"
+            ],
+            "maximumRetailPrice": {
+                "amount": 480,
+                "currency": "INR"
+            },
+            "flipkartSellingPrice": {
+                "amount": 480,
+                "currency": "INR"
+            },
+            "flipkartSpecialPrice": {
+                "amount": 480,
+                "currency": "INR"
+            },
+            "productUrl": "http://dl.flipkart.com/dl/handitizer-seat-sanitizer-none-toilet-cleaner/p/itmecpmghtggycgf?pid=TCNECPMGGPGZQZUM&affid=slidenerd",
+            "productBrand": "Handitizer",
+            "inStock": true,
+            "codAvailable": true,
+            "discountPercentage": 0,
+            "offers": [],
+            "categoryPath": "Daily Essentials>Household Supplies>Home Cleaning>Toilet Cleaners",
+            "attributes": {
+                "size": "",
+                "color": "",
+                "storage": "",
+                "sizeUnit": "",
+                "displaySize": ""
+            }
+        },
+        "productShippingInfoV1": {
+            "shippingCharges": {
+                "amount": 0,
+                "currency": "INR"
+            },
+            "estimatedDeliveryTime": "Usually Delivered in Sat Sep 10 23:59:59 IST 2016 - Sun Sep 11 23:59:59 IST 2016 days.",
+            "sellerName": "HANDITIZER",
+            "sellerAverageRating": null,
+            "sellerNoOfRatings": 0,
+            "sellerNoOfReviews": 0
+        },
+        "categorySpecificInfoV1": {
+            "keySpecs": [],
+            "detailedSpecs": [],
+            "specificationList": [
+                {
+                    "key": "In the box",
+                    "values": [
+                        {
+                            "key": "Pack of",
+                            "value": [
+                                "3"
+                            ]
+                        },
+                        {
+                            "key": "Sales Package",
+                            "value": [
+                                "3 Toilet Seat Sanitizer Spray"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "General",
+                    "values": [
+                        {
+                            "key": "Brand",
+                            "value": [
+                                "Handitizer"
+                            ]
+                        },
+                        {
+                            "key": "Model Name",
+                            "value": [
+                                "Seat Sanitizer"
+                            ]
+                        },
+                        {
+                            "key": "Quantity",
+                            "value": [
+                                "225 ml"
+                            ]
+                        },
+                        {
+                            "key": "Type",
+                            "value": [
+                                "Liquid"
+                            ]
+                        },
+                        {
+                            "key": "Container Type",
+                            "value": [
+                                "Bottle"
+                            ]
+                        },
+                        {
+                            "key": "Used For",
+                            "value": [
+                                "Germs, Odor, Fungi"
+                            ]
+                        },
+                        {
+                            "key": "Fragrance",
+                            "value": [
+                                "None"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "Additonal Features",
+                    "values": [
+                        {
+                            "key": "Nozzle",
+                            "value": [
+                                "Yes"
+                            ]
+                        },
+                        {
+                            "key": "Usage Instructions",
+                            "value": [
+                                "Spray the Toilet Seat & Sit"
+                            ]
+                        },
+                        {
+                            "key": "Other Features",
+                            "value": [
+                                "Helps to fight toilet borne diseases & fights odour"
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "booksInfo": {
+                "language": null,
+                "binding": null,
+                "pages": null,
+                "publisher": null,
+                "year": 0,
+                "authors": []
+            },
+            "lifeStyleInfo": {
+                "sleeve": null,
+                "neck": null,
+                "idealFor": null
+            }
+        }
+    },
+    {
+        "productBaseInfoV1": {
+            "productId": "KSCE8UUKMEHGNWAY",
+            "title": "Pledge Furniture Polish Classic Kitchen Cleaner",
+            "productDescription": "Keeps Your Furniture Clean And Shine",
+            "imageUrls": {
+                "200x200": "http://img.fkcdn.com/image/kitchen-surface-cleaner/w/a/y/pledge-250-furniture-polish-classic-200x200-imae8uha2ydxahkb.jpeg",
+                "400x400": "http://img.fkcdn.com/image/kitchen-surface-cleaner/w/a/y/pledge-250-furniture-polish-classic-400x400-imae8uha2ydxahkb.jpeg",
+                "800x800": "http://img.fkcdn.com/image/kitchen-surface-cleaner/w/a/y/pledge-250-furniture-polish-classic-800x800-imae8uha2ydxahkb.jpeg",
+                "unknown": "http://img.fkcdn.com/image/kitchen-surface-cleaner/w/a/y/pledge-250-furniture-polish-classic-original-imae8uha2ydxahkb.jpeg"
+            },
+            "productFamily": [
+                "[KSCE8UUKMEHGNWAY]"
+            ],
+            "maximumRetailPrice": {
+                "amount": 349,
+                "currency": "INR"
+            },
+            "flipkartSellingPrice": {
+                "amount": 315,
+                "currency": "INR"
+            },
+            "flipkartSpecialPrice": {
+                "amount": 315,
+                "currency": "INR"
+            },
+            "productUrl": "http://dl.flipkart.com/dl/pledge-furniture-polish-classic-kitchen-cleaner/p/itme8uukhwfpfg3f?pid=KSCE8UUKMEHGNWAY&affid=slidenerd",
+            "productBrand": "Pledge",
+            "inStock": true,
+            "codAvailable": true,
+            "discountPercentage": 2,
+            "offers": [],
+            "categoryPath": "Daily Essentials>Household Supplies>Home Cleaning>Kitchen Surface Cleaners",
+            "attributes": {
+                "size": "",
+                "color": "",
+                "storage": "",
+                "sizeUnit": "",
+                "displaySize": ""
+            }
+        },
+        "productShippingInfoV1": {
+            "shippingCharges": {
+                "amount": 0,
+                "currency": "INR"
+            },
+            "estimatedDeliveryTime": "",
+            "sellerName": "GlobalBrandsLtd",
+            "sellerAverageRating": 3.9216866,
+            "sellerNoOfRatings": 1162,
+            "sellerNoOfReviews": 28
+        },
+        "categorySpecificInfoV1": {
+            "keySpecs": [],
+            "detailedSpecs": [],
+            "specificationList": [
+                {
+                    "key": "In the box",
+                    "values": [
+                        {
+                            "key": "Pack of",
+                            "value": [
+                                "1"
+                            ]
+                        },
+                        {
+                            "key": "Sales Package",
+                            "value": [
+                                "1 Furniture Polish"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "General",
+                    "values": [
+                        {
+                            "key": "Brand",
+                            "value": [
+                                "Pledge"
+                            ]
+                        },
+                        {
+                            "key": "Model Name",
+                            "value": [
+                                "Furniture Polish Classic"
+                            ]
+                        },
+                        {
+                            "key": "Quantity",
+                            "value": [
+                                "250 ml"
+                            ]
+                        },
+                        {
+                            "key": "Fragrance",
+                            "value": [
+                                "Regular"
+                            ]
+                        },
+                        {
+                            "key": "Suitable For",
+                            "value": [
+                                "Furniture"
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "booksInfo": {
+                "language": null,
+                "binding": null,
+                "pages": null,
+                "publisher": null,
+                "year": 0,
+                "authors": []
+            },
+            "lifeStyleInfo": {
+                "sleeve": null,
+                "neck": null,
+                "idealFor": null
+            }
+        }
+    }
+]

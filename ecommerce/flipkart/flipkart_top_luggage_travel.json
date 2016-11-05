@@ -1,0 +1,692 @@
+[
+    {
+        "productBaseInfoV1": {
+            "productId": "RKSEHGH2GUFYFHTD",
+            "title": "Layout Adventure 50 L Rucksack  - 50 L",
+            "productDescription": "The all new Layout rucksack is here. Planning for an outing - Layout rucksack will help you tie up your stuff safely. Lightweight & durable fabric makes it more convinent to carry it easily especially on hills. Layout bags are confortable and designed according to user requirment.",
+            "imageUrls": {
+                "200x200": "http://img.fkcdn.com/image/rucksack/h/t/d/adventure-50-a1-layout-rucksack-adventure-50-l-200x200-imaehgmvgzsgrfhd.jpeg",
+                "400x400": "http://img.fkcdn.com/image/rucksack/h/t/d/adventure-50-a1-layout-rucksack-adventure-50-l-400x400-imaehgmvgzsgrfhd.jpeg",
+                "800x800": "http://img.fkcdn.com/image/rucksack/h/t/d/adventure-50-a1-layout-rucksack-adventure-50-l-800x800-imaehgmvgzsgrfhd.jpeg",
+                "unknown": "http://img.fkcdn.com/image/rucksack/h/t/d/adventure-50-a1-layout-rucksack-adventure-50-l-original-imaehgmvgzsgrfhd.jpeg"
+            },
+            "productFamily": [
+                "[RKSEHGH2ATDYBZ7U",
+                " RKSEHGRF6GQUVZCH]"
+            ],
+            "maximumRetailPrice": {
+                "amount": 3599,
+                "currency": "INR"
+            },
+            "flipkartSellingPrice": {
+                "amount": 1349,
+                "currency": "INR"
+            },
+            "flipkartSpecialPrice": {
+                "amount": 1349,
+                "currency": "INR"
+            },
+            "productUrl": "http://dl.flipkart.com/dl/layout-adventure-50-l-rucksack/p/itmehgh2qug4fn8r?pid=RKSEHGH2GUFYFHTD&affid=slidenerd",
+            "productBrand": "Layout",
+            "inStock": true,
+            "codAvailable": true,
+            "discountPercentage": 63,
+            "offers": [
+                "Extra 15% off* with digibank by DBS"
+            ],
+            "categoryPath": "Lifestyle>Leather & Travel Accessories>Luggage>Rucksacks",
+            "attributes": {
+                "size": "",
+                "color": "Blue",
+                "storage": "",
+                "sizeUnit": "",
+                "displaySize": ""
+            }
+        },
+        "productShippingInfoV1": {
+            "shippingCharges": {
+                "amount": 50,
+                "currency": "INR"
+            },
+            "estimatedDeliveryTime": "Usually Delivered in Tue Sep 06 23:59:59 IST 2016 - Wed Sep 07 23:59:59 IST 2016 days.",
+            "sellerName": "Layout",
+            "sellerAverageRating": 3.969697,
+            "sellerNoOfRatings": 33,
+            "sellerNoOfReviews": 1
+        },
+        "categorySpecificInfoV1": {
+            "keySpecs": [
+                "Rucksack",
+                "Width x Height 400 mm x 600 mm",
+                "For Men",
+                "5 Compartments",
+                "Polyester Material"
+            ],
+            "detailedSpecs": [
+                "Rucksack",
+                "Width x Height 400 mm x 600 mm",
+                "For Men",
+                "5 Compartments",
+                "Polyester Material"
+            ],
+            "specificationList": [
+                {
+                    "key": "General",
+                    "values": [
+                        {
+                            "key": "Type",
+                            "value": [
+                                "Rucksack"
+                            ]
+                        },
+                        {
+                            "key": "Ideal For",
+                            "value": [
+                                "Men"
+                            ]
+                        },
+                        {
+                            "key": "Bag Size",
+                            "value": [
+                                "Big"
+                            ]
+                        },
+                        {
+                            "key": "Capacity",
+                            "value": [
+                                "50 L"
+                            ]
+                        },
+                        {
+                            "key": "Material",
+                            "value": [
+                                "Polyester"
+                            ]
+                        },
+                        {
+                            "key": "Closure",
+                            "value": [
+                                "zipper"
+                            ]
+                        },
+                        {
+                            "key": "Style Code",
+                            "value": [
+                                "Adventure 50 -A1"
+                            ]
+                        },
+                        {
+                            "key": "Color Code",
+                            "value": [
+                                "Sky Blue"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "Body Features",
+                    "values": [
+                        {
+                            "key": "Number of Compartments",
+                            "value": [
+                                "5"
+                            ]
+                        },
+                        {
+                            "key": "Number of Pockets",
+                            "value": [
+                                "5"
+                            ]
+                        },
+                        {
+                            "key": "Waterproof",
+                            "value": [
+                                "Yes"
+                            ]
+                        },
+                        {
+                            "key": "Shoulder Strap",
+                            "value": [
+                                "Adjustable Strap"
+                            ]
+                        },
+                        {
+                            "key": "Hip Strap",
+                            "value": [
+                                "Yes"
+                            ]
+                        },
+                        {
+                            "key": "Padding Features",
+                            "value": [
+                                "Double padded"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "Dimensions",
+                    "values": [
+                        {
+                            "key": "Width",
+                            "value": [
+                                "400 mm"
+                            ]
+                        },
+                        {
+                            "key": "Height",
+                            "value": [
+                                "600 mm"
+                            ]
+                        },
+                        {
+                            "key": "Depth",
+                            "value": [
+                                "200 mm"
+                            ]
+                        },
+                        {
+                            "key": "Weight",
+                            "value": [
+                                "850 g"
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "booksInfo": {
+                "language": null,
+                "binding": null,
+                "pages": null,
+                "publisher": null,
+                "year": 0,
+                "authors": []
+            },
+            "lifeStyleInfo": {
+                "sleeve": null,
+                "neck": null,
+                "idealFor": [
+                    "Men",
+                    "Women"
+                ]
+            }
+        }
+    },
+    {
+        "productBaseInfoV1": {
+            "productId": "LGCEJS2YWHU3JVUF",
+            "title": "Dr.Schmidt DS3002 Suitcase Cover 24 Luggage Cover",
+            "productDescription": "",
+            "imageUrls": {
+                "200x200": "http://img.fkcdn.com/image/luggage-cover/v/u/f/ds3002-dr-schmidt-suitcase-cover-24-medium-200x200-imaej2kyhnt5ck9t.jpeg",
+                "400x400": "http://img.fkcdn.com/image/luggage-cover/v/u/f/ds3002-dr-schmidt-suitcase-cover-24-medium-400x400-imaej2kyhnt5ck9t.jpeg",
+                "800x800": "http://img.fkcdn.com/image/luggage-cover/v/u/f/ds3002-dr-schmidt-suitcase-cover-24-medium-800x800-imaej2kyhnt5ck9t.jpeg",
+                "unknown": "http://img.fkcdn.com/image/luggage-cover/v/u/f/ds3002-dr-schmidt-suitcase-cover-24-medium-original-imaej2kyhnt5ck9t.jpeg"
+            },
+            "productFamily": [
+                "[LGCEJS2YWHU3JVUF]"
+            ],
+            "maximumRetailPrice": {
+                "amount": 350,
+                "currency": "INR"
+            },
+            "flipkartSellingPrice": {
+                "amount": 332,
+                "currency": "INR"
+            },
+            "flipkartSpecialPrice": {
+                "amount": 332,
+                "currency": "INR"
+            },
+            "productUrl": "http://dl.flipkart.com/dl/dr-schmidt-ds3002-suitcase-cover-24-luggage/p/itmejs2yjaupzjfc?pid=LGCEJS2YWHU3JVUF&affid=slidenerd",
+            "productBrand": "Dr.Schmidt",
+            "inStock": true,
+            "codAvailable": true,
+            "discountPercentage": 5,
+            "offers": [],
+            "categoryPath": "Lifestyle>Leather & Travel Accessories>Luggage>Luggage Covers",
+            "attributes": {
+                "size": "",
+                "color": "",
+                "storage": "",
+                "sizeUnit": "",
+                "displaySize": ""
+            }
+        },
+        "productShippingInfoV1": {
+            "shippingCharges": {
+                "amount": 100,
+                "currency": "INR"
+            },
+            "estimatedDeliveryTime": "Usually Delivered in Sat Aug 20 23:59:59 IST 2016 - Sun Aug 21 23:59:59 IST 2016 days.",
+            "sellerName": "Basecamp",
+            "sellerAverageRating": 3,
+            "sellerNoOfRatings": 4,
+            "sellerNoOfReviews": 0
+        },
+        "categorySpecificInfoV1": {
+            "keySpecs": [
+                "Waterproof",
+                "Light Weight",
+                "Packing paper sleeve",
+                "Heavy Duty"
+            ],
+            "detailedSpecs": [
+                "Waterproof",
+                "Light Weight",
+                "Packing paper sleeve",
+                "Heavy Duty"
+            ],
+            "specificationList": [
+                {
+                    "key": "In the Box",
+                    "values": [
+                        {
+                            "key": "Number of Contents in Sales Package",
+                            "value": [
+                                "Pack of 1"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "General",
+                    "values": [
+                        {
+                            "key": "Type",
+                            "value": [
+                                "Luggage Cover"
+                            ]
+                        },
+                        {
+                            "key": "Designed For",
+                            "value": [
+                                "Upright Suitcases"
+                            ]
+                        },
+                        {
+                            "key": "Material",
+                            "value": [
+                                "PVC"
+                            ]
+                        },
+                        {
+                            "key": "Pattern",
+                            "value": [
+                                "Plain"
+                            ]
+                        },
+                        {
+                            "key": "Suited For",
+                            "value": [
+                                "Most Bags of 35-40 inch"
+                            ]
+                        },
+                        {
+                            "key": "TSA Compliant",
+                            "value": [
+                                "Yes"
+                            ]
+                        },
+                        {
+                            "key": "Waterproof",
+                            "value": [
+                                "Yes"
+                            ]
+                        },
+                        {
+                            "key": "Washable",
+                            "value": [
+                                "Yes"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "Dimensions",
+                    "values": [
+                        {
+                            "key": "Width",
+                            "value": [
+                                "23.6 inch"
+                            ]
+                        },
+                        {
+                            "key": "Height",
+                            "value": [
+                                "16.5 inch"
+                            ]
+                        },
+                        {
+                            "key": "Depth",
+                            "value": [
+                                "10.4 inch"
+                            ]
+                        },
+                        {
+                            "key": "Weight",
+                            "value": [
+                                "155 g"
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "booksInfo": {
+                "language": null,
+                "binding": null,
+                "pages": null,
+                "publisher": null,
+                "year": 0,
+                "authors": []
+            },
+            "lifeStyleInfo": {
+                "sleeve": null,
+                "neck": null,
+                "idealFor": null
+            }
+        }
+    },
+    {
+        "productBaseInfoV1": {
+            "productId": "LGCEJSFYQVWQGQZH",
+            "title": "Dr.Schmidt DS3003 Suitcase Cover 28 Luggage Cover",
+            "productDescription": "",
+            "imageUrls": {
+                "200x200": "http://img.fkcdn.com/image/luggage-cover/q/z/h/ds3003-dr-schmidt-suitcase-cover-28-large-200x200-imaej2kyff6frvyy.jpeg",
+                "400x400": "http://img.fkcdn.com/image/luggage-cover/q/z/h/ds3003-dr-schmidt-suitcase-cover-28-large-400x400-imaej2kyff6frvyy.jpeg",
+                "800x800": "http://img.fkcdn.com/image/luggage-cover/q/z/h/ds3003-dr-schmidt-suitcase-cover-28-large-800x800-imaej2kyff6frvyy.jpeg",
+                "unknown": "http://img.fkcdn.com/image/luggage-cover/q/z/h/ds3003-dr-schmidt-suitcase-cover-28-large-original-imaej2kyff6frvyy.jpeg"
+            },
+            "productFamily": [
+                "[LGCEJSFYQVWQGQZH]"
+            ],
+            "maximumRetailPrice": {
+                "amount": 400,
+                "currency": "INR"
+            },
+            "flipkartSellingPrice": {
+                "amount": 380,
+                "currency": "INR"
+            },
+            "flipkartSpecialPrice": {
+                "amount": 380,
+                "currency": "INR"
+            },
+            "productUrl": "http://dl.flipkart.com/dl/dr-schmidt-ds3003-suitcase-cover-28-luggage/p/itmejsfywzz9qmmn?pid=LGCEJSFYQVWQGQZH&affid=slidenerd",
+            "productBrand": "Dr.Schmidt",
+            "inStock": true,
+            "codAvailable": true,
+            "discountPercentage": 5,
+            "offers": [],
+            "categoryPath": "Lifestyle>Leather & Travel Accessories>Luggage>Luggage Covers",
+            "attributes": {
+                "size": "",
+                "color": "",
+                "storage": "",
+                "sizeUnit": "",
+                "displaySize": ""
+            }
+        },
+        "productShippingInfoV1": {
+            "shippingCharges": {
+                "amount": 0,
+                "currency": "INR"
+            },
+            "estimatedDeliveryTime": "",
+            "sellerName": "Basecamp",
+            "sellerAverageRating": 3,
+            "sellerNoOfRatings": 4,
+            "sellerNoOfReviews": 0
+        },
+        "categorySpecificInfoV1": {
+            "keySpecs": [
+                "Waterproof",
+                "Light Weight",
+                "Packing paper sleeve",
+                "Heavy Duty"
+            ],
+            "detailedSpecs": [
+                "Waterproof",
+                "Light Weight",
+                "Packing paper sleeve",
+                "Heavy Duty"
+            ],
+            "specificationList": [
+                {
+                    "key": "In the Box",
+                    "values": [
+                        {
+                            "key": "Number of Contents in Sales Package",
+                            "value": [
+                                "Pack of 1"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "General",
+                    "values": [
+                        {
+                            "key": "Type",
+                            "value": [
+                                "Luggage Cover"
+                            ]
+                        },
+                        {
+                            "key": "Designed For",
+                            "value": [
+                                "Upright Suitcases"
+                            ]
+                        },
+                        {
+                            "key": "Material",
+                            "value": [
+                                "PVC"
+                            ]
+                        },
+                        {
+                            "key": "Pattern",
+                            "value": [
+                                "Plain"
+                            ]
+                        },
+                        {
+                            "key": "Suited For",
+                            "value": [
+                                "Most Bags of 40-50 inch"
+                            ]
+                        },
+                        {
+                            "key": "TSA Compliant",
+                            "value": [
+                                "Yes"
+                            ]
+                        },
+                        {
+                            "key": "Waterproof",
+                            "value": [
+                                "Yes"
+                            ]
+                        },
+                        {
+                            "key": "Washable",
+                            "value": [
+                                "Yes"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "Dimensions",
+                    "values": [
+                        {
+                            "key": "Width",
+                            "value": [
+                                "27.1 inch"
+                            ]
+                        },
+                        {
+                            "key": "Height",
+                            "value": [
+                                "19.2 inch"
+                            ]
+                        },
+                        {
+                            "key": "Depth",
+                            "value": [
+                                "11.4 inch"
+                            ]
+                        },
+                        {
+                            "key": "Weight",
+                            "value": [
+                                "160 g"
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "booksInfo": {
+                "language": null,
+                "binding": null,
+                "pages": null,
+                "publisher": null,
+                "year": 0,
+                "authors": []
+            },
+            "lifeStyleInfo": {
+                "sleeve": null,
+                "neck": null,
+                "idealFor": null
+            }
+        }
+    },
+    {
+        "productBaseInfoV1": {
+            "productId": "SLBEKSERH8B6MKCZ",
+            "title": "Zint Girls Red Genuine Leather Sling Bag",
+            "productDescription": "These cute cat design Mini Coin Purses / Crossbody Bags are hand tooled, hand painted and handcrafted from 100% genuine leather. DIMENSIONS:Diameter: 4.5 inchesShoulder Strap : 23 inches",
+            "imageUrls": {
+                "200x200": "http://img.fkcdn.com/image/sling-bag/k/c/z/zn032b-zint-sling-bag-shantiniketan-pure-leather-cat-purse-200x200-imaekpawb8yvqyaj.jpeg",
+                "400x400": "http://img.fkcdn.com/image/sling-bag/k/c/z/zn032b-zint-sling-bag-shantiniketan-pure-leather-cat-purse-400x400-imaekpawb8yvqyaj.jpeg",
+                "800x800": "http://img.fkcdn.com/image/sling-bag/k/c/z/zn032b-zint-sling-bag-shantiniketan-pure-leather-cat-purse-800x800-imaekpawb8yvqyaj.jpeg",
+                "unknown": "http://img.fkcdn.com/image/sling-bag/k/c/z/zn032b-zint-sling-bag-shantiniketan-pure-leather-cat-purse-original-imaekpawb8yvqyaj.jpeg"
+            },
+            "productFamily": [
+                "[SLBEKSERH8B6MKCZ]"
+            ],
+            "maximumRetailPrice": {
+                "amount": 500,
+                "currency": "INR"
+            },
+            "flipkartSellingPrice": {
+                "amount": 400,
+                "currency": "INR"
+            },
+            "flipkartSpecialPrice": {
+                "amount": 360,
+                "currency": "INR"
+            },
+            "productUrl": "http://dl.flipkart.com/dl/zint-girls-red-genuine-leather-sling-bag/p/itmekserphrmnayt?pid=SLBEKSERH8B6MKCZ&affid=slidenerd",
+            "productBrand": "Zint",
+            "inStock": true,
+            "codAvailable": true,
+            "discountPercentage": 20,
+            "offers": [
+                "Extra 10% off on Fashion & Lifestyle Products",
+                "Extra 15% Cashback* with Citi Cards"
+            ],
+            "categoryPath": "Lifestyle>Leather & Travel Accessories>Bags>Sling Bags",
+            "attributes": {
+                "size": "",
+                "color": "Red",
+                "storage": "",
+                "sizeUnit": "",
+                "displaySize": ""
+            }
+        },
+        "productShippingInfoV1": {
+            "shippingCharges": {
+                "amount": 50,
+                "currency": "INR"
+            },
+            "estimatedDeliveryTime": "Usually Delivered in Fri Sep 09 23:59:59 IST 2016 - Sat Sep 10 23:59:59 IST 2016 days.",
+            "sellerName": "Zintleathergoods",
+            "sellerAverageRating": 1,
+            "sellerNoOfRatings": 1,
+            "sellerNoOfReviews": 0
+        },
+        "categorySpecificInfoV1": {
+            "keySpecs": [
+                "Style: Sling Bag",
+                "Ideal For: Girls",
+                "Color: Red",
+                "Material: Genuine Leather"
+            ],
+            "detailedSpecs": [
+                "Style: Sling Bag",
+                "Ideal For: Girls",
+                "Color: Red",
+                "Material: Genuine Leather"
+            ],
+            "specificationList": [
+                {
+                    "key": "General",
+                    "values": [
+                        {
+                            "key": "Model Name",
+                            "value": [
+                                "Shantiniketan Pure Leather Cat Purse Crossbody Bag"
+                            ]
+                        },
+                        {
+                            "key": "Bag Size",
+                            "value": [
+                                "Small"
+                            ]
+                        },
+                        {
+                            "key": "Number of Compartments",
+                            "value": [
+                                "1"
+                            ]
+                        },
+                        {
+                            "key": "Pack of",
+                            "value": [
+                                "1"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "Dimensions",
+                    "values": [
+                        {
+                            "key": "Weight",
+                            "value": [
+                                ".105 g"
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "booksInfo": {
+                "language": null,
+                "binding": null,
+                "pages": null,
+                "publisher": null,
+                "year": 0,
+                "authors": []
+            },
+            "lifeStyleInfo": {
+                "sleeve": null,
+                "neck": null,
+                "idealFor": [
+                    "Girls"
+                ]
+            }
+        }
+    }
+]

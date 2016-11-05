@@ -1,11 +1,11 @@
 ! version = 2.0
 
-+ [*] (hotel|restaurant) [*] {weight=996}
++ [*] (hotel|hotels|restaurant|restaurants) [*] {weight=996}
 - I guess you want me to book a <star>. Its still work in progress.
 - I assume you want me to get a <star> for you. My lazy boss is working on it.
 - I think you want me to find you a nice <star>. 
 
-+ [*] (flight|plane|train|bus|ticket|movie|concert) [*] {weight=996}
++ [*] (flight|flights|plane|train|trains|bus|buses|ticket|tickets|movie|movies|concert|concerts) [*] {weight=996}
 - I think you want me to book a <star> for you. I will ask my boss to hurry up and get this feature live.
 - I guess you want me to get you a <star>. I will ping my lazy boss to get this up as fast as possible.
 

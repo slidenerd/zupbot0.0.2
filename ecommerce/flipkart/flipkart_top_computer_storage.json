@@ -1,0 +1,553 @@
+[
+    {
+        "productBaseInfoV1": {
+            "productId": "IHDDSX94PTMCSZFK",
+            "title": "Kingston 120 GB SSD Internal Hard Drive (SUV100S37A/120G)",
+            "productDescription": "",
+            "imageUrls": {
+                "200x200": "http://img.fkcdn.com/image/internal-hard-drive/z/f/k/kingston-suv100s37a-120g-200x200-imadtbqvqgznydkk.jpeg",
+                "400x400": "http://img.fkcdn.com/image/internal-hard-drive/z/f/k/kingston-suv100s37a-120g-400x400-imadtbqvqgznydkk.jpeg",
+                "800x800": "http://img.fkcdn.com/image/internal-hard-drive/z/f/k/kingston-suv100s37a-120g-800x800-imadtbqvqgznydkk.jpeg",
+                "unknown": "http://img.fkcdn.com/image/internal-hard-drive/z/f/k/kingston-suv100s37a-120g-original-imadtbqvqgznydkk.jpeg"
+            },
+            "productFamily": [
+                "[IHDDSX94PTMCSZFK]"
+            ],
+            "maximumRetailPrice": {
+                "amount": 6599,
+                "currency": "INR"
+            },
+            "flipkartSellingPrice": {
+                "amount": 3700,
+                "currency": "INR"
+            },
+            "flipkartSpecialPrice": {
+                "amount": 3700,
+                "currency": "INR"
+            },
+            "productUrl": "http://dl.flipkart.com/dl/kingston-120-gb-ssd-internal-hard-drive-suv100s37a-120g/p/itmdsx94ptmcszfk?pid=IHDDSX94PTMCSZFK&affid=slidenerd",
+            "productBrand": "Kingston",
+            "inStock": true,
+            "codAvailable": true,
+            "discountPercentage": 43,
+            "offers": [],
+            "categoryPath": "Computers>Storage>Internal HDD",
+            "attributes": {
+                "size": "",
+                "color": "",
+                "storage": "",
+                "sizeUnit": "",
+                "displaySize": ""
+            }
+        },
+        "productShippingInfoV1": {
+            "shippingCharges": {
+                "amount": 0,
+                "currency": "INR"
+            },
+            "estimatedDeliveryTime": "Usually Delivered in Thu Aug 25 23:59:59 IST 2016 - Fri Aug 26 23:59:59 IST 2016 days.",
+            "sellerName": "meg",
+            "sellerAverageRating": 3.675,
+            "sellerNoOfRatings": 80,
+            "sellerNoOfReviews": 6
+        },
+        "categorySpecificInfoV1": {
+            "keySpecs": [
+                "SATA 6.0 Gbps",
+                "2.5 inch"
+            ],
+            "detailedSpecs": [
+                "SATA 6.0 Gbps",
+                "2.5 inch"
+            ],
+            "specificationList": [
+                {
+                    "key": "In The Box",
+                    "values": [
+                        {
+                            "key": "Sales Package",
+                            "value": [
+                                "Internal Hard Drive"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "General",
+                    "values": [
+                        {
+                            "key": "Brand",
+                            "value": [
+                                "Kingston"
+                            ]
+                        },
+                        {
+                            "key": "Model ID",
+                            "value": [
+                                "SUV100S37A/120G"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "Drive Configuration",
+                    "values": [
+                        {
+                            "key": "Device",
+                            "value": [
+                                "SSD"
+                            ]
+                        },
+                        {
+                            "key": "Device Type",
+                            "value": [
+                                "2.5 inch SSD"
+                            ]
+                        },
+                        {
+                            "key": "Drive Capacity",
+                            "value": [
+                                "120 GB"
+                            ]
+                        },
+                        {
+                            "key": "Interface",
+                            "value": [
+                                "SATA 6.0 Gbps"
+                            ]
+                        },
+                        {
+                            "key": "Reliability",
+                            "value": [
+                                "1000000 hours (Mean Time between Failures)"
+                            ]
+                        },
+                        {
+                            "key": "Form Factor",
+                            "value": [
+                                "2.5 inch"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "Power",
+                    "values": [
+                        {
+                            "key": "Idle",
+                            "value": [
+                                "0.08 W"
+                            ]
+                        },
+                        {
+                            "key": "Power Consumption",
+                            "value": [
+                                "1.025 / 2.8 W (Read/Write)"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "Operating Conditions",
+                    "values": [
+                        {
+                            "key": "Operating Temperature",
+                            "value": [
+                                "0DegC to 70DegC"
+                            ]
+                        },
+                        {
+                            "key": "Non-Operating Temperature",
+                            "value": [
+                                "-40DegC to 85DegC"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "Other Features",
+                    "values": [
+                        {
+                            "key": "",
+                            "value": [
+                                "Reliable, Durable, Efficient, Backward Compatible with SATA 3.0 Gbps, Shock-proof, Sequential Read: 425 MB/s, Sequential Write: 425 MB/s, Maximum 4K Read: Upto 50000 IOPS, Maximum 4K Write: Upto 50000 IOPS, Random 4K Read: Upto 37000 IOPS, Random 4K Write: Upto 14000 IOPS, PCMARK Vantage HDD Suite Score 55000, Total Bytes Written (TBW): 64 TB, Average Power Consumption: 0.108 W, Vibration Operating: 2.17G Peak (7800Hz), Vibration Non-operating: 20G Peak (102000Hz)"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "Dimensions",
+                    "values": [
+                        {
+                            "key": "Dimensions",
+                            "value": [
+                                "69.9 x 7 x 100.3 mm"
+                            ]
+                        },
+                        {
+                            "key": "Weight",
+                            "value": [
+                                "77.5 g"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "Warranty",
+                    "values": [
+                        {
+                            "key": "Warranty Summary",
+                            "value": [
+                                "2 Years Warranty"
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "booksInfo": {
+                "language": null,
+                "binding": null,
+                "pages": null,
+                "publisher": null,
+                "year": 0,
+                "authors": []
+            },
+            "lifeStyleInfo": {
+                "sleeve": null,
+                "neck": null,
+                "idealFor": null
+            }
+        }
+    },
+    {
+        "productBaseInfoV1": {
+            "productId": "ACCEGVGFPBJAEFNE",
+            "title": "Toshiba Canvio Alumy 2 TB Wired",
+            "productDescription": "",
+            "imageUrls": {
+                "200x200": "http://img.fkcdn.com/image/external-hard-drive/f/n/e/toshiba-canvio-alumy-200x200-imaejyadkzhnmgwf.jpeg",
+                "400x400": "http://img.fkcdn.com/image/external-hard-drive/f/n/e/toshiba-canvio-alumy-400x400-imaejyadkzhnmgwf.jpeg",
+                "800x800": "http://img.fkcdn.com/image/external-hard-drive/f/n/e/toshiba-canvio-alumy-800x800-imaejyadkzhnmgwf.jpeg",
+                "unknown": "http://img.fkcdn.com/image/external-hard-drive/f/n/e/toshiba-canvio-alumy-original-imaejyadkzhnmgwf.jpeg"
+            },
+            "productFamily": [
+                "[ACCECSZK4TPRRAKD",
+                " ACCECX4AE2FQMZUQ",
+                " ACCECX4AMMJPMXDX",
+                " ACCECX4ATHNMKDDB",
+                " ACCEGVGF8HUGZHDR",
+                " ACCEGVGFHQJ4XABK",
+                " ACCEGVGFMTV4SAH6]"
+            ],
+            "maximumRetailPrice": {
+                "amount": 8500,
+                "currency": "INR"
+            },
+            "flipkartSellingPrice": {
+                "amount": 6499,
+                "currency": "INR"
+            },
+            "flipkartSpecialPrice": {
+                "amount": 5999,
+                "currency": "INR"
+            },
+            "productUrl": "http://dl.flipkart.com/dl/toshiba-canvio-alumy-2-tb-wired/p/itmegvgfuhfegqrt?pid=ACCEGVGFPBJAEFNE&affid=slidenerd",
+            "productBrand": "Toshiba",
+            "inStock": true,
+            "codAvailable": true,
+            "discountPercentage": 21,
+            "offers": [
+                "Extra Rs.500 Off on External Hard Disks",
+                "Extra 15% Cashback* with Citi Cards"
+            ],
+            "categoryPath": "Computers>Storage>External HDD",
+            "attributes": {
+                "size": "",
+                "color": "Black",
+                "storage": "",
+                "sizeUnit": "",
+                "displaySize": ""
+            }
+        },
+        "productShippingInfoV1": {
+            "shippingCharges": {
+                "amount": 0,
+                "currency": "INR"
+            },
+            "estimatedDeliveryTime": "Usually Delivered in Sun Sep 04 23:59:59 IST 2016 - Mon Sep 05 23:59:59 IST 2016 days.",
+            "sellerName": "RetailNet",
+            "sellerAverageRating": null,
+            "sellerNoOfRatings": 0,
+            "sellerNoOfReviews": 0
+        },
+        "categorySpecificInfoV1": {
+            "keySpecs": [
+                "Portable Hard Drive",
+                "Capacity: 2 TB",
+                "Connectivity: USB 3.0, USB 2.0"
+            ],
+            "detailedSpecs": [
+                "Portable Hard Drive",
+                "Capacity: 2 TB",
+                "Connectivity: USB 3.0, USB 2.0"
+            ],
+            "specificationList": [
+                {
+                    "key": "General",
+                    "values": [
+                        {
+                            "key": "Sales Package",
+                            "value": [
+                                "External Hard Drive, USB 3.0 Cable, Quick Start Guide, Instruction Manual for Safety and Comfort"
+                            ]
+                        },
+                        {
+                            "key": "Model Name",
+                            "value": [
+                                "Canvio Alumy"
+                            ]
+                        },
+                        {
+                            "key": "Capacity",
+                            "value": [
+                                "2 TB"
+                            ]
+                        },
+                        {
+                            "key": "Color",
+                            "value": [
+                                "Black"
+                            ]
+                        },
+                        {
+                            "key": "System Requirements",
+                            "value": [
+                                "Formatted NTFS for Microsoft Windows: 8.1, 8, 7"
+                            ]
+                        },
+                        {
+                            "key": "Form Factor",
+                            "value": [
+                                "Portable"
+                            ]
+                        },
+                        {
+                            "key": "Wired|Wireless",
+                            "value": [
+                                "Wired"
+                            ]
+                        },
+                        {
+                            "key": "Cloud Backup",
+                            "value": [
+                                "No"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "Additional Features",
+                    "values": [
+                        {
+                            "key": "Connector Type",
+                            "value": [
+                                "USB 3.0"
+                            ]
+                        },
+                        {
+                            "key": "Data Transfer Rate",
+                            "value": [
+                                "5.0 Gbps"
+                            ]
+                        },
+                        {
+                            "key": "Backward Compatible",
+                            "value": [
+                                "Yes"
+                            ]
+                        },
+                        {
+                            "key": "Other Features",
+                            "value": [
+                                "Supports USB 2.0 or USB 3.0 Port, With Built-in Shock Sensor and Ramp Loading Technology, Secure with NTI Backup and EZ Software"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "Power Features",
+                    "values": [
+                        {
+                            "key": "Power Source",
+                            "value": [
+                                "USB-powered"
+                            ]
+                        },
+                        {
+                            "key": "Power Requirement",
+                            "value": [
+                                "900 mA"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "Dimensions",
+                    "values": [
+                        {
+                            "key": "Width",
+                            "value": [
+                                "75 mm"
+                            ]
+                        },
+                        {
+                            "key": "Height",
+                            "value": [
+                                "113.5 mm"
+                            ]
+                        },
+                        {
+                            "key": "Depth",
+                            "value": [
+                                "18 mm"
+                            ]
+                        },
+                        {
+                            "key": "Weight",
+                            "value": [
+                                "240 g"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "Warranty",
+                    "values": [
+                        {
+                            "key": "Warranty Summary",
+                            "value": [
+                                "3 Years Warranty"
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "booksInfo": {
+                "language": null,
+                "binding": null,
+                "pages": null,
+                "publisher": null,
+                "year": 0,
+                "authors": []
+            },
+            "lifeStyleInfo": {
+                "sleeve": null,
+                "neck": null,
+                "idealFor": null
+            }
+        }
+    },
+    {
+        "productBaseInfoV1": {
+            "productId": "ACCDPT2ZFGHGMJXX",
+            "title": "HP x705w 32 GB USB 3.0 Utility Pendrive",
+            "productDescription": "",
+            "imageUrls": {
+                "200x200": "http://img.fkcdn.com/image/pendrive/utility-pendrive/j/x/x/hp-200x200-imae7df5gjpvzfma.jpeg",
+                "400x400": "http://img.fkcdn.com/image/pendrive/utility-pendrive/j/x/x/hp-400x400-imae7df5gjpvzfma.jpeg",
+                "800x800": "http://img.fkcdn.com/image/pendrive/utility-pendrive/j/x/x/hp-800x800-imae7df5gjpvzfma.jpeg",
+                "unknown": "http://img.fkcdn.com/image/pendrive/utility-pendrive/j/x/x/hp-original-imae7df5gjpvzfma.jpeg"
+            },
+            "productFamily": [
+                "[ACCDPT2ZFGHGMJXX]"
+            ],
+            "maximumRetailPrice": {
+                "amount": 1000,
+                "currency": "INR"
+            },
+            "flipkartSellingPrice": {
+                "amount": 699,
+                "currency": "INR"
+            },
+            "flipkartSpecialPrice": {
+                "amount": 699,
+                "currency": "INR"
+            },
+            "productUrl": "http://dl.flipkart.com/dl/hp-x705w-32-gb-usb-3-0-utility-pendrive/p/itmdpt3kyhhh9ex3?pid=ACCDPT2ZFGHGMJXX&affid=slidenerd",
+            "productBrand": "HP",
+            "inStock": true,
+            "codAvailable": true,
+            "discountPercentage": 30,
+            "offers": [
+                "10% Cashback* with Citi Cards"
+            ],
+            "categoryPath": "Computers>Storage>Pendrives",
+            "attributes": {
+                "size": "",
+                "color": "",
+                "storage": "",
+                "sizeUnit": "",
+                "displaySize": ""
+            }
+        },
+        "productShippingInfoV1": {
+            "shippingCharges": {
+                "amount": 0,
+                "currency": "INR"
+            },
+            "estimatedDeliveryTime": "Usually Delivered in Thu Sep 01 23:59:59 IST 2016 - Fri Sep 02 23:59:59 IST 2016 days.",
+            "sellerName": "RetailNet",
+            "sellerAverageRating": 4.1728754,
+            "sellerNoOfRatings": 50950,
+            "sellerNoOfReviews": 599
+        },
+        "categorySpecificInfoV1": {
+            "keySpecs": [
+                "Plastic",
+                "Color:Black"
+            ],
+            "detailedSpecs": [
+                "Plastic",
+                "Color:Black"
+            ],
+            "specificationList": [
+                {
+                    "key": "General",
+                    "values": [
+                        {
+                            "key": "Opening Mechanism",
+                            "value": [
+                                "Detachable Cap"
+                            ]
+                        },
+                        {
+                            "key": "Supported OS",
+                            "value": [
+                                "Windows: 2000, XP, Vista, 7, Mac OS X 10.3"
+                            ]
+                        },
+                        {
+                            "key": "Weight",
+                            "value": [
+                                "7.85 g"
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "booksInfo": {
+                "language": null,
+                "binding": null,
+                "pages": null,
+                "publisher": null,
+                "year": 0,
+                "authors": []
+            },
+            "lifeStyleInfo": {
+                "sleeve": null,
+                "neck": null,
+                "idealFor": null
+            }
+        }
+    }
+]

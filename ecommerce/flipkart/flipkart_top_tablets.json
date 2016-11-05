@@ -1,0 +1,2543 @@
+[
+    {
+        "productBaseInfoV1": {
+            "productId": "TABEEXE8J3MCK6BP",
+            "title": "Lenovo Yoga Tab 3 10 16 GB 10.1 inch with Wi-Fi+4G",
+            "productDescription": "Enjoy high-performance computing experience and the stunning display that this Lenovo Yoga Tab 3 brings to the table. This highly portable, compact tablet ensures seamless work and play experience at all times.",
+            "imageUrls": {
+                "200x200": "http://img.fkcdn.com/image/tablet/6/b/p/lenovo-tab-3-10-1-inch-200x200-imaeezrqdmnsdbcf.jpeg",
+                "400x400": "http://img.fkcdn.com/image/tablet/6/b/p/lenovo-tab-3-10-1-inch-400x400-imaeezrqdmnsdbcf.jpeg",
+                "800x800": "http://img.fkcdn.com/image/tablet/6/b/p/lenovo-tab-3-10-1-inch-800x800-imaeezrqdmnsdbcf.jpeg",
+                "unknown": "http://img.fkcdn.com/image/tablet/6/b/p/lenovo-tab-3-10-1-inch-original-imaeezrqdmnsdbcf.jpeg"
+            },
+            "productFamily": [
+                "[TABEEXE8J3MCK6BP]"
+            ],
+            "maximumRetailPrice": {
+                "amount": 22000,
+                "currency": "INR"
+            },
+            "flipkartSellingPrice": {
+                "amount": 18990,
+                "currency": "INR"
+            },
+            "flipkartSpecialPrice": {
+                "amount": 18990,
+                "currency": "INR"
+            },
+            "productUrl": "http://dl.flipkart.com/dl/lenovo-yoga-tab-3-10-16-gb-10-1-inch-wi-fi-4g/p/itmeexe8vhbd3ccz?pid=TABEEXE8J3MCK6BP&affid=slidenerd",
+            "productBrand": "Lenovo",
+            "inStock": false,
+            "codAvailable": true,
+            "discountPercentage": 24,
+            "offers": [],
+            "categoryPath": "Mobiles>Tablets>Tablets without Call Facility",
+            "attributes": {
+                "size": "",
+                "color": "Slate Black",
+                "storage": "16 GB",
+                "sizeUnit": "",
+                "displaySize": ""
+            }
+        },
+        "productShippingInfoV1": {
+            "shippingCharges": {
+                "amount": 0,
+                "currency": "INR"
+            },
+            "estimatedDeliveryTime": "",
+            "sellerName": "TechnologyNextDEL",
+            "sellerAverageRating": 3.7147336,
+            "sellerNoOfRatings": 319,
+            "sellerNoOfReviews": 16
+        },
+        "categorySpecificInfoV1": {
+            "keySpecs": [
+                "1 GB RAM | 16 GB ROM",
+                "8 MP Primary Camera",
+                "Android 5.1 (Lollipop)",
+                "Battery: 8400 mAh, Lithium - Ion"
+            ],
+            "detailedSpecs": [
+                "1 GB RAM | 16 GB ROM",
+                "8 MP Primary Camera",
+                "Android 5.1 (Lollipop)",
+                "Battery: 8400 mAh, Lithium - Ion"
+            ],
+            "specificationList": [
+                {
+                    "key": "General",
+                    "values": [
+                        {
+                            "key": "Brand",
+                            "value": [
+                                "Lenovo"
+                            ]
+                        },
+                        {
+                            "key": "Model ID",
+                            "value": [
+                                "Tab 3 10"
+                            ]
+                        },
+                        {
+                            "key": "Color",
+                            "value": [
+                                "Slate Black"
+                            ]
+                        },
+                        {
+                            "key": "SIM",
+                            "value": [
+                                "Single Sim"
+                            ]
+                        },
+                        {
+                            "key": "SIM Size",
+                            "value": [
+                                "Micro SIM"
+                            ]
+                        },
+                        {
+                            "key": "Processor",
+                            "value": [
+                                "1.3 GHz Qualcomm APQ8009 / MSM8909 Quad Core"
+                            ]
+                        },
+                        {
+                            "key": "Voice Call",
+                            "value": [
+                                "No"
+                            ]
+                        },
+                        {
+                            "key": "In The Box",
+                            "value": [
+                                "USB Cable, Warranty Card, User Guide, Power Adaptor, Tablet"
+                            ]
+                        },
+                        {
+                            "key": "Additional Features",
+                            "value": [
+                                "Depth: 9.5 - 3.5 mm, 4 Modes (Stand Mode, Hold Mode, Tilt Mode, Hang Mode), Dual Front Facing Dolby Atmos, AnyPen Technology"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "Platform",
+                    "values": [
+                        {
+                            "key": "Operating System",
+                            "value": [
+                                "Android 5.1 (Lollipop)"
+                            ]
+                        },
+                        {
+                            "key": "Sensors",
+                            "value": [
+                                "G-Sensor, Hall Sensor"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "Storage",
+                    "values": [
+                        {
+                            "key": "Internal Storage",
+                            "value": [
+                                "16 GB <i>(Available user memory of the device may be lower than the stated memory due to default pre-installed apps and device OS)</i>"
+                            ]
+                        },
+                        {
+                            "key": "Memory Card Slot type",
+                            "value": [
+                                "microSD"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "Display",
+                    "values": [
+                        {
+                            "key": "Display Type",
+                            "value": [
+                                "10.1 inch 1280 x 800 Pixels"
+                            ]
+                        },
+                        {
+                            "key": "Other Display Features",
+                            "value": [
+                                "IPS Display"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "Camera",
+                    "values": [
+                        {
+                            "key": "Primary Camera",
+                            "value": [
+                                "8 megapixel"
+                            ]
+                        },
+                        {
+                            "key": "Other Camera Features",
+                            "value": [
+                                "Auto Focus, 180 Degree Rotating Camera, Gesture Controlled Camera"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "Business Features",
+                    "values": [
+                        {
+                            "key": "Mail Features",
+                            "value": [
+                                "E-mail"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "Battery",
+                    "values": [
+                        {
+                            "key": "Battery Type",
+                            "value": [
+                                "8400 mAh Lithium - Ion"
+                            ]
+                        },
+                        {
+                            "key": "Standby Time",
+                            "value": [
+                                "3000 hrs"
+                            ]
+                        },
+                        {
+                            "key": "Internet Browsing Time",
+                            "value": [
+                                "18 hrs"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "Internet Connectivity",
+                    "values": [
+                        {
+                            "key": "Wi-Fi",
+                            "value": [
+                                "Yes, 802.11 b/g/n"
+                            ]
+                        },
+                        {
+                            "key": "3G",
+                            "value": [
+                                "Yes"
+                            ]
+                        },
+                        {
+                            "key": "4G",
+                            "value": [
+                                "Yes"
+                            ]
+                        },
+                        {
+                            "key": "Video Playback",
+                            "value": [
+                                "Yes"
+                            ]
+                        },
+                        {
+                            "key": "Audio Formats Supported",
+                            "value": [
+                                "MP3"
+                            ]
+                        },
+                        {
+                            "key": "Pre-Installed Browser",
+                            "value": [
+                                "Android"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "Navigation",
+                    "values": [
+                        {
+                            "key": "GPS",
+                            "value": [
+                                "Yes"
+                            ]
+                        },
+                        {
+                            "key": "Map Support",
+                            "value": [
+                                "Google Maps"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "Connectivity",
+                    "values": [
+                        {
+                            "key": "Other Connectivity Features",
+                            "value": [
+                                "Bluetooth Support"
+                            ]
+                        },
+                        {
+                            "key": "USB",
+                            "value": [
+                                "Yes, Micro USB 2.0"
+                            ]
+                        },
+                        {
+                            "key": "Bluetooth",
+                            "value": [
+                                "v4"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "Dimensions",
+                    "values": [
+                        {
+                            "key": "Dimensions",
+                            "value": [
+                                "253 x 185"
+                            ]
+                        },
+                        {
+                            "key": "Weight",
+                            "value": [
+                                "655 g"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "Warranty",
+                    "values": [
+                        {
+                            "key": "Warranty Summary",
+                            "value": [
+                                "1 Year manufacturer warranty for the Tablet, 6 months manufacturer warranty for other inbox accessories"
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "booksInfo": {
+                "language": null,
+                "binding": null,
+                "pages": null,
+                "publisher": null,
+                "year": 0,
+                "authors": []
+            },
+            "lifeStyleInfo": {
+                "sleeve": null,
+                "neck": null,
+                "idealFor": null
+            }
+        }
+    },
+    {
+        "productBaseInfoV1": {
+            "productId": "TABEBNMEXVH6AMCS",
+            "title": "Lenovo Yoga 3 8-inch (1 GB RAM) 16 GB 8 inch with Wi-Fi+4G",
+            "productDescription": "This laptop from Lenovo is versatile and can be used in four different ways. You can hang it on a nail, make it stand on a table, hold it with a comfortable grip or place it on a table with a slight tilt. So, you can use it to enjoy a variety of activities from watching movies to reading a book to browsing the net to playing games. The tablet has an immersive audio with the Dolby Atmos sound, making your movies and games more enjoyable.",
+            "imageUrls": {
+                "200x200": "http://img.fkcdn.com/image/tablet/m/c/s/lenovo-yoga-3-8-inch-200x200-imaej7yeyh4hgsm8.jpeg",
+                "400x400": "http://img.fkcdn.com/image/tablet/m/c/s/lenovo-yoga-3-8-inch-400x400-imaej7yeyh4hgsm8.jpeg",
+                "800x800": "http://img.fkcdn.com/image/tablet/m/c/s/lenovo-yoga-3-8-inch-800x800-imaej7yeyh4hgsm8.jpeg",
+                "unknown": "http://img.fkcdn.com/image/tablet/m/c/s/lenovo-yoga-3-8-inch-original-imaej7yeyh4hgsm8.jpeg"
+            },
+            "productFamily": [
+                "[TABEBNMEXVH6AMCS]"
+            ],
+            "maximumRetailPrice": {
+                "amount": 16000,
+                "currency": "INR"
+            },
+            "flipkartSellingPrice": {
+                "amount": 16000,
+                "currency": "INR"
+            },
+            "flipkartSpecialPrice": {
+                "amount": 16000,
+                "currency": "INR"
+            },
+            "productUrl": "http://dl.flipkart.com/dl/lenovo-yoga-3-8-inch-1-gb-ram-16-8-inch-wi-fi-4g/p/itmebnmf6b86v3fh?pid=TABEBNMEXVH6AMCS&affid=slidenerd",
+            "productBrand": "Lenovo",
+            "inStock": true,
+            "codAvailable": true,
+            "discountPercentage": 6,
+            "offers": [],
+            "categoryPath": "Mobiles>Tablets>Tablets with Call Facility",
+            "attributes": {
+                "size": "",
+                "color": "Slate Black",
+                "storage": "16 GB",
+                "sizeUnit": "",
+                "displaySize": ""
+            }
+        },
+        "productShippingInfoV1": {
+            "shippingCharges": {
+                "amount": 0,
+                "currency": "INR"
+            },
+            "estimatedDeliveryTime": "Usually Delivered in Mon Sep 12 23:59:59 IST 2016 - Tue Sep 13 23:59:59 IST 2016 days.",
+            "sellerName": "WS Retail",
+            "sellerAverageRating": 4.2291837,
+            "sellerNoOfRatings": 5820203,
+            "sellerNoOfReviews": 179038
+        },
+        "categorySpecificInfoV1": {
+            "keySpecs": [
+                "1 GB RAM | 16 GB ROM",
+                "8 MP Primary Camera",
+                "Android 5.1 (Lollipop)",
+                "Battery: 6200 mAh, Lithium - Ion",
+                "Voice Call (Single Sim)"
+            ],
+            "detailedSpecs": [
+                "1 GB RAM | 16 GB ROM",
+                "8 MP Primary Camera",
+                "Android 5.1 (Lollipop)",
+                "Battery: 6200 mAh, Lithium - Ion",
+                "Voice Call (Single Sim)"
+            ],
+            "specificationList": [
+                {
+                    "key": "General",
+                    "values": [
+                        {
+                            "key": "Brand",
+                            "value": [
+                                "Lenovo"
+                            ]
+                        },
+                        {
+                            "key": "Model ID",
+                            "value": [
+                                "Yoga 3 8-inch"
+                            ]
+                        },
+                        {
+                            "key": "Color",
+                            "value": [
+                                "Slate Black"
+                            ]
+                        },
+                        {
+                            "key": "SIM",
+                            "value": [
+                                "Single Sim"
+                            ]
+                        },
+                        {
+                            "key": "SIM Size",
+                            "value": [
+                                "Micro SIM"
+                            ]
+                        },
+                        {
+                            "key": "Processor",
+                            "value": [
+                                "1.3 GHz Qualcomm MSM8909 Quad Core"
+                            ]
+                        },
+                        {
+                            "key": "Voice Call",
+                            "value": [
+                                "Yes"
+                            ]
+                        },
+                        {
+                            "key": "Supported Networks",
+                            "value": [
+                                "2G: GSM - 900, 1800 (Band 2/3/5/8); 3G: UMTS - 2100 (Band 1/2/4/5/8); 4G LTE (FDD) - Band 1/3/4/5/7/8/19/20, LTE (TDD) - Band 38/40"
+                            ]
+                        },
+                        {
+                            "key": "In The Box",
+                            "value": [
+                                "Tablet, Charger, Warranty Documents"
+                            ]
+                        },
+                        {
+                            "key": "Additional Features",
+                            "value": [
+                                "Depth: 7 - 3 mm, Audio Jack, WLAN Support, Usage Time: 20 hrs, AnyPen Technology, 4 Modes (Stand Mode, Hold Mode, Tilt Mode, Hang Mode), Skype, Dual Front Facing Stereo Dolby Atmos"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "Platform",
+                    "values": [
+                        {
+                            "key": "Operating System",
+                            "value": [
+                                "Android 5.1 (Lollipop)"
+                            ]
+                        },
+                        {
+                            "key": "Sensors",
+                            "value": [
+                                "G-Sensor, Hall Sensor"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "Storage",
+                    "values": [
+                        {
+                            "key": "Internal Storage",
+                            "value": [
+                                "16 GB <i>(Available user memory of the device may be lower than the stated memory due to default pre-installed apps and device OS)</i>"
+                            ]
+                        },
+                        {
+                            "key": "Expandable Storage Capacity",
+                            "value": [
+                                "128 GB"
+                            ]
+                        },
+                        {
+                            "key": "Memory Card Slot type",
+                            "value": [
+                                "microSD"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "Display",
+                    "values": [
+                        {
+                            "key": "Display Type",
+                            "value": [
+                                "8 inch 1280 x 800 pixels"
+                            ]
+                        },
+                        {
+                            "key": "Other Display Features",
+                            "value": [
+                                "IPS Display"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "Camera",
+                    "values": [
+                        {
+                            "key": "Primary Camera",
+                            "value": [
+                                "8 megapixels"
+                            ]
+                        },
+                        {
+                            "key": "Other Camera Features",
+                            "value": [
+                                "Auto Focus, 180 Degree Rotating Camera, Gesture Controlled Camera, Selfies"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "Business Features",
+                    "values": [
+                        {
+                            "key": "Mail Features",
+                            "value": [
+                                "E-mail"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "Battery",
+                    "values": [
+                        {
+                            "key": "Battery Type",
+                            "value": [
+                                "6200 mAh Lithium - Ion"
+                            ]
+                        },
+                        {
+                            "key": "Standby Time",
+                            "value": [
+                                "240 hrs"
+                            ]
+                        },
+                        {
+                            "key": "Internet Browsing Time",
+                            "value": [
+                                "20"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "Internet Connectivity",
+                    "values": [
+                        {
+                            "key": "Wi-Fi",
+                            "value": [
+                                "Yes, 802.11 b/g/n"
+                            ]
+                        },
+                        {
+                            "key": "3G",
+                            "value": [
+                                "Yes"
+                            ]
+                        },
+                        {
+                            "key": "4G",
+                            "value": [
+                                "Yes"
+                            ]
+                        },
+                        {
+                            "key": "Video Playback",
+                            "value": [
+                                "Yes"
+                            ]
+                        },
+                        {
+                            "key": "Audio Formats Supported",
+                            "value": [
+                                "MP3"
+                            ]
+                        },
+                        {
+                            "key": "Pre-Installed Browser",
+                            "value": [
+                                "Android"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "Navigation",
+                    "values": [
+                        {
+                            "key": "GPS",
+                            "value": [
+                                "Yes, GLONASS, BeiDou"
+                            ]
+                        },
+                        {
+                            "key": "Map Support",
+                            "value": [
+                                "Google Maps"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "Connectivity",
+                    "values": [
+                        {
+                            "key": "Other Connectivity Features",
+                            "value": [
+                                "Bluetooth Support, OTG Support"
+                            ]
+                        },
+                        {
+                            "key": "USB",
+                            "value": [
+                                "Yes, Micro USB"
+                            ]
+                        },
+                        {
+                            "key": "Audio Jack",
+                            "value": [
+                                "3.5 Headphone Jack"
+                            ]
+                        },
+                        {
+                            "key": "Bluetooth",
+                            "value": [
+                                "v4"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "Dimensions",
+                    "values": [
+                        {
+                            "key": "Dimensions",
+                            "value": [
+                                "210 x 146"
+                            ]
+                        },
+                        {
+                            "key": "Weight",
+                            "value": [
+                                "470 g"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "Warranty",
+                    "values": [
+                        {
+                            "key": "Warranty Summary",
+                            "value": [
+                                "1 Year manufacturer warranty for the Tablet, 6 months manufacturer warranty for other inbox accessories"
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "booksInfo": {
+                "language": null,
+                "binding": null,
+                "pages": null,
+                "publisher": null,
+                "year": 0,
+                "authors": []
+            },
+            "lifeStyleInfo": {
+                "sleeve": null,
+                "neck": null,
+                "idealFor": null
+            }
+        }
+    },
+    {
+        "productBaseInfoV1": {
+            "productId": "TABEHDHRWP5CAXAD",
+            "title": "Lenovo Yoga Tab 3 Pro 32 GB 10.1 inch with Wi-Fi+4G",
+            "productDescription": "",
+            "imageUrls": {
+                "200x200": "http://img.fkcdn.com/image/tablet/x/a/d/lenovo-yoga-tab-3-pro-200x200-imaehdhvdpa5cgac.jpeg",
+                "400x400": "http://img.fkcdn.com/image/tablet/x/a/d/lenovo-yoga-tab-3-pro-400x400-imaehdhvdpa5cgac.jpeg",
+                "800x800": "http://img.fkcdn.com/image/tablet/x/a/d/lenovo-yoga-tab-3-pro-800x800-imaehdhvdpa5cgac.jpeg",
+                "unknown": "http://img.fkcdn.com/image/tablet/x/a/d/lenovo-yoga-tab-3-pro-original-imaehdhvdpa5cgac.jpeg"
+            },
+            "productFamily": [
+                "[TABEHDHRWP5CAXAD]"
+            ],
+            "maximumRetailPrice": {
+                "amount": 44990,
+                "currency": "INR"
+            },
+            "flipkartSellingPrice": {
+                "amount": 39990,
+                "currency": "INR"
+            },
+            "flipkartSpecialPrice": {
+                "amount": 39990,
+                "currency": "INR"
+            },
+            "productUrl": "http://dl.flipkart.com/dl/lenovo-yoga-tab-3-pro-32-gb-10-1-inch-wi-fi-4g/p/itmehdhrhsggmeff?pid=TABEHDHRWP5CAXAD&affid=slidenerd",
+            "productBrand": "Lenovo",
+            "inStock": true,
+            "codAvailable": true,
+            "discountPercentage": 11,
+            "offers": [],
+            "categoryPath": "Mobiles>Tablets>Tablets without Call Facility",
+            "attributes": {
+                "size": "",
+                "color": "Puma Black",
+                "storage": "32 GB",
+                "sizeUnit": "",
+                "displaySize": ""
+            }
+        },
+        "productShippingInfoV1": {
+            "shippingCharges": {
+                "amount": 0,
+                "currency": "INR"
+            },
+            "estimatedDeliveryTime": "Usually Delivered in Mon Sep 12 23:59:59 IST 2016 - Tue Sep 13 23:59:59 IST 2016 days.",
+            "sellerName": "WS Retail",
+            "sellerAverageRating": 4.2291837,
+            "sellerNoOfRatings": 5820203,
+            "sellerNoOfReviews": 179038
+        },
+        "categorySpecificInfoV1": {
+            "keySpecs": [
+                "2 GB RAM | 32 GB ROM",
+                "13 MP Primary Camera | 5 MP Front",
+                "Android 5.1 (Lollipop)",
+                "Battery: 10200 mAh, Lithium - Ion"
+            ],
+            "detailedSpecs": [
+                "2 GB RAM | 32 GB ROM",
+                "13 MP Primary Camera | 5 MP Front",
+                "Android 5.1 (Lollipop)",
+                "Battery: 10200 mAh, Lithium - Ion"
+            ],
+            "specificationList": [
+                {
+                    "key": "General",
+                    "values": [
+                        {
+                            "key": "Brand",
+                            "value": [
+                                "Lenovo"
+                            ]
+                        },
+                        {
+                            "key": "Model ID",
+                            "value": [
+                                "YT3-X90L"
+                            ]
+                        },
+                        {
+                            "key": "Color",
+                            "value": [
+                                "Puma Black"
+                            ]
+                        },
+                        {
+                            "key": "SIM",
+                            "value": [
+                                "Single Sim, LTE"
+                            ]
+                        },
+                        {
+                            "key": "SIM Size",
+                            "value": [
+                                "Micro SIM"
+                            ]
+                        },
+                        {
+                            "key": "Processor",
+                            "value": [
+                                "2.24 GHz Intel Atom x5 Z8500 Quad Core"
+                            ]
+                        },
+                        {
+                            "key": "Voice Call",
+                            "value": [
+                                "No"
+                            ]
+                        },
+                        {
+                            "key": "Supported Networks",
+                            "value": [
+                                "2G: GSM - 900, 1800; 3G: UMTS - 2100; 4G: LTE"
+                            ]
+                        },
+                        {
+                            "key": "In The Box",
+                            "value": [
+                                "Tablet, Charger, USB Cable, Quick Start Guide"
+                            ]
+                        },
+                        {
+                            "key": "Additional Features",
+                            "value": [
+                                "4 Front-facing JBL Speakers with Dolby Atmos, Usage Time: 18 hrs, AnyPen Technology, Splashproof IP21, Battery Cylinder and Kickstand, 4 Modes (Stand Mode, Hold Mode, Tilt Mode, Hang Mode), Integrated Rotatable Projector"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "Platform",
+                    "values": [
+                        {
+                            "key": "Operating System",
+                            "value": [
+                                "Android 5.1 (Lollipop)"
+                            ]
+                        },
+                        {
+                            "key": "Sensors",
+                            "value": [
+                                "G-Sensor, Ambient Light Sensor, eCompass"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "Storage",
+                    "values": [
+                        {
+                            "key": "Internal Storage",
+                            "value": [
+                                "32 GB <i>(Available user memory of the device may be lower than the stated memory due to default pre-installed apps and device OS)</i>"
+                            ]
+                        },
+                        {
+                            "key": "Expandable Storage Capacity",
+                            "value": [
+                                "128 GB"
+                            ]
+                        },
+                        {
+                            "key": "Memory Card Slot type",
+                            "value": [
+                                "microSD"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "Display",
+                    "values": [
+                        {
+                            "key": "Display Type",
+                            "value": [
+                                "10.1 inch 2560 x 1600 pixels"
+                            ]
+                        },
+                        {
+                            "key": "Other Display Features",
+                            "value": [
+                                "299 PPI, IPS Display, 10-point Multi-touch"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "Camera",
+                    "values": [
+                        {
+                            "key": "Primary Camera",
+                            "value": [
+                                "13 megapixel"
+                            ]
+                        },
+                        {
+                            "key": "Secondary Camera",
+                            "value": [
+                                "5 megapixel"
+                            ]
+                        },
+                        {
+                            "key": "Other Camera Features",
+                            "value": [
+                                "Primary Camera: Auto Focus, Secondary Camera: Fixed Focus"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "Business Features",
+                    "values": [
+                        {
+                            "key": "Mail Features",
+                            "value": [
+                                "E-mail"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "Battery",
+                    "values": [
+                        {
+                            "key": "Battery Type",
+                            "value": [
+                                "10200 mAh Lithium - Ion"
+                            ]
+                        },
+                        {
+                            "key": "Standby Time",
+                            "value": [
+                                "1176 hrs"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "Internet Connectivity",
+                    "values": [
+                        {
+                            "key": "Wi-Fi",
+                            "value": [
+                                "Yes, 802.11 a/b/g/n/ac"
+                            ]
+                        },
+                        {
+                            "key": "3G",
+                            "value": [
+                                "Yes"
+                            ]
+                        },
+                        {
+                            "key": "4G",
+                            "value": [
+                                "Yes"
+                            ]
+                        },
+                        {
+                            "key": "Video Playback",
+                            "value": [
+                                "Yes"
+                            ]
+                        },
+                        {
+                            "key": "Audio Formats Supported",
+                            "value": [
+                                "MP3"
+                            ]
+                        },
+                        {
+                            "key": "Pre-Installed Browser",
+                            "value": [
+                                "Android"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "Navigation",
+                    "values": [
+                        {
+                            "key": "GPS",
+                            "value": [
+                                "Yes, A-GPS, GLONASS"
+                            ]
+                        },
+                        {
+                            "key": "Map Support",
+                            "value": [
+                                "Google Maps"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "Connectivity",
+                    "values": [
+                        {
+                            "key": "Other Connectivity Features",
+                            "value": [
+                                "Bluetooth Support, OTG Support"
+                            ]
+                        },
+                        {
+                            "key": "USB",
+                            "value": [
+                                "Yes, Micro USB"
+                            ]
+                        },
+                        {
+                            "key": "Audio Jack",
+                            "value": [
+                                "3.5 Headphone Jack"
+                            ]
+                        },
+                        {
+                            "key": "Bluetooth",
+                            "value": [
+                                "v4"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "Dimensions",
+                    "values": [
+                        {
+                            "key": "Dimensions",
+                            "value": [
+                                "246.8 x 179.07 x 9.2 mm"
+                            ]
+                        },
+                        {
+                            "key": "Weight",
+                            "value": [
+                                "666 g"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "Warranty",
+                    "values": [
+                        {
+                            "key": "Warranty Summary",
+                            "value": [
+                                "1 Year Brand Warranty for Tablet and 6 month warranty for Accessories"
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "booksInfo": {
+                "language": null,
+                "binding": null,
+                "pages": null,
+                "publisher": null,
+                "year": 0,
+                "authors": []
+            },
+            "lifeStyleInfo": {
+                "sleeve": null,
+                "neck": null,
+                "idealFor": null
+            }
+        }
+    },
+    {
+        "productBaseInfoV1": {
+            "productId": "TABEJ8YJFSGUHPAN",
+            "title": "Lenovo TAB3 7 Essential 8 GB 7 inch with Wi-Fi+3G",
+            "productDescription": "Invest in this Lenovo Tab3 Essential and make your work and play fun, efficient, and quick. Yes, it comes with a host of stunning features including an IPS display, a high-performing processor, and a big RAM, making it perfect to carry around wherever you go.",
+            "imageUrls": {
+                "200x200": "http://img.fkcdn.com/image/tablet/j/v/2/lenovo-a710f-200x200-imaejbe5u2emkgys.jpeg",
+                "400x400": "http://img.fkcdn.com/image/tablet/j/v/2/lenovo-a710f-400x400-imaejbe5u2emkgys.jpeg",
+                "800x800": "http://img.fkcdn.com/image/tablet/j/v/2/lenovo-a710f-800x800-imaejbe5u2emkgys.jpeg",
+                "unknown": "http://img.fkcdn.com/image/tablet/j/v/2/lenovo-a710f-original-imaejbe5u2emkgys.jpeg"
+            },
+            "productFamily": [
+                "[TABEKKYKYNHCMJV2]"
+            ],
+            "maximumRetailPrice": {
+                "amount": 6999,
+                "currency": "INR"
+            },
+            "flipkartSellingPrice": {
+                "amount": 4999,
+                "currency": "INR"
+            },
+            "flipkartSpecialPrice": null,
+            "productUrl": "http://dl.flipkart.com/dl/lenovo-tab3-7-essential-8-gb-inch-wi-fi-3g/p/itmej8yjbthp4adf?pid=TABEJ8YJFSGUHPAN&affid=slidenerd",
+            "productBrand": "Lenovo",
+            "inStock": true,
+            "codAvailable": true,
+            "discountPercentage": 0,
+            "offers": [],
+            "categoryPath": "Mobiles>Tablets>Tablets with Call Facility",
+            "attributes": {
+                "size": "",
+                "color": "Ebony Black",
+                "storage": "8 GB",
+                "sizeUnit": "",
+                "displaySize": ""
+            }
+        },
+        "productShippingInfoV1": {
+            "shippingCharges": {
+                "amount": 0,
+                "currency": "INR"
+            },
+            "estimatedDeliveryTime": "Usually Delivered in Mon Sep 12 23:59:59 IST 2016 - Tue Sep 13 23:59:59 IST 2016 days.",
+            "sellerName": "IndiFlashMart",
+            "sellerAverageRating": 4.4615383,
+            "sellerNoOfRatings": 13,
+            "sellerNoOfReviews": 0
+        },
+        "categorySpecificInfoV1": {
+            "keySpecs": [
+                "1 GB RAM | 8 GB ROM",
+                "2 MP Primary Camera | 0.3 MP Front",
+                "Android 5.1 (Lollipop)",
+                "Battery: 3450 mAh, Lithium - Ion",
+                "Voice Call (Single Sim, UMTS)"
+            ],
+            "detailedSpecs": [
+                "1 GB RAM | 8 GB ROM",
+                "2 MP Primary Camera | 0.3 MP Front",
+                "Android 5.1 (Lollipop)",
+                "Battery: 3450 mAh, Lithium - Ion",
+                "Voice Call (Single Sim, UMTS)"
+            ],
+            "specificationList": [
+                {
+                    "key": "General",
+                    "values": [
+                        {
+                            "key": "Brand",
+                            "value": [
+                                "Lenovo"
+                            ]
+                        },
+                        {
+                            "key": "Model ID",
+                            "value": [
+                                "Tab3 7"
+                            ]
+                        },
+                        {
+                            "key": "Color",
+                            "value": [
+                                "Ebony Black"
+                            ]
+                        },
+                        {
+                            "key": "SIM",
+                            "value": [
+                                "Single Sim, UMTS"
+                            ]
+                        },
+                        {
+                            "key": "SIM Size",
+                            "value": [
+                                "Micro SIM"
+                            ]
+                        },
+                        {
+                            "key": "Processor",
+                            "value": [
+                                "1.3 GHz MediaTek Quad Core"
+                            ]
+                        },
+                        {
+                            "key": "Voice Call",
+                            "value": [
+                                "Yes"
+                            ]
+                        },
+                        {
+                            "key": "Supported Networks",
+                            "value": [
+                                "2G: GSM - 900, 1800 (Band 2/3/5/8); 3G: UMTS - 2100 (Band 1/2/5/8)"
+                            ]
+                        },
+                        {
+                            "key": "In The Box",
+                            "value": [
+                                "Tablet, Adapter, USB Cable, Warranty Card, Quick Start Guide"
+                            ]
+                        },
+                        {
+                            "key": "Additional Features",
+                            "value": [
+                                "Dolby Audio, Usage Time: Upto 10 hrs, Software: McAfee Security, Applications: Lenovo SHAREit, Lenovo SYNCit"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "Platform",
+                    "values": [
+                        {
+                            "key": "Operating System",
+                            "value": [
+                                "Android 5.1 (Lollipop)"
+                            ]
+                        },
+                        {
+                            "key": "Sensors",
+                            "value": [
+                                "G-Sensor"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "Storage",
+                    "values": [
+                        {
+                            "key": "Internal Storage",
+                            "value": [
+                                "8 GB <i>(Available user memory of the device may be lower than the stated memory due to default pre-installed apps and device OS)</i>"
+                            ]
+                        },
+                        {
+                            "key": "Expandable Storage Capacity",
+                            "value": [
+                                "64 GB"
+                            ]
+                        },
+                        {
+                            "key": "Memory Card Slot type",
+                            "value": [
+                                "microSD"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "Display",
+                    "values": [
+                        {
+                            "key": "Display Type",
+                            "value": [
+                                "7 inch 1024 X 600 Pixels"
+                            ]
+                        },
+                        {
+                            "key": "Other Display Features",
+                            "value": [
+                                "IPS Display, Display Resolution: WXGA"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "Camera",
+                    "values": [
+                        {
+                            "key": "Primary Camera",
+                            "value": [
+                                "2 megapixels"
+                            ]
+                        },
+                        {
+                            "key": "Secondary Camera",
+                            "value": [
+                                "0.3 megapixels"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "Business Features",
+                    "values": [
+                        {
+                            "key": "Mail Features",
+                            "value": [
+                                "E-mail"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "Battery",
+                    "values": [
+                        {
+                            "key": "Battery Type",
+                            "value": [
+                                "3450 mAh Lithium - Ion"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "Internet Connectivity",
+                    "values": [
+                        {
+                            "key": "Wi-Fi",
+                            "value": [
+                                "Yes"
+                            ]
+                        },
+                        {
+                            "key": "3G",
+                            "value": [
+                                "Yes, 21 Mbps HSDPA"
+                            ]
+                        },
+                        {
+                            "key": "Video Playback",
+                            "value": [
+                                "Yes"
+                            ]
+                        },
+                        {
+                            "key": "Audio Formats Supported",
+                            "value": [
+                                "MP3"
+                            ]
+                        },
+                        {
+                            "key": "Pre-Installed Browser",
+                            "value": [
+                                "Android"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "Navigation",
+                    "values": [
+                        {
+                            "key": "GPS",
+                            "value": [
+                                "Yes"
+                            ]
+                        },
+                        {
+                            "key": "Map Support",
+                            "value": [
+                                "Google Maps"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "Connectivity",
+                    "values": [
+                        {
+                            "key": "Other Connectivity Features",
+                            "value": [
+                                "Bluetooth Support"
+                            ]
+                        },
+                        {
+                            "key": "USB",
+                            "value": [
+                                "Yes"
+                            ]
+                        },
+                        {
+                            "key": "Bluetooth",
+                            "value": [
+                                "v4"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "Warranty",
+                    "values": [
+                        {
+                            "key": "Warranty Summary",
+                            "value": [
+                                "1 Year manufacturer warranty for the Tablet, 6 months manufacturer warranty for other inbox accessories"
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "booksInfo": {
+                "language": null,
+                "binding": null,
+                "pages": null,
+                "publisher": null,
+                "year": 0,
+                "authors": []
+            },
+            "lifeStyleInfo": {
+                "sleeve": null,
+                "neck": null,
+                "idealFor": null
+            }
+        }
+    },
+    {
+        "productBaseInfoV1": {
+            "productId": "TABEH2BCTEHFPZH9",
+            "title": "Micromax Canvas Tab P702 16 GB 7 inch with 4G",
+            "productDescription": "",
+            "imageUrls": {
+                "200x200": "http://img.fkcdn.com/image/tablet/z/h/9/micromax-canvas-tab-p702-200x200-imaegufmpgfx942f.jpeg",
+                "400x400": "http://img.fkcdn.com/image/tablet/z/h/9/micromax-canvas-tab-p702-400x400-imaegufmpgfx942f.jpeg",
+                "800x800": "http://img.fkcdn.com/image/tablet/z/h/9/micromax-canvas-tab-p702-800x800-imaegufmpgfx942f.jpeg",
+                "unknown": "http://img.fkcdn.com/image/tablet/z/h/9/micromax-canvas-tab-p702-original-imaegufmpgfx942f.jpeg"
+            },
+            "productFamily": [
+                "[TABEGUBGUZ6QZRK4",
+                " TABEGUBGVSHZCGFZ]"
+            ],
+            "maximumRetailPrice": {
+                "amount": 8499,
+                "currency": "INR"
+            },
+            "flipkartSellingPrice": {
+                "amount": 8499,
+                "currency": "INR"
+            },
+            "flipkartSpecialPrice": {
+                "amount": 8499,
+                "currency": "INR"
+            },
+            "productUrl": "http://dl.flipkart.com/dl/micromax-canvas-tab-p702-16-gb-7-inch-4g/p/itmeh2bcxfgm7bnz?pid=TABEH2BCTEHFPZH9&affid=slidenerd",
+            "productBrand": "Micromax",
+            "inStock": false,
+            "codAvailable": true,
+            "discountPercentage": 0,
+            "offers": [],
+            "categoryPath": "Mobiles>Tablets>Tablets with Call Facility",
+            "attributes": {
+                "size": "",
+                "color": "Black",
+                "storage": "16",
+                "sizeUnit": "",
+                "displaySize": ""
+            }
+        },
+        "productShippingInfoV1": {
+            "shippingCharges": {
+                "amount": 0,
+                "currency": "INR"
+            },
+            "estimatedDeliveryTime": "",
+            "sellerName": "WS Retail",
+            "sellerAverageRating": 4.2291837,
+            "sellerNoOfRatings": 5820203,
+            "sellerNoOfReviews": 179038
+        },
+        "categorySpecificInfoV1": {
+            "keySpecs": [
+                "2 GB RAM | 16 GB ROM",
+                "5 MP Primary Camera | 2 MP Front",
+                "Android 5.1",
+                "Battery:, Li-Ion",
+                "Voice Call (Dual Sim)"
+            ],
+            "detailedSpecs": [
+                "2 GB RAM | 16 GB ROM",
+                "5 MP Primary Camera | 2 MP Front",
+                "Android 5.1",
+                "Battery:, Li-Ion",
+                "Voice Call (Dual Sim)"
+            ],
+            "specificationList": [
+                {
+                    "key": "General",
+                    "values": [
+                        {
+                            "key": "Brand",
+                            "value": [
+                                "Micromax"
+                            ]
+                        },
+                        {
+                            "key": "Model ID",
+                            "value": [
+                                "Canvas Tab P702"
+                            ]
+                        },
+                        {
+                            "key": "Color",
+                            "value": [
+                                "Black"
+                            ]
+                        },
+                        {
+                            "key": "SIM",
+                            "value": [
+                                "Dual Sim, (Dual Standby)"
+                            ]
+                        },
+                        {
+                            "key": "Processor",
+                            "value": [
+                                "1.3 GHz"
+                            ]
+                        },
+                        {
+                            "key": "Voice Call",
+                            "value": [
+                                "Yes"
+                            ]
+                        },
+                        {
+                            "key": "Supported Networks",
+                            "value": [
+                                "GSM, WCDMA, LTE"
+                            ]
+                        },
+                        {
+                            "key": "In The Box",
+                            "value": [
+                                "Tablet"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "Platform",
+                    "values": [
+                        {
+                            "key": "Operating System",
+                            "value": [
+                                "Android 5.1"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "Storage",
+                    "values": [
+                        {
+                            "key": "Internal Storage",
+                            "value": [
+                                "16 <i>(Available user memory of the device may be lower than the stated memory due to default pre-installed apps and device OS)</i>"
+                            ]
+                        },
+                        {
+                            "key": "Expandable Storage Capacity",
+                            "value": [
+                                "32 GB"
+                            ]
+                        },
+                        {
+                            "key": "Memory Card Slot type",
+                            "value": [
+                                "microSD"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "Display",
+                    "values": [
+                        {
+                            "key": "Display Type",
+                            "value": [
+                                "7 inch IPS 1280 x 720 Pixels"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "Camera",
+                    "values": [
+                        {
+                            "key": "Primary Camera",
+                            "value": [
+                                "5 Megapixels"
+                            ]
+                        },
+                        {
+                            "key": "Secondary Camera",
+                            "value": [
+                                "2 Megapixels"
+                            ]
+                        },
+                        {
+                            "key": "Flash Support",
+                            "value": [
+                                "LED"
+                            ]
+                        },
+                        {
+                            "key": "Video Recording",
+                            "value": [
+                                "Yes , Full HD Recording"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "Business Features",
+                    "values": [
+                        {
+                            "key": "Mail Features",
+                            "value": [
+                                "E-mail, Pushmail"
+                            ]
+                        },
+                        {
+                            "key": "Document Support",
+                            "value": [
+                                "Document Viewer, Document Editor"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "Battery",
+                    "values": [
+                        {
+                            "key": "Battery Type",
+                            "value": [
+                                "Li-Ion"
+                            ]
+                        },
+                        {
+                            "key": "Talk Time",
+                            "value": [
+                                "9 hrs"
+                            ]
+                        },
+                        {
+                            "key": "Internet Browsing Time",
+                            "value": [
+                                "5 hrs"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "Internet Connectivity",
+                    "values": [
+                        {
+                            "key": "Wi-Fi",
+                            "value": [
+                                "802.11 b"
+                            ]
+                        },
+                        {
+                            "key": "3G",
+                            "value": [
+                                "Yes, 21"
+                            ]
+                        },
+                        {
+                            "key": "Other Internet Connectivity Options",
+                            "value": [
+                                "GPRS, Edge"
+                            ]
+                        },
+                        {
+                            "key": "Video Playback",
+                            "value": [
+                                "Yes ,  Full HD Playback"
+                            ]
+                        },
+                        {
+                            "key": "Video Formats Supported",
+                            "value": [
+                                "MP4, H.264, H.263"
+                            ]
+                        },
+                        {
+                            "key": "Audio Formats Supported",
+                            "value": [
+                                "MP3"
+                            ]
+                        },
+                        {
+                            "key": "HD Game Support",
+                            "value": [
+                                "Yes"
+                            ]
+                        },
+                        {
+                            "key": "Pre-Installed Browser",
+                            "value": [
+                                "WAP"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "Navigation",
+                    "values": [
+                        {
+                            "key": "GPS",
+                            "value": [
+                                "Yes, A-GPS"
+                            ]
+                        },
+                        {
+                            "key": "Map Support",
+                            "value": [
+                                "Google Maps"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "Connectivity",
+                    "values": [
+                        {
+                            "key": "USB",
+                            "value": [
+                                "3.0"
+                            ]
+                        },
+                        {
+                            "key": "Audio Jack",
+                            "value": [
+                                "3.5 Headphone Jack"
+                            ]
+                        },
+                        {
+                            "key": "Bluetooth",
+                            "value": [
+                                "v4.0, Supported Profiles(A2DP)"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "Warranty",
+                    "values": [
+                        {
+                            "key": "Warranty Summary",
+                            "value": [
+                                "1 Year"
+                            ]
+                        },
+                        {
+                            "key": "Covered in Warranty",
+                            "value": [
+                                "Limited manufacture defects only"
+                            ]
+                        },
+                        {
+                            "key": "Warranty Service Type",
+                            "value": [
+                                "CARRY IN"
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "booksInfo": {
+                "language": null,
+                "binding": null,
+                "pages": null,
+                "publisher": null,
+                "year": 0,
+                "authors": []
+            },
+            "lifeStyleInfo": {
+                "sleeve": null,
+                "neck": null,
+                "idealFor": null
+            }
+        }
+    },
+    {
+        "productBaseInfoV1": {
+            "productId": "TABEJXMCGNNMKPYA",
+            "title": "Lenovo CG Slate Grade 3-5 8 GB 7 inch with Wi-Fi Only",
+            "productDescription": "Looking for the perfect tablet for your kids? Then you are on the right page! Lenovo brings to you this kid-friendly CG Slate to ensure your kids learn with fun. With over 1500+ learning modules and incentive-driven, self-learning environment, this tablet is a great investment for parents and kids.",
+            "imageUrls": {
+                "200x200": "http://img.fkcdn.com/image/tablet/p/y/a/lenovo-grades-3-5-200x200-imaek44rhutkruzf.jpeg",
+                "400x400": "http://img.fkcdn.com/image/tablet/p/y/a/lenovo-grades-3-5-400x400-imaek44rhutkruzf.jpeg",
+                "800x800": "http://img.fkcdn.com/image/tablet/p/y/a/lenovo-grades-3-5-800x800-imaek44rhutkruzf.jpeg",
+                "unknown": "http://img.fkcdn.com/image/tablet/p/y/a/lenovo-grades-3-5-original-imaek44rhutkruzf.jpeg"
+            },
+            "productFamily": [
+                "[TABEJXMCGNNMKPYA]"
+            ],
+            "maximumRetailPrice": {
+                "amount": 8499,
+                "currency": "INR"
+            },
+            "flipkartSellingPrice": {
+                "amount": 7499,
+                "currency": "INR"
+            },
+            "flipkartSpecialPrice": {
+                "amount": 5999,
+                "currency": "INR"
+            },
+            "productUrl": "http://dl.flipkart.com/dl/lenovo-cg-slate-grade-3-5-8-gb-7-inch-wi-fi-only/p/itmejxmeeqzeypqh?pid=TABEJXMCGNNMKPYA&affid=slidenerd",
+            "productBrand": "Lenovo",
+            "inStock": true,
+            "codAvailable": true,
+            "discountPercentage": 11,
+            "offers": [
+                "Extra Rs. 1500 Off on Lenovo CG Slate",
+                "Extra 15% Cashback* with Citi Cards"
+            ],
+            "categoryPath": "Mobiles>Tablets>Tablets without Call Facility",
+            "attributes": {
+                "size": "",
+                "color": "Ebony",
+                "storage": "8 GB",
+                "sizeUnit": "",
+                "displaySize": ""
+            }
+        },
+        "productShippingInfoV1": {
+            "shippingCharges": {
+                "amount": 0,
+                "currency": "INR"
+            },
+            "estimatedDeliveryTime": "Usually Delivered in Mon Sep 12 23:59:59 IST 2016 - Tue Sep 13 23:59:59 IST 2016 days.",
+            "sellerName": "WS Retail",
+            "sellerAverageRating": 4.2291837,
+            "sellerNoOfRatings": 5820203,
+            "sellerNoOfReviews": 179038
+        },
+        "categorySpecificInfoV1": {
+            "keySpecs": [
+                "1 GB RAM | 8 GB ROM",
+                "2 MP Primary Camera | 0.3 MP Front",
+                "Android 4.4 (KitKat)",
+                "Battery: 3450 mAh, Lithium - Ion"
+            ],
+            "detailedSpecs": [
+                "1 GB RAM | 8 GB ROM",
+                "2 MP Primary Camera | 0.3 MP Front",
+                "Android 4.4 (KitKat)",
+                "Battery: 3450 mAh, Lithium - Ion"
+            ],
+            "specificationList": [
+                {
+                    "key": "General",
+                    "values": [
+                        {
+                            "key": "Brand",
+                            "value": [
+                                "Lenovo"
+                            ]
+                        },
+                        {
+                            "key": "Model ID",
+                            "value": [
+                                "Grade 3-5"
+                            ]
+                        },
+                        {
+                            "key": "Color",
+                            "value": [
+                                "Ebony"
+                            ]
+                        },
+                        {
+                            "key": "Processor",
+                            "value": [
+                                "1.3 GHz MediaTek MT8127 Quad Core"
+                            ]
+                        },
+                        {
+                            "key": "Voice Call",
+                            "value": [
+                                "No"
+                            ]
+                        },
+                        {
+                            "key": "In The Box",
+                            "value": [
+                                "CG Slate Software, Tablet, 32 GB SD Card for Grades 3-5, Power Adapter, USB Cable, CG SLATE Bag and Accessories"
+                            ]
+                        },
+                        {
+                            "key": "Additional Features",
+                            "value": [
+                                "Android v4.4 (KitKat) Upgradable to v5 (Lollipop) OS, Included Software: CG SLATE Mobile Learning Software with Life-time License Validity, 1 x Front Speaker, Dolby Audio, Vibration Mode"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "Platform",
+                    "values": [
+                        {
+                            "key": "Operating System",
+                            "value": [
+                                "Android 4.4 (KitKat)"
+                            ]
+                        },
+                        {
+                            "key": "Sensors",
+                            "value": [
+                                "G-Sensor, Accelerometer"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "Storage",
+                    "values": [
+                        {
+                            "key": "Internal Storage",
+                            "value": [
+                                "8 GB <i>(Available user memory of the device may be lower than the stated memory due to default pre-installed apps and device OS)</i>"
+                            ]
+                        },
+                        {
+                            "key": "Expandable Storage Capacity",
+                            "value": [
+                                "32 GB"
+                            ]
+                        },
+                        {
+                            "key": "Memory Card Slot type",
+                            "value": [
+                                "microSD"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "Display",
+                    "values": [
+                        {
+                            "key": "Display Type",
+                            "value": [
+                                "7 inch Capacitive Touchscreen with 1024 X 600 Pixels"
+                            ]
+                        },
+                        {
+                            "key": "Other Display Features",
+                            "value": [
+                                "WSVGA IPS Display, GFM Air Bonding, 5-point Multi-touch, Wide Angle Viewing"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "Camera",
+                    "values": [
+                        {
+                            "key": "Primary Camera",
+                            "value": [
+                                "2 Megapixels"
+                            ]
+                        },
+                        {
+                            "key": "Secondary Camera",
+                            "value": [
+                                "0.3 Megapixels"
+                            ]
+                        },
+                        {
+                            "key": "Video Recording",
+                            "value": [
+                                "Yes"
+                            ]
+                        },
+                        {
+                            "key": "Other Camera Features",
+                            "value": [
+                                "Primary Camera: Fixed Focus; Secondary Camera: Fixed Focus"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "Business Features",
+                    "values": [
+                        {
+                            "key": "Mail Features",
+                            "value": [
+                                "E-mail"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "Battery",
+                    "values": [
+                        {
+                            "key": "Battery Type",
+                            "value": [
+                                "3450 mAh Lithium - Ion"
+                            ]
+                        },
+                        {
+                            "key": "Standby Time",
+                            "value": [
+                                "432 hrs"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "Internet Connectivity",
+                    "values": [
+                        {
+                            "key": "Wi-Fi",
+                            "value": [
+                                "Yes, 802.11 b/g/n"
+                            ]
+                        },
+                        {
+                            "key": "Video Playback",
+                            "value": [
+                                "Yes"
+                            ]
+                        },
+                        {
+                            "key": "Video Formats Supported",
+                            "value": [
+                                "MP4"
+                            ]
+                        },
+                        {
+                            "key": "Audio Formats Supported",
+                            "value": [
+                                "MP3"
+                            ]
+                        },
+                        {
+                            "key": "Pre-Installed Browser",
+                            "value": [
+                                "Android"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "Navigation",
+                    "values": [
+                        {
+                            "key": "GPS",
+                            "value": [
+                                "Yes"
+                            ]
+                        },
+                        {
+                            "key": "Map Support",
+                            "value": [
+                                "Google Maps"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "Connectivity",
+                    "values": [
+                        {
+                            "key": "Other Connectivity Features",
+                            "value": [
+                                "Bluetooth Support, OTG Support"
+                            ]
+                        },
+                        {
+                            "key": "USB",
+                            "value": [
+                                "Yes, Micro USB"
+                            ]
+                        },
+                        {
+                            "key": "Audio Jack",
+                            "value": [
+                                "3.5 Headphone Jack"
+                            ]
+                        },
+                        {
+                            "key": "Bluetooth",
+                            "value": [
+                                "v4"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "Dimensions",
+                    "values": [
+                        {
+                            "key": "Dimensions",
+                            "value": [
+                                "105 x 189 x 9.3 mm"
+                            ]
+                        },
+                        {
+                            "key": "Weight",
+                            "value": [
+                                "269 g"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "Warranty",
+                    "values": [
+                        {
+                            "key": "Warranty Summary",
+                            "value": [
+                                "1 Year Warranty"
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "booksInfo": {
+                "language": null,
+                "binding": null,
+                "pages": null,
+                "publisher": null,
+                "year": 0,
+                "authors": []
+            },
+            "lifeStyleInfo": {
+                "sleeve": null,
+                "neck": null,
+                "idealFor": null
+            }
+        }
+    },
+    {
+        "productBaseInfoV1": {
+            "productId": "TABEGJDSYFHJQQ8Y",
+            "title": "Ambrane A3-7 Plus Duo 4 GB 7 inch with 3G",
+            "productDescription": "Experience playful life with Ambrane A3-7 Plus(Duo) Dual sim, 7 inch 3G Calling Tablet with GPS functionality that gives you the quintessence of entertainment and work in hand combined while you blissfully enjoy the best that technology offers.",
+            "imageUrls": {
+                "200x200": "http://img.fkcdn.com/image/tablet/q/8/y/ambrane-a3-7-plus-duo-200x200-imaeggakeg8v9rm6.jpeg",
+                "400x400": "http://img.fkcdn.com/image/tablet/q/8/y/ambrane-a3-7-plus-duo-400x400-imaeggakeg8v9rm6.jpeg",
+                "800x800": "http://img.fkcdn.com/image/tablet/q/8/y/ambrane-a3-7-plus-duo-800x800-imaeggakeg8v9rm6.jpeg",
+                "unknown": "http://img.fkcdn.com/image/tablet/q/8/y/ambrane-a3-7-plus-duo-original-imaeggakeg8v9rm6.jpeg"
+            },
+            "productFamily": [
+                "[TABEGJDSYFHJQQ8Y]"
+            ],
+            "maximumRetailPrice": {
+                "amount": 3999,
+                "currency": "INR"
+            },
+            "flipkartSellingPrice": {
+                "amount": 2999,
+                "currency": "INR"
+            },
+            "flipkartSpecialPrice": {
+                "amount": 2999,
+                "currency": "INR"
+            },
+            "productUrl": "http://dl.flipkart.com/dl/ambrane-a3-7-plus-duo-4-gb-7-inch-3g/p/itmegjdsrcp2qvan?pid=TABEGJDSYFHJQQ8Y&affid=slidenerd",
+            "productBrand": "Ambrane",
+            "inStock": false,
+            "codAvailable": true,
+            "discountPercentage": 25,
+            "offers": [],
+            "categoryPath": "Mobiles>Tablets>Tablets with Call Facility",
+            "attributes": {
+                "size": "",
+                "color": "Black",
+                "storage": "4",
+                "sizeUnit": "",
+                "displaySize": ""
+            }
+        },
+        "productShippingInfoV1": {
+            "shippingCharges": {
+                "amount": 0,
+                "currency": "INR"
+            },
+            "estimatedDeliveryTime": "",
+            "sellerName": "BJINFOTECH",
+            "sellerAverageRating": 4.0402584,
+            "sellerNoOfRatings": 14705,
+            "sellerNoOfReviews": 291
+        },
+        "categorySpecificInfoV1": {
+            "keySpecs": [
+                "512 MB RAM | 4 GB ROM",
+                "2.0 MP Primary Camera | 0.3 MP Front",
+                "Android 4.2 (Jelly Bean)",
+                "Battery: 3000 mAh, Lithium - Polymer",
+                "Voice Call (Dual Sim, GSM)"
+            ],
+            "detailedSpecs": [
+                "512 MB RAM | 4 GB ROM",
+                "2.0 MP Primary Camera | 0.3 MP Front",
+                "Android 4.2 (Jelly Bean)",
+                "Battery: 3000 mAh, Lithium - Polymer",
+                "Voice Call (Dual Sim, GSM)"
+            ],
+            "specificationList": [
+                {
+                    "key": "General",
+                    "values": [
+                        {
+                            "key": "Brand",
+                            "value": [
+                                "Ambrane"
+                            ]
+                        },
+                        {
+                            "key": "Model ID",
+                            "value": [
+                                "A3-7 Plus Duo"
+                            ]
+                        },
+                        {
+                            "key": "Color",
+                            "value": [
+                                "Black"
+                            ]
+                        },
+                        {
+                            "key": "SIM",
+                            "value": [
+                                "Dual Sim, GSM, (Dual Standby)"
+                            ]
+                        },
+                        {
+                            "key": "SIM Size",
+                            "value": [
+                                "Micro Sim"
+                            ]
+                        },
+                        {
+                            "key": "Processor",
+                            "value": [
+                                "1.2 GHz ARM Cortex-A9"
+                            ]
+                        },
+                        {
+                            "key": "Graphics",
+                            "value": [
+                                "MALI-400MP"
+                            ]
+                        },
+                        {
+                            "key": "Voice Call",
+                            "value": [
+                                "Yes"
+                            ]
+                        },
+                        {
+                            "key": "Video Call",
+                            "value": [
+                                "No"
+                            ]
+                        },
+                        {
+                            "key": "In The Box",
+                            "value": [
+                                "Tablet, Charger, Headphone, Screen Guard"
+                            ]
+                        },
+                        {
+                            "key": "3G via Dongle",
+                            "value": [
+                                "No"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "Platform",
+                    "values": [
+                        {
+                            "key": "Operating System",
+                            "value": [
+                                "Android 4.2 (Jelly Bean)"
+                            ]
+                        },
+                        {
+                            "key": "Inbuilt Keypad",
+                            "value": [
+                                "No"
+                            ]
+                        },
+                        {
+                            "key": "Sensors",
+                            "value": [
+                                "Gravity Sensor"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "Storage",
+                    "values": [
+                        {
+                            "key": "Internal Storage",
+                            "value": [
+                                "4 <i>(Available user memory of the device may be lower than the stated memory due to default pre-installed apps and device OS)</i>"
+                            ]
+                        },
+                        {
+                            "key": "Expandable Storage Capacity",
+                            "value": [
+                                "32 GB"
+                            ]
+                        },
+                        {
+                            "key": "Memory Card Slot type",
+                            "value": [
+                                "Micro-SD Card"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "Display",
+                    "values": [
+                        {
+                            "key": "Display Type",
+                            "value": [
+                                "7 inch Super AMOLED Plus 800 X 480 Pixels ,16 K Colors"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "Camera",
+                    "values": [
+                        {
+                            "key": "Primary Camera",
+                            "value": [
+                                "2.0 Megapixels"
+                            ]
+                        },
+                        {
+                            "key": "Secondary Camera",
+                            "value": [
+                                "0.3 Megapixels"
+                            ]
+                        },
+                        {
+                            "key": "Zoom",
+                            "value": [
+                                "No"
+                            ]
+                        },
+                        {
+                            "key": "Video Recording",
+                            "value": [
+                                "Yes"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "Business Features",
+                    "values": [
+                        {
+                            "key": "Mail Features",
+                            "value": [
+                                "E-mail, Pushmail"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "Battery",
+                    "values": [
+                        {
+                            "key": "Battery Type",
+                            "value": [
+                                "3000 mAh Lithium - Polymer"
+                            ]
+                        },
+                        {
+                            "key": "Talk Time",
+                            "value": [
+                                "14 Hours"
+                            ]
+                        },
+                        {
+                            "key": "Standby Time",
+                            "value": [
+                                "14 Hours"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "Internet Connectivity",
+                    "values": [
+                        {
+                            "key": "Wi-Fi",
+                            "value": [
+                                "IEEE802.11 b/g"
+                            ]
+                        },
+                        {
+                            "key": "3G",
+                            "value": [
+                                "Yes"
+                            ]
+                        },
+                        {
+                            "key": "Video Playback",
+                            "value": [
+                                "Yes"
+                            ]
+                        },
+                        {
+                            "key": "Video Formats Supported",
+                            "value": [
+                                "MPEG4-SP, H.264/AVC, H.263, VPX, 3GP, 3G2, MP4, MKV, AVI, WEBM"
+                            ]
+                        },
+                        {
+                            "key": "Audio Formats Supported",
+                            "value": [
+                                "MP3, MP2, AMR, AWB, APE, M4A, MIDI, OGG, OGA, WAV, FLAC, 3GP"
+                            ]
+                        },
+                        {
+                            "key": "Radio",
+                            "value": [
+                                "Yes"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "Navigation",
+                    "values": [
+                        {
+                            "key": "GPS",
+                            "value": [
+                                "Yes"
+                            ]
+                        },
+                        {
+                            "key": "Map Support",
+                            "value": [
+                                "Google Map"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "Connectivity",
+                    "values": [
+                        {
+                            "key": "Audio Jack",
+                            "value": [
+                                "3.5 Headphone Jack"
+                            ]
+                        },
+                        {
+                            "key": "Bluetooth",
+                            "value": [
+                                "Supported Profiles(BT 4.0)"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "Dimensions",
+                    "values": [
+                        {
+                            "key": "Dimensions",
+                            "value": [
+                                "112 x 195 x 10 mm"
+                            ]
+                        },
+                        {
+                            "key": "Weight",
+                            "value": [
+                                "320 g"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "Warranty",
+                    "values": [
+                        {
+                            "key": "Warranty Summary",
+                            "value": [
+                                "1 Year"
+                            ]
+                        },
+                        {
+                            "key": "Covered in Warranty",
+                            "value": [
+                                "Warranty Of The Product Is Limited To Manufacturing Defects Only"
+                            ]
+                        },
+                        {
+                            "key": "Not Covered in Warranty",
+                            "value": [
+                                "Mishandling of the product"
+                            ]
+                        },
+                        {
+                            "key": "Warranty Service Type",
+                            "value": [
+                                "Only manufacturing defect are cover in the Warranty"
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "booksInfo": {
+                "language": null,
+                "binding": null,
+                "pages": null,
+                "publisher": null,
+                "year": 0,
+                "authors": []
+            },
+            "lifeStyleInfo": {
+                "sleeve": null,
+                "neck": null,
+                "idealFor": null
+            }
+        }
+    }
+]

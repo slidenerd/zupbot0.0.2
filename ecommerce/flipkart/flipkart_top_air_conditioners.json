@@ -1,0 +1,4237 @@
+[
+    {
+        "productBaseInfoV1": {
+            "productId": "ACNEF7FWXGWFRU94",
+            "title": "Hitachi 1.5 Tons 5 Star Split AC Copper",
+            "productDescription": "This summer make every day pleasant by getting home this Hitachi 1.5 Tons Split AC. With this 5-Star AC installed in your house, you can relax on your bean bag as the rest will be handled by the AC itself - it adjusts the temperature according to the weather conditions around you and make every day and every hour pleasant.",
+            "imageUrls": {
+                "200x200": "http://img.fkcdn.com/image/air-conditioner-new/x/g/j/1-5-hitachi-split-rau318hwds-200x200-imaeg63cpwszq2zz.jpeg",
+                "400x400": "http://img.fkcdn.com/image/air-conditioner-new/x/g/j/1-5-hitachi-split-rau318hwds-400x400-imaeg63cpwszq2zz.jpeg",
+                "800x800": "http://img.fkcdn.com/image/air-conditioner-new/x/g/j/1-5-hitachi-split-rau318hwds-800x800-imaeg63cpwszq2zz.jpeg",
+                "unknown": "http://img.fkcdn.com/image/air-conditioner-new/x/g/j/1-5-hitachi-split-rau318hwds-original-imaeg63cpwszq2zz.jpeg"
+            },
+            "productFamily": [
+                "[ACNEHZAG3YHSZQJY]"
+            ],
+            "maximumRetailPrice": {
+                "amount": 49790,
+                "currency": "INR"
+            },
+            "flipkartSellingPrice": {
+                "amount": 40490,
+                "currency": "INR"
+            },
+            "flipkartSpecialPrice": {
+                "amount": 40490,
+                "currency": "INR"
+            },
+            "productUrl": "http://dl.flipkart.com/dl/hitachi-1-5-tons-5-star-split-ac-copper/p/itmef7fwxxnbgfyw?pid=ACNEF7FWXGWFRU94&affid=slidenerd",
+            "productBrand": "Hitachi",
+            "inStock": true,
+            "codAvailable": true,
+            "discountPercentage": 18,
+            "offers": [],
+            "categoryPath": "Electronics>Appliances>Home Appliances>Air Conditioners",
+            "attributes": {
+                "size": "",
+                "color": "Copper",
+                "storage": "",
+                "sizeUnit": "",
+                "displaySize": ""
+            }
+        },
+        "productShippingInfoV1": {
+            "shippingCharges": {
+                "amount": 0,
+                "currency": "INR"
+            },
+            "estimatedDeliveryTime": "Usually Delivered in Tue Sep 06 23:59:59 IST 2016 - Wed Sep 07 23:59:59 IST 2016 days.",
+            "sellerName": "OmniTechRetail",
+            "sellerAverageRating": 4.2508473,
+            "sellerNoOfRatings": 295,
+            "sellerNoOfReviews": 13
+        },
+        "categorySpecificInfoV1": {
+            "keySpecs": [
+                "Auto Restart",
+                "Copper Condenser, Rotary Compressor",
+                "Cooling Capacity: 5500 W",
+                "Power Usage: 1485 W"
+            ],
+            "detailedSpecs": [
+                "Auto Restart",
+                "Copper Condenser, Rotary Compressor",
+                "Cooling Capacity: 5500 W",
+                "Power Usage: 1485 W"
+            ],
+            "specificationList": [
+                {
+                    "key": "General",
+                    "values": [
+                        {
+                            "key": "In the Box",
+                            "value": [
+                                "Indoor Unit, Outdoor Unit, Installation Kit, Operation Manual, Remote Control"
+                            ]
+                        },
+                        {
+                            "key": "Brand",
+                            "value": [
+                                "Hitachi"
+                            ]
+                        },
+                        {
+                            "key": "Model Name",
+                            "value": [
+                                "RAU518HWDS"
+                            ]
+                        },
+                        {
+                            "key": "Type",
+                            "value": [
+                                "Split"
+                            ]
+                        },
+                        {
+                            "key": "Capacity in Tons",
+                            "value": [
+                                "1.5 Tons"
+                            ]
+                        },
+                        {
+                            "key": "Star Rating",
+                            "value": [
+                                "5"
+                            ]
+                        },
+                        {
+                            "key": "Color",
+                            "value": [
+                                "Copper"
+                            ]
+                        },
+                        {
+                            "key": "Cooling Capacity",
+                            "value": [
+                                "5500 W"
+                            ]
+                        },
+                        {
+                            "key": "Compressor",
+                            "value": [
+                                "Rotary"
+                            ]
+                        },
+                        {
+                            "key": "Dehumidification",
+                            "value": [
+                                "Yes"
+                            ]
+                        },
+                        {
+                            "key": "Remote Control",
+                            "value": [
+                                "Yes"
+                            ]
+                        },
+                        {
+                            "key": "Condenser Coil",
+                            "value": [
+                                "Copper"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "Dimensions",
+                    "values": [
+                        {
+                            "key": "Indoor W x H x D",
+                            "value": [
+                                "105 cm x 29 cm x 22 cm"
+                            ]
+                        },
+                        {
+                            "key": "Indoor Unit Weight",
+                            "value": [
+                                "12.9 kg"
+                            ]
+                        },
+                        {
+                            "key": "Outdoor W x H x D",
+                            "value": [
+                                "75 cm x 54.8 cm x 28.8 cm"
+                            ]
+                        },
+                        {
+                            "key": "Outdoor Unit Weight",
+                            "value": [
+                                "41.2 kg"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "Performance Features",
+                    "values": [
+                        {
+                            "key": "EER",
+                            "value": [
+                                "3.7 W/W"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "Air Flow & Filter Features",
+                    "values": [
+                        {
+                            "key": "Anti-bacteria Filter",
+                            "value": [
+                                "No"
+                            ]
+                        },
+                        {
+                            "key": "Dust Filter",
+                            "value": [
+                                "No"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "Convenience Features",
+                    "values": [
+                        {
+                            "key": "Auto Restart",
+                            "value": [
+                                "Yes"
+                            ]
+                        },
+                        {
+                            "key": "Additional Features",
+                            "value": [
+                                "Condenser Coil: Copper"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "Power Features",
+                    "values": [
+                        {
+                            "key": "Power Requirement",
+                            "value": [
+                                "AC 230 V, 50 Hz"
+                            ]
+                        },
+                        {
+                            "key": "Power Consumption",
+                            "value": [
+                                "1485 W"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "Services",
+                    "values": [
+                        {
+                            "key": "Installation Details",
+                            "value": [
+                                "<p>Standard installation is provided free of cost.</p><p>After delivery of your Air-conditioner, you will receive a ticket number via message. Post that, you will receive a call from the brand authorized service engineer to schedule a mutually convenient.<p>Split AC:-</p><p>Drilling of hole in Brick wall for taking out the pipes</p><p>Fixing hole sleeve & Cap</p><p>Fixing the Indoor and Outdoor Unit</p><p>Connecting Indoor and Outdoor units using Standard Kit provided by Manufacturer (at an additional cost, unless specified otherwise)</p><p>Wrapping the pipe with seasoning tape</p> <p>Connection to Stabilizer or Power point in the range of Power Cord Provided by Manufacture</p> <p>Temperature/Performance Check & Demo and Maintenance tips filling the details in warranty card</p><p>Not covered in installation:-</p><p>Out Door Unit Stand</p><p>Extra copper wire if any</p><p>Drain Pipe extension if any</p><p>Plumbing and Masonry Work</p><p>Wiring extension from Meter to site, Power point/MCB fitting and any other electrical work,Carpentry work</p><p>Dismantling/Shifting of Old AC's</p><p>Masonry, Core Cutting Fabrication and Electrical</p>"
+                            ]
+                        },
+                        {
+                            "key": "Technician Visit Details",
+                            "value": [
+                                "Authorized Service Engineer will do the following, Repair / change the defective part, Provide replacement to the customer in case part / product not repairable (only after replacement request approved), Repair Services"
+                            ]
+                        },
+                        {
+                            "key": "Uninstallation Details",
+                            "value": [
+                                "In case of returns, Flipkart's team will visit the customers location, Uninstall, Pack, Pick-up the product"
+                            ]
+                        },
+                        {
+                            "key": "Other Included Services",
+                            "value": [
+                                "Two Free Services of AC within Warranty Period on Demand"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "Warranty",
+                    "values": [
+                        {
+                            "key": "Warranty Summary",
+                            "value": [
+                                "1 Year on Complete Unit and 5 Years on Compressor"
+                            ]
+                        },
+                        {
+                            "key": "Covered in Warranty",
+                            "value": [
+                                "Warranty of the Product is Limited to Manufacturing Defects Only."
+                            ]
+                        },
+                        {
+                            "key": "Not Covered in Warranty",
+                            "value": [
+                                "Warranty does not Cover Any External Accessories (such as Battery, Cable, Carrying Bag), Damage Caused to the Product due to Improper Installation by Customer, Normal Wear and Tear to Magnetic Heads, Audio, Video, Laser Pick-ups and TV Picture Tubes, Panel, Damages Caused to the Product by Accident, Lightening, Ingress of Water, Fire, Dropping or Excessive Shock, Any Damage Caused due to Tampering of the Product by an Unauthorised Agent, Liability for Loss of Data, Recorded Images or Business Opportunity Loss."
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "booksInfo": {
+                "language": null,
+                "binding": null,
+                "pages": null,
+                "publisher": null,
+                "year": 0,
+                "authors": []
+            },
+            "lifeStyleInfo": {
+                "sleeve": null,
+                "neck": null,
+                "idealFor": null
+            }
+        }
+    },
+    {
+        "productBaseInfoV1": {
+            "productId": "ACNEF7FWQ9GPB6TD",
+            "title": "Hitachi 1.5 Tons Inverter Split AC Copper",
+            "productDescription": "Don’t let the summer heat get to you - get home this Hitachi Inverter Split AC and make summers pleasant. With its 4-way air swing option, this AC cools every nook and corner of your room and uses optimal power. So sit back and relax as this copper color AC will cool the room.",
+            "imageUrls": {
+                "200x200": "http://img.fkcdn.com/image/air-conditioner-new/x/g/j/1-5-hitachi-split-rau318hwds-200x200-imaeg63cpwszq2zz.jpeg",
+                "400x400": "http://img.fkcdn.com/image/air-conditioner-new/x/g/j/1-5-hitachi-split-rau318hwds-400x400-imaeg63cpwszq2zz.jpeg",
+                "800x800": "http://img.fkcdn.com/image/air-conditioner-new/x/g/j/1-5-hitachi-split-rau318hwds-800x800-imaeg63cpwszq2zz.jpeg",
+                "unknown": "http://img.fkcdn.com/image/air-conditioner-new/x/g/j/1-5-hitachi-split-rau318hwds-original-imaeg63cpwszq2zz.jpeg"
+            },
+            "productFamily": [
+                "[ACNEF7FWQ9GPB6TD]"
+            ],
+            "maximumRetailPrice": {
+                "amount": 53590,
+                "currency": "INR"
+            },
+            "flipkartSellingPrice": {
+                "amount": 44490,
+                "currency": "INR"
+            },
+            "flipkartSpecialPrice": {
+                "amount": 44490,
+                "currency": "INR"
+            },
+            "productUrl": "http://dl.flipkart.com/dl/hitachi-1-5-tons-inverter-split-ac-copper/p/itmef7fwfh5kahgy?pid=ACNEF7FWQ9GPB6TD&affid=slidenerd",
+            "productBrand": "Hitachi",
+            "inStock": false,
+            "codAvailable": true,
+            "discountPercentage": 15,
+            "offers": [],
+            "categoryPath": "Electronics>Appliances>Home Appliances>Air Conditioners",
+            "attributes": {
+                "size": "",
+                "color": "Copper",
+                "storage": "",
+                "sizeUnit": "",
+                "displaySize": ""
+            }
+        },
+        "productShippingInfoV1": {
+            "shippingCharges": {
+                "amount": 0,
+                "currency": "INR"
+            },
+            "estimatedDeliveryTime": "Usually Delivered in Fri Sep 02 23:59:59 IST 2016 - Sat Sep 03 23:59:59 IST 2016 days.",
+            "sellerName": "OmniTechRetail",
+            "sellerAverageRating": null,
+            "sellerNoOfRatings": 0,
+            "sellerNoOfReviews": 0
+        },
+        "categorySpecificInfoV1": {
+            "keySpecs": [
+                "Auto Restart",
+                "Copper Condenser, Rotary Compressor",
+                "Cooling Capacity: 5275 W",
+                "Power Usage: 1590 W"
+            ],
+            "detailedSpecs": [
+                "Auto Restart",
+                "Copper Condenser, Rotary Compressor",
+                "Cooling Capacity: 5275 W",
+                "Power Usage: 1590 W"
+            ],
+            "specificationList": [
+                {
+                    "key": "General",
+                    "values": [
+                        {
+                            "key": "In the Box",
+                            "value": [
+                                "Indoor Unit, Outdoor Unit, Installation Kit, Operation Manual, Remote Control"
+                            ]
+                        },
+                        {
+                            "key": "Brand",
+                            "value": [
+                                "Hitachi"
+                            ]
+                        },
+                        {
+                            "key": "Model Name",
+                            "value": [
+                                "RAU318EWEAS"
+                            ]
+                        },
+                        {
+                            "key": "Type",
+                            "value": [
+                                "Split"
+                            ]
+                        },
+                        {
+                            "key": "Capacity in Tons",
+                            "value": [
+                                "1.5 Tons"
+                            ]
+                        },
+                        {
+                            "key": "Star Rating",
+                            "value": [
+                                "Inverter"
+                            ]
+                        },
+                        {
+                            "key": "Color",
+                            "value": [
+                                "Copper"
+                            ]
+                        },
+                        {
+                            "key": "Cooling Capacity",
+                            "value": [
+                                "5275 W"
+                            ]
+                        },
+                        {
+                            "key": "Compressor",
+                            "value": [
+                                "Rotary"
+                            ]
+                        },
+                        {
+                            "key": "Dehumidification",
+                            "value": [
+                                "Yes"
+                            ]
+                        },
+                        {
+                            "key": "Remote Control",
+                            "value": [
+                                "Yes"
+                            ]
+                        },
+                        {
+                            "key": "Condenser Coil",
+                            "value": [
+                                "Copper"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "Dimensions",
+                    "values": [
+                        {
+                            "key": "Indoor W x H x D",
+                            "value": [
+                                "105 cm x 29 cm x 22 cm"
+                            ]
+                        },
+                        {
+                            "key": "Indoor Unit Weight",
+                            "value": [
+                                "13 kg"
+                            ]
+                        },
+                        {
+                            "key": "Outdoor W x H x D",
+                            "value": [
+                                "75 cm x 54.8 cm x 28.8 cm"
+                            ]
+                        },
+                        {
+                            "key": "Outdoor Unit Weight",
+                            "value": [
+                                "38 kg"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "Performance Features",
+                    "values": [
+                        {
+                            "key": "EER",
+                            "value": [
+                                "4 W/W"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "Air Flow & Filter Features",
+                    "values": [
+                        {
+                            "key": "Anti-bacteria Filter",
+                            "value": [
+                                "No"
+                            ]
+                        },
+                        {
+                            "key": "Dust Filter",
+                            "value": [
+                                "No"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "Convenience Features",
+                    "values": [
+                        {
+                            "key": "Auto Restart",
+                            "value": [
+                                "Yes"
+                            ]
+                        },
+                        {
+                            "key": "Additional Features",
+                            "value": [
+                                "Condenser Coil: Copper"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "Power Features",
+                    "values": [
+                        {
+                            "key": "Power Requirement",
+                            "value": [
+                                "AC 230 V, 50 Hz"
+                            ]
+                        },
+                        {
+                            "key": "Power Consumption",
+                            "value": [
+                                "1590 W"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "Services",
+                    "values": [
+                        {
+                            "key": "Installation Details",
+                            "value": [
+                                "<p>Standard installation is provided free of cost.</p><p>After delivery of your Air-conditioner, you will receive a ticket number via message. Post that, you will receive a call from the brand authorized service engineer to schedule a mutually convenient"
+                            ]
+                        },
+                        {
+                            "key": "Technician Visit Details",
+                            "value": [
+                                "Authorized Service Engineer will do the following, Repair / change the defective part, Provide replacement to the customer in case part / product not repairable (only after replacement request approved), Repair Services"
+                            ]
+                        },
+                        {
+                            "key": "Uninstallation Details",
+                            "value": [
+                                "In case of returns, Flipkart's team will visit the customers location, Uninstall, Pack, Pick-up the product"
+                            ]
+                        },
+                        {
+                            "key": "Other Included Services",
+                            "value": [
+                                "Two Free Services of AC within Warranty Period on Demand"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "Warranty",
+                    "values": [
+                        {
+                            "key": "Warranty Summary",
+                            "value": [
+                                "1 Year on Complete Unit and 5 Years on Compressor"
+                            ]
+                        },
+                        {
+                            "key": "Covered in Warranty",
+                            "value": [
+                                "Warranty of the Product is Limited to Manufacturing Defects Only."
+                            ]
+                        },
+                        {
+                            "key": "Not Covered in Warranty",
+                            "value": [
+                                "Warranty does not Cover Any External Accessories (such as Battery, Cable, Carrying Bag), Damage Caused to the Product due to Improper Installation by Customer, Normal Wear and Tear to Magnetic Heads, Audio, Video, Laser Pick-ups and TV Picture Tubes, Panel, Damages Caused to the Product by Accident, Lightening, Ingress of Water, Fire, Dropping or Excessive Shock, Any Damage Caused due to Tampering of the Product by an Unauthorised Agent, Liability for Loss of Data, Recorded Images or Business Opportunity Loss."
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "booksInfo": {
+                "language": null,
+                "binding": null,
+                "pages": null,
+                "publisher": null,
+                "year": 0,
+                "authors": []
+            },
+            "lifeStyleInfo": {
+                "sleeve": null,
+                "neck": null,
+                "idealFor": null
+            }
+        }
+    },
+    {
+        "productBaseInfoV1": {
+            "productId": "ACNE4J45FNNRP3T3",
+            "title": "Onida 1 Ton 3 Star Split AC White",
+            "productDescription": "If there’s anything your home needs this summer, it’s this stylish and ergonomically designed split AC from Onida. Equipped with HD filters that purify the air in your home, and operating on 1117 W of energy, it’s crafted to be both performance-oriented and energy-efficient.",
+            "imageUrls": {
+                "200x200": "http://img.fkcdn.com/image/air-conditioner-new/3/t/3/1-onida-split-s123pbl-200x200-imaedh4hzybcrgyp.jpeg",
+                "400x400": "http://img.fkcdn.com/image/air-conditioner-new/3/t/3/1-onida-split-s123pbl-400x400-imaedh4hzybcrgyp.jpeg",
+                "800x800": "http://img.fkcdn.com/image/air-conditioner-new/3/t/3/1-onida-split-s123pbl-800x800-imaedh4hzybcrgyp.jpeg",
+                "unknown": "http://img.fkcdn.com/image/air-conditioner-new/3/t/3/1-onida-split-s123pbl-original-imaedh4hzybcrgyp.jpeg"
+            },
+            "productFamily": [
+                "[ACNDVN8RA7TYDXKN",
+                " ACNDW65BYBQZCHHX",
+                " ACNE6H34HMMZM7HA",
+                " ACNE6H34UQVTHYHC]"
+            ],
+            "maximumRetailPrice": {
+                "amount": 31290,
+                "currency": "INR"
+            },
+            "flipkartSellingPrice": {
+                "amount": 21990,
+                "currency": "INR"
+            },
+            "flipkartSpecialPrice": {
+                "amount": 21990,
+                "currency": "INR"
+            },
+            "productUrl": "http://dl.flipkart.com/dl/onida-1-ton-3-star-split-ac-white/p/itme4j46bmzyvb7m?pid=ACNE4J45FNNRP3T3&affid=slidenerd",
+            "productBrand": "Onida",
+            "inStock": true,
+            "codAvailable": true,
+            "discountPercentage": 29,
+            "offers": [],
+            "categoryPath": "Electronics>Appliances>Home Appliances>Air Conditioners",
+            "attributes": {
+                "size": "",
+                "color": "White",
+                "storage": "",
+                "sizeUnit": "",
+                "displaySize": ""
+            }
+        },
+        "productShippingInfoV1": {
+            "shippingCharges": {
+                "amount": 0,
+                "currency": "INR"
+            },
+            "estimatedDeliveryTime": "Usually Delivered in Tue Sep 06 23:59:59 IST 2016 - Wed Sep 07 23:59:59 IST 2016 days.",
+            "sellerName": "OmniTechRetail",
+            "sellerAverageRating": 4.2508473,
+            "sellerNoOfRatings": 295,
+            "sellerNoOfReviews": 13
+        },
+        "categorySpecificInfoV1": {
+            "keySpecs": [
+                "Dust Filter",
+                "Auto Restart",
+                "Rotary Compressor",
+                "Cooling Capacity: 3320 W",
+                "Power Usage: 1117 W"
+            ],
+            "detailedSpecs": [
+                "Dust Filter",
+                "Auto Restart",
+                "Rotary Compressor",
+                "Cooling Capacity: 3320 W",
+                "Power Usage: 1117 W"
+            ],
+            "specificationList": [
+                {
+                    "key": "General",
+                    "values": [
+                        {
+                            "key": "In the Box",
+                            "value": [
+                                "Indoor Unit, Outdoor Unit, User Manual, Connecting Pipe and Cable, Drain Hose"
+                            ]
+                        },
+                        {
+                            "key": "Brand",
+                            "value": [
+                                "Onida"
+                            ]
+                        },
+                        {
+                            "key": "Model Name",
+                            "value": [
+                                "SA123PBL"
+                            ]
+                        },
+                        {
+                            "key": "Type",
+                            "value": [
+                                "Split"
+                            ]
+                        },
+                        {
+                            "key": "Capacity in Tons",
+                            "value": [
+                                "1 Ton"
+                            ]
+                        },
+                        {
+                            "key": "Star Rating",
+                            "value": [
+                                "3"
+                            ]
+                        },
+                        {
+                            "key": "Color",
+                            "value": [
+                                "White"
+                            ]
+                        },
+                        {
+                            "key": "Cooling Capacity",
+                            "value": [
+                                "3320 W"
+                            ]
+                        },
+                        {
+                            "key": "Compressor",
+                            "value": [
+                                "Rotary"
+                            ]
+                        },
+                        {
+                            "key": "Dehumidification",
+                            "value": [
+                                "Yes"
+                            ]
+                        },
+                        {
+                            "key": "Remote Control",
+                            "value": [
+                                "Yes"
+                            ]
+                        },
+                        {
+                            "key": "Refrigerant",
+                            "value": [
+                                "R410A"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "Dimensions",
+                    "values": [
+                        {
+                            "key": "Indoor W x H x D",
+                            "value": [
+                                "80 cm x 27.5 cm x 18.8 cm"
+                            ]
+                        },
+                        {
+                            "key": "Indoor Unit Weight",
+                            "value": [
+                                "8 kg"
+                            ]
+                        },
+                        {
+                            "key": "Outdoor W x H x D",
+                            "value": [
+                                "78 cm x 54 cm x 25 cm"
+                            ]
+                        },
+                        {
+                            "key": "Outdoor Unit Weight",
+                            "value": [
+                                "29.2 kg"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "Air Flow & Filter Features",
+                    "values": [
+                        {
+                            "key": "Anti-bacteria Filter",
+                            "value": [
+                                "No"
+                            ]
+                        },
+                        {
+                            "key": "Dust Filter",
+                            "value": [
+                                "Yes"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "Convenience Features",
+                    "values": [
+                        {
+                            "key": "Auto Restart",
+                            "value": [
+                                "Yes"
+                            ]
+                        },
+                        {
+                            "key": "Additional Features",
+                            "value": [
+                                "Noise Level: 32 dB"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "Power Features",
+                    "values": [
+                        {
+                            "key": "Power Requirement",
+                            "value": [
+                                "AC 230 V"
+                            ]
+                        },
+                        {
+                            "key": "Power Consumption",
+                            "value": [
+                                "1117 W"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "Services",
+                    "values": [
+                        {
+                            "key": "Installation Details",
+                            "value": [
+                                "Installation of Air-conditioner is charged extra to customer at the time of installation and needs to be paid directly to the service engineer<p>After the product is delivered through our delivery partners, we'll facilitate the installation of AC through authorized service engineer at your convenience. The installation will be done within 3 Business days of delivery. A Stabilizer if bought along with the product will be installed along with the AC</p><p>Standard installation charge for Split AC is, Approx Rs 1500 - 2000 (Applicable Charges Extra)<p>Standard Installation of AC Covers only</p><p>Split AC:-</p><ul><li> Drilling of hole in Brick wall for taking out the pipes. </li><li> Fixing hole sleeve & Cap. </li><li> Fixing the Indoor and Outdoor Unit. </li><li> Connecting Indoor and Outdoor units using Standard Kit provided by Manufacturer (at an additional cost, unless specified otherwise). </li><li> Wrapping the pipe with seasoning tape. </li><li> Connection to Stabilizer or Power point in the range of Power Cord Provided by Manufacture. </li><li> Temperature/Performance Check & Demo and Maintenance tips filling the details in warranty card. </li></ul><p> <strong> Not covered in installation:- </strong></p><ul> <li> Out Door Unit Stand. </li> <li> Extra copper wire if any. </li><li> Drain Pipe extension if any. </li><li> Plumbing and Masonry Work. </li><li> Wiring extension from Meter to site, Power point/MCB fitting and any other electrical work,Carpentry work. </li> <li> Dismantling/Shifting of Old AC's </li><li> Masonry, Core Cutting Fabrication and Electrical. </li></ul>"
+                            ]
+                        },
+                        {
+                            "key": "Technician Visit Details",
+                            "value": [
+                                "Authorized Service Engineer will do the following, Repair / change the defective part, Provide replacement to the customer in case part / product not repairable (only after replacement request approved), Repair Services"
+                            ]
+                        },
+                        {
+                            "key": "Uninstallation Details",
+                            "value": [
+                                "In case of returns, Flipkart's team will visit the customers location, Uninstall, Pack, Pick-up the product"
+                            ]
+                        },
+                        {
+                            "key": "Other Included Services",
+                            "value": [
+                                "Two Free Services of AC within Warranty Period on Demand"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "Warranty",
+                    "values": [
+                        {
+                            "key": "Warranty Summary",
+                            "value": [
+                                "1 Year for the Product & 5 Years for the Compressor"
+                            ]
+                        },
+                        {
+                            "key": "Covered in Warranty",
+                            "value": [
+                                "Air Conditioner (Except the Front Grill, Knobs, Remote Unit and Add on Plastic Parts) to the Original Purchase to be Free from Defects in Materials and Workmanship Within One Year from the Date of Purchase Warranty for Compressor, MIRC Electronics Limited, Hereafter Warranty to the Purchaser of this Onida Air Conditioner that for a Period of Sixty Months from the Date of Invoice"
+                            ]
+                        },
+                        {
+                            "key": "Not Covered in Warranty",
+                            "value": [
+                                "Any Loss of Refrigerant Caused due to Sabotage, Improper Handling or Treatment, Carelessness, Accident, Fire, Flood Earthquake or Any Natural Calamity any Corrosive Action on the Original Refrigerant Pipes, Fittings, Valves etc or Whatever Reasons, Shall not be Covered Under this Warranty, In the Event of any Change in the Location of the Unit During the Warranty Period, This Warranty Shall become Null and Void Unless the Fact of the Proposed Change is Communicated in Writing to the Authorized Dealer Atleast Seven Days Prior to the Said Change, On Receipt of Such Information the Authorized Dealer or Any of its Counter Parts Shall Arrange for De-installation of the Said Unit on Chargeable Basis, However in the Event of any Damage Occurring to the Unit or to any of its Parts During the Course of its Transit by the Said Purchaser, Repair or Replacement, The Said Unit or any Part there of Damaged (The Front Grill, Knobs, Remote Unit and Add on Plastic Parts ) Shall not be Covered by this Warranty"
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "booksInfo": {
+                "language": null,
+                "binding": null,
+                "pages": null,
+                "publisher": null,
+                "year": 0,
+                "authors": []
+            },
+            "lifeStyleInfo": {
+                "sleeve": null,
+                "neck": null,
+                "idealFor": null
+            }
+        }
+    },
+    {
+        "productBaseInfoV1": {
+            "productId": "ACNE9QS4BADNUHTF",
+            "title": "Sansui 1 Ton 5 Star Split AC White",
+            "productDescription": "Whether it is for your home or for your office, this split AC keeps you comfortable and ensures that you breathe fresh air. The Catechin filter and active carbon filter in the AC eliminates all dust particles and odors that can be very embarrassing when you have a guest at your door.",
+            "imageUrls": {
+                "200x200": "http://img.fkcdn.com/image/air-conditioner-new/h/t/f/1-sansui-split-a-c-ssz35-200x200-imaejxzuzud7ng7w.jpeg",
+                "400x400": "http://img.fkcdn.com/image/air-conditioner-new/h/t/f/1-sansui-split-a-c-ssz35-400x400-imaejxzuzud7ng7w.jpeg",
+                "800x800": "http://img.fkcdn.com/image/air-conditioner-new/h/t/f/1-sansui-split-a-c-ssz35-800x800-imaejxzuzud7ng7w.jpeg",
+                "unknown": "http://img.fkcdn.com/image/air-conditioner-new/h/t/f/1-sansui-split-a-c-ssz35-original-imaejxzuzud7ng7w.jpeg"
+            },
+            "productFamily": [
+                "[ACNE9QS4C6AAJWZK",
+                " ACNE9QS4F9SJ8HDK",
+                " ACNE9QS4KMSCPRU8]"
+            ],
+            "maximumRetailPrice": {
+                "amount": 23990,
+                "currency": "INR"
+            },
+            "flipkartSellingPrice": {
+                "amount": 22490,
+                "currency": "INR"
+            },
+            "flipkartSpecialPrice": {
+                "amount": 19990,
+                "currency": "INR"
+            },
+            "productUrl": "http://dl.flipkart.com/dl/sansui-1-ton-5-star-split-ac-white/p/itme9qs4eyyzwhvw?pid=ACNE9QS4BADNUHTF&affid=slidenerd",
+            "productBrand": "Sansui",
+            "inStock": true,
+            "codAvailable": true,
+            "discountPercentage": 6,
+            "offers": [
+                "Extra Rs.500 off",
+                "Extra Rs.2,000 off"
+            ],
+            "categoryPath": "Electronics>Appliances>Home Appliances>Air Conditioners",
+            "attributes": {
+                "size": "",
+                "color": "White",
+                "storage": "",
+                "sizeUnit": "",
+                "displaySize": ""
+            }
+        },
+        "productShippingInfoV1": {
+            "shippingCharges": {
+                "amount": 0,
+                "currency": "INR"
+            },
+            "estimatedDeliveryTime": "Usually Delivered in Tue Sep 06 23:59:59 IST 2016 - Wed Sep 07 23:59:59 IST 2016 days.",
+            "sellerName": "OmniTechRetail",
+            "sellerAverageRating": 4.2508473,
+            "sellerNoOfRatings": 295,
+            "sellerNoOfReviews": 13
+        },
+        "categorySpecificInfoV1": {
+            "keySpecs": [
+                "Anti Bacteria Filter, Dust Filter",
+                "Auto Restart, Sleep Mode",
+                "Aluminum Condenser, Rotary Compressor",
+                "Cooling Capacity: 3510 W",
+                "Power Usage: 999 W"
+            ],
+            "detailedSpecs": [
+                "Anti Bacteria Filter, Dust Filter",
+                "Auto Restart, Sleep Mode",
+                "Aluminum Condenser, Rotary Compressor",
+                "Cooling Capacity: 3510 W",
+                "Power Usage: 999 W"
+            ],
+            "specificationList": [
+                {
+                    "key": "General",
+                    "values": [
+                        {
+                            "key": "In the Box",
+                            "value": [
+                                "Indoor Unit, Outdoor Unit, Installation Kit, Remote Control and Operation Manual, Electrical Cable Standard Connecting Kit Length is 3mtr, Connecting Piping Standard Connecting Kit Length 3mtr, Drain Pipe is 1.4Mtr."
+                            ]
+                        },
+                        {
+                            "key": "Brand",
+                            "value": [
+                                "Sansui"
+                            ]
+                        },
+                        {
+                            "key": "Model Name",
+                            "value": [
+                                "A/C SSZ35"
+                            ]
+                        },
+                        {
+                            "key": "Type",
+                            "value": [
+                                "Split"
+                            ]
+                        },
+                        {
+                            "key": "Capacity in Tons",
+                            "value": [
+                                "1 Ton"
+                            ]
+                        },
+                        {
+                            "key": "Star Rating",
+                            "value": [
+                                "5"
+                            ]
+                        },
+                        {
+                            "key": "Color",
+                            "value": [
+                                "White"
+                            ]
+                        },
+                        {
+                            "key": "Cooling Capacity",
+                            "value": [
+                                "3510 W"
+                            ]
+                        },
+                        {
+                            "key": "Compressor",
+                            "value": [
+                                "Rotary"
+                            ]
+                        },
+                        {
+                            "key": "Dehumidification",
+                            "value": [
+                                "Yes"
+                            ]
+                        },
+                        {
+                            "key": "Remote Control",
+                            "value": [
+                                "Yes"
+                            ]
+                        },
+                        {
+                            "key": "Condenser Coil",
+                            "value": [
+                                "Aluminum"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "Dimensions",
+                    "values": [
+                        {
+                            "key": "Indoor W x H x D",
+                            "value": [
+                                "86.5 cm x 26.5 cm x 18.5 cm"
+                            ]
+                        },
+                        {
+                            "key": "Indoor Unit Weight",
+                            "value": [
+                                "9 kg"
+                            ]
+                        },
+                        {
+                            "key": "Outdoor W x H x D",
+                            "value": [
+                                "78 cm x 54 cm x 26 cm"
+                            ]
+                        },
+                        {
+                            "key": "Outdoor Unit Weight",
+                            "value": [
+                                "30.75 kg"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "Air Flow & Filter Features",
+                    "values": [
+                        {
+                            "key": "Anti-bacteria Filter",
+                            "value": [
+                                "Yes"
+                            ]
+                        },
+                        {
+                            "key": "Dust Filter",
+                            "value": [
+                                "Yes"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "Convenience Features",
+                    "values": [
+                        {
+                            "key": "Auto Restart",
+                            "value": [
+                                "Yes"
+                            ]
+                        },
+                        {
+                            "key": "Sleep Mode",
+                            "value": [
+                                "Yes"
+                            ]
+                        },
+                        {
+                            "key": "Additional Features",
+                            "value": [
+                                "Noise Level: 33 - 40 dB"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "Power Features",
+                    "values": [
+                        {
+                            "key": "Power Requirement",
+                            "value": [
+                                "AC 230 V, 50 Hz"
+                            ]
+                        },
+                        {
+                            "key": "Power Consumption",
+                            "value": [
+                                "999 W"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "Services",
+                    "values": [
+                        {
+                            "key": "Installation Details",
+                            "value": [
+                                "Installation of Air-conditioner is charged extra to customer at the time of installation and needs to be paid directly to the service engineer<p>After the product is delivered through our delivery partners, we'll facilitate the installation of AC through authorized service engineer at your convenience.A Stabilizer if bought along with the product will be installed along with the AC</p><p>Standard installation charge for Split AC is, Approx Rs 1500 - 2000 (Applicable Charges Extra)<p>Standard Installation of AC Covers only</p><p>Split AC:-</p><ul><li> Drilling of hole in Brick wall for taking out the pipes. </li><li> Fixing hole sleeve & Cap. </li><li> Fixing the Indoor and Outdoor Unit. </li><li> Connecting Indoor and Outdoor units using Standard Kit provided by Manufacturer (at an additional cost, unless specified otherwise). </li><li> Wrapping the pipe with seasoning tape. </li><li> Connection to Stabilizer or Power point in the range of Power Cord Provided by Manufacture. </li><li> Temperature/Performance Check & Demo and Maintenance tips filling the details in warranty card. </li></ul><p> <strong> Not covered in installation:- </strong></p><ul> <li> Out Door Unit Stand. </li> <li> Extra copper wire if any. </li><li> Drain Pipe extension if any. </li><li> Plumbing and Masonry Work. </li><li> Wiring extension from Meter to site, Power point/MCB fitting and any other electrical work,Carpentry work. </li> <li> Dismantling/Shifting of Old AC's </li><li> Masonry, Core Cutting Fabrication and Electrical. </li></ul>"
+                            ]
+                        },
+                        {
+                            "key": "Technician Visit Details",
+                            "value": [
+                                "Authorized Service Engineer will do the following, Repair / change the defective part, Provide replacement to the customer in case part / product not repairable (only after replacement request approved), Repair Services"
+                            ]
+                        },
+                        {
+                            "key": "Uninstallation Details",
+                            "value": [
+                                "In case of returns, Flipkart's team will visit the customers location, Uninstall, Pack, Pick-up the product"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "Warranty",
+                    "values": [
+                        {
+                            "key": "Warranty Summary",
+                            "value": [
+                                "1 Year on Complete Unit and 5 Years on Compressor"
+                            ]
+                        },
+                        {
+                            "key": "Not Covered in Warranty",
+                            "value": [
+                                "Warranty does not cover any external accessories like the damages caused to the product due to improper installation by customer. Normal wear and tear due to usage, damages caused to the product by accident, lightening, ingress of water, fire, dropping or excessive shock, any damage caused due to tampering of the product by an unauthorised agent, liability for loss of data, or business opportunity loss. It also does not cover the loss of Gas due to tampering of pipes."
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "booksInfo": {
+                "language": null,
+                "binding": null,
+                "pages": null,
+                "publisher": null,
+                "year": 0,
+                "authors": []
+            },
+            "lifeStyleInfo": {
+                "sleeve": null,
+                "neck": null,
+                "idealFor": null
+            }
+        }
+    },
+    {
+        "productBaseInfoV1": {
+            "productId": "ACNEF7FWGZNC2HRP",
+            "title": "Hitachi 1 Ton Inverter Split AC Copper",
+            "productDescription": "If hot summer nights are messing up your sleep cycle, then it’s time you did something. If you ask us, we’ll recommend this Hitachi AC. Install this in your room and keep humidity and unbearable heat outside. Packed with powerful features, this AC is sure to keep your room pleasant.",
+            "imageUrls": {
+                "200x200": "http://img.fkcdn.com/image/air-conditioner-new/x/g/j/1-5-hitachi-split-rau318hwds-200x200-imaeg63cpwszq2zz.jpeg",
+                "400x400": "http://img.fkcdn.com/image/air-conditioner-new/x/g/j/1-5-hitachi-split-rau318hwds-400x400-imaeg63cpwszq2zz.jpeg",
+                "800x800": "http://img.fkcdn.com/image/air-conditioner-new/x/g/j/1-5-hitachi-split-rau318hwds-800x800-imaeg63cpwszq2zz.jpeg",
+                "unknown": "http://img.fkcdn.com/image/air-conditioner-new/x/g/j/1-5-hitachi-split-rau318hwds-original-imaeg63cpwszq2zz.jpeg"
+            },
+            "productFamily": [
+                "[ACNEF7FWGZNC2HRP]"
+            ],
+            "maximumRetailPrice": {
+                "amount": 48190,
+                "currency": "INR"
+            },
+            "flipkartSellingPrice": {
+                "amount": 39990,
+                "currency": "INR"
+            },
+            "flipkartSpecialPrice": {
+                "amount": 39989,
+                "currency": "INR"
+            },
+            "productUrl": "http://dl.flipkart.com/dl/hitachi-1-ton-inverter-split-ac-copper/p/itmef7fwywqvyf8c?pid=ACNEF7FWGZNC2HRP&affid=slidenerd",
+            "productBrand": "Hitachi",
+            "inStock": true,
+            "codAvailable": true,
+            "discountPercentage": 15,
+            "offers": [
+                "Diwali Bumper Offer - 20th - 30th Oct 2016",
+                "Extra 15% Cashback* with Citi Cards"
+            ],
+            "categoryPath": "Electronics>Appliances>Home Appliances>Air Conditioners",
+            "attributes": {
+                "size": "",
+                "color": "Copper",
+                "storage": "",
+                "sizeUnit": "",
+                "displaySize": ""
+            }
+        },
+        "productShippingInfoV1": {
+            "shippingCharges": {
+                "amount": 0,
+                "currency": "INR"
+            },
+            "estimatedDeliveryTime": "Usually Delivered in Fri Sep 02 23:59:59 IST 2016 - Sat Sep 03 23:59:59 IST 2016 days.",
+            "sellerName": "OmniTechRetail",
+            "sellerAverageRating": null,
+            "sellerNoOfRatings": 0,
+            "sellerNoOfReviews": 0
+        },
+        "categorySpecificInfoV1": {
+            "keySpecs": [
+                "Auto Restart",
+                "Copper Condenser, Rotary Compressor",
+                "Cooling Capacity: 3520 W",
+                "Power Usage: 1000 W"
+            ],
+            "detailedSpecs": [
+                "Auto Restart",
+                "Copper Condenser, Rotary Compressor",
+                "Cooling Capacity: 3520 W",
+                "Power Usage: 1000 W"
+            ],
+            "specificationList": [
+                {
+                    "key": "General",
+                    "values": [
+                        {
+                            "key": "In the Box",
+                            "value": [
+                                "Indoor Unit, Outdoor Unit, Installation Kit, Operation Manual, Remote Control"
+                            ]
+                        },
+                        {
+                            "key": "Brand",
+                            "value": [
+                                "Hitachi"
+                            ]
+                        },
+                        {
+                            "key": "Model Name",
+                            "value": [
+                                "RAU312EWEAS"
+                            ]
+                        },
+                        {
+                            "key": "Type",
+                            "value": [
+                                "Split"
+                            ]
+                        },
+                        {
+                            "key": "Capacity in Tons",
+                            "value": [
+                                "1 Ton"
+                            ]
+                        },
+                        {
+                            "key": "Star Rating",
+                            "value": [
+                                "Inverter"
+                            ]
+                        },
+                        {
+                            "key": "Color",
+                            "value": [
+                                "Copper"
+                            ]
+                        },
+                        {
+                            "key": "Cooling Capacity",
+                            "value": [
+                                "3520 W"
+                            ]
+                        },
+                        {
+                            "key": "Compressor",
+                            "value": [
+                                "Rotary"
+                            ]
+                        },
+                        {
+                            "key": "Dehumidification",
+                            "value": [
+                                "Yes"
+                            ]
+                        },
+                        {
+                            "key": "Remote Control",
+                            "value": [
+                                "Yes"
+                            ]
+                        },
+                        {
+                            "key": "Condenser Coil",
+                            "value": [
+                                "Copper"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "Dimensions",
+                    "values": [
+                        {
+                            "key": "Indoor W x H x D",
+                            "value": [
+                                "83 cm x 29 cm x 22 cm"
+                            ]
+                        },
+                        {
+                            "key": "Indoor Unit Weight",
+                            "value": [
+                                "10 kg"
+                            ]
+                        },
+                        {
+                            "key": "Outdoor W x H x D",
+                            "value": [
+                                "75 cm x 54.8 cm x 28.8 cm"
+                            ]
+                        },
+                        {
+                            "key": "Outdoor Unit Weight",
+                            "value": [
+                                "31 kg"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "Performance Features",
+                    "values": [
+                        {
+                            "key": "EER",
+                            "value": [
+                                "4 W/W"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "Air Flow & Filter Features",
+                    "values": [
+                        {
+                            "key": "Anti-bacteria Filter",
+                            "value": [
+                                "No"
+                            ]
+                        },
+                        {
+                            "key": "Dust Filter",
+                            "value": [
+                                "No"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "Convenience Features",
+                    "values": [
+                        {
+                            "key": "Auto Restart",
+                            "value": [
+                                "Yes"
+                            ]
+                        },
+                        {
+                            "key": "Additional Features",
+                            "value": [
+                                "Condenser Coil: Copper"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "Power Features",
+                    "values": [
+                        {
+                            "key": "Power Requirement",
+                            "value": [
+                                "AC 230 V, 50 Hz"
+                            ]
+                        },
+                        {
+                            "key": "Power Consumption",
+                            "value": [
+                                "1000 W"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "Services",
+                    "values": [
+                        {
+                            "key": "Installation Details",
+                            "value": [
+                                "<p>Standard installation is provided free of cost.</p><p>After delivery of your Air-conditioner, you will receive a ticket number via message. Post that, you will receive a call from the brand authorized service engineer to schedule a mutually convenient"
+                            ]
+                        },
+                        {
+                            "key": "Technician Visit Details",
+                            "value": [
+                                "Authorized Service Engineer will do the following, Repair / change the defective part, Provide replacement to the customer in case part / product not repairable (only after replacement request approved), Repair Services"
+                            ]
+                        },
+                        {
+                            "key": "Uninstallation Details",
+                            "value": [
+                                "In case of returns, Flipkart's team will visit the customers location, Uninstall, Pack, Pick-up the product"
+                            ]
+                        },
+                        {
+                            "key": "Other Included Services",
+                            "value": [
+                                "Two Free Services of AC within Warranty Period on Demand"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "Warranty",
+                    "values": [
+                        {
+                            "key": "Warranty Summary",
+                            "value": [
+                                "1 Year on Complete Unit and 5 Years on Compressor"
+                            ]
+                        },
+                        {
+                            "key": "Covered in Warranty",
+                            "value": [
+                                "Warranty of the Product is Limited to Manufacturing Defects Only."
+                            ]
+                        },
+                        {
+                            "key": "Not Covered in Warranty",
+                            "value": [
+                                "Warranty does not Cover Any External Accessories (such as Battery, Cable, Carrying Bag), Damage Caused to the Product due to Improper Installation by Customer, Normal Wear and Tear to Magnetic Heads, Audio, Video, Laser Pick-ups and TV Picture Tubes, Panel, Damages Caused to the Product by Accident, Lightening, Ingress of Water, Fire, Dropping or Excessive Shock, Any Damage Caused due to Tampering of the Product by an Unauthorised Agent, Liability for Loss of Data, Recorded Images or Business Opportunity Loss."
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "booksInfo": {
+                "language": null,
+                "binding": null,
+                "pages": null,
+                "publisher": null,
+                "year": 0,
+                "authors": []
+            },
+            "lifeStyleInfo": {
+                "sleeve": null,
+                "neck": null,
+                "idealFor": null
+            }
+        }
+    },
+    {
+        "productBaseInfoV1": {
+            "productId": "ACNEHZAGXHK6R6WP",
+            "title": "Hitachi 1 Ton 3 Star Split AC Silver",
+            "productDescription": "",
+            "imageUrls": {
+                "200x200": "http://img.fkcdn.com/image/air-conditioner-new/z/h/n/2-hitachi-split-rau323hwds-200x200-imaegyzhw7kn6k76.jpeg",
+                "400x400": "http://img.fkcdn.com/image/air-conditioner-new/z/h/n/2-hitachi-split-rau323hwds-400x400-imaegyzhw7kn6k76.jpeg",
+                "800x800": "http://img.fkcdn.com/image/air-conditioner-new/z/h/n/2-hitachi-split-rau323hwds-800x800-imaegyzhw7kn6k76.jpeg",
+                "unknown": "http://img.fkcdn.com/image/air-conditioner-new/z/h/n/2-hitachi-split-rau323hwds-original-imaegyzhw7kn6k76.jpeg"
+            },
+            "productFamily": [
+                "[ACNEF7FW6NGAZFBU]"
+            ],
+            "maximumRetailPrice": {
+                "amount": 34590,
+                "currency": "INR"
+            },
+            "flipkartSellingPrice": {
+                "amount": 28990,
+                "currency": "INR"
+            },
+            "flipkartSpecialPrice": {
+                "amount": 28990,
+                "currency": "INR"
+            },
+            "productUrl": "http://dl.flipkart.com/dl/hitachi-1-ton-3-star-split-ac-silver/p/itmejbc92fkczaur?pid=ACNEHZAGXHK6R6WP&affid=slidenerd",
+            "productBrand": "Hitachi",
+            "inStock": false,
+            "codAvailable": true,
+            "discountPercentage": 16,
+            "offers": [],
+            "categoryPath": "Electronics>Appliances>Home Appliances>Air Conditioners",
+            "attributes": {
+                "size": "",
+                "color": "Silver",
+                "storage": "",
+                "sizeUnit": "",
+                "displaySize": ""
+            }
+        },
+        "productShippingInfoV1": {
+            "shippingCharges": {
+                "amount": 0,
+                "currency": "INR"
+            },
+            "estimatedDeliveryTime": "",
+            "sellerName": "WS Retail",
+            "sellerAverageRating": 4.2291837,
+            "sellerNoOfRatings": 5820203,
+            "sellerNoOfReviews": 179038
+        },
+        "categorySpecificInfoV1": {
+            "keySpecs": [
+                "Auto Restart",
+                "Rotary Compressor",
+                "Cooling Capacity: 3517 W",
+                "Power Usage: 1070 W"
+            ],
+            "detailedSpecs": [
+                "Auto Restart",
+                "Rotary Compressor",
+                "Cooling Capacity: 3517 W",
+                "Power Usage: 1070 W"
+            ],
+            "specificationList": [
+                {
+                    "key": "General",
+                    "values": [
+                        {
+                            "key": "In the Box",
+                            "value": [
+                                "Indoor Unit, Outdoor Unit, Installation Kit, Operation Manual, Remote Control"
+                            ]
+                        },
+                        {
+                            "key": "Brand",
+                            "value": [
+                                "Hitachi"
+                            ]
+                        },
+                        {
+                            "key": "Model Name",
+                            "value": [
+                                "RAU312HWDS"
+                            ]
+                        },
+                        {
+                            "key": "Type",
+                            "value": [
+                                "Split"
+                            ]
+                        },
+                        {
+                            "key": "Capacity in Tons",
+                            "value": [
+                                "1 Ton"
+                            ]
+                        },
+                        {
+                            "key": "Star Rating",
+                            "value": [
+                                "3"
+                            ]
+                        },
+                        {
+                            "key": "Color",
+                            "value": [
+                                "Silver"
+                            ]
+                        },
+                        {
+                            "key": "Cooling Capacity",
+                            "value": [
+                                "3517 W"
+                            ]
+                        },
+                        {
+                            "key": "Compressor",
+                            "value": [
+                                "Rotary"
+                            ]
+                        },
+                        {
+                            "key": "Dehumidification",
+                            "value": [
+                                "Yes"
+                            ]
+                        },
+                        {
+                            "key": "Remote Control",
+                            "value": [
+                                "Yes"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "Dimensions",
+                    "values": [
+                        {
+                            "key": "Indoor W x H x D",
+                            "value": [
+                                "83 cm x 29 cm x 22 cm"
+                            ]
+                        },
+                        {
+                            "key": "Indoor Unit Weight",
+                            "value": [
+                                "10 kg"
+                            ]
+                        },
+                        {
+                            "key": "Outdoor W x H x D",
+                            "value": [
+                                "75 cm x 54.8 cm x 28.8 cm"
+                            ]
+                        },
+                        {
+                            "key": "Outdoor Unit Weight",
+                            "value": [
+                                "32.4 kg"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "Air Flow & Filter Features",
+                    "values": [
+                        {
+                            "key": "Anti-bacteria Filter",
+                            "value": [
+                                "No"
+                            ]
+                        },
+                        {
+                            "key": "Dust Filter",
+                            "value": [
+                                "No"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "Convenience Features",
+                    "values": [
+                        {
+                            "key": "Auto Restart",
+                            "value": [
+                                "Yes"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "Power Features",
+                    "values": [
+                        {
+                            "key": "Power Requirement",
+                            "value": [
+                                "AC 230 V, 50 Hz"
+                            ]
+                        },
+                        {
+                            "key": "Power Consumption",
+                            "value": [
+                                "1070 W"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "Services",
+                    "values": [
+                        {
+                            "key": "Installation Details",
+                            "value": [
+                                "Installation of Air-conditioner is charged extra to customer at the time of installation and needs to be paid directly to the service engineer<p>After the product is delivered through our delivery partners, we'll facilitate the installation of AC through authorized service engineer at your convenience. The installation will be done within 2 Business days days of delivery. A Stabilizer if bought along with the product will be installed along with the AC</p><p>Standard installation charge for Split AC is, Approx Rs 1500 - 2000 (Applicable Charges Extra)<p>Standard Installation of AC Covers only</p><p>Split AC:-</p><ul><li> Drilling of hole in Brick wall for taking out the pipes. </li><li> Fixing hole sleeve & Cap. </li><li> Fixing the Indoor and Outdoor Unit. </li><li> Connecting Indoor and Outdoor units using Standard Kit provided by Manufacturer (at an additional cost, unless specified otherwise). </li><li> Wrapping the pipe with seasoning tape. </li><li> Connection to Stabilizer or Power point in the range of Power Cord Provided by Manufacture. </li><li> Temperature/Performance Check & Demo and Maintenance tips filling the details in warranty card. </li></ul><p> <strong> Not covered in installation:- </strong></p><ul> <li> Out Door Unit Stand. </li> <li> Extra copper wire if any. </li><li> Drain Pipe extension if any. </li><li> Plumbing and Masonry Work. </li><li> Wiring extension from Meter to site, Power point/MCB fitting and any other electrical work,Carpentry work. </li> <li> Dismantling/Shifting of Old AC's </li><li> Masonry, Core Cutting Fabrication and Electrical. </li></ul>"
+                            ]
+                        },
+                        {
+                            "key": "Technician Visit Details",
+                            "value": [
+                                "Authorized Service Engineer will do the following, Repair / change the defective part, Provide replacement to the customer in case part / product not repairable (only after replacement request approved), Repair Services"
+                            ]
+                        },
+                        {
+                            "key": "Uninstallation Details",
+                            "value": [
+                                "In case of returns, Flipkart's team will visit the customers location, Uninstall, Pack, Pick-up the product"
+                            ]
+                        },
+                        {
+                            "key": "Other Included Services",
+                            "value": [
+                                "Two Free Services of AC within Warranty Period on Demand"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "Warranty",
+                    "values": [
+                        {
+                            "key": "Warranty Summary",
+                            "value": [
+                                "1 Year on Complete Unit and 5 Years on Compressor"
+                            ]
+                        },
+                        {
+                            "key": "Covered in Warranty",
+                            "value": [
+                                "Warranty of the Product is Limited to Manufacturing Defects Only."
+                            ]
+                        },
+                        {
+                            "key": "Not Covered in Warranty",
+                            "value": [
+                                "Warranty does not Cover Any External Accessories (such as Battery, Cable, Carrying Bag), Damage Caused to the Product due to Improper Installation by Customer, Normal Wear and Tear to Magnetic Heads, Audio, Video, Laser Pick-ups and TV Picture Tubes, Panel, Damages Caused to the Product by Accident, Lightening, Ingress of Water, Fire, Dropping or Excessive Shock, Any Damage Caused due to Tampering of the Product by an Unauthorised Agent, Liability for Loss of Data, Recorded Images or Business Opportunity Loss."
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "booksInfo": {
+                "language": null,
+                "binding": null,
+                "pages": null,
+                "publisher": null,
+                "year": 0,
+                "authors": []
+            },
+            "lifeStyleInfo": {
+                "sleeve": null,
+                "neck": null,
+                "idealFor": null
+            }
+        }
+    },
+    {
+        "productBaseInfoV1": {
+            "productId": "ACNEHZAG8G4XPWJN",
+            "title": "Hitachi 1.5 Tons 3 Star Split AC Silver",
+            "productDescription": "",
+            "imageUrls": {
+                "200x200": "http://img.fkcdn.com/image/air-conditioner-new/z/h/n/2-hitachi-split-rau323hwds-200x200-imaegyzhw7kn6k76.jpeg",
+                "400x400": "http://img.fkcdn.com/image/air-conditioner-new/z/h/n/2-hitachi-split-rau323hwds-400x400-imaegyzhw7kn6k76.jpeg",
+                "800x800": "http://img.fkcdn.com/image/air-conditioner-new/z/h/n/2-hitachi-split-rau323hwds-800x800-imaegyzhw7kn6k76.jpeg",
+                "unknown": "http://img.fkcdn.com/image/air-conditioner-new/z/h/n/2-hitachi-split-rau323hwds-original-imaegyzhw7kn6k76.jpeg"
+            },
+            "productFamily": [
+                "[ACNEF7FWYKHTGXGJ]"
+            ],
+            "maximumRetailPrice": {
+                "amount": 42190,
+                "currency": "INR"
+            },
+            "flipkartSellingPrice": {
+                "amount": 35990,
+                "currency": "INR"
+            },
+            "flipkartSpecialPrice": {
+                "amount": 31990,
+                "currency": "INR"
+            },
+            "productUrl": "http://dl.flipkart.com/dl/hitachi-1-5-tons-3-star-split-ac-silver/p/itmef7fwbp2y4xff?pid=ACNEHZAG8G4XPWJN&affid=slidenerd",
+            "productBrand": "Hitachi",
+            "inStock": true,
+            "codAvailable": true,
+            "discountPercentage": 17,
+            "offers": [
+                "Extra Rs.500 off",
+                "Extra Rs.3,500 off"
+            ],
+            "categoryPath": "Electronics>Appliances>Home Appliances>Air Conditioners",
+            "attributes": {
+                "size": "",
+                "color": "Silver",
+                "storage": "",
+                "sizeUnit": "",
+                "displaySize": ""
+            }
+        },
+        "productShippingInfoV1": {
+            "shippingCharges": {
+                "amount": 0,
+                "currency": "INR"
+            },
+            "estimatedDeliveryTime": "Usually Delivered in Tue Sep 06 23:59:59 IST 2016 - Wed Sep 07 23:59:59 IST 2016 days.",
+            "sellerName": "OmniTechRetail",
+            "sellerAverageRating": 4.2508473,
+            "sellerNoOfRatings": 295,
+            "sellerNoOfReviews": 13
+        },
+        "categorySpecificInfoV1": {
+            "keySpecs": [
+                "Auto Restart",
+                "Rotary Compressor",
+                "Cooling Capacity: 5362 W",
+                "Power Usage: 1630 W"
+            ],
+            "detailedSpecs": [
+                "Auto Restart",
+                "Rotary Compressor",
+                "Cooling Capacity: 5362 W",
+                "Power Usage: 1630 W"
+            ],
+            "specificationList": [
+                {
+                    "key": "General",
+                    "values": [
+                        {
+                            "key": "In the Box",
+                            "value": [
+                                "Indoor Unit, Outdoor Unit, Installation Kit, Operation Manual, Remote Control"
+                            ]
+                        },
+                        {
+                            "key": "Brand",
+                            "value": [
+                                "Hitachi"
+                            ]
+                        },
+                        {
+                            "key": "Model Name",
+                            "value": [
+                                "RAU318HWDS"
+                            ]
+                        },
+                        {
+                            "key": "Type",
+                            "value": [
+                                "Split"
+                            ]
+                        },
+                        {
+                            "key": "Capacity in Tons",
+                            "value": [
+                                "1.5 Tons"
+                            ]
+                        },
+                        {
+                            "key": "Star Rating",
+                            "value": [
+                                "3"
+                            ]
+                        },
+                        {
+                            "key": "Color",
+                            "value": [
+                                "Silver"
+                            ]
+                        },
+                        {
+                            "key": "Cooling Capacity",
+                            "value": [
+                                "5362 W"
+                            ]
+                        },
+                        {
+                            "key": "Compressor",
+                            "value": [
+                                "Rotary"
+                            ]
+                        },
+                        {
+                            "key": "Dehumidification",
+                            "value": [
+                                "Yes"
+                            ]
+                        },
+                        {
+                            "key": "Remote Control",
+                            "value": [
+                                "Yes"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "Dimensions",
+                    "values": [
+                        {
+                            "key": "Indoor W x H x D",
+                            "value": [
+                                "105 cm x 29 cm x 22 cm"
+                            ]
+                        },
+                        {
+                            "key": "Indoor Unit Weight",
+                            "value": [
+                                "12.9 kg"
+                            ]
+                        },
+                        {
+                            "key": "Outdoor W x H x D",
+                            "value": [
+                                "75 cm x 54.8 cm x 28.8 cm"
+                            ]
+                        },
+                        {
+                            "key": "Outdoor Unit Weight",
+                            "value": [
+                                "40 kg"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "Performance Features",
+                    "values": [
+                        {
+                            "key": "EER",
+                            "value": [
+                                "3.29 W/W"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "Air Flow & Filter Features",
+                    "values": [
+                        {
+                            "key": "Anti-bacteria Filter",
+                            "value": [
+                                "No"
+                            ]
+                        },
+                        {
+                            "key": "Dust Filter",
+                            "value": [
+                                "No"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "Convenience Features",
+                    "values": [
+                        {
+                            "key": "Auto Restart",
+                            "value": [
+                                "Yes"
+                            ]
+                        },
+                        {
+                            "key": "Additional Features",
+                            "value": [
+                                "Condenser Coil: Copper"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "Power Features",
+                    "values": [
+                        {
+                            "key": "Power Requirement",
+                            "value": [
+                                "AC 230 V, 50 Hz"
+                            ]
+                        },
+                        {
+                            "key": "Power Consumption",
+                            "value": [
+                                "1630 W"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "Services",
+                    "values": [
+                        {
+                            "key": "Installation Details",
+                            "value": [
+                                "Installation of Air-conditioner is charged extra to customer at the time of installation and needs to be paid directly to the service engineer<p>After the product is delivered through our delivery partners, we'll facilitate the installation of AC through authorized service engineer at your convenience. The installation will be done within 2 Business days days of delivery. A Stabilizer if bought along with the product will be installed along with the AC</p><p>Standard installation charge for Split AC is, Approx Rs 1500 - 2000 (Applicable Charges Extra)<p>Standard Installation of AC Covers only</p><p>Split AC:-</p><ul><li> Drilling of hole in Brick wall for taking out the pipes. </li><li> Fixing hole sleeve & Cap. </li><li> Fixing the Indoor and Outdoor Unit. </li><li> Connecting Indoor and Outdoor units using Standard Kit provided by Manufacturer (at an additional cost, unless specified otherwise). </li><li> Wrapping the pipe with seasoning tape. </li><li> Connection to Stabilizer or Power point in the range of Power Cord Provided by Manufacture. </li><li> Temperature/Performance Check & Demo and Maintenance tips filling the details in warranty card. </li></ul><p> <strong> Not covered in installation:- </strong></p><ul> <li> Out Door Unit Stand. </li> <li> Extra copper wire if any. </li><li> Drain Pipe extension if any. </li><li> Plumbing and Masonry Work. </li><li> Wiring extension from Meter to site, Power point/MCB fitting and any other electrical work,Carpentry work. </li> <li> Dismantling/Shifting of Old AC's </li><li> Masonry, Core Cutting Fabrication and Electrical. </li></ul>"
+                            ]
+                        },
+                        {
+                            "key": "Technician Visit Details",
+                            "value": [
+                                "Authorized Service Engineer will do the following, Repair / change the defective part, Provide replacement to the customer in case part / product not repairable (only after replacement request approved), Repair Services"
+                            ]
+                        },
+                        {
+                            "key": "Uninstallation Details",
+                            "value": [
+                                "In case of returns, Flipkart's team will visit the customers location, Uninstall, Pack, Pick-up the product"
+                            ]
+                        },
+                        {
+                            "key": "Other Included Services",
+                            "value": [
+                                "Two Free Services of AC within Warranty Period on Demand"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "Warranty",
+                    "values": [
+                        {
+                            "key": "Warranty Summary",
+                            "value": [
+                                "1 Year on Complete Unit and 5 Years on Compressor"
+                            ]
+                        },
+                        {
+                            "key": "Covered in Warranty",
+                            "value": [
+                                "Warranty of the Product is Limited to Manufacturing Defects Only."
+                            ]
+                        },
+                        {
+                            "key": "Not Covered in Warranty",
+                            "value": [
+                                "Warranty does not Cover Any External Accessories (such as Battery, Cable, Carrying Bag), Damage Caused to the Product due to Improper Installation by Customer, Normal Wear and Tear to Magnetic Heads, Audio, Video, Laser Pick-ups and TV Picture Tubes, Panel, Damages Caused to the Product by Accident, Lightening, Ingress of Water, Fire, Dropping or Excessive Shock, Any Damage Caused due to Tampering of the Product by an Unauthorised Agent, Liability for Loss of Data, Recorded Images or Business Opportunity Loss."
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "booksInfo": {
+                "language": null,
+                "binding": null,
+                "pages": null,
+                "publisher": null,
+                "year": 0,
+                "authors": []
+            },
+            "lifeStyleInfo": {
+                "sleeve": null,
+                "neck": null,
+                "idealFor": null
+            }
+        }
+    },
+    {
+        "productBaseInfoV1": {
+            "productId": "ACNEHZAG3YHSZQJY",
+            "title": "Hitachi 1.5 Tons 5 Star Split AC Silver",
+            "productDescription": "",
+            "imageUrls": {
+                "200x200": "http://img.fkcdn.com/image/air-conditioner-new/z/h/n/2-hitachi-split-rau323hwds-200x200-imaegyzhw7kn6k76.jpeg",
+                "400x400": "http://img.fkcdn.com/image/air-conditioner-new/z/h/n/2-hitachi-split-rau323hwds-400x400-imaegyzhw7kn6k76.jpeg",
+                "800x800": "http://img.fkcdn.com/image/air-conditioner-new/z/h/n/2-hitachi-split-rau323hwds-800x800-imaegyzhw7kn6k76.jpeg",
+                "unknown": "http://img.fkcdn.com/image/air-conditioner-new/z/h/n/2-hitachi-split-rau323hwds-original-imaegyzhw7kn6k76.jpeg"
+            },
+            "productFamily": [
+                "[ACNEF7FWXGWFRU94]"
+            ],
+            "maximumRetailPrice": {
+                "amount": 49790,
+                "currency": "INR"
+            },
+            "flipkartSellingPrice": {
+                "amount": 40490,
+                "currency": "INR"
+            },
+            "flipkartSpecialPrice": {
+                "amount": 40489,
+                "currency": "INR"
+            },
+            "productUrl": "http://dl.flipkart.com/dl/hitachi-1-5-tons-5-star-split-ac-silver/p/itmef7fwxxnbgfyw?pid=ACNEHZAG3YHSZQJY&affid=slidenerd",
+            "productBrand": "Hitachi",
+            "inStock": false,
+            "codAvailable": true,
+            "discountPercentage": 15,
+            "offers": [
+                "Diwali Bumper Offer - 20th - 30th Oct 2016",
+                "Extra 15% Cashback* with Citi Cards"
+            ],
+            "categoryPath": "Electronics>Appliances>Home Appliances>Air Conditioners",
+            "attributes": {
+                "size": "",
+                "color": "Silver",
+                "storage": "",
+                "sizeUnit": "",
+                "displaySize": ""
+            }
+        },
+        "productShippingInfoV1": {
+            "shippingCharges": {
+                "amount": 0,
+                "currency": "INR"
+            },
+            "estimatedDeliveryTime": "Usually Delivered in Tue Sep 06 23:59:59 IST 2016 - Wed Sep 07 23:59:59 IST 2016 days.",
+            "sellerName": "OmniTechRetail",
+            "sellerAverageRating": 4.2508473,
+            "sellerNoOfRatings": 295,
+            "sellerNoOfReviews": 13
+        },
+        "categorySpecificInfoV1": {
+            "keySpecs": [
+                "Auto Restart",
+                "Rotary Compressor",
+                "Cooling Capacity: 5500 W",
+                "Power Usage: 1485 W"
+            ],
+            "detailedSpecs": [
+                "Auto Restart",
+                "Rotary Compressor",
+                "Cooling Capacity: 5500 W",
+                "Power Usage: 1485 W"
+            ],
+            "specificationList": [
+                {
+                    "key": "General",
+                    "values": [
+                        {
+                            "key": "In the Box",
+                            "value": [
+                                "Indoor Unit, Outdoor Unit, Installation Kit, Operation Manual, Remote Control"
+                            ]
+                        },
+                        {
+                            "key": "Brand",
+                            "value": [
+                                "Hitachi"
+                            ]
+                        },
+                        {
+                            "key": "Model Name",
+                            "value": [
+                                "RAU518HWDS"
+                            ]
+                        },
+                        {
+                            "key": "Type",
+                            "value": [
+                                "Split"
+                            ]
+                        },
+                        {
+                            "key": "Capacity in Tons",
+                            "value": [
+                                "1.5 Tons"
+                            ]
+                        },
+                        {
+                            "key": "Star Rating",
+                            "value": [
+                                "5"
+                            ]
+                        },
+                        {
+                            "key": "Color",
+                            "value": [
+                                "Silver"
+                            ]
+                        },
+                        {
+                            "key": "Cooling Capacity",
+                            "value": [
+                                "5500 W"
+                            ]
+                        },
+                        {
+                            "key": "Compressor",
+                            "value": [
+                                "Rotary"
+                            ]
+                        },
+                        {
+                            "key": "Dehumidification",
+                            "value": [
+                                "Yes"
+                            ]
+                        },
+                        {
+                            "key": "Remote Control",
+                            "value": [
+                                "Yes"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "Dimensions",
+                    "values": [
+                        {
+                            "key": "Indoor W x H x D",
+                            "value": [
+                                "105 cm x 29 cm x 22 cm"
+                            ]
+                        },
+                        {
+                            "key": "Indoor Unit Weight",
+                            "value": [
+                                "12.9 kg"
+                            ]
+                        },
+                        {
+                            "key": "Outdoor W x H x D",
+                            "value": [
+                                "75 cm x 54.8 cm x 28.8 cm"
+                            ]
+                        },
+                        {
+                            "key": "Outdoor Unit Weight",
+                            "value": [
+                                "41.2 kg"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "Performance Features",
+                    "values": [
+                        {
+                            "key": "EER",
+                            "value": [
+                                "3.7 W/W"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "Air Flow & Filter Features",
+                    "values": [
+                        {
+                            "key": "Anti-bacteria Filter",
+                            "value": [
+                                "No"
+                            ]
+                        },
+                        {
+                            "key": "Dust Filter",
+                            "value": [
+                                "No"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "Convenience Features",
+                    "values": [
+                        {
+                            "key": "Auto Restart",
+                            "value": [
+                                "Yes"
+                            ]
+                        },
+                        {
+                            "key": "Additional Features",
+                            "value": [
+                                "Condenser Coil: Copper"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "Power Features",
+                    "values": [
+                        {
+                            "key": "Power Requirement",
+                            "value": [
+                                "AC 230 V, 50 Hz"
+                            ]
+                        },
+                        {
+                            "key": "Power Consumption",
+                            "value": [
+                                "1485 W"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "Services",
+                    "values": [
+                        {
+                            "key": "Installation Details",
+                            "value": [
+                                "Installation of Air-conditioner is charged extra to customer at the time of installation and needs to be paid directly to the service engineer<p>After the product is delivered through our delivery partners, we'll facilitate the installation of AC through authorized service engineer at your convenience. The installation will be done within 2 Business days days of delivery. A Stabilizer if bought along with the product will be installed along with the AC</p><p>Standard installation charge for Split AC is, Approx Rs 1500 - 2000 (Applicable Charges Extra)<p>Standard Installation of AC Covers only</p><p>Split AC:-</p><ul><li> Drilling of hole in Brick wall for taking out the pipes. </li><li> Fixing hole sleeve & Cap. </li><li> Fixing the Indoor and Outdoor Unit. </li><li> Connecting Indoor and Outdoor units using Standard Kit provided by Manufacturer (at an additional cost, unless specified otherwise). </li><li> Wrapping the pipe with seasoning tape. </li><li> Connection to Stabilizer or Power point in the range of Power Cord Provided by Manufacture. </li><li> Temperature/Performance Check & Demo and Maintenance tips filling the details in warranty card. </li></ul><p> <strong> Not covered in installation:- </strong></p><ul> <li> Out Door Unit Stand. </li> <li> Extra copper wire if any. </li><li> Drain Pipe extension if any. </li><li> Plumbing and Masonry Work. </li><li> Wiring extension from Meter to site, Power point/MCB fitting and any other electrical work,Carpentry work. </li> <li> Dismantling/Shifting of Old AC's </li><li> Masonry, Core Cutting Fabrication and Electrical. </li></ul>"
+                            ]
+                        },
+                        {
+                            "key": "Technician Visit Details",
+                            "value": [
+                                "Authorized Service Engineer will do the following, Repair / change the defective part, Provide replacement to the customer in case part / product not repairable (only after replacement request approved), Repair Services"
+                            ]
+                        },
+                        {
+                            "key": "Uninstallation Details",
+                            "value": [
+                                "In case of returns, Flipkart's team will visit the customers location, Uninstall, Pack, Pick-up the product"
+                            ]
+                        },
+                        {
+                            "key": "Other Included Services",
+                            "value": [
+                                "Two Free Services of AC within Warranty Period on Demand"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "Warranty",
+                    "values": [
+                        {
+                            "key": "Warranty Summary",
+                            "value": [
+                                "1 Year on Complete Unit and 5 Years on Compressor"
+                            ]
+                        },
+                        {
+                            "key": "Covered in Warranty",
+                            "value": [
+                                "Warranty of the Product is Limited to Manufacturing Defects Only."
+                            ]
+                        },
+                        {
+                            "key": "Not Covered in Warranty",
+                            "value": [
+                                "Warranty does not Cover Any External Accessories (such as Battery, Cable, Carrying Bag), Damage Caused to the Product due to Improper Installation by Customer, Normal Wear and Tear to Magnetic Heads, Audio, Video, Laser Pick-ups and TV Picture Tubes, Panel, Damages Caused to the Product by Accident, Lightening, Ingress of Water, Fire, Dropping or Excessive Shock, Any Damage Caused due to Tampering of the Product by an Unauthorised Agent, Liability for Loss of Data, Recorded Images or Business Opportunity Loss."
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "booksInfo": {
+                "language": null,
+                "binding": null,
+                "pages": null,
+                "publisher": null,
+                "year": 0,
+                "authors": []
+            },
+            "lifeStyleInfo": {
+                "sleeve": null,
+                "neck": null,
+                "idealFor": null
+            }
+        }
+    },
+    {
+        "productBaseInfoV1": {
+            "productId": "ACNE9QS4KMSCPRU8",
+            "title": "Sansui 1.5 Tons 3 Star Split AC White",
+            "productDescription": "This Sansui split AC is everything you would expect from a smart appliance. Other than being energy-efficient, it’s equipped with active carbon filters that help eliminate odors, a catechin filter which deactivates germs and bacteria, a silver ion filter, and a blue fin evaporator which protects it from corrosion.",
+            "imageUrls": {
+                "200x200": "http://img.fkcdn.com/image/air-conditioner-new/r/u/8/1-5-sansui-split-a-c-ssz53-200x200-imaejxzucupqsf3c.jpeg",
+                "400x400": "http://img.fkcdn.com/image/air-conditioner-new/r/u/8/1-5-sansui-split-a-c-ssz53-400x400-imaejxzucupqsf3c.jpeg",
+                "800x800": "http://img.fkcdn.com/image/air-conditioner-new/r/u/8/1-5-sansui-split-a-c-ssz53-800x800-imaejxzucupqsf3c.jpeg",
+                "unknown": "http://img.fkcdn.com/image/air-conditioner-new/r/u/8/1-5-sansui-split-a-c-ssz53-original-imaejxzucupqsf3c.jpeg"
+            },
+            "productFamily": [
+                "[ACNE9QS4BADNUHTF",
+                " ACNE9QS4C6AAJWZK",
+                " ACNE9QS4F9SJ8HDK]"
+            ],
+            "maximumRetailPrice": {
+                "amount": 25990,
+                "currency": "INR"
+            },
+            "flipkartSellingPrice": {
+                "amount": 24990,
+                "currency": "INR"
+            },
+            "flipkartSpecialPrice": {
+                "amount": 22490,
+                "currency": "INR"
+            },
+            "productUrl": "http://dl.flipkart.com/dl/sansui-1-5-tons-3-star-split-ac-white/p/itme9qs4jdnuctap?pid=ACNE9QS4KMSCPRU8&affid=slidenerd",
+            "productBrand": "Sansui",
+            "inStock": true,
+            "codAvailable": true,
+            "discountPercentage": 3,
+            "offers": [
+                "Extra Rs.500 off",
+                "Extra Rs.2,000 off",
+                "10% Instant Discount* with Axis Bank Cards",
+                "10% Instant Discount* with StanChart Cards"
+            ],
+            "categoryPath": "Electronics>Appliances>Home Appliances>Air Conditioners",
+            "attributes": {
+                "size": "",
+                "color": "White",
+                "storage": "",
+                "sizeUnit": "",
+                "displaySize": ""
+            }
+        },
+        "productShippingInfoV1": {
+            "shippingCharges": {
+                "amount": 0,
+                "currency": "INR"
+            },
+            "estimatedDeliveryTime": "Usually Delivered in Tue Sep 06 23:59:59 IST 2016 - Wed Sep 07 23:59:59 IST 2016 days.",
+            "sellerName": "WS Retail",
+            "sellerAverageRating": 4.2291837,
+            "sellerNoOfRatings": 5820203,
+            "sellerNoOfReviews": 179038
+        },
+        "categorySpecificInfoV1": {
+            "keySpecs": [
+                "Anti Bacteria Filter, Dust Filter",
+                "Auto Restart, Sleep Mode",
+                "Aluminum Condenser, Rotary Compressor",
+                "Cooling Capacity: 5150 W",
+                "Power Usage: 1655 W"
+            ],
+            "detailedSpecs": [
+                "Anti Bacteria Filter, Dust Filter",
+                "Auto Restart, Sleep Mode",
+                "Aluminum Condenser, Rotary Compressor",
+                "Cooling Capacity: 5150 W",
+                "Power Usage: 1655 W"
+            ],
+            "specificationList": [
+                {
+                    "key": "General",
+                    "values": [
+                        {
+                            "key": "In the Box",
+                            "value": [
+                                "Indoor Unit, Outdoor Unit, Installation Kit, Remote Control and Operation Manual, Electrical Cable Standard Connecting Kit Length is 3.5Mtr, Connecting Piping Standard Connecting Kit Length is 3.5Mtr, Drain Pipe is 1.4Mtr."
+                            ]
+                        },
+                        {
+                            "key": "Brand",
+                            "value": [
+                                "Sansui"
+                            ]
+                        },
+                        {
+                            "key": "Model Name",
+                            "value": [
+                                "A/C SSZ53"
+                            ]
+                        },
+                        {
+                            "key": "Type",
+                            "value": [
+                                "Split"
+                            ]
+                        },
+                        {
+                            "key": "Capacity in Tons",
+                            "value": [
+                                "1.5 Tons"
+                            ]
+                        },
+                        {
+                            "key": "Star Rating",
+                            "value": [
+                                "3"
+                            ]
+                        },
+                        {
+                            "key": "Color",
+                            "value": [
+                                "White"
+                            ]
+                        },
+                        {
+                            "key": "Cooling Capacity",
+                            "value": [
+                                "5150 W"
+                            ]
+                        },
+                        {
+                            "key": "Compressor",
+                            "value": [
+                                "Rotary"
+                            ]
+                        },
+                        {
+                            "key": "Dehumidification",
+                            "value": [
+                                "Yes"
+                            ]
+                        },
+                        {
+                            "key": "Remote Control",
+                            "value": [
+                                "Yes"
+                            ]
+                        },
+                        {
+                            "key": "Condenser Coil",
+                            "value": [
+                                "Aluminum"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "Dimensions",
+                    "values": [
+                        {
+                            "key": "Indoor W x H x D",
+                            "value": [
+                                "94 cm x 29.8 cm x 20 cm"
+                            ]
+                        },
+                        {
+                            "key": "Indoor Unit Weight",
+                            "value": [
+                                "11.5 kg"
+                            ]
+                        },
+                        {
+                            "key": "Outdoor W x H x D",
+                            "value": [
+                                "78 cm x 54 cm x 26 cm"
+                            ]
+                        },
+                        {
+                            "key": "Outdoor Unit Weight",
+                            "value": [
+                                "33.25 kg"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "Air Flow & Filter Features",
+                    "values": [
+                        {
+                            "key": "Anti-bacteria Filter",
+                            "value": [
+                                "Yes"
+                            ]
+                        },
+                        {
+                            "key": "Dust Filter",
+                            "value": [
+                                "Yes"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "Convenience Features",
+                    "values": [
+                        {
+                            "key": "Auto Restart",
+                            "value": [
+                                "Yes"
+                            ]
+                        },
+                        {
+                            "key": "Sleep Mode",
+                            "value": [
+                                "Yes"
+                            ]
+                        },
+                        {
+                            "key": "Additional Features",
+                            "value": [
+                                "Noise Level: 35 - 42 dB"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "Power Features",
+                    "values": [
+                        {
+                            "key": "Power Requirement",
+                            "value": [
+                                "AC 230 V, 50 Hz"
+                            ]
+                        },
+                        {
+                            "key": "Power Consumption",
+                            "value": [
+                                "1655 W"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "Services",
+                    "values": [
+                        {
+                            "key": "Installation Details",
+                            "value": [
+                                "Installation of Air-conditioner is charged extra to customer at the time of installation and needs to be paid directly to the service engineer<p>After the product is delivered through our delivery partners, we'll facilitate the installation of AC through authorized service engineer at your convenience.A Stabilizer if bought along with the product will be installed along with the AC</p><p>Standard installation charge for Split AC is Rs 1499 (including taxes)<p>Standard Installation of AC Covers only</p><p>Split AC:-</p><ul><li> Drilling of hole in Brick wall for taking out the pipes. </li><li> Fixing hole sleeve & Cap. </li><li> Fixing the Indoor and Outdoor Unit. </li><li> Connecting Indoor and Outdoor units using Standard Kit provided by Manufacturer (at an additional cost, unless specified otherwise). </li><li> Wrapping the pipe with seasoning tape. </li><li> Connection to Stabilizer or Power point in the range of Power Cord Provided by Manufacture. </li><li> Temperature/Performance Check & Demo and Maintenance tips filling the details in warranty card. </li></ul><p> <strong> Not covered in installation:- </strong></p><ul> <li> Out Door Unit Stand. </li> <li> Extra copper wire if any. </li><li> Drain Pipe extension if any. </li><li> Plumbing and Masonry Work. </li><li> Wiring extension from Meter to site, Power point/MCB fitting and any other electrical work,Carpentry work. </li> <li> Dismantling/Shifting of Old AC's </li><li> Masonry, Core Cutting Fabrication and Electrical. </li></ul>"
+                            ]
+                        },
+                        {
+                            "key": "Technician Visit Details",
+                            "value": [
+                                "Authorized Service Engineer will do the following, Repair / change the defective part, Provide replacement to the customer in case part / product not repairable (only after replacement request approved), Repair Services"
+                            ]
+                        },
+                        {
+                            "key": "Uninstallation Details",
+                            "value": [
+                                "In case of returns, Flipkart's team will visit the customers location, Uninstall, Pack, Pick-up the product"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "Warranty",
+                    "values": [
+                        {
+                            "key": "Warranty Summary",
+                            "value": [
+                                "1 Year on Complete Unit and 5 Years on Compressor"
+                            ]
+                        },
+                        {
+                            "key": "Not Covered in Warranty",
+                            "value": [
+                                "Warranty does not cover any external accessories like the damages caused to the product due to improper installation by customer. Normal wear and tear due to usage, damages caused to the product by accident, lightening, ingress of water, fire, dropping or excessive shock, any damage caused due to tampering of the product by an unauthorised agent, liability for loss of data, or business opportunity loss. It also does not cover the loss of Gas due to tampering of pipes."
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "booksInfo": {
+                "language": null,
+                "binding": null,
+                "pages": null,
+                "publisher": null,
+                "year": 0,
+                "authors": []
+            },
+            "lifeStyleInfo": {
+                "sleeve": null,
+                "neck": null,
+                "idealFor": null
+            }
+        }
+    },
+    {
+        "productBaseInfoV1": {
+            "productId": "ACNEFSZDQD6GJMGM",
+            "title": "Carrier 1.5 Tons 5 Star Split AC White",
+            "productDescription": "This summer, beat the heat with this Carrier Ester split AC. Other than keeping your home cool and comfortable, this AC keeps bacteria and germs out – thanks to its i-PM 2.5 filter. Don’t want to wait for the appliance to take its sweet time getting started? Set its turbo mode on and you can enjoy fast cooling.",
+            "imageUrls": {
+                "200x200": "http://img.fkcdn.com/image/air-conditioner-new/m/g/m/1-5-carrier-split-18k-ester-5-star-200x200-imaejxzunjwcbbz6.jpeg",
+                "400x400": "http://img.fkcdn.com/image/air-conditioner-new/m/g/m/1-5-carrier-split-18k-ester-5-star-400x400-imaejxzunjwcbbz6.jpeg",
+                "800x800": "http://img.fkcdn.com/image/air-conditioner-new/m/g/m/1-5-carrier-split-18k-ester-5-star-800x800-imaejxzunjwcbbz6.jpeg",
+                "unknown": "http://img.fkcdn.com/image/air-conditioner-new/m/g/m/1-5-carrier-split-18k-ester-5-star-original-imaejxzunjwcbbz6.jpeg"
+            },
+            "productFamily": [
+                "[ACNEFSZD2GG2A37S",
+                " ACNEFSZDKM7ZHBAR",
+                " ACNEFSZDPGENZZWH]"
+            ],
+            "maximumRetailPrice": {
+                "amount": 46400,
+                "currency": "INR"
+            },
+            "flipkartSellingPrice": {
+                "amount": 35490,
+                "currency": "INR"
+            },
+            "flipkartSpecialPrice": {
+                "amount": 32990,
+                "currency": "INR"
+            },
+            "productUrl": "http://dl.flipkart.com/dl/carrier-1-5-tons-5-star-split-ac-white/p/itmefszdjfbfjghr?pid=ACNEFSZDQD6GJMGM&affid=slidenerd",
+            "productBrand": "Carrier",
+            "inStock": true,
+            "codAvailable": true,
+            "discountPercentage": 23,
+            "offers": [
+                "Extra Rs.500 off",
+                "Extra Rs.2,000 off",
+                "No Cost EMI on Credit Cards",
+                "No Cost EMI on Bajaj Finserv Cards"
+            ],
+            "categoryPath": "Electronics>Appliances>Home Appliances>Air Conditioners",
+            "attributes": {
+                "size": "",
+                "color": "White",
+                "storage": "",
+                "sizeUnit": "",
+                "displaySize": ""
+            }
+        },
+        "productShippingInfoV1": {
+            "shippingCharges": {
+                "amount": 0,
+                "currency": "INR"
+            },
+            "estimatedDeliveryTime": "Usually Delivered in Tue Sep 06 23:59:59 IST 2016 - Wed Sep 07 23:59:59 IST 2016 days.",
+            "sellerName": "OmniTechRetail",
+            "sellerAverageRating": 4.2508473,
+            "sellerNoOfRatings": 295,
+            "sellerNoOfReviews": 13
+        },
+        "categorySpecificInfoV1": {
+            "keySpecs": [
+                "Anti Bacteria Filter, Dust Filter",
+                "Auto Restart, Sleep Mode",
+                "Copper Condenser, Rotary Compressor",
+                "Cooling Capacity: 4800 W",
+                "Power Usage: 1370 W"
+            ],
+            "detailedSpecs": [
+                "Anti Bacteria Filter, Dust Filter",
+                "Auto Restart, Sleep Mode",
+                "Copper Condenser, Rotary Compressor",
+                "Cooling Capacity: 4800 W",
+                "Power Usage: 1370 W"
+            ],
+            "specificationList": [
+                {
+                    "key": "General",
+                    "values": [
+                        {
+                            "key": "In the Box",
+                            "value": [
+                                "Indoor Unit, Outdoor Unit, Inter Connecting Pipe, Remote, Remote Holder, 3 Manuals, 2 Batteries"
+                            ]
+                        },
+                        {
+                            "key": "Brand",
+                            "value": [
+                                "Carrier"
+                            ]
+                        },
+                        {
+                            "key": "Model Name",
+                            "value": [
+                                "18K Ester 5 Star"
+                            ]
+                        },
+                        {
+                            "key": "Type",
+                            "value": [
+                                "Split"
+                            ]
+                        },
+                        {
+                            "key": "Capacity in Tons",
+                            "value": [
+                                "1.5 Tons"
+                            ]
+                        },
+                        {
+                            "key": "Star Rating",
+                            "value": [
+                                "5"
+                            ]
+                        },
+                        {
+                            "key": "Color",
+                            "value": [
+                                "White"
+                            ]
+                        },
+                        {
+                            "key": "Cooling Capacity",
+                            "value": [
+                                "4800 W"
+                            ]
+                        },
+                        {
+                            "key": "Compressor",
+                            "value": [
+                                "Rotary"
+                            ]
+                        },
+                        {
+                            "key": "Dehumidification",
+                            "value": [
+                                "Yes"
+                            ]
+                        },
+                        {
+                            "key": "Remote Control",
+                            "value": [
+                                "Yes"
+                            ]
+                        },
+                        {
+                            "key": "Refrigerant",
+                            "value": [
+                                "R-22"
+                            ]
+                        },
+                        {
+                            "key": "Operating Modes",
+                            "value": [
+                                "Dry Mode, Economic Sleep Mode, Super Turbo Mode, Auto Mode"
+                            ]
+                        },
+                        {
+                            "key": "Condenser Coil",
+                            "value": [
+                                "Copper"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "Dimensions",
+                    "values": [
+                        {
+                            "key": "Indoor W x H x D",
+                            "value": [
+                                "92 cm x 29.2 cm x 22.5 cm"
+                            ]
+                        },
+                        {
+                            "key": "Indoor Unit Weight",
+                            "value": [
+                                "12 kg"
+                            ]
+                        },
+                        {
+                            "key": "Outdoor W x H x D",
+                            "value": [
+                                "90 cm x 69 cm x 32 cm"
+                            ]
+                        },
+                        {
+                            "key": "Outdoor Unit Weight",
+                            "value": [
+                                "45.5 kg"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "Performance Features",
+                    "values": [
+                        {
+                            "key": "Panel Display",
+                            "value": [
+                                "LED Display"
+                            ]
+                        },
+                        {
+                            "key": "Indoor Temperature Indicator",
+                            "value": [
+                                "Yes"
+                            ]
+                        },
+                        {
+                            "key": "Turbo Mode",
+                            "value": [
+                                "Yes"
+                            ]
+                        },
+                        {
+                            "key": "EER",
+                            "value": [
+                                "3.5 W/W"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "Air Flow & Filter Features",
+                    "values": [
+                        {
+                            "key": "Air Circulation",
+                            "value": [
+                                "525 CFM"
+                            ]
+                        },
+                        {
+                            "key": "Auto Air Swing",
+                            "value": [
+                                "Yes"
+                            ]
+                        },
+                        {
+                            "key": "Anti-bacteria Filter",
+                            "value": [
+                                "Yes"
+                            ]
+                        },
+                        {
+                            "key": "Dust Filter",
+                            "value": [
+                                "Yes"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "Convenience Features",
+                    "values": [
+                        {
+                            "key": "Auto Restart",
+                            "value": [
+                                "Yes"
+                            ]
+                        },
+                        {
+                            "key": "Sleep Mode",
+                            "value": [
+                                "Yes"
+                            ]
+                        },
+                        {
+                            "key": "Other Convenience Features",
+                            "value": [
+                                "Refrigerant Leakage Detector, Louver Position Memory, Auto Off / On Timer"
+                            ]
+                        },
+                        {
+                            "key": "Additional Features",
+                            "value": [
+                                "Condenser Coil: Copper"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "Power Features",
+                    "values": [
+                        {
+                            "key": "Power Requirement",
+                            "value": [
+                                "AC 230 V, 50 Hz"
+                            ]
+                        },
+                        {
+                            "key": "Power Consumption",
+                            "value": [
+                                "1370 W"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "Remote Control Features",
+                    "values": [
+                        {
+                            "key": "Other Remote Control Features",
+                            "value": [
+                                "LCD Remote"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "Services",
+                    "values": [
+                        {
+                            "key": "Installation Details",
+                            "value": [
+                                "<p>Installation of Air-conditioner is charged extra to customer at the time of installation and needs to be paid directly to the service engineer</p><p>Once the product is delivered through our delivery partners, we'll facilitate the installation of AC through Jeeves Consumer Services Flipkarts authorized installation partner at your convenience.The installation will be done within 2 Business days days of delivery.A Stabilizer if bought along with the product will be installed along with the AC or else you may buy the same from the engineer as per the rate card published in Jeeves Consumer Services Website or the standard rate card published</p><p>Standard installation charge for Split AC is Rs 1499 (including taxes)</p><p>Removal of your old AC (uninstallation): Rs. 650 + Applicable Taxes</p><p>Charges for Extra Material (if required): Wall Mount Bracket Rs. 650; Copper Pipe Rs. 650/Mtr; any other material would be charged as per actuals which engineer will tell at the time of installation based on the site’s requirement.</p><p>Standard Installation of Split AC Covers only</p><p>Split AC:-</p><li>Drilling of hole in Brick wall for taking out the pipes</li><li>Fixing hole sleeve & Cap</li><li>Fixing the Indoor and Outdoor Unit.</li><li>Connecting Indoor and Outdoor units using Standard Kit provided by Manufacturer (at an additional cost, unless specified otherwise).</li><li>Wrapping the pipe with seasoning tape.</li><li>Connection to Stabilizer or Power point in the range of Power Cord Provided by Manufacture.</li><li>Temperature/Performance Check & Demo and Maintenance tips filling the details in warranty card.</li><p>Not covered in installation:-</p><li>Out Door Unit Stand.</li><li>Extra copper wire if any.</li><li>Drain Pipe extension if any.</li><li>Plumbing and Masonry Work.</li><li>Wiring extension from Meter to site, Power point/MCB fitting and any other electrical work,Carpentry work.</li><li>Dismantling/Shifting of Old AC's Masonry, Core Cutting Fabrication and Electrical</li>"
+                            ]
+                        },
+                        {
+                            "key": "Technician Visit Details",
+                            "value": [
+                                "Authorized Service Engineer will do the following, Repair / change the defective part, Provide replacement to the customer in case part / product not repairable (only after replacement request approved), Repair Services"
+                            ]
+                        },
+                        {
+                            "key": "Uninstallation Details",
+                            "value": [
+                                "In case of returns, Flipkart's team will visit the customers location, Uninstall, Pack, Pick-up the product"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "Warranty",
+                    "values": [
+                        {
+                            "key": "Warranty Summary",
+                            "value": [
+                                "1 Year on Complete Unit and 4 Years on Compressor"
+                            ]
+                        },
+                        {
+                            "key": "Covered in Warranty",
+                            "value": [
+                                "Warranty on All Functional Part of AC Other than Aesthetic Parts (Plastic Parts)"
+                            ]
+                        },
+                        {
+                            "key": "Not Covered in Warranty",
+                            "value": [
+                                "Warranty does Not Cover Indoor Unit, Outdoor Unit, Covers if get Damaged and Other Plastic Parts. If Any Mishandling from Customer on AC, Fire Accident to AC, If Fire Source is External, Natural Calamity, Tampered Parts Will Not be Covered under Warranty"
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "booksInfo": {
+                "language": null,
+                "binding": null,
+                "pages": null,
+                "publisher": null,
+                "year": 0,
+                "authors": []
+            },
+            "lifeStyleInfo": {
+                "sleeve": null,
+                "neck": null,
+                "idealFor": null
+            }
+        }
+    },
+    {
+        "productBaseInfoV1": {
+            "productId": "ACNE9QS4F9SJ8HDK",
+            "title": "Sansui 1 Ton 3 Star Split AC White",
+            "productDescription": "Don’t let the unbearable summer heat ruin your cool. Get home this Sansui 1 ton split AC and make summers pleasant. This 3-star split AC is well-engineered and cools your room to give you a hill station feel all through the year.",
+            "imageUrls": {
+                "200x200": "http://img.fkcdn.com/image/air-conditioner-new/h/d/k/1-sansui-split-a-c-ssz33-200x200-imaejxzuhzmc4gyk.jpeg",
+                "400x400": "http://img.fkcdn.com/image/air-conditioner-new/h/d/k/1-sansui-split-a-c-ssz33-400x400-imaejxzuhzmc4gyk.jpeg",
+                "800x800": "http://img.fkcdn.com/image/air-conditioner-new/h/d/k/1-sansui-split-a-c-ssz33-800x800-imaejxzuhzmc4gyk.jpeg",
+                "unknown": "http://img.fkcdn.com/image/air-conditioner-new/h/d/k/1-sansui-split-a-c-ssz33-original-imaejxzuhzmc4gyk.jpeg"
+            },
+            "productFamily": [
+                "[ACNE9QS4BADNUHTF",
+                " ACNE9QS4C6AAJWZK",
+                " ACNE9QS4KMSCPRU8]"
+            ],
+            "maximumRetailPrice": {
+                "amount": 21990,
+                "currency": "INR"
+            },
+            "flipkartSellingPrice": {
+                "amount": 20990,
+                "currency": "INR"
+            },
+            "flipkartSpecialPrice": {
+                "amount": 18990,
+                "currency": "INR"
+            },
+            "productUrl": "http://dl.flipkart.com/dl/sansui-1-ton-3-star-split-ac-white/p/itme9qs4nsmnvg5n?pid=ACNE9QS4F9SJ8HDK&affid=slidenerd",
+            "productBrand": "Sansui",
+            "inStock": true,
+            "codAvailable": true,
+            "discountPercentage": 4,
+            "offers": [
+                "Extra Rs.500 off",
+                "Extra Rs.1,500 Off",
+                "10% Instant Discount* with Axis Bank Cards",
+                "10% Instant Discount* with StanChart Cards"
+            ],
+            "categoryPath": "Electronics>Appliances>Home Appliances>Air Conditioners",
+            "attributes": {
+                "size": "",
+                "color": "White",
+                "storage": "",
+                "sizeUnit": "",
+                "displaySize": ""
+            }
+        },
+        "productShippingInfoV1": {
+            "shippingCharges": {
+                "amount": 0,
+                "currency": "INR"
+            },
+            "estimatedDeliveryTime": "Usually Delivered in Tue Sep 06 23:59:59 IST 2016 - Wed Sep 07 23:59:59 IST 2016 days.",
+            "sellerName": "WS Retail",
+            "sellerAverageRating": 4.2291837,
+            "sellerNoOfRatings": 5820203,
+            "sellerNoOfReviews": 179038
+        },
+        "categorySpecificInfoV1": {
+            "keySpecs": [
+                "Anti Bacteria Filter, Dust Filter",
+                "Auto Restart, Sleep Mode",
+                "Aluminum Condenser, Rotary Compressor",
+                "Cooling Capacity: 3300 W",
+                "Power Usage: 1060 W"
+            ],
+            "detailedSpecs": [
+                "Anti Bacteria Filter, Dust Filter",
+                "Auto Restart, Sleep Mode",
+                "Aluminum Condenser, Rotary Compressor",
+                "Cooling Capacity: 3300 W",
+                "Power Usage: 1060 W"
+            ],
+            "specificationList": [
+                {
+                    "key": "General",
+                    "values": [
+                        {
+                            "key": "In the Box",
+                            "value": [
+                                "Indoor Unit, Outdoor Unit, Installation Kit, Remote Control and Operation Manual, Electrical Cable Standard Connecting Kit Length is 3mtr, Connecting Piping Standard Connecting Kit Length 3mtr, Drain Pipe is 1.4Mtr."
+                            ]
+                        },
+                        {
+                            "key": "Brand",
+                            "value": [
+                                "Sansui"
+                            ]
+                        },
+                        {
+                            "key": "Model Name",
+                            "value": [
+                                "A/C SSZ33"
+                            ]
+                        },
+                        {
+                            "key": "Type",
+                            "value": [
+                                "Split"
+                            ]
+                        },
+                        {
+                            "key": "Capacity in Tons",
+                            "value": [
+                                "1 Ton"
+                            ]
+                        },
+                        {
+                            "key": "Star Rating",
+                            "value": [
+                                "3"
+                            ]
+                        },
+                        {
+                            "key": "Color",
+                            "value": [
+                                "White"
+                            ]
+                        },
+                        {
+                            "key": "Cooling Capacity",
+                            "value": [
+                                "3300 W"
+                            ]
+                        },
+                        {
+                            "key": "Compressor",
+                            "value": [
+                                "Rotary"
+                            ]
+                        },
+                        {
+                            "key": "Dehumidification",
+                            "value": [
+                                "Yes"
+                            ]
+                        },
+                        {
+                            "key": "Remote Control",
+                            "value": [
+                                "Yes"
+                            ]
+                        },
+                        {
+                            "key": "Condenser Coil",
+                            "value": [
+                                "Aluminum"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "Dimensions",
+                    "values": [
+                        {
+                            "key": "Indoor W x H x D",
+                            "value": [
+                                "86.5 cm x 26.5 cm x 18.5 cm"
+                            ]
+                        },
+                        {
+                            "key": "Indoor Unit Weight",
+                            "value": [
+                                "9 kg"
+                            ]
+                        },
+                        {
+                            "key": "Outdoor W x H x D",
+                            "value": [
+                                "78 cm x 54 cm x 26 cm"
+                            ]
+                        },
+                        {
+                            "key": "Outdoor Unit Weight",
+                            "value": [
+                                "27.5 kg"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "Air Flow & Filter Features",
+                    "values": [
+                        {
+                            "key": "Anti-bacteria Filter",
+                            "value": [
+                                "Yes"
+                            ]
+                        },
+                        {
+                            "key": "Dust Filter",
+                            "value": [
+                                "Yes"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "Convenience Features",
+                    "values": [
+                        {
+                            "key": "Auto Restart",
+                            "value": [
+                                "Yes"
+                            ]
+                        },
+                        {
+                            "key": "Sleep Mode",
+                            "value": [
+                                "Yes"
+                            ]
+                        },
+                        {
+                            "key": "Additional Features",
+                            "value": [
+                                "Noise Level: 33 - 40 dB"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "Power Features",
+                    "values": [
+                        {
+                            "key": "Power Requirement",
+                            "value": [
+                                "AC 230 V, 50 Hz"
+                            ]
+                        },
+                        {
+                            "key": "Power Consumption",
+                            "value": [
+                                "1060 W"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "Services",
+                    "values": [
+                        {
+                            "key": "Installation Details",
+                            "value": [
+                                "Installation of Air-conditioner is charged extra to customer at the time of installation and needs to be paid directly to the service engineer<p>After the product is delivered through our delivery partners, we'll facilitate the installation of AC through authorized service engineer at your convenience.A Stabilizer if bought along with the product will be installed along with the AC</p><p>Standard installation charge for Split AC is Rs 1499 (including taxes)<p>Standard Installation of AC Covers only</p><p>Split AC:-</p><ul><li> Drilling of hole in Brick wall for taking out the pipes. </li><li> Fixing hole sleeve & Cap. </li><li> Fixing the Indoor and Outdoor Unit. </li><li> Connecting Indoor and Outdoor units using Standard Kit provided by Manufacturer (at an additional cost, unless specified otherwise). </li><li> Wrapping the pipe with seasoning tape. </li><li> Connection to Stabilizer or Power point in the range of Power Cord Provided by Manufacture. </li><li> Temperature/Performance Check & Demo and Maintenance tips filling the details in warranty card. </li></ul><p> <strong> Not covered in installation:- </strong></p><ul> <li> Out Door Unit Stand. </li> <li> Extra copper wire if any. </li><li> Drain Pipe extension if any. </li><li> Plumbing and Masonry Work. </li><li> Wiring extension from Meter to site, Power point/MCB fitting and any other electrical work,Carpentry work. </li> <li> Dismantling/Shifting of Old AC's </li><li> Masonry, Core Cutting Fabrication and Electrical. </li></ul>"
+                            ]
+                        },
+                        {
+                            "key": "Technician Visit Details",
+                            "value": [
+                                "Authorized Service Engineer will do the following, Repair / change the defective part, Provide replacement to the customer in case part / product not repairable (only after replacement request approved), Repair Services"
+                            ]
+                        },
+                        {
+                            "key": "Uninstallation Details",
+                            "value": [
+                                "In case of returns, Flipkart's team will visit the customers location, Uninstall, Pack, Pick-up the product"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "Warranty",
+                    "values": [
+                        {
+                            "key": "Warranty Summary",
+                            "value": [
+                                "1 Year on Complete Unit and 5 Years on Compressor"
+                            ]
+                        },
+                        {
+                            "key": "Not Covered in Warranty",
+                            "value": [
+                                "Warranty does not cover any external accessories like the damages caused to the product due to improper installation by customer. Normal wear and tear due to usage, damages caused to the product by accident, lightening, ingress of water, fire, dropping or excessive shock, any damage caused due to tampering of the product by an unauthorised agent, liability for loss of data, or business opportunity loss. It also does not cover the loss of Gas due to tampering of pipes."
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "booksInfo": {
+                "language": null,
+                "binding": null,
+                "pages": null,
+                "publisher": null,
+                "year": 0,
+                "authors": []
+            },
+            "lifeStyleInfo": {
+                "sleeve": null,
+                "neck": null,
+                "idealFor": null
+            }
+        }
+    },
+    {
+        "productBaseInfoV1": {
+            "productId": "ACNEFSZDTH7QQBRG",
+            "title": "Carrier 2 Tons 3 Star Split AC White",
+            "productDescription": "This summer, beat the heat with this Carrier Ester split AC. Other than keeping your home cool and comfortable, this AC keeps bacteria and germs out – thanks to its i-PM 2.5 filter. Don’t want to wait for the appliance to take its sweet time getting started? Set its turbo mode on and you can enjoy fast cooling.",
+            "imageUrls": {
+                "200x200": "http://img.fkcdn.com/image/air-conditioner-new/w/m/g/2-carrier-split-24k-ester-2-star-200x200-imaeg63eyje7gfuy.jpeg",
+                "400x400": "http://img.fkcdn.com/image/air-conditioner-new/w/m/g/2-carrier-split-24k-ester-2-star-400x400-imaeg63eyje7gfuy.jpeg",
+                "800x800": "http://img.fkcdn.com/image/air-conditioner-new/w/m/g/2-carrier-split-24k-ester-2-star-800x800-imaeg63eyje7gfuy.jpeg",
+                "unknown": "http://img.fkcdn.com/image/air-conditioner-new/w/m/g/2-carrier-split-24k-ester-2-star-original-imaeg63eyje7gfuy.jpeg"
+            },
+            "productFamily": [
+                "[ACNEFSZDTH7QQBRG]"
+            ],
+            "maximumRetailPrice": {
+                "amount": 50750,
+                "currency": "INR"
+            },
+            "flipkartSellingPrice": {
+                "amount": 38990,
+                "currency": "INR"
+            },
+            "flipkartSpecialPrice": {
+                "amount": 38990,
+                "currency": "INR"
+            },
+            "productUrl": "http://dl.flipkart.com/dl/carrier-2-tons-3-star-split-ac-white/p/itmefszda6yjznrc?pid=ACNEFSZDTH7QQBRG&affid=slidenerd",
+            "productBrand": "Carrier",
+            "inStock": false,
+            "codAvailable": true,
+            "discountPercentage": 23,
+            "offers": [],
+            "categoryPath": "Electronics>Appliances>Home Appliances>Air Conditioners",
+            "attributes": {
+                "size": "",
+                "color": "White",
+                "storage": "",
+                "sizeUnit": "",
+                "displaySize": ""
+            }
+        },
+        "productShippingInfoV1": {
+            "shippingCharges": {
+                "amount": 0,
+                "currency": "INR"
+            },
+            "estimatedDeliveryTime": "Usually Delivered in Tue Sep 06 23:59:59 IST 2016 - Wed Sep 07 23:59:59 IST 2016 days.",
+            "sellerName": "WS Retail",
+            "sellerAverageRating": 4.2291837,
+            "sellerNoOfRatings": 5820203,
+            "sellerNoOfReviews": 179038
+        },
+        "categorySpecificInfoV1": {
+            "keySpecs": [
+                "Anti Bacteria Filter, Dust Filter",
+                "Auto Restart",
+                "Copper Condenser, Rotary Compressor",
+                "Cooling Capacity: 6000 W",
+                "Power Usage: 1910 W"
+            ],
+            "detailedSpecs": [
+                "Anti Bacteria Filter, Dust Filter",
+                "Auto Restart",
+                "Copper Condenser, Rotary Compressor",
+                "Cooling Capacity: 6000 W",
+                "Power Usage: 1910 W"
+            ],
+            "specificationList": [
+                {
+                    "key": "General",
+                    "values": [
+                        {
+                            "key": "In the Box",
+                            "value": [
+                                "Indoor Unit, Outdoor Unit, Inter Connecting Pipe, Remote, Remote Holder, 3 Manuals, 2 Batteries"
+                            ]
+                        },
+                        {
+                            "key": "Brand",
+                            "value": [
+                                "Carrier"
+                            ]
+                        },
+                        {
+                            "key": "Model Name",
+                            "value": [
+                                "24K Ester 3 Star"
+                            ]
+                        },
+                        {
+                            "key": "Type",
+                            "value": [
+                                "Split"
+                            ]
+                        },
+                        {
+                            "key": "Capacity in Tons",
+                            "value": [
+                                "2 Tons"
+                            ]
+                        },
+                        {
+                            "key": "Star Rating",
+                            "value": [
+                                "3"
+                            ]
+                        },
+                        {
+                            "key": "Color",
+                            "value": [
+                                "White"
+                            ]
+                        },
+                        {
+                            "key": "Cooling Capacity",
+                            "value": [
+                                "6000 W"
+                            ]
+                        },
+                        {
+                            "key": "Compressor",
+                            "value": [
+                                "Rotary"
+                            ]
+                        },
+                        {
+                            "key": "Dehumidification",
+                            "value": [
+                                "Yes"
+                            ]
+                        },
+                        {
+                            "key": "Remote Control",
+                            "value": [
+                                "Yes"
+                            ]
+                        },
+                        {
+                            "key": "Condenser Coil",
+                            "value": [
+                                "Copper"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "Dimensions",
+                    "values": [
+                        {
+                            "key": "Indoor W x H x D",
+                            "value": [
+                                "108 cm x 33 cm x 22.5 cm"
+                            ]
+                        },
+                        {
+                            "key": "Indoor Unit Weight",
+                            "value": [
+                                "15 kg"
+                            ]
+                        },
+                        {
+                            "key": "Outdoor W x H x D",
+                            "value": [
+                                "84.5 cm x 70 cm x 32 cm"
+                            ]
+                        },
+                        {
+                            "key": "Outdoor Unit Weight",
+                            "value": [
+                                "47 kg"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "Performance Features",
+                    "values": [
+                        {
+                            "key": "EER",
+                            "value": [
+                                "3 W/W"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "Air Flow & Filter Features",
+                    "values": [
+                        {
+                            "key": "Anti-bacteria Filter",
+                            "value": [
+                                "Yes"
+                            ]
+                        },
+                        {
+                            "key": "Dust Filter",
+                            "value": [
+                                "Yes"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "Convenience Features",
+                    "values": [
+                        {
+                            "key": "Auto Restart",
+                            "value": [
+                                "Yes"
+                            ]
+                        },
+                        {
+                            "key": "Additional Features",
+                            "value": [
+                                "Condenser Coil: Copper"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "Power Features",
+                    "values": [
+                        {
+                            "key": "Power Requirement",
+                            "value": [
+                                "AC 230 V, 50 Hz"
+                            ]
+                        },
+                        {
+                            "key": "Power Consumption",
+                            "value": [
+                                "1910 W"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "Services",
+                    "values": [
+                        {
+                            "key": "Installation Details",
+                            "value": [
+                                "<p>Installation of Air-conditioner is charged extra to customer at the time of installation and needs to be paid directly to the service engineer</p><p>Once the product is delivered through our delivery partners, we'll facilitate the installation of AC through Jeeves Consumer Services Flipkarts authorized installation partner at your convenience.The installation will be done within 2 Business days days of delivery.A Stabilizer if bought along with the product will be installed along with the AC or else you may buy the same from the engineer as per the rate card published in Jeeves Consumer Services Website or the standard rate card published</p><p>Standard installation charge for Split AC is Rs 1499 (including taxes)</p><p>Removal of your old AC (uninstallation): Rs. 650 + Applicable Taxes</p><p>Charges for Extra Material (if required): Wall Mount Bracket Rs. 650; Copper Pipe Rs. 650/Mtr; any other material would be charged as per actuals which engineer will tell at the time of installation based on the site’s requirement.</p><p>Standard Installation of Split AC Covers only</p><p>Split AC:-</p><li>Drilling of hole in Brick wall for taking out the pipes</li><li>Fixing hole sleeve & Cap</li><li>Fixing the Indoor and Outdoor Unit.</li><li>Connecting Indoor and Outdoor units using Standard Kit provided by Manufacturer (at an additional cost, unless specified otherwise).</li><li>Wrapping the pipe with seasoning tape.</li><li>Connection to Stabilizer or Power point in the range of Power Cord Provided by Manufacture.</li><li>Temperature/Performance Check & Demo and Maintenance tips filling the details in warranty card.</li><p>Not covered in installation:-</p><li>Out Door Unit Stand.</li><li>Extra copper wire if any.</li><li>Drain Pipe extension if any.</li><li>Plumbing and Masonry Work.</li><li>Wiring extension from Meter to site, Power point/MCB fitting and any other electrical work,Carpentry work.</li><li>Dismantling/Shifting of Old AC's Masonry, Core Cutting Fabrication and Electrical</li>"
+                            ]
+                        },
+                        {
+                            "key": "Technician Visit Details",
+                            "value": [
+                                "Authorized Service Engineer will do the following, Repair / change the defective part, Provide replacement to the customer in case part / product not repairable (only after replacement request approved), Repair Services"
+                            ]
+                        },
+                        {
+                            "key": "Uninstallation Details",
+                            "value": [
+                                "In case of returns, Flipkart's team will visit the customers location, Uninstall, Pack, Pick-up the product"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "Warranty",
+                    "values": [
+                        {
+                            "key": "Warranty Summary",
+                            "value": [
+                                "1 Year on Complete Unit and 4 Years on Compressor"
+                            ]
+                        },
+                        {
+                            "key": "Covered in Warranty",
+                            "value": [
+                                "Warranty on All Functional Part of AC Other than Aesthetic Parts (Plastic Parts)"
+                            ]
+                        },
+                        {
+                            "key": "Not Covered in Warranty",
+                            "value": [
+                                "Warranty does Not Cover Indoor Unit, Outdoor Unit, Covers if get Damaged and Other Plastic Parts. If Any Mishandling from Customer on AC, Fire Accident to AC, If Fire Source is External, Natural Calamity, Tampered Parts Will Not be Covered under Warranty"
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "booksInfo": {
+                "language": null,
+                "binding": null,
+                "pages": null,
+                "publisher": null,
+                "year": 0,
+                "authors": []
+            },
+            "lifeStyleInfo": {
+                "sleeve": null,
+                "neck": null,
+                "idealFor": null
+            }
+        }
+    },
+    {
+        "productBaseInfoV1": {
+            "productId": "ACNE9QS4C6AAJWZK",
+            "title": "Sansui 1.5 Tons 5 Star Split AC White",
+            "productDescription": "If you want a cooling appliance that not only keeps your surroundings cool, but also maintains itself, you have this Sansui split AC. With features like active carbon filters that work to eliminate bad odor, catechin filters that deactivates bacteria and germs, and a blue fin evaporator which protects it from corrosion, this air conditioner is a great investment.",
+            "imageUrls": {
+                "200x200": "http://img.fkcdn.com/image/air-conditioner-new/w/z/k/1-5-sansui-split-a-c-ssz55-200x200-imaejxzuzedjjw4h.jpeg",
+                "400x400": "http://img.fkcdn.com/image/air-conditioner-new/w/z/k/1-5-sansui-split-a-c-ssz55-400x400-imaejxzuzedjjw4h.jpeg",
+                "800x800": "http://img.fkcdn.com/image/air-conditioner-new/w/z/k/1-5-sansui-split-a-c-ssz55-800x800-imaejxzuzedjjw4h.jpeg",
+                "unknown": "http://img.fkcdn.com/image/air-conditioner-new/w/z/k/1-5-sansui-split-a-c-ssz55-original-imaejxzuzedjjw4h.jpeg"
+            },
+            "productFamily": [
+                "[ACNE9QS4BADNUHTF",
+                " ACNE9QS4F9SJ8HDK",
+                " ACNE9QS4KMSCPRU8]"
+            ],
+            "maximumRetailPrice": {
+                "amount": 27990,
+                "currency": "INR"
+            },
+            "flipkartSellingPrice": {
+                "amount": 26490,
+                "currency": "INR"
+            },
+            "flipkartSpecialPrice": {
+                "amount": 23490,
+                "currency": "INR"
+            },
+            "productUrl": "http://dl.flipkart.com/dl/sansui-1-5-tons-5-star-split-ac-white/p/itme9qs4bd7xngch?pid=ACNE9QS4C6AAJWZK&affid=slidenerd",
+            "productBrand": "Sansui",
+            "inStock": true,
+            "codAvailable": true,
+            "discountPercentage": 5,
+            "offers": [
+                "Extra Rs.2,500 off",
+                "Extra Rs.500 off"
+            ],
+            "categoryPath": "Electronics>Appliances>Home Appliances>Air Conditioners",
+            "attributes": {
+                "size": "",
+                "color": "White",
+                "storage": "",
+                "sizeUnit": "",
+                "displaySize": ""
+            }
+        },
+        "productShippingInfoV1": {
+            "shippingCharges": {
+                "amount": 0,
+                "currency": "INR"
+            },
+            "estimatedDeliveryTime": "Usually Delivered in Tue Sep 06 23:59:59 IST 2016 - Wed Sep 07 23:59:59 IST 2016 days.",
+            "sellerName": "OmniTechRetail",
+            "sellerAverageRating": 4.2508473,
+            "sellerNoOfRatings": 295,
+            "sellerNoOfReviews": 13
+        },
+        "categorySpecificInfoV1": {
+            "keySpecs": [
+                "Anti Bacteria Filter, Dust Filter",
+                "Auto Restart, Sleep Mode",
+                "Aluminum Condenser, Rotary Compressor",
+                "Cooling Capacity: 5200 W",
+                "Power Usage: 1480 W"
+            ],
+            "detailedSpecs": [
+                "Anti Bacteria Filter, Dust Filter",
+                "Auto Restart, Sleep Mode",
+                "Aluminum Condenser, Rotary Compressor",
+                "Cooling Capacity: 5200 W",
+                "Power Usage: 1480 W"
+            ],
+            "specificationList": [
+                {
+                    "key": "General",
+                    "values": [
+                        {
+                            "key": "In the Box",
+                            "value": [
+                                "Indoor Unit, Outdoor Unit, Installation Kit, Remote Control and Operation Manual, Electrical Cable Standard Connecting Kit Length is 3.5Mtr, Connecting Piping Standard Connecting Kit Length is 3.5Mtr, Drain Pipe is 1.4Mtr."
+                            ]
+                        },
+                        {
+                            "key": "Brand",
+                            "value": [
+                                "Sansui"
+                            ]
+                        },
+                        {
+                            "key": "Model Name",
+                            "value": [
+                                "A/C SSZ55"
+                            ]
+                        },
+                        {
+                            "key": "Type",
+                            "value": [
+                                "Split"
+                            ]
+                        },
+                        {
+                            "key": "Capacity in Tons",
+                            "value": [
+                                "1.5 Tons"
+                            ]
+                        },
+                        {
+                            "key": "Star Rating",
+                            "value": [
+                                "5"
+                            ]
+                        },
+                        {
+                            "key": "Color",
+                            "value": [
+                                "White"
+                            ]
+                        },
+                        {
+                            "key": "Cooling Capacity",
+                            "value": [
+                                "5200 W"
+                            ]
+                        },
+                        {
+                            "key": "Compressor",
+                            "value": [
+                                "Rotary"
+                            ]
+                        },
+                        {
+                            "key": "Dehumidification",
+                            "value": [
+                                "Yes"
+                            ]
+                        },
+                        {
+                            "key": "Remote Control",
+                            "value": [
+                                "Yes"
+                            ]
+                        },
+                        {
+                            "key": "Condenser Coil",
+                            "value": [
+                                "Aluminum"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "Dimensions",
+                    "values": [
+                        {
+                            "key": "Indoor W x H x D",
+                            "value": [
+                                "94 cm x 29.8 cm x 20 cm"
+                            ]
+                        },
+                        {
+                            "key": "Indoor Unit Weight",
+                            "value": [
+                                "11.5 kg"
+                            ]
+                        },
+                        {
+                            "key": "Outdoor W x H x D",
+                            "value": [
+                                "78 cm x 54 cm x 26 cm"
+                            ]
+                        },
+                        {
+                            "key": "Outdoor Unit Weight",
+                            "value": [
+                                "34 kg"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "Air Flow & Filter Features",
+                    "values": [
+                        {
+                            "key": "Anti-bacteria Filter",
+                            "value": [
+                                "Yes"
+                            ]
+                        },
+                        {
+                            "key": "Dust Filter",
+                            "value": [
+                                "Yes"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "Convenience Features",
+                    "values": [
+                        {
+                            "key": "Auto Restart",
+                            "value": [
+                                "Yes"
+                            ]
+                        },
+                        {
+                            "key": "Sleep Mode",
+                            "value": [
+                                "Yes"
+                            ]
+                        },
+                        {
+                            "key": "Additional Features",
+                            "value": [
+                                "Noise Level: 35 - 42 dB"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "Power Features",
+                    "values": [
+                        {
+                            "key": "Power Requirement",
+                            "value": [
+                                "AC 230 V, 50 Hz"
+                            ]
+                        },
+                        {
+                            "key": "Power Consumption",
+                            "value": [
+                                "1480 W"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "Services",
+                    "values": [
+                        {
+                            "key": "Installation Details",
+                            "value": [
+                                "Installation of Air-conditioner is charged extra to customer at the time of installation and needs to be paid directly to the service engineer<p>After the product is delivered through our delivery partners, we'll facilitate the installation of AC through authorized service engineer at your convenience.A Stabilizer if bought along with the product will be installed along with the AC</p><p>Standard installation charge for Split AC is, Approx Rs 1500 - 2000 (Applicable Charges Extra)<p>Standard Installation of AC Covers only</p><p>Split AC:-</p><ul><li> Drilling of hole in Brick wall for taking out the pipes. </li><li> Fixing hole sleeve & Cap. </li><li> Fixing the Indoor and Outdoor Unit. </li><li> Connecting Indoor and Outdoor units using Standard Kit provided by Manufacturer (at an additional cost, unless specified otherwise). </li><li> Wrapping the pipe with seasoning tape. </li><li> Connection to Stabilizer or Power point in the range of Power Cord Provided by Manufacture. </li><li> Temperature/Performance Check & Demo and Maintenance tips filling the details in warranty card. </li></ul><p> <strong> Not covered in installation:- </strong></p><ul> <li> Out Door Unit Stand. </li> <li> Extra copper wire if any. </li><li> Drain Pipe extension if any. </li><li> Plumbing and Masonry Work. </li><li> Wiring extension from Meter to site, Power point/MCB fitting and any other electrical work,Carpentry work. </li> <li> Dismantling/Shifting of Old AC's </li><li> Masonry, Core Cutting Fabrication and Electrical. </li></ul>"
+                            ]
+                        },
+                        {
+                            "key": "Technician Visit Details",
+                            "value": [
+                                "Authorized Service Engineer will do the following, Repair / change the defective part, Provide replacement to the customer in case part / product not repairable (only after replacement request approved), Repair Services"
+                            ]
+                        },
+                        {
+                            "key": "Uninstallation Details",
+                            "value": [
+                                "In case of returns, Flipkart's team will visit the customers location, Uninstall, Pack, Pick-up the product"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "Warranty",
+                    "values": [
+                        {
+                            "key": "Warranty Summary",
+                            "value": [
+                                "1 Year on Complete Unit and 5 Years on Compressor"
+                            ]
+                        },
+                        {
+                            "key": "Not Covered in Warranty",
+                            "value": [
+                                "Warranty does not cover any external accessories like the damages caused to the product due to improper installation by customer. Normal wear and tear due to usage, damages caused to the product by accident, lightening, ingress of water, fire, dropping or excessive shock, any damage caused due to tampering of the product by an unauthorised agent, liability for loss of data, or business opportunity loss. It also does not cover the loss of Gas due to tampering of pipes."
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "booksInfo": {
+                "language": null,
+                "binding": null,
+                "pages": null,
+                "publisher": null,
+                "year": 0,
+                "authors": []
+            },
+            "lifeStyleInfo": {
+                "sleeve": null,
+                "neck": null,
+                "idealFor": null
+            }
+        }
+    },
+    {
+        "productBaseInfoV1": {
+            "productId": "ACNEF7FWBGZ4NTS2",
+            "title": "Hitachi 1.2 Tons 5 Star Split AC Copper",
+            "productDescription": "Don’t let the external weather and climate affect you. Get home this 5-star AC and cool your room irrespective of how hot or humid it is outside. With its Auto Humid Control, Auto Climate Technology and 4-way Air Swing, this AC is all you need to transform unbearable weather into pleasant, cool weather.",
+            "imageUrls": {
+                "200x200": "http://img.fkcdn.com/image/air-conditioner-new/x/g/j/1-5-hitachi-split-rau318hwds-200x200-imaeg63cpwszq2zz.jpeg",
+                "400x400": "http://img.fkcdn.com/image/air-conditioner-new/x/g/j/1-5-hitachi-split-rau318hwds-400x400-imaeg63cpwszq2zz.jpeg",
+                "800x800": "http://img.fkcdn.com/image/air-conditioner-new/x/g/j/1-5-hitachi-split-rau318hwds-800x800-imaeg63cpwszq2zz.jpeg",
+                "unknown": "http://img.fkcdn.com/image/air-conditioner-new/x/g/j/1-5-hitachi-split-rau318hwds-original-imaeg63cpwszq2zz.jpeg"
+            },
+            "productFamily": [
+                "[ACNEGHH5NXXK8CYF]"
+            ],
+            "maximumRetailPrice": {
+                "amount": 37190,
+                "currency": "INR"
+            },
+            "flipkartSellingPrice": {
+                "amount": 31990,
+                "currency": "INR"
+            },
+            "flipkartSpecialPrice": {
+                "amount": 28990,
+                "currency": "INR"
+            },
+            "productUrl": "http://dl.flipkart.com/dl/hitachi-1-2-tons-5-star-split-ac-copper/p/itmehem3rnezswey?pid=ACNEF7FWBGZ4NTS2&affid=slidenerd",
+            "productBrand": "Hitachi",
+            "inStock": true,
+            "codAvailable": true,
+            "discountPercentage": 14,
+            "offers": [
+                "Extra Rs.500 off",
+                "Extra Rs.2,500 off",
+                "10% Instant Discount* with Axis Bank Cards",
+                "10% Instant Discount* with StanChart Cards"
+            ],
+            "categoryPath": "Electronics>Appliances>Home Appliances>Air Conditioners",
+            "attributes": {
+                "size": "",
+                "color": "Copper",
+                "storage": "",
+                "sizeUnit": "",
+                "displaySize": ""
+            }
+        },
+        "productShippingInfoV1": {
+            "shippingCharges": {
+                "amount": 0,
+                "currency": "INR"
+            },
+            "estimatedDeliveryTime": "Usually Delivered in Tue Sep 06 23:59:59 IST 2016 - Wed Sep 07 23:59:59 IST 2016 days.",
+            "sellerName": "OmniTechRetail",
+            "sellerAverageRating": 4.2508473,
+            "sellerNoOfRatings": 295,
+            "sellerNoOfReviews": 13
+        },
+        "categorySpecificInfoV1": {
+            "keySpecs": [
+                "Auto Restart",
+                "Copper Condenser, Rotary Compressor",
+                "Cooling Capacity: 4050 W",
+                "Power Usage: 1065 W"
+            ],
+            "detailedSpecs": [
+                "Auto Restart",
+                "Copper Condenser, Rotary Compressor",
+                "Cooling Capacity: 4050 W",
+                "Power Usage: 1065 W"
+            ],
+            "specificationList": [
+                {
+                    "key": "General",
+                    "values": [
+                        {
+                            "key": "In the Box",
+                            "value": [
+                                "Indoor Unit, Outdoor Unit, Installation Kit, Operation Manual, Remote Control"
+                            ]
+                        },
+                        {
+                            "key": "Brand",
+                            "value": [
+                                "Hitachi"
+                            ]
+                        },
+                        {
+                            "key": "Model Name",
+                            "value": [
+                                "RAU514HWDS"
+                            ]
+                        },
+                        {
+                            "key": "Type",
+                            "value": [
+                                "Split"
+                            ]
+                        },
+                        {
+                            "key": "Capacity in Tons",
+                            "value": [
+                                "1.2 Tons"
+                            ]
+                        },
+                        {
+                            "key": "Star Rating",
+                            "value": [
+                                "5"
+                            ]
+                        },
+                        {
+                            "key": "Color",
+                            "value": [
+                                "Copper"
+                            ]
+                        },
+                        {
+                            "key": "Cooling Capacity",
+                            "value": [
+                                "4050 W"
+                            ]
+                        },
+                        {
+                            "key": "Compressor",
+                            "value": [
+                                "Rotary"
+                            ]
+                        },
+                        {
+                            "key": "Dehumidification",
+                            "value": [
+                                "Yes"
+                            ]
+                        },
+                        {
+                            "key": "Remote Control",
+                            "value": [
+                                "Yes"
+                            ]
+                        },
+                        {
+                            "key": "Condenser Coil",
+                            "value": [
+                                "Copper"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "Dimensions",
+                    "values": [
+                        {
+                            "key": "Indoor W x H x D",
+                            "value": [
+                                "83 cm x 29 cm x 22 cm"
+                            ]
+                        },
+                        {
+                            "key": "Indoor Unit Weight",
+                            "value": [
+                                "10 kg"
+                            ]
+                        },
+                        {
+                            "key": "Outdoor W x H x D",
+                            "value": [
+                                "75 cm x 54.8 cm x 28.8 cm"
+                            ]
+                        },
+                        {
+                            "key": "Outdoor Unit Weight",
+                            "value": [
+                                "38.2 kg"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "Performance Features",
+                    "values": [
+                        {
+                            "key": "EER",
+                            "value": [
+                                "3.8 W/W"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "Air Flow & Filter Features",
+                    "values": [
+                        {
+                            "key": "Air Circulation",
+                            "value": [
+                                "424 CFM"
+                            ]
+                        },
+                        {
+                            "key": "Anti-bacteria Filter",
+                            "value": [
+                                "No"
+                            ]
+                        },
+                        {
+                            "key": "Dust Filter",
+                            "value": [
+                                "No"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "Convenience Features",
+                    "values": [
+                        {
+                            "key": "Auto Restart",
+                            "value": [
+                                "Yes"
+                            ]
+                        },
+                        {
+                            "key": "Additional Features",
+                            "value": [
+                                "Condenser Coil: Copper"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "Power Features",
+                    "values": [
+                        {
+                            "key": "Power Requirement",
+                            "value": [
+                                "AC 230 V, 50 Hz"
+                            ]
+                        },
+                        {
+                            "key": "Power Consumption",
+                            "value": [
+                                "1065 W"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "Services",
+                    "values": [
+                        {
+                            "key": "Installation Details",
+                            "value": [
+                                "<p>Standard installation is provided free of cost.</p><p>After delivery of your Air-conditioner, you will receive a ticket number via message. Post that, you will receive a call from the brand authorized service engineer to schedule a mutually convenient.<p>Split AC:-</p><p>Drilling of hole in Brick wall for taking out the pipes</p><p>Fixing hole sleeve & Cap</p><p>Fixing the Indoor and Outdoor Unit</p><p>Connecting Indoor and Outdoor units using Standard Kit provided by Manufacturer (at an additional cost, unless specified otherwise)</p><p>Wrapping the pipe with seasoning tape</p> <p>Connection to Stabilizer or Power point in the range of Power Cord Provided by Manufacture</p> <p>Temperature/Performance Check & Demo and Maintenance tips filling the details in warranty card</p><p>Not covered in installation:-</p><p>Out Door Unit Stand</p><p>Extra copper wire if any</p><p>Drain Pipe extension if any</p><p>Plumbing and Masonry Work</p><p>Wiring extension from Meter to site, Power point/MCB fitting and any other electrical work,Carpentry work</p><p>Dismantling/Shifting of Old AC's</p><p>Masonry, Core Cutting Fabrication and Electrical</p>"
+                            ]
+                        },
+                        {
+                            "key": "Technician Visit Details",
+                            "value": [
+                                "Authorized Service Engineer will do the following, Repair / change the defective part, Provide replacement to the customer in case part / product not repairable (only after replacement request approved), Repair Services"
+                            ]
+                        },
+                        {
+                            "key": "Uninstallation Details",
+                            "value": [
+                                "In case of returns, Flipkart's team will visit the customers location, Uninstall, Pack, Pick-up the product"
+                            ]
+                        },
+                        {
+                            "key": "Other Included Services",
+                            "value": [
+                                "Two Free Services of AC within Warranty Period on Demand"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "Warranty",
+                    "values": [
+                        {
+                            "key": "Warranty Summary",
+                            "value": [
+                                "1 Year on Complete Unit and 5 Years on Compressor"
+                            ]
+                        },
+                        {
+                            "key": "Covered in Warranty",
+                            "value": [
+                                "Warranty of the Product is Limited to Manufacturing Defects Only."
+                            ]
+                        },
+                        {
+                            "key": "Not Covered in Warranty",
+                            "value": [
+                                "Warranty does not Cover Any External Accessories (such as Battery, Cable, Carrying Bag), Damage Caused to the Product due to Improper Installation by Customer, Normal Wear and Tear to Magnetic Heads, Audio, Video, Laser Pick-ups and TV Picture Tubes, Panel, Damages Caused to the Product by Accident, Lightening, Ingress of Water, Fire, Dropping or Excessive Shock, Any Damage Caused due to Tampering of the Product by an Unauthorised Agent, Liability for Loss of Data, Recorded Images or Business Opportunity Loss."
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "booksInfo": {
+                "language": null,
+                "binding": null,
+                "pages": null,
+                "publisher": null,
+                "year": 0,
+                "authors": []
+            },
+            "lifeStyleInfo": {
+                "sleeve": null,
+                "neck": null,
+                "idealFor": null
+            }
+        }
+    }
+]

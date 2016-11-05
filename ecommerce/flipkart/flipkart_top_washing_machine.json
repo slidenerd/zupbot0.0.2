@@ -1,0 +1,2408 @@
+[
+    {
+        "productBaseInfoV1": {
+            "productId": "WMNEAGGEFX8Q2SFT",
+            "title": "Kelvinator 7.2 kg Semi Automatic Top Load Washing Machine",
+            "productDescription": "",
+            "imageUrls": {
+                "200x200": "http://img.fkcdn.com/image/washing-machine-new/s/f/t/kelvinator-ks7253tr-200x200-imaeasscrxwwfxkz.jpeg",
+                "400x400": "http://img.fkcdn.com/image/washing-machine-new/s/f/t/kelvinator-ks7253tr-400x400-imaeasscrxwwfxkz.jpeg",
+                "800x800": "http://img.fkcdn.com/image/washing-machine-new/s/f/t/kelvinator-ks7253tr-800x800-imaeasscrxwwfxkz.jpeg",
+                "unknown": "http://img.fkcdn.com/image/washing-machine-new/s/f/t/kelvinator-ks7253tr-original-imaeasscrxwwfxkz.jpeg"
+            },
+            "productFamily": [
+                "[WMNEAGGEFX8Q2SFT]"
+            ],
+            "maximumRetailPrice": {
+                "amount": 10990,
+                "currency": "INR"
+            },
+            "flipkartSellingPrice": {
+                "amount": 8790,
+                "currency": "INR"
+            },
+            "flipkartSpecialPrice": {
+                "amount": 8290,
+                "currency": "INR"
+            },
+            "productUrl": "http://dl.flipkart.com/dl/kelvinator-7-2-kg-semi-automatic-top-load-washing-machine/p/itmecybxzyxvscjs?pid=WMNEAGGEFX8Q2SFT&affid=slidenerd",
+            "productBrand": "Kelvinator",
+            "inStock": true,
+            "codAvailable": true,
+            "discountPercentage": 15,
+            "offers": [
+                "Extra Rs.500 Off",
+                "Exchange Offer - Up To Rs.1,500 Off",
+                "10% Instant Discount* with Axis Bank Cards",
+                "10% Instant Discount* with StanChart Cards"
+            ],
+            "categoryPath": "Electronics>Appliances>Home Appliances>Washing Machines & Dryers",
+            "attributes": {
+                "size": "",
+                "color": "Techno Red",
+                "storage": "",
+                "sizeUnit": "",
+                "displaySize": ""
+            }
+        },
+        "productShippingInfoV1": {
+            "shippingCharges": {
+                "amount": 0,
+                "currency": "INR"
+            },
+            "estimatedDeliveryTime": "Usually Delivered in Sat Sep 03 23:59:59 IST 2016 - Sun Sep 04 23:59:59 IST 2016 days.",
+            "sellerName": "OmniTechRetail",
+            "sellerAverageRating": null,
+            "sellerNoOfRatings": 0,
+            "sellerNoOfReviews": 0
+        },
+        "categorySpecificInfoV1": {
+            "keySpecs": [
+                "Semi Automatic Top Load",
+                "Power : 350 W",
+                "Capacity: 7.2 kg | Max Spin Speed: 740 rpm",
+                "Plastic , PP | Multi Pulsator",
+                "2 Wash Programs",
+                "Wheel Support"
+            ],
+            "detailedSpecs": [
+                "Semi Automatic Top Load",
+                "Power : 350 W",
+                "Capacity: 7.2 kg | Max Spin Speed: 740 rpm",
+                "Plastic , PP | Multi Pulsator",
+                "2 Wash Programs",
+                "Wheel Support"
+            ],
+            "specificationList": [
+                {
+                    "key": "General",
+                    "values": [
+                        {
+                            "key": "In the Box",
+                            "value": [
+                                "1 Washing Machine, Inlet Pipe, Drain Pipe, User Manual"
+                            ]
+                        },
+                        {
+                            "key": "Brand",
+                            "value": [
+                                "Kelvinator"
+                            ]
+                        },
+                        {
+                            "key": "Model Name",
+                            "value": [
+                                "KS7253TR"
+                            ]
+                        },
+                        {
+                            "key": "Type",
+                            "value": [
+                                "Washing Machine"
+                            ]
+                        },
+                        {
+                            "key": "Function Type",
+                            "value": [
+                                "Semi Automatic Top Load"
+                            ]
+                        },
+                        {
+                            "key": "Washing Capacity",
+                            "value": [
+                                "7.2 kg"
+                            ]
+                        },
+                        {
+                            "key": "Washing Method",
+                            "value": [
+                                "Multi Pulsator"
+                            ]
+                        },
+                        {
+                            "key": "Maximum Spin Speed",
+                            "value": [
+                                "740 rpm"
+                            ]
+                        },
+                        {
+                            "key": "In-built Heater",
+                            "value": [
+                                "No"
+                            ]
+                        },
+                        {
+                            "key": "Dryer Type",
+                            "value": [
+                                "Spin Dry"
+                            ]
+                        },
+                        {
+                            "key": "Dryer Capacity",
+                            "value": [
+                                "4.5 Kg"
+                            ]
+                        },
+                        {
+                            "key": "Maximum Temperature",
+                            "value": [
+                                "50 degree C"
+                            ]
+                        },
+                        {
+                            "key": "Water Level Selector",
+                            "value": [
+                                "No"
+                            ]
+                        },
+                        {
+                            "key": "Water Level Settings",
+                            "value": [
+                                "4"
+                            ]
+                        },
+                        {
+                            "key": "Water Consumption",
+                            "value": [
+                                "60 L"
+                            ]
+                        },
+                        {
+                            "key": "Wash Cycle Duration",
+                            "value": [
+                                "15 min"
+                            ]
+                        },
+                        {
+                            "key": "Spin Cycle Duration",
+                            "value": [
+                                "5 min"
+                            ]
+                        },
+                        {
+                            "key": "Shade",
+                            "value": [
+                                "Techno Red"
+                            ]
+                        },
+                        {
+                            "key": "Technology Used",
+                            "value": [
+                                "Impeller Wash Technalogy"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "Installation & Demo",
+                    "values": [
+                        {
+                            "key": "Installation & Demo",
+                            "value": [
+                                "This product does not require installation. The features of the product are presented in the user manual that comes with it. Hence, the manufacturer does not provide on-site installation or demo for the product. In case of any queries about the installation or the features of product, kindly call us at 1800 208 9898 or (080) 49400000 for assistance."
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "Warranty",
+                    "values": [
+                        {
+                            "key": "Warranty Summary",
+                            "value": [
+                                "1 Year Product Warranty from Kelvinator"
+                            ]
+                        },
+                        {
+                            "key": "Covered in Warranty",
+                            "value": [
+                                "All Parts excluding Outer Cabinet and Plastic Parts from the Date of Purchase will be Covered under Warranty. This also covers all Manufacturing Defects."
+                            ]
+                        },
+                        {
+                            "key": "Not Covered in Warranty",
+                            "value": [
+                                "Parts: Outer cabinet and plastic parts. Any accessories external to the product. The product is not used according to the instructions given in the instructions manual. Defects caused by improper use as determined by the company personnel. Modification or alteration of any nature made in the electrical circuitry/ or physical construction of the set. Site (where the premises is kept) conditions that do not confirm to the recommended operating conditions of the machine. The serial number is removed, altered or obliterated from the machine. Defects due to cause beyond control like lightning, abnormal voltage, acts of God or while in transit to the service center's or purchaser's residence."
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "Wash Modes",
+                    "values": [
+                        {
+                            "key": "Wash Program Types",
+                            "value": [
+                                "2 - Gentle, Heavy"
+                            ]
+                        },
+                        {
+                            "key": "Fuzzy Logic",
+                            "value": [
+                                "No"
+                            ]
+                        },
+                        {
+                            "key": "Hot Wash",
+                            "value": [
+                                "No"
+                            ]
+                        },
+                        {
+                            "key": "Pre-wash Soak",
+                            "value": [
+                                "Yes"
+                            ]
+                        },
+                        {
+                            "key": "Quick Wash",
+                            "value": [
+                                "No"
+                            ]
+                        },
+                        {
+                            "key": "Spin Only",
+                            "value": [
+                                "Yes"
+                            ]
+                        },
+                        {
+                            "key": "Spin & Rinse",
+                            "value": [
+                                "Yes"
+                            ]
+                        },
+                        {
+                            "key": "Other Wash Modes",
+                            "value": [
+                                "Gentle, Heavy"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "Body Features",
+                    "values": [
+                        {
+                            "key": "Outer Body Material",
+                            "value": [
+                                "ABS and PP"
+                            ]
+                        },
+                        {
+                            "key": "Tub Material",
+                            "value": [
+                                "Plastic , PP"
+                            ]
+                        },
+                        {
+                            "key": "Transparent Window Display",
+                            "value": [
+                                "Yes"
+                            ]
+                        },
+                        {
+                            "key": "Wheel Support",
+                            "value": [
+                                "Yes"
+                            ]
+                        },
+                        {
+                            "key": "Other Body Features",
+                            "value": [
+                                "Rust Free plastic Body, Spin Shower"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "Convenience Features",
+                    "values": [
+                        {
+                            "key": "Digital Display",
+                            "value": [
+                                "No"
+                            ]
+                        },
+                        {
+                            "key": "Tub Self-clean",
+                            "value": [
+                                "No"
+                            ]
+                        },
+                        {
+                            "key": "Display Features",
+                            "value": [
+                                "No"
+                            ]
+                        },
+                        {
+                            "key": "Preset Timer",
+                            "value": [
+                                "No"
+                            ]
+                        },
+                        {
+                            "key": "Wrinkle Prevention",
+                            "value": [
+                                "No"
+                            ]
+                        },
+                        {
+                            "key": "Lint Filter",
+                            "value": [
+                                "No"
+                            ]
+                        },
+                        {
+                            "key": "Memory Backup",
+                            "value": [
+                                "No"
+                            ]
+                        },
+                        {
+                            "key": "Other Convenience Features",
+                            "value": [
+                                "Detergent Tray"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "Power Features",
+                    "values": [
+                        {
+                            "key": "Power Consumption",
+                            "value": [
+                                "350 W"
+                            ]
+                        },
+                        {
+                            "key": "Power Requirement",
+                            "value": [
+                                "230 V,50 Hz"
+                            ]
+                        },
+                        {
+                            "key": "Wash Motor Rating",
+                            "value": [
+                                "125 W"
+                            ]
+                        },
+                        {
+                            "key": "Spin Motor Rating",
+                            "value": [
+                                "45 W"
+                            ]
+                        },
+                        {
+                            "key": "Operating Current",
+                            "value": [
+                                "2 A"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "Additional Features",
+                    "values": [
+                        {
+                            "key": "Noise Level Wash",
+                            "value": [
+                                "60 db"
+                            ]
+                        },
+                        {
+                            "key": "Noise Level Spin",
+                            "value": [
+                                "60 db"
+                            ]
+                        },
+                        {
+                            "key": "Child Lock",
+                            "value": [
+                                "No"
+                            ]
+                        },
+                        {
+                            "key": "Shock Proof",
+                            "value": [
+                                "Yes"
+                            ]
+                        },
+                        {
+                            "key": "Door Lock",
+                            "value": [
+                                "No"
+                            ]
+                        },
+                        {
+                            "key": "Auto Power Off",
+                            "value": [
+                                "No"
+                            ]
+                        },
+                        {
+                            "key": "Other Features",
+                            "value": [
+                                "Wash Timer, Wash Selector, Drain Selector, Spin Timer, Buzzer, Wash Tub, Spin Tub"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "Dimensions",
+                    "values": [
+                        {
+                            "key": "Width",
+                            "value": [
+                                "48 cm"
+                            ]
+                        },
+                        {
+                            "key": "Height",
+                            "value": [
+                                "97 cm"
+                            ]
+                        },
+                        {
+                            "key": "Depth",
+                            "value": [
+                                "79 cm"
+                            ]
+                        },
+                        {
+                            "key": "Cord Length",
+                            "value": [
+                                "1.7 m"
+                            ]
+                        },
+                        {
+                            "key": "Weight",
+                            "value": [
+                                "23 kg"
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "booksInfo": {
+                "language": null,
+                "binding": null,
+                "pages": null,
+                "publisher": null,
+                "year": 0,
+                "authors": []
+            },
+            "lifeStyleInfo": {
+                "sleeve": null,
+                "neck": null,
+                "idealFor": null
+            }
+        }
+    },
+    {
+        "productBaseInfoV1": {
+            "productId": "WMNEARNYPXG3YXVW",
+            "title": "Godrej 5.8 kg Fully Automatic Top Load Washing Machine",
+            "productDescription": "Invest in this Godrej fully automatic washing machine to enjoy hassle-free and enjoyable laundry days. It’s a top loading model with a maximum wash load capacity of 5.8kg that you can use to wash lot of clothes at once. It comes with Pulsator technology and a host of wash programmes that ensure you have an efficient and thorough cleaning performance every time.",
+            "imageUrls": {
+                "200x200": "http://img.fkcdn.com/image/washing-machine-new/x/v/w/godrej-gwf-580-a-200x200-imaebyrfx8rfekgq.jpeg",
+                "400x400": "http://img.fkcdn.com/image/washing-machine-new/x/v/w/godrej-gwf-580-a-400x400-imaebyrfx8rfekgq.jpeg",
+                "800x800": "http://img.fkcdn.com/image/washing-machine-new/x/v/w/godrej-gwf-580-a-800x800-imaebyrfx8rfekgq.jpeg",
+                "unknown": "http://img.fkcdn.com/image/washing-machine-new/x/v/w/godrej-gwf-580-a-original-imaebyrfx8rfekgq.jpeg"
+            },
+            "productFamily": [
+                "[WMNEARNYPXG3YXVW]"
+            ],
+            "maximumRetailPrice": {
+                "amount": 13200,
+                "currency": "INR"
+            },
+            "flipkartSellingPrice": {
+                "amount": 11290,
+                "currency": "INR"
+            },
+            "flipkartSpecialPrice": {
+                "amount": 10489,
+                "currency": "INR"
+            },
+            "productUrl": "http://dl.flipkart.com/dl/godrej-5-8-kg-fully-automatic-top-load-washing-machine/p/itmearnfvfwfkxvq?pid=WMNEARNYPXG3YXVW&affid=slidenerd",
+            "productBrand": "Godrej",
+            "inStock": true,
+            "codAvailable": true,
+            "discountPercentage": 12,
+            "offers": [
+                "Diwali Bumper Offer - 20th - 30th Oct 2016",
+                "Extra Rs.800 off",
+                "Extra 15% Cashback* with Citi Cards",
+                "Exchange Offer - Up To Rs.2,000 Off"
+            ],
+            "categoryPath": "Electronics>Appliances>Home Appliances>Washing Machines & Dryers",
+            "attributes": {
+                "size": "",
+                "color": "Graphite Grey",
+                "storage": "",
+                "sizeUnit": "",
+                "displaySize": ""
+            }
+        },
+        "productShippingInfoV1": {
+            "shippingCharges": {
+                "amount": 0,
+                "currency": "INR"
+            },
+            "estimatedDeliveryTime": "Usually Delivered in Thu Sep 08 23:59:59 IST 2016 - Fri Sep 09 23:59:59 IST 2016 days.",
+            "sellerName": "OmniTechRetail",
+            "sellerAverageRating": 4.1910114,
+            "sellerNoOfRatings": 356,
+            "sellerNoOfReviews": 13
+        },
+        "categorySpecificInfoV1": {
+            "keySpecs": [
+                "Fully Automatic Top Load",
+                "Power : 425 W",
+                "Capacity: 5.8 kg | Max Spin Speed: 700 rpm",
+                "Pulsator"
+            ],
+            "detailedSpecs": [
+                "Fully Automatic Top Load",
+                "Power : 425 W",
+                "Capacity: 5.8 kg | Max Spin Speed: 700 rpm",
+                "Pulsator"
+            ],
+            "specificationList": [
+                {
+                    "key": "General",
+                    "values": [
+                        {
+                            "key": "In the Box",
+                            "value": [
+                                "1 Washing Machine, User Manual, Drain Hose, Water Inlet Pipe, Rat Mesh"
+                            ]
+                        },
+                        {
+                            "key": "Brand",
+                            "value": [
+                                "Godrej"
+                            ]
+                        },
+                        {
+                            "key": "Model Name",
+                            "value": [
+                                "GWF 580 A"
+                            ]
+                        },
+                        {
+                            "key": "Type",
+                            "value": [
+                                "Washing Machine"
+                            ]
+                        },
+                        {
+                            "key": "Function Type",
+                            "value": [
+                                "Fully Automatic Top Load"
+                            ]
+                        },
+                        {
+                            "key": "Washing Capacity",
+                            "value": [
+                                "5.8 kg"
+                            ]
+                        },
+                        {
+                            "key": "Washing Method",
+                            "value": [
+                                "Pulsator"
+                            ]
+                        },
+                        {
+                            "key": "Maximum Spin Speed",
+                            "value": [
+                                "700 rpm"
+                            ]
+                        },
+                        {
+                            "key": "In-built Heater",
+                            "value": [
+                                "No"
+                            ]
+                        },
+                        {
+                            "key": "Shade",
+                            "value": [
+                                "Graphite Grey"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "Installation & Demo",
+                    "values": [
+                        {
+                            "key": "Installation & Demo",
+                            "value": [
+                                "Standard installation and demo is provided free of cost. After delivery of your Washing Machine, you will receive a ticket number via message. Post that, you will receive a call from the authorized service engineer to schedule a mutually convenient time to provide demo and installation at your doorstep. The installation and demo is usually done within 2 Business Days of delivery of your Washing Machine. Kindly contact us on 1800 208 9898 for any further queries."
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "Warranty",
+                    "values": [
+                        {
+                            "key": "Warranty Summary",
+                            "value": [
+                                "2 Years Comprehensive Warranty from Godrej"
+                            ]
+                        },
+                        {
+                            "key": "Covered in Warranty",
+                            "value": [
+                                "All Parts excluding Outer Cabinet and Plastic Parts from the Date of Purchase will be Covered under Warranty. This also covers all Manufacturing Defects."
+                            ]
+                        },
+                        {
+                            "key": "Not Covered in Warranty",
+                            "value": [
+                                "Parts: Outer cabinet and plastic parts. Any accessories external to the product. The product is not used according to the instructions given in the instructions manual. Defects caused by improper use as determined by the company personnel. Modification or alteration of any nature made in the electrical circuitry/ or physical construction of the set. Site (where the premises is kept) conditions that do not confirm to the recommended operating conditions of the machine. The serial number is removed, altered or obliterated from the machine. Defects due to cause beyond control like lightning, abnormal voltage, acts of God or while in transit to the service center's or purchaser's residence."
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "Convenience Features",
+                    "values": [
+                        {
+                            "key": "Digital Display",
+                            "value": [
+                                "No"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "Power Features",
+                    "values": [
+                        {
+                            "key": "Power Consumption",
+                            "value": [
+                                "425 W"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "Dimensions",
+                    "values": [
+                        {
+                            "key": "Width",
+                            "value": [
+                                "56 cm"
+                            ]
+                        },
+                        {
+                            "key": "Height",
+                            "value": [
+                                "90.4 cm"
+                            ]
+                        },
+                        {
+                            "key": "Depth",
+                            "value": [
+                                "55.5 cm"
+                            ]
+                        },
+                        {
+                            "key": "Weight",
+                            "value": [
+                                "29.5 kg"
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "booksInfo": {
+                "language": null,
+                "binding": null,
+                "pages": null,
+                "publisher": null,
+                "year": 0,
+                "authors": []
+            },
+            "lifeStyleInfo": {
+                "sleeve": null,
+                "neck": null,
+                "idealFor": null
+            }
+        }
+    },
+    {
+        "productBaseInfoV1": {
+            "productId": "WMNDYXX2A98WJG8C",
+            "title": "Whirlpool 6.5 kg Semi Automatic Top Load Washing Machine",
+            "productDescription": "",
+            "imageUrls": {
+                "200x200": "http://img.fkcdn.com/image/washing-machine-new/g/8/c/whirlpool-superwash-i-65-200x200-imaebyk4bcghcsgf.jpeg",
+                "400x400": "http://img.fkcdn.com/image/washing-machine-new/g/8/c/whirlpool-superwash-i-65-400x400-imaebyk4bcghcsgf.jpeg",
+                "800x800": "http://img.fkcdn.com/image/washing-machine-new/g/8/c/whirlpool-superwash-i-65-800x800-imaebyk4bcghcsgf.jpeg",
+                "unknown": "http://img.fkcdn.com/image/washing-machine-new/g/8/c/whirlpool-superwash-i-65-original-imaebyk4bcghcsgf.jpeg"
+            },
+            "productFamily": [
+                "[WMNDYXX2A98WJG8C]"
+            ],
+            "maximumRetailPrice": {
+                "amount": 11000,
+                "currency": "INR"
+            },
+            "flipkartSellingPrice": {
+                "amount": 9290,
+                "currency": "INR"
+            },
+            "flipkartSpecialPrice": {
+                "amount": 8490,
+                "currency": "INR"
+            },
+            "productUrl": "http://dl.flipkart.com/dl/whirlpool-6-5-kg-semi-automatic-top-load-washing-machine/p/itmdyyvp7vd69vu5?pid=WMNDYXX2A98WJG8C&affid=slidenerd",
+            "productBrand": "Whirlpool",
+            "inStock": true,
+            "codAvailable": true,
+            "discountPercentage": 15,
+            "offers": [
+                "Extra Rs.800 off",
+                "10% Instant Discount* with Axis Bank Cards",
+                "Exchange Offer - Up To Rs.2,000 Off",
+                "10% Instant Discount* with StanChart Cards"
+            ],
+            "categoryPath": "Electronics>Appliances>Home Appliances>Washing Machines & Dryers",
+            "attributes": {
+                "size": "",
+                "color": "Red",
+                "storage": "",
+                "sizeUnit": "",
+                "displaySize": ""
+            }
+        },
+        "productShippingInfoV1": {
+            "shippingCharges": {
+                "amount": 0,
+                "currency": "INR"
+            },
+            "estimatedDeliveryTime": "Usually Delivered in Thu Sep 08 23:59:59 IST 2016 - Fri Sep 09 23:59:59 IST 2016 days.",
+            "sellerName": "OmniTechRetail",
+            "sellerAverageRating": 4.1910114,
+            "sellerNoOfRatings": 356,
+            "sellerNoOfReviews": 13
+        },
+        "categorySpecificInfoV1": {
+            "keySpecs": [
+                "Semi Automatic Top Load",
+                "Power : 340 W",
+                "Capacity: 6.5 kg | Max Spin Speed: 1400 rpm",
+                "Plastic | Impeller",
+                "2 Wash Programs",
+                "Wheel Support | Lint Filter Supported"
+            ],
+            "detailedSpecs": [
+                "Semi Automatic Top Load",
+                "Power : 340 W",
+                "Capacity: 6.5 kg | Max Spin Speed: 1400 rpm",
+                "Plastic | Impeller",
+                "2 Wash Programs",
+                "Wheel Support | Lint Filter Supported"
+            ],
+            "specificationList": [
+                {
+                    "key": "General",
+                    "values": [
+                        {
+                            "key": "In the Box",
+                            "value": [
+                                "Inlet Pipe, Drain Pipe, 1 Washing Machine"
+                            ]
+                        },
+                        {
+                            "key": "Brand",
+                            "value": [
+                                "Whirlpool"
+                            ]
+                        },
+                        {
+                            "key": "Model Name",
+                            "value": [
+                                "SUPERWASH I-65"
+                            ]
+                        },
+                        {
+                            "key": "Type",
+                            "value": [
+                                "Washing Machine"
+                            ]
+                        },
+                        {
+                            "key": "Function Type",
+                            "value": [
+                                "Semi Automatic Top Load"
+                            ]
+                        },
+                        {
+                            "key": "Washing Capacity",
+                            "value": [
+                                "6.5 kg"
+                            ]
+                        },
+                        {
+                            "key": "Washing Method",
+                            "value": [
+                                "Impeller"
+                            ]
+                        },
+                        {
+                            "key": "Maximum Spin Speed",
+                            "value": [
+                                "1400 rpm"
+                            ]
+                        },
+                        {
+                            "key": "In-built Heater",
+                            "value": [
+                                "No"
+                            ]
+                        },
+                        {
+                            "key": "Wash Cycle Duration",
+                            "value": [
+                                "15 min"
+                            ]
+                        },
+                        {
+                            "key": "Spin Cycle Duration",
+                            "value": [
+                                "5 min"
+                            ]
+                        },
+                        {
+                            "key": "Shade",
+                            "value": [
+                                "Red"
+                            ]
+                        },
+                        {
+                            "key": "Technology Used",
+                            "value": [
+                                "Dmax Technology"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "Installation & Demo",
+                    "values": [
+                        {
+                            "key": "Installation & Demo",
+                            "value": [
+                                "This product does not require installation. The features of the product are presented in the user manual that comes with it. Hence, the manufacturer does not provide on-site installation or demo for the product. In case of any queries about the installation or the features of product, kindly call us at 1800 208 9898 or (080) 49400000 for assistance."
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "Warranty",
+                    "values": [
+                        {
+                            "key": "Warranty Summary",
+                            "value": [
+                                "1 Year Comprehensive Warranty and 2 Years on Motor"
+                            ]
+                        },
+                        {
+                            "key": "Covered in Warranty",
+                            "value": [
+                                "All Parts Excluding Outer Cabinet and Plastic Parts from the Date of Purchase will be Covered under Warranty, This also Covers All Manufacturing Defects"
+                            ]
+                        },
+                        {
+                            "key": "Not Covered in Warranty",
+                            "value": [
+                                "Parts: Outer Cabinet and Plastic Parts, Any Accessories External to the Product, The Product is not Used According to the Instructions Given in the Instructions Manual, Defects Caused by Improper Use as Determined by the Company Personnel, Modification or Alteration of Any Nature Made in the Electrical Circuitry / or Physical Construction of the Set, Site (Where the Premises is Kept) Conditions that do not Confirm to the Recommended Operating Conditions of the Machine, The Serial Number is Removed, Altered or Obliterated from the Machine, Defects Due to Cause Beyond Control Like Lightning, Abnormal Voltage, Acts of God or While in Transit to the Service Centers or Purchasers Residence"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "Wash Modes",
+                    "values": [
+                        {
+                            "key": "Wash Program Types",
+                            "value": [
+                                "2 - Normal, Heavy"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "Body Features",
+                    "values": [
+                        {
+                            "key": "Outer Body Material",
+                            "value": [
+                                "Metal"
+                            ]
+                        },
+                        {
+                            "key": "Tub Material",
+                            "value": [
+                                "Plastic"
+                            ]
+                        },
+                        {
+                            "key": "Wheel Support",
+                            "value": [
+                                "Yes"
+                            ]
+                        },
+                        {
+                            "key": "Other Body Features",
+                            "value": [
+                                "Transparent Spin Window"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "Convenience Features",
+                    "values": [
+                        {
+                            "key": "Digital Display",
+                            "value": [
+                                "No"
+                            ]
+                        },
+                        {
+                            "key": "Lint Filter",
+                            "value": [
+                                "Yes"
+                            ]
+                        },
+                        {
+                            "key": "Other Convenience Features",
+                            "value": [
+                                "In-built Scrubber, Spin Shower"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "Power Features",
+                    "values": [
+                        {
+                            "key": "Power Consumption",
+                            "value": [
+                                "340 W"
+                            ]
+                        },
+                        {
+                            "key": "Wash Motor Rating",
+                            "value": [
+                                "340 W"
+                            ]
+                        },
+                        {
+                            "key": "Spin Motor Rating",
+                            "value": [
+                                "150 W"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "Additional Features",
+                    "values": [
+                        {
+                            "key": "Other Features",
+                            "value": [
+                                "Stain Wash, Dynamic Soak, Easy to Use Control Panel"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "Dimensions",
+                    "values": [
+                        {
+                            "key": "Width",
+                            "value": [
+                                "45 cm"
+                            ]
+                        },
+                        {
+                            "key": "Height",
+                            "value": [
+                                "92 cm"
+                            ]
+                        },
+                        {
+                            "key": "Depth",
+                            "value": [
+                                "75 cm"
+                            ]
+                        },
+                        {
+                            "key": "Weight",
+                            "value": [
+                                "26.5 kg"
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "booksInfo": {
+                "language": null,
+                "binding": null,
+                "pages": null,
+                "publisher": null,
+                "year": 0,
+                "authors": []
+            },
+            "lifeStyleInfo": {
+                "sleeve": null,
+                "neck": null,
+                "idealFor": null
+            }
+        }
+    },
+    {
+        "productBaseInfoV1": {
+            "productId": "WMNEHF4CD6VBZJQS",
+            "title": "BPL 7.2 kg Semi Automatic Top Load Washing Machine",
+            "productDescription": "",
+            "imageUrls": {
+                "200x200": "http://img.fkcdn.com/image/washing-machine-new/j/q/s/bpl-bsatl72n1-200x200-imaehwjvdgxeybrr.jpeg",
+                "400x400": "http://img.fkcdn.com/image/washing-machine-new/j/q/s/bpl-bsatl72n1-400x400-imaehwjvdgxeybrr.jpeg",
+                "800x800": "http://img.fkcdn.com/image/washing-machine-new/j/q/s/bpl-bsatl72n1-800x800-imaehwjvdgxeybrr.jpeg",
+                "unknown": "http://img.fkcdn.com/image/washing-machine-new/j/q/s/bpl-bsatl72n1-original-imaehwjvdgxeybrr.jpeg"
+            },
+            "productFamily": [
+                "[WMNEHF4CD6VBZJQS]"
+            ],
+            "maximumRetailPrice": {
+                "amount": 10490,
+                "currency": "INR"
+            },
+            "flipkartSellingPrice": {
+                "amount": 8990,
+                "currency": "INR"
+            },
+            "flipkartSpecialPrice": {
+                "amount": 8490,
+                "currency": "INR"
+            },
+            "productUrl": "http://dl.flipkart.com/dl/bpl-7-2-kg-semi-automatic-top-load-washing-machine/p/itmehf4csayemfxh?pid=WMNEHF4CD6VBZJQS&affid=slidenerd",
+            "productBrand": "BPL",
+            "inStock": true,
+            "codAvailable": true,
+            "discountPercentage": 14,
+            "offers": [
+                "Extra Rs.500 off",
+                "Exchange Offer - Up To Rs.1,500 Off",
+                "10% Instant Discount* with Axis Bank Cards",
+                "10% Instant Discount* with StanChart Cards"
+            ],
+            "categoryPath": "Electronics>Appliances>Home Appliances>Washing Machines & Dryers",
+            "attributes": {
+                "size": "",
+                "color": "Maroon",
+                "storage": "",
+                "sizeUnit": "",
+                "displaySize": ""
+            }
+        },
+        "productShippingInfoV1": {
+            "shippingCharges": {
+                "amount": 0,
+                "currency": "INR"
+            },
+            "estimatedDeliveryTime": "Usually Delivered in Fri Sep 09 23:59:59 IST 2016 - Sat Sep 10 23:59:59 IST 2016 days.",
+            "sellerName": "OmniTechRetail",
+            "sellerAverageRating": 4.1910114,
+            "sellerNoOfRatings": 356,
+            "sellerNoOfReviews": 13
+        },
+        "categorySpecificInfoV1": {
+            "keySpecs": [
+                "Semi Automatic Top Load",
+                "Power : 340 W",
+                "Capacity: 7.2 kg | Max Spin Speed: 1300 rpm",
+                "Pulsator"
+            ],
+            "detailedSpecs": [
+                "Semi Automatic Top Load",
+                "Power : 340 W",
+                "Capacity: 7.2 kg | Max Spin Speed: 1300 rpm",
+                "Pulsator"
+            ],
+            "specificationList": [
+                {
+                    "key": "General",
+                    "values": [
+                        {
+                            "key": "In the Box",
+                            "value": [
+                                "1 Washing Machine, Inlet Pipe and Drain Pipe"
+                            ]
+                        },
+                        {
+                            "key": "Brand",
+                            "value": [
+                                "BPL"
+                            ]
+                        },
+                        {
+                            "key": "Model Name",
+                            "value": [
+                                "BSATL72N1"
+                            ]
+                        },
+                        {
+                            "key": "Type",
+                            "value": [
+                                "Washing Machine"
+                            ]
+                        },
+                        {
+                            "key": "Function Type",
+                            "value": [
+                                "Semi Automatic Top Load"
+                            ]
+                        },
+                        {
+                            "key": "Washing Capacity",
+                            "value": [
+                                "7.2 kg"
+                            ]
+                        },
+                        {
+                            "key": "Washing Method",
+                            "value": [
+                                "Pulsator"
+                            ]
+                        },
+                        {
+                            "key": "Maximum Spin Speed",
+                            "value": [
+                                "1300 rpm"
+                            ]
+                        },
+                        {
+                            "key": "In-built Heater",
+                            "value": [
+                                "No"
+                            ]
+                        },
+                        {
+                            "key": "Shade",
+                            "value": [
+                                "Maroon"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "Installation & Demo",
+                    "values": [
+                        {
+                            "key": "Installation & Demo",
+                            "value": [
+                                "This product does not require installation. The features of the product are presented in the user manual that comes with it. Hence, the manufacturer does not provide on-site installation or demo for the product. In case of any queries about the installation or the features of product, kindly call us at 1800 208 9898 or (080) 49400000 for assistance."
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "Warranty",
+                    "values": [
+                        {
+                            "key": "Warranty Summary",
+                            "value": [
+                                "1 Years Comprehensive Product Warranty"
+                            ]
+                        },
+                        {
+                            "key": "Covered in Warranty",
+                            "value": [
+                                "All Parts Excluding Outer Cabinet and Plastic Parts from the Date of Purchase will be Covered under Warranty, This also Covers All Manufacturing Defects"
+                            ]
+                        },
+                        {
+                            "key": "Not Covered in Warranty",
+                            "value": [
+                                "Parts: Outer Cabinet and Plastic Parts, Any Accessories External to the Product, The Product is not Used According to the Instructions Given in the Instructions Manual, Defects Caused by Improper Use as Determined by the Company Personnel, Modification or Alteration of Any Nature Made in the Electrical Circuitry / or Physical Construction of the Set, Site (Where the Premises is Kept) Conditions that do not Confirm to the Recommended Operating Conditions of the Machine, The Serial Number is Removed, Altered or Obliterated from the Machine, Defects Due to Cause Beyond Control Like Lightning, Abnormal Voltage, Acts of God or While in Transit to the Service Centers or Purchasers Residence"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "Wash Modes",
+                    "values": [
+                        {
+                            "key": "Pre-wash Soak",
+                            "value": [
+                                "Yes"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "Body Features",
+                    "values": [
+                        {
+                            "key": "Transparent Window Display",
+                            "value": [
+                                "Yes"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "Convenience Features",
+                    "values": [
+                        {
+                            "key": "Digital Display",
+                            "value": [
+                                "No"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "Power Features",
+                    "values": [
+                        {
+                            "key": "Power Consumption",
+                            "value": [
+                                "340 W"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "Additional Features",
+                    "values": [
+                        {
+                            "key": "Other Features",
+                            "value": [
+                                "Spin Shower, Air Drier, Bidirectional Hose"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "Dimensions",
+                    "values": [
+                        {
+                            "key": "Width",
+                            "value": [
+                                "78.5 cm"
+                            ]
+                        },
+                        {
+                            "key": "Height",
+                            "value": [
+                                "93 cm"
+                            ]
+                        },
+                        {
+                            "key": "Depth",
+                            "value": [
+                                "44.5 cm"
+                            ]
+                        },
+                        {
+                            "key": "Weight",
+                            "value": [
+                                "23.5 kg"
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "booksInfo": {
+                "language": null,
+                "binding": null,
+                "pages": null,
+                "publisher": null,
+                "year": 0,
+                "authors": []
+            },
+            "lifeStyleInfo": {
+                "sleeve": null,
+                "neck": null,
+                "idealFor": null
+            }
+        }
+    },
+    {
+        "productBaseInfoV1": {
+            "productId": "WMNEJJ78THXTTUG7",
+            "title": "Midea 8 kg Semi Automatic Top Load Washing Machine",
+            "productDescription": "",
+            "imageUrls": {
+                "200x200": "http://img.fkcdn.com/image/washing-machine-new/u/g/7/midea-mwmsa080015-200x200-imaekbzxtfep2uzv.jpeg",
+                "400x400": "http://img.fkcdn.com/image/washing-machine-new/u/g/7/midea-mwmsa080015-400x400-imaekbzxtfep2uzv.jpeg",
+                "800x800": "http://img.fkcdn.com/image/washing-machine-new/u/g/7/midea-mwmsa080015-800x800-imaekbzxtfep2uzv.jpeg",
+                "unknown": "http://img.fkcdn.com/image/washing-machine-new/u/g/7/midea-mwmsa080015-original-imaekbzxtfep2uzv.jpeg"
+            },
+            "productFamily": [
+                "[WMNEJJ78THXTTUG7]"
+            ],
+            "maximumRetailPrice": {
+                "amount": 13490,
+                "currency": "INR"
+            },
+            "flipkartSellingPrice": {
+                "amount": 11490,
+                "currency": "INR"
+            },
+            "flipkartSpecialPrice": {
+                "amount": 9990,
+                "currency": "INR"
+            },
+            "productUrl": "http://dl.flipkart.com/dl/midea-8-kg-semi-automatic-top-load-washing-machine/p/itmejj78kjfwhywv?pid=WMNEJJ78THXTTUG7&affid=slidenerd",
+            "productBrand": "Midea",
+            "inStock": true,
+            "codAvailable": true,
+            "discountPercentage": 24,
+            "offers": [
+                "Extra Rs.1,500 Off",
+                "Exchange Offer - Up To Rs.1,500 Off",
+                "10% Instant Discount* with Axis Bank Cards",
+                "10% Instant Discount* with StanChart Cards"
+            ],
+            "categoryPath": "Electronics>Appliances>Home Appliances>Washing Machines & Dryers",
+            "attributes": {
+                "size": "",
+                "color": "Dark Grey",
+                "storage": "",
+                "sizeUnit": "",
+                "displaySize": ""
+            }
+        },
+        "productShippingInfoV1": {
+            "shippingCharges": {
+                "amount": 0,
+                "currency": "INR"
+            },
+            "estimatedDeliveryTime": "Usually Delivered in Sat Sep 03 23:59:59 IST 2016 - Sun Sep 04 23:59:59 IST 2016 days.",
+            "sellerName": "OmniTechRetail",
+            "sellerAverageRating": null,
+            "sellerNoOfRatings": 0,
+            "sellerNoOfReviews": 0
+        },
+        "categorySpecificInfoV1": {
+            "keySpecs": [
+                "Semi Automatic Top Load",
+                "Power : 400 W",
+                "Capacity: 8 kg | Max Spin Speed: 980 rpm",
+                "Pulsator",
+                "3 Wash Programs",
+                "Wheel Support | Lint Filter Supported"
+            ],
+            "detailedSpecs": [
+                "Semi Automatic Top Load",
+                "Power : 400 W",
+                "Capacity: 8 kg | Max Spin Speed: 980 rpm",
+                "Pulsator",
+                "3 Wash Programs",
+                "Wheel Support | Lint Filter Supported"
+            ],
+            "specificationList": [
+                {
+                    "key": "General",
+                    "values": [
+                        {
+                            "key": "In the Box",
+                            "value": [
+                                "1 Washing Machine, User Manual, Inlet Pipe, Outlet Pipe"
+                            ]
+                        },
+                        {
+                            "key": "Brand",
+                            "value": [
+                                "Midea"
+                            ]
+                        },
+                        {
+                            "key": "Model Name",
+                            "value": [
+                                "MWMSA080015"
+                            ]
+                        },
+                        {
+                            "key": "Type",
+                            "value": [
+                                "Washing Machine"
+                            ]
+                        },
+                        {
+                            "key": "Function Type",
+                            "value": [
+                                "Semi Automatic Top Load"
+                            ]
+                        },
+                        {
+                            "key": "Washing Capacity",
+                            "value": [
+                                "8 kg"
+                            ]
+                        },
+                        {
+                            "key": "Washing Method",
+                            "value": [
+                                "Pulsator"
+                            ]
+                        },
+                        {
+                            "key": "Maximum Spin Speed",
+                            "value": [
+                                "980 rpm"
+                            ]
+                        },
+                        {
+                            "key": "In-built Heater",
+                            "value": [
+                                "No"
+                            ]
+                        },
+                        {
+                            "key": "Wash Cycle Duration",
+                            "value": [
+                                "15 min"
+                            ]
+                        },
+                        {
+                            "key": "Spin Cycle Duration",
+                            "value": [
+                                "5 min"
+                            ]
+                        },
+                        {
+                            "key": "Shade",
+                            "value": [
+                                "Dark Grey"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "Installation & Demo",
+                    "values": [
+                        {
+                            "key": "Installation & Demo",
+                            "value": [
+                                "This product does not require installation. The features of the product are presented in the user manual that comes with it. Hence, the manufacturer does not provide on-site installation or demo for the product. In case of any queries about the installation or the features of product, kindly call us at 1800 208 9898 or (080) 49400000 for assistance."
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "Warranty",
+                    "values": [
+                        {
+                            "key": "Warranty Summary",
+                            "value": [
+                                "2 Years Comprehensive Warranty from Carrier Midea"
+                            ]
+                        },
+                        {
+                            "key": "Covered in Warranty",
+                            "value": [
+                                "All Parts excluding Outer Cabinet and Plastic Parts from the Date of Purchase will be Covered under Warranty. This also covers all Manufacturing Defects."
+                            ]
+                        },
+                        {
+                            "key": "Not Covered in Warranty",
+                            "value": [
+                                "Parts: Outer cabinet and plastic parts. Any accessories external to the product. The product is not used according to the instructions given in the instructions manual. Defects caused by improper use as determined by the company personnel. Modification or alteration of any nature made in the electrical circuitry/ or physical construction of the set. Site (where the premises is kept) conditions that do not confirm to the recommended operating conditions of the machine. The serial number is removed, altered or obliterated from the machine. Defects due to cause beyond control like lightning, abnormal voltage, acts of God or while in transit to the service center's or purchaser's residence."
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "Wash Modes",
+                    "values": [
+                        {
+                            "key": "Wash Program Types",
+                            "value": [
+                                "3"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "Body Features",
+                    "values": [
+                        {
+                            "key": "Outer Body Material",
+                            "value": [
+                                "ABS"
+                            ]
+                        },
+                        {
+                            "key": "Wheel Support",
+                            "value": [
+                                "Yes"
+                            ]
+                        },
+                        {
+                            "key": "Other Body Features",
+                            "value": [
+                                "Opaque Wash Lid, Opaque Spin Lid, Nature Series Sticker on Body, Dual Layer Durable Body, ABS Control Panel"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "Convenience Features",
+                    "values": [
+                        {
+                            "key": "Digital Display",
+                            "value": [
+                                "No"
+                            ]
+                        },
+                        {
+                            "key": "Lint Filter",
+                            "value": [
+                                "Yes"
+                            ]
+                        },
+                        {
+                            "key": "Other Convenience Features",
+                            "value": [
+                                "Buzzer, 2 Wheels, Soak: 20 min"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "Power Features",
+                    "values": [
+                        {
+                            "key": "Power Consumption",
+                            "value": [
+                                "400 W"
+                            ]
+                        },
+                        {
+                            "key": "Power Requirement",
+                            "value": [
+                                "AC 230 V, 50 Hz"
+                            ]
+                        },
+                        {
+                            "key": "Wash Motor Rating",
+                            "value": [
+                                "400 W"
+                            ]
+                        },
+                        {
+                            "key": "Spin Motor Rating",
+                            "value": [
+                                "150 W"
+                            ]
+                        },
+                        {
+                            "key": "Operating Current",
+                            "value": [
+                                "5 A"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "Additional Features",
+                    "values": [
+                        {
+                            "key": "Noise Level Wash",
+                            "value": [
+                                "62 dB"
+                            ]
+                        },
+                        {
+                            "key": "Noise Level Spin",
+                            "value": [
+                                "72 dB"
+                            ]
+                        },
+                        {
+                            "key": "Other Features",
+                            "value": [
+                                "Magic Filter, Air Jet, 3 in 1 Safety: Molded Plug with Safety Fuse, Safety Switch for Spin Tub, Spin Lid, Universal Motor, Water Inlet Selector"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "Dimensions",
+                    "values": [
+                        {
+                            "key": "Width",
+                            "value": [
+                                "80 cm"
+                            ]
+                        },
+                        {
+                            "key": "Height",
+                            "value": [
+                                "98 cm"
+                            ]
+                        },
+                        {
+                            "key": "Depth",
+                            "value": [
+                                "47 cm"
+                            ]
+                        },
+                        {
+                            "key": "Weight",
+                            "value": [
+                                "25 kg"
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "booksInfo": {
+                "language": null,
+                "binding": null,
+                "pages": null,
+                "publisher": null,
+                "year": 0,
+                "authors": []
+            },
+            "lifeStyleInfo": {
+                "sleeve": null,
+                "neck": null,
+                "idealFor": null
+            }
+        }
+    },
+    {
+        "productBaseInfoV1": {
+            "productId": "WMNEHF4C6P4BFDX6",
+            "title": "BPL 7.2 kg Fully Automatic Top Load Washing Machine",
+            "productDescription": "The 7.2kg wash load capacity of this BPL washing is perfect for large families. You can easily wash everyone’s clothes and save time and energy in the process. The top-loading design ensures easy loading and unloading as well. The washing machine delivers efficient and effective cleaning performance, thanks to features such as Fuzzy Logic and ten wash programmes.",
+            "imageUrls": {
+                "200x200": "http://img.fkcdn.com/image/washing-machine-new/d/x/6/bpl-bfatl72n1-200x200-imaehxtxzfpxgbvf.jpeg",
+                "400x400": "http://img.fkcdn.com/image/washing-machine-new/d/x/6/bpl-bfatl72n1-400x400-imaehxtxzfpxgbvf.jpeg",
+                "800x800": "http://img.fkcdn.com/image/washing-machine-new/d/x/6/bpl-bfatl72n1-800x800-imaehxtxzfpxgbvf.jpeg",
+                "unknown": "http://img.fkcdn.com/image/washing-machine-new/d/x/6/bpl-bfatl72n1-original-imaehxtxzfpxgbvf.jpeg"
+            },
+            "productFamily": [
+                "[WMNEHF4C6P4BFDX6]"
+            ],
+            "maximumRetailPrice": {
+                "amount": 16990,
+                "currency": "INR"
+            },
+            "flipkartSellingPrice": {
+                "amount": 14990,
+                "currency": "INR"
+            },
+            "flipkartSpecialPrice": {
+                "amount": 12989,
+                "currency": "INR"
+            },
+            "productUrl": "http://dl.flipkart.com/dl/bpl-7-2-kg-fully-automatic-top-load-washing-machine/p/itmehf4c6txshas5?pid=WMNEHF4C6P4BFDX6&affid=slidenerd",
+            "productBrand": "BPL",
+            "inStock": true,
+            "codAvailable": true,
+            "discountPercentage": 11,
+            "offers": [
+                "Diwali Bumper Offer - 20th - 30th Oct 2016",
+                "Extra Rs.2,000 off",
+                "Extra 15% Cashback* with Citi Cards",
+                "Exchange Offer - Up To Rs.2,000 Off"
+            ],
+            "categoryPath": "Electronics>Appliances>Home Appliances>Washing Machines & Dryers",
+            "attributes": {
+                "size": "",
+                "color": "Grey",
+                "storage": "",
+                "sizeUnit": "",
+                "displaySize": ""
+            }
+        },
+        "productShippingInfoV1": {
+            "shippingCharges": {
+                "amount": 0,
+                "currency": "INR"
+            },
+            "estimatedDeliveryTime": "Usually Delivered in Thu Sep 08 23:59:59 IST 2016 - Fri Sep 09 23:59:59 IST 2016 days.",
+            "sellerName": "OmniTechRetail",
+            "sellerAverageRating": 4.1910114,
+            "sellerNoOfRatings": 356,
+            "sellerNoOfReviews": 13
+        },
+        "categorySpecificInfoV1": {
+            "keySpecs": [
+                "Fully Automatic Top Load",
+                "Power : 385 W",
+                "Capacity: 7.2 kg | Max Spin Speed: 700 rpm",
+                "Stainless Steel | Pulsator",
+                "Digital Display Supported | 10 Wash Programs"
+            ],
+            "detailedSpecs": [
+                "Fully Automatic Top Load",
+                "Power : 385 W",
+                "Capacity: 7.2 kg | Max Spin Speed: 700 rpm",
+                "Stainless Steel | Pulsator",
+                "Digital Display Supported | 10 Wash Programs"
+            ],
+            "specificationList": [
+                {
+                    "key": "General",
+                    "values": [
+                        {
+                            "key": "In the Box",
+                            "value": [
+                                "1 Washing Machine, Inlet Pipe and Drain Pipe"
+                            ]
+                        },
+                        {
+                            "key": "Brand",
+                            "value": [
+                                "BPL"
+                            ]
+                        },
+                        {
+                            "key": "Model Name",
+                            "value": [
+                                "BFATL72N1"
+                            ]
+                        },
+                        {
+                            "key": "Type",
+                            "value": [
+                                "Washing Machine"
+                            ]
+                        },
+                        {
+                            "key": "Function Type",
+                            "value": [
+                                "Fully Automatic Top Load"
+                            ]
+                        },
+                        {
+                            "key": "Washing Capacity",
+                            "value": [
+                                "7.2 kg"
+                            ]
+                        },
+                        {
+                            "key": "Washing Method",
+                            "value": [
+                                "Pulsator"
+                            ]
+                        },
+                        {
+                            "key": "Maximum Spin Speed",
+                            "value": [
+                                "700 rpm"
+                            ]
+                        },
+                        {
+                            "key": "In-built Heater",
+                            "value": [
+                                "No"
+                            ]
+                        },
+                        {
+                            "key": "Water Level Settings",
+                            "value": [
+                                "10"
+                            ]
+                        },
+                        {
+                            "key": "Shade",
+                            "value": [
+                                "Grey"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "Installation & Demo",
+                    "values": [
+                        {
+                            "key": "Installation & Demo",
+                            "value": [
+                                "Standard installation and demo is provided free of cost. After delivery of your Washing Machine, you will receive a ticket number via message. Post that, you will receive a call from the authorized service engineer to schedule a mutually convenient time to provide demo and installation at your doorstep. The installation and demo is usually done within 2 Business Days of delivery of your Washing Machine. Kindly contact us on 1800 208 9898 for any further queries."
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "Warranty",
+                    "values": [
+                        {
+                            "key": "Warranty Summary",
+                            "value": [
+                                "1 Year Comprehensive Product Warranty"
+                            ]
+                        },
+                        {
+                            "key": "Covered in Warranty",
+                            "value": [
+                                "All Parts Excluding Outer Cabinet and Plastic Parts from the Date of Purchase will be Covered under Warranty, This also Covers All Manufacturing Defects"
+                            ]
+                        },
+                        {
+                            "key": "Not Covered in Warranty",
+                            "value": [
+                                "Parts: Outer Cabinet and Plastic Parts, Any Accessories External to the Product, The Product is not Used According to the Instructions Given in the Instructions Manual, Defects Caused by Improper Use as Determined by the Company Personnel, Modification or Alteration of Any Nature Made in the Electrical Circuitry / or Physical Construction of the Set, Site (Where the Premises is Kept) Conditions that do not Confirm to the Recommended Operating Conditions of the Machine, The Serial Number is Removed, Altered or Obliterated from the Machine, Defects Due to Cause Beyond Control Like Lightning, Abnormal Voltage, Acts of God or While in Transit to the Service Centers or Purchasers Residence"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "Wash Modes",
+                    "values": [
+                        {
+                            "key": "Wash Program Types",
+                            "value": [
+                                "10"
+                            ]
+                        },
+                        {
+                            "key": "Fuzzy Logic",
+                            "value": [
+                                "Yes"
+                            ]
+                        },
+                        {
+                            "key": "Pre-wash Soak",
+                            "value": [
+                                "Yes"
+                            ]
+                        },
+                        {
+                            "key": "Quick Wash",
+                            "value": [
+                                "Yes"
+                            ]
+                        },
+                        {
+                            "key": "Spin & Rinse",
+                            "value": [
+                                "Yes"
+                            ]
+                        },
+                        {
+                            "key": "Other Wash Modes",
+                            "value": [
+                                "Normal, Strong, Soft, Standard, Wool, Baby"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "Body Features",
+                    "values": [
+                        {
+                            "key": "Tub Material",
+                            "value": [
+                                "Stainless Steel"
+                            ]
+                        },
+                        {
+                            "key": "Transparent Window Display",
+                            "value": [
+                                "Yes"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "Convenience Features",
+                    "values": [
+                        {
+                            "key": "Digital Display",
+                            "value": [
+                                "Yes"
+                            ]
+                        },
+                        {
+                            "key": "Tub Self-clean",
+                            "value": [
+                                "Yes"
+                            ]
+                        },
+                        {
+                            "key": "Other Convenience Features",
+                            "value": [
+                                "Water Level, Soak, Delay Time"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "Power Features",
+                    "values": [
+                        {
+                            "key": "Power Consumption",
+                            "value": [
+                                "385 W"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "Additional Features",
+                    "values": [
+                        {
+                            "key": "Child Lock",
+                            "value": [
+                                "Yes"
+                            ]
+                        },
+                        {
+                            "key": "Other Features",
+                            "value": [
+                                "Tub Clean, Tub Dry, Reserve Water"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "Dimensions",
+                    "values": [
+                        {
+                            "key": "Width",
+                            "value": [
+                                "54.7 cm"
+                            ]
+                        },
+                        {
+                            "key": "Height",
+                            "value": [
+                                "92 cm"
+                            ]
+                        },
+                        {
+                            "key": "Depth",
+                            "value": [
+                                "56.3 cm"
+                            ]
+                        },
+                        {
+                            "key": "Weight",
+                            "value": [
+                                "29 kg"
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "booksInfo": {
+                "language": null,
+                "binding": null,
+                "pages": null,
+                "publisher": null,
+                "year": 0,
+                "authors": []
+            },
+            "lifeStyleInfo": {
+                "sleeve": null,
+                "neck": null,
+                "idealFor": null
+            }
+        }
+    },
+    {
+        "productBaseInfoV1": {
+            "productId": "WMNEKJMF4G5SVHGE",
+            "title": "Onida 7 kg Fully Automatic Front Load Washing Machine",
+            "productDescription": "",
+            "imageUrls": {
+                "200x200": "http://img.fkcdn.com/image/washing-machine-new/h/g/e/onida-wof7010ls-200x200-imaehxgffxxdxvjm.jpeg",
+                "400x400": "http://img.fkcdn.com/image/washing-machine-new/h/g/e/onida-wof7010ls-400x400-imaehxgffxxdxvjm.jpeg",
+                "800x800": "http://img.fkcdn.com/image/washing-machine-new/h/g/e/onida-wof7010ls-800x800-imaehxgffxxdxvjm.jpeg",
+                "unknown": "http://img.fkcdn.com/image/washing-machine-new/h/g/e/onida-wof7010ls-original-imaehxgffxxdxvjm.jpeg"
+            },
+            "productFamily": [
+                "[WMNEKJMF4G5SVHGE]"
+            ],
+            "maximumRetailPrice": {
+                "amount": 28990,
+                "currency": "INR"
+            },
+            "flipkartSellingPrice": {
+                "amount": 23990,
+                "currency": "INR"
+            },
+            "flipkartSpecialPrice": {
+                "amount": 21989,
+                "currency": "INR"
+            },
+            "productUrl": "http://dl.flipkart.com/dl/onida-7-kg-fully-automatic-front-load-washing-machine/p/itmekjmfh9pwub9p?pid=WMNEKJMF4G5SVHGE&affid=slidenerd",
+            "productBrand": "Onida",
+            "inStock": true,
+            "codAvailable": true,
+            "discountPercentage": 17,
+            "offers": [
+                "Win eGV of Rs.1 Lac, iPhone 7 & more*",
+                "Extra Rs.2,000 Off",
+                "Extra 5% off* on Axis Bank Buzz Credit Cards",
+                "Exchange Offer - Up to Rs.5,000 off",
+                "Extra 15% Cashback* with Citi Cards"
+            ],
+            "categoryPath": "Electronics>Appliances>Home Appliances>Washing Machines & Dryers",
+            "attributes": {
+                "size": "",
+                "color": "Silver",
+                "storage": "",
+                "sizeUnit": "",
+                "displaySize": ""
+            }
+        },
+        "productShippingInfoV1": {
+            "shippingCharges": {
+                "amount": 0,
+                "currency": "INR"
+            },
+            "estimatedDeliveryTime": "Usually Delivered in Fri Sep 09 23:59:59 IST 2016 - Sat Sep 10 23:59:59 IST 2016 days.",
+            "sellerName": "OmniTechRetail",
+            "sellerAverageRating": 4.1910114,
+            "sellerNoOfRatings": 356,
+            "sellerNoOfReviews": 13
+        },
+        "categorySpecificInfoV1": {
+            "keySpecs": [
+                "Fully Automatic Front Load",
+                "Power : 195 W",
+                "Capacity: 7 kg | Max Spin Speed: 1000 rpm",
+                "Stainless Steel | Tumble Wash"
+            ],
+            "detailedSpecs": [
+                "Fully Automatic Front Load",
+                "Power : 195 W",
+                "Capacity: 7 kg | Max Spin Speed: 1000 rpm",
+                "Stainless Steel | Tumble Wash"
+            ],
+            "specificationList": [
+                {
+                    "key": "General",
+                    "values": [
+                        {
+                            "key": "In the Box",
+                            "value": [
+                                "1 Washing Machine, 1 User Manual, 1 Water Inlet Pipe"
+                            ]
+                        },
+                        {
+                            "key": "Brand",
+                            "value": [
+                                "Onida"
+                            ]
+                        },
+                        {
+                            "key": "Model Name",
+                            "value": [
+                                "WOF7010LS"
+                            ]
+                        },
+                        {
+                            "key": "Type",
+                            "value": [
+                                "Washing Machine"
+                            ]
+                        },
+                        {
+                            "key": "Function Type",
+                            "value": [
+                                "Fully Automatic Front Load"
+                            ]
+                        },
+                        {
+                            "key": "Washing Capacity",
+                            "value": [
+                                "7 kg"
+                            ]
+                        },
+                        {
+                            "key": "Washing Method",
+                            "value": [
+                                "Tumble Wash"
+                            ]
+                        },
+                        {
+                            "key": "Maximum Spin Speed",
+                            "value": [
+                                "1000 rpm"
+                            ]
+                        },
+                        {
+                            "key": "In-built Heater",
+                            "value": [
+                                "Yes"
+                            ]
+                        },
+                        {
+                            "key": "Shade",
+                            "value": [
+                                "Silver"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "Installation & Demo",
+                    "values": [
+                        {
+                            "key": "Installation & Demo",
+                            "value": [
+                                "Standard installation and demo is provided free of cost. After delivery of your Washing Machine, you will receive a ticket number via message. Post that, you will receive a call from the authorized service engineer to schedule a mutually convenient time to provide demo and installation at your doorstep. The installation and demo is usually done within 2 Business Days of delivery of your Washing Machine. Kindly contact us on 1800 208 9898 for any further queries."
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "Warranty",
+                    "values": [
+                        {
+                            "key": "Warranty Summary",
+                            "value": [
+                                "2 Year comprehensive warranty from Onida"
+                            ]
+                        },
+                        {
+                            "key": "Covered in Warranty",
+                            "value": [
+                                "All Parts excluding Outer Cabinet and Plastic Parts from the Date of Purchase will be Covered under Warranty. This also covers all Manufacturing Defects"
+                            ]
+                        },
+                        {
+                            "key": "Not Covered in Warranty",
+                            "value": [
+                                "Parts: Outer cabinet and plastic parts. Any accessories external to the product. The product is not used according to the instructions given in the instructions manual. Defects caused by improper use as determined by the company personnel. Modification or alteration of any nature made in the electrical circuitry/ or physical construction of the set. Site (where the premises is kept) conditions that do not confirm to the recommended operating conditions of the machine. The serial number is removed, altered or obliterated from the machine. Defects due to cause beyond control like lightning, abnormal voltage, acts of God or while in transit to the service center's or purchaser's residence."
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "Wash Modes",
+                    "values": [
+                        {
+                            "key": "Wash Program Types",
+                            "value": [
+                                "- Cotton, Allergy Safe, Handwash, Delicate"
+                            ]
+                        },
+                        {
+                            "key": "Fuzzy Logic",
+                            "value": [
+                                "Yes"
+                            ]
+                        },
+                        {
+                            "key": "Hot Wash",
+                            "value": [
+                                "Yes"
+                            ]
+                        },
+                        {
+                            "key": "Pre-wash Soak",
+                            "value": [
+                                "Yes"
+                            ]
+                        },
+                        {
+                            "key": "Quick Wash",
+                            "value": [
+                                "Yes"
+                            ]
+                        },
+                        {
+                            "key": "Spin Only",
+                            "value": [
+                                "Yes"
+                            ]
+                        },
+                        {
+                            "key": "Spin & Rinse",
+                            "value": [
+                                "Yes"
+                            ]
+                        },
+                        {
+                            "key": "Other Wash Modes",
+                            "value": [
+                                "Cotton Prewash"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "Body Features",
+                    "values": [
+                        {
+                            "key": "Outer Body Material",
+                            "value": [
+                                "Polypropylene"
+                            ]
+                        },
+                        {
+                            "key": "Tub Material",
+                            "value": [
+                                "Stainless Steel"
+                            ]
+                        },
+                        {
+                            "key": "Transparent Window Display",
+                            "value": [
+                                "Yes"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "Convenience Features",
+                    "values": [
+                        {
+                            "key": "Digital Display",
+                            "value": [
+                                "Yes"
+                            ]
+                        },
+                        {
+                            "key": "Tub Self-clean",
+                            "value": [
+                                "No"
+                            ]
+                        },
+                        {
+                            "key": "Display Features",
+                            "value": [
+                                "7 Segment LED"
+                            ]
+                        },
+                        {
+                            "key": "Wrinkle Prevention",
+                            "value": [
+                                "Yes"
+                            ]
+                        },
+                        {
+                            "key": "Other Convenience Features",
+                            "value": [
+                                "Eco 20&degC, Rapid 15"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "Power Features",
+                    "values": [
+                        {
+                            "key": "Power Consumption",
+                            "value": [
+                                "195 W"
+                            ]
+                        },
+                        {
+                            "key": "Spin Motor Rating",
+                            "value": [
+                                "1000 W"
+                            ]
+                        },
+                        {
+                            "key": "Operating Current",
+                            "value": [
+                                "10 A"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "Additional Features",
+                    "values": [
+                        {
+                            "key": "Noise Level Wash",
+                            "value": [
+                                "58 dB"
+                            ]
+                        },
+                        {
+                            "key": "Noise Level Spin",
+                            "value": [
+                                "76 dB"
+                            ]
+                        },
+                        {
+                            "key": "Child Lock",
+                            "value": [
+                                "Yes"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "Dimensions",
+                    "values": [
+                        {
+                            "key": "Width",
+                            "value": [
+                                "59.7 cm"
+                            ]
+                        },
+                        {
+                            "key": "Height",
+                            "value": [
+                                "84.5 cm"
+                            ]
+                        },
+                        {
+                            "key": "Depth",
+                            "value": [
+                                "52.7 cm"
+                            ]
+                        },
+                        {
+                            "key": "Door Diameter",
+                            "value": [
+                                "44 cm"
+                            ]
+                        },
+                        {
+                            "key": "Door Opening",
+                            "value": [
+                                "30 degree"
+                            ]
+                        },
+                        {
+                            "key": "Weight",
+                            "value": [
+                                "62.5 kg"
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "booksInfo": {
+                "language": null,
+                "binding": null,
+                "pages": null,
+                "publisher": null,
+                "year": 0,
+                "authors": []
+            },
+            "lifeStyleInfo": {
+                "sleeve": null,
+                "neck": null,
+                "idealFor": null
+            }
+        }
+    }
+]

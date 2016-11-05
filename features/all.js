@@ -36,7 +36,7 @@ const all = {
         name: 'skyscanner'
     },
     weather: {
-        name: 'weather'
+        name: 'findWeather'
     },
     location: {
         name: 'askGeolocation'
@@ -93,7 +93,7 @@ all.skyscanner.subroutine = function () {
 
 all.weather.subroutine = function (rs, args) {
     return new rs.Promise((resolve, reject) => {
-        let lat = 19, lon = 72;
+        
         weather.execute(lat, lon)
             .then((report) => {
                 rs.setUserlet(rs.currentUser(), 'location', 'your place')

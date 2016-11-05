@@ -97,12 +97,12 @@ flipkart.paginator = function (session, offers) {
     return page;
 }
 
-let offers = [1 ,2 ,3 ,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21]
-let page1 = flipkart.paginator(session, offers)
-let page2 = flipkart.paginator(session, offers)
-let page3 = flipkart.paginator(session, offers)
-let page4 = flipkart.paginator(session, offers)
-console.log(page1)
-console.log(page2)
-console.log(page3)
-console.log(page4)
+// let offers = [1 ,2 ,3 ,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21]
+// let page1 = flipkart.paginator(session, offers)
+// let page2 = flipkart.paginator(session, offers)
+// let page3 = flipkart.paginator(session, offers)
+// let page4 = flipkart.paginator(session, offers)
+// console.log(page1)
+// console.log(page2)
+// console.log(page3)
+// console.log(page4)

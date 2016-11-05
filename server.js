@@ -85,7 +85,6 @@ function exitDatabase() {
  */
 app.set('port', process.env.PORT || 3000);
 app.set('views', path.join(__dirname, 'views'));
-// app.set('view engine', 'pug');
 app.use(compression());
 app.use(sass({
   src: path.join(__dirname, 'public'),
@@ -292,7 +291,9 @@ app.post('/api/sendMail', function (req, res) {
  * Error Handler.
  */
 app.use(errorHandler());
-
+app.use(function (req, res, next) {
+  res.status(404).send('Sorry cant find that!');
+});
 /**
  * Start Express server.
  */
@@ -353,13 +354,11 @@ function firstRun(session) {
       for (let value of values) {
         if (value.data.firstName && value.data.lastName) {
           session.userData.user.profile = value.data
-          userController.addBotUser(session);
         }
       }
     })
     .catch((errors => {
       console.log(errors);
-      userController.addBotUser(session);
     }))
   reply(session)
   session.endDialog()

@@ -1,0 +1,350 @@
+[
+    {
+        "category": "air_conditioners",
+        "get": "https://affiliate-api.flipkart.net/affiliate/1.0/feeds/slidenerd/category/j9e-abm-c54.json?expiresAt=1478275467864&sig=02ee3fb84ad806736814ae9787a7bbe7",
+        "deltaGet": "https://affiliate-api.flipkart.net/affiliate/1.0/deltaFeeds/slidenerd/category/j9e-abm-c54.json?expiresAt=1478275467864&sig=02ee3fb84ad806736814ae9787a7bbe7",
+        "top": "https://affiliate-api.flipkart.net/affiliate/1.0/topFeeds/slidenerd/category/j9e-abm-c54.json?expiresAt=1478275467864&sig=63c4ad7a402c93e3025e7d4383030bbc"
+    },
+    {
+        "category": "air_coolers",
+        "get": "https://affiliate-api.flipkart.net/affiliate/1.0/feeds/slidenerd/category/j9e-abm-52j.json?expiresAt=1478275467864&sig=cfc7ce21df470a964a45eabb553837d1",
+        "deltaGet": "https://affiliate-api.flipkart.net/affiliate/1.0/deltaFeeds/slidenerd/category/j9e-abm-52j.json?expiresAt=1478275467864&sig=cfc7ce21df470a964a45eabb553837d1",
+        "top": "https://affiliate-api.flipkart.net/affiliate/1.0/topFeeds/slidenerd/category/j9e-abm-52j.json?expiresAt=1478275467864&sig=d336225c904c58f9b64869c50f9bff0a"
+    },
+    {
+        "category": "audio_players",
+        "get": "https://affiliate-api.flipkart.net/affiliate/1.0/feeds/slidenerd/category/6bo-ord.json?expiresAt=1478275467861&sig=c7d7b646e999a12587a3d8624a1418d5",
+        "deltaGet": "https://affiliate-api.flipkart.net/affiliate/1.0/deltaFeeds/slidenerd/category/6bo-ord.json?expiresAt=1478275467861&sig=c7d7b646e999a12587a3d8624a1418d5",
+        "top": "https://affiliate-api.flipkart.net/affiliate/1.0/topFeeds/slidenerd/category/6bo-ord.json?expiresAt=1478275467861&sig=0148b55aaed6076d6ddc9e73d587b811"
+    },
+    {
+        "category": "automotive",
+        "get": "https://affiliate-api.flipkart.net/affiliate/1.0/feeds/slidenerd/category/0hx.json?expiresAt=1478275467865&sig=3fd122e028f6ef0c28fabe46829b246b",
+        "deltaGet": "https://affiliate-api.flipkart.net/affiliate/1.0/deltaFeeds/slidenerd/category/0hx.json?expiresAt=1478275467865&sig=3fd122e028f6ef0c28fabe46829b246b",
+        "top": "https://affiliate-api.flipkart.net/affiliate/1.0/topFeeds/slidenerd/category/0hx.json?expiresAt=1478275467866&sig=49a58f95e1703c08fd47064bc8c9649f"
+    },
+    {
+        "category": "baby_care",
+        "get": "https://affiliate-api.flipkart.net/affiliate/1.0/feeds/slidenerd/category/kyh.json?expiresAt=1478275467852&sig=083d923242dd799b4f1cd57d305673f5",
+        "deltaGet": "https://affiliate-api.flipkart.net/affiliate/1.0/deltaFeeds/slidenerd/category/kyh.json?expiresAt=1478275467852&sig=083d923242dd799b4f1cd57d305673f5",
+        "top": "https://affiliate-api.flipkart.net/affiliate/1.0/topFeeds/slidenerd/category/kyh.json?expiresAt=1478275467852&sig=79894ca3fbc1bffc10ed1928d293c4c0"
+    },
+    {
+        "category": "bags_wallets_belts",
+        "get": "https://affiliate-api.flipkart.net/affiliate/1.0/feeds/slidenerd/category/reh.json?expiresAt=1478275467853&sig=0ff9f6cee05472ce7512ea723eae3604",
+        "deltaGet": "https://affiliate-api.flipkart.net/affiliate/1.0/deltaFeeds/slidenerd/category/reh.json?expiresAt=1478275467853&sig=0ff9f6cee05472ce7512ea723eae3604",
+        "top": "https://affiliate-api.flipkart.net/affiliate/1.0/topFeeds/slidenerd/category/reh.json?expiresAt=1478275467853&sig=f830337f408fc4d4da0bfa90ca039f5a"
+    },
+    {
+        "category": "camera_accessories",
+        "get": "https://affiliate-api.flipkart.net/affiliate/1.0/feeds/slidenerd/category/jek-6l2.json?expiresAt=1478275467854&sig=765647970bb5d3515bc99c9d43bbd4af",
+        "deltaGet": "https://affiliate-api.flipkart.net/affiliate/1.0/deltaFeeds/slidenerd/category/jek-6l2.json?expiresAt=1478275467854&sig=765647970bb5d3515bc99c9d43bbd4af",
+        "top": "https://affiliate-api.flipkart.net/affiliate/1.0/topFeeds/slidenerd/category/jek-6l2.json?expiresAt=1478275467854&sig=9d67517063d48399067a04fabf3fd917"
+    },
+    {
+        "category": "cameras",
+        "get": "https://affiliate-api.flipkart.net/affiliate/1.0/feeds/slidenerd/category/jek-p31.json?expiresAt=1478275467854&sig=d4e599d919973c41cc3ad75f64f049f2",
+        "deltaGet": "https://affiliate-api.flipkart.net/affiliate/1.0/deltaFeeds/slidenerd/category/jek-p31.json?expiresAt=1478275467854&sig=d4e599d919973c41cc3ad75f64f049f2",
+        "top": "https://affiliate-api.flipkart.net/affiliate/1.0/topFeeds/slidenerd/category/jek-p31.json?expiresAt=1478275467854&sig=ffa93373ec83c04f83c0c54df620a6ed"
+    },
+    {
+        "category": "computer_components",
+        "get": "https://affiliate-api.flipkart.net/affiliate/1.0/feeds/slidenerd/category/6bo-g0i.json?expiresAt=1478275467855&sig=b05dbd41273dee0903e017c5be64c9f2",
+        "deltaGet": "https://affiliate-api.flipkart.net/affiliate/1.0/deltaFeeds/slidenerd/category/6bo-g0i.json?expiresAt=1478275467855&sig=b05dbd41273dee0903e017c5be64c9f2",
+        "top": "https://affiliate-api.flipkart.net/affiliate/1.0/topFeeds/slidenerd/category/6bo-g0i.json?expiresAt=1478275467855&sig=f368022d9eeb2ce1e32e856d73f5e8a2"
+    },
+    {
+        "category": "computer_peripherals",
+        "get": "https://affiliate-api.flipkart.net/affiliate/1.0/feeds/slidenerd/category/6bo-tia.json?expiresAt=1478275467855&sig=1633eaba66ab6087093c79bcd1f91e33",
+        "deltaGet": "https://affiliate-api.flipkart.net/affiliate/1.0/deltaFeeds/slidenerd/category/6bo-tia.json?expiresAt=1478275467855&sig=1633eaba66ab6087093c79bcd1f91e33",
+        "top": "https://affiliate-api.flipkart.net/affiliate/1.0/topFeeds/slidenerd/category/6bo-tia.json?expiresAt=1478275467855&sig=5bcde2d11b0fbadc965e22ef55596fee"
+    },
+    {
+        "category": "computer_storage",
+        "get": "https://affiliate-api.flipkart.net/affiliate/1.0/feeds/slidenerd/category/6bo-jdy.json?expiresAt=1478275467855&sig=39cf013710ee9026b26d599b2cf83dc6",
+        "deltaGet": "https://affiliate-api.flipkart.net/affiliate/1.0/deltaFeeds/slidenerd/category/6bo-jdy.json?expiresAt=1478275467855&sig=39cf013710ee9026b26d599b2cf83dc6",
+        "top": "https://affiliate-api.flipkart.net/affiliate/1.0/topFeeds/slidenerd/category/6bo-jdy.json?expiresAt=1478275467855&sig=74471ab7e259c04288234d025d27282a"
+    },
+    {
+        "category": "desktops",
+        "get": "https://affiliate-api.flipkart.net/affiliate/1.0/feeds/slidenerd/category/6bo-igk.json?expiresAt=1478275467855&sig=9322a825ee59819d775e1313cfd19be3",
+        "deltaGet": "https://affiliate-api.flipkart.net/affiliate/1.0/deltaFeeds/slidenerd/category/6bo-igk.json?expiresAt=1478275467856&sig=b921f4ae068892fa4d8f93e94987b49d",
+        "top": "https://affiliate-api.flipkart.net/affiliate/1.0/topFeeds/slidenerd/category/6bo-igk.json?expiresAt=1478275467856&sig=c7c7babe4c9184140736206ef271b1a9"
+    },
+    {
+        "category": "e_learning",
+        "get": "https://affiliate-api.flipkart.net/affiliate/1.0/feeds/slidenerd/category/xfw.json?expiresAt=1478275467864&sig=476f9480e9336b0af70fd00e1d71e6eb",
+        "deltaGet": "https://affiliate-api.flipkart.net/affiliate/1.0/deltaFeeds/slidenerd/category/xfw.json?expiresAt=1478275467864&sig=476f9480e9336b0af70fd00e1d71e6eb",
+        "top": "https://affiliate-api.flipkart.net/affiliate/1.0/topFeeds/slidenerd/category/xfw.json?expiresAt=1478275467864&sig=2c5132e46ddec93bd7065dc9faaba9db"
+    },
+    {
+        "category": "eyewear",
+        "get": "https://affiliate-api.flipkart.net/affiliate/1.0/feeds/slidenerd/category/u73.json?expiresAt=1478275467867&sig=91561680e168d4af2774d324ffa350e8",
+        "deltaGet": "https://affiliate-api.flipkart.net/affiliate/1.0/deltaFeeds/slidenerd/category/u73.json?expiresAt=1478275467867&sig=91561680e168d4af2774d324ffa350e8",
+        "top": "https://affiliate-api.flipkart.net/affiliate/1.0/topFeeds/slidenerd/category/u73.json?expiresAt=1478275467867&sig=4e334f5f0d625cbde7eab004475f6f74"
+    },
+    {
+        "category": "food_nutrition",
+        "get": "https://affiliate-api.flipkart.net/affiliate/1.0/feeds/slidenerd/category/7jv.json?expiresAt=1478275467866&sig=10472da05682692724893a8513b38eab",
+        "deltaGet": "https://affiliate-api.flipkart.net/affiliate/1.0/deltaFeeds/slidenerd/category/7jv.json?expiresAt=1478275467866&sig=10472da05682692724893a8513b38eab",
+        "top": "https://affiliate-api.flipkart.net/affiliate/1.0/topFeeds/slidenerd/category/7jv.json?expiresAt=1478275467866&sig=9097f19aef40f8179c07dd7bfd9ec3b8"
+    },
+    {
+        "category": "fragrances",
+        "get": "https://affiliate-api.flipkart.net/affiliate/1.0/feeds/slidenerd/category/t06-r3o.json?expiresAt=1478275467853&sig=dc9d1d066e59df9863ab74dcfb7b1b89",
+        "deltaGet": "https://affiliate-api.flipkart.net/affiliate/1.0/deltaFeeds/slidenerd/category/t06-r3o.json?expiresAt=1478275467853&sig=dc9d1d066e59df9863ab74dcfb7b1b89",
+        "top": "https://affiliate-api.flipkart.net/affiliate/1.0/topFeeds/slidenerd/category/t06-r3o.json?expiresAt=1478275467853&sig=6f147b5c6002932bad8f4b3a793dc4a5"
+    },
+    {
+        "category": "furniture",
+        "get": "https://affiliate-api.flipkart.net/affiliate/1.0/feeds/slidenerd/category/anx.json?expiresAt=1478275467866&sig=efd740858448131d0e486a0ef15b13c7",
+        "deltaGet": "https://affiliate-api.flipkart.net/affiliate/1.0/deltaFeeds/slidenerd/category/anx.json?expiresAt=1478275467866&sig=efd740858448131d0e486a0ef15b13c7",
+        "top": "https://affiliate-api.flipkart.net/affiliate/1.0/topFeeds/slidenerd/category/anx.json?expiresAt=1478275467866&sig=d7b374927fb2a67dee0ec0ac6eb9db6c"
+    },
+    {
+        "category": "gaming",
+        "get": "https://affiliate-api.flipkart.net/affiliate/1.0/feeds/slidenerd/category/4rr.json?expiresAt=1478275467861&sig=ea014699ded5c8e9c5963150421261da",
+        "deltaGet": "https://affiliate-api.flipkart.net/affiliate/1.0/deltaFeeds/slidenerd/category/4rr.json?expiresAt=1478275467861&sig=ea014699ded5c8e9c5963150421261da",
+        "top": "https://affiliate-api.flipkart.net/affiliate/1.0/topFeeds/slidenerd/category/4rr.json?expiresAt=1478275467861&sig=2333156b5f092a27f7455545fe0c9024"
+    },
+    {
+        "category": "grooming_beauty_wellness",
+        "get": "https://affiliate-api.flipkart.net/affiliate/1.0/feeds/slidenerd/category/t06.json?expiresAt=1478275467853&sig=f2bce8789fe610b09519ef73822b6694",
+        "deltaGet": "https://affiliate-api.flipkart.net/affiliate/1.0/deltaFeeds/slidenerd/category/t06.json?expiresAt=1478275467853&sig=f2bce8789fe610b09519ef73822b6694",
+        "top": "https://affiliate-api.flipkart.net/affiliate/1.0/topFeeds/slidenerd/category/t06.json?expiresAt=1478275467853&sig=d07fa7a7f0d4b660fbaa012d2ac88d46"
+    },
+    {
+        "category": "home_and_kitchen_needs",
+        "get": "https://affiliate-api.flipkart.net/affiliate/1.0/feeds/slidenerd/category/r4l.json?expiresAt=1478275467863&sig=bffa4f12bdb8744964530b1f9407aa9c",
+        "deltaGet": "https://affiliate-api.flipkart.net/affiliate/1.0/deltaFeeds/slidenerd/category/r4l.json?expiresAt=1478275467863&sig=bffa4f12bdb8744964530b1f9407aa9c",
+        "top": "https://affiliate-api.flipkart.net/affiliate/1.0/topFeeds/slidenerd/category/r4l.json?expiresAt=1478275467863&sig=83770d3fcdd395d20b9d2d90f7f7d924"
+    },
+    {
+        "category": "home_appliances",
+        "get": "https://affiliate-api.flipkart.net/affiliate/1.0/feeds/slidenerd/category/j9e-abm.json?expiresAt=1478275467859&sig=013d293cd658d388dcc97e2437fd7ef8",
+        "deltaGet": "https://affiliate-api.flipkart.net/affiliate/1.0/deltaFeeds/slidenerd/category/j9e-abm.json?expiresAt=1478275467859&sig=013d293cd658d388dcc97e2437fd7ef8",
+        "top": "https://affiliate-api.flipkart.net/affiliate/1.0/topFeeds/slidenerd/category/j9e-abm.json?expiresAt=1478275467859&sig=dc6491e0e2c5a6803f1f90a7e65abc24"
+    },
+    {
+        "category": "home_decor_and_festive_needs",
+        "get": "https://affiliate-api.flipkart.net/affiliate/1.0/feeds/slidenerd/category/1m7.json?expiresAt=1478275467863&sig=e8e68d8fefc808b15b0112ac43430463",
+        "deltaGet": "https://affiliate-api.flipkart.net/affiliate/1.0/deltaFeeds/slidenerd/category/1m7.json?expiresAt=1478275467863&sig=e8e68d8fefc808b15b0112ac43430463",
+        "top": "https://affiliate-api.flipkart.net/affiliate/1.0/topFeeds/slidenerd/category/1m7.json?expiresAt=1478275467863&sig=bb244e680bf344da0bd83d6f4e41c0d1"
+    },
+    {
+        "category": "home_entertainment",
+        "get": "https://affiliate-api.flipkart.net/affiliate/1.0/feeds/slidenerd/category/ckf.json?expiresAt=1478275467862&sig=0b443e3bc8ad8c353969dfa8156b3ac0",
+        "deltaGet": "https://affiliate-api.flipkart.net/affiliate/1.0/deltaFeeds/slidenerd/category/ckf.json?expiresAt=1478275467862&sig=0b443e3bc8ad8c353969dfa8156b3ac0",
+        "top": "https://affiliate-api.flipkart.net/affiliate/1.0/topFeeds/slidenerd/category/ckf.json?expiresAt=1478275467862&sig=618c73870ca397a4c33f57e3e2ec6c77"
+    },
+    {
+        "category": "home_furnishing",
+        "get": "https://affiliate-api.flipkart.net/affiliate/1.0/feeds/slidenerd/category/vdm.json?expiresAt=1478275467859&sig=1208b7a535be037e14167046bdd33e6e",
+        "deltaGet": "https://affiliate-api.flipkart.net/affiliate/1.0/deltaFeeds/slidenerd/category/vdm.json?expiresAt=1478275467859&sig=1208b7a535be037e14167046bdd33e6e",
+        "top": "https://affiliate-api.flipkart.net/affiliate/1.0/topFeeds/slidenerd/category/vdm.json?expiresAt=1478275467859&sig=d0af0e39e576b18d0833dd517462fe5d"
+    },
+    {
+        "category": "home_improvement_tools",
+        "get": "https://affiliate-api.flipkart.net/affiliate/1.0/feeds/slidenerd/category/amz.json?expiresAt=1478275467865&sig=847f23e0dd7d31b259d6060a77f8d173",
+        "deltaGet": "https://affiliate-api.flipkart.net/affiliate/1.0/deltaFeeds/slidenerd/category/amz.json?expiresAt=1478275467865&sig=847f23e0dd7d31b259d6060a77f8d173",
+        "top": "https://affiliate-api.flipkart.net/affiliate/1.0/topFeeds/slidenerd/category/amz.json?expiresAt=1478275467865&sig=e56c24fca3b79927521fbb74110eee42"
+    },
+    {
+        "category": "household_supplies",
+        "get": "https://affiliate-api.flipkart.net/affiliate/1.0/feeds/slidenerd/category/7ij.json?expiresAt=1478275467866&sig=6c4075edd5c05181f6a455c2b9862e32",
+        "deltaGet": "https://affiliate-api.flipkart.net/affiliate/1.0/deltaFeeds/slidenerd/category/7ij.json?expiresAt=1478275467866&sig=6c4075edd5c05181f6a455c2b9862e32",
+        "top": "https://affiliate-api.flipkart.net/affiliate/1.0/topFeeds/slidenerd/category/7ij.json?expiresAt=1478275467867&sig=726a95ba36f508252b86f9418a9cefc8"
+    },
+    {
+        "category": "jewellery",
+        "get": "https://affiliate-api.flipkart.net/affiliate/1.0/feeds/slidenerd/category/mcr.json?expiresAt=1478275467863&sig=55cdda1ac3d11924ab04c3b033c3d007",
+        "deltaGet": "https://affiliate-api.flipkart.net/affiliate/1.0/deltaFeeds/slidenerd/category/mcr.json?expiresAt=1478275467863&sig=55cdda1ac3d11924ab04c3b033c3d007",
+        "top": "https://affiliate-api.flipkart.net/affiliate/1.0/topFeeds/slidenerd/category/mcr.json?expiresAt=1478275467863&sig=34c38180bff7bdc72eff3c0982533247"
+    },
+    {
+        "category": "kids_clothing",
+        "get": "https://affiliate-api.flipkart.net/affiliate/1.0/feeds/slidenerd/category/2oq-mpf.json?expiresAt=1478275467859&sig=6ba66c5e1fbc61760470e28e904f1bde",
+        "deltaGet": "https://affiliate-api.flipkart.net/affiliate/1.0/deltaFeeds/slidenerd/category/2oq-mpf.json?expiresAt=1478275467859&sig=6ba66c5e1fbc61760470e28e904f1bde",
+        "top": "https://affiliate-api.flipkart.net/affiliate/1.0/topFeeds/slidenerd/category/2oq-mpf.json?expiresAt=1478275467859&sig=e7ef7557b8e351b67643da995bfa6881"
+    },
+    {
+        "category": "kids_footwear",
+        "get": "https://affiliate-api.flipkart.net/affiliate/1.0/feeds/slidenerd/category/osp-mba.json?expiresAt=1478275467860&sig=b0f8c7c94a0373a69801e0ba79b7ff88",
+        "deltaGet": "https://affiliate-api.flipkart.net/affiliate/1.0/deltaFeeds/slidenerd/category/osp-mba.json?expiresAt=1478275467860&sig=b0f8c7c94a0373a69801e0ba79b7ff88",
+        "top": "https://affiliate-api.flipkart.net/affiliate/1.0/topFeeds/slidenerd/category/osp-mba.json?expiresAt=1478275467860&sig=3a0c0c8839ebc6fb31cb28d706dc567e"
+    },
+    {
+        "category": "kitchen_appliances",
+        "get": "https://affiliate-api.flipkart.net/affiliate/1.0/feeds/slidenerd/category/j9e-m38.json?expiresAt=1478275467860&sig=87ac04ec7aba46fb45a4787caf5b710e",
+        "deltaGet": "https://affiliate-api.flipkart.net/affiliate/1.0/deltaFeeds/slidenerd/category/j9e-m38.json?expiresAt=1478275467860&sig=87ac04ec7aba46fb45a4787caf5b710e",
+        "top": "https://affiliate-api.flipkart.net/affiliate/1.0/topFeeds/slidenerd/category/j9e-m38.json?expiresAt=1478275467860&sig=9be056a2590785a10e17173a120c0bee"
+    },
+    {
+        "category": "landline_phones",
+        "get": "https://affiliate-api.flipkart.net/affiliate/1.0/feeds/slidenerd/category/tyy-n0e.json?expiresAt=1478275467859&sig=fded0e2d57868bdced7c7afc0edabceb",
+        "deltaGet": "https://affiliate-api.flipkart.net/affiliate/1.0/deltaFeeds/slidenerd/category/tyy-n0e.json?expiresAt=1478275467859&sig=fded0e2d57868bdced7c7afc0edabceb",
+        "top": "https://affiliate-api.flipkart.net/affiliate/1.0/topFeeds/slidenerd/category/tyy-n0e.json?expiresAt=1478275467859&sig=d38014ab2aed0473627daa3921805927"
+    },
+    {
+        "category": "laptop_accessories",
+        "get": "https://affiliate-api.flipkart.net/affiliate/1.0/feeds/slidenerd/category/6bo-ai3.json?expiresAt=1478275467856&sig=0afcc9c73791c8aea664b19dc87622d2",
+        "deltaGet": "https://affiliate-api.flipkart.net/affiliate/1.0/deltaFeeds/slidenerd/category/6bo-ai3.json?expiresAt=1478275467856&sig=0afcc9c73791c8aea664b19dc87622d2",
+        "top": "https://affiliate-api.flipkart.net/affiliate/1.0/topFeeds/slidenerd/category/6bo-ai3.json?expiresAt=1478275467856&sig=c06925126f5826860b927e392ef1d8ef"
+    },
+    {
+        "category": "laptops",
+        "get": "https://affiliate-api.flipkart.net/affiliate/1.0/feeds/slidenerd/category/6bo-b5g.json?expiresAt=1478275467856&sig=cf26709fc50e5c65899118d590049dea",
+        "deltaGet": "https://affiliate-api.flipkart.net/affiliate/1.0/deltaFeeds/slidenerd/category/6bo-b5g.json?expiresAt=1478275467856&sig=cf26709fc50e5c65899118d590049dea",
+        "top": "https://affiliate-api.flipkart.net/affiliate/1.0/topFeeds/slidenerd/category/6bo-b5g.json?expiresAt=1478275467856&sig=99d193caabc0dc5a92872579ee589605"
+    },
+    {
+        "category": "luggage_travel",
+        "get": "https://affiliate-api.flipkart.net/affiliate/1.0/feeds/slidenerd/category/reh-plk.json?expiresAt=1478275467863&sig=054ab3edd4adcce0fef08b2d7cfcb37f",
+        "deltaGet": "https://affiliate-api.flipkart.net/affiliate/1.0/deltaFeeds/slidenerd/category/reh-plk.json?expiresAt=1478275467863&sig=054ab3edd4adcce0fef08b2d7cfcb37f",
+        "top": "https://affiliate-api.flipkart.net/affiliate/1.0/topFeeds/slidenerd/category/reh-plk.json?expiresAt=1478275467863&sig=ee1d2987c741bf8ab6cc7be04d4df866"
+    },
+    {
+        "category": "mens_clothing",
+        "get": "https://affiliate-api.flipkart.net/affiliate/1.0/feeds/slidenerd/category/2oq-s9b.json?expiresAt=1478275467860&sig=3c94c0b6ae289314ebc68392f882d02f",
+        "deltaGet": "https://affiliate-api.flipkart.net/affiliate/1.0/deltaFeeds/slidenerd/category/2oq-s9b.json?expiresAt=1478275467860&sig=3c94c0b6ae289314ebc68392f882d02f",
+        "top": "https://affiliate-api.flipkart.net/affiliate/1.0/topFeeds/slidenerd/category/2oq-s9b.json?expiresAt=1478275467860&sig=f8df6741434f289a0f4b381cb8239c8c"
+    },
+    {
+        "category": "mens_footwear",
+        "get": "https://affiliate-api.flipkart.net/affiliate/1.0/feeds/slidenerd/category/osp-cil.json?expiresAt=1478275467860&sig=6e9c7bd527cc8ba45cf3af09e8b2d9ac",
+        "deltaGet": "https://affiliate-api.flipkart.net/affiliate/1.0/deltaFeeds/slidenerd/category/osp-cil.json?expiresAt=1478275467860&sig=6e9c7bd527cc8ba45cf3af09e8b2d9ac",
+        "top": "https://affiliate-api.flipkart.net/affiliate/1.0/topFeeds/slidenerd/category/osp-cil.json?expiresAt=1478275467860&sig=c7b29ca43f2b9bda09a9c1690727137a"
+    },
+    {
+        "category": "microwave_ovens",
+        "get": "https://affiliate-api.flipkart.net/affiliate/1.0/feeds/slidenerd/category/j9e-m38-o49.json?expiresAt=1478275467864&sig=9011e7eff554678b9880d905e79e3750",
+        "deltaGet": "https://affiliate-api.flipkart.net/affiliate/1.0/deltaFeeds/slidenerd/category/j9e-m38-o49.json?expiresAt=1478275467864&sig=9011e7eff554678b9880d905e79e3750",
+        "top": "https://affiliate-api.flipkart.net/affiliate/1.0/topFeeds/slidenerd/category/j9e-m38-o49.json?expiresAt=1478275467864&sig=48bb708618a9e491c5761ac650866abd"
+    },
+    {
+        "category": "mobile_accessories",
+        "get": "https://affiliate-api.flipkart.net/affiliate/1.0/feeds/slidenerd/category/tyy-4mr.json?expiresAt=1478275467858&sig=9bb56781ff9657e5667cbc4a147379ba",
+        "deltaGet": "https://affiliate-api.flipkart.net/affiliate/1.0/deltaFeeds/slidenerd/category/tyy-4mr.json?expiresAt=1478275467858&sig=9bb56781ff9657e5667cbc4a147379ba",
+        "top": "https://affiliate-api.flipkart.net/affiliate/1.0/topFeeds/slidenerd/category/tyy-4mr.json?expiresAt=1478275467858&sig=69a24a82cd7b1aac5945155d5d560376"
+    },
+    {
+        "category": "mobiles",
+        "get": "https://affiliate-api.flipkart.net/affiliate/1.0/feeds/slidenerd/category/tyy-4io.json?expiresAt=1478275467858&sig=fcfbf0ab6a99d4de7fc75ba8e75bbbf6",
+        "deltaGet": "https://affiliate-api.flipkart.net/affiliate/1.0/deltaFeeds/slidenerd/category/tyy-4io.json?expiresAt=1478275467858&sig=fcfbf0ab6a99d4de7fc75ba8e75bbbf6",
+        "top": "https://affiliate-api.flipkart.net/affiliate/1.0/topFeeds/slidenerd/category/tyy-4io.json?expiresAt=1478275467858&sig=1e0f62109556ce634389d5c088017f8a"
+    },
+    {
+        "category": "music_movies_posters",
+        "get": "https://affiliate-api.flipkart.net/affiliate/1.0/feeds/slidenerd/category/4kt.json?expiresAt=1478275467865&sig=0780c956d34683aabf2743c7d7847ebb",
+        "deltaGet": "https://affiliate-api.flipkart.net/affiliate/1.0/deltaFeeds/slidenerd/category/4kt.json?expiresAt=1478275467865&sig=0780c956d34683aabf2743c7d7847ebb",
+        "top": "https://affiliate-api.flipkart.net/affiliate/1.0/topFeeds/slidenerd/category/4kt.json?expiresAt=1478275467865&sig=7705f4bee532733938202c12a6372895"
+    },
+    {
+        "category": "network_components",
+        "get": "https://affiliate-api.flipkart.net/affiliate/1.0/feeds/slidenerd/category/6bo-70k.json?expiresAt=1478275467855&sig=f0d71a72a57d34b03284f3fcdbb43da6",
+        "deltaGet": "https://affiliate-api.flipkart.net/affiliate/1.0/deltaFeeds/slidenerd/category/6bo-70k.json?expiresAt=1478275467855&sig=f0d71a72a57d34b03284f3fcdbb43da6",
+        "top": "https://affiliate-api.flipkart.net/affiliate/1.0/topFeeds/slidenerd/category/6bo-70k.json?expiresAt=1478275467855&sig=ee6b5bc7d3ac8c8bcfb58ac41e5a7da3"
+    },
+    {
+        "category": "pet_supplies",
+        "get": "https://affiliate-api.flipkart.net/affiliate/1.0/feeds/slidenerd/category/n2a.json?expiresAt=1478275467866&sig=f0e0a6ff583fd72c491e3fa5a7d0f524",
+        "deltaGet": "https://affiliate-api.flipkart.net/affiliate/1.0/deltaFeeds/slidenerd/category/n2a.json?expiresAt=1478275467866&sig=f0e0a6ff583fd72c491e3fa5a7d0f524",
+        "top": "https://affiliate-api.flipkart.net/affiliate/1.0/topFeeds/slidenerd/category/n2a.json?expiresAt=1478275467866&sig=c3a132fa28da54cf96d6d83d7a22ae88"
+    },
+    {
+        "category": "refrigerator",
+        "get": "https://affiliate-api.flipkart.net/affiliate/1.0/feeds/slidenerd/category/j9e-abm-hzg.json?expiresAt=1478275467865&sig=5dc2b05b37b13ef04a0613e359e7d7a1",
+        "deltaGet": "https://affiliate-api.flipkart.net/affiliate/1.0/deltaFeeds/slidenerd/category/j9e-abm-hzg.json?expiresAt=1478275467865&sig=5dc2b05b37b13ef04a0613e359e7d7a1",
+        "top": "https://affiliate-api.flipkart.net/affiliate/1.0/topFeeds/slidenerd/category/j9e-abm-hzg.json?expiresAt=1478275467865&sig=d2530eccb03afe3e259d6875c334c84e"
+    },
+    {
+        "category": "software",
+        "get": "https://affiliate-api.flipkart.net/affiliate/1.0/feeds/slidenerd/category/6bo-5hp.json?expiresAt=1478275467862&sig=abb61549578d1dda9a7a9bb9f142a7db",
+        "deltaGet": "https://affiliate-api.flipkart.net/affiliate/1.0/deltaFeeds/slidenerd/category/6bo-5hp.json?expiresAt=1478275467862&sig=abb61549578d1dda9a7a9bb9f142a7db",
+        "top": "https://affiliate-api.flipkart.net/affiliate/1.0/topFeeds/slidenerd/category/6bo-5hp.json?expiresAt=1478275467862&sig=bbff8272a6857885e941bb3212ae75c9"
+    },
+    {
+        "category": "sports_fitness",
+        "get": "https://affiliate-api.flipkart.net/affiliate/1.0/feeds/slidenerd/category/dep.json?expiresAt=1478275467862&sig=9316617054e0a929644956edf7477683",
+        "deltaGet": "https://affiliate-api.flipkart.net/affiliate/1.0/deltaFeeds/slidenerd/category/dep.json?expiresAt=1478275467863&sig=bebec4371846efc5fcbd3c6adb4887bd",
+        "top": "https://affiliate-api.flipkart.net/affiliate/1.0/topFeeds/slidenerd/category/dep.json?expiresAt=1478275467863&sig=dfb75bdbc852dc6a045b19ca829462a3"
+    },
+    {
+        "category": "stationery_office_supplies",
+        "get": "https://affiliate-api.flipkart.net/affiliate/1.0/feeds/slidenerd/category/dgv.json?expiresAt=1478275467862&sig=3c9c4455184253d5ebfe85ba975238b5",
+        "deltaGet": "https://affiliate-api.flipkart.net/affiliate/1.0/deltaFeeds/slidenerd/category/dgv.json?expiresAt=1478275467862&sig=3c9c4455184253d5ebfe85ba975238b5",
+        "top": "https://affiliate-api.flipkart.net/affiliate/1.0/topFeeds/slidenerd/category/dgv.json?expiresAt=1478275467862&sig=e83431b6a7eb4c03f6c0947e1e2a76a2"
+    },
+    {
+        "category": "sunglasses",
+        "get": "https://affiliate-api.flipkart.net/affiliate/1.0/feeds/slidenerd/category/26x.json?expiresAt=1478275467854&sig=21073e68b7804e26179c4b012f281523",
+        "deltaGet": "https://affiliate-api.flipkart.net/affiliate/1.0/deltaFeeds/slidenerd/category/26x.json?expiresAt=1478275467854&sig=21073e68b7804e26179c4b012f281523",
+        "top": "https://affiliate-api.flipkart.net/affiliate/1.0/topFeeds/slidenerd/category/26x.json?expiresAt=1478275467854&sig=68e0ea72458fba690e4d13bc79147023"
+    },
+    {
+        "category": "tablet_accessories",
+        "get": "https://affiliate-api.flipkart.net/affiliate/1.0/feeds/slidenerd/category/tyy-jgu.json?expiresAt=1478275467858&sig=2e34c4e2fc45a3226d2b9593151cad15",
+        "deltaGet": "https://affiliate-api.flipkart.net/affiliate/1.0/deltaFeeds/slidenerd/category/tyy-jgu.json?expiresAt=1478275467858&sig=2e34c4e2fc45a3226d2b9593151cad15",
+        "top": "https://affiliate-api.flipkart.net/affiliate/1.0/topFeeds/slidenerd/category/tyy-jgu.json?expiresAt=1478275467859&sig=c42924eea9fb2c5fd7302a7e3468de46"
+    },
+    {
+        "category": "tablets",
+        "get": "https://affiliate-api.flipkart.net/affiliate/1.0/feeds/slidenerd/category/tyy-hry.json?expiresAt=1478275467858&sig=d7c4759a79337ba12c20b72d6c334679",
+        "deltaGet": "https://affiliate-api.flipkart.net/affiliate/1.0/deltaFeeds/slidenerd/category/tyy-hry.json?expiresAt=1478275467858&sig=d7c4759a79337ba12c20b72d6c334679",
+        "top": "https://affiliate-api.flipkart.net/affiliate/1.0/topFeeds/slidenerd/category/tyy-hry.json?expiresAt=1478275467858&sig=936aaf21e52c1a40052b017be0f6dd8d"
+    },
+    {
+        "category": "televisions",
+        "get": "https://affiliate-api.flipkart.net/affiliate/1.0/feeds/slidenerd/category/ckf-czl.json?expiresAt=1478275467864&sig=3f5fc2610a4d5e4a608e5d21fe55e80d",
+        "deltaGet": "https://affiliate-api.flipkart.net/affiliate/1.0/deltaFeeds/slidenerd/category/ckf-czl.json?expiresAt=1478275467864&sig=3f5fc2610a4d5e4a608e5d21fe55e80d",
+        "top": "https://affiliate-api.flipkart.net/affiliate/1.0/topFeeds/slidenerd/category/ckf-czl.json?expiresAt=1478275467864&sig=466e844e666bcfe0edbdbd1e53b8079e"
+    },
+    {
+        "category": "toys",
+        "get": "https://affiliate-api.flipkart.net/affiliate/1.0/feeds/slidenerd/category/mgl.json?expiresAt=1478275467852&sig=d283e736f5f8aa31e1ce59f9f998d864",
+        "deltaGet": "https://affiliate-api.flipkart.net/affiliate/1.0/deltaFeeds/slidenerd/category/mgl.json?expiresAt=1478275467852&sig=d283e736f5f8aa31e1ce59f9f998d864",
+        "top": "https://affiliate-api.flipkart.net/affiliate/1.0/topFeeds/slidenerd/category/mgl.json?expiresAt=1478275467853&sig=8cc8085deec8d2d1ec5eb15ee8150f75"
+    },
+    {
+        "category": "tv_video_accessories",
+        "get": "https://affiliate-api.flipkart.net/affiliate/1.0/feeds/slidenerd/category/6bo-ul6.json?expiresAt=1478275467862&sig=c781b78c07a98654e61c30a8b2797c8a",
+        "deltaGet": "https://affiliate-api.flipkart.net/affiliate/1.0/deltaFeeds/slidenerd/category/6bo-ul6.json?expiresAt=1478275467862&sig=c781b78c07a98654e61c30a8b2797c8a",
+        "top": "https://affiliate-api.flipkart.net/affiliate/1.0/topFeeds/slidenerd/category/6bo-ul6.json?expiresAt=1478275467862&sig=992e3d056c97502b151e48e102300405"
+    },
+    {
+        "category": "video_players",
+        "get": "https://affiliate-api.flipkart.net/affiliate/1.0/feeds/slidenerd/category/6bo-xdz.json?expiresAt=1478275467861&sig=428fb1e90fbb7fda6542c4cbe5cf3ed7",
+        "deltaGet": "https://affiliate-api.flipkart.net/affiliate/1.0/deltaFeeds/slidenerd/category/6bo-xdz.json?expiresAt=1478275467861&sig=428fb1e90fbb7fda6542c4cbe5cf3ed7",
+        "top": "https://affiliate-api.flipkart.net/affiliate/1.0/topFeeds/slidenerd/category/6bo-xdz.json?expiresAt=1478275467861&sig=fd03be635ab5cd31665369be0656859b"
+    },
+    {
+        "category": "washing_machine",
+        "get": "https://affiliate-api.flipkart.net/affiliate/1.0/feeds/slidenerd/category/j9e-abm-8qx.json?expiresAt=1478275467865&sig=4b77e09b9fba3d927c1fad230f2acd91",
+        "deltaGet": "https://affiliate-api.flipkart.net/affiliate/1.0/deltaFeeds/slidenerd/category/j9e-abm-8qx.json?expiresAt=1478275467865&sig=4b77e09b9fba3d927c1fad230f2acd91",
+        "top": "https://affiliate-api.flipkart.net/affiliate/1.0/topFeeds/slidenerd/category/j9e-abm-8qx.json?expiresAt=1478275467865&sig=2cd1b27f33c4974dfe451bd98774be43"
+    },
+    {
+        "category": "watches",
+        "get": "https://affiliate-api.flipkart.net/affiliate/1.0/feeds/slidenerd/category/r18.json?expiresAt=1478275467854&sig=9dfbad5fc1163941b3e79e2cf3cd27af",
+        "deltaGet": "https://affiliate-api.flipkart.net/affiliate/1.0/deltaFeeds/slidenerd/category/r18.json?expiresAt=1478275467854&sig=9dfbad5fc1163941b3e79e2cf3cd27af",
+        "top": "https://affiliate-api.flipkart.net/affiliate/1.0/topFeeds/slidenerd/category/r18.json?expiresAt=1478275467854&sig=215d8a25e0820764406cbb2eaed4120d"
+    },
+    {
+        "category": "wearable_smart_devices",
+        "get": "https://affiliate-api.flipkart.net/affiliate/1.0/feeds/slidenerd/category/ajy.json?expiresAt=1478275467866&sig=de7b81f189b1e617aa92e4d062852eff",
+        "deltaGet": "https://affiliate-api.flipkart.net/affiliate/1.0/deltaFeeds/slidenerd/category/ajy.json?expiresAt=1478275467866&sig=de7b81f189b1e617aa92e4d062852eff",
+        "top": "https://affiliate-api.flipkart.net/affiliate/1.0/topFeeds/slidenerd/category/ajy.json?expiresAt=1478275467866&sig=ef6eaf7e27ec31950ff11e1a31f788b4"
+    },
+    {
+        "category": "womens_clothing",
+        "get": "https://affiliate-api.flipkart.net/affiliate/1.0/feeds/slidenerd/category/2oq-c1r.json?expiresAt=1478275467860&sig=2b70b7a2baaf87572c3e135899233f09",
+        "deltaGet": "https://affiliate-api.flipkart.net/affiliate/1.0/deltaFeeds/slidenerd/category/2oq-c1r.json?expiresAt=1478275467861&sig=6f821d5b650a6d59b3b4aa841d32318f",
+        "top": "https://affiliate-api.flipkart.net/affiliate/1.0/topFeeds/slidenerd/category/2oq-c1r.json?expiresAt=1478275467861&sig=012fdd5f3f8a64f07b316746ebe6ce52"
+    },
+    {
+        "category": "womens_footwear",
+        "get": "https://affiliate-api.flipkart.net/affiliate/1.0/feeds/slidenerd/category/osp-iko.json?expiresAt=1478275467861&sig=1bf5ea0f5eb8bf8833ce790481963cae",
+        "deltaGet": "https://affiliate-api.flipkart.net/affiliate/1.0/deltaFeeds/slidenerd/category/osp-iko.json?expiresAt=1478275467861&sig=1bf5ea0f5eb8bf8833ce790481963cae",
+        "top": "https://affiliate-api.flipkart.net/affiliate/1.0/topFeeds/slidenerd/category/osp-iko.json?expiresAt=1478275467861&sig=5030f8735af23f14bf0e10eb990cfcab"
+    }
+]
