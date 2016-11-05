@@ -58,7 +58,7 @@ carousel.showFlipkartOffers = function (session, offers, text) {
                     .tap(builder.CardAction.showImage(session, offer.url)),
             ])
             .buttons([
-                builder.CardAction.openUrl(session, offer.url, "View On Flipkart")
+                builder.CardAction.openUrl(session, offer.url, "View Item")
             ]))
     }
     let msg = new builder.Message(session).text(text)

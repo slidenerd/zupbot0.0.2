@@ -291,9 +291,6 @@ app.post('/api/sendMail', function (req, res) {
  * Error Handler.
  */
 app.use(errorHandler());
-app.use(function (req, res, next) {
-  res.status(404).send('Sorry cant find that!');
-});
 /**
  * Start Express server.
  */
@@ -428,5 +425,9 @@ function createUser(session) {
     }
   }
 }
+
+app.use(function (req, res, next) {
+  res.status(404).send('Sorry cant find that!');
+});
 
 module.exports = app;
